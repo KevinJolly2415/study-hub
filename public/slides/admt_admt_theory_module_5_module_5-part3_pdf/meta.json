@@ -1,0 +1,4181 @@
+{
+  "mtime": 1793934641.3118074,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_001.webp",
+      "text": "MODULE 5-PART 3\r\nBy MS. ALVINA LOPES",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 31.83,
+          "t": 38.84,
+          "w": 36.51,
+          "h": 5.52,
+          "text": "MODULE 5-PART 3"
+        },
+        {
+          "l": 33.57,
+          "t": 58.4,
+          "w": 33.0,
+          "h": 5.78,
+          "text": "By MS. ALVINA LOPES"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Big Data Processing Frameworks\r\n\u2756 Apache Spark\r\n\u2756 NoSQL Databases \u2013 Key-Value Stores, Column-Oriented Databases, \r\nDocument Databases, Graph Databases.\r\n\u2756 Applications of Big Data Analytics in Business Intelligence and Decision \r\nSupport Systems",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 13.87,
+          "h": 5.9,
+          "text": "Contents"
+        },
+        {
+          "l": 4.72,
+          "t": 24.24,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 37.56,
+          "h": 4.49,
+          "text": "Big Data Processing Frameworks"
+        },
+        {
+          "l": 4.72,
+          "t": 30.37,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.35,
+          "t": 30.16,
+          "w": 15.87,
+          "h": 4.48,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.72,
+          "t": 36.51,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 78.21,
+          "h": 4.49,
+          "text": "NoSQL Databases \u2013 Key-Value Stores, Column-Oriented Databases, "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 46.63,
+          "h": 4.48,
+          "text": "Document Databases, Graph Databases."
+        },
+        {
+          "l": 4.72,
+          "t": 48.77,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.35,
+          "t": 48.53,
+          "w": 82.49,
+          "h": 4.52,
+          "text": "Applications of Big Data Analytics in Business Intelligence and Decision "
+        },
+        {
+          "l": 9.47,
+          "t": 54.85,
+          "w": 19.39,
+          "h": 4.33,
+          "text": "Support Systems"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_003.webp",
+      "text": "Big Data Processing Frameworks\r\n\u25cf Big data processing frameworks are software tools that are specifically \r\ndesigned to handle the processing and analysis of large and complex data \r\nsets. \r\n\u25cf These frameworks are built to scale horizontally, meaning they can easily \r\nhandle massive amounts of data by distributing the workload across \r\nmultiple nodes or servers. \r\n\u25cf This allows companies to process and analyze data in real-time, enabling \r\nthem to make faster and more accurate decisions.\r\n\u25cf Big data processing frameworks are essential tools for businesses looking \r\nto harness the power of their data.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 51.48,
+          "h": 7.46,
+          "text": "Big Data Processing Frameworks"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 82.2,
+          "h": 4.52,
+          "text": "Big data processing frameworks are software tools that are specifically "
+        },
+        {
+          "l": 9.49,
+          "t": 30.13,
+          "w": 86.28,
+          "h": 4.52,
+          "text": "designed to handle the processing and analysis of large and complex data "
+        },
+        {
+          "l": 9.47,
+          "t": 36.74,
+          "w": 5.85,
+          "h": 3.03,
+          "text": "sets. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 42.4,
+          "w": 85.3,
+          "h": 4.52,
+          "text": "These frameworks are built to scale horizontally, meaning they can easily "
+        },
+        {
+          "l": 9.56,
+          "t": 48.53,
+          "w": 79.78,
+          "h": 4.52,
+          "text": "handle massive amounts of data by distributing the workload across "
+        },
+        {
+          "l": 9.56,
+          "t": 54.69,
+          "w": 30.74,
+          "h": 4.48,
+          "text": "multiple nodes or servers. "
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 60.82,
+          "w": 84.89,
+          "h": 4.49,
+          "text": "This allows companies to process and analyze data in real-time, enabling "
+        },
+        {
+          "l": 9.39,
+          "t": 66.93,
+          "w": 58.14,
+          "h": 3.51,
+          "text": "them to make faster and more accurate decisions."
+        },
+        {
+          "l": 5.55,
+          "t": 74.28,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 73.07,
+          "w": 85.89,
+          "h": 4.51,
+          "text": "Big data processing frameworks are essential tools for businesses looking "
+        },
+        {
+          "l": 9.39,
+          "t": 79.2,
+          "w": 40.19,
+          "h": 4.51,
+          "text": "to harness the power of their data."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_004.webp",
+      "text": "Big Data Processing Frameworks\r\n\u25cf There are several popular big data processing frameworks available in the \r\nmarket today.\r\n\u25cf Each has its own unique features and capabilities. \r\n\u25cf Some of the most commonly used frameworks include Apache Hadoop, \r\nApache Spark, and Apache Flink. \r\n\u25cf These frameworks are open-source and offer a wide range of tools and \r\nlibraries to help companies process and analyze their data effectively.\r\n\u25cf Modern big data processing often occurs in cloud environments due to \r\nscalability and cost-efficiency.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 51.48,
+          "h": 7.46,
+          "text": "Big Data Processing Frameworks"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 24.0,
+          "w": 86.44,
+          "h": 4.51,
+          "text": "There are several popular big data processing frameworks available in the "
+        },
+        {
+          "l": 9.56,
+          "t": 30.16,
+          "w": 15.79,
+          "h": 4.49,
+          "text": "market today."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 58.19,
+          "h": 4.51,
+          "text": "Each has its own unique features and capabilities. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 42.4,
+          "w": 83.83,
+          "h": 4.52,
+          "text": "Some of the most commonly used frameworks include Apache Hadoop, "
+        },
+        {
+          "l": 9.35,
+          "t": 48.56,
+          "w": 38.25,
+          "h": 4.48,
+          "text": "Apache Spark, and Apache Flink. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 54.67,
+          "w": 83.13,
+          "h": 4.51,
+          "text": "These frameworks are open-source and offer a wide range of tools and "
+        },
+        {
+          "l": 9.56,
+          "t": 60.8,
+          "w": 80.33,
+          "h": 4.52,
+          "text": "libraries to help companies process and analyze their data effectively."
+        },
+        {
+          "l": 5.55,
+          "t": 68.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 66.93,
+          "w": 82.77,
+          "h": 4.51,
+          "text": "Modern big data processing often occurs in cloud environments due to "
+        },
+        {
+          "l": 9.47,
+          "t": 73.07,
+          "w": 33.94,
+          "h": 4.52,
+          "text": "scalability and cost-efficiency."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_005.webp",
+      "text": "Apache Spark\r\n\u25cf Apache Spark is an open source distributed data processing engine that \r\nenables users to perform complex data analysis across large datasets. \r\n\u25cf It is a multi-language engine for executing data engineering, data science, \r\nand machine learning on single-node machines or clusters.\r\n\u25cf It is designed to be fast, flexible and easy to use, making it suitable for \r\nvarious applications in data science and analytics.\r\n\u25cf It utilizes in-memory caching, and optimized query execution for fast \r\nanalytic queries against data of any size.\r\n\u25cf It provides development APIs in Java, Scala, Python and R, and supports \r\ncode reuse across multiple workloads\u2014batch processing, interactive \r\nqueries, real-time analytics, machine learning, and graph processing.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.02,
+          "w": 83.98,
+          "h": 4.49,
+          "text": "Apache Spark is an open source distributed data processing engine that "
+        },
+        {
+          "l": 9.49,
+          "t": 29.6,
+          "w": 81.83,
+          "h": 4.52,
+          "text": "enables users to perform complex data analysis across large datasets. "
+        },
+        {
+          "l": 5.55,
+          "t": 36.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 35.2,
+          "w": 86.19,
+          "h": 4.51,
+          "text": "It is a multi-language engine for executing data engineering, data science, "
+        },
+        {
+          "l": 9.46,
+          "t": 40.82,
+          "w": 68.13,
+          "h": 4.49,
+          "text": "and machine learning on single-node machines or clusters."
+        },
+        {
+          "l": 5.55,
+          "t": 47.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 46.4,
+          "w": 81.53,
+          "h": 4.52,
+          "text": "It is designed to be fast, flexible and easy to use, making it suitable for "
+        },
+        {
+          "l": 9.35,
+          "t": 52.02,
+          "w": 57.35,
+          "h": 4.49,
+          "text": "various applications in data science and analytics."
+        },
+        {
+          "l": 5.55,
+          "t": 58.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 57.6,
+          "w": 79.98,
+          "h": 4.52,
+          "text": "It utilizes in-memory caching, and optimized query execution for fast "
+        },
+        {
+          "l": 9.46,
+          "t": 63.2,
+          "w": 46.32,
+          "h": 4.52,
+          "text": "analytic queries against data of any size."
+        },
+        {
+          "l": 5.55,
+          "t": 70.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 68.82,
+          "w": 83.3,
+          "h": 4.49,
+          "text": "It provides development APIs in Java, Scala, Python and R, and supports "
+        },
+        {
+          "l": 9.49,
+          "t": 74.42,
+          "w": 80.08,
+          "h": 4.49,
+          "text": "code reuse across multiple workloads\u2014batch processing, interactive "
+        },
+        {
+          "l": 9.48,
+          "t": 80.02,
+          "w": 80.21,
+          "h": 4.49,
+          "text": "queries, real-time analytics, machine learning, and graph processing. "
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_006.webp",
+      "text": "Apache Spark\r\nFeatures of Apache Spark\r\n1. In-memory computing\r\n2. Unified analytics\r\n3. Support for multiple languages (Polyglot programming)\r\n4. Built-in libraries\r\n5. Fault tolerance- through Resilient Distributed Datasets (RDDs)\r\n6. Lazy evaluation\r\n7. Advanced DAG execution engine",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.57,
+          "t": 24.0,
+          "w": 31.53,
+          "h": 4.51,
+          "text": "Features of Apache Spark"
+        },
+        {
+          "l": 4.99,
+          "t": 30.36,
+          "w": 1.68,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 9.59,
+          "t": 30.27,
+          "w": 25.67,
+          "h": 4.38,
+          "text": "In-memory computing"
+        },
+        {
+          "l": 4.88,
+          "t": 36.45,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 9.57,
+          "t": 36.27,
+          "w": 18.79,
+          "h": 4.52,
+          "text": "Unified analytics"
+        },
+        {
+          "l": 4.87,
+          "t": 42.58,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 9.47,
+          "t": 42.4,
+          "w": 63.76,
+          "h": 4.52,
+          "text": "Support for multiple languages (Polyglot programming)"
+        },
+        {
+          "l": 4.81,
+          "t": 48.74,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 9.59,
+          "t": 48.56,
+          "w": 17.99,
+          "h": 3.47,
+          "text": "Built-in libraries"
+        },
+        {
+          "l": 4.92,
+          "t": 54.89,
+          "w": 1.74,
+          "h": 3.28,
+          "text": "5. "
+        },
+        {
+          "l": 9.59,
+          "t": 54.69,
+          "w": 71.29,
+          "h": 4.49,
+          "text": "Fault tolerance- through Resilient Distributed Datasets (RDDs)"
+        },
+        {
+          "l": 4.9,
+          "t": 60.98,
+          "w": 1.76,
+          "h": 3.32,
+          "text": "6. "
+        },
+        {
+          "l": 9.59,
+          "t": 60.82,
+          "w": 17.45,
+          "h": 4.49,
+          "text": "Lazy evaluation"
+        },
+        {
+          "l": 4.87,
+          "t": 67.16,
+          "w": 1.79,
+          "h": 3.28,
+          "text": "7. "
+        },
+        {
+          "l": 9.35,
+          "t": 66.96,
+          "w": 37.68,
+          "h": 4.49,
+          "text": "Advanced DAG execution engine"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_007.webp",
+      "text": "Apache Spark\r\nBenefits of Apache Spark\r\n\u25cf Fast- Through in-memory caching, and optimized query execution\r\n\u25cf Developer friendly- a variety of languages for building your applications. \r\nThese APIs make it easy for the developers\r\n\u25cf Multiple workloads- the ability to run multiple workloads, including \r\ninteractive queries, real-time analytics, machine learning, and graph \r\nprocessing.\r\n\u25cf Real-time processing- with Structured Streaming and the legacy Spark \r\nStreaming.\r\n\u25cf Scalability and fault tolerance\r\n\u25cf Extensive library support",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.57,
+          "t": 24.0,
+          "w": 30.92,
+          "h": 4.51,
+          "text": "Benefits of Apache Spark"
+        },
+        {
+          "l": 5.55,
+          "t": 30.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.83,
+          "w": 4.45,
+          "h": 3.26,
+          "text": "Fast"
+        },
+        {
+          "l": 14.21,
+          "t": 29.62,
+          "w": 71.29,
+          "h": 4.49,
+          "text": "- Through in-memory caching, and optimized query execution"
+        },
+        {
+          "l": 5.55,
+          "t": 36.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 35.2,
+          "w": 21.19,
+          "h": 4.52,
+          "text": "Developer friendly"
+        },
+        {
+          "l": 30.9,
+          "t": 35.2,
+          "w": 62.58,
+          "h": 4.52,
+          "text": "- a variety of languages for building your applications. "
+        },
+        {
+          "l": 9.37,
+          "t": 40.8,
+          "w": 49.48,
+          "h": 4.52,
+          "text": "These APIs make it easy for the developers"
+        },
+        {
+          "l": 5.55,
+          "t": 47.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 46.42,
+          "w": 21.79,
+          "h": 4.48,
+          "text": "Multiple workloads"
+        },
+        {
+          "l": 31.62,
+          "t": 46.42,
+          "w": 55.91,
+          "h": 4.49,
+          "text": "- the ability to run multiple workloads, including "
+        },
+        {
+          "l": 9.54,
+          "t": 52.02,
+          "w": 79.18,
+          "h": 4.49,
+          "text": "interactive queries, real-time analytics, machine learning, and graph "
+        },
+        {
+          "l": 9.56,
+          "t": 57.73,
+          "w": 12.81,
+          "h": 4.38,
+          "text": "processing."
+        },
+        {
+          "l": 5.55,
+          "t": 64.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 63.22,
+          "w": 23.9,
+          "h": 4.49,
+          "text": "Real-time processing"
+        },
+        {
+          "l": 33.67,
+          "t": 63.22,
+          "w": 57.26,
+          "h": 4.49,
+          "text": "- with Structured Streaming and the legacy Spark "
+        },
+        {
+          "l": 9.47,
+          "t": 68.93,
+          "w": 12.25,
+          "h": 4.38,
+          "text": "Streaming."
+        },
+        {
+          "l": 5.55,
+          "t": 75.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 74.4,
+          "w": 33.91,
+          "h": 4.52,
+          "text": "Scalability and fault tolerance"
+        },
+        {
+          "l": 5.55,
+          "t": 81.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 80.02,
+          "w": 28.64,
+          "h": 4.49,
+          "text": "Extensive library support"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_008.webp",
+      "text": "Apache Spark\r\nApache Spark Workloads\r\nThe Spark framework includes:\r\n\u25cf Spark Core as the foundation for the platform\r\n\u25cf Spark SQL for interactive queries\r\n\u25cf Spark Streaming for real-time analytics\r\n\u25cf Spark MLlib for machine learning\r\n\u25cf Spark GraphX for graph processing",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 24.02,
+          "w": 30.86,
+          "h": 4.49,
+          "text": "Apache Spark Workloads"
+        },
+        {
+          "l": 4.37,
+          "t": 30.13,
+          "w": 35.7,
+          "h": 4.51,
+          "text": "The Spark framework includes:"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 36.27,
+          "w": 52.9,
+          "h": 4.51,
+          "text": "Spark Core as the foundation for the platform"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 42.4,
+          "w": 37.88,
+          "h": 4.51,
+          "text": "Spark SQL for interactive queries"
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 48.53,
+          "w": 44.81,
+          "h": 4.52,
+          "text": "Spark Streaming for real-time analytics"
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 54.67,
+          "w": 38.22,
+          "h": 4.51,
+          "text": "Spark MLlib for machine learning"
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 60.8,
+          "w": 40.49,
+          "h": 4.51,
+          "text": "Spark GraphX for graph processing"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_009.webp",
+      "text": "Apache Spark\r\nApache Spark Workloads",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 24.02,
+          "w": 30.86,
+          "h": 4.49,
+          "text": "Apache Spark Workloads"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_010.webp",
+      "text": "Apache Spark\r\nApache Spark Workloads\r\nSpark Core\r\n\u25cf Spark Core is the foundation of the platform. \r\n\u25cf It is responsible for memory management, fault recovery, scheduling, \r\ndistributing & monitoring jobs, and interacting with storage systems. \r\n\u25cf Spark Core is exposed through an application programming interface \r\n(APIs) built for Java, Scala, Python and R. \r\n\u25cf These APIs hide the complexity of distributed processing behind simple, \r\nhigh-level operators.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 24.02,
+          "w": 30.86,
+          "h": 4.49,
+          "text": "Apache Spark Workloads"
+        },
+        {
+          "l": 4.47,
+          "t": 30.16,
+          "w": 12.51,
+          "h": 4.48,
+          "text": "Spark Core"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 36.27,
+          "w": 52.62,
+          "h": 4.51,
+          "text": "Spark Core is the foundation of the platform. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.4,
+          "w": 81.01,
+          "h": 4.52,
+          "text": "It is responsible for memory management, fault recovery, scheduling, "
+        },
+        {
+          "l": 9.49,
+          "t": 48.56,
+          "w": 80.0,
+          "h": 4.49,
+          "text": "distributing & monitoring jobs, and interacting with storage systems. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 54.67,
+          "w": 80.88,
+          "h": 4.51,
+          "text": "Spark Core is exposed through an application programming interface "
+        },
+        {
+          "l": 9.45,
+          "t": 60.8,
+          "w": 46.9,
+          "h": 4.52,
+          "text": "(APIs) built for Java, Scala, Python and R. "
+        },
+        {
+          "l": 5.55,
+          "t": 68.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 66.93,
+          "w": 84.04,
+          "h": 4.52,
+          "text": "These APIs hide the complexity of distributed processing behind simple, "
+        },
+        {
+          "l": 9.56,
+          "t": 73.09,
+          "w": 23.51,
+          "h": 4.49,
+          "text": "high-level operators."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_011.webp",
+      "text": "Apache Spark\r\nApache Spark Workloads\r\nMLlib- Machine Learning\r\n\u25cf Spark includes MLlib, a library of algorithms to do machine learning on \r\ndata at scale. Machine Learning models can be trained by data scientists \r\nwith R or Python on any Hadoop data source, saved using MLlib, and \r\nimported into a Java or Scala-based pipeline. Spark was designed for fast, \r\ninteractive computation that runs in memory, enabling machine learning \r\nto run quickly. The algorithms include the ability to do classification, \r\nregression, clustering, collaborative filtering, and pattern mining.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 24.02,
+          "w": 30.86,
+          "h": 4.49,
+          "text": "Apache Spark Workloads"
+        },
+        {
+          "l": 4.59,
+          "t": 30.16,
+          "w": 28.24,
+          "h": 4.49,
+          "text": "MLlib- Machine Learning"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 36.27,
+          "w": 82.47,
+          "h": 4.52,
+          "text": "Spark includes MLlib, a library of algorithms to do machine learning on "
+        },
+        {
+          "l": 9.49,
+          "t": 42.42,
+          "w": 84.37,
+          "h": 4.49,
+          "text": "data at scale. Machine Learning models can be trained by data scientists "
+        },
+        {
+          "l": 9.38,
+          "t": 48.56,
+          "w": 80.25,
+          "h": 4.49,
+          "text": "with R or Python on any Hadoop data source, saved using MLlib, and "
+        },
+        {
+          "l": 9.54,
+          "t": 54.67,
+          "w": 85.31,
+          "h": 4.51,
+          "text": "imported into a Java or Scala-based pipeline. Spark was designed for fast, "
+        },
+        {
+          "l": 9.54,
+          "t": 60.82,
+          "w": 84.83,
+          "h": 4.49,
+          "text": "interactive computation that runs in memory, enabling machine learning "
+        },
+        {
+          "l": 9.39,
+          "t": 66.93,
+          "w": 79.18,
+          "h": 4.52,
+          "text": "to run quickly. The algorithms include the ability to do classification, "
+        },
+        {
+          "l": 9.56,
+          "t": 73.07,
+          "w": 74.68,
+          "h": 4.51,
+          "text": "regression, clustering, collaborative filtering, and pattern mining."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_012.webp",
+      "text": "Apache Spark\r\nApache Spark Workloads\r\nSpark Streaming- Real-time\r\n\u25cf Spark Streaming is a real-time solution that leverages Spark Core\u2019s fast \r\nscheduling capability to do streaming analytics. It ingests data in \r\nmini-batches, and enables analytics on that data with the same \r\napplication code written for batch analytics. This improves developer \r\nproductivity, because they can use the same code for batch processing, \r\nand for real-time streaming applications. Spark Streaming supports data \r\nfrom Twitter, Kafka, Flume, HDFS, and ZeroMQ, and many others found \r\nfrom the Spark Packages ecosystem.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 24.02,
+          "w": 30.86,
+          "h": 4.49,
+          "text": "Apache Spark Workloads"
+        },
+        {
+          "l": 4.47,
+          "t": 30.16,
+          "w": 31.36,
+          "h": 4.49,
+          "text": "Spark Streaming- Real-time"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 36.27,
+          "w": 82.38,
+          "h": 4.51,
+          "text": "Spark Streaming is a real-time solution that leverages Spark Core\u2019s fast "
+        },
+        {
+          "l": 9.47,
+          "t": 42.42,
+          "w": 74.96,
+          "h": 4.49,
+          "text": "scheduling capability to do streaming analytics. It ingests data in "
+        },
+        {
+          "l": 9.56,
+          "t": 48.56,
+          "w": 73.59,
+          "h": 4.49,
+          "text": "mini-batches, and enables analytics on that data with the same "
+        },
+        {
+          "l": 9.46,
+          "t": 54.67,
+          "w": 80.36,
+          "h": 4.52,
+          "text": "application code written for batch analytics. This improves developer "
+        },
+        {
+          "l": 9.56,
+          "t": 60.8,
+          "w": 83.2,
+          "h": 4.52,
+          "text": "productivity, because they can use the same code for batch processing, "
+        },
+        {
+          "l": 9.46,
+          "t": 66.93,
+          "w": 84.5,
+          "h": 4.51,
+          "text": "and for real-time streaming applications. Spark Streaming supports data "
+        },
+        {
+          "l": 9.38,
+          "t": 73.07,
+          "w": 83.46,
+          "h": 4.52,
+          "text": "from Twitter, Kafka, Flume, HDFS, and ZeroMQ, and many others found "
+        },
+        {
+          "l": 9.38,
+          "t": 79.2,
+          "w": 42.22,
+          "h": 4.52,
+          "text": "from the Spark Packages ecosystem."
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_013.webp",
+      "text": "Apache Spark\r\nApache Spark Workloads\r\nSpark SQL- Interactive Queries\r\n\u25cf Spark SQL is a distributed query engine that provides low-latency, \r\ninteractive queries up to 100x faster than MapReduce. It includes a \r\ncost-based optimizer, columnar storage, and code generation for fast \r\nqueries, while scaling to thousands of nodes. Business analysts can use \r\nstandard SQL or the Hive Query Language for querying data. Developers \r\ncan use APIs, available in Scala, Java, Python, and R. It supports various \r\ndata sources out-of-the-box including JDBC, ODBC, JSON, HDFS, Hive, \r\nORC, and Parquet. Other popular stores\u2014Amazon Redshift, Amazon S3, \r\nCouchbase, Cassandra, MongoDB, Salesforce.com, Elasticsearch, and \r\nmany others can be found from the Spark Packages ecosystem.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 23.81,
+          "w": 30.86,
+          "h": 4.49,
+          "text": "Apache Spark Workloads"
+        },
+        {
+          "l": 4.47,
+          "t": 28.88,
+          "w": 35.16,
+          "h": 4.48,
+          "text": "Spark SQL- Interactive Queries"
+        },
+        {
+          "l": 5.55,
+          "t": 35.13,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 33.94,
+          "w": 76.69,
+          "h": 4.49,
+          "text": "Spark SQL is a distributed query engine that provides low-latency, "
+        },
+        {
+          "l": 9.54,
+          "t": 38.99,
+          "w": 78.02,
+          "h": 4.51,
+          "text": "interactive queries up to 100x faster than MapReduce. It includes a "
+        },
+        {
+          "l": 9.49,
+          "t": 44.05,
+          "w": 80.95,
+          "h": 4.51,
+          "text": "cost-based optimizer, columnar storage, and code generation for fast "
+        },
+        {
+          "l": 9.48,
+          "t": 49.12,
+          "w": 83.2,
+          "h": 4.52,
+          "text": "queries, while scaling to thousands of nodes. Business analysts can use "
+        },
+        {
+          "l": 9.47,
+          "t": 54.19,
+          "w": 84.54,
+          "h": 4.52,
+          "text": "standard SQL or the Hive Query Language for querying data. Developers "
+        },
+        {
+          "l": 9.49,
+          "t": 59.28,
+          "w": 82.46,
+          "h": 4.49,
+          "text": "can use APIs, available in Scala, Java, Python, and R. It supports various "
+        },
+        {
+          "l": 9.49,
+          "t": 64.32,
+          "w": 80.45,
+          "h": 4.51,
+          "text": "data sources out-of-the-box including JDBC, ODBC, JSON, HDFS, Hive, "
+        },
+        {
+          "l": 9.5,
+          "t": 69.39,
+          "w": 83.97,
+          "h": 4.51,
+          "text": "ORC, and Parquet. Other popular stores\u2014Amazon Redshift, Amazon S3, "
+        },
+        {
+          "l": 9.5,
+          "t": 74.45,
+          "w": 80.66,
+          "h": 4.51,
+          "text": "Couchbase, Cassandra, MongoDB, Salesforce.com, Elasticsearch, and "
+        },
+        {
+          "l": 9.56,
+          "t": 79.52,
+          "w": 73.28,
+          "h": 4.52,
+          "text": "many others can be found from the Spark Packages ecosystem."
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_014.webp",
+      "text": "Apache Spark\r\nApache Spark Workloads\r\nGraphX- Graph Processing\r\n\u25cf Spark GraphX is a distributed graph processing framework built on top of \r\nSpark. GraphX provides ETL, exploratory analysis, and iterative graph \r\ncomputation to enable users to interactively build, and transform a graph \r\ndata structure at scale. It comes with a highly flexible API, and a selection \r\nof distributed Graph algorithms.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 24.02,
+          "w": 30.86,
+          "h": 4.49,
+          "text": "Apache Spark Workloads"
+        },
+        {
+          "l": 4.5,
+          "t": 30.16,
+          "w": 30.43,
+          "h": 4.49,
+          "text": "GraphX- Graph Processing"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 36.27,
+          "w": 85.57,
+          "h": 4.51,
+          "text": "Spark GraphX is a distributed graph processing framework built on top of "
+        },
+        {
+          "l": 9.47,
+          "t": 42.42,
+          "w": 80.51,
+          "h": 4.49,
+          "text": "Spark. GraphX provides ETL, exploratory analysis, and iterative graph "
+        },
+        {
+          "l": 9.49,
+          "t": 48.53,
+          "w": 85.84,
+          "h": 4.52,
+          "text": "computation to enable users to interactively build, and transform a graph "
+        },
+        {
+          "l": 9.49,
+          "t": 54.67,
+          "w": 85.04,
+          "h": 4.52,
+          "text": "data structure at scale. It comes with a highly flexible API, and a selection "
+        },
+        {
+          "l": 9.49,
+          "t": 60.8,
+          "w": 37.12,
+          "h": 4.51,
+          "text": "of distributed Graph algorithms."
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_015.webp",
+      "text": "Apache Spark\r\nApplications of Apache Spark\r\n\u25cf Financial Services\r\nSpark is used in banking to predict customer churn, and recommend new financial \r\nproducts. \r\nIn investment banking, Spark is used to analyze stock prices to predict future trends.\r\n\u25cf Healthcare\r\nSpark is used to build comprehensive patient care, by making data available to \r\nfront-line health workers for every patient interaction. Spark can also be used to \r\npredict/recommend patient treatment.\r\n\u25cf Manufacturing\r\nSpark is used to eliminate downtime of internet-connected equipment, by \r\nrecommending when to do preventive maintenance.\r\n\u25cf Retail\r\nSpark is used to attract, and keep customers through personalized services and offers.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 21.6,
+          "h": 7.39,
+          "text": "Apache Spark"
+        },
+        {
+          "l": 4.35,
+          "t": 23.88,
+          "w": 30.86,
+          "h": 3.83,
+          "text": "Applications of Apache Spark"
+        },
+        {
+          "l": 5.75,
+          "t": 29.67,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 28.66,
+          "w": 18.48,
+          "h": 2.95,
+          "text": "Financial Services"
+        },
+        {
+          "l": 9.45,
+          "t": 33.4,
+          "w": 81.78,
+          "h": 3.83,
+          "text": "Spark is used in banking to predict customer churn, and recommend new financial "
+        },
+        {
+          "l": 9.53,
+          "t": 38.18,
+          "w": 9.76,
+          "h": 3.81,
+          "text": "products. "
+        },
+        {
+          "l": 9.55,
+          "t": 42.92,
+          "w": 82.87,
+          "h": 3.84,
+          "text": "In investment banking, Spark is used to analyze stock prices to predict future trends."
+        },
+        {
+          "l": 5.75,
+          "t": 48.71,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 47.7,
+          "w": 11.44,
+          "h": 2.95,
+          "text": "Healthcare"
+        },
+        {
+          "l": 9.45,
+          "t": 52.46,
+          "w": 77.82,
+          "h": 3.82,
+          "text": "Spark is used to build comprehensive patient care, by making data available to "
+        },
+        {
+          "l": 9.38,
+          "t": 57.2,
+          "w": 79.52,
+          "h": 3.84,
+          "text": "front-line health workers for every patient interaction. Spark can also be used to "
+        },
+        {
+          "l": 9.53,
+          "t": 61.98,
+          "w": 38.13,
+          "h": 3.81,
+          "text": "predict/recommend patient treatment."
+        },
+        {
+          "l": 5.75,
+          "t": 67.75,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 66.72,
+          "w": 15.59,
+          "h": 3.83,
+          "text": "Manufacturing"
+        },
+        {
+          "l": 9.45,
+          "t": 71.48,
+          "w": 73.26,
+          "h": 3.84,
+          "text": "Spark is used to eliminate downtime of internet-connected equipment, by "
+        },
+        {
+          "l": 9.53,
+          "t": 76.26,
+          "w": 51.48,
+          "h": 3.82,
+          "text": "recommending when to do preventive maintenance."
+        },
+        {
+          "l": 5.75,
+          "t": 82.03,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 81.02,
+          "w": 5.8,
+          "h": 2.95,
+          "text": "Retail"
+        },
+        {
+          "l": 9.45,
+          "t": 85.76,
+          "w": 85.04,
+          "h": 3.83,
+          "text": "Spark is used to attract, and keep customers through personalized services and offers."
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_016.webp",
+      "text": "NoSQL Databases\r\n\u25cf A NoSQL (non-relational) database stores and manages large volume of \r\ndata in flexible, non-tabular formats.\r\n\u25cf Also known as purpose-built databases.\r\n\u25cf They don\u2019t rely on predefined schemas, allowing for greater adaptability \r\nas data evolves.\r\n\u25cf Apart from structured data, they can also handle semi-structured and \r\nunstructured data.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.0,
+          "w": 83.58,
+          "h": 4.51,
+          "text": "A NoSQL (non-relational) database stores and manages large volume of "
+        },
+        {
+          "l": 9.49,
+          "t": 30.13,
+          "w": 42.18,
+          "h": 4.02,
+          "text": "data in flexible, non-tabular formats."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 36.29,
+          "w": 45.96,
+          "h": 4.48,
+          "text": "Also known as purpose-built databases."
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 42.4,
+          "w": 84.0,
+          "h": 4.52,
+          "text": "They don\u2019t rely on predefined schemas, allowing for greater adaptability "
+        },
+        {
+          "l": 9.46,
+          "t": 48.56,
+          "w": 18.04,
+          "h": 3.48,
+          "text": "as data evolves."
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 54.67,
+          "w": 81.5,
+          "h": 4.52,
+          "text": "Apart from structured data, they can also handle semi-structured and "
+        },
+        {
+          "l": 9.55,
+          "t": 60.82,
+          "w": 21.38,
+          "h": 3.48,
+          "text": "unstructured data."
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_017.webp",
+      "text": "NoSQL Databases\r\nFeatures of NoSQL databases\r\n\u25cf Schema-free design: No fixed structure, allowing flexible and dynamic \r\ndata models. \r\n\u25cf Horizontal scalability: Easily distributes data across multiple servers for \r\ngrowth. \r\n\u25cf Optimized performance: Excellent for fast read/write operations. \r\n\u25cf Handles unstructured data: Works efficiently with text, images, videos, \r\nand logs.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        },
+        {
+          "l": 4.57,
+          "t": 24.0,
+          "w": 36.16,
+          "h": 4.2,
+          "text": "Features of NoSQL databases"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 30.13,
+          "w": 23.3,
+          "h": 4.51,
+          "text": "Schema-free design: "
+        },
+        {
+          "l": 32.98,
+          "t": 30.13,
+          "w": 57.85,
+          "h": 4.52,
+          "text": " No fixed structure, allowing flexible and dynamic "
+        },
+        {
+          "l": 9.49,
+          "t": 36.29,
+          "w": 15.57,
+          "h": 3.48,
+          "text": "data models. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 24.33,
+          "h": 4.49,
+          "text": "Horizontal scalability: "
+        },
+        {
+          "l": 34.14,
+          "t": 42.4,
+          "w": 58.16,
+          "h": 4.52,
+          "text": " Easily distributes data across multiple servers for "
+        },
+        {
+          "l": 9.38,
+          "t": 48.56,
+          "w": 9.5,
+          "h": 4.49,
+          "text": "growth. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 54.67,
+          "w": 28.15,
+          "h": 4.51,
+          "text": "Optimized performance: "
+        },
+        {
+          "l": 37.86,
+          "t": 54.67,
+          "w": 47.3,
+          "h": 4.51,
+          "text": " Excellent for fast read/write operations. "
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.82,
+          "w": 31.5,
+          "h": 3.48,
+          "text": "Handles unstructured data: "
+        },
+        {
+          "l": 41.3,
+          "t": 60.8,
+          "w": 50.3,
+          "h": 4.52,
+          "text": " Works efficiently with text, images, videos, "
+        },
+        {
+          "l": 9.46,
+          "t": 66.96,
+          "w": 10.13,
+          "h": 4.49,
+          "text": "and logs."
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_018.webp",
+      "text": "NoSQL Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_019.webp",
+      "text": "NoSQL Databases\r\nTypes of NoSQL databases\r\n\u25cf Document databases: Store data in JSON or BSON-like documents with \r\nflexible fields. Examples include MongoDB and Couchbase.\r\n\u25cf Key-value stores: Store data as unique keys paired with values, ideal for \r\ncaching and sessions. Examples include Redis and Amazon DynamoDB.\r\n\u25cf Wide-column stores: Store data in flexible rows and dynamic columns for \r\nlarge distributed workloads. One example is Apache Cassandra.\r\n\u25cf Graph databases: Store data as nodes and edges to map highly connected \r\nrelationships. One example is Neo4j.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        },
+        {
+          "l": 4.4,
+          "t": 24.0,
+          "w": 32.56,
+          "h": 4.51,
+          "text": "Types of NoSQL databases"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.16,
+          "w": 25.78,
+          "h": 3.48,
+          "text": "Document databases: "
+        },
+        {
+          "l": 35.52,
+          "t": 30.16,
+          "w": 56.64,
+          "h": 4.26,
+          "text": "Store data in JSON or BSON-like documents with "
+        },
+        {
+          "l": 9.38,
+          "t": 36.27,
+          "w": 68.02,
+          "h": 4.51,
+          "text": "flexible fields. Examples include MongoDB and Couchbase."
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 19.25,
+          "h": 4.49,
+          "text": "Key-value stores: "
+        },
+        {
+          "l": 29.05,
+          "t": 42.4,
+          "w": 63.85,
+          "h": 4.52,
+          "text": " Store data as unique keys paired with values, ideal for "
+        },
+        {
+          "l": 9.49,
+          "t": 48.56,
+          "w": 82.32,
+          "h": 4.49,
+          "text": "caching and sessions. Examples include Redis and Amazon DynamoDB."
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 54.69,
+          "w": 23.65,
+          "h": 3.48,
+          "text": "Wide-column stores: "
+        },
+        {
+          "l": 33.25,
+          "t": 54.67,
+          "w": 61.58,
+          "h": 4.52,
+          "text": " Store data in flexible rows and dynamic columns for "
+        },
+        {
+          "l": 9.56,
+          "t": 60.82,
+          "w": 73.51,
+          "h": 4.49,
+          "text": "large distributed workloads. One example is Apache Cassandra."
+        },
+        {
+          "l": 5.55,
+          "t": 68.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 66.96,
+          "w": 20.14,
+          "h": 4.48,
+          "text": "Graph databases: "
+        },
+        {
+          "l": 29.85,
+          "t": 66.96,
+          "w": 66.29,
+          "h": 4.49,
+          "text": " Store data as nodes and edges to map highly connected "
+        },
+        {
+          "l": 9.56,
+          "t": 73.09,
+          "w": 42.08,
+          "h": 4.49,
+          "text": "relationships. One example is Neo4j."
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_020.webp",
+      "text": "NoSQL Databases\r\nTypes of NoSQL databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        },
+        {
+          "l": 4.4,
+          "t": 24.0,
+          "w": 32.56,
+          "h": 4.51,
+          "text": "Types of NoSQL databases"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_021.webp",
+      "text": "NoSQL Databases\r\nAdvantages of NoSQL databases\r\n\u25cf High flexibility\r\n\u25cf High scalability\r\n\u25cf High performance\r\n\u25cf High availability\r\n\u25cf Supports diverse data types",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        },
+        {
+          "l": 4.35,
+          "t": 24.0,
+          "w": 40.05,
+          "h": 4.51,
+          "text": "Advantages of NoSQL databases"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.13,
+          "w": 16.13,
+          "h": 4.52,
+          "text": "High flexibility"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 17.12,
+          "h": 4.49,
+          "text": "High scalability"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.4,
+          "w": 20.78,
+          "h": 4.51,
+          "text": "High performance"
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.56,
+          "w": 17.99,
+          "h": 4.49,
+          "text": "High availability"
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 54.69,
+          "w": 32.14,
+          "h": 4.49,
+          "text": "Supports diverse data types"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_022.webp",
+      "text": "NoSQL Databases\r\nTrade-offs\r\n\u25cf Less structure: Querying complex data can be more challenging. \r\n\u25cf Limited ACID compliance: Some NoSQL systems prioritize speed over \r\nstrict consistency. \r\n\u25cf Younger ecosystem: SQL databases offer more mature tools and \r\ndocumentation. \r\n\u25cf Higher management needs: Indexing and optimization often require \r\nmanual tuning.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        },
+        {
+          "l": 4.4,
+          "t": 24.0,
+          "w": 12.53,
+          "h": 3.49,
+          "text": "Trade-offs"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.36,
+          "w": 16.64,
+          "h": 3.28,
+          "text": "Less structure: "
+        },
+        {
+          "l": 26.43,
+          "t": 30.16,
+          "w": 58.04,
+          "h": 4.49,
+          "text": " Querying complex data can be more challenging. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 29.2,
+          "h": 4.48,
+          "text": "Limited ACID compliance: "
+        },
+        {
+          "l": 39.01,
+          "t": 36.29,
+          "w": 51.19,
+          "h": 4.49,
+          "text": " Some NoSQL systems prioritize speed over "
+        },
+        {
+          "l": 9.47,
+          "t": 42.53,
+          "w": 21.16,
+          "h": 4.38,
+          "text": "strict consistency. "
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 48.76,
+          "w": 23.2,
+          "h": 4.29,
+          "text": "Younger ecosystem: "
+        },
+        {
+          "l": 32.75,
+          "t": 48.53,
+          "w": 52.24,
+          "h": 4.2,
+          "text": " SQL databases offer more mature tools and "
+        },
+        {
+          "l": 9.49,
+          "t": 54.69,
+          "w": 19.0,
+          "h": 3.48,
+          "text": "documentation. "
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.82,
+          "w": 31.88,
+          "h": 4.49,
+          "text": "Higher management needs: "
+        },
+        {
+          "l": 41.68,
+          "t": 60.8,
+          "w": 47.63,
+          "h": 4.51,
+          "text": " Indexing and optimization often require "
+        },
+        {
+          "l": 9.56,
+          "t": 66.96,
+          "w": 17.16,
+          "h": 4.49,
+          "text": "manual tuning."
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_023.webp",
+      "text": "NoSQL Databases: Key-Value Stores\r\n\u25cf Key-value databases store data as pairs of keys and values. \r\n\u25cf Each key is a unique identifier (like a name, ID, or reference number) \r\n\u25cf and is associated with a value, which can be anything from a simple string \r\nto a more complex data structure, such as an object or a list.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.68,
+          "h": 7.46,
+          "text": "NoSQL Databases: Key-Value Stores"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 68.83,
+          "h": 4.52,
+          "text": "Key-value databases store data as pairs of keys and values. "
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.13,
+          "w": 79.85,
+          "h": 4.52,
+          "text": "Each key is a unique identifier (like a name, ID, or reference number) "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 36.27,
+          "w": 86.1,
+          "h": 4.52,
+          "text": "and is associated with a value, which can be anything from a simple string "
+        },
+        {
+          "l": 9.39,
+          "t": 42.42,
+          "w": 69.96,
+          "h": 4.49,
+          "text": "to a more complex data structure, such as an object or a list."
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_024.webp",
+      "text": "NoSQL Databases: Key-Value Stores\r\n\u25cf To retrieve data, the database management system looks up the value \r\nusing the associated key. \r\n\u25cf For example, you request the value for \"K2.\" The database applies a hash \r\nfunction to that key, retrieves the value from the computed location, and \r\nreturns the value \"AAA, BBB.\"\r\n\u25cf Key-value databases are optimized for fast, efficient, and simple lookups\r\nby key, but they are limited when it comes to complex query operations. \r\n\u25cf For example, you can\u2019t filter the values based on attributes like \u201cfind all \r\nusers with ages greater than 30\u201d because the system only stores and \r\nretrieves data based on the unique key.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.68,
+          "h": 7.46,
+          "text": "NoSQL Databases: Key-Value Stores"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 24.02,
+          "w": 82.33,
+          "h": 4.49,
+          "text": "To retrieve data, the database management system looks up the value "
+        },
+        {
+          "l": 9.55,
+          "t": 30.16,
+          "w": 29.38,
+          "h": 4.49,
+          "text": "using the associated key. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 85.18,
+          "h": 4.52,
+          "text": "For example, you request the value for \"K2.\" The database applies a hash "
+        },
+        {
+          "l": 9.38,
+          "t": 42.4,
+          "w": 85.08,
+          "h": 4.52,
+          "text": "function to that key, retrieves the value from the computed location, and "
+        },
+        {
+          "l": 9.56,
+          "t": 48.56,
+          "w": 33.7,
+          "h": 4.0,
+          "text": "returns the value \"AAA, BBB.\""
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.67,
+          "w": 44.83,
+          "h": 4.52,
+          "text": "Key-value databases are optimized for "
+        },
+        {
+          "l": 54.52,
+          "t": 54.67,
+          "w": 38.74,
+          "h": 4.51,
+          "text": "fast, efficient, and simple lookups"
+        },
+        {
+          "l": 9.56,
+          "t": 60.82,
+          "w": 84.22,
+          "h": 4.49,
+          "text": "by key, but they are limited when it comes to complex query operations. "
+        },
+        {
+          "l": 5.55,
+          "t": 68.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 66.93,
+          "w": 82.39,
+          "h": 4.52,
+          "text": "For example, you can\u2019t filter the values based on attributes like \u201cfind all "
+        },
+        {
+          "l": 9.55,
+          "t": 73.09,
+          "w": 80.03,
+          "h": 4.49,
+          "text": "users with ages greater than 30\u201d because the system only stores and "
+        },
+        {
+          "l": 9.56,
+          "t": 79.22,
+          "w": 45.56,
+          "h": 4.49,
+          "text": "retrieves data based on the unique key."
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_025.webp",
+      "text": "NoSQL Databases: Key-Value Stores\r\nKey-value database use cases\r\nKey-value databases excel due to their flexibility and speed in various scenarios.\r\nPopular Key-value databases: Redis, Memcached, RocksDB, Hazelcast, Valkey",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.68,
+          "h": 7.46,
+          "text": "NoSQL Databases: Key-Value Stores"
+        },
+        {
+          "l": 4.55,
+          "t": 23.96,
+          "w": 33.67,
+          "h": 4.15,
+          "text": "Key-value database use cases"
+        },
+        {
+          "l": 4.57,
+          "t": 29.12,
+          "w": 85.36,
+          "h": 4.18,
+          "text": "Key-value databases excel due to their flexibility and speed in various scenarios."
+        },
+        {
+          "l": 4.57,
+          "t": 73.92,
+          "w": 35.43,
+          "h": 4.38,
+          "text": "Popular Key-value databases: "
+        },
+        {
+          "l": 40.15,
+          "t": 73.92,
+          "w": 53.76,
+          "h": 4.39,
+          "text": " Redis, Memcached, RocksDB, Hazelcast, Valkey"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_026.webp",
+      "text": "NoSQL Databases: Column-Oriented Databases\r\n\u25cf \u0421olumn-oriented (or wide-column) databases store data column by \r\ncolumn rather than rows, organizing related information in column \r\nfamilies. \r\n\u25cf Unlike SQL databases, the structure of these columns doesn\u2019t have to be \r\nconsistent across rows. \r\n\u25cf Each row within a family can have a completely different number of \r\ncolumns. \r\n\u25cf This flexibility allows column-oriented databases to handle large amounts \r\nof data with varying schemas.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 74.26,
+          "h": 7.46,
+          "text": "NoSQL Databases: Column-Oriented Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.02,
+          "w": 78.39,
+          "h": 4.49,
+          "text": "\u0421olumn-oriented (or wide-column) databases store data column by "
+        },
+        {
+          "l": 9.49,
+          "t": 30.13,
+          "w": 78.31,
+          "h": 4.51,
+          "text": "column rather than rows, organizing related information in column "
+        },
+        {
+          "l": 9.38,
+          "t": 36.27,
+          "w": 10.29,
+          "h": 3.51,
+          "text": "families. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 42.4,
+          "w": 84.54,
+          "h": 4.2,
+          "text": "Unlike SQL databases, the structure of these columns doesn\u2019t have to be "
+        },
+        {
+          "l": 9.49,
+          "t": 48.67,
+          "w": 27.55,
+          "h": 3.37,
+          "text": "consistent across rows. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.67,
+          "w": 78.65,
+          "h": 4.52,
+          "text": "Each row within a family can have a completely different number of "
+        },
+        {
+          "l": 9.49,
+          "t": 60.82,
+          "w": 11.06,
+          "h": 3.48,
+          "text": "columns. "
+        },
+        {
+          "l": 5.55,
+          "t": 68.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 66.93,
+          "w": 86.03,
+          "h": 4.52,
+          "text": "This flexibility allows column-oriented databases to handle large amounts "
+        },
+        {
+          "l": 9.49,
+          "t": 73.07,
+          "w": 34.08,
+          "h": 4.52,
+          "text": "of data with varying schemas."
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_027.webp",
+      "text": "NoSQL Databases: Column-Oriented Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 74.26,
+          "h": 7.46,
+          "text": "NoSQL Databases: Column-Oriented Databases"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_028.webp",
+      "text": "NoSQL Databases: Column-Oriented Databases\r\nFrom the image above, the data is organized as follows.\r\n\"1\" is the partition key, which uniquely identifies the row.\r\n\"Book ID\" is the sort key, which organizes data within a partition.\r\n\"1984,\" \u201cGeorge Orwell,\u201d and \u201c1949\u201d are attributes that store additional data associated \r\nwith the row. A new attribute or column can be added to a row without requiring all \r\nrows to include it.\r\nWide-column databases support complex queries like filtering, grouping, and \r\naggregating over massive datasets with millions or billions of rows.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 74.26,
+          "h": 7.46,
+          "text": "NoSQL Databases: Column-Oriented Databases"
+        },
+        {
+          "l": 4.59,
+          "t": 24.0,
+          "w": 63.98,
+          "h": 4.51,
+          "text": "From the image above, the data is organized as follows."
+        },
+        {
+          "l": 4.49,
+          "t": 33.01,
+          "w": 58.35,
+          "h": 4.01,
+          "text": "\"1\" is the partition key, which uniquely identifies the row."
+        },
+        {
+          "l": 4.49,
+          "t": 41.44,
+          "w": 66.2,
+          "h": 3.99,
+          "text": "\"Book ID\" is the sort key, which organizes data within a partition."
+        },
+        {
+          "l": 4.49,
+          "t": 49.86,
+          "w": 90.05,
+          "h": 3.99,
+          "text": "\"1984,\" \u201cGeorge Orwell,\u201d and \u201c1949\u201d are attributes that store additional data associated "
+        },
+        {
+          "l": 4.37,
+          "t": 55.31,
+          "w": 86.77,
+          "h": 3.99,
+          "text": "with the row. A new attribute or column can be added to a row without requiring all "
+        },
+        {
+          "l": 4.54,
+          "t": 60.76,
+          "w": 17.97,
+          "h": 3.1,
+          "text": "rows to include it."
+        },
+        {
+          "l": 4.38,
+          "t": 69.27,
+          "w": 28.53,
+          "h": 3.47,
+          "text": "Wide-column databases "
+        },
+        {
+          "l": 33.07,
+          "t": 69.27,
+          "w": 28.84,
+          "h": 4.48,
+          "text": "support complex queries "
+        },
+        {
+          "l": 62.04,
+          "t": 69.25,
+          "w": 32.34,
+          "h": 4.51,
+          "text": " like filtering, grouping, and "
+        },
+        {
+          "l": 4.46,
+          "t": 75.38,
+          "w": 77.08,
+          "h": 4.51,
+          "text": "aggregating over massive datasets with millions or billions of rows."
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_029.webp",
+      "text": "NoSQL Databases: Column-Oriented Databases\r\nColumn-Oriented database use cases\r\nColumn-oriented databases are particularly useful in analytical and large-scale applications.\r\nPopular Column-Oriented databases: Apache Cassandra, Apache HBase,\r\nApache Druid, ScyllaDB",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 74.26,
+          "h": 7.46,
+          "text": "NoSQL Databases: Column-Oriented Databases"
+        },
+        {
+          "l": 3.2,
+          "t": 24.02,
+          "w": 45.9,
+          "h": 3.47,
+          "text": "Column-Oriented database use cases"
+        },
+        {
+          "l": 3.19,
+          "t": 30.04,
+          "w": 94.08,
+          "h": 4.01,
+          "text": "Column-oriented databases are particularly useful in analytical and large-scale applications."
+        },
+        {
+          "l": 3.28,
+          "t": 67.61,
+          "w": 46.5,
+          "h": 4.49,
+          "text": "Popular Column-Oriented databases: "
+        },
+        {
+          "l": 49.81,
+          "t": 67.61,
+          "w": 39.94,
+          "h": 4.48,
+          "text": "Apache Cassandra, Apache HBase,"
+        },
+        {
+          "l": 3.06,
+          "t": 75.07,
+          "w": 26.85,
+          "h": 4.49,
+          "text": "Apache Druid, ScyllaDB"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_030.webp",
+      "text": "NoSQL Databases: Document Databases\r\n\u25cf Document databases store, manage, and retrieve data in the form of \r\ndocuments (in JSON, BSON, or XML formats). \r\n\u25cf Each document is identified by a unique key (similar to the key in a \r\nkey-value store) and contains relevant information about a particular \r\nentity (for example, product order). \r\n\u25cf Data within each document can be organized in nested fields, arrays, and \r\nother structures.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 63.17,
+          "h": 7.46,
+          "text": "NoSQL Databases: Document Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 80.28,
+          "h": 4.51,
+          "text": "Document databases store, manage, and retrieve data in the form of "
+        },
+        {
+          "l": 9.49,
+          "t": 30.13,
+          "w": 52.38,
+          "h": 4.28,
+          "text": "documents (in JSON, BSON, or XML formats). "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 77.61,
+          "h": 4.52,
+          "text": "Each document is identified by a unique key (similar to the key in a "
+        },
+        {
+          "l": 9.56,
+          "t": 42.4,
+          "w": 80.38,
+          "h": 4.52,
+          "text": "key-value store) and contains relevant information about a particular "
+        },
+        {
+          "l": 9.49,
+          "t": 48.53,
+          "w": 41.47,
+          "h": 4.52,
+          "text": "entity (for example, product order). "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.67,
+          "w": 85.46,
+          "h": 4.52,
+          "text": "Data within each document can be organized in nested fields, arrays, and "
+        },
+        {
+          "l": 9.49,
+          "t": 60.82,
+          "w": 19.19,
+          "h": 3.48,
+          "text": "other structures."
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_031.webp",
+      "text": "NoSQL Databases: Document Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 63.17,
+          "h": 7.46,
+          "text": "NoSQL Databases: Document Databases"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_032.webp",
+      "text": "NoSQL Databases: Document Databases\r\n\u25cf Documents have no predefined schema, allowing for flexibility in how \r\ndata is represented.\r\n\u25cf For example, in an SQL database, a \"patients\" table would require all \r\nrecords to have the same columns, such as \"name,\" \"age,\" and \"address.\" \r\n\u25cf In a document, each patient's record can be customized\u2014some may \r\ninclude additional fields like \"allergies\" or \"ongoing treatments.\"",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 63.17,
+          "h": 7.46,
+          "text": "NoSQL Databases: Document Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 81.15,
+          "h": 4.52,
+          "text": "Documents have no predefined schema, allowing for flexibility in how "
+        },
+        {
+          "l": 9.49,
+          "t": 30.16,
+          "w": 22.96,
+          "h": 4.48,
+          "text": "data is represented."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 79.97,
+          "h": 4.48,
+          "text": "For example, in an SQL database, a \"patients\" table would require all "
+        },
+        {
+          "l": 9.56,
+          "t": 42.42,
+          "w": 85.46,
+          "h": 4.49,
+          "text": "records to have the same columns, such as \"name,\" \"age,\" and \"address.\" "
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.56,
+          "w": 79.84,
+          "h": 4.49,
+          "text": "In a document, each patient's record can be customized\u2014some may "
+        },
+        {
+          "l": 9.54,
+          "t": 54.67,
+          "w": 73.6,
+          "h": 4.51,
+          "text": "include additional fields like \"allergies\" or \"ongoing treatments.\""
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_033.webp",
+      "text": "NoSQL Databases: Document Databases\r\n\u25cf Document databases allow you to query information not just by the \r\nunique identifier (like the key in key-value databases) but also by the \r\ninternal content. \r\n\u25cf You can apply conditions or filters to your queries. \r\n\u25cf For example, you can find all users within a certain age group or of a \r\ncertain status.\r\n\u25cf Document databases also support aggregation operations (calculating, \r\ngrouping, and summarizing data) and indexing (locating and retrieving \r\ndocuments based on the indexed fields).",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 63.17,
+          "h": 7.46,
+          "text": "NoSQL Databases: Document Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 78.99,
+          "h": 4.52,
+          "text": "Document databases allow you to query information not just by the "
+        },
+        {
+          "l": 9.55,
+          "t": 30.13,
+          "w": 79.75,
+          "h": 4.52,
+          "text": "unique identifier (like the key in key-value databases) but also by the "
+        },
+        {
+          "l": 9.54,
+          "t": 36.29,
+          "w": 19.73,
+          "h": 3.48,
+          "text": "internal content. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 42.4,
+          "w": 59.02,
+          "h": 4.52,
+          "text": "You can apply conditions or filters to your queries. "
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.53,
+          "w": 79.74,
+          "h": 4.52,
+          "text": "For example, you can find all users within a certain age group or of a "
+        },
+        {
+          "l": 9.49,
+          "t": 54.8,
+          "w": 16.12,
+          "h": 3.37,
+          "text": "certain status."
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.82,
+          "w": 82.41,
+          "h": 4.49,
+          "text": "Document databases also support aggregation operations (calculating, "
+        },
+        {
+          "l": 9.38,
+          "t": 66.96,
+          "w": 82.14,
+          "h": 4.49,
+          "text": "grouping, and summarizing data) and indexing (locating and retrieving "
+        },
+        {
+          "l": 9.49,
+          "t": 73.07,
+          "w": 46.84,
+          "h": 4.15,
+          "text": "documents based on the indexed fields)."
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_034.webp",
+      "text": "NoSQL Databases: Document Databases\r\nDocument database use cases\r\nPopular Document databases: MongoDB, Apache CouchDB, Firebase\r\nFirestore, Amazon DocumentDB",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 63.17,
+          "h": 7.46,
+          "text": "NoSQL Databases: Document Databases"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 37.21,
+          "h": 3.47,
+          "text": "Document database use cases"
+        },
+        {
+          "l": 4.57,
+          "t": 62.16,
+          "w": 37.1,
+          "h": 4.49,
+          "text": "Popular Document databases: "
+        },
+        {
+          "l": 41.84,
+          "t": 62.16,
+          "w": 44.56,
+          "h": 4.49,
+          "text": " MongoDB, Apache CouchDB, Firebase"
+        },
+        {
+          "l": 4.59,
+          "t": 69.73,
+          "w": 37.0,
+          "h": 3.88,
+          "text": "Firestore, Amazon DocumentDB"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_035.webp",
+      "text": "NoSQL Databases: Graph Databases\r\n\u25cf Graph databases are designed to store, manage, and query data in the \r\nform of graphs that consist of nodes and edges",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.35,
+          "h": 7.46,
+          "text": "NoSQL Databases: Graph Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.02,
+          "w": 82.6,
+          "h": 4.49,
+          "text": "Graph databases are designed to store, manage, and query data in the "
+        },
+        {
+          "l": 9.38,
+          "t": 30.13,
+          "w": 54.72,
+          "h": 4.51,
+          "text": "form of graphs that consist of nodes and edges"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_036.webp",
+      "text": "NoSQL Databases: Graph Databases\r\nGraph components:\r\n\u25cf Nodes (or vertices) represent entities (e.g., people, products, locations).\r\n\u25cf Edges are the relationships between nodes (e.g., \"friend with,\" \"purchased \r\nfrom,\" \"located at\").\r\n\u25cf Properties store additional information (e.g., a \"friend with\" relationship \r\ncould have a \"since\" property to indicate when the relationship was \r\nestablished).\r\nAn edge always has a start node, end node, type, and direction. It can describe \r\nparent-child relationships, actions, ownership, and the like. There is no limit to \r\nthe number and kind of relationships a node can have.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.35,
+          "h": 7.46,
+          "text": "NoSQL Databases: Graph Databases"
+        },
+        {
+          "l": 4.5,
+          "t": 24.02,
+          "w": 22.84,
+          "h": 4.48,
+          "text": "Graph components:"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.16,
+          "w": 82.15,
+          "h": 4.49,
+          "text": "Nodes (or vertices) represent entities (e.g., people, products, locations)."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 86.37,
+          "h": 4.51,
+          "text": "Edges are the relationships between nodes (e.g., \"friend with,\" \"purchased "
+        },
+        {
+          "l": 9.38,
+          "t": 42.4,
+          "w": 22.59,
+          "h": 4.15,
+          "text": "from,\" \"located at\")."
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.53,
+          "w": 83.74,
+          "h": 4.51,
+          "text": "Properties store additional information (e.g., a \"friend with\" relationship "
+        },
+        {
+          "l": 9.49,
+          "t": 54.69,
+          "w": 78.62,
+          "h": 4.49,
+          "text": "could have a \"since\" property to indicate when the relationship was "
+        },
+        {
+          "l": 9.49,
+          "t": 60.82,
+          "w": 14.38,
+          "h": 4.12,
+          "text": "established)."
+        },
+        {
+          "l": 4.35,
+          "t": 69.92,
+          "w": 91.6,
+          "h": 4.49,
+          "text": "An edge always has a start node, end node, type, and direction. It can describe "
+        },
+        {
+          "l": 4.56,
+          "t": 76.05,
+          "w": 91.21,
+          "h": 4.48,
+          "text": "parent-child relationships, actions, ownership, and the like. There is no limit to "
+        },
+        {
+          "l": 4.39,
+          "t": 82.16,
+          "w": 63.31,
+          "h": 4.51,
+          "text": "the number and kind of relationships a node can have."
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_037.webp",
+      "text": "NoSQL Databases: Graph Databases\r\n\u25cf One of the key features of graph databases is their ability to efficiently \r\ntraverse relationships between nodes. \r\n\u25cf For example, if you want to find all users who are friends of friends of a \r\nparticular user, a graph database will allow you to follow the \"friendship\" \r\nedges. \r\n\u25cf A query will start at one node and follow a chain of relationships to reach \r\nother connected nodes.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.35,
+          "h": 7.46,
+          "text": "NoSQL Databases: Graph Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.0,
+          "w": 81.87,
+          "h": 4.52,
+          "text": "One of the key features of graph databases is their ability to efficiently "
+        },
+        {
+          "l": 9.39,
+          "t": 30.16,
+          "w": 45.08,
+          "h": 4.48,
+          "text": "traverse relationships between nodes. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 83.09,
+          "h": 4.52,
+          "text": "For example, if you want to find all users who are friends of friends of a "
+        },
+        {
+          "l": 9.56,
+          "t": 42.4,
+          "w": 84.76,
+          "h": 4.52,
+          "text": "particular user, a graph database will allow you to follow the \"friendship\" "
+        },
+        {
+          "l": 9.49,
+          "t": 48.56,
+          "w": 8.04,
+          "h": 4.49,
+          "text": "edges. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 54.67,
+          "w": 85.4,
+          "h": 4.52,
+          "text": "A query will start at one node and follow a chain of relationships to reach "
+        },
+        {
+          "l": 9.49,
+          "t": 60.82,
+          "w": 27.32,
+          "h": 3.48,
+          "text": "other connected nodes."
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_038.webp",
+      "text": "NoSQL Databases: Graph Databases\r\n\u25cf Graph databases excel at managing highly interconnected data and \r\n\u25cf allow for intuitive, flexible queries, making them powerful for modern \r\napplications involving complex relationships.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.35,
+          "h": 7.46,
+          "text": "NoSQL Databases: Graph Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.02,
+          "w": 78.79,
+          "h": 4.49,
+          "text": "Graph databases excel at managing highly interconnected data and "
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 30.13,
+          "w": 81.28,
+          "h": 4.51,
+          "text": "allow for intuitive, flexible queries, making them powerful for modern "
+        },
+        {
+          "l": 9.46,
+          "t": 36.29,
+          "w": 51.59,
+          "h": 4.49,
+          "text": "applications involving complex relationships."
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_039.webp",
+      "text": "NoSQL Databases: Graph Databases\r\nGraph database use cases\r\nPopular Graph databases: Neo4j, Amazon Neptune, JanusGraph",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 56.35,
+          "h": 7.46,
+          "text": "NoSQL Databases: Graph Databases"
+        },
+        {
+          "l": 4.49,
+          "t": 24.02,
+          "w": 31.99,
+          "h": 4.49,
+          "text": "Graph database use cases"
+        },
+        {
+          "l": 4.57,
+          "t": 68.29,
+          "w": 31.8,
+          "h": 4.49,
+          "text": "Popular Graph databases: "
+        },
+        {
+          "l": 36.53,
+          "t": 68.29,
+          "w": 43.77,
+          "h": 4.49,
+          "text": " Neo4j, Amazon Neptune, JanusGraph"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_040.webp",
+      "text": "NoSQL Databases: Multi-model Databases\r\n\u25cf Multi-model databases: Integrate multiple NoSQL database types into a \r\nsingle system to handle diverse data models and queries.\r\n\u25cf Multi-model databases support different ways of storing data (document, \r\nkey-value, graph, and wide-column) within the same system. \r\n\u25cf They allow applications to store data in the most convenient form, \r\nhandling only one repository. \r\n\u25cf For example, user data can be kept as documents and relations as \r\ngraphs.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 66.69,
+          "h": 7.46,
+          "text": "NoSQL Databases: Multi-model Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 24.02,
+          "w": 28.95,
+          "h": 3.48,
+          "text": "Multi-model databases: "
+        },
+        {
+          "l": 38.69,
+          "t": 24.02,
+          "w": 56.21,
+          "h": 4.49,
+          "text": " Integrate multiple NoSQL database types into a "
+        },
+        {
+          "l": 9.47,
+          "t": 30.16,
+          "w": 66.24,
+          "h": 4.49,
+          "text": "single system to handle diverse data models and queries."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 85.55,
+          "h": 4.52,
+          "text": "Multi-model databases support different ways of storing data (document, "
+        },
+        {
+          "l": 9.56,
+          "t": 42.42,
+          "w": 70.39,
+          "h": 4.49,
+          "text": "key-value, graph, and wide-column) within the same system. "
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 48.53,
+          "w": 77.44,
+          "h": 4.52,
+          "text": "They allow applications to store data in the most convenient form, "
+        },
+        {
+          "l": 9.56,
+          "t": 54.69,
+          "w": 34.45,
+          "h": 4.49,
+          "text": "handling only one repository. "
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.82,
+          "w": 77.35,
+          "h": 4.48,
+          "text": "For example, user data can be kept as documents and relations as "
+        },
+        {
+          "l": 9.38,
+          "t": 66.96,
+          "w": 8.45,
+          "h": 4.49,
+          "text": "graphs."
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_041.webp",
+      "text": "NoSQL Databases: Multi-model Databases\r\nPopular Multi-model databases: Amazon DynamoDB, Couchbase, Azure\r\nCosmos DB, ArangoDB\r\n\u25cf Amazon DynamoDB supports document and key-value models.\r\n\u25cf Couchbase combines the functionality of a document and key-value store\r\nwith built-in operational and analytical capabilities.\r\n\u25cf ArangoDB embraces graph, document, and key-value data models.\r\n\u25cf Azure Cosmos DB supports storing data in documents, key-value pairs,\r\nwide columns, and graphs.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 66.69,
+          "h": 7.46,
+          "text": "NoSQL Databases: Multi-model Databases"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 10.17,
+          "h": 4.49,
+          "text": "Popular "
+        },
+        {
+          "l": 14.97,
+          "t": 24.02,
+          "w": 14.81,
+          "h": 3.47,
+          "text": "Multi-model "
+        },
+        {
+          "l": 29.99,
+          "t": 24.02,
+          "w": 13.95,
+          "h": 3.48,
+          "text": " databases: "
+        },
+        {
+          "l": 44.09,
+          "t": 24.02,
+          "w": 46.01,
+          "h": 4.49,
+          "text": " Amazon DynamoDB, Couchbase, Azure"
+        },
+        {
+          "l": 4.5,
+          "t": 31.12,
+          "w": 26.15,
+          "h": 4.33,
+          "text": "Cosmos DB, ArangoDB"
+        },
+        {
+          "l": 5.55,
+          "t": 39.08,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 37.89,
+          "w": 73.32,
+          "h": 4.49,
+          "text": "Amazon DynamoDB supports document and key-value models."
+        },
+        {
+          "l": 5.55,
+          "t": 46.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 44.8,
+          "w": 85.0,
+          "h": 4.52,
+          "text": "Couchbase combines the functionality of a document and key-value store"
+        },
+        {
+          "l": 9.38,
+          "t": 51.76,
+          "w": 58.66,
+          "h": 4.49,
+          "text": "with built-in operational and analytical capabilities."
+        },
+        {
+          "l": 5.55,
+          "t": 59.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 58.69,
+          "w": 77.43,
+          "h": 4.49,
+          "text": "ArangoDB embraces graph, document, and key-value data models."
+        },
+        {
+          "l": 5.55,
+          "t": 66.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 65.62,
+          "w": 82.0,
+          "h": 4.49,
+          "text": "Azure Cosmos DB supports storing data in documents, key-value pairs,"
+        },
+        {
+          "l": 9.38,
+          "t": 72.56,
+          "w": 30.88,
+          "h": 4.49,
+          "text": "wide columns, and graphs."
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_042.webp",
+      "text": "NoSQL Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_043.webp",
+      "text": "NoSQL Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 27.6,
+          "h": 7.46,
+          "text": "NoSQL Databases"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_044.webp",
+      "text": "Most Popular NoSQL Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 49.63,
+          "h": 7.46,
+          "text": "Most Popular NoSQL Databases"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_045.webp",
+      "text": "BDA in Business Intelligence and Decision Support Systems\r\n\u25cf Big Data Analytics is not just about handling large datasets\u2014it\u2019s about \r\nturning raw data into strategic intelligence. \r\n\u25cf When integrated with BI and DSS, it empowers organizations to predict, \r\npersonalize, optimize, and innovate. \r\n\u25cf For businesses, adopting BDA-driven BI can enhance competitiveness in \r\nretail, finance, and healthcare sectors, where data-driven decisions are \r\nincreasingly critical.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 93.9,
+          "h": 7.49,
+          "text": "BDA in Business Intelligence and Decision Support Systems"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 81.33,
+          "h": 4.49,
+          "text": "Big Data Analytics is not just about handling large datasets\u2014it\u2019s about "
+        },
+        {
+          "l": 9.39,
+          "t": 30.16,
+          "w": 50.28,
+          "h": 4.49,
+          "text": "turning raw data into strategic intelligence. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 36.29,
+          "w": 83.62,
+          "h": 4.49,
+          "text": "When integrated with BI and DSS, it empowers organizations to predict, "
+        },
+        {
+          "l": 9.56,
+          "t": 42.42,
+          "w": 42.36,
+          "h": 4.48,
+          "text": "personalize, optimize, and innovate. "
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.56,
+          "w": 83.87,
+          "h": 4.49,
+          "text": "For businesses, adopting BDA-driven BI can enhance competitiveness in "
+        },
+        {
+          "l": 9.56,
+          "t": 54.67,
+          "w": 82.51,
+          "h": 4.02,
+          "text": "retail, finance, and healthcare sectors, where data-driven decisions are "
+        },
+        {
+          "l": 9.54,
+          "t": 60.82,
+          "w": 23.1,
+          "h": 4.49,
+          "text": "increasingly critical. "
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_046.webp",
+      "text": "BDA in Business Intelligence and Decision Support Systems\r\n\u25cf Big Data Analytics (BDA) is transforming Business Intelligence (BI) and \r\nDecision Support Systems (DSS) by \r\n\u25cb enabling organizations to uncover hidden insights, improve decision accuracy, \r\nreduce costs, and gain competitive advantage. \r\n\u25cf Its applications span finance, healthcare, manufacturing, retail, and \r\nbeyond, with AI-driven tools amplifying the impact.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 93.9,
+          "h": 7.49,
+          "text": "BDA in Business Intelligence and Decision Support Systems"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 80.91,
+          "h": 4.52,
+          "text": "Big Data Analytics (BDA) is transforming Business Intelligence (BI) and "
+        },
+        {
+          "l": 9.59,
+          "t": 30.16,
+          "w": 40.67,
+          "h": 4.49,
+          "text": "Decision Support Systems (DSS) by "
+        },
+        {
+          "l": 10.7,
+          "t": 37.25,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.47,
+          "t": 36.2,
+          "w": 80.94,
+          "h": 3.99,
+          "text": "enabling organizations to uncover hidden insights, improve decision accuracy, "
+        },
+        {
+          "l": 14.54,
+          "t": 41.65,
+          "w": 48.11,
+          "h": 3.99,
+          "text": "reduce costs, and gain competitive advantage. "
+        },
+        {
+          "l": 5.55,
+          "t": 48.38,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 47.17,
+          "w": 78.42,
+          "h": 4.51,
+          "text": "Its applications span finance, healthcare, manufacturing, retail, and "
+        },
+        {
+          "l": 9.56,
+          "t": 53.3,
+          "w": 58.54,
+          "h": 4.52,
+          "text": "beyond, with AI-driven tools amplifying the impact."
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_047.webp",
+      "text": "BDA in Business Intelligence and Decision Support Systems\r\n\u25cf Big Data Analytics (BDA) is transforming Business Intelligence (BI) and \r\nDecision Support Systems (DSS) by \r\n\u25cb enabling organizations to uncover hidden insights, improve decision accuracy, \r\nreduce costs, and gain competitive advantage. \r\n\u25cf Its applications span finance, healthcare, manufacturing, retail, and \r\nbeyond, with AI-driven tools amplifying the impact.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.26,
+          "t": 12.2,
+          "w": 93.9,
+          "h": 7.49,
+          "text": "BDA in Business Intelligence and Decision Support Systems"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 80.91,
+          "h": 4.52,
+          "text": "Big Data Analytics (BDA) is transforming Business Intelligence (BI) and "
+        },
+        {
+          "l": 9.59,
+          "t": 30.16,
+          "w": 40.67,
+          "h": 4.49,
+          "text": "Decision Support Systems (DSS) by "
+        },
+        {
+          "l": 10.7,
+          "t": 37.25,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.47,
+          "t": 36.2,
+          "w": 80.94,
+          "h": 3.99,
+          "text": "enabling organizations to uncover hidden insights, improve decision accuracy, "
+        },
+        {
+          "l": 14.54,
+          "t": 41.65,
+          "w": 48.11,
+          "h": 3.99,
+          "text": "reduce costs, and gain competitive advantage. "
+        },
+        {
+          "l": 5.55,
+          "t": 48.38,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 47.17,
+          "w": 78.42,
+          "h": 4.51,
+          "text": "Its applications span finance, healthcare, manufacturing, retail, and "
+        },
+        {
+          "l": 9.56,
+          "t": 53.3,
+          "w": 58.54,
+          "h": 4.52,
+          "text": "beyond, with AI-driven tools amplifying the impact."
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_048.webp",
+      "text": "Applications of Big Data Analytics in BI & DSS\r\n\u25cf BI \u2192 Focuses on reporting, visualization, and insights for operational and \r\ntactical decisions.\r\n\u25cf DSS \u2192 Focuses on structured decision-making support with simulations, \r\noptimization, and predictive modeling for strategic choices.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 6.08,
+          "t": 12.2,
+          "w": 72.8,
+          "h": 7.49,
+          "text": "Applications of Big Data Analytics in BI & DSS"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.23,
+          "w": 2.71,
+          "h": 3.22,
+          "text": "BI "
+        },
+        {
+          "l": 12.41,
+          "t": 25.52,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 14.81,
+          "t": 24.0,
+          "w": 79.97,
+          "h": 4.51,
+          "text": " Focuses on reporting, visualization, and insights for operational and "
+        },
+        {
+          "l": 9.39,
+          "t": 30.16,
+          "w": 20.09,
+          "h": 3.48,
+          "text": "tactical decisions."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.45,
+          "w": 4.96,
+          "h": 3.31,
+          "text": "DSS "
+        },
+        {
+          "l": 14.65,
+          "t": 37.79,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 17.05,
+          "t": 36.29,
+          "w": 76.92,
+          "h": 4.49,
+          "text": " Focuses on structured decision-making support with simulations, "
+        },
+        {
+          "l": 9.49,
+          "t": 42.4,
+          "w": 68.26,
+          "h": 4.51,
+          "text": "optimization, and predictive modeling for strategic choices."
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_049.webp",
+      "text": "Applications of Big Data Analytics in BI\r\n\u25cf Real-Time Dashboards: Continuous monitoring of KPIs (sales, customer \r\nengagement, supply chain metrics).\r\n\u25cf Predictive Analytics for Market Trends: Anticipating demand, seasonal \r\nfluctuations, and consumer behavior.\r\n\u25cf Customer Segmentation & Personalization: Using purchase history, \r\nbrowsing data, and social media to tailor offers.\r\n\u25cf Fraud Detection & Risk Monitoring: Identifying anomalies in transactions \r\nand user behavior.\r\n\u25cf Performance Benchmarking: Comparing business units, products, or \r\nregions using large-scale data.\r\n\u25cf Marketing Optimization: Tracking campaign effectiveness and adjusting \r\nstrategies dynamically.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 6.08,
+          "t": 12.23,
+          "w": 61.43,
+          "h": 7.46,
+          "text": "Applications of Big Data Analytics in BI"
+        },
+        {
+          "l": 5.55,
+          "t": 25.0,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 23.79,
+          "w": 82.97,
+          "h": 4.51,
+          "text": "Real-Time Dashboards: Continuous monitoring of KPIs (sales, customer "
+        },
+        {
+          "l": 9.49,
+          "t": 28.88,
+          "w": 40.81,
+          "h": 4.49,
+          "text": "engagement, supply chain metrics)."
+        },
+        {
+          "l": 5.55,
+          "t": 35.13,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 33.92,
+          "w": 81.34,
+          "h": 4.52,
+          "text": "Predictive Analytics for Market Trends: Anticipating demand, seasonal "
+        },
+        {
+          "l": 9.38,
+          "t": 38.99,
+          "w": 43.17,
+          "h": 4.02,
+          "text": "fluctuations, and consumer behavior."
+        },
+        {
+          "l": 5.55,
+          "t": 45.26,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 44.08,
+          "w": 78.37,
+          "h": 4.49,
+          "text": "Customer Segmentation & Personalization: Using purchase history, "
+        },
+        {
+          "l": 9.56,
+          "t": 49.12,
+          "w": 54.82,
+          "h": 4.51,
+          "text": "browsing data, and social media to tailor offers."
+        },
+        {
+          "l": 5.55,
+          "t": 55.4,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.19,
+          "w": 84.37,
+          "h": 4.52,
+          "text": "Fraud Detection & Risk Monitoring: Identifying anomalies in transactions "
+        },
+        {
+          "l": 9.46,
+          "t": 59.28,
+          "w": 21.5,
+          "h": 3.48,
+          "text": "and user behavior."
+        },
+        {
+          "l": 5.55,
+          "t": 65.53,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 64.32,
+          "w": 79.9,
+          "h": 4.51,
+          "text": "Performance Benchmarking: Comparing business units, products, or "
+        },
+        {
+          "l": 9.56,
+          "t": 69.41,
+          "w": 34.67,
+          "h": 4.49,
+          "text": "regions using large-scale data."
+        },
+        {
+          "l": 5.55,
+          "t": 75.66,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 74.45,
+          "w": 83.19,
+          "h": 4.51,
+          "text": "Marketing Optimization: Tracking campaign effectiveness and adjusting "
+        },
+        {
+          "l": 9.47,
+          "t": 79.54,
+          "w": 26.09,
+          "h": 4.49,
+          "text": "strategies dynamically."
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5-part3_pdf/thumb_050.webp",
+      "text": "Applications of Big Data Analytics in DSS\r\n\u25cf Scenario Modeling & Simulation: Testing \u201cwhat-if\u201d conditions (e.g., policy \r\nchanges, pricing strategies).\r\n\u25cf Resource Allocation Optimization: Deciding how to distribute staff, funds, \r\nor inventory efficiently.\r\n\u25cf Healthcare Decision Support: Predicting patient outcomes, supporting \r\ndiagnosis, and treatment planning.\r\n\u25cf Financial Portfolio Management: Integrating structured (stock prices) and \r\nunstructured (news sentiment) data.\r\n\u25cf Policy & Strategic Planning: Governments and enterprises simulate \r\nlong-term outcomes for urban planning, energy use, or climate strategies.\r\n\u25cf Crisis Management: Real-time DSS for disaster response, epidemic \r\ntracking, or supply chain disruptions.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 6.08,
+          "t": 12.2,
+          "w": 64.66,
+          "h": 7.49,
+          "text": "Applications of Big Data Analytics in DSS"
+        },
+        {
+          "l": 5.55,
+          "t": 25.0,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 23.79,
+          "w": 83.91,
+          "h": 4.52,
+          "text": "Scenario Modeling & Simulation: Testing \u201cwhat-if\u201d conditions (e.g., policy "
+        },
+        {
+          "l": 9.49,
+          "t": 28.88,
+          "w": 31.86,
+          "h": 4.49,
+          "text": "changes, pricing strategies)."
+        },
+        {
+          "l": 5.55,
+          "t": 35.13,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 33.92,
+          "w": 85.31,
+          "h": 4.51,
+          "text": "Resource Allocation Optimization: Deciding how to distribute staff, funds, "
+        },
+        {
+          "l": 9.49,
+          "t": 38.99,
+          "w": 26.4,
+          "h": 4.52,
+          "text": "or inventory efficiently."
+        },
+        {
+          "l": 5.55,
+          "t": 45.26,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 44.08,
+          "w": 81.73,
+          "h": 4.49,
+          "text": "Healthcare Decision Support: Predicting patient outcomes, supporting "
+        },
+        {
+          "l": 9.49,
+          "t": 49.14,
+          "w": 40.17,
+          "h": 4.49,
+          "text": "diagnosis, and treatment planning."
+        },
+        {
+          "l": 5.55,
+          "t": 55.4,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.19,
+          "w": 85.15,
+          "h": 4.51,
+          "text": "Financial Portfolio Management: Integrating structured (stock prices) and "
+        },
+        {
+          "l": 9.55,
+          "t": 59.28,
+          "w": 41.99,
+          "h": 4.12,
+          "text": "unstructured (news sentiment) data."
+        },
+        {
+          "l": 5.55,
+          "t": 65.53,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 64.34,
+          "w": 77.85,
+          "h": 4.49,
+          "text": "Policy & Strategic Planning: Governments and enterprises simulate "
+        },
+        {
+          "l": 9.56,
+          "t": 69.39,
+          "w": 85.26,
+          "h": 4.52,
+          "text": "long-term outcomes for urban planning, energy use, or climate strategies."
+        },
+        {
+          "l": 5.55,
+          "t": 75.66,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 74.45,
+          "w": 77.56,
+          "h": 4.51,
+          "text": "Crisis Management: Real-time DSS for disaster response, epidemic "
+        },
+        {
+          "l": 9.39,
+          "t": 79.54,
+          "w": 42.63,
+          "h": 4.49,
+          "text": "tracking, or supply chain disruptions."
+        }
+      ]
+    }
+  ]
+}

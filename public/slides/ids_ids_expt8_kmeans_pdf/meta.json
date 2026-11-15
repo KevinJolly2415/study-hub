@@ -1,0 +1,1327 @@
+{
+  "mtime": 1791273215.0880034,
+  "aspectRatio": 0.77,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_expt8_kmeans_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_expt8_kmeans_pdf/thumb_001.webp",
+      "text": "St. Francis Institute of Technology, Mumbai-400 103\r\nDepartment of Information Technology\r\nA.Y. 2026-2027\r\nClass: TE-ITA/B, Semester: V\r\nSubject: Intelligent Data Systems-1 Lab\r\nExperiment \u2013 8: Implementation of Clustering Algorithm \u2013 K-Means for Unsupervised Learning\r\n1. Aim:\r\nTo implement the K-Means clustering algorithm for unsupervised learning using the Iris dataset, using \r\nEuclidean distance for cluster assignment and centroid updating for cluster formation.\r\n2. Objectives: \uf0b7 Understand the concept of unsupervised learning and clustering. \uf0b7 Understand the working principle of the K-Means clustering algorithm. \uf0b7 Calculate Euclidean distance between observations and cluster centroids. \uf0b7 Assign observations to the nearest centroid. \uf0b7 Recalculate centroids using the mean of observations in each cluster. \uf0b7 Repeat the assignment and centroid-update process until convergence. \uf0b7 Visualize and interpret the resulting clusters using the Iris dataset.\r\n3. Outcomes:\r\nAfter study of this experiment, the student will be able to\r\n\uf0b7 Explain the concept of unsupervised learning and clustering. \uf0b7 Describe the steps involved in the K-Means algorithm. \uf0b7 Apply Euclidean distance to assign observations to the nearest cluster. \uf0b7 Calculate and update cluster centroids. \uf0b7 Implement K-Means clustering using Python and Scikit-learn. \uf0b7 Visualize and interpret clusters obtained from the Iris dataset.\r\n4. Prerequisite:\r\nFundamentals of Python Programming and basic knowledge of NumPy, Pandas and data visualization.\r\n5. Requirements:\r\nGoogle Colab Notebook and the Iris dataset.\r\n6. Pre-Experiment Exercise:\r\nBrief Theory:",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 28.04,
+          "t": 6.28,
+          "w": 43.88,
+          "h": 1.37,
+          "text": "St. Francis Institute of Technology, Mumbai-400 103"
+        },
+        {
+          "l": 33.44,
+          "t": 9.55,
+          "w": 33.11,
+          "h": 1.37,
+          "text": "Department of Information Technology"
+        },
+        {
+          "l": 43.62,
+          "t": 12.82,
+          "w": 12.74,
+          "h": 1.06,
+          "text": "A.Y. 2026-2027"
+        },
+        {
+          "l": 37.39,
+          "t": 16.08,
+          "w": 25.26,
+          "h": 1.3,
+          "text": "Class: TE-ITA/B, Semester: V"
+        },
+        {
+          "l": 33.44,
+          "t": 19.35,
+          "w": 33.13,
+          "h": 1.37,
+          "text": "Subject: Intelligent Data Systems-1 Lab"
+        },
+        {
+          "l": 9.6,
+          "t": 22.61,
+          "w": 80.75,
+          "h": 1.37,
+          "text": "Experiment \u2013 8: Implementation of Clustering Algorithm \u2013 K-Means for Unsupervised Learning"
+        },
+        {
+          "l": 8.95,
+          "t": 25.88,
+          "w": 5.91,
+          "h": 1.06,
+          "text": "1. Aim:"
+        },
+        {
+          "l": 8.88,
+          "t": 29.12,
+          "w": 80.85,
+          "h": 1.39,
+          "text": "To implement the K-Means clustering algorithm for unsupervised learning using the Iris dataset, using "
+        },
+        {
+          "l": 8.86,
+          "t": 31.12,
+          "w": 67.11,
+          "h": 1.39,
+          "text": "Euclidean distance for cluster assignment and centroid updating for cluster formation."
+        },
+        {
+          "l": 8.87,
+          "t": 34.41,
+          "w": 11.21,
+          "h": 1.37,
+          "text": "2. Objectives: "
+        },
+        {
+          "l": 8.93,
+          "t": 38.12,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.77,
+          "t": 37.77,
+          "w": 50.23,
+          "h": 1.39,
+          "text": "Understand the concept of unsupervised learning and clustering. "
+        },
+        {
+          "l": 8.93,
+          "t": 40.26,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.77,
+          "t": 39.91,
+          "w": 55.84,
+          "h": 1.39,
+          "text": "Understand the working principle of the K-Means clustering algorithm. "
+        },
+        {
+          "l": 8.93,
+          "t": 42.39,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 42.04,
+          "w": 57.01,
+          "h": 1.09,
+          "text": "Calculate Euclidean distance between observations and cluster centroids. "
+        },
+        {
+          "l": 8.93,
+          "t": 44.53,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.78,
+          "t": 44.17,
+          "w": 34.01,
+          "h": 1.39,
+          "text": "Assign observations to the nearest centroid. "
+        },
+        {
+          "l": 8.93,
+          "t": 46.66,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 46.31,
+          "w": 53.78,
+          "h": 1.39,
+          "text": "Recalculate centroids using the mean of observations in each cluster. "
+        },
+        {
+          "l": 8.93,
+          "t": 48.8,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 48.44,
+          "w": 54.88,
+          "h": 1.39,
+          "text": "Repeat the assignment and centroid-update process until convergence. "
+        },
+        {
+          "l": 8.93,
+          "t": 50.93,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.78,
+          "t": 50.58,
+          "w": 51.52,
+          "h": 1.39,
+          "text": "Visualize and interpret the resulting clusters using the Iris dataset."
+        },
+        {
+          "l": 8.85,
+          "t": 52.88,
+          "w": 10.8,
+          "h": 1.06,
+          "text": "3. Outcomes:"
+        },
+        {
+          "l": 8.84,
+          "t": 56.12,
+          "w": 44.69,
+          "h": 1.39,
+          "text": "After study of this experiment, the student will be able to"
+        },
+        {
+          "l": 8.93,
+          "t": 59.85,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.81,
+          "t": 59.5,
+          "w": 47.26,
+          "h": 1.39,
+          "text": "Explain the concept of unsupervised learning and clustering. "
+        },
+        {
+          "l": 8.93,
+          "t": 61.99,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 61.63,
+          "w": 42.7,
+          "h": 1.39,
+          "text": "Describe the steps involved in the K-Means algorithm. "
+        },
+        {
+          "l": 8.93,
+          "t": 64.12,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.78,
+          "t": 63.77,
+          "w": 54.9,
+          "h": 1.39,
+          "text": "Apply Euclidean distance to assign observations to the nearest cluster. "
+        },
+        {
+          "l": 8.93,
+          "t": 66.26,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 65.9,
+          "w": 30.08,
+          "h": 1.39,
+          "text": "Calculate and update cluster centroids. "
+        },
+        {
+          "l": 8.93,
+          "t": 68.39,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.81,
+          "t": 68.04,
+          "w": 48.51,
+          "h": 1.39,
+          "text": "Implement K-Means clustering using Python and Scikit-learn. "
+        },
+        {
+          "l": 8.93,
+          "t": 70.53,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.78,
+          "t": 70.17,
+          "w": 48.09,
+          "h": 1.39,
+          "text": "Visualize and interpret clusters obtained from the Iris dataset."
+        },
+        {
+          "l": 8.87,
+          "t": 72.47,
+          "w": 12.62,
+          "h": 1.37,
+          "text": "4. Prerequisite:"
+        },
+        {
+          "l": 8.85,
+          "t": 75.71,
+          "w": 80.37,
+          "h": 1.39,
+          "text": "Fundamentals of Python Programming and basic knowledge of NumPy, Pandas and data visualization."
+        },
+        {
+          "l": 8.89,
+          "t": 79.0,
+          "w": 14.13,
+          "h": 1.37,
+          "text": "5. Requirements:"
+        },
+        {
+          "l": 8.89,
+          "t": 82.24,
+          "w": 34.67,
+          "h": 1.39,
+          "text": "Google Colab Notebook and the Iris dataset."
+        },
+        {
+          "l": 8.9,
+          "t": 85.53,
+          "w": 23.42,
+          "h": 1.37,
+          "text": "6. Pre-Experiment Exercise:"
+        },
+        {
+          "l": 8.86,
+          "t": 88.8,
+          "w": 11.27,
+          "h": 1.37,
+          "text": "Brief Theory:"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_expt8_kmeans_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_expt8_kmeans_pdf/thumb_002.webp",
+      "text": "Unsupervised learning is a machine learning approach in which the algorithm learns patterns or \r\nstructures from data without using target labels during training. Clustering is an unsupervised learning \r\ntechnique that groups similar observations into clusters.\r\nK-Means is a clustering algorithm that partitions observations into K clusters. Each cluster is \r\nrepresented by a centroid. An observation is assigned to the cluster whose centroid is nearest to the \r\nobservation. The centroid is then recalculated as the mean of all observations assigned to that cluster. \r\nThese steps are repeated until the centroids converge or the change in centroids becomes sufficiently \r\nsmall.\r\nEuclidean Distance:\r\nEuclidean distance measures the straight-line distance between an observation and a centroid. For an \r\nobservation X = (x , x , \u2026, x ) and centroid C = (c , c , \u2026, c ):\r\nd(X, C) = \u221a[(x \u2212 c )\u00b2 + (x \u2212 c )\u00b2 + \u2026 + (x \u2212 c )\u00b2]\r\nCentroid:\r\nThe centroid of a cluster is the mean position of all observations assigned to that cluster. For each \r\nfeature, the new centroid is calculated as the average of that feature for all observations in the cluster.\r\nK-Means Procedure: \uf0b7 Choose the number of clusters K. In this experiment, K = 3. \uf0b7 Select initial centroids. \uf0b7 Calculate the Euclidean distance of every observation from every centroid. \uf0b7 Assign each observation to the nearest centroid. \uf0b7 Recalculate each centroid as the mean of the observations assigned to that cluster. \uf0b7 Repeat the distance calculation, assignment and centroid-update steps. \uf0b7 Stop when the centroids converge or the change in centroid positions becomes smaller than the \r\nspecified tolerance.\r\nPart A: Understanding and implementing K-Means clustering\r\nSr. No. K-Means Step Purpose\r\n1 Choose K Fix the number of clusters; K = \r\n3 in this experiment.\r\n2 Initialize centroids Select initial centroid positions.\r\n3 Calculate Euclidean distance Measure distance from each \r\nobservation to each centroid.\r\n4 Assign clusters Assign each observation to the \r\nnearest centroid.\r\n5 Update centroids Calculate the mean of \r\nobservations in each cluster.\r\n6 Check convergence Stop when centroid movement \r\nbecomes sufficiently small.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.83,
+          "t": 6.26,
+          "w": 75.28,
+          "h": 1.39,
+          "text": "Unsupervised learning is a machine learning approach in which the algorithm learns patterns or "
+        },
+        {
+          "l": 8.92,
+          "t": 8.26,
+          "w": 80.48,
+          "h": 1.39,
+          "text": "structures from data without using target labels during training. Clustering is an unsupervised learning "
+        },
+        {
+          "l": 8.84,
+          "t": 10.26,
+          "w": 43.53,
+          "h": 1.39,
+          "text": "technique that groups similar observations into clusters."
+        },
+        {
+          "l": 8.86,
+          "t": 13.53,
+          "w": 73.25,
+          "h": 1.39,
+          "text": "K-Means is a clustering algorithm that partitions observations into K clusters. Each cluster is "
+        },
+        {
+          "l": 8.84,
+          "t": 15.53,
+          "w": 32.73,
+          "h": 1.39,
+          "text": "represented by a centroid. An observation "
+        },
+        {
+          "l": 41.6,
+          "t": 15.53,
+          "w": 45.26,
+          "h": 1.39,
+          "text": " is assigned to the cluster whose centroid is nearest to the "
+        },
+        {
+          "l": 8.89,
+          "t": 17.54,
+          "w": 79.68,
+          "h": 1.39,
+          "text": "observation. The centroid is then recalculated as the mean of all observations assigned to that cluster. "
+        },
+        {
+          "l": 8.88,
+          "t": 19.54,
+          "w": 79.3,
+          "h": 1.39,
+          "text": "These steps are repeated until the centroids converge or the change in centroids becomes sufficiently "
+        },
+        {
+          "l": 8.92,
+          "t": 21.54,
+          "w": 4.5,
+          "h": 1.09,
+          "text": "small."
+        },
+        {
+          "l": 8.86,
+          "t": 24.84,
+          "w": 16.5,
+          "h": 1.06,
+          "text": "Euclidean Distance:"
+        },
+        {
+          "l": 8.86,
+          "t": 28.08,
+          "w": 79.32,
+          "h": 1.39,
+          "text": "Euclidean distance measures the straight-line distance between an observation and a centroid. For an "
+        },
+        {
+          "l": 8.89,
+          "t": 30.08,
+          "w": 14.67,
+          "h": 1.39,
+          "text": "observation X = (x "
+        },
+        {
+          "l": 25.23,
+          "t": 30.46,
+          "w": 1.83,
+          "h": 0.94,
+          "text": ", x "
+        },
+        {
+          "l": 28.71,
+          "t": 30.46,
+          "w": 4.77,
+          "h": 0.94,
+          "text": ", \u2026, x "
+        },
+        {
+          "l": 35.08,
+          "t": 30.08,
+          "w": 16.18,
+          "h": 1.39,
+          "text": ") and centroid C = (c "
+        },
+        {
+          "l": 52.96,
+          "t": 30.44,
+          "w": 1.68,
+          "h": 0.96,
+          "text": ", c "
+        },
+        {
+          "l": 56.34,
+          "t": 30.44,
+          "w": 4.62,
+          "h": 0.96,
+          "text": ", \u2026, c "
+        },
+        {
+          "l": 62.59,
+          "t": 30.08,
+          "w": 0.99,
+          "h": 1.39,
+          "text": "):"
+        },
+        {
+          "l": 27.27,
+          "t": 33.01,
+          "w": 11.56,
+          "h": 1.71,
+          "text": "d(X, C) = \u221a[(x "
+        },
+        {
+          "l": 40.38,
+          "t": 33.69,
+          "w": 2.92,
+          "h": 0.74,
+          "text": " \u2212 c "
+        },
+        {
+          "l": 44.9,
+          "t": 33.37,
+          "w": 4.91,
+          "h": 1.34,
+          "text": ")\u00b2 + (x "
+        },
+        {
+          "l": 51.37,
+          "t": 33.69,
+          "w": 2.92,
+          "h": 0.74,
+          "text": " \u2212 c "
+        },
+        {
+          "l": 55.89,
+          "t": 33.37,
+          "w": 8.97,
+          "h": 1.34,
+          "text": ")\u00b2 + \u2026 + (x "
+        },
+        {
+          "l": 66.42,
+          "t": 33.69,
+          "w": 2.92,
+          "h": 0.74,
+          "text": " \u2212 c "
+        },
+        {
+          "l": 70.94,
+          "t": 33.37,
+          "w": 1.66,
+          "h": 1.34,
+          "text": ")\u00b2]"
+        },
+        {
+          "l": 8.9,
+          "t": 36.64,
+          "w": 7.92,
+          "h": 1.06,
+          "text": "Centroid:"
+        },
+        {
+          "l": 8.88,
+          "t": 39.88,
+          "w": 76.92,
+          "h": 1.39,
+          "text": "The centroid of a cluster is the mean position of all observations assigned to that cluster. For each "
+        },
+        {
+          "l": 8.9,
+          "t": 41.88,
+          "w": 79.24,
+          "h": 1.39,
+          "text": "feature, the new centroid is calculated as the average of that feature for all observations in the cluster."
+        },
+        {
+          "l": 8.87,
+          "t": 45.2,
+          "w": 17.36,
+          "h": 1.04,
+          "text": "K-Means Procedure: "
+        },
+        {
+          "l": 8.93,
+          "t": 48.88,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 48.53,
+          "w": 46.71,
+          "h": 1.39,
+          "text": "Choose the number of clusters K. In this experiment, K = 3. "
+        },
+        {
+          "l": 8.93,
+          "t": 51.02,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.89,
+          "t": 50.66,
+          "w": 17.74,
+          "h": 1.09,
+          "text": "Select initial centroids. "
+        },
+        {
+          "l": 8.93,
+          "t": 53.15,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 52.8,
+          "w": 58.42,
+          "h": 1.39,
+          "text": "Calculate the Euclidean distance of every observation from every centroid. "
+        },
+        {
+          "l": 8.93,
+          "t": 55.29,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.78,
+          "t": 54.93,
+          "w": 37.33,
+          "h": 1.39,
+          "text": "Assign each observation to the nearest centroid. "
+        },
+        {
+          "l": 8.93,
+          "t": 57.42,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 57.07,
+          "w": 63.95,
+          "h": 1.39,
+          "text": "Recalculate each centroid as the mean of the observations assigned to that cluster. "
+        },
+        {
+          "l": 8.93,
+          "t": 59.56,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 59.2,
+          "w": 54.92,
+          "h": 1.39,
+          "text": "Repeat the distance calculation, assignment and centroid-update steps. "
+        },
+        {
+          "l": 8.93,
+          "t": 61.69,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.89,
+          "t": 61.34,
+          "w": 74.79,
+          "h": 1.39,
+          "text": "Stop when the centroids converge or the change in centroid positions becomes smaller than the "
+        },
+        {
+          "l": 11.86,
+          "t": 63.36,
+          "w": 14.99,
+          "h": 1.39,
+          "text": "specified tolerance."
+        },
+        {
+          "l": 8.87,
+          "t": 65.64,
+          "w": 51.84,
+          "h": 1.37,
+          "text": "Part A: Understanding and implementing K-Means clustering"
+        },
+        {
+          "l": 9.93,
+          "t": 68.97,
+          "w": 5.35,
+          "h": 1.06,
+          "text": "Sr. No. "
+        },
+        {
+          "l": 37.26,
+          "t": 68.97,
+          "w": 11.16,
+          "h": 1.36,
+          "text": "K-Means Step "
+        },
+        {
+          "l": 64.68,
+          "t": 68.99,
+          "w": 6.23,
+          "h": 1.34,
+          "text": "Purpose"
+        },
+        {
+          "l": 10.03,
+          "t": 70.78,
+          "w": 0.51,
+          "h": 1.04,
+          "text": "1 "
+        },
+        {
+          "l": 37.29,
+          "t": 70.75,
+          "w": 7.73,
+          "h": 1.09,
+          "text": "Choose K "
+        },
+        {
+          "l": 64.68,
+          "t": 70.75,
+          "w": 25.07,
+          "h": 1.32,
+          "text": "Fix the number of clusters; K = "
+        },
+        {
+          "l": 64.73,
+          "t": 72.49,
+          "w": 15.88,
+          "h": 1.39,
+          "text": "3 in this experiment."
+        },
+        {
+          "l": 9.85,
+          "t": 74.32,
+          "w": 0.86,
+          "h": 1.04,
+          "text": "2 "
+        },
+        {
+          "l": 37.27,
+          "t": 74.3,
+          "w": 14.51,
+          "h": 1.09,
+          "text": "Initialize centroids "
+        },
+        {
+          "l": 64.77,
+          "t": 74.3,
+          "w": 24.54,
+          "h": 1.39,
+          "text": "Select initial centroid positions."
+        },
+        {
+          "l": 9.88,
+          "t": 76.13,
+          "w": 0.74,
+          "h": 1.06,
+          "text": "3 "
+        },
+        {
+          "l": 37.29,
+          "t": 76.1,
+          "w": 22.49,
+          "h": 1.09,
+          "text": "Calculate Euclidean distance "
+        },
+        {
+          "l": 64.68,
+          "t": 76.1,
+          "w": 22.48,
+          "h": 1.09,
+          "text": "Measure distance from each "
+        },
+        {
+          "l": 64.72,
+          "t": 77.84,
+          "w": 22.42,
+          "h": 1.09,
+          "text": "observation to each centroid."
+        },
+        {
+          "l": 9.84,
+          "t": 79.68,
+          "w": 0.88,
+          "h": 1.04,
+          "text": "4 "
+        },
+        {
+          "l": 37.24,
+          "t": 79.65,
+          "w": 11.83,
+          "h": 1.39,
+          "text": "Assign clusters "
+        },
+        {
+          "l": 64.66,
+          "t": 79.65,
+          "w": 24.52,
+          "h": 1.39,
+          "text": "Assign each observation to the "
+        },
+        {
+          "l": 64.66,
+          "t": 81.39,
+          "w": 12.79,
+          "h": 1.09,
+          "text": "nearest centroid."
+        },
+        {
+          "l": 9.9,
+          "t": 83.25,
+          "w": 0.76,
+          "h": 1.03,
+          "text": "5 "
+        },
+        {
+          "l": 37.23,
+          "t": 83.2,
+          "w": 13.25,
+          "h": 1.39,
+          "text": "Update centroids "
+        },
+        {
+          "l": 64.72,
+          "t": 83.2,
+          "w": 17.55,
+          "h": 1.09,
+          "text": "Calculate the mean of "
+        },
+        {
+          "l": 64.72,
+          "t": 84.94,
+          "w": 21.99,
+          "h": 1.09,
+          "text": "observations in each cluster."
+        },
+        {
+          "l": 9.89,
+          "t": 86.77,
+          "w": 0.82,
+          "h": 1.06,
+          "text": "6 "
+        },
+        {
+          "l": 37.29,
+          "t": 86.75,
+          "w": 15.27,
+          "h": 1.39,
+          "text": "Check convergence "
+        },
+        {
+          "l": 64.77,
+          "t": 86.75,
+          "w": 24.36,
+          "h": 1.39,
+          "text": "Stop when centroid movement "
+        },
+        {
+          "l": 64.65,
+          "t": 88.49,
+          "w": 21.35,
+          "h": 1.39,
+          "text": "becomes sufficiently small."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_expt8_kmeans_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_expt8_kmeans_pdf/thumb_003.webp",
+      "text": "Part B: Applying K-Means to the Iris dataset\r\nThe Iris dataset contains 150 observations and four numerical attributes: Sepal Length, Sepal Width, \r\nPetal Length and Petal Width. The Species attribute is not used during K-Means training because the \r\ntask is unsupervised. The known species labels may be used only after clustering for interpretation.\r\n7. Laboratory Exercise\r\nA. Procedure:\r\nLaboratory exercise is based on the implementation of the above learned concepts. Students should \r\nfollow the steps sequentially: \uf0b7 Open Google Colab and create a new Python notebook. \uf0b7 Import the required libraries: NumPy, Pandas, Matplotlib and Scikit-learn. \uf0b7 Load the Iris dataset using Scikit-learn. \uf0b7 Create a DataFrame and display the first few records. \uf0b7 Check the dataset shape, missing values and basic statistical summary. \uf0b7 Select the four numerical Iris features for clustering. \uf0b7 Standardize the features before calculating Euclidean distances. \uf0b7 Set the number of clusters to K = 3. \uf0b7 Select the initial centroids. \uf0b7 Calculate Euclidean distance between each observation and each centroid. \uf0b7 Assign every observation to the nearest centroid. \uf0b7 Recalculate the centroid of each cluster using the mean of the assigned observations. \uf0b7 Repeat the assignment and centroid-update steps until convergence. \uf0b7 Display the final cluster sizes and final centroids. \uf0b7 Convert centroids back to original units for interpretation. \uf0b7 Visualize the final clusters using Petal Length and Petal Width. \uf0b7 Calculate the Silhouette Score as an evaluation measure. \uf0b7 Compare the obtained clusters with the known Iris species only for interpretation. \uf0b7 For each stage, display/print the required output, take necessary screenshots and write observations.\r\nB. Expected observations: \uf0b7 K-Means assigns observations to the centroid with the smallest Euclidean distance. \uf0b7 Centroids change after observations are reassigned to clusters. \uf0b7 The algorithm stops when the centroids converge or the centroid movement becomes sufficiently \r\nsmall. \uf0b7 The final clusters can be visualized using two selected numerical attributes. \uf0b7 The known Iris species are not used to train the clustering model.\r\n8. Post-Experiments Exercise\r\nA. Extended Theory:\r\nExplain K-means algorithm with help of an example",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.87,
+          "t": 6.28,
+          "w": 37.65,
+          "h": 1.37,
+          "text": "Part B: Applying K-Means to the Iris dataset"
+        },
+        {
+          "l": 8.88,
+          "t": 9.52,
+          "w": 79.15,
+          "h": 1.39,
+          "text": "The Iris dataset contains 150 observations and four numerical attributes: Sepal Length, Sepal Width, "
+        },
+        {
+          "l": 8.86,
+          "t": 11.53,
+          "w": 79.45,
+          "h": 1.39,
+          "text": "Petal Length and Petal Width. The Species attribute is not used during K-Means training because the "
+        },
+        {
+          "l": 8.84,
+          "t": 13.53,
+          "w": 77.53,
+          "h": 1.39,
+          "text": "task is unsupervised. The known species labels may be used only after clustering for interpretation."
+        },
+        {
+          "l": 8.89,
+          "t": 16.82,
+          "w": 19.09,
+          "h": 1.37,
+          "text": "7. Laboratory Exercise"
+        },
+        {
+          "l": 8.84,
+          "t": 20.09,
+          "w": 11.57,
+          "h": 1.06,
+          "text": "A. Procedure:"
+        },
+        {
+          "l": 8.86,
+          "t": 23.33,
+          "w": 78.14,
+          "h": 1.39,
+          "text": "Laboratory exercise is based on the implementation of the above learned concepts. Students should "
+        },
+        {
+          "l": 8.9,
+          "t": 25.33,
+          "w": 22.66,
+          "h": 1.39,
+          "text": "follow the steps sequentially: "
+        },
+        {
+          "l": 8.93,
+          "t": 29.07,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.83,
+          "t": 28.71,
+          "w": 43.38,
+          "h": 1.39,
+          "text": "Open Google Colab and create a new Python notebook. "
+        },
+        {
+          "l": 8.93,
+          "t": 31.2,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.81,
+          "t": 30.85,
+          "w": 58.19,
+          "h": 1.39,
+          "text": "Import the required libraries: NumPy, Pandas, Matplotlib and Scikit-learn. "
+        },
+        {
+          "l": 8.93,
+          "t": 33.34,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 32.98,
+          "w": 30.61,
+          "h": 1.39,
+          "text": "Load the Iris dataset using Scikit-learn. "
+        },
+        {
+          "l": 8.93,
+          "t": 35.47,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 35.12,
+          "w": 26.09,
+          "h": 1.39,
+          "text": "Create a DataFrame and display t"
+        },
+        {
+          "l": 37.96,
+          "t": 35.12,
+          "w": 15.52,
+          "h": 1.09,
+          "text": "he first few records. "
+        },
+        {
+          "l": 8.93,
+          "t": 37.61,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 37.25,
+          "w": 55.11,
+          "h": 1.39,
+          "text": "Check the dataset shape, missing values and basic statistical summary. "
+        },
+        {
+          "l": 8.93,
+          "t": 39.74,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.89,
+          "t": 39.39,
+          "w": 40.75,
+          "h": 1.39,
+          "text": "Select the four numerical Iris features for clustering. "
+        },
+        {
+          "l": 8.93,
+          "t": 41.87,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.89,
+          "t": 41.52,
+          "w": 49.6,
+          "h": 1.39,
+          "text": "Standardize the features before calculating Euclidean distances. "
+        },
+        {
+          "l": 8.93,
+          "t": 44.01,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.89,
+          "t": 43.66,
+          "w": 27.67,
+          "h": 1.09,
+          "text": "Set the number of clusters to K = 3. "
+        },
+        {
+          "l": 8.93,
+          "t": 46.14,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.89,
+          "t": 45.79,
+          "w": 20.62,
+          "h": 1.09,
+          "text": "Select the initial centroids. "
+        },
+        {
+          "l": 8.93,
+          "t": 48.28,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 47.92,
+          "w": 57.92,
+          "h": 1.09,
+          "text": "Calculate Euclidean distance between each observation and each centroid. "
+        },
+        {
+          "l": 8.93,
+          "t": 50.41,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.78,
+          "t": 50.06,
+          "w": 38.09,
+          "h": 1.39,
+          "text": "Assign every observation to the nearest centroid. "
+        },
+        {
+          "l": 8.93,
+          "t": 52.55,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 52.19,
+          "w": 66.13,
+          "h": 1.39,
+          "text": "Recalculate the centroid of each cluster using the mean of the assigned observations. "
+        },
+        {
+          "l": 8.93,
+          "t": 54.68,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 54.33,
+          "w": 52.92,
+          "h": 1.39,
+          "text": "Repeat the assignment and centroid-update steps until convergence. "
+        },
+        {
+          "l": 8.93,
+          "t": 56.82,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 56.46,
+          "w": 38.45,
+          "h": 1.39,
+          "text": "Display the final cluster sizes and final centroids. "
+        },
+        {
+          "l": 8.93,
+          "t": 58.95,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 58.6,
+          "w": 45.16,
+          "h": 1.39,
+          "text": "Convert centroids back to original units for interpretation. "
+        },
+        {
+          "l": 8.93,
+          "t": 61.09,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.78,
+          "t": 60.73,
+          "w": 49.45,
+          "h": 1.39,
+          "text": "Visualize the final clusters using Petal Length and Petal Width. "
+        },
+        {
+          "l": 8.93,
+          "t": 63.22,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 62.87,
+          "w": 44.06,
+          "h": 1.09,
+          "text": "Calculate the Silhouette Score as an evaluation measure. "
+        },
+        {
+          "l": 8.93,
+          "t": 65.36,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 65.0,
+          "w": 63.77,
+          "h": 1.39,
+          "text": "Compare the obtained clusters with the known Iris species only for interpretation. "
+        },
+        {
+          "l": 8.93,
+          "t": 67.49,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 67.14,
+          "w": 78.01,
+          "h": 1.39,
+          "text": "For each stage, display/print the required output, take necessary screenshots and write observations."
+        },
+        {
+          "l": 8.86,
+          "t": 69.43,
+          "w": 21.51,
+          "h": 1.37,
+          "text": "B. Expected observations: "
+        },
+        {
+          "l": 8.93,
+          "t": 73.14,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.8,
+          "t": 72.79,
+          "w": 64.95,
+          "h": 1.39,
+          "text": "K-Means assigns observations to the centroid with the smallest Euclidean distance. "
+        },
+        {
+          "l": 8.93,
+          "t": 75.28,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.84,
+          "t": 74.92,
+          "w": 48.53,
+          "h": 1.39,
+          "text": "Centroids change after observations are reassigned to clusters. "
+        },
+        {
+          "l": 8.93,
+          "t": 77.41,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.82,
+          "t": 77.06,
+          "w": 76.49,
+          "h": 1.39,
+          "text": "The algorithm stops when the centroids converge or the centroid movement becomes sufficiently "
+        },
+        {
+          "l": 11.86,
+          "t": 79.08,
+          "w": 4.5,
+          "h": 1.09,
+          "text": "small. "
+        },
+        {
+          "l": 8.93,
+          "t": 81.55,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.82,
+          "t": 81.2,
+          "w": 58.92,
+          "h": 1.39,
+          "text": "The final clusters can be visualized using two selected numerical attributes. "
+        },
+        {
+          "l": 8.93,
+          "t": 83.69,
+          "w": 0.7,
+          "h": 0.55,
+          "text": "\uf0b7 "
+        },
+        {
+          "l": 11.82,
+          "t": 83.33,
+          "w": 50.94,
+          "h": 1.39,
+          "text": "The known Iris species are not used to train the clustering model."
+        },
+        {
+          "l": 8.89,
+          "t": 85.63,
+          "w": 24.31,
+          "h": 1.37,
+          "text": "8. Post-Experiments Exercise"
+        },
+        {
+          "l": 8.84,
+          "t": 88.9,
+          "w": 17.4,
+          "h": 1.37,
+          "text": "A. Extended Theory:"
+        },
+        {
+          "l": 8.86,
+          "t": 92.16,
+          "w": 43.63,
+          "h": 1.37,
+          "text": "Explain K-means algorithm with help of an example"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_expt8_kmeans_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_expt8_kmeans_pdf/thumb_004.webp",
+      "text": "B. Questions:\r\n1. Compare supervised vs unsupervised learning?\r\nC. Conclusion:\r\nWrite the significance of K-Means clustering and explain how Euclidean distance and centroid updating \r\nhelp in forming clusters in an unsupervised learning problem.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.86,
+          "t": 6.28,
+          "w": 11.01,
+          "h": 1.32,
+          "text": "B. Questions:"
+        },
+        {
+          "l": 9.05,
+          "t": 9.52,
+          "w": 20.51,
+          "h": 1.39,
+          "text": "1. Compare supervised vs "
+        },
+        {
+          "l": 29.57,
+          "t": 9.52,
+          "w": 18.04,
+          "h": 1.39,
+          "text": "unsupervised learning?"
+        },
+        {
+          "l": 8.9,
+          "t": 12.81,
+          "w": 12.17,
+          "h": 1.06,
+          "text": "C. Conclusion:"
+        },
+        {
+          "l": 8.85,
+          "t": 16.06,
+          "w": 82.12,
+          "h": 1.39,
+          "text": "Write the significance of K-Means clustering and explain how Euclidean distance and centroid updating "
+        },
+        {
+          "l": 8.84,
+          "t": 18.06,
+          "w": 48.11,
+          "h": 1.39,
+          "text": "help in forming clusters in an unsupervised learning problem."
+        }
+      ]
+    }
+  ]
+}

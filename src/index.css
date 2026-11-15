@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Sleek Edge-style scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1b1b1b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Selectable Text Layer Styling (Authentic Edge Blue Selection) */
+::selection {
+  background: rgba(0, 120, 215, 0.4);
+  color: inherit;
+}
+
+.select-text span::selection {
+  background: rgba(0, 120, 215, 0.4) !important;
+  color: transparent !important;
+}
+
+.select-text span::-moz-selection {
+  background: rgba(0, 120, 215, 0.4) !important;
+  color: transparent !important;
+}

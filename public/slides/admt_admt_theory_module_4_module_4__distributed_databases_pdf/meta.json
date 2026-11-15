@@ -1,0 +1,6311 @@
+{
+  "mtime": 1793870609.507887,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_001.webp",
+      "text": "Module 4: Distributed Databases\r\nBy MS. ALVINA LOPES\r\nPART 1",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 13.17,
+          "t": 31.26,
+          "w": 73.84,
+          "h": 8.33,
+          "text": "Module 4: Distributed Databases"
+        },
+        {
+          "l": 33.57,
+          "t": 58.4,
+          "w": 33.0,
+          "h": 5.78,
+          "text": "By MS. ALVINA LOPES"
+        },
+        {
+          "l": 42.95,
+          "t": 44.0,
+          "w": 13.07,
+          "h": 5.39,
+          "text": "PART 1"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Introduction\r\n\u2756 Distributed Database Concepts \r\n\u2756 Data Fragmentation \r\n\u2756 Replication & Allocation in distributed databases.\r\n\u2756 Design Issues in Distributed DBMS\r\n\u2756 Types of Distributed Database Systems\r\n\u2756 Distributed DBMS Architecture \r\n\u2756 Distributed Database Design",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 13.87,
+          "h": 5.9,
+          "text": "Contents"
+        },
+        {
+          "l": 4.72,
+          "t": 23.64,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 23.43,
+          "w": 14.01,
+          "h": 3.47,
+          "text": "Introduction"
+        },
+        {
+          "l": 4.72,
+          "t": 29.78,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 29.56,
+          "w": 36.55,
+          "h": 4.48,
+          "text": "Distributed Database Concepts "
+        },
+        {
+          "l": 4.72,
+          "t": 35.91,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 35.8,
+          "w": 23.66,
+          "h": 4.38,
+          "text": "Data Fragmentation "
+        },
+        {
+          "l": 4.72,
+          "t": 42.04,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 41.83,
+          "w": 56.46,
+          "h": 4.48,
+          "text": "Replication & Allocation in distributed databases."
+        },
+        {
+          "l": 4.72,
+          "t": 48.18,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 47.96,
+          "w": 39.61,
+          "h": 4.49,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 4.72,
+          "t": 54.31,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.37,
+          "t": 54.07,
+          "w": 45.19,
+          "h": 4.52,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 4.72,
+          "t": 60.44,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 60.23,
+          "w": 36.09,
+          "h": 3.47,
+          "text": "Distributed DBMS Architecture "
+        },
+        {
+          "l": 4.72,
+          "t": 66.58,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 66.36,
+          "w": 32.81,
+          "h": 4.49,
+          "text": "Distributed Database Design"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_003.webp",
+      "text": "Introduction\r\n\u25cf Distributed databases bring the advantages of distributed computing to \r\nthe database domain.\r\n\u25cf A distributed computing system consists of a number of processing \r\nsites or nodes that are interconnected by a computer network and that \r\ncooperate in performing certain assigned tasks.\r\n\u25cf Distributed computing systems partition a big, unmanageable problem \r\ninto smaller pieces and solve it efficiently in a coordinated manner.\r\n\u25cf Thus, more computing power is harnessed to solve a complex task.\r\n\u25cf The autonomous processing nodes can be managed independently while \r\nthey cooperate to provide the needed functionalities to solve the \r\nproblem.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 19.22,
+          "h": 5.86,
+          "text": "Introduction"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 83.7,
+          "h": 4.51,
+          "text": "Distributed databases bring the advantages of distributed computing to "
+        },
+        {
+          "l": 9.39,
+          "t": 29.62,
+          "w": 25.15,
+          "h": 3.48,
+          "text": "the database domain."
+        },
+        {
+          "l": 5.55,
+          "t": 36.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 35.41,
+          "w": 2.23,
+          "h": 3.24,
+          "text": "A "
+        },
+        {
+          "l": 11.69,
+          "t": 35.22,
+          "w": 37.25,
+          "h": 4.49,
+          "text": "distributed computing system "
+        },
+        {
+          "l": 49.16,
+          "t": 35.2,
+          "w": 41.8,
+          "h": 4.51,
+          "text": " consists of a number of processing "
+        },
+        {
+          "l": 9.47,
+          "t": 40.82,
+          "w": 83.09,
+          "h": 4.49,
+          "text": "sites or nodes that are interconnected by a computer network and that "
+        },
+        {
+          "l": 9.49,
+          "t": 46.4,
+          "w": 54.95,
+          "h": 4.51,
+          "text": "cooperate in performing certain assigned tasks."
+        },
+        {
+          "l": 5.55,
+          "t": 53.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 52.02,
+          "w": 82.76,
+          "h": 4.49,
+          "text": "Distributed computing systems partition a big, unmanageable problem "
+        },
+        {
+          "l": 9.54,
+          "t": 57.6,
+          "w": 77.27,
+          "h": 4.52,
+          "text": "into smaller pieces and solve it efficiently in a coordinated manner."
+        },
+        {
+          "l": 5.55,
+          "t": 64.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 63.22,
+          "w": 77.72,
+          "h": 4.49,
+          "text": "Thus, more computing power is harnessed to solve a complex task."
+        },
+        {
+          "l": 5.55,
+          "t": 70.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 68.82,
+          "w": 85.57,
+          "h": 4.49,
+          "text": "The autonomous processing nodes can be managed independently while "
+        },
+        {
+          "l": 9.39,
+          "t": 74.4,
+          "w": 75.82,
+          "h": 4.52,
+          "text": "they cooperate to provide the needed functionalities to solve the "
+        },
+        {
+          "l": 9.56,
+          "t": 80.02,
+          "w": 10.18,
+          "h": 4.48,
+          "text": "problem."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_004.webp",
+      "text": "Distributed Database Concepts\r\n\u25cf Distributed database (DDB) technology resulted from a merger of two \r\ntechnologies: database technology and distributed systems technology. \r\n\u25cf A distributed database (DDB) is a collection of multiple logically related \r\ndatabase distributed over a computer network, \r\n\u25cf A distributed database management system is a software system that \r\nmanages a distributed database while making the distribution \r\ntransparent to the user.\r\n\u25cf A transaction can be executed by multiple networked computers in a \r\nunified manner.\r\n\u25cf A distributed database (DDB) processes \u2018Unit of execution (a transaction)\u2019 \r\nin a distributed manner.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 81.33,
+          "h": 4.52,
+          "text": "Distributed database (DDB) technology resulted from a merger of two "
+        },
+        {
+          "l": 9.39,
+          "t": 29.62,
+          "w": 83.5,
+          "h": 4.49,
+          "text": "technologies: database technology and distributed systems technology. "
+        },
+        {
+          "l": 5.55,
+          "t": 36.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 35.41,
+          "w": 2.23,
+          "h": 3.24,
+          "text": "A "
+        },
+        {
+          "l": 11.69,
+          "t": 35.22,
+          "w": 33.58,
+          "h": 4.12,
+          "text": "distributed database (DDB) "
+        },
+        {
+          "l": 45.39,
+          "t": 35.2,
+          "w": 48.87,
+          "h": 4.52,
+          "text": " is a collection of multiple logically related "
+        },
+        {
+          "l": 9.49,
+          "t": 40.82,
+          "w": 55.4,
+          "h": 4.48,
+          "text": "database distributed over a computer network, "
+        },
+        {
+          "l": 5.55,
+          "t": 47.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 46.61,
+          "w": 2.23,
+          "h": 3.24,
+          "text": "A "
+        },
+        {
+          "l": 11.69,
+          "t": 46.42,
+          "w": 52.64,
+          "h": 4.49,
+          "text": "distributed database management system "
+        },
+        {
+          "l": 64.56,
+          "t": 46.4,
+          "w": 30.2,
+          "h": 4.52,
+          "text": " is a software system that "
+        },
+        {
+          "l": 9.56,
+          "t": 52.02,
+          "w": 72.38,
+          "h": 4.49,
+          "text": "manages a distributed database while making the distribution "
+        },
+        {
+          "l": 9.39,
+          "t": 57.62,
+          "w": 27.52,
+          "h": 4.48,
+          "text": "transparent to the user."
+        },
+        {
+          "l": 5.55,
+          "t": 64.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 63.22,
+          "w": 80.56,
+          "h": 4.49,
+          "text": "A transaction can be executed by multiple networked computers in a "
+        },
+        {
+          "l": 9.55,
+          "t": 68.8,
+          "w": 18.2,
+          "h": 3.51,
+          "text": "unified manner."
+        },
+        {
+          "l": 5.55,
+          "t": 75.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 74.4,
+          "w": 85.33,
+          "h": 4.51,
+          "text": "A distributed database (DDB) processes \u2018Unit of execution (a transaction)\u2019 "
+        },
+        {
+          "l": 9.54,
+          "t": 80.02,
+          "w": 27.73,
+          "h": 3.48,
+          "text": "in a distributed manner."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_005.webp",
+      "text": "Distributed Database system",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 45.3,
+          "h": 7.4,
+          "text": "Distributed Database system"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_006.webp",
+      "text": "Distributed Database Concepts\r\nWhat Constitutes a DDB?\r\nFor a database to be called distributed, the following minimum conditions \r\nshould be satisfied:\r\n\u25cf Connection of database nodes over a computer network: There are \r\nmultiple computers, called sites or nodes. These sites must be connected \r\nby an underlying network to transmit data and commands among sites.\r\n\u25cf Logical interrelation of the connected databases: It is essential that \r\nthe information in the various database nodes be logically related.\r\n\u25cf Possible absence of homogeneity among connected nodes: It is not \r\nnecessary that all nodes be identical in terms of data, hardware, and \r\nsoftware.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 34.46,
+          "h": 3.87,
+          "text": "What Constitutes a DDB?"
+        },
+        {
+          "l": 4.59,
+          "t": 29.93,
+          "w": 86.07,
+          "h": 4.51,
+          "text": "For a database to be called distributed, the following minimum conditions "
+        },
+        {
+          "l": 4.47,
+          "t": 35.26,
+          "w": 22.17,
+          "h": 3.51,
+          "text": "should be satisfied:"
+        },
+        {
+          "l": 5.55,
+          "t": 41.8,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.49,
+          "t": 40.59,
+          "w": 70.54,
+          "h": 4.51,
+          "text": "Connection of database nodes over a computer network: "
+        },
+        {
+          "l": 80.22,
+          "t": 40.62,
+          "w": 12.48,
+          "h": 3.47,
+          "text": " There are "
+        },
+        {
+          "l": 9.56,
+          "t": 45.95,
+          "w": 85.34,
+          "h": 4.48,
+          "text": "multiple computers, called sites or nodes. These sites must be connected "
+        },
+        {
+          "l": 9.56,
+          "t": 51.28,
+          "w": 82.68,
+          "h": 4.49,
+          "text": "by an underlying network to transmit data and commands among sites."
+        },
+        {
+          "l": 5.55,
+          "t": 57.8,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 56.59,
+          "w": 60.76,
+          "h": 4.51,
+          "text": "Logical interrelation of the connected databases: "
+        },
+        {
+          "l": 70.52,
+          "t": 56.62,
+          "w": 21.6,
+          "h": 3.47,
+          "text": " It is essential that "
+        },
+        {
+          "l": 9.39,
+          "t": 61.93,
+          "w": 76.62,
+          "h": 4.52,
+          "text": "the information in the various database nodes be logically related."
+        },
+        {
+          "l": 5.55,
+          "t": 68.47,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 67.26,
+          "w": 72.66,
+          "h": 4.51,
+          "text": "Possible absence of homogeneity among connected nodes: "
+        },
+        {
+          "l": 82.44,
+          "t": 67.39,
+          "w": 9.92,
+          "h": 3.36,
+          "text": " It is not "
+        },
+        {
+          "l": 9.56,
+          "t": 72.59,
+          "w": 79.85,
+          "h": 4.52,
+          "text": "necessary that all nodes be identical in terms of data, hardware, and "
+        },
+        {
+          "l": 9.47,
+          "t": 77.93,
+          "w": 10.52,
+          "h": 3.51,
+          "text": "software."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_007.webp",
+      "text": "Distributed Database Concepts\r\nWhat Constitutes a DDB?\r\nThe sites may all be located in physical proximity and connected via a local \r\narea network, \r\nor \r\nthey may be geographically distributed over large distances and connected via \r\na wide area network.\r\nNetworks may have different topologies that define the direct communication \r\npaths among sites.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 34.46,
+          "h": 3.87,
+          "text": "What Constitutes a DDB?"
+        },
+        {
+          "l": 4.37,
+          "t": 29.95,
+          "w": 86.93,
+          "h": 4.49,
+          "text": "The sites may all be located in physical proximity and connected via a local "
+        },
+        {
+          "l": 4.46,
+          "t": 35.28,
+          "w": 16.62,
+          "h": 4.0,
+          "text": "area network, "
+        },
+        {
+          "l": 4.49,
+          "t": 41.58,
+          "w": 3.03,
+          "h": 2.5,
+          "text": "or "
+        },
+        {
+          "l": 4.39,
+          "t": 45.95,
+          "w": 91.42,
+          "h": 4.49,
+          "text": "they may be geographically distributed over large distances and connected via "
+        },
+        {
+          "l": 4.46,
+          "t": 51.28,
+          "w": 23.98,
+          "h": 3.48,
+          "text": "a wide area network."
+        },
+        {
+          "l": 4.59,
+          "t": 61.93,
+          "w": 90.79,
+          "h": 4.52,
+          "text": "Networks may have different topologies that define the direct communication "
+        },
+        {
+          "l": 4.56,
+          "t": 67.28,
+          "w": 21.47,
+          "h": 4.49,
+          "text": "paths among sites."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_008.webp",
+      "text": "Distributed Database Concepts\r\nTransparency\r\n\u25cf The concept of transparency extends the general idea of hiding \r\nimplementation details from end users.\r\n\u25cf Transparency is a key concept and advantage of distributed system.\r\n\u25cf Management of distributed data with different levels of transparency: \r\n\u25cf This refers to the physical placement of data (files, relations, etc.) which is \r\nnot known to the user (distribution transparency).\r\n\u25cf A highly transparent system offers a lot of flexibility to the end \r\nuser/application developer since it requires little or no awareness of \r\nunderlying details on their part.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.4,
+          "t": 24.34,
+          "w": 18.86,
+          "h": 4.76,
+          "text": "Transparency"
+        },
+        {
+          "l": 5.98,
+          "t": 31.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 29.93,
+          "w": 74.0,
+          "h": 4.52,
+          "text": "The concept of transparency extends the general idea of hiding "
+        },
+        {
+          "l": 9.54,
+          "t": 35.26,
+          "w": 45.58,
+          "h": 4.51,
+          "text": "implementation details from end users."
+        },
+        {
+          "l": 5.98,
+          "t": 42.55,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 40.59,
+          "w": 78.43,
+          "h": 4.52,
+          "text": "Transparency is a key concept and advantage of distributed system."
+        },
+        {
+          "l": 5.98,
+          "t": 47.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 45.93,
+          "w": 81.24,
+          "h": 4.52,
+          "text": "Management of distributed data with different levels of transparency: "
+        },
+        {
+          "l": 5.98,
+          "t": 53.22,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 51.26,
+          "w": 85.81,
+          "h": 4.52,
+          "text": "This refers to the physical placement of data (files, relations, etc.) which is "
+        },
+        {
+          "l": 9.56,
+          "t": 56.62,
+          "w": 57.56,
+          "h": 4.49,
+          "text": "not known to the user (distribution transparency)."
+        },
+        {
+          "l": 5.98,
+          "t": 63.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 61.93,
+          "w": 72.89,
+          "h": 4.52,
+          "text": "A highly transparent system offers a lot of flexibility to the end "
+        },
+        {
+          "l": 9.55,
+          "t": 67.26,
+          "w": 79.46,
+          "h": 4.51,
+          "text": "user/application developer since it requires little or no awareness of "
+        },
+        {
+          "l": 9.55,
+          "t": 72.62,
+          "w": 36.27,
+          "h": 4.49,
+          "text": "underlying details on their part."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_009.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nExample Scenario: The EMPLOYEE, PROJECT, and WORKS_ON tables may be \r\nfragmented horizontally and stored with possible replication as shown below.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 9.51,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.4,
+          "t": 20.74,
+          "w": 31.06,
+          "h": 5.01,
+          "text": "Types of Transparency"
+        },
+        {
+          "l": 4.59,
+          "t": 26.6,
+          "w": 21.7,
+          "h": 4.48,
+          "text": "Example Scenario: "
+        },
+        {
+          "l": 26.34,
+          "t": 26.6,
+          "w": 66.27,
+          "h": 4.49,
+          "text": "The EMPLOYEE, PROJECT, and WORKS_ON tables may be "
+        },
+        {
+          "l": 4.38,
+          "t": 31.91,
+          "w": 89.79,
+          "h": 4.52,
+          "text": "fragmented horizontally and stored with possible replication as shown below."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_010.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nData organization(or Distribution and Network transparency):\r\n\u25cf Users do not have to worry about operational details of the network.\r\n\u25cb There is Location transparency, which refers to freedom of issuing command \r\nfrom any location without affecting its working.\r\n\u25cb Then there is Naming transparency, which allows access to any names object \r\n(files, relations, etc.) from any location.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.4,
+          "t": 24.09,
+          "w": 31.06,
+          "h": 5.01,
+          "text": "Types of Transparency"
+        },
+        {
+          "l": 4.57,
+          "t": 31.85,
+          "w": 22.92,
+          "h": 4.49,
+          "text": "Data organization("
+        },
+        {
+          "l": 27.72,
+          "t": 32.81,
+          "w": 3.03,
+          "h": 2.5,
+          "text": "or "
+        },
+        {
+          "l": 30.98,
+          "t": 31.85,
+          "w": 49.92,
+          "h": 4.49,
+          "text": "Distribution and Network transparency)"
+        },
+        {
+          "l": 81.21,
+          "t": 32.8,
+          "w": 0.29,
+          "h": 2.53,
+          "text": ":"
+        },
+        {
+          "l": 5.98,
+          "t": 41.01,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 39.22,
+          "w": 74.44,
+          "h": 4.21,
+          "text": "Users do not have to worry about operational details of the network."
+        },
+        {
+          "l": 10.7,
+          "t": 46.71,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.4,
+          "t": 45.83,
+          "w": 8.59,
+          "h": 2.92,
+          "text": "There is "
+        },
+        {
+          "l": 23.16,
+          "t": 45.83,
+          "w": 23.61,
+          "h": 3.7,
+          "text": "Location transparency"
+        },
+        {
+          "l": 47.0,
+          "t": 45.78,
+          "w": 45.24,
+          "h": 3.75,
+          "text": ", which refers to freedom of issuing command "
+        },
+        {
+          "l": 14.37,
+          "t": 50.53,
+          "w": 45.04,
+          "h": 3.75,
+          "text": "from any location without affecting its working."
+        },
+        {
+          "l": 10.7,
+          "t": 57.18,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.4,
+          "t": 56.3,
+          "w": 13.52,
+          "h": 2.92,
+          "text": "Then there is "
+        },
+        {
+          "l": 28.09,
+          "t": 56.3,
+          "w": 22.51,
+          "h": 3.7,
+          "text": "Naming transparency"
+        },
+        {
+          "l": 50.83,
+          "t": 56.3,
+          "w": 42.15,
+          "h": 3.7,
+          "text": ", which allows access to any names object "
+        },
+        {
+          "l": 14.48,
+          "t": 60.99,
+          "w": 37.68,
+          "h": 3.75,
+          "text": "(files, relations, etc.) from any location."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_011.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nReplication transparency:\r\n\u25cf It allows to store copies of a data at multiple sites as shown in the above \r\ndiagram. \r\n\u25cf This is done to minimize access time to the required data.\r\nFragmentation transparency:\r\n\u25cf Allows to fragment a relation horizontally (create a subset of tuples of a \r\nrelation) or vertically (create a subset of columns of a relation).",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.4,
+          "t": 24.09,
+          "w": 31.06,
+          "h": 5.01,
+          "text": "Types of Transparency"
+        },
+        {
+          "l": 4.57,
+          "t": 31.85,
+          "w": 31.15,
+          "h": 4.49,
+          "text": "Replication transparency"
+        },
+        {
+          "l": 35.92,
+          "t": 32.8,
+          "w": 0.29,
+          "h": 2.53,
+          "text": ":"
+        },
+        {
+          "l": 5.98,
+          "t": 39.59,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 37.63,
+          "w": 84.21,
+          "h": 4.51,
+          "text": "It allows to store copies of a data at multiple sites as shown in the above "
+        },
+        {
+          "l": 9.49,
+          "t": 42.99,
+          "w": 10.78,
+          "h": 4.49,
+          "text": "diagram. "
+        },
+        {
+          "l": 5.98,
+          "t": 50.25,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 48.32,
+          "w": 66.72,
+          "h": 4.48,
+          "text": "This is done to minimize access time to the required data."
+        },
+        {
+          "l": 4.57,
+          "t": 55.55,
+          "w": 35.72,
+          "h": 4.49,
+          "text": "Fragmentation transparency"
+        },
+        {
+          "l": 40.49,
+          "t": 56.5,
+          "w": 0.29,
+          "h": 2.53,
+          "text": ":"
+        },
+        {
+          "l": 5.98,
+          "t": 63.29,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 61.33,
+          "w": 83.48,
+          "h": 4.52,
+          "text": "Allows to fragment a relation horizontally (create a subset of tuples of a "
+        },
+        {
+          "l": 9.56,
+          "t": 66.67,
+          "w": 72.13,
+          "h": 4.52,
+          "text": "relation) or vertically (create a subset of columns of a relation)."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_012.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nDesign transparency and Execution transparency:\r\n\u25cf Freedom from knowing how the distributed database is designed and \r\nwhere a transaction executes.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.4,
+          "t": 24.09,
+          "w": 31.06,
+          "h": 5.01,
+          "text": "Types of Transparency"
+        },
+        {
+          "l": 4.57,
+          "t": 31.85,
+          "w": 25.47,
+          "h": 4.49,
+          "text": "Design transparency "
+        },
+        {
+          "l": 30.06,
+          "t": 31.85,
+          "w": 5.74,
+          "h": 3.47,
+          "text": " and "
+        },
+        {
+          "l": 36.03,
+          "t": 31.85,
+          "w": 29.37,
+          "h": 4.49,
+          "text": "Execution transparency"
+        },
+        {
+          "l": 65.6,
+          "t": 32.8,
+          "w": 0.29,
+          "h": 2.53,
+          "text": ":"
+        },
+        {
+          "l": 5.98,
+          "t": 39.59,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 37.63,
+          "w": 81.26,
+          "h": 4.51,
+          "text": "Freedom from knowing how the distributed database is designed and "
+        },
+        {
+          "l": 9.38,
+          "t": 42.99,
+          "w": 34.55,
+          "h": 3.48,
+          "text": "where a transaction executes."
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_013.webp",
+      "text": "Distributed Database Concepts\r\nAvailability and Reliability\r\n\u25cf Reliability is broadly defined as the probability that a system is running \r\n(not down) at a certain time point.\r\n\u25cf Availability is the probability that the system is continuously available \r\nduring a time interval.\r\n\u25cf Both directly related to faults, failures and errors.\r\n\u25cf Fault tolerant approaches. \r\n\u25cf A failure is a deviation of a system\u2019s behavior from that which is specified \r\nin order to ensure correct execution of operations. \r\n\u25cf Errors constitute that subset of system states that causes the failure. \r\n\u25cf Fault is the cause of an error.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 36.25,
+          "h": 4.99,
+          "text": "Availability and Reliability"
+        },
+        {
+          "l": 5.98,
+          "t": 31.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 29.95,
+          "w": 12.31,
+          "h": 4.49,
+          "text": "Reliability "
+        },
+        {
+          "l": 21.89,
+          "t": 29.93,
+          "w": 71.5,
+          "h": 4.52,
+          "text": " is broadly defined as the probability that a system is running "
+        },
+        {
+          "l": 9.45,
+          "t": 35.28,
+          "w": 39.19,
+          "h": 4.48,
+          "text": "(not down) at a certain time point."
+        },
+        {
+          "l": 5.98,
+          "t": 42.55,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 40.62,
+          "w": 14.06,
+          "h": 4.49,
+          "text": "Availability "
+        },
+        {
+          "l": 23.42,
+          "t": 40.62,
+          "w": 68.38,
+          "h": 4.49,
+          "text": " is the probability that the system is continuously available "
+        },
+        {
+          "l": 9.49,
+          "t": 45.95,
+          "w": 25.24,
+          "h": 4.49,
+          "text": "during a time interval."
+        },
+        {
+          "l": 5.98,
+          "t": 53.22,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 51.26,
+          "w": 56.85,
+          "h": 4.52,
+          "text": "Both directly related to faults, failures and errors."
+        },
+        {
+          "l": 5.98,
+          "t": 58.55,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 56.62,
+          "w": 31.01,
+          "h": 4.48,
+          "text": "Fault tolerant approaches. "
+        },
+        {
+          "l": 5.98,
+          "t": 63.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 62.14,
+          "w": 2.23,
+          "h": 3.24,
+          "text": "A "
+        },
+        {
+          "l": 11.63,
+          "t": 61.93,
+          "w": 8.1,
+          "h": 3.49,
+          "text": "failure "
+        },
+        {
+          "l": 19.84,
+          "t": 61.93,
+          "w": 75.57,
+          "h": 4.52,
+          "text": " is a deviation of a system\u2019s behavior from that which is specified "
+        },
+        {
+          "l": 9.54,
+          "t": 67.26,
+          "w": 59.3,
+          "h": 4.51,
+          "text": "in order to ensure correct execution of operations. "
+        },
+        {
+          "l": 5.98,
+          "t": 74.55,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 72.82,
+          "w": 7.27,
+          "h": 3.26,
+          "text": "Errors "
+        },
+        {
+          "l": 16.94,
+          "t": 72.59,
+          "w": 73.26,
+          "h": 4.52,
+          "text": " constitute that subset of system states that causes the failure. "
+        },
+        {
+          "l": 5.98,
+          "t": 79.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 77.95,
+          "w": 6.06,
+          "h": 3.47,
+          "text": "Fault "
+        },
+        {
+          "l": 15.72,
+          "t": 77.93,
+          "w": 27.94,
+          "h": 3.51,
+          "text": " is the cause of an error."
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_014.webp",
+      "text": "Distributed Database Concepts\r\nAvailability and Reliability\r\n\u25cf A reliable DDBMS tolerates failures of underlying components, and it \r\nprocesses user requests as long as database consistency is not violated. \r\n\u25cf A DDBMS recovery manager has to deal with failures arising from \r\ntransactions, hardware, and communication networks.\r\n\u25cf In DDB, the term availability is used generally as an umbrella term to \r\ncover both concepts.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 36.25,
+          "h": 4.99,
+          "text": "Availability and Reliability"
+        },
+        {
+          "l": 5.98,
+          "t": 31.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 29.93,
+          "w": 80.45,
+          "h": 4.52,
+          "text": "A reliable DDBMS tolerates failures of underlying components, and it "
+        },
+        {
+          "l": 9.56,
+          "t": 35.28,
+          "w": 83.84,
+          "h": 4.49,
+          "text": "processes user requests as long as database consistency is not violated. "
+        },
+        {
+          "l": 5.98,
+          "t": 42.55,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 40.59,
+          "w": 76.49,
+          "h": 4.52,
+          "text": "A DDBMS recovery manager has to deal with failures arising from "
+        },
+        {
+          "l": 9.39,
+          "t": 45.95,
+          "w": 63.27,
+          "h": 4.0,
+          "text": "transactions, hardware, and communication networks."
+        },
+        {
+          "l": 5.98,
+          "t": 53.22,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 51.28,
+          "w": 80.0,
+          "h": 4.49,
+          "text": "In DDB, the term availability is used generally as an umbrella term to "
+        },
+        {
+          "l": 9.49,
+          "t": 56.62,
+          "w": 23.89,
+          "h": 4.48,
+          "text": "cover both concepts."
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_015.webp",
+      "text": "Distributed Database Concepts\r\nScalability and Partition Tolerance\r\n\u25cf Scalability determines the extent to which the system can expand its \r\ncapacity while continuing to operate without interruption. \r\n\u25cf Two types:\r\n\u25cb Horizontal scalability: expanding the number of nodes in the distributed \r\nsystem.\r\n\u25cb Vertical scalability: expanding the capacity of the individual nodes in the \r\nsystem, such as the storage capacity or the processing power of a node.\r\n\u25cf Partition tolerance states that the system should have the capacity to \r\ncontinue operating while the network is partitioned.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.47,
+          "t": 24.12,
+          "w": 47.39,
+          "h": 4.99,
+          "text": "Scalability and Partition Tolerance"
+        },
+        {
+          "l": 5.98,
+          "t": 31.88,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 29.95,
+          "w": 12.7,
+          "h": 4.49,
+          "text": "Scalability "
+        },
+        {
+          "l": 22.17,
+          "t": 29.95,
+          "w": 68.48,
+          "h": 4.49,
+          "text": " determines the extent to which the system can expand its "
+        },
+        {
+          "l": 9.49,
+          "t": 35.28,
+          "w": 67.53,
+          "h": 4.49,
+          "text": "capacity while continuing to operate without interruption. "
+        },
+        {
+          "l": 5.98,
+          "t": 42.55,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 40.82,
+          "w": 12.17,
+          "h": 4.29,
+          "text": "Two types:"
+        },
+        {
+          "l": 10.7,
+          "t": 47.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.55,
+          "t": 46.84,
+          "w": 23.32,
+          "h": 3.99,
+          "text": "Horizontal scalability"
+        },
+        {
+          "l": 38.03,
+          "t": 46.82,
+          "w": 53.25,
+          "h": 4.01,
+          "text": ": expanding the number of nodes in the distributed "
+        },
+        {
+          "l": 14.46,
+          "t": 51.99,
+          "w": 7.63,
+          "h": 3.59,
+          "text": "system."
+        },
+        {
+          "l": 10.7,
+          "t": 58.37,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 57.31,
+          "w": 20.42,
+          "h": 3.99,
+          "text": "Vertical scalability"
+        },
+        {
+          "l": 34.93,
+          "t": 57.29,
+          "w": 56.02,
+          "h": 4.01,
+          "text": ": expanding the capacity of the individual nodes in the "
+        },
+        {
+          "l": 14.46,
+          "t": 62.03,
+          "w": 73.82,
+          "h": 4.01,
+          "text": "system, such as the storage capacity or the processing power of a node."
+        },
+        {
+          "l": 5.98,
+          "t": 69.81,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 67.87,
+          "w": 23.33,
+          "h": 3.47,
+          "text": "Partition tolerance "
+        },
+        {
+          "l": 33.02,
+          "t": 67.87,
+          "w": 59.36,
+          "h": 4.49,
+          "text": " states that the system should have the capacity to "
+        },
+        {
+          "l": 9.49,
+          "t": 73.21,
+          "w": 60.0,
+          "h": 4.49,
+          "text": "continue operating while the network is partitioned."
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_016.webp",
+      "text": "Distributed Database Concepts\r\nAutonomy\r\n\u25cf Autonomy determines the extent to which individual nodes or DBs in a \r\nconnected DDB can operate independently. \r\n\u25cf A high degree of autonomy is desirable for increased flexibility and \r\ncustomized maintenance of an individual node. \r\n\u25cf Autonomy can be applied to design, communication, and execution. \r\n\u25cf Design autonomy refers to independence of data model usage and \r\ntransaction management techniques among nodes. \r\n\u25cf Communication autonomy determines the extent to which each node \r\ncan decide on sharing of information with other nodes. \r\n\u25cf Execution autonomy refers to independence of users to act as they \r\nplease.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 23.85,
+          "w": 14.51,
+          "h": 4.78,
+          "text": "Autonomy"
+        },
+        {
+          "l": 5.98,
+          "t": 30.86,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 28.93,
+          "w": 82.77,
+          "h": 4.49,
+          "text": "Autonomy determines the extent to which individual nodes or DBs in a "
+        },
+        {
+          "l": 9.49,
+          "t": 33.73,
+          "w": 51.21,
+          "h": 4.49,
+          "text": "connected DDB can operate independently. "
+        },
+        {
+          "l": 5.98,
+          "t": 40.46,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 38.51,
+          "w": 78.12,
+          "h": 4.52,
+          "text": "A high degree of autonomy is desirable for increased flexibility and "
+        },
+        {
+          "l": 9.49,
+          "t": 43.31,
+          "w": 55.47,
+          "h": 3.51,
+          "text": "customized maintenance of an individual node. "
+        },
+        {
+          "l": 5.98,
+          "t": 50.06,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 48.13,
+          "w": 79.59,
+          "h": 4.49,
+          "text": "Autonomy can be applied to design, communication, and execution. "
+        },
+        {
+          "l": 5.98,
+          "t": 54.86,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 52.93,
+          "w": 21.66,
+          "h": 4.49,
+          "text": "Design autonomy "
+        },
+        {
+          "l": 31.24,
+          "t": 52.91,
+          "w": 57.94,
+          "h": 4.51,
+          "text": " refers to independence of data model usage and "
+        },
+        {
+          "l": 9.39,
+          "t": 57.73,
+          "w": 60.61,
+          "h": 4.49,
+          "text": "transaction management techniques among nodes. "
+        },
+        {
+          "l": 5.98,
+          "t": 64.46,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.49,
+          "t": 62.53,
+          "w": 33.28,
+          "h": 4.49,
+          "text": "Communication autonomy "
+        },
+        {
+          "l": 42.78,
+          "t": 62.53,
+          "w": 50.45,
+          "h": 3.47,
+          "text": " determines the extent to which each node "
+        },
+        {
+          "l": 9.49,
+          "t": 67.31,
+          "w": 64.44,
+          "h": 4.51,
+          "text": "can decide on sharing of information with other nodes. "
+        },
+        {
+          "l": 5.98,
+          "t": 74.06,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 72.13,
+          "w": 25.56,
+          "h": 4.49,
+          "text": "Execution autonomy "
+        },
+        {
+          "l": 35.14,
+          "t": 72.11,
+          "w": 54.56,
+          "h": 4.52,
+          "text": " refers to independence of users to act as they "
+        },
+        {
+          "l": 9.56,
+          "t": 76.93,
+          "w": 7.8,
+          "h": 4.48,
+          "text": "please."
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_017.webp",
+      "text": "Distributed Database Concepts\r\nAdvantages of Distributed Databases\r\n1. Improved ease and flexibility of application development.\r\n2. Increased availability.\r\n\u25cb A distributed database system has multiple nodes (computers) and if one fails then \r\nothers are available to do the job.\r\n3. Improved performance.\r\n\u25cb A distributed DBMS fragments the database to keep data closer to where it is needed \r\nmost (Data localization). \r\n\u25cb This reduces data management (access and modification) time significantly.\r\n4. Easier expansion via scalability. \r\n\u25cb Allows new nodes (computers) to be added anytime without chaining the entire \r\nconfiguration.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 24.09,
+          "w": 51.29,
+          "h": 5.01,
+          "text": "Advantages of Distributed Databases"
+        },
+        {
+          "l": 5.19,
+          "t": 30.51,
+          "w": 1.49,
+          "h": 2.92,
+          "text": "1. "
+        },
+        {
+          "l": 9.59,
+          "t": 29.93,
+          "w": 66.11,
+          "h": 4.52,
+          "text": "Improved ease and flexibility of application development."
+        },
+        {
+          "l": 5.1,
+          "t": 35.81,
+          "w": 1.58,
+          "h": 2.96,
+          "text": "2. "
+        },
+        {
+          "l": 9.59,
+          "t": 35.28,
+          "w": 24.46,
+          "h": 4.49,
+          "text": "Increased availability."
+        },
+        {
+          "l": 10.84,
+          "t": 41.35,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 40.41,
+          "w": 75.41,
+          "h": 3.51,
+          "text": "A distributed database system has multiple nodes (computers) and if one fails then "
+        },
+        {
+          "l": 14.46,
+          "t": 44.58,
+          "w": 30.1,
+          "h": 3.49,
+          "text": "others are available to do the job."
+        },
+        {
+          "l": 5.09,
+          "t": 49.43,
+          "w": 1.59,
+          "h": 2.96,
+          "text": "3. "
+        },
+        {
+          "l": 9.59,
+          "t": 48.89,
+          "w": 27.26,
+          "h": 4.51,
+          "text": "Improved performance."
+        },
+        {
+          "l": 10.84,
+          "t": 54.98,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 54.04,
+          "w": 77.43,
+          "h": 3.51,
+          "text": "A distributed DBMS fragments the database to keep data closer to where it is needed "
+        },
+        {
+          "l": 14.51,
+          "t": 58.37,
+          "w": 5.44,
+          "h": 3.05,
+          "text": "most ("
+        },
+        {
+          "l": 20.19,
+          "t": 58.21,
+          "w": 16.01,
+          "h": 2.7,
+          "text": "Data localization"
+        },
+        {
+          "l": 36.4,
+          "t": 58.37,
+          "w": 1.53,
+          "h": 3.05,
+          "text": "). "
+        },
+        {
+          "l": 10.84,
+          "t": 63.28,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 62.34,
+          "w": 67.93,
+          "h": 3.51,
+          "text": "This reduces data management (access and modification) time significantly."
+        },
+        {
+          "l": 5.04,
+          "t": 67.24,
+          "w": 1.64,
+          "h": 2.93,
+          "text": "4. "
+        },
+        {
+          "l": 9.59,
+          "t": 66.69,
+          "w": 36.65,
+          "h": 4.49,
+          "text": "Easier expansion via scalability. "
+        },
+        {
+          "l": 10.84,
+          "t": 72.76,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 71.84,
+          "w": 72.19,
+          "h": 3.49,
+          "text": "Allows new nodes (computers) to be added anytime without chaining the entire "
+        },
+        {
+          "l": 14.46,
+          "t": 75.97,
+          "w": 12.35,
+          "h": 3.51,
+          "text": "configuration."
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_018.webp",
+      "text": "Distributed Database Concepts\r\nAdditional Functions of Distributed Databases\r\n1. Keeping track of data distribution: The ability to keep track of the data \r\ndistribution, fragmentation, and replication by expanding the DDBMS catalog.\r\n2. Distributed query processing: The ability to access remote sites and transmit \r\nqueries and data among the various sites via a communication network.\r\n3. Distributed transaction management: The ability to devise execution strategies \r\nfor queries and transactions that access data from more than one site and to \r\nsynchronize the access to distributed data and maintain the integrity of the overall \r\ndatabase.\r\n4. Replicated data management: The ability to decide which copy of a replicated \r\ndata item to access and to maintain the consistency of copies of a replicated data \r\nitem.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 10.94,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 21.78,
+          "w": 60.58,
+          "h": 3.68,
+          "text": "Additional Functions of Distributed Databases"
+        },
+        {
+          "l": 5.19,
+          "t": 27.47,
+          "w": 1.49,
+          "h": 2.92,
+          "text": "1. "
+        },
+        {
+          "l": 9.55,
+          "t": 27.27,
+          "w": 37.81,
+          "h": 4.01,
+          "text": "Keeping track of data distribution: "
+        },
+        {
+          "l": 47.5,
+          "t": 27.27,
+          "w": 37.59,
+          "h": 4.01,
+          "text": " The ability to keep track of the data "
+        },
+        {
+          "l": 9.47,
+          "t": 32.01,
+          "w": 79.82,
+          "h": 4.01,
+          "text": "distribution, fragmentation, and replication by expanding the DDBMS catalog."
+        },
+        {
+          "l": 5.1,
+          "t": 36.91,
+          "w": 1.58,
+          "h": 2.96,
+          "text": "2. "
+        },
+        {
+          "l": 9.55,
+          "t": 36.77,
+          "w": 32.37,
+          "h": 3.99,
+          "text": "Distributed query processing: "
+        },
+        {
+          "l": 42.06,
+          "t": 36.77,
+          "w": 49.04,
+          "h": 3.99,
+          "text": " The ability to access remote sites and transmit "
+        },
+        {
+          "l": 9.47,
+          "t": 41.51,
+          "w": 74.04,
+          "h": 3.99,
+          "text": "queries and data among the various sites via a communication network."
+        },
+        {
+          "l": 5.09,
+          "t": 46.39,
+          "w": 1.59,
+          "h": 2.96,
+          "text": "3. "
+        },
+        {
+          "l": 9.55,
+          "t": 46.25,
+          "w": 41.73,
+          "h": 3.99,
+          "text": "Distributed transaction management: "
+        },
+        {
+          "l": 51.42,
+          "t": 46.25,
+          "w": 42.96,
+          "h": 3.99,
+          "text": " The ability to devise execution strategies "
+        },
+        {
+          "l": 9.38,
+          "t": 50.97,
+          "w": 80.0,
+          "h": 4.01,
+          "text": "for queries and transactions that access data from more than one site and to "
+        },
+        {
+          "l": 9.46,
+          "t": 55.71,
+          "w": 85.47,
+          "h": 4.01,
+          "text": "synchronize the access to distributed data and maintain the integrity of the overall "
+        },
+        {
+          "l": 9.47,
+          "t": 60.47,
+          "w": 9.81,
+          "h": 3.1,
+          "text": "database."
+        },
+        {
+          "l": 5.04,
+          "t": 65.38,
+          "w": 1.64,
+          "h": 2.93,
+          "text": "4. "
+        },
+        {
+          "l": 9.55,
+          "t": 65.21,
+          "w": 33.02,
+          "h": 3.99,
+          "text": "Replicated data management: "
+        },
+        {
+          "l": 42.71,
+          "t": 65.19,
+          "w": 49.3,
+          "h": 4.01,
+          "text": " The ability to decide which copy of a replicated "
+        },
+        {
+          "l": 9.47,
+          "t": 69.94,
+          "w": 84.24,
+          "h": 4.01,
+          "text": "data item to access and to maintain the consistency of copies of a replicated data "
+        },
+        {
+          "l": 9.52,
+          "t": 74.79,
+          "w": 4.9,
+          "h": 3.0,
+          "text": "item."
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_019.webp",
+      "text": "Distributed Database Concepts\r\nAdditional Functions of Distributed Databases\r\n5. Distributed database recovery: The ability to recover from individual site crashes \r\nand from new types of failures, such as the failure of communication links.\r\n6. Security: Distributed transactions must be executed with the proper management \r\nof the security of the data and the authorization/access privileges of users.\r\n7. Distributed directory (catalog) management: A directory contains information \r\n(metadata) about data in the database. The directory may be global for the entire \r\nDDB, or local for each site. The placement and distribution of the directory are \r\ndesign and policy issues.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 11.38,
+          "w": 48.46,
+          "h": 7.39,
+          "text": "Distributed Database Concepts"
+        },
+        {
+          "l": 4.35,
+          "t": 21.24,
+          "w": 60.58,
+          "h": 3.68,
+          "text": "Additional Functions of Distributed Databases"
+        },
+        {
+          "l": 5.13,
+          "t": 26.93,
+          "w": 1.55,
+          "h": 2.92,
+          "text": "5. "
+        },
+        {
+          "l": 9.55,
+          "t": 26.75,
+          "w": 33.98,
+          "h": 3.99,
+          "text": "Distributed database recovery: "
+        },
+        {
+          "l": 43.67,
+          "t": 26.73,
+          "w": 51.78,
+          "h": 4.01,
+          "text": " The ability to recover from individual site crashes "
+        },
+        {
+          "l": 9.45,
+          "t": 31.47,
+          "w": 76.53,
+          "h": 4.01,
+          "text": "and from new types of failures, such as the failure of communication links."
+        },
+        {
+          "l": 5.12,
+          "t": 36.37,
+          "w": 1.56,
+          "h": 2.96,
+          "text": "6. "
+        },
+        {
+          "l": 9.45,
+          "t": 36.23,
+          "w": 9.45,
+          "h": 3.99,
+          "text": "Security: "
+        },
+        {
+          "l": 19.03,
+          "t": 36.23,
+          "w": 76.77,
+          "h": 3.99,
+          "text": " Distributed transactions must be executed with the proper management "
+        },
+        {
+          "l": 9.47,
+          "t": 40.95,
+          "w": 76.59,
+          "h": 4.01,
+          "text": "of the security of the data and the authorization/access privileges of users."
+        },
+        {
+          "l": 5.09,
+          "t": 45.9,
+          "w": 1.59,
+          "h": 2.92,
+          "text": "7. "
+        },
+        {
+          "l": 9.55,
+          "t": 45.71,
+          "w": 49.22,
+          "h": 3.99,
+          "text": "Distributed directory (catalog) management: "
+        },
+        {
+          "l": 58.92,
+          "t": 45.69,
+          "w": 34.58,
+          "h": 4.01,
+          "text": " A directory contains information "
+        },
+        {
+          "l": 9.44,
+          "t": 50.43,
+          "w": 84.77,
+          "h": 4.01,
+          "text": "(metadata) about data in the database. The directory may be global for the entire "
+        },
+        {
+          "l": 9.56,
+          "t": 55.18,
+          "w": 81.05,
+          "h": 4.01,
+          "text": "DDB, or local for each site. The placement and distribution of the directory are "
+        },
+        {
+          "l": 9.47,
+          "t": 59.94,
+          "w": 25.1,
+          "h": 3.99,
+          "text": "design and policy issues."
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_020.webp",
+      "text": "Data Fragmentation, Replication and Allocation\r\nData Fragmentation\r\n\u25cf Break a database into logical units.\r\nData Replication\r\n\u25cf Storing certain data or fragments in more than one site.\r\n\u25cf Increases availability and reliability.\r\nData Allocation\r\n\u25cf Allocating fragments (or replicas of fragments) for storage at the various \r\nnodes.\r\nData Fragmentation, Replication and Allocation are techniques are used \r\nduring the process of distributed database design.\r\nThe information concerning these techniques is stored in a global directory\r\nthat is accessed by the DDBS applications as needed.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.94,
+          "w": 73.89,
+          "h": 7.36,
+          "text": "Data Fragmentation, Replication and Allocation"
+        },
+        {
+          "l": 3.78,
+          "t": 19.9,
+          "w": 24.82,
+          "h": 4.49,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 5.28,
+          "t": 28.33,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 26.25,
+          "w": 39.95,
+          "h": 4.49,
+          "text": "Break a database into logical units."
+        },
+        {
+          "l": 3.78,
+          "t": 31.31,
+          "w": 20.25,
+          "h": 4.49,
+          "text": "Data Replication"
+        },
+        {
+          "l": 5.28,
+          "t": 39.75,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.69,
+          "t": 37.64,
+          "w": 64.47,
+          "h": 4.51,
+          "text": "Storing certain data or fragments in more than one site."
+        },
+        {
+          "l": 5.28,
+          "t": 44.81,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 42.73,
+          "w": 40.49,
+          "h": 4.49,
+          "text": "Increases availability and reliability."
+        },
+        {
+          "l": 3.78,
+          "t": 47.8,
+          "w": 18.82,
+          "h": 3.47,
+          "text": "Data Allocation"
+        },
+        {
+          "l": 5.28,
+          "t": 56.23,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.56,
+          "t": 54.12,
+          "w": 84.36,
+          "h": 4.51,
+          "text": "Allocating fragments (or replicas of fragments) for storage at the various "
+        },
+        {
+          "l": 8.77,
+          "t": 59.21,
+          "w": 7.42,
+          "h": 3.48,
+          "text": "nodes."
+        },
+        {
+          "l": 3.8,
+          "t": 65.56,
+          "w": 83.75,
+          "h": 4.49,
+          "text": "Data Fragmentation, Replication and Allocation are techniques are used "
+        },
+        {
+          "l": 3.7,
+          "t": 70.61,
+          "w": 25.24,
+          "h": 4.51,
+          "text": "during the process of "
+        },
+        {
+          "l": 29.09,
+          "t": 70.63,
+          "w": 34.53,
+          "h": 4.49,
+          "text": "distributed database design"
+        },
+        {
+          "l": 64.02,
+          "t": 73.55,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 3.58,
+          "t": 76.96,
+          "w": 68.95,
+          "h": 4.51,
+          "text": "The information concerning these techniques is stored in a "
+        },
+        {
+          "l": 72.62,
+          "t": 76.98,
+          "w": 19.64,
+          "h": 4.49,
+          "text": "global directory"
+        },
+        {
+          "l": 3.6,
+          "t": 82.05,
+          "w": 61.24,
+          "h": 4.49,
+          "text": "that is accessed by the DDBS applications as needed."
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_021.webp",
+      "text": "Data Fragmentation\r\n\u25cf Split a relation into logically related and correct parts. \r\nWhy fragment? \r\n\u25cf Usage\r\n\u25cb Applications work with views rather than entire relations.\r\n\u25cf Efficiency\r\n\u25cb Data is stored close to where it is most frequently used.\r\n\u25cb Data that is not needed by local applications is not stored.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.0,
+          "t": 22.59,
+          "w": 1.09,
+          "h": 1.97,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.44,
+          "t": 21.44,
+          "w": 62.51,
+          "h": 4.49,
+          "text": "Split a relation into logically related and correct parts. "
+        },
+        {
+          "l": 3.56,
+          "t": 27.85,
+          "w": 26.19,
+          "h": 6.01,
+          "text": "Why fragment? "
+        },
+        {
+          "l": 3.53,
+          "t": 39.15,
+          "w": 0.65,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.53,
+          "t": 37.27,
+          "w": 6.8,
+          "h": 4.28,
+          "text": "Usage"
+        },
+        {
+          "l": 8.1,
+          "t": 45.44,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.68,
+          "t": 44.39,
+          "w": 58.71,
+          "h": 3.99,
+          "text": "Applications work with views rather than entire relations."
+        },
+        {
+          "l": 3.53,
+          "t": 53.3,
+          "w": 0.65,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 51.19,
+          "w": 10.66,
+          "h": 4.52,
+          "text": "Efficiency"
+        },
+        {
+          "l": 8.1,
+          "t": 59.59,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.9,
+          "t": 58.52,
+          "w": 56.94,
+          "h": 4.01,
+          "text": "Data is stored close to where it is most frequently used."
+        },
+        {
+          "l": 8.1,
+          "t": 66.33,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.9,
+          "t": 65.28,
+          "w": 59.43,
+          "h": 3.99,
+          "text": "Data that is not needed by local applications is not stored."
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_022.webp",
+      "text": "Data Fragmentation\r\nWhy fragment? \r\n\u25cf Parallelism\r\n\u25cb With fragments as units of distribution, transaction can be divided as several \r\nsubqueries that operate on fragments.\r\n\u25cf Security\r\n\u25cb Data not required by applications need is not stored and so not available to \r\nunauthorized users.\r\nDisadvantages:\r\n\u25cf Performance\r\n\u25cf Integrity",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.56,
+          "t": 21.33,
+          "w": 26.19,
+          "h": 6.01,
+          "text": "Why fragment? "
+        },
+        {
+          "l": 3.53,
+          "t": 31.27,
+          "w": 0.65,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 29.19,
+          "w": 12.28,
+          "h": 3.47,
+          "text": "Parallelism"
+        },
+        {
+          "l": 8.1,
+          "t": 36.53,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.72,
+          "t": 35.45,
+          "w": 79.49,
+          "h": 4.01,
+          "text": "With fragments as units of distribution, transaction can be divided as several "
+        },
+        {
+          "l": 11.8,
+          "t": 39.96,
+          "w": 39.72,
+          "h": 4.01,
+          "text": "subqueries that operate on fragments."
+        },
+        {
+          "l": 3.53,
+          "t": 47.92,
+          "w": 0.65,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.44,
+          "t": 45.94,
+          "w": 9.17,
+          "h": 4.38,
+          "text": "Security"
+        },
+        {
+          "l": 8.1,
+          "t": 53.17,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.9,
+          "t": 52.11,
+          "w": 78.16,
+          "h": 3.99,
+          "text": "Data not required by applications need is not stored and so not available to "
+        },
+        {
+          "l": 11.86,
+          "t": 56.62,
+          "w": 20.37,
+          "h": 3.1,
+          "text": "unauthorized users."
+        },
+        {
+          "l": 3.8,
+          "t": 68.83,
+          "w": 17.17,
+          "h": 4.49,
+          "text": "Disadvantages:"
+        },
+        {
+          "l": 5.28,
+          "t": 77.26,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 75.15,
+          "w": 14.75,
+          "h": 3.49,
+          "text": "Performance"
+        },
+        {
+          "l": 5.28,
+          "t": 82.33,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 80.35,
+          "w": 9.43,
+          "h": 4.38,
+          "text": "Integrity"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_023.webp",
+      "text": "Data Fragmentation\r\nThree correctness rules \r\n\u25cf Completeness\r\n\u25cf Reconstruction\r\n\u25cf Disjointness",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.63,
+          "t": 21.65,
+          "w": 39.83,
+          "h": 4.62,
+          "text": "Three correctness rules "
+        },
+        {
+          "l": 3.53,
+          "t": 32.91,
+          "w": 0.65,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.46,
+          "t": 30.83,
+          "w": 16.29,
+          "h": 4.48,
+          "text": "Completeness"
+        },
+        {
+          "l": 3.53,
+          "t": 40.33,
+          "w": 0.65,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 38.36,
+          "w": 17.11,
+          "h": 3.36,
+          "text": "Reconstruction"
+        },
+        {
+          "l": 3.53,
+          "t": 47.74,
+          "w": 0.65,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 45.77,
+          "w": 13.78,
+          "h": 4.38,
+          "text": "Disjointness"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_024.webp",
+      "text": "Data Fragmentation\r\nTypes of fragmentation\r\n\u25cf Horizontal Fragmentation\r\n\u25cf Vertical Fragmentation\r\n\u25cf Mixed Fragmentation",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.61,
+          "t": 21.43,
+          "w": 32.18,
+          "h": 5.01,
+          "text": "Types of fragmentation"
+        },
+        {
+          "l": 3.3,
+          "t": 30.58,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.51,
+          "t": 29.27,
+          "w": 28.43,
+          "h": 3.99,
+          "text": "Horizontal Fragmentation"
+        },
+        {
+          "l": 3.3,
+          "t": 37.21,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.31,
+          "t": 35.91,
+          "w": 25.53,
+          "h": 3.99,
+          "text": "Vertical Fragmentation"
+        },
+        {
+          "l": 3.16,
+          "t": 43.6,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.51,
+          "t": 42.55,
+          "w": 23.54,
+          "h": 3.99,
+          "text": "Mixed Fragmentation"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_025.webp",
+      "text": "Data Fragmentation\r\nHorizontal fragmentation (Sharding)\r\n\u25cf It is a horizontal subset of a relation which contain those of tuples \r\nwhich satisfy selection conditions.\r\n\u25cf Consider the Employee relation with selection condition (DNO = 5). \r\nAll tuples satisfy this condition will create a subset which will be a \r\nhorizontal fragment of Employee relation.\r\n\u25cf A selection condition may be composed of several conditions \r\nconnected by AND or OR.\r\n\u25cf Derived horizontal fragmentation: It is the partitioning of a primary \r\nrelation to other secondary relations which are related with Foreign \r\nkeys.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.22,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.84,
+          "t": 20.19,
+          "w": 55.58,
+          "h": 5.56,
+          "text": "Horizontal fragmentation (Sharding)"
+        },
+        {
+          "l": 2.91,
+          "t": 28.74,
+          "w": 1.16,
+          "h": 2.1,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.57,
+          "t": 27.44,
+          "w": 82.83,
+          "h": 4.86,
+          "text": "It is a horizontal subset of a relation which contain those of tuples "
+        },
+        {
+          "l": 7.34,
+          "t": 32.9,
+          "w": 42.2,
+          "h": 4.87,
+          "text": "which satisfy selection conditions."
+        },
+        {
+          "l": 2.91,
+          "t": 40.76,
+          "w": 1.16,
+          "h": 2.1,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.47,
+          "t": 39.48,
+          "w": 84.02,
+          "h": 4.85,
+          "text": "Consider the Employee relation with selection condition (DNO = 5). "
+        },
+        {
+          "l": 7.31,
+          "t": 44.93,
+          "w": 82.24,
+          "h": 4.87,
+          "text": "All tuples satisfy this condition will create a subset which will be a "
+        },
+        {
+          "l": 7.54,
+          "t": 50.39,
+          "w": 51.95,
+          "h": 4.87,
+          "text": "horizontal fragment of Employee relation."
+        },
+        {
+          "l": 2.91,
+          "t": 58.25,
+          "w": 1.16,
+          "h": 2.1,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.31,
+          "t": 56.95,
+          "w": 77.19,
+          "h": 4.87,
+          "text": "A selection condition may be composed of several conditions "
+        },
+        {
+          "l": 7.46,
+          "t": 62.44,
+          "w": 31.47,
+          "h": 4.85,
+          "text": "connected by AND or OR."
+        },
+        {
+          "l": 2.91,
+          "t": 70.27,
+          "w": 1.16,
+          "h": 2.1,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.57,
+          "t": 68.97,
+          "w": 84.22,
+          "h": 4.87,
+          "text": "Derived horizontal fragmentation: It is the partitioning of a primary "
+        },
+        {
+          "l": 7.54,
+          "t": 74.46,
+          "w": 85.05,
+          "h": 4.85,
+          "text": "relation to other secondary relations which are related with Foreign "
+        },
+        {
+          "l": 7.54,
+          "t": 79.93,
+          "w": 5.84,
+          "h": 4.85,
+          "text": "keys."
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_026.webp",
+      "text": "Data Fragmentation\r\nHorizontal fragmentation (Sharding)",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.22,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.86,
+          "t": 20.54,
+          "w": 60.09,
+          "h": 6.01,
+          "text": "Horizontal fragmentation (Sharding)"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_027.webp",
+      "text": "Data Fragmentation\r\nVertical fragmentation\r\n\u25cf It is a subset of a relation which is created by a subset of columns. \r\nThus a vertical fragment of a relation will contain values of selected \r\ncolumns. There is no selection condition used in vertical \r\nfragmentation.\r\n\u25cf Consider the Employee relation. A vertical fragment of can be created \r\nby keeping the values of Name, Bdate, Sex, and Address.\r\n\u25cf Because there is no condition for creating a vertical fragment, each \r\nfragment must include the primary key attribute of the parent \r\nrelation Employee. In this way all vertical fragments of a relation are \r\nconnected.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 7.68,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.56,
+          "t": 21.07,
+          "w": 31.47,
+          "h": 5.01,
+          "text": "Vertical fragmentation"
+        },
+        {
+          "l": 2.95,
+          "t": 29.61,
+          "w": 1.13,
+          "h": 2.05,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.57,
+          "t": 28.34,
+          "w": 81.26,
+          "h": 4.77,
+          "text": "It is a subset of a relation which is created by a subset of columns. "
+        },
+        {
+          "l": 7.33,
+          "t": 34.25,
+          "w": 82.87,
+          "h": 4.76,
+          "text": "Thus a vertical fragment of a relation will contain values of selected "
+        },
+        {
+          "l": 7.46,
+          "t": 40.18,
+          "w": 69.69,
+          "h": 3.68,
+          "text": "columns. There is no selection condition used in vertical "
+        },
+        {
+          "l": 7.35,
+          "t": 46.07,
+          "w": 18.07,
+          "h": 4.76,
+          "text": "fragmentation."
+        },
+        {
+          "l": 2.95,
+          "t": 54.34,
+          "w": 1.13,
+          "h": 2.05,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.47,
+          "t": 53.07,
+          "w": 86.37,
+          "h": 4.77,
+          "text": "Consider the Employee relation. A vertical fragment of can be created "
+        },
+        {
+          "l": 7.53,
+          "t": 58.98,
+          "w": 68.91,
+          "h": 4.77,
+          "text": "by keeping the values of Name, Bdate, Sex, and Address."
+        },
+        {
+          "l": 2.95,
+          "t": 67.25,
+          "w": 1.13,
+          "h": 2.05,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.57,
+          "t": 65.98,
+          "w": 82.47,
+          "h": 4.76,
+          "text": "Because there is no condition for creating a vertical fragment, each "
+        },
+        {
+          "l": 7.35,
+          "t": 71.89,
+          "w": 76.62,
+          "h": 4.77,
+          "text": "fragment must include the primary key attribute of the parent "
+        },
+        {
+          "l": 7.53,
+          "t": 77.8,
+          "w": 84.27,
+          "h": 4.77,
+          "text": "relation Employee. In this way all vertical fragments of a relation are "
+        },
+        {
+          "l": 7.46,
+          "t": 83.73,
+          "w": 13.21,
+          "h": 3.68,
+          "text": "connected."
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_028.webp",
+      "text": "Data Fragmentation\r\nVertical fragmentation",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 7.68,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.56,
+          "t": 21.07,
+          "w": 31.47,
+          "h": 5.01,
+          "text": "Vertical fragmentation"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_029.webp",
+      "text": "Data Fragmentation\r\nRepresentation: Horizontal fragmentation\r\n\u25cf Each horizontal fragment on a relation can be specified by a \u03c3Ci (R) \r\noperation in the relational algebra.\r\n\u25cf Complete horizontal fragmentation: A set of horizontal fragments whose \r\nconditions C1, C2, \u2026, Cn include all the tuples in R- that is, every tuple in R \r\nsatisfies (C1 OR C2 OR \u2026 OR Cn).\r\n\u25cf Disjoint complete horizontal fragmentation: No tuple in R satisfies (Ci \r\nAND Cj) where i \u2260 j. \r\n\u25cf To reconstruct R from horizontal fragments a UNION is applied.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 7.5,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.81,
+          "t": 19.28,
+          "w": 58.06,
+          "h": 5.01,
+          "text": "Representation: Horizontal fragmentation"
+        },
+        {
+          "l": 3.45,
+          "t": 28.95,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 26.99,
+          "w": 69.9,
+          "h": 4.52,
+          "text": "Each horizontal fragment on a relation can be specified by a "
+        },
+        {
+          "l": 77.63,
+          "t": 28.38,
+          "w": 1.21,
+          "h": 2.12,
+          "text": "\u03c3"
+        },
+        {
+          "l": 79.0,
+          "t": 29.9,
+          "w": 1.24,
+          "h": 2.24,
+          "text": "Ci "
+        },
+        {
+          "l": 80.37,
+          "t": 27.22,
+          "w": 4.31,
+          "h": 3.92,
+          "text": " (R) "
+        },
+        {
+          "l": 7.45,
+          "t": 33.15,
+          "w": 40.03,
+          "h": 4.49,
+          "text": "operation in the relational algebra."
+        },
+        {
+          "l": 3.45,
+          "t": 42.2,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.46,
+          "t": 40.25,
+          "w": 40.66,
+          "h": 4.51,
+          "text": "Complete horizontal fragmentation"
+        },
+        {
+          "l": 48.55,
+          "t": 40.25,
+          "w": 43.7,
+          "h": 4.51,
+          "text": ": A set of horizontal fragments whose "
+        },
+        {
+          "l": 7.45,
+          "t": 46.4,
+          "w": 85.76,
+          "h": 4.49,
+          "text": "conditions C1, C2, \u2026, Cn include all the tuples in R- that is, every tuple in R "
+        },
+        {
+          "l": 7.43,
+          "t": 52.51,
+          "w": 37.2,
+          "h": 4.15,
+          "text": "satisfies (C1 OR C2 OR \u2026 OR Cn)."
+        },
+        {
+          "l": 3.45,
+          "t": 61.59,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 59.63,
+          "w": 49.66,
+          "h": 4.51,
+          "text": "Disjoint complete horizontal fragmentation"
+        },
+        {
+          "l": 57.65,
+          "t": 59.63,
+          "w": 31.01,
+          "h": 4.51,
+          "text": ": No tuple in R satisfies (Ci "
+        },
+        {
+          "l": 7.31,
+          "t": 65.79,
+          "w": 22.73,
+          "h": 4.49,
+          "text": "AND Cj) where i \u2260 j. "
+        },
+        {
+          "l": 3.45,
+          "t": 74.84,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.33,
+          "t": 72.89,
+          "w": 53.1,
+          "h": 4.51,
+          "text": "To reconstruct R from horizontal fragments a "
+        },
+        {
+          "l": 60.71,
+          "t": 73.07,
+          "w": 7.76,
+          "h": 3.31,
+          "text": "UNION "
+        },
+        {
+          "l": 68.72,
+          "t": 72.91,
+          "w": 12.22,
+          "h": 4.48,
+          "text": " is applied."
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_030.webp",
+      "text": "Data Fragmentation\r\nRepresentation: Vertical fragmentation\r\n\u25cf A vertical fragment on a relation can be specified by a \u03a0Li(R) operation in \r\nthe relational algebra.\r\n\u25cf Complete vertical fragmentation: A set of vertical fragments whose \r\nprojection lists L1, L2, \u2026, Ln include all the attributes in R but share only \r\nthe primary key of R. \r\n\u25cf In this case the projection lists satisfy the following two conditions:\r\n1. L1 \u222a L2 \u222a ... \u222a Ln = ATTRS (R) \r\n2. Li \u2229 Lj = PK(R) for any i j, where ATTRS (R) is the set of attributes of R and PK(R) is the \r\nprimary key of R.\r\n\u25cf To reconstruct R from complete vertical fragments a OUTER UNION or \r\nFULL OUTER JOIN is applied.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 7.86,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.81,
+          "t": 18.99,
+          "w": 54.18,
+          "h": 5.01,
+          "text": "Representation: Vertical fragmentation"
+        },
+        {
+          "l": 3.45,
+          "t": 27.22,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.31,
+          "t": 25.26,
+          "w": 64.4,
+          "h": 4.52,
+          "text": "A vertical fragment on a relation can be specified by a \u03a0"
+        },
+        {
+          "l": 72.2,
+          "t": 28.17,
+          "w": 1.0,
+          "h": 2.21,
+          "text": "Li"
+        },
+        {
+          "l": 73.43,
+          "t": 25.4,
+          "w": 18.41,
+          "h": 4.37,
+          "text": "(R) operation in "
+        },
+        {
+          "l": 7.35,
+          "t": 30.08,
+          "w": 25.28,
+          "h": 4.49,
+          "text": "the relational algebra."
+        },
+        {
+          "l": 3.45,
+          "t": 37.81,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.46,
+          "t": 35.85,
+          "w": 77.96,
+          "h": 4.51,
+          "text": "Complete vertical fragmentation: A set of vertical fragments whose "
+        },
+        {
+          "l": 7.52,
+          "t": 40.67,
+          "w": 83.42,
+          "h": 4.49,
+          "text": "projection lists L1, L2, \u2026, Ln include all the attributes in R but share only "
+        },
+        {
+          "l": 7.35,
+          "t": 45.45,
+          "w": 24.67,
+          "h": 4.52,
+          "text": "the primary key of R. "
+        },
+        {
+          "l": 3.45,
+          "t": 53.19,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 51.24,
+          "w": 76.77,
+          "h": 4.52,
+          "text": "In this case the projection lists satisfy the following two conditions:"
+        },
+        {
+          "l": 8.01,
+          "t": 57.47,
+          "w": 1.12,
+          "h": 2.19,
+          "text": "1. "
+        },
+        {
+          "l": 11.87,
+          "t": 57.12,
+          "w": 2.44,
+          "h": 2.51,
+          "text": "L1 "
+        },
+        {
+          "l": 14.75,
+          "t": 57.21,
+          "w": 1.11,
+          "h": 2.37,
+          "text": "\u222a "
+        },
+        {
+          "l": 16.29,
+          "t": 57.08,
+          "w": 3.13,
+          "h": 2.54,
+          "text": " L2 "
+        },
+        {
+          "l": 19.86,
+          "t": 57.21,
+          "w": 1.11,
+          "h": 2.37,
+          "text": "\u222a "
+        },
+        {
+          "l": 21.41,
+          "t": 59.22,
+          "w": 2.54,
+          "h": 0.44,
+          "text": " ... "
+        },
+        {
+          "l": 24.38,
+          "t": 57.21,
+          "w": 1.11,
+          "h": 2.37,
+          "text": "\u222a "
+        },
+        {
+          "l": 25.93,
+          "t": 57.08,
+          "w": 13.81,
+          "h": 3.08,
+          "text": " Ln = ATTRS (R) "
+        },
+        {
+          "l": 7.94,
+          "t": 62.16,
+          "w": 1.18,
+          "h": 2.22,
+          "text": "2. "
+        },
+        {
+          "l": 11.87,
+          "t": 61.76,
+          "w": 1.82,
+          "h": 2.58,
+          "text": "Li "
+        },
+        {
+          "l": 13.84,
+          "t": 61.78,
+          "w": 1.1,
+          "h": 2.56,
+          "text": "\u2229 "
+        },
+        {
+          "l": 15.09,
+          "t": 61.66,
+          "w": 72.71,
+          "h": 3.51,
+          "text": " Lj = PK(R) for any i j, where ATTRS (R) is the set of attributes of R and PK(R) is the "
+        },
+        {
+          "l": 11.85,
+          "t": 65.39,
+          "w": 14.93,
+          "h": 3.51,
+          "text": "primary key of R."
+        },
+        {
+          "l": 3.45,
+          "t": 72.16,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.33,
+          "t": 70.2,
+          "w": 61.22,
+          "h": 4.51,
+          "text": "To reconstruct R from complete vertical fragments a "
+        },
+        {
+          "l": 68.77,
+          "t": 70.38,
+          "w": 16.55,
+          "h": 3.31,
+          "text": "OUTER UNION "
+        },
+        {
+          "l": 85.57,
+          "t": 71.19,
+          "w": 3.82,
+          "h": 2.5,
+          "text": " or "
+        },
+        {
+          "l": 7.55,
+          "t": 75.18,
+          "w": 19.79,
+          "h": 4.1,
+          "text": "FULL OUTER JOIN "
+        },
+        {
+          "l": 27.6,
+          "t": 75.02,
+          "w": 12.22,
+          "h": 4.48,
+          "text": " is applied."
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_031.webp",
+      "text": "Data Fragmentation\r\nRepresentation: Mixed (Hybrid) fragmentation\r\n\u25cf A combination of Vertical fragmentation and Horizontal fragmentation.\r\n\u25cf This is achieved by SELECT-PROJECT operations which is represented by \r\n\u03a0Li(\u03c3Ci (R)).\r\n\u25cf If C = True (Select all tuples) and L \u2260 ATTRS(R), we get a vertical fragment, \r\nand if C \u2260 True and L \u2260 ATTRS(R), we get a mixed fragment.\r\n\u25cf If C = True and L = ATTRS(R), then R can be considered a fragment.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 7.68,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.81,
+          "t": 24.51,
+          "w": 63.86,
+          "h": 5.01,
+          "text": "Representation: Mixed (Hybrid) fragmentation"
+        },
+        {
+          "l": 3.45,
+          "t": 32.94,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.31,
+          "t": 30.98,
+          "w": 82.14,
+          "h": 4.51,
+          "text": "A combination of Vertical fragmentation and Horizontal fragmentation."
+        },
+        {
+          "l": 3.45,
+          "t": 38.92,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.33,
+          "t": 36.99,
+          "w": 83.62,
+          "h": 4.49,
+          "text": "This is achieved by SELECT-PROJECT operations which is represented by "
+        },
+        {
+          "l": 7.55,
+          "t": 42.0,
+          "w": 1.33,
+          "h": 3.22,
+          "text": "\u03a0"
+        },
+        {
+          "l": 9.29,
+          "t": 44.67,
+          "w": 1.0,
+          "h": 2.21,
+          "text": "Li"
+        },
+        {
+          "l": 10.52,
+          "t": 42.0,
+          "w": 0.56,
+          "h": 3.92,
+          "text": "("
+        },
+        {
+          "l": 11.25,
+          "t": 43.16,
+          "w": 1.22,
+          "h": 2.12,
+          "text": "\u03c3"
+        },
+        {
+          "l": 12.62,
+          "t": 44.67,
+          "w": 1.24,
+          "h": 2.24,
+          "text": "Ci "
+        },
+        {
+          "l": 13.99,
+          "t": 42.0,
+          "w": 4.87,
+          "h": 3.92,
+          "text": " (R))."
+        },
+        {
+          "l": 3.45,
+          "t": 49.71,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 47.75,
+          "w": 84.41,
+          "h": 4.51,
+          "text": "If C = True (Select all tuples) and L \u2260 ATTRS(R), we get a vertical fragment, "
+        },
+        {
+          "l": 7.42,
+          "t": 52.55,
+          "w": 67.39,
+          "h": 4.51,
+          "text": "and if C \u2260 True and L \u2260 ATTRS(R), we get a mixed fragment."
+        },
+        {
+          "l": 3.45,
+          "t": 60.49,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.55,
+          "t": 58.54,
+          "w": 76.25,
+          "h": 4.51,
+          "text": "If C = True and L = ATTRS(R), then R can be considered a fragment."
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_032.webp",
+      "text": "Data Fragmentation\r\nMixed (Hybrid) fragmentation",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 7.68,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.81,
+          "t": 24.51,
+          "w": 40.89,
+          "h": 5.01,
+          "text": "Mixed (Hybrid) fragmentation"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_033.webp",
+      "text": "Data Fragmentation\r\nFragmentation schema\r\n\u25cf A definition of a set of fragments (horizontal or vertical or horizontal and \r\nvertical) that includes all attributes and tuples in the database that satisfies the \r\ncondition that the whole database can be reconstructed from the fragments by \r\napplying some sequence of UNION (or OUTER JOIN) and UNION operations.\r\nAllocation schema\r\n\u25cf It describes the distribution of fragments to sites of distributed databases. \r\n\u25cf It is a mapping that specifies for each fragment the site(s) at which it is stored. \r\n\u25cf If a fragment is stored at more than one site, it is said to be replicated.\r\n\u25cf It can be fully or partially replicated or can be partitioned.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 31.09,
+          "h": 7.36,
+          "text": "Data Fragmentation"
+        },
+        {
+          "l": 3.79,
+          "t": 19.41,
+          "w": 29.26,
+          "h": 4.61,
+          "text": "Fragmentation schema"
+        },
+        {
+          "l": 3.44,
+          "t": 28.38,
+          "w": 0.72,
+          "h": 1.31,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.31,
+          "t": 26.7,
+          "w": 78.47,
+          "h": 4.17,
+          "text": "A definition of a set of fragments (horizontal or vertical or horizontal and "
+        },
+        {
+          "l": 7.31,
+          "t": 32.37,
+          "w": 85.18,
+          "h": 4.17,
+          "text": "vertical) that includes all attributes and tuples in the database that satisfies the "
+        },
+        {
+          "l": 7.44,
+          "t": 38.04,
+          "w": 85.44,
+          "h": 4.18,
+          "text": "condition that the whole database can be reconstructed from the fragments by "
+        },
+        {
+          "l": 7.42,
+          "t": 43.72,
+          "w": 81.39,
+          "h": 4.18,
+          "text": "applying some sequence of UNION (or OUTER JOIN) and UNION operations."
+        },
+        {
+          "l": 3.56,
+          "t": 50.68,
+          "w": 23.33,
+          "h": 3.56,
+          "text": "Allocation schema"
+        },
+        {
+          "l": 3.44,
+          "t": 59.65,
+          "w": 0.72,
+          "h": 1.31,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.54,
+          "t": 57.97,
+          "w": 80.01,
+          "h": 4.17,
+          "text": "It describes the distribution of fragments to sites of distributed databases. "
+        },
+        {
+          "l": 3.44,
+          "t": 66.41,
+          "w": 0.72,
+          "h": 1.31,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.54,
+          "t": 64.73,
+          "w": 83.94,
+          "h": 4.17,
+          "text": "It is a mapping that specifies for each fragment the site(s) at which it is stored. "
+        },
+        {
+          "l": 3.44,
+          "t": 73.17,
+          "w": 0.72,
+          "h": 1.31,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.54,
+          "t": 71.49,
+          "w": 74.95,
+          "h": 4.17,
+          "text": "If a fragment is stored at more than one site, it is said to be replicated."
+        },
+        {
+          "l": 3.44,
+          "t": 79.93,
+          "w": 0.72,
+          "h": 1.31,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.54,
+          "t": 78.25,
+          "w": 61.25,
+          "h": 4.18,
+          "text": "It can be fully or partially replicated or can be partitioned."
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_034.webp",
+      "text": "Data Replication and Allocation\r\n\u25cf Data Replication\r\n\u25cb Database is replicated to all sites.\r\n\u25cb In full replication the entire database is replicated and in partial \r\nreplication some selected part is replicated to some of the sites. \r\n\u25cb Data replication is achieved through a replication schema.\r\n\u25cf Data Distribution (Data Allocation)\r\n\u25cb This is relevant only in the case of partial replication or partition.\r\n\u25cb The selected portion of the database is distributed to the database \r\nsites.\r\n\u25cb Choices depend on performance and availability goals of the system.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 49.08,
+          "h": 7.27,
+          "text": "Data Replication and Allocation"
+        },
+        {
+          "l": 3.12,
+          "t": 20.62,
+          "w": 1.19,
+          "h": 2.16,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.56,
+          "t": 19.3,
+          "w": 22.5,
+          "h": 4.99,
+          "text": "Data Replication"
+        },
+        {
+          "l": 8.11,
+          "t": 28.3,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 27.11,
+          "w": 38.23,
+          "h": 4.48,
+          "text": "Database is replicated to all sites."
+        },
+        {
+          "l": 8.11,
+          "t": 35.52,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 34.31,
+          "w": 74.01,
+          "h": 4.51,
+          "text": "In full replication the entire database is replicated and in partial "
+        },
+        {
+          "l": 11.9,
+          "t": 40.44,
+          "w": 74.5,
+          "h": 4.51,
+          "text": "replication some selected part is replicated to some of the sites. "
+        },
+        {
+          "l": 8.11,
+          "t": 48.87,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 47.68,
+          "w": 66.86,
+          "h": 4.49,
+          "text": "Data replication is achieved through a replication schema."
+        },
+        {
+          "l": 3.12,
+          "t": 56.42,
+          "w": 1.19,
+          "h": 2.16,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.56,
+          "t": 55.1,
+          "w": 47.72,
+          "h": 4.58,
+          "text": "Data Distribution (Data Allocation)"
+        },
+        {
+          "l": 8.11,
+          "t": 64.09,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.71,
+          "t": 62.88,
+          "w": 74.41,
+          "h": 4.52,
+          "text": "This is relevant only in the case of partial replication or partition."
+        },
+        {
+          "l": 8.11,
+          "t": 71.31,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.71,
+          "t": 70.1,
+          "w": 78.03,
+          "h": 4.51,
+          "text": "The selected portion of the database is distributed to the database "
+        },
+        {
+          "l": 11.81,
+          "t": 76.37,
+          "w": 5.65,
+          "h": 3.37,
+          "text": "sites."
+        },
+        {
+          "l": 8.11,
+          "t": 84.66,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.84,
+          "t": 83.46,
+          "w": 79.42,
+          "h": 4.52,
+          "text": "Choices depend on performance and availability goals of the system."
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_035.webp",
+      "text": "Data Replication and Allocation\r\n\u25cf Fully replicated distributed database\r\n\u25cb Replication of whole database at every site in distributed system.\r\n\u25cb Improves availability remarkably.\r\n\u25cb Update operations can be slow.\r\n\u25cf Nonredundant allocation (no replication)\r\n\u25cb Each fragment is stored at exactly one site.\r\n\u25cf Partial replication\r\n\u25cb Some fragments are replicated and others are not.\r\n\u25cb Defined by replication schema.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 49.08,
+          "h": 7.27,
+          "text": "Data Replication and Allocation"
+        },
+        {
+          "l": 3.7,
+          "t": 21.62,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.56,
+          "t": 19.3,
+          "w": 50.71,
+          "h": 4.99,
+          "text": "Fully replicated distributed database"
+        },
+        {
+          "l": 8.54,
+          "t": 29.05,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 27.09,
+          "w": 74.85,
+          "h": 4.52,
+          "text": "Replication of whole database at every site in distributed system."
+        },
+        {
+          "l": 8.54,
+          "t": 36.27,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 34.33,
+          "w": 37.9,
+          "h": 4.49,
+          "text": "Improves availability remarkably."
+        },
+        {
+          "l": 8.54,
+          "t": 43.48,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.91,
+          "t": 41.55,
+          "w": 36.29,
+          "h": 4.48,
+          "text": "Update operations can be slow."
+        },
+        {
+          "l": 3.7,
+          "t": 51.28,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.56,
+          "t": 48.96,
+          "w": 56.64,
+          "h": 4.99,
+          "text": "Nonredundant allocation (no replication)"
+        },
+        {
+          "l": 8.54,
+          "t": 58.7,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 56.75,
+          "w": 49.25,
+          "h": 4.52,
+          "text": "Each fragment is stored at exactly one site."
+        },
+        {
+          "l": 3.45,
+          "t": 66.5,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.56,
+          "t": 64.18,
+          "w": 24.57,
+          "h": 4.99,
+          "text": "Partial replication"
+        },
+        {
+          "l": 8.38,
+          "t": 73.92,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.81,
+          "t": 71.97,
+          "w": 58.54,
+          "h": 4.51,
+          "text": "Some fragments are replicated and others are not."
+        },
+        {
+          "l": 8.38,
+          "t": 81.14,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 79.19,
+          "w": 36.3,
+          "h": 4.52,
+          "text": "Defined by replication schema. "
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_036.webp",
+      "text": "Example of Fragmentation, Replication and Allocation\r\n\u25cf Company with three computer sites\r\n\u25cb One for each department\r\n\u25cb Expect frequent access by employees working in the department and \r\nprojects controlled by that department",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 84.2,
+          "h": 7.36,
+          "text": "Example of Fragmentation, Replication and Allocation"
+        },
+        {
+          "l": 3.7,
+          "t": 21.62,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.48,
+          "t": 19.3,
+          "w": 45.93,
+          "h": 4.99,
+          "text": "Company with three computer sites"
+        },
+        {
+          "l": 8.54,
+          "t": 29.05,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.84,
+          "t": 27.09,
+          "w": 29.39,
+          "h": 4.51,
+          "text": "One for each department"
+        },
+        {
+          "l": 8.54,
+          "t": 36.27,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.93,
+          "t": 34.31,
+          "w": 80.67,
+          "h": 4.52,
+          "text": "Expect frequent access by employees working in the department and "
+        },
+        {
+          "l": 11.9,
+          "t": 40.47,
+          "w": 45.59,
+          "h": 4.49,
+          "text": "projects controlled by that department "
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_037.webp",
+      "text": "Example of Fragmentation, Replication and Allocation",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 84.2,
+          "h": 7.36,
+          "text": "Example of Fragmentation, Replication and Allocation"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_038.webp",
+      "text": "Example of Fragmentation, Replication and Allocation",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 84.2,
+          "h": 7.36,
+          "text": "Example of Fragmentation, Replication and Allocation"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_039.webp",
+      "text": "Types of Distributed Database Systems\r\nHomogeneous DDBMSs\r\n\u25cf All sites of the database system \r\nhave identical setup, i.e., same \r\ndatabase system software.\r\n\u25cf The underlying operating system \r\nmay be different.\r\n\u25cb For example, all sites run Oracle \r\nor DB2, or Sybase or some other \r\ndatabase system.\r\n\u25cf The underlying operating \r\nsystems can be a mixture of \r\nLinux, Window, Unix, etc.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 14.04,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 4.6,
+          "t": 26.23,
+          "w": 31.75,
+          "h": 4.81,
+          "text": "Homogeneous DDBMSs"
+        },
+        {
+          "l": 4.05,
+          "t": 32.8,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.1,
+          "t": 31.59,
+          "w": 37.13,
+          "h": 4.52,
+          "text": "All sites of the database system "
+        },
+        {
+          "l": 8.31,
+          "t": 36.68,
+          "w": 35.89,
+          "h": 4.48,
+          "text": "have identical setup, i.e., same "
+        },
+        {
+          "l": 8.24,
+          "t": 41.73,
+          "w": 30.73,
+          "h": 4.52,
+          "text": "database system software."
+        },
+        {
+          "l": 4.05,
+          "t": 48.0,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.12,
+          "t": 46.81,
+          "w": 38.77,
+          "h": 4.49,
+          "text": "The underlying operating system "
+        },
+        {
+          "l": 8.31,
+          "t": 51.86,
+          "w": 19.52,
+          "h": 4.52,
+          "text": "may be different."
+        },
+        {
+          "l": 8.89,
+          "t": 57.93,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 12.69,
+          "t": 56.88,
+          "w": 33.5,
+          "h": 3.99,
+          "text": "For example, all sites run Oracle "
+        },
+        {
+          "l": 12.6,
+          "t": 61.38,
+          "w": 34.08,
+          "h": 3.99,
+          "text": "or DB2, or Sybase or some other "
+        },
+        {
+          "l": 12.6,
+          "t": 65.89,
+          "w": 17.7,
+          "h": 3.99,
+          "text": "database system."
+        },
+        {
+          "l": 4.05,
+          "t": 71.65,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.12,
+          "t": 70.46,
+          "w": 29.89,
+          "h": 4.49,
+          "text": "The underlying operating "
+        },
+        {
+          "l": 8.22,
+          "t": 75.5,
+          "w": 33.06,
+          "h": 4.52,
+          "text": "systems can be a mixture of "
+        },
+        {
+          "l": 8.34,
+          "t": 80.59,
+          "w": 29.46,
+          "h": 4.0,
+          "text": "Linux, Window, Unix, etc. "
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_040.webp",
+      "text": "Types of Distributed Database Systems\r\nHomogeneous DDBMSs\r\n\u25cf Much easier to design and manage.\r\n\u25cf Approach provides incremental growth and improved \r\nperformance.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 14.04,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 4.6,
+          "t": 26.47,
+          "w": 31.75,
+          "h": 4.81,
+          "text": "Homogeneous DDBMSs"
+        },
+        {
+          "l": 4.05,
+          "t": 34.2,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.34,
+          "t": 33.01,
+          "w": 40.86,
+          "h": 4.49,
+          "text": "Much easier to design and manage."
+        },
+        {
+          "l": 4.05,
+          "t": 40.33,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.1,
+          "t": 39.15,
+          "w": 63.0,
+          "h": 4.49,
+          "text": "Approach provides incremental growth and improved "
+        },
+        {
+          "l": 8.31,
+          "t": 45.26,
+          "w": 15.4,
+          "h": 4.51,
+          "text": "performance."
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_041.webp",
+      "text": "Types of Distributed Database Systems\r\nHeterogeneous DDBMSs\r\n\u25cf Federated: Each site may run different \r\ndatabase system but the data access is \r\nmanaged through a single conceptual \r\nschema. \r\n\u25cf This implies that the degree of local \r\nautonomy is minimum. Each site must \r\nadhere to a centralized access policy. \r\nThere may be a global schema.\r\n\u25cf Multidatabase: There is no one \r\nconceptual global schema. For data access \r\na schema is constructed dynamically as \r\nneeded by the application software.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 14.04,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 4.56,
+          "t": 26.3,
+          "w": 28.09,
+          "h": 4.09,
+          "text": "Heterogeneous DDBMSs"
+        },
+        {
+          "l": 4.25,
+          "t": 32.37,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.29,
+          "t": 31.36,
+          "w": 11.08,
+          "h": 2.96,
+          "text": "Federated: "
+        },
+        {
+          "l": 19.49,
+          "t": 31.34,
+          "w": 27.73,
+          "h": 3.84,
+          "text": " Each site may run different "
+        },
+        {
+          "l": 8.22,
+          "t": 36.12,
+          "w": 38.83,
+          "h": 3.82,
+          "text": "database system but the data access is "
+        },
+        {
+          "l": 8.28,
+          "t": 40.88,
+          "w": 37.59,
+          "h": 3.82,
+          "text": "managed through a single conceptual "
+        },
+        {
+          "l": 8.2,
+          "t": 45.64,
+          "w": 8.67,
+          "h": 2.96,
+          "text": "schema. "
+        },
+        {
+          "l": 4.25,
+          "t": 51.41,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.12,
+          "t": 50.38,
+          "w": 35.6,
+          "h": 3.83,
+          "text": "This implies that the degree of local "
+        },
+        {
+          "l": 8.19,
+          "t": 55.16,
+          "w": 38.22,
+          "h": 3.82,
+          "text": "autonomy is minimum. Each site must "
+        },
+        {
+          "l": 8.19,
+          "t": 59.92,
+          "w": 37.03,
+          "h": 3.82,
+          "text": "adhere to a centralized access policy. "
+        },
+        {
+          "l": 8.12,
+          "t": 64.68,
+          "w": 30.38,
+          "h": 3.82,
+          "text": "There may be a global schema."
+        },
+        {
+          "l": 4.25,
+          "t": 70.45,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.29,
+          "t": 69.44,
+          "w": 15.68,
+          "h": 2.96,
+          "text": "Multidatabase: "
+        },
+        {
+          "l": 24.09,
+          "t": 69.44,
+          "w": 16.92,
+          "h": 2.95,
+          "text": " There is no one "
+        },
+        {
+          "l": 8.22,
+          "t": 74.2,
+          "w": 42.35,
+          "h": 3.82,
+          "text": "conceptual global schema. For data access "
+        },
+        {
+          "l": 8.19,
+          "t": 78.96,
+          "w": 39.27,
+          "h": 3.82,
+          "text": "a schema is constructed dynamically as "
+        },
+        {
+          "l": 8.28,
+          "t": 83.7,
+          "w": 35.07,
+          "h": 3.84,
+          "text": "needed by the application software."
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_042.webp",
+      "text": "Types of Distributed Database Systems\r\nHeterogeneous DDBMSs\r\n\u25cf The sites may run different DBMS softwares, with possibly different data \r\nmodels.\r\n\u25cf Occurs when sites have implemented their own databases and integration \r\nis considered later.\r\n\u25cf Translations required to allow for:\r\n\u25cb Different hardware\r\n\u25cb Different DBMS softwares\r\n\u25cb Different hardware and different DBMS softwares\r\n\u25cf Typical solution is to use gateways.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 14.04,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 4.6,
+          "t": 26.47,
+          "w": 33.05,
+          "h": 4.81,
+          "text": "Heterogeneous DDBMSs"
+        },
+        {
+          "l": 4.05,
+          "t": 34.2,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.12,
+          "t": 32.99,
+          "w": 84.59,
+          "h": 4.52,
+          "text": "The sites may run different DBMS softwares, with possibly different data "
+        },
+        {
+          "l": 8.31,
+          "t": 39.15,
+          "w": 8.83,
+          "h": 3.48,
+          "text": "models."
+        },
+        {
+          "l": 4.05,
+          "t": 46.47,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.25,
+          "t": 45.28,
+          "w": 86.8,
+          "h": 4.49,
+          "text": "Occurs when sites have implemented their own databases and integration "
+        },
+        {
+          "l": 8.29,
+          "t": 51.41,
+          "w": 21.66,
+          "h": 3.48,
+          "text": "is considered later."
+        },
+        {
+          "l": 4.05,
+          "t": 58.73,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.12,
+          "t": 57.52,
+          "w": 39.21,
+          "h": 4.51,
+          "text": "Translations required to allow for:"
+        },
+        {
+          "l": 10.55,
+          "t": 64.87,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.59,
+          "t": 63.66,
+          "w": 21.85,
+          "h": 3.49,
+          "text": "Different hardware"
+        },
+        {
+          "l": 10.55,
+          "t": 71.0,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.59,
+          "t": 69.79,
+          "w": 29.71,
+          "h": 3.49,
+          "text": "Different DBMS softwares"
+        },
+        {
+          "l": 10.55,
+          "t": 77.13,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.59,
+          "t": 75.92,
+          "w": 57.4,
+          "h": 3.49,
+          "text": "Different hardware and different DBMS softwares"
+        },
+        {
+          "l": 4.05,
+          "t": 83.27,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.12,
+          "t": 82.08,
+          "w": 40.23,
+          "h": 4.49,
+          "text": "Typical solution is to use gateways."
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_043.webp",
+      "text": "Types of Distributed Database Systems",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.47,
+          "t": 8.01,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_044.webp",
+      "text": "Types of Distributed Database Systems\r\nFederated database management systems issues\r\n\u25cf Differences in data models\r\n\u25cf Differences in constraints\r\n\u25cf Differences in query languages\r\nSemantic heterogeneity\r\n\u25cf Differences in meaning, interpretation, and intended use of the \r\nsame or related data",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.47,
+          "t": 8.01,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 3.81,
+          "t": 19.3,
+          "w": 67.63,
+          "h": 4.99,
+          "text": "Federated database management systems issues"
+        },
+        {
+          "l": 3.7,
+          "t": 28.43,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 26.09,
+          "w": 34.2,
+          "h": 3.88,
+          "text": "Differences in data models"
+        },
+        {
+          "l": 3.7,
+          "t": 35.25,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 32.91,
+          "w": 32.59,
+          "h": 3.88,
+          "text": "Differences in constraints"
+        },
+        {
+          "l": 3.7,
+          "t": 42.06,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 39.72,
+          "w": 39.47,
+          "h": 5.02,
+          "text": "Differences in query languages"
+        },
+        {
+          "l": 3.7,
+          "t": 46.56,
+          "w": 30.51,
+          "h": 4.99,
+          "text": "Semantic heterogeneity"
+        },
+        {
+          "l": 3.7,
+          "t": 55.69,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 53.35,
+          "w": 82.11,
+          "h": 5.01,
+          "text": "Differences in meaning, interpretation, and intended use of the "
+        },
+        {
+          "l": 7.45,
+          "t": 60.19,
+          "w": 26.54,
+          "h": 3.85,
+          "text": "same or related data"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_045.webp",
+      "text": "Types of Distributed Database Systems\r\nFederated database management systems issues\r\n\u25cf Differences in data models\r\n\u25cb Relational, Objected oriented, hierarchical, network, etc.\r\n\u25cf Differences in constraints\r\n\u25cb Each site may have their own data accessing and processing constraints.\r\n\u25cf Differences in query languages\r\n\u25cb Some site may use SQL, some may use SQL-89, some may use SQL-92, and so \r\non.\r\nSemantic heterogeneity\r\n\u25cf Differences in meaning, interpretation, and intended use of the \r\nsame or related data",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.47,
+          "t": 8.01,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 3.81,
+          "t": 19.3,
+          "w": 67.63,
+          "h": 4.99,
+          "text": "Federated database management systems issues"
+        },
+        {
+          "l": 3.7,
+          "t": 28.43,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 26.09,
+          "w": 34.2,
+          "h": 3.88,
+          "text": "Differences in data models"
+        },
+        {
+          "l": 8.1,
+          "t": 33.8,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.9,
+          "t": 32.75,
+          "w": 57.48,
+          "h": 3.99,
+          "text": "Relational, Objected oriented, hierarchical, network, etc."
+        },
+        {
+          "l": 3.7,
+          "t": 40.7,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 38.36,
+          "w": 32.59,
+          "h": 3.88,
+          "text": "Differences in constraints"
+        },
+        {
+          "l": 8.1,
+          "t": 46.07,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.9,
+          "t": 45.01,
+          "w": 74.24,
+          "h": 3.99,
+          "text": "Each site may have their own data accessing and processing constraints."
+        },
+        {
+          "l": 3.7,
+          "t": 52.97,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 50.63,
+          "w": 39.47,
+          "h": 5.02,
+          "text": "Differences in query languages"
+        },
+        {
+          "l": 8.1,
+          "t": 58.34,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 11.8,
+          "t": 57.28,
+          "w": 80.5,
+          "h": 3.99,
+          "text": "Some site may use SQL, some may use SQL-89, some may use SQL-92, and so "
+        },
+        {
+          "l": 11.81,
+          "t": 63.59,
+          "w": 2.99,
+          "h": 2.24,
+          "text": "on."
+        },
+        {
+          "l": 3.7,
+          "t": 68.37,
+          "w": 30.51,
+          "h": 4.99,
+          "text": "Semantic heterogeneity"
+        },
+        {
+          "l": 3.7,
+          "t": 77.5,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.58,
+          "t": 75.16,
+          "w": 82.11,
+          "h": 5.01,
+          "text": "Differences in meaning, interpretation, and intended use of the "
+        },
+        {
+          "l": 7.45,
+          "t": 82.0,
+          "w": 26.54,
+          "h": 3.85,
+          "text": "same or related data"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_046.webp",
+      "text": "Types of Distributed Database Systems\r\nSemantic heterogeneity\r\nDesign autonomy allows definition of the following parameters\r\n\u25cf The universe of discourse from which the data is drawn\r\n\u25cf Representation and naming\r\n\u25cf Understanding, meaning, and subjective interpretation of data\r\n\u25cf Transaction and policy constraints\r\n\u25cf Derivation of summaries",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.47,
+          "t": 8.01,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 3.69,
+          "t": 19.3,
+          "w": 33.06,
+          "h": 4.99,
+          "text": "Semantic heterogeneity"
+        },
+        {
+          "l": 3.8,
+          "t": 26.0,
+          "w": 72.67,
+          "h": 4.52,
+          "text": "Design autonomy allows definition of the following parameters"
+        },
+        {
+          "l": 4.77,
+          "t": 33.35,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 32.14,
+          "w": 64.15,
+          "h": 3.49,
+          "text": "The universe of discourse from which the data is drawn"
+        },
+        {
+          "l": 4.77,
+          "t": 39.48,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 38.29,
+          "w": 32.05,
+          "h": 4.49,
+          "text": "Representation and naming"
+        },
+        {
+          "l": 4.77,
+          "t": 45.61,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.78,
+          "t": 44.4,
+          "w": 72.14,
+          "h": 4.51,
+          "text": "Understanding, meaning, and subjective interpretation of data"
+        },
+        {
+          "l": 4.77,
+          "t": 51.75,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 50.56,
+          "w": 39.6,
+          "h": 4.49,
+          "text": "Transaction and policy constraints"
+        },
+        {
+          "l": 4.77,
+          "t": 57.88,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 56.67,
+          "w": 28.31,
+          "h": 3.49,
+          "text": "Derivation of summaries"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_047.webp",
+      "text": "Types of Distributed Database Systems\r\n\u25cf Communication autonomy\r\n\u25cb Decide whether to communicate with another component DBS\r\n\u25cf Execution autonomy\r\n\u25cb Execute local operations without interference from external \r\noperations by other component DBSs\r\n\u25cb Ability to decide order of execution\r\n\u25cf Association autonomy\r\n\u25cb Decide whether and how much to share its functionality and \r\nresources",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.47,
+          "t": 8.01,
+          "w": 60.75,
+          "h": 7.34,
+          "text": "Types of Distributed Database Systems"
+        },
+        {
+          "l": 4.77,
+          "t": 20.4,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.71,
+          "t": 19.32,
+          "w": 30.94,
+          "h": 4.38,
+          "text": "Communication autonomy"
+        },
+        {
+          "l": 9.77,
+          "t": 26.53,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.8,
+          "t": 25.34,
+          "w": 72.6,
+          "h": 4.48,
+          "text": "Decide whether to communicate with another component DBS"
+        },
+        {
+          "l": 4.77,
+          "t": 32.66,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 31.59,
+          "w": 23.7,
+          "h": 4.38,
+          "text": "Execution autonomy"
+        },
+        {
+          "l": 9.77,
+          "t": 38.8,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.8,
+          "t": 37.59,
+          "w": 69.77,
+          "h": 4.51,
+          "text": "Execute local operations without interference from external "
+        },
+        {
+          "l": 13.7,
+          "t": 43.74,
+          "w": 43.44,
+          "h": 4.49,
+          "text": "operations by other component DBSs"
+        },
+        {
+          "l": 9.77,
+          "t": 51.06,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.56,
+          "t": 49.86,
+          "w": 40.47,
+          "h": 4.52,
+          "text": "Ability to decide order of execution"
+        },
+        {
+          "l": 4.77,
+          "t": 57.2,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.56,
+          "t": 56.12,
+          "w": 25.79,
+          "h": 4.38,
+          "text": "Association autonomy"
+        },
+        {
+          "l": 9.77,
+          "t": 63.33,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.8,
+          "t": 62.12,
+          "w": 70.44,
+          "h": 4.52,
+          "text": "Decide whether and how much to share its functionality and "
+        },
+        {
+          "l": 13.77,
+          "t": 69.25,
+          "w": 11.14,
+          "h": 2.5,
+          "text": "resources"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_048.webp",
+      "text": "Distributed Database Architectures\r\n\u25cf Parallel versus distributed architectures\r\n\u25cf Types of multiprocessor system architectures\r\na. Shared memory (tightly coupled)\r\nb. Shared disk (loosely coupled)\r\nc. Shared-nothing",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 54.51,
+          "h": 5.79,
+          "text": "Distributed Database Architectures"
+        },
+        {
+          "l": 5.28,
+          "t": 21.29,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 19.21,
+          "w": 45.82,
+          "h": 3.47,
+          "text": "Parallel versus distributed architectures"
+        },
+        {
+          "l": 5.28,
+          "t": 27.43,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 25.32,
+          "w": 52.62,
+          "h": 4.52,
+          "text": "Types of multiprocessor system architectures"
+        },
+        {
+          "l": 9.34,
+          "t": 32.25,
+          "w": 1.55,
+          "h": 2.23,
+          "text": "a. "
+        },
+        {
+          "l": 13.67,
+          "t": 31.38,
+          "w": 33.53,
+          "h": 3.99,
+          "text": "Shared memory (tightly coupled)"
+        },
+        {
+          "l": 9.31,
+          "t": 36.84,
+          "w": 1.59,
+          "h": 3.1,
+          "text": "b. "
+        },
+        {
+          "l": 13.67,
+          "t": 36.84,
+          "w": 29.79,
+          "h": 3.99,
+          "text": "Shared disk (loosely coupled)"
+        },
+        {
+          "l": 9.54,
+          "t": 43.15,
+          "w": 1.36,
+          "h": 2.24,
+          "text": "c. "
+        },
+        {
+          "l": 13.67,
+          "t": 42.29,
+          "w": 15.86,
+          "h": 3.99,
+          "text": "Shared-nothing"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_049.webp",
+      "text": "Distributed Database Architectures\r\nParallel DBMS",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 54.51,
+          "h": 5.79,
+          "text": "Distributed Database Architectures"
+        },
+        {
+          "l": 3.8,
+          "t": 19.21,
+          "w": 15.92,
+          "h": 3.47,
+          "text": "Parallel DBMS"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_050.webp",
+      "text": "Distributed Database Architectures",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 54.51,
+          "h": 5.79,
+          "text": "Distributed Database Architectures"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_051.webp",
+      "text": "Distributed Database Architectures\r\nGeneral Architecture of Pure Distributed Databases\r\n\u25cf Global query compiler\r\n\u25cb References global conceptual schema from the global system catalog to \r\nverify and impose defined constraints\r\n\u25cf Global query optimizer\r\n\u25cb Generates optimized local queries from global queries\r\n\u25cf Global transaction manager\r\n\u25cb Coordinates the execution across multiple sites with the local transaction \r\nmanagers",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 54.51,
+          "h": 5.79,
+          "text": "Distributed Database Architectures"
+        },
+        {
+          "l": 3.7,
+          "t": 19.19,
+          "w": 64.08,
+          "h": 3.49,
+          "text": "General Architecture of Pure Distributed Databases"
+        },
+        {
+          "l": 5.28,
+          "t": 27.43,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.71,
+          "t": 25.34,
+          "w": 25.56,
+          "h": 4.49,
+          "text": "Global query compiler"
+        },
+        {
+          "l": 9.91,
+          "t": 32.44,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.78,
+          "t": 31.36,
+          "w": 74.25,
+          "h": 4.01,
+          "text": "References global conceptual schema from the global system catalog to "
+        },
+        {
+          "l": 13.56,
+          "t": 36.82,
+          "w": 38.85,
+          "h": 4.01,
+          "text": "verify and impose defined constraints"
+        },
+        {
+          "l": 5.28,
+          "t": 44.46,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.71,
+          "t": 42.38,
+          "w": 26.42,
+          "h": 4.49,
+          "text": "Global query optimizer"
+        },
+        {
+          "l": 10.35,
+          "t": 50.24,
+          "w": 0.59,
+          "h": 1.07,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.69,
+          "t": 48.4,
+          "w": 55.76,
+          "h": 4.01,
+          "text": "Generates optimized local queries from global queries"
+        },
+        {
+          "l": 5.28,
+          "t": 56.05,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.71,
+          "t": 53.97,
+          "w": 32.16,
+          "h": 4.49,
+          "text": "Global transaction manager"
+        },
+        {
+          "l": 9.91,
+          "t": 61.06,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.69,
+          "t": 60.01,
+          "w": 75.88,
+          "h": 3.99,
+          "text": "Coordinates the execution across multiple sites with the local transaction "
+        },
+        {
+          "l": 13.75,
+          "t": 66.32,
+          "w": 10.01,
+          "h": 3.13,
+          "text": "managers"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_052.webp",
+      "text": "Distributed Database Architectures\r\nSchema Architecture",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.04,
+          "w": 54.51,
+          "h": 5.79,
+          "text": "Distributed Database Architectures"
+        },
+        {
+          "l": 3.67,
+          "t": 19.21,
+          "w": 25.9,
+          "h": 3.47,
+          "text": "Schema Architecture"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_053.webp",
+      "text": "Design Issues in Distributed DBMS\r\nThe challenges that are faced in designing a distributed database are its \r\ndesign issues. \r\n1. Distributed database design\r\n2. Distributed directory management\r\n3. Distributed query processing\r\n4. Distributed concurrency control\r\n5. Distributed deadlock management\r\n6. Reliability of DDBS\r\n7. Replication",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.01,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 3.58,
+          "t": 19.19,
+          "w": 83.88,
+          "h": 4.51,
+          "text": "The challenges that are faced in designing a distributed database are its "
+        },
+        {
+          "l": 3.7,
+          "t": 25.34,
+          "w": 16.58,
+          "h": 4.49,
+          "text": "design issues. "
+        },
+        {
+          "l": 4.2,
+          "t": 31.68,
+          "w": 1.67,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 8.8,
+          "t": 31.48,
+          "w": 32.24,
+          "h": 4.49,
+          "text": "Distributed database design"
+        },
+        {
+          "l": 4.1,
+          "t": 37.77,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 8.8,
+          "t": 37.61,
+          "w": 40.0,
+          "h": 4.49,
+          "text": "Distributed directory management"
+        },
+        {
+          "l": 4.09,
+          "t": 43.9,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 8.8,
+          "t": 43.74,
+          "w": 33.34,
+          "h": 4.49,
+          "text": "Distributed query processing"
+        },
+        {
+          "l": 4.03,
+          "t": 50.06,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 8.8,
+          "t": 49.88,
+          "w": 36.55,
+          "h": 4.49,
+          "text": "Distributed concurrency control"
+        },
+        {
+          "l": 4.13,
+          "t": 56.22,
+          "w": 1.74,
+          "h": 3.28,
+          "text": "5. "
+        },
+        {
+          "l": 8.8,
+          "t": 56.01,
+          "w": 40.05,
+          "h": 4.49,
+          "text": "Distributed deadlock management"
+        },
+        {
+          "l": 4.12,
+          "t": 62.3,
+          "w": 1.76,
+          "h": 3.32,
+          "text": "6. "
+        },
+        {
+          "l": 8.8,
+          "t": 62.12,
+          "w": 21.03,
+          "h": 4.52,
+          "text": "Reliability of DDBS"
+        },
+        {
+          "l": 4.09,
+          "t": 68.48,
+          "w": 1.79,
+          "h": 3.28,
+          "text": "7. "
+        },
+        {
+          "l": 8.8,
+          "t": 68.28,
+          "w": 12.42,
+          "h": 4.48,
+          "text": "Replication"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_054.webp",
+      "text": "Design Issues in Distributed DBMS\r\n1. Distributed database design\r\n\u25cf How the database and the applications that run against it should be placed \r\nacross the sites?\r\n\u25cf Two alternative designs\r\n\u25cb Partitioned database\r\n\u25cb Replicated database\r\n\u25cf Fundamental design issues\r\n\u25cb Locality of reference\r\n\u25cb Reliability and availability\r\n\u25cb Performance\r\n\u25cb Communication cost\r\n\u25cf Optimal design parameters (these costs are to be minimized)\r\n\u25cb Database storage\r\n\u25cb Processing transactions running on it\r\n\u25cb Message communication among sites",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.76,
+          "t": 6.71,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 4.41,
+          "t": 16.74,
+          "w": 1.49,
+          "h": 2.92,
+          "text": "1. "
+        },
+        {
+          "l": 8.78,
+          "t": 16.56,
+          "w": 28.66,
+          "h": 3.99,
+          "text": "Distributed database design"
+        },
+        {
+          "l": 4.91,
+          "t": 22.6,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.78,
+          "t": 21.54,
+          "w": 78.33,
+          "h": 3.99,
+          "text": "How the database and the applications that run against it should be placed "
+        },
+        {
+          "l": 8.66,
+          "t": 26.52,
+          "w": 16.72,
+          "h": 3.1,
+          "text": "across the sites?"
+        },
+        {
+          "l": 4.91,
+          "t": 32.55,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 31.5,
+          "w": 24.2,
+          "h": 3.99,
+          "text": "Two alternative designs"
+        },
+        {
+          "l": 14.91,
+          "t": 37.53,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 36.47,
+          "w": 21.23,
+          "h": 3.08,
+          "text": "Partitioned database"
+        },
+        {
+          "l": 14.91,
+          "t": 42.51,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 41.45,
+          "w": 20.54,
+          "h": 3.99,
+          "text": "Replicated database"
+        },
+        {
+          "l": 4.91,
+          "t": 47.48,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.78,
+          "t": 46.43,
+          "w": 27.68,
+          "h": 3.99,
+          "text": "Fundamental design issues"
+        },
+        {
+          "l": 14.91,
+          "t": 52.46,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 51.39,
+          "w": 20.69,
+          "h": 4.01,
+          "text": "Locality of reference"
+        },
+        {
+          "l": 14.91,
+          "t": 57.44,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 56.39,
+          "w": 25.67,
+          "h": 3.99,
+          "text": "Reliability and availability"
+        },
+        {
+          "l": 14.91,
+          "t": 62.42,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 61.34,
+          "w": 13.11,
+          "h": 3.1,
+          "text": "Performance"
+        },
+        {
+          "l": 14.91,
+          "t": 67.4,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.69,
+          "t": 66.44,
+          "w": 21.11,
+          "h": 2.98,
+          "text": "Communication cost"
+        },
+        {
+          "l": 4.91,
+          "t": 72.37,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.69,
+          "t": 71.32,
+          "w": 62.72,
+          "h": 3.99,
+          "text": "Optimal design parameters (these costs are to be minimized)"
+        },
+        {
+          "l": 14.91,
+          "t": 77.35,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 76.3,
+          "w": 17.78,
+          "h": 3.99,
+          "text": "Database storage"
+        },
+        {
+          "l": 14.91,
+          "t": 82.33,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 81.37,
+          "w": 38.09,
+          "h": 3.89,
+          "text": "Processing transactions running on it"
+        },
+        {
+          "l": 14.91,
+          "t": 87.31,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 86.35,
+          "w": 38.5,
+          "h": 3.89,
+          "text": "Message communication among sites"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_055.webp",
+      "text": "Design Issues in Distributed DBMS\r\n2. Distributed directory management\r\n\u25cf A directory contains information (such as descriptions and location) \r\nabout data items in the database.\r\n\u25cf Directory can be local to each site or global to the entire distributed \r\ndatabase.\r\n\u25cf Problems related to the directory management are similar in nature to \r\nthe database.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.01,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 4.1,
+          "t": 19.37,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 8.8,
+          "t": 19.21,
+          "w": 40.0,
+          "h": 4.49,
+          "text": "Distributed directory management"
+        },
+        {
+          "l": 5.28,
+          "t": 27.43,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.56,
+          "t": 25.32,
+          "w": 78.95,
+          "h": 4.52,
+          "text": "A directory contains information (such as descriptions and location) "
+        },
+        {
+          "l": 8.67,
+          "t": 31.48,
+          "w": 38.74,
+          "h": 3.48,
+          "text": "about data items in the database."
+        },
+        {
+          "l": 5.28,
+          "t": 39.69,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 37.61,
+          "w": 78.73,
+          "h": 4.49,
+          "text": "Directory can be local to each site or global to the entire distributed "
+        },
+        {
+          "l": 8.7,
+          "t": 43.74,
+          "w": 11.03,
+          "h": 3.48,
+          "text": "database."
+        },
+        {
+          "l": 5.28,
+          "t": 51.96,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 49.88,
+          "w": 82.33,
+          "h": 4.49,
+          "text": "Problems related to the directory management are similar in nature to "
+        },
+        {
+          "l": 8.6,
+          "t": 56.01,
+          "w": 15.61,
+          "h": 3.48,
+          "text": "the database."
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_056.webp",
+      "text": "Design Issues in Distributed DBMS\r\n3. Distributed query processing\r\n\u25cf Query processing deals with designing algorithms that analyze queries \r\nand convert them into a series of data manipulation operations.\r\n\u25cf Factors to be considered\r\n\u25cb Distribution of data\r\n\u25cb Lack of sufficiently available information\r\n\u25cf Cost involves both data transmission cost and local processing cost.\r\n\u25cf This cost must be minimized.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.01,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 4.09,
+          "t": 19.37,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 8.8,
+          "t": 19.21,
+          "w": 33.34,
+          "h": 4.49,
+          "text": "Distributed query processing"
+        },
+        {
+          "l": 5.28,
+          "t": 27.43,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.71,
+          "t": 25.34,
+          "w": 82.26,
+          "h": 4.49,
+          "text": "Query processing deals with designing algorithms that analyze queries "
+        },
+        {
+          "l": 8.67,
+          "t": 31.46,
+          "w": 73.96,
+          "h": 4.51,
+          "text": "and convert them into a series of data manipulation operations."
+        },
+        {
+          "l": 5.28,
+          "t": 39.69,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 37.61,
+          "w": 28.22,
+          "h": 3.47,
+          "text": "Factors to be considered"
+        },
+        {
+          "l": 15.21,
+          "t": 45.22,
+          "w": 0.71,
+          "h": 1.28,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 43.63,
+          "w": 19.71,
+          "h": 3.1,
+          "text": "Distribution of data"
+        },
+        {
+          "l": 15.21,
+          "t": 50.67,
+          "w": 0.71,
+          "h": 1.28,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 49.08,
+          "w": 41.12,
+          "h": 4.01,
+          "text": "Lack of sufficiently available information"
+        },
+        {
+          "l": 5.28,
+          "t": 56.73,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.71,
+          "t": 54.65,
+          "w": 21.78,
+          "h": 3.47,
+          "text": "Cost involves both "
+        },
+        {
+          "l": 30.66,
+          "t": 54.65,
+          "w": 26.08,
+          "h": 3.47,
+          "text": "data transmission cost "
+        },
+        {
+          "l": 56.82,
+          "t": 54.65,
+          "w": 5.74,
+          "h": 3.47,
+          "text": " and "
+        },
+        {
+          "l": 62.79,
+          "t": 54.65,
+          "w": 23.7,
+          "h": 4.49,
+          "text": "local processing cost"
+        },
+        {
+          "l": 86.75,
+          "t": 57.56,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.28,
+          "t": 62.86,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 60.78,
+          "w": 33.55,
+          "h": 3.48,
+          "text": "This cost must be minimized."
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_057.webp",
+      "text": "Design Issues in Distributed DBMS\r\n4. Distributed concurrency control\r\n\u25cf Concurrency control involves synchronization of accesses to the \r\ndistributed database such that the integrity of the database is \r\nmaintained.\r\n\u25cf Integrity check must be done across all replicas.\r\n\u25cf All replicas must reflect the same value.\r\n\u25cf Two approaches: pessimistic and optimistic.\r\n\u25cf Fundamental primitives: \r\n\u25cb Locking\r\n\u25cb Timestamp",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.01,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 4.03,
+          "t": 19.4,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 8.8,
+          "t": 19.21,
+          "w": 36.55,
+          "h": 4.49,
+          "text": "Distributed concurrency control"
+        },
+        {
+          "l": 5.28,
+          "t": 27.43,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.71,
+          "t": 25.32,
+          "w": 74.66,
+          "h": 4.52,
+          "text": "Concurrency control involves synchronization of accesses to the "
+        },
+        {
+          "l": 8.7,
+          "t": 31.46,
+          "w": 72.07,
+          "h": 4.52,
+          "text": "distributed database such that the integrity of the database is "
+        },
+        {
+          "l": 8.77,
+          "t": 37.61,
+          "w": 13.49,
+          "h": 3.48,
+          "text": "maintained."
+        },
+        {
+          "l": 5.28,
+          "t": 45.83,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 43.74,
+          "w": 55.01,
+          "h": 4.49,
+          "text": "Integrity check must be done across all replicas."
+        },
+        {
+          "l": 5.28,
+          "t": 51.96,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.56,
+          "t": 49.86,
+          "w": 45.81,
+          "h": 4.51,
+          "text": "All replicas must reflect the same value."
+        },
+        {
+          "l": 5.28,
+          "t": 58.09,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 56.01,
+          "w": 20.42,
+          "h": 4.48,
+          "text": "Two approaches: "
+        },
+        {
+          "l": 29.23,
+          "t": 56.12,
+          "w": 12.49,
+          "h": 4.37,
+          "text": "pessimistic "
+        },
+        {
+          "l": 41.83,
+          "t": 56.01,
+          "w": 5.74,
+          "h": 3.47,
+          "text": " and "
+        },
+        {
+          "l": 47.72,
+          "t": 56.12,
+          "w": 11.18,
+          "h": 4.37,
+          "text": "optimistic"
+        },
+        {
+          "l": 59.17,
+          "t": 58.93,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.28,
+          "t": 64.23,
+          "w": 0.64,
+          "h": 1.17,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.8,
+          "t": 62.14,
+          "w": 28.61,
+          "h": 4.48,
+          "text": "Fundamental primitives: "
+        },
+        {
+          "l": 10.21,
+          "t": 69.75,
+          "w": 0.71,
+          "h": 1.28,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.78,
+          "t": 68.18,
+          "w": 7.59,
+          "h": 3.99,
+          "text": "Locking"
+        },
+        {
+          "l": 10.35,
+          "t": 75.45,
+          "w": 0.59,
+          "h": 1.07,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.58,
+          "t": 73.73,
+          "w": 11.44,
+          "h": 3.89,
+          "text": "Timestamp"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_058.webp",
+      "text": "Design Issues in Distributed DBMS\r\n5. Distributed deadlock management\r\n\u25cf Deadlock primitives\r\n\u25cb Detection\r\n\u25cb Prevention\r\n\u25cb Avoidance\r\n\u25cb recovery\r\n6. Reliability of DDBS\r\n\u25cf Main aim is to preserve the consistency of data.\r\n\u25cf In case of failures, the consistent state must be achieved.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.01,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 4.13,
+          "t": 19.42,
+          "w": 1.74,
+          "h": 3.28,
+          "text": "5. "
+        },
+        {
+          "l": 8.8,
+          "t": 19.21,
+          "w": 40.05,
+          "h": 4.49,
+          "text": "Distributed deadlock management"
+        },
+        {
+          "l": 10.2,
+          "t": 27.28,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 13.8,
+          "t": 25.34,
+          "w": 22.55,
+          "h": 4.48,
+          "text": "Deadlock primitives"
+        },
+        {
+          "l": 14.91,
+          "t": 32.44,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 31.48,
+          "w": 9.61,
+          "h": 2.98,
+          "text": "Detection"
+        },
+        {
+          "l": 14.91,
+          "t": 37.89,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.78,
+          "t": 36.93,
+          "w": 10.86,
+          "h": 2.98,
+          "text": "Prevention"
+        },
+        {
+          "l": 14.91,
+          "t": 43.34,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.56,
+          "t": 42.29,
+          "w": 10.56,
+          "h": 3.08,
+          "text": "Avoidance"
+        },
+        {
+          "l": 14.91,
+          "t": 48.79,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 18.75,
+          "t": 48.6,
+          "w": 8.74,
+          "h": 3.13,
+          "text": "recovery"
+        },
+        {
+          "l": 4.12,
+          "t": 53.44,
+          "w": 1.76,
+          "h": 3.32,
+          "text": "6. "
+        },
+        {
+          "l": 8.8,
+          "t": 53.26,
+          "w": 21.03,
+          "h": 4.52,
+          "text": "Reliability of DDBS"
+        },
+        {
+          "l": 10.2,
+          "t": 61.35,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 13.8,
+          "t": 59.4,
+          "w": 54.84,
+          "h": 4.52,
+          "text": "Main aim is to preserve the consistency of data."
+        },
+        {
+          "l": 10.2,
+          "t": 67.48,
+          "w": 0.72,
+          "h": 1.29,
+          "text": "\u25cf "
+        },
+        {
+          "l": 13.8,
+          "t": 65.53,
+          "w": 65.81,
+          "h": 4.02,
+          "text": "In case of failures, the consistent state must be achieved."
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_059.webp",
+      "text": "Design Issues in Distributed DBMS\r\n7. Replication\r\n\u25cf Types of replication: partial and complete.\r\n\u25cf The protocols must follow two approaches:\r\n\u25cb Lazy\r\n\u25cb Eager",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.01,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 4.09,
+          "t": 19.42,
+          "w": 1.79,
+          "h": 3.28,
+          "text": "7. "
+        },
+        {
+          "l": 8.8,
+          "t": 19.21,
+          "w": 12.42,
+          "h": 4.48,
+          "text": "Replication"
+        },
+        {
+          "l": 4.91,
+          "t": 26.31,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 25.23,
+          "w": 43.17,
+          "h": 4.01,
+          "text": "Types of replication: partial and complete."
+        },
+        {
+          "l": 4.91,
+          "t": 31.76,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 8.58,
+          "t": 30.68,
+          "w": 44.38,
+          "h": 4.01,
+          "text": "The protocols must follow two approaches:"
+        },
+        {
+          "l": 9.91,
+          "t": 37.21,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.78,
+          "t": 36.34,
+          "w": 4.33,
+          "h": 3.81,
+          "text": "Lazy"
+        },
+        {
+          "l": 9.91,
+          "t": 42.66,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 13.78,
+          "t": 41.79,
+          "w": 6.18,
+          "h": 3.81,
+          "text": "Eager "
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module_4__distributed_databases_pdf/thumb_060.webp",
+      "text": "Design Issues in Distributed DBMS\r\nRelationship among the design issues",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 3.64,
+          "t": 8.01,
+          "w": 53.86,
+          "h": 7.4,
+          "text": "Design Issues in Distributed DBMS"
+        },
+        {
+          "l": 3.78,
+          "t": 19.21,
+          "w": 46.42,
+          "h": 4.49,
+          "text": "Relationship among the design issues"
+        }
+      ]
+    }
+  ]
+}

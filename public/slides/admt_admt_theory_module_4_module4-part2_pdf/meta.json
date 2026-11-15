@@ -1,0 +1,5793 @@
+{
+  "mtime": 1793934615.440405,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_001.webp",
+      "text": "Module 4: Distributed Databases\r\nBy MS. ALVINA LOPES\r\nPART 2",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 13.17,
+          "t": 31.26,
+          "w": 73.84,
+          "h": 8.33,
+          "text": "Module 4: Distributed Databases"
+        },
+        {
+          "l": 33.57,
+          "t": 58.4,
+          "w": 33.0,
+          "h": 5.78,
+          "text": "By MS. ALVINA LOPES"
+        },
+        {
+          "l": 42.95,
+          "t": 43.94,
+          "w": 13.6,
+          "h": 5.44,
+          "text": "PART 2"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Concurrency Control in Distributed Databases\r\n\u2756 Recovery in Distributed Databases\r\n\u2756 Transaction Management in Distributed Databases\r\n\u2756 Query Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 13.87,
+          "h": 5.9,
+          "text": "Contents"
+        },
+        {
+          "l": 4.72,
+          "t": 23.64,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.5,
+          "t": 23.43,
+          "w": 53.13,
+          "h": 4.49,
+          "text": "Concurrency Control in Distributed Databases"
+        },
+        {
+          "l": 4.72,
+          "t": 29.78,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 29.56,
+          "w": 39.54,
+          "h": 4.49,
+          "text": "Recovery in Distributed Databases"
+        },
+        {
+          "l": 4.72,
+          "t": 35.91,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.37,
+          "t": 35.69,
+          "w": 58.94,
+          "h": 4.49,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.72,
+          "t": 42.04,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.5,
+          "t": 41.83,
+          "w": 70.18,
+          "h": 4.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_003.webp",
+      "text": "Overview of Concurrency Control\r\n\u25cf Concurrency control is the procedure in DBMS for managing \r\nsimultaneous operations without conflicting with each other.\r\n\u25cf Concurrent access is quite easy if all the users are just reading the data. \r\nThere is no way they can interfere with one another.\r\n\u25cf However, any practical database would have a mix of read and write \r\noperations and hence concurrency is a challenge.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 51.48,
+          "h": 7.43,
+          "text": "Overview of Concurrency Control"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.0,
+          "w": 70.55,
+          "h": 4.52,
+          "text": "Concurrency control is the procedure in DBMS for managing "
+        },
+        {
+          "l": 9.47,
+          "t": 30.13,
+          "w": 70.25,
+          "h": 4.51,
+          "text": "simultaneous operations without conflicting with each other."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 36.27,
+          "w": 83.57,
+          "h": 4.52,
+          "text": "Concurrent access is quite easy if all the users are just reading the data. "
+        },
+        {
+          "l": 9.37,
+          "t": 42.4,
+          "w": 60.46,
+          "h": 4.52,
+          "text": "There is no way they can interfere with one another."
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.53,
+          "w": 79.6,
+          "h": 4.52,
+          "text": "However, any practical database would have a mix of read and write "
+        },
+        {
+          "l": 9.49,
+          "t": 54.69,
+          "w": 56.98,
+          "h": 4.49,
+          "text": "operations and hence concurrency is a challenge."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_004.webp",
+      "text": "Overview of Concurrency Control\r\nWhy use Concurrency method?\r\n\u25cf To apply isolation through mutual exclusion between conflicting \r\ntransactions.\r\n\u25cf To resolve read-write and write-write conflicts.\r\n\u25cf To preserve database consistency.\r\n\u25cf Concurrency Control helps to ensure serializability.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 51.48,
+          "h": 7.43,
+          "text": "Overview of Concurrency Control"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 42.77,
+          "h": 4.99,
+          "text": "Why use Concurrency method?"
+        },
+        {
+          "l": 5.55,
+          "t": 31.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 29.93,
+          "w": 74.86,
+          "h": 4.52,
+          "text": "To apply isolation through mutual exclusion between conflicting "
+        },
+        {
+          "l": 9.39,
+          "t": 36.19,
+          "w": 14.78,
+          "h": 3.37,
+          "text": "transactions."
+        },
+        {
+          "l": 5.55,
+          "t": 43.4,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 42.19,
+          "w": 53.59,
+          "h": 3.51,
+          "text": "To resolve read-write and write-write conflicts."
+        },
+        {
+          "l": 5.55,
+          "t": 49.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 48.35,
+          "w": 39.7,
+          "h": 4.49,
+          "text": "To preserve database consistency."
+        },
+        {
+          "l": 5.55,
+          "t": 55.67,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 54.48,
+          "w": 58.73,
+          "h": 4.49,
+          "text": "Concurrency Control helps to ensure serializability."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_005.webp",
+      "text": "Recovery in Distributed Databases\r\n\u25cf As with local recovery, distributed database recovery aims to maintain the \r\natomicity and durability of distributed transactions.\r\n\u25cf A database must guarantee that all statements in a transaction, \r\ndistributed or non-distributed, either commit or roll back as a unit.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 53.91,
+          "h": 7.4,
+          "text": "Recovery in Distributed Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.02,
+          "w": 86.47,
+          "h": 4.49,
+          "text": "As with local recovery, distributed database recovery aims to maintain the "
+        },
+        {
+          "l": 9.46,
+          "t": 30.13,
+          "w": 59.22,
+          "h": 4.52,
+          "text": "atomicity and durability of distributed transactions."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 36.29,
+          "w": 74.38,
+          "h": 4.49,
+          "text": "A database must guarantee that all statements in a transaction, "
+        },
+        {
+          "l": 9.49,
+          "t": 42.42,
+          "w": 76.88,
+          "h": 4.0,
+          "text": "distributed or non-distributed, either commit or roll back as a unit."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_006.webp",
+      "text": "Overview of Concurrency Control and Recovery\r\n\u25cf For concurrency control and recovery purposes, numerous problems \r\narise in a distributed DBMS environment that are not encountered in a \r\ncentralized DBMS environment. \r\n\u25cf These include the following:\r\n\u25cb Dealing with multiple copies of the data items\r\n\u25cb Failure of individual sites\r\n\u25cb Failure of communication links\r\n\u25cb Distributed commit\r\n\u25cb Distributed deadlock",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 73.54,
+          "h": 7.43,
+          "text": "Overview of Concurrency Control and Recovery"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 80.57,
+          "h": 4.49,
+          "text": "For concurrency control and recovery purposes, numerous problems "
+        },
+        {
+          "l": 9.46,
+          "t": 30.16,
+          "w": 82.58,
+          "h": 3.47,
+          "text": "arise in a distributed DBMS environment that are not encountered in a "
+        },
+        {
+          "l": 9.49,
+          "t": 36.29,
+          "w": 37.3,
+          "h": 3.48,
+          "text": "centralized DBMS environment. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 42.4,
+          "w": 32.13,
+          "h": 4.51,
+          "text": "These include the following:"
+        },
+        {
+          "l": 10.7,
+          "t": 49.52,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 48.44,
+          "w": 46.85,
+          "h": 4.01,
+          "text": "Dealing with multiple copies of the data items"
+        },
+        {
+          "l": 10.7,
+          "t": 54.97,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 53.9,
+          "w": 25.24,
+          "h": 3.1,
+          "text": "Failure of individual sites"
+        },
+        {
+          "l": 10.7,
+          "t": 60.42,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 59.35,
+          "w": 31.36,
+          "h": 3.1,
+          "text": "Failure of communication links"
+        },
+        {
+          "l": 10.7,
+          "t": 65.87,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 64.82,
+          "w": 19.77,
+          "h": 3.08,
+          "text": "Distributed commit"
+        },
+        {
+          "l": 10.7,
+          "t": 71.33,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 70.27,
+          "w": 21.27,
+          "h": 3.08,
+          "text": "Distributed deadlock"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_007.webp",
+      "text": "Overview of Concurrency Control and Recovery\r\n\u25cf Dealing with multiple copies of the data items\r\n\u25cb The concurrency control method is responsible for maintaining consistency among \r\nthese copies. \r\n\u25cb The recovery method is responsible for making a copy consistent with other copies if \r\nthe site on which the copy is stored fails and recovers later.\r\n\u25cf Failure of individual sites\r\n\u25cb The DDBMS should continue to operate with its running sites, if possible, when one \r\nor more individual sites fail. \r\n\u25cb When a site recovers, its local database must be brought up-to-date with the rest of \r\nthe sites before it rejoins the system.\r\n\u25cf Failure of communication links\r\n\u25cb The system must be able to deal with the failure of one or more of the \r\ncommunication links that connect the sites.\r\n\u25cb network partitioning.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 73.54,
+          "h": 7.43,
+          "text": "Overview of Concurrency Control and Recovery"
+        },
+        {
+          "l": 5.65,
+          "t": 24.86,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 23.74,
+          "w": 48.75,
+          "h": 4.17,
+          "text": "Dealing with multiple copies of the data items"
+        },
+        {
+          "l": 10.78,
+          "t": 29.36,
+          "w": 0.88,
+          "h": 1.6,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 28.37,
+          "w": 79.55,
+          "h": 3.71,
+          "text": "The concurrency control method is responsible for maintaining consistency among "
+        },
+        {
+          "l": 14.38,
+          "t": 32.55,
+          "w": 12.97,
+          "h": 3.69,
+          "text": "these copies. "
+        },
+        {
+          "l": 10.78,
+          "t": 37.69,
+          "w": 0.88,
+          "h": 1.6,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 36.7,
+          "w": 81.32,
+          "h": 3.71,
+          "text": "The recovery method is responsible for making a copy consistent with other copies if "
+        },
+        {
+          "l": 14.38,
+          "t": 40.86,
+          "w": 56.28,
+          "h": 3.71,
+          "text": "the site on which the copy is stored fails and recovers later."
+        },
+        {
+          "l": 5.65,
+          "t": 46.21,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 45.09,
+          "w": 26.27,
+          "h": 3.23,
+          "text": "Failure of individual sites"
+        },
+        {
+          "l": 10.78,
+          "t": 50.71,
+          "w": 0.88,
+          "h": 1.6,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 49.72,
+          "w": 79.92,
+          "h": 3.71,
+          "text": "The DDBMS should continue to operate with its running sites, if possible, when one "
+        },
+        {
+          "l": 14.46,
+          "t": 53.88,
+          "w": 26.79,
+          "h": 2.88,
+          "text": "or more individual sites fail. "
+        },
+        {
+          "l": 10.78,
+          "t": 59.04,
+          "w": 0.88,
+          "h": 1.6,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.38,
+          "t": 58.05,
+          "w": 80.14,
+          "h": 3.71,
+          "text": "When a site recovers, its local database must be brought up-to-date with the rest of "
+        },
+        {
+          "l": 14.38,
+          "t": 62.21,
+          "w": 35.05,
+          "h": 3.71,
+          "text": "the sites before it rejoins the system."
+        },
+        {
+          "l": 5.65,
+          "t": 67.56,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 66.44,
+          "w": 32.63,
+          "h": 3.23,
+          "text": "Failure of communication links"
+        },
+        {
+          "l": 10.78,
+          "t": 72.06,
+          "w": 0.88,
+          "h": 1.6,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 71.07,
+          "w": 67.41,
+          "h": 3.71,
+          "text": "The system must be able to deal with the failure of one or more of the "
+        },
+        {
+          "l": 14.46,
+          "t": 75.25,
+          "w": 41.2,
+          "h": 2.86,
+          "text": "communication links that connect the sites."
+        },
+        {
+          "l": 10.78,
+          "t": 80.39,
+          "w": 0.88,
+          "h": 1.6,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.51,
+          "t": 79.42,
+          "w": 21.31,
+          "h": 3.69,
+          "text": "network partitioning"
+        },
+        {
+          "l": 35.96,
+          "t": 81.67,
+          "w": 0.35,
+          "h": 0.61,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_008.webp",
+      "text": "Overview of Concurrency Control and Recovery\r\n\u25cf Distributed commit\r\n\u25cb Problems can arise with committing a transaction that is accessing databases \r\nstored on multiple sites if some sites fail during the commit process.\r\n\u25cb Two-phase commit protocol is often used.\r\n\u25cf Distributed deadlock\r\n\u25cb Deadlock may occur among several sites, so techniques for dealing with \r\ndeadlocks must be extended to take this into account.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 73.54,
+          "h": 7.43,
+          "text": "Overview of Concurrency Control and Recovery"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 22.24,
+          "h": 3.47,
+          "text": "Distributed commit"
+        },
+        {
+          "l": 10.7,
+          "t": 31.12,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 30.06,
+          "w": 79.99,
+          "h": 3.99,
+          "text": "Problems can arise with committing a transaction that is accessing databases "
+        },
+        {
+          "l": 14.46,
+          "t": 35.5,
+          "w": 70.1,
+          "h": 4.01,
+          "text": "stored on multiple sites if some sites fail during the commit process."
+        },
+        {
+          "l": 10.7,
+          "t": 42.02,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.37,
+          "t": 40.97,
+          "w": 28.74,
+          "h": 3.99,
+          "text": "Two-phase commit protocol "
+        },
+        {
+          "l": 43.32,
+          "t": 40.95,
+          "w": 14.27,
+          "h": 3.12,
+          "text": " is often used."
+        },
+        {
+          "l": 5.55,
+          "t": 47.7,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 46.51,
+          "w": 23.93,
+          "h": 3.47,
+          "text": "Distributed deadlock"
+        },
+        {
+          "l": 10.7,
+          "t": 53.61,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 52.53,
+          "w": 74.41,
+          "h": 4.01,
+          "text": "Deadlock may occur among several sites, so techniques for dealing with "
+        },
+        {
+          "l": 14.47,
+          "t": 58.0,
+          "w": 55.52,
+          "h": 3.1,
+          "text": "deadlocks must be extended to take this into account."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_009.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Concurrency Control Based on a Distinguished Copy \r\nof a Data Item\r\n\u25cf Particular copy of each data item designated as distinguished copy\r\n\u25cf Locks are associated with the distinguished copy\r\n\u25cf Primary site technique\r\n\u25cb All distinguished copies kept at the same site\r\n\u25cf Primary site with backup site\r\n\u25cb Locking information maintained at both sites\r\n\u25cf Primary copy method\r\n\u25cb Distributes the load of lock coordination among various sites",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 71.66,
+          "h": 7.43,
+          "text": "Concurrency Control in Distributed Databases"
+        },
+        {
+          "l": 4.6,
+          "t": 24.12,
+          "w": 88.55,
+          "h": 4.99,
+          "text": "Distributed Concurrency Control Based on a Distinguished Copy "
+        },
+        {
+          "l": 4.47,
+          "t": 30.02,
+          "w": 19.41,
+          "h": 3.88,
+          "text": "of a Data Item"
+        },
+        {
+          "l": 5.55,
+          "t": 37.06,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 35.85,
+          "w": 77.02,
+          "h": 4.52,
+          "text": "Particular copy of each data item designated as distinguished copy"
+        },
+        {
+          "l": 5.55,
+          "t": 42.39,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 41.21,
+          "w": 56.12,
+          "h": 4.49,
+          "text": "Locks are associated with the distinguished copy"
+        },
+        {
+          "l": 5.55,
+          "t": 47.73,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 46.54,
+          "w": 25.8,
+          "h": 4.49,
+          "text": "Primary site technique"
+        },
+        {
+          "l": 10.7,
+          "t": 52.84,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 51.78,
+          "w": 46.14,
+          "h": 3.99,
+          "text": "All distinguished copies kept at the same site"
+        },
+        {
+          "l": 5.55,
+          "t": 57.8,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 56.62,
+          "w": 33.04,
+          "h": 4.49,
+          "text": "Primary site with backup site"
+        },
+        {
+          "l": 10.7,
+          "t": 62.91,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 61.84,
+          "w": 46.01,
+          "h": 4.01,
+          "text": "Locking information maintained at both sites"
+        },
+        {
+          "l": 5.55,
+          "t": 67.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 66.69,
+          "w": 24.61,
+          "h": 4.49,
+          "text": "Primary copy method"
+        },
+        {
+          "l": 10.7,
+          "t": 72.98,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 71.91,
+          "w": 62.36,
+          "h": 4.01,
+          "text": "Distributes the load of lock coordination among various sites"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_010.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Concurrency Control Based on a Distinguished Copy \r\nof a Data Item\r\n\u25cf A site that includes a distinguished copy of a data item basically acts as \r\nthe coordinator site for concurrency control on that item.\r\n\u25cf Whenever a coordinator site fails in any of the preceding techniques, the \r\nsites that are still running must choose a new coordinator.\r\n\u25cf If no backup site existed, or if both the primary and the backup sites are \r\ndown, a process called election can be used to choose the new \r\ncoordinator site.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 71.66,
+          "h": 7.43,
+          "text": "Concurrency Control in Distributed Databases"
+        },
+        {
+          "l": 4.6,
+          "t": 24.12,
+          "w": 88.55,
+          "h": 4.99,
+          "text": "Distributed Concurrency Control Based on a Distinguished Copy "
+        },
+        {
+          "l": 4.47,
+          "t": 30.02,
+          "w": 19.41,
+          "h": 3.88,
+          "text": "of a Data Item"
+        },
+        {
+          "l": 5.55,
+          "t": 37.06,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 35.85,
+          "w": 82.77,
+          "h": 4.52,
+          "text": "A site that includes a distinguished copy of a data item basically acts as "
+        },
+        {
+          "l": 9.39,
+          "t": 41.21,
+          "w": 4.43,
+          "h": 3.47,
+          "text": "the "
+        },
+        {
+          "l": 13.94,
+          "t": 41.21,
+          "w": 19.77,
+          "h": 3.47,
+          "text": "coordinator site "
+        },
+        {
+          "l": 33.82,
+          "t": 41.19,
+          "w": 43.35,
+          "h": 4.52,
+          "text": " for concurrency control on that item."
+        },
+        {
+          "l": 5.55,
+          "t": 47.73,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 46.52,
+          "w": 84.87,
+          "h": 4.52,
+          "text": "Whenever a coordinator site fails in any of the preceding techniques, the "
+        },
+        {
+          "l": 9.47,
+          "t": 51.87,
+          "w": 67.32,
+          "h": 4.49,
+          "text": "sites that are still running must choose a new coordinator."
+        },
+        {
+          "l": 5.55,
+          "t": 58.39,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 57.19,
+          "w": 83.92,
+          "h": 4.52,
+          "text": "If no backup site existed, or if both the primary and the backup sites are "
+        },
+        {
+          "l": 9.49,
+          "t": 62.54,
+          "w": 26.79,
+          "h": 4.48,
+          "text": "down, a process called "
+        },
+        {
+          "l": 36.42,
+          "t": 62.54,
+          "w": 9.74,
+          "h": 3.47,
+          "text": "election "
+        },
+        {
+          "l": 46.35,
+          "t": 62.54,
+          "w": 37.29,
+          "h": 3.47,
+          "text": " can be used to choose the new "
+        },
+        {
+          "l": 9.49,
+          "t": 67.87,
+          "w": 18.8,
+          "h": 3.48,
+          "text": "coordinator site."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_011.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Concurrency Control Based on Voting\r\n\u25cf No distinguished copy\r\n\u25cf Lock requests sent to all sites that contain a copy\r\n\u25cf Each copy maintains its own lock\r\n\u25cf If transaction that requests a lock is granted that lock by a majority of the \r\ncopies, it holds the lock on all copies\r\n\u25cf Time-out period applies\r\n\u25cf Results in higher message traffic among sites",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 71.66,
+          "h": 7.43,
+          "text": "Concurrency Control in Distributed Databases"
+        },
+        {
+          "l": 4.6,
+          "t": 24.12,
+          "w": 67.83,
+          "h": 4.99,
+          "text": "Distributed Concurrency Control Based on Voting"
+        },
+        {
+          "l": 5.55,
+          "t": 31.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.95,
+          "w": 25.48,
+          "h": 4.49,
+          "text": "No distinguished copy"
+        },
+        {
+          "l": 5.55,
+          "t": 36.47,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 35.28,
+          "w": 56.65,
+          "h": 4.49,
+          "text": "Lock requests sent to all sites that contain a copy"
+        },
+        {
+          "l": 5.55,
+          "t": 41.8,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 40.62,
+          "w": 37.77,
+          "h": 4.49,
+          "text": "Each copy maintains its own lock"
+        },
+        {
+          "l": 5.55,
+          "t": 47.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 45.93,
+          "w": 85.28,
+          "h": 4.52,
+          "text": "If transaction that requests a lock is granted that lock by a majority of the "
+        },
+        {
+          "l": 9.49,
+          "t": 51.28,
+          "w": 41.88,
+          "h": 4.48,
+          "text": "copies, it holds the lock on all copies"
+        },
+        {
+          "l": 5.55,
+          "t": 57.8,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 56.62,
+          "w": 27.52,
+          "h": 4.48,
+          "text": "Time-out period applies"
+        },
+        {
+          "l": 5.55,
+          "t": 63.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 61.93,
+          "w": 51.98,
+          "h": 4.51,
+          "text": "Results in higher message traffic among sites"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_012.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Recovery\r\n\u25cf Difficult to determine whether a site is down without exchanging \r\nnumerous messages with other sites\r\n\u25cf Distributed commit\r\n\u25cb When a transaction is updating data at several sites, it cannot commit until \r\ncertain its effect on every site cannot be lost\r\n\u25cb Two-phase commit protocol often used to ensure correctness",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 71.66,
+          "h": 7.43,
+          "text": "Concurrency Control in Distributed Databases"
+        },
+        {
+          "l": 4.6,
+          "t": 24.12,
+          "w": 28.93,
+          "h": 4.99,
+          "text": "Distributed Recovery"
+        },
+        {
+          "l": 5.55,
+          "t": 31.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.93,
+          "w": 75.42,
+          "h": 4.51,
+          "text": "Difficult to determine whether a site is down without exchanging "
+        },
+        {
+          "l": 9.56,
+          "t": 35.28,
+          "w": 42.36,
+          "h": 4.49,
+          "text": "numerous messages with other sites"
+        },
+        {
+          "l": 5.55,
+          "t": 41.8,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 40.62,
+          "w": 22.24,
+          "h": 3.47,
+          "text": "Distributed commit"
+        },
+        {
+          "l": 10.7,
+          "t": 46.91,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.38,
+          "t": 45.86,
+          "w": 77.53,
+          "h": 3.99,
+          "text": "When a transaction is updating data at several sites, it cannot commit until "
+        },
+        {
+          "l": 14.47,
+          "t": 50.58,
+          "w": 45.32,
+          "h": 4.01,
+          "text": "certain its effect on every site cannot be lost"
+        },
+        {
+          "l": 10.7,
+          "t": 56.39,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.37,
+          "t": 55.32,
+          "w": 63.56,
+          "h": 4.01,
+          "text": "Two-phase commit protocol often used to ensure correctness"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_013.webp",
+      "text": "Transaction Management in Distributed Databases\r\n\u25cf The global and local transaction management software modules, along \r\nwith the concurrency control and recovery manager of a DDBMS, \r\ncollectively guarantee the ACID properties of transactions.\r\n\u25cf An additional component called the global transaction manager is used.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 21.86,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 20.65,
+          "w": 82.94,
+          "h": 4.51,
+          "text": "The global and local transaction management software modules, along "
+        },
+        {
+          "l": 9.38,
+          "t": 25.99,
+          "w": 76.03,
+          "h": 4.52,
+          "text": "with the concurrency control and recovery manager of a DDBMS, "
+        },
+        {
+          "l": 9.49,
+          "t": 31.32,
+          "w": 67.03,
+          "h": 4.52,
+          "text": "collectively guarantee the ACID properties of transactions."
+        },
+        {
+          "l": 5.55,
+          "t": 37.86,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 36.68,
+          "w": 83.12,
+          "h": 4.49,
+          "text": "An additional component called the global transaction manager is used."
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_014.webp",
+      "text": "Transaction Management in Distributed Databases\r\nGlobal transaction manager\r\n\u25cf Supports distributed transactions\r\n\u25cf Role temporarily assumed by site at which transaction originated\r\n\u25cb Coordinates execution with transaction managers at multiple sites\r\n\u25cf Passes database operations and associated information to the \r\nconcurrency controller\r\n\u25cb Controller responsible for acquisition and release of locks",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 38.5,
+          "h": 4.99,
+          "text": "Global transaction manager"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 26.6,
+          "w": 38.74,
+          "h": 4.48,
+          "text": "Supports distributed transactions"
+        },
+        {
+          "l": 5.55,
+          "t": 33.12,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 31.93,
+          "w": 74.95,
+          "h": 4.49,
+          "text": "Role temporarily assumed by site at which transaction originated"
+        },
+        {
+          "l": 10.7,
+          "t": 38.23,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.48,
+          "t": 37.17,
+          "w": 68.17,
+          "h": 3.99,
+          "text": "Coordinates execution with transaction managers at multiple sites"
+        },
+        {
+          "l": 5.55,
+          "t": 43.2,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 41.99,
+          "w": 72.83,
+          "h": 4.51,
+          "text": "Passes database operations and associated information to the "
+        },
+        {
+          "l": 9.49,
+          "t": 47.34,
+          "w": 26.19,
+          "h": 4.49,
+          "text": "concurrency controller"
+        },
+        {
+          "l": 10.7,
+          "t": 53.64,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.48,
+          "t": 52.56,
+          "w": 59.2,
+          "h": 4.01,
+          "text": "Controller responsible for acquisition and release of locks"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_015.webp",
+      "text": "Transaction Management in Distributed Databases\r\n\u25cf Transaction managers export their functionality as an interface to the \r\napplication programs. \r\n\u25cf The operations exported by this interface are BEGIN_TRANSACTION, READ or \r\nWRITE, END_TRANSACTION, COMMIT_TRANSACTION, and ROLLBACK (or \r\nABORT). \r\n\u25cf The manager stores book keeping information related to each transaction, such \r\nas a unique identifier, originating site, name, and so on. \r\n\u25cf For READ operations, it returns a local copy if valid and available. \r\n\u25cf For WRITE operations, it ensures that updates are visible across all sites\r\n\u25cf containing copies (replicas) of the data item. \r\n\u25cf For ABORT operations, the manager ensures that no effects of the transaction \r\nare reflected in any site of the distributed database. \r\n\u25cf For COMMIT operations, it ensures that the effects of a write are persistently\r\n\u25cf recorded on all databases containing copies of the data item. \r\n\u25cf Atomic termination (COMMIT/ ABORT) of distributed transactions is commonly \r\nimplemented using the two-phase commit protocol.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 5.65,
+          "t": 20.92,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 19.8,
+          "w": 75.18,
+          "h": 4.18,
+          "text": "Transaction managers export their functionality as an interface to the \r\nlii"
+        },
+        {
+          "l": 9.45,
+          "t": 23.77,
+          "w": 24.04,
+          "h": 4.15,
+          "text": "g\r\napplication programs. \r\nThi"
+        },
+        {
+          "l": 5.65,
+          "t": 28.81,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 27.7,
+          "w": 83.1,
+          "h": 4.18,
+          "text": "pppg\r\nThe operations exported by this interface are BEGIN_TRANSACTION, READ or \r\nWRITEENDTRANSACTIONCOMMITTRANSACTIONd ROLLBACK ("
+        },
+        {
+          "l": 9.38,
+          "t": 31.66,
+          "w": 77.81,
+          "h": 3.82,
+          "text": "ppy \r\nWRITE, END_TRANSACTION, COMMIT_TRANSACTION, and ROLLBACK (or "
+        },
+        {
+          "l": 9.35,
+          "t": 35.75,
+          "w": 9.33,
+          "h": 3.67,
+          "text": "ABORT). "
+        },
+        {
+          "l": 5.65,
+          "t": 40.65,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 39.54,
+          "w": 86.23,
+          "h": 4.17,
+          "text": "The manager stores book keeping information related to each transaction, such \r\niidifiiiiid "
+        },
+        {
+          "l": 9.45,
+          "t": 43.48,
+          "w": 60.09,
+          "h": 4.17,
+          "text": "gpg \r\nas a unique identifier, originating site, name, and so on. \r\nFREAD iill if lid d "
+        },
+        {
+          "l": 5.65,
+          "t": 48.55,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 47.43,
+          "w": 69.78,
+          "h": 4.18,
+          "text": "qgg \r\nFor READ operations, it returns a local copy if valid and available. \r\nFWRITE iihdiibl"
+        },
+        {
+          "l": 5.65,
+          "t": 52.49,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 51.4,
+          "w": 76.38,
+          "h": 4.15,
+          "text": "ppy \r\nFor WRITE operations, it ensures that updates are visible across all sites\r\niii(li) f hdi"
+        },
+        {
+          "l": 5.65,
+          "t": 56.44,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.48,
+          "t": 55.32,
+          "w": 47.86,
+          "h": 4.17,
+          "text": "pp\r\ncontaining copies (replicas) of the data item. \r\nFABORT ih"
+        },
+        {
+          "l": 5.65,
+          "t": 60.39,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 59.27,
+          "w": 84.12,
+          "h": 4.17,
+          "text": "g pp\r\nFor ABORT operations, the manager ensures that no effects of the transaction \r\nfld iif hdiibd db"
+        },
+        {
+          "l": 9.45,
+          "t": 63.22,
+          "w": 56.03,
+          "h": 4.18,
+          "text": "pg\r\nare reflected in any site of the distributed database. \r\nFCOMMIT iihhff"
+        },
+        {
+          "l": 5.65,
+          "t": 68.28,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 67.16,
+          "w": 82.05,
+          "h": 4.18,
+          "text": "y \r\nFor COMMIT operations, it ensures that the effects of a write are persistently\r\ndd ll dbiiif hdi"
+        },
+        {
+          "l": 5.65,
+          "t": 72.23,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 71.11,
+          "w": 65.98,
+          "h": 4.17,
+          "text": "p\r\nrecorded on all databases containing copies of the data item. \r\nAiii(COMMIT/ ABORT) f diibd i"
+        },
+        {
+          "l": 5.65,
+          "t": 76.17,
+          "w": 0.99,
+          "h": 1.8,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 75.06,
+          "w": 84.83,
+          "h": 4.18,
+          "text": "g p\r\nAtomic termination (COMMIT/ ABORT) of distributed transactions is commonly \r\nild ihhil"
+        },
+        {
+          "l": 9.53,
+          "t": 79.02,
+          "w": 55.44,
+          "h": 4.15,
+          "text": "implemented using the two-phase commit protocol."
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_016.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols\r\n\u25cf Two-Phase Commit Protocol\r\n\u25cb global recovery manager, or coordinator, maintains information needed for \r\nrecovery \r\n\u25cb in addition to the local recovery managers and the information they maintain \r\n(log, tables).\r\n\u25cf Three-Phase Commit Protocol\r\n\u25cb Divides second commit phase into two subphases\r\n\u25cb Prepare-to-commit phase communicates result of the vote phase\r\n\u25cb Commit subphase same as two-phase commit counterpart",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 24.47,
+          "h": 3.85,
+          "text": "Commit Protocols"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 26.6,
+          "w": 32.66,
+          "h": 3.47,
+          "text": "Two-Phase Commit Protocol"
+        },
+        {
+          "l": 10.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.38,
+          "t": 31.82,
+          "w": 78.42,
+          "h": 4.01,
+          "text": "global recovery manager, or coordinator, maintains information needed for "
+        },
+        {
+          "l": 14.54,
+          "t": 37.44,
+          "w": 9.31,
+          "h": 3.13,
+          "text": "recovery "
+        },
+        {
+          "l": 10.7,
+          "t": 42.38,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.52,
+          "t": 41.3,
+          "w": 79.99,
+          "h": 4.01,
+          "text": "in addition to the local recovery managers and the information they maintain "
+        },
+        {
+          "l": 14.44,
+          "t": 46.06,
+          "w": 12.13,
+          "h": 3.99,
+          "text": "(log, tables)."
+        },
+        {
+          "l": 5.55,
+          "t": 52.08,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 50.9,
+          "w": 34.58,
+          "h": 3.47,
+          "text": "Three-Phase Commit Protocol"
+        },
+        {
+          "l": 10.7,
+          "t": 57.19,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 56.14,
+          "w": 51.17,
+          "h": 3.99,
+          "text": "Divides second commit phase into two subphases"
+        },
+        {
+          "l": 10.7,
+          "t": 61.93,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 60.86,
+          "w": 66.94,
+          "h": 4.01,
+          "text": "Prepare-to-commit phase communicates result of the vote phase"
+        },
+        {
+          "l": 10.7,
+          "t": 66.67,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.48,
+          "t": 65.62,
+          "w": 60.42,
+          "h": 3.99,
+          "text": "Commit subphase same as two-phase commit counterpart"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_017.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols-Two-Phase Commit Protocol\r\n\u25cf The Two-Phase Commit Protocol (2PC) is a widely used approach to ensure atomic \r\ntransactions in distributed systems.\r\n\u25cf It is a distributed transaction protocol used for ensuring data consistency and \r\nintegrity across multiple nodes in a distributed system. \r\n\u25cf In 2PC, a coordinator oversees multiple participants and ensures that either all \r\nparticipants agree to commit the transaction, or if any participant fails to commit, \r\nall participants rollback.\r\n\u25cf Thus, it provides atomicity and durability properties.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 25.38,
+          "h": 3.85,
+          "text": "Commit Protocols-"
+        },
+        {
+          "l": 30.0,
+          "t": 21.15,
+          "w": 32.66,
+          "h": 3.47,
+          "text": "Two-Phase Commit Protocol"
+        },
+        {
+          "l": 5.7,
+          "t": 27.56,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 26.51,
+          "w": 85.32,
+          "h": 3.99,
+          "text": "The Two-Phase Commit Protocol (2PC) is a widely used approach to ensure atomic "
+        },
+        {
+          "l": 9.38,
+          "t": 31.25,
+          "w": 36.52,
+          "h": 3.99,
+          "text": "transactions in distributed systems."
+        },
+        {
+          "l": 5.7,
+          "t": 37.04,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 35.97,
+          "w": 80.34,
+          "h": 4.01,
+          "text": "It is a distributed transaction protocol used for ensuring data consistency and "
+        },
+        {
+          "l": 9.52,
+          "t": 40.73,
+          "w": 56.88,
+          "h": 3.99,
+          "text": "integrity across multiple nodes in a distributed system. "
+        },
+        {
+          "l": 5.7,
+          "t": 46.53,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 45.47,
+          "w": 81.48,
+          "h": 3.99,
+          "text": "In 2PC, a coordinator oversees multiple participants and ensures that either all "
+        },
+        {
+          "l": 9.54,
+          "t": 50.19,
+          "w": 84.26,
+          "h": 4.01,
+          "text": "participants agree to commit the transaction, or if any participant fails to commit, "
+        },
+        {
+          "l": 9.45,
+          "t": 54.95,
+          "w": 24.28,
+          "h": 3.99,
+          "text": "all participants rollback."
+        },
+        {
+          "l": 5.7,
+          "t": 60.75,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 59.69,
+          "w": 53.74,
+          "h": 3.99,
+          "text": "Thus, it provides atomicity and durability properties."
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_018.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Two-Phase Commit Protocol Working",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 26.18,
+          "h": 3.85,
+          "text": "Commit Protocols- "
+        },
+        {
+          "l": 30.72,
+          "t": 21.15,
+          "w": 43.13,
+          "h": 4.49,
+          "text": "Two-Phase Commit Protocol Working"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_019.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols-Two-Phase Commit Protocol Working\r\n\u25cf 2PC operates in two phases: the Prepare Phase and the Commit Phase.\r\n\u25cf 1. Prepare Phase:\r\n\u25cb The coordinator sends a Prepare request to all participants.\r\n\u25cb Each participant checks if it can complete the transaction and responds with \r\neither a Yes (prepared) or No (abort).\r\n\u25cf 2. Commit Phase:\r\n\u25cb If all participants respond with Yes, the coordinator sends a Commit \r\ncommand, and all participants commit the transaction.\r\n\u25cb If any participant responds with No, the coordinator sends an Abort command \r\nto rollback the transaction across all participants.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 25.38,
+          "h": 3.85,
+          "text": "Commit Protocols-"
+        },
+        {
+          "l": 30.0,
+          "t": 21.15,
+          "w": 43.13,
+          "h": 4.49,
+          "text": "Two-Phase Commit Protocol Working"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 26.6,
+          "w": 82.28,
+          "h": 4.48,
+          "text": "2PC operates in two phases: the Prepare Phase and the Commit Phase."
+        },
+        {
+          "l": 5.55,
+          "t": 33.12,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 31.93,
+          "w": 19.9,
+          "h": 4.48,
+          "text": "1. Prepare Phase:"
+        },
+        {
+          "l": 10.7,
+          "t": 38.23,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.37,
+          "t": 37.17,
+          "w": 61.3,
+          "h": 3.99,
+          "text": "The coordinator sends a Prepare request to all participants."
+        },
+        {
+          "l": 10.7,
+          "t": 42.97,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 41.9,
+          "w": 78.9,
+          "h": 4.01,
+          "text": "Each participant checks if it can complete the transaction and responds with "
+        },
+        {
+          "l": 14.47,
+          "t": 46.66,
+          "w": 37.74,
+          "h": 3.99,
+          "text": "either a Yes (prepared) or No (abort)."
+        },
+        {
+          "l": 5.55,
+          "t": 52.68,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 51.49,
+          "w": 19.96,
+          "h": 3.48,
+          "text": "2. Commit Phase:"
+        },
+        {
+          "l": 10.7,
+          "t": 57.78,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 56.71,
+          "w": 70.39,
+          "h": 4.01,
+          "text": "If all participants respond with Yes, the coordinator sends a Commit "
+        },
+        {
+          "l": 14.47,
+          "t": 61.47,
+          "w": 56.33,
+          "h": 3.99,
+          "text": "command, and all participants commit the transaction."
+        },
+        {
+          "l": 10.7,
+          "t": 67.27,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 66.19,
+          "w": 81.2,
+          "h": 4.01,
+          "text": "If any participant responds with No, the coordinator sends an Abort command "
+        },
+        {
+          "l": 14.38,
+          "t": 70.95,
+          "w": 50.53,
+          "h": 3.99,
+          "text": "to rollback the transaction across all participants."
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_020.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols-Two-Phase Commit Protocol\r\nAdvantages:\r\n\u25cf Ensures data consistency and integrity across distributed systems.\r\n\u25cf Provides atomicity and durability properties in transactions.\r\n\u25cf Suitable for various applications, including databases, distributed applications, and \r\nblockchain.\r\nChallenges and limitations\r\n\u25cf Performance issues as it requires multiple message exchanges between nodes.\r\n\u25cf Blocking problems during failures, leading to resource unavailability.\r\n\u25cf Scalability issues in large-scale distributed systems.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 25.38,
+          "h": 3.85,
+          "text": "Commit Protocols-"
+        },
+        {
+          "l": 30.0,
+          "t": 21.15,
+          "w": 32.66,
+          "h": 3.47,
+          "text": "Two-Phase Commit Protocol"
+        },
+        {
+          "l": 4.35,
+          "t": 26.6,
+          "w": 13.97,
+          "h": 4.49,
+          "text": "Advantages:"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 31.84,
+          "w": 67.96,
+          "h": 3.99,
+          "text": "Ensures data consistency and integrity across distributed systems."
+        },
+        {
+          "l": 5.7,
+          "t": 37.64,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 36.58,
+          "w": 61.26,
+          "h": 3.99,
+          "text": "Provides atomicity and durability properties in transactions."
+        },
+        {
+          "l": 5.7,
+          "t": 42.38,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 41.3,
+          "w": 85.88,
+          "h": 4.01,
+          "text": "Suitable for various applications, including databases, distributed applications, and "
+        },
+        {
+          "l": 9.54,
+          "t": 46.06,
+          "w": 11.3,
+          "h": 3.1,
+          "text": "blockchain."
+        },
+        {
+          "l": 4.5,
+          "t": 50.9,
+          "w": 30.34,
+          "h": 4.49,
+          "text": "Challenges and limitations"
+        },
+        {
+          "l": 5.7,
+          "t": 57.19,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 56.12,
+          "w": 81.32,
+          "h": 4.01,
+          "text": "Performance issues as it requires multiple message exchanges between nodes."
+        },
+        {
+          "l": 5.7,
+          "t": 61.93,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 60.86,
+          "w": 70.17,
+          "h": 4.01,
+          "text": "Blocking problems during failures, leading to resource unavailability."
+        },
+        {
+          "l": 5.7,
+          "t": 66.67,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 65.62,
+          "w": 52.45,
+          "h": 3.99,
+          "text": "Scalability issues in large-scale distributed systems."
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_021.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol\r\n\u25cf A distributed transaction protocol designed to maintain data consistency across \r\nmultiple systems in a failure-prone environment.\r\n\u25cf An extension of the Two-Phase Commit (2PC) protocol, with an additional phase to \r\nimprove fault tolerance.\r\n\u25cf It is a distributed algorithm that ensures all nodes in a system agree to commit or \r\nabort a transaction.\r\n\u25cf By ensuring atomicity and durability, 3PC helps businesses manage and process \r\ndata efficiently, especially in distributed databases or applications.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 26.18,
+          "h": 3.85,
+          "text": "Commit Protocols- "
+        },
+        {
+          "l": 30.72,
+          "t": 21.15,
+          "w": 34.58,
+          "h": 3.47,
+          "text": "Three-Phase Commit Protocol"
+        },
+        {
+          "l": 5.7,
+          "t": 27.56,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 26.51,
+          "w": 82.86,
+          "h": 3.99,
+          "text": "A distributed transaction protocol designed to maintain data consistency across "
+        },
+        {
+          "l": 9.54,
+          "t": 31.23,
+          "w": 50.01,
+          "h": 4.01,
+          "text": "multiple systems in a failure-prone environment."
+        },
+        {
+          "l": 5.7,
+          "t": 37.04,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 35.97,
+          "w": 85.61,
+          "h": 4.01,
+          "text": "An extension of the Two-Phase Commit (2PC) protocol, with an additional phase to "
+        },
+        {
+          "l": 9.52,
+          "t": 40.71,
+          "w": 24.41,
+          "h": 4.01,
+          "text": "improve fault tolerance."
+        },
+        {
+          "l": 5.7,
+          "t": 46.53,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 45.47,
+          "w": 84.29,
+          "h": 3.99,
+          "text": "It is a distributed algorithm that ensures all nodes in a system agree to commit or "
+        },
+        {
+          "l": 9.45,
+          "t": 50.21,
+          "w": 20.02,
+          "h": 3.1,
+          "text": "abort a transaction."
+        },
+        {
+          "l": 5.7,
+          "t": 56.01,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 54.95,
+          "w": 82.82,
+          "h": 3.99,
+          "text": "By ensuring atomicity and durability, 3PC helps businesses manage and process "
+        },
+        {
+          "l": 9.47,
+          "t": 59.67,
+          "w": 68.06,
+          "h": 4.01,
+          "text": "data efficiently, especially in distributed databases or applications."
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_022.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol\r\nHow it works?",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 26.18,
+          "h": 3.85,
+          "text": "Commit Protocols- "
+        },
+        {
+          "l": 30.72,
+          "t": 21.15,
+          "w": 34.58,
+          "h": 3.47,
+          "text": "Three-Phase Commit Protocol"
+        },
+        {
+          "l": 4.6,
+          "t": 26.69,
+          "w": 19.18,
+          "h": 3.87,
+          "text": "How it works?"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_023.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol Working\r\n\u25cf 3PC operates in three phases: Prepare Phase, Pre-Commit Phase, and \r\nCommit Phase.\r\n\u25cf 1. Prepare Phase (Can-commit/ Voting phase):\r\n\u25cb Similar to 2PC, the coordinator sends a Prepare request to participants, asking \r\nif they can commit the transaction.\r\n\u25cb Each participant responds with Yes or No.\r\n\u25cf 2. Pre-Commit Phase(Prepare to commit/ Dissemination phase):\r\n\u25cb If all participants respond Yes, the coordinator sends a Pre-Commit message, \r\nindicating the transaction is likely to be committed.\r\n\u25cb Participants acknowledge the Pre-Commit, preparing to commit the \r\ntransaction but not yet completing it.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 26.18,
+          "h": 3.85,
+          "text": "Commit Protocols- "
+        },
+        {
+          "l": 30.72,
+          "t": 21.15,
+          "w": 45.05,
+          "h": 4.49,
+          "text": "Three-Phase Commit Protocol Working"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 26.6,
+          "w": 81.46,
+          "h": 4.48,
+          "text": "3PC operates in three phases: Prepare Phase, Pre-Commit Phase, and "
+        },
+        {
+          "l": 9.5,
+          "t": 31.93,
+          "w": 17.2,
+          "h": 3.48,
+          "text": "Commit Phase."
+        },
+        {
+          "l": 5.55,
+          "t": 38.45,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 37.27,
+          "w": 52.81,
+          "h": 4.49,
+          "text": "1. Prepare Phase (Can-commit/ Voting phase):"
+        },
+        {
+          "l": 10.7,
+          "t": 43.56,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 42.51,
+          "w": 81.26,
+          "h": 3.99,
+          "text": "Similar to 2PC, the coordinator sends a Prepare request to participants, asking "
+        },
+        {
+          "l": 14.52,
+          "t": 47.23,
+          "w": 35.56,
+          "h": 4.01,
+          "text": "if they can commit the transaction."
+        },
+        {
+          "l": 10.7,
+          "t": 53.04,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 51.99,
+          "w": 42.68,
+          "h": 3.99,
+          "text": "Each participant responds with Yes or No."
+        },
+        {
+          "l": 5.55,
+          "t": 58.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 56.82,
+          "w": 73.85,
+          "h": 4.48,
+          "text": "2. Pre-Commit Phase(Prepare to commit/ Dissemination phase):"
+        },
+        {
+          "l": 10.7,
+          "t": 63.12,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 62.04,
+          "w": 79.83,
+          "h": 4.01,
+          "text": "If all participants respond Yes, the coordinator sends a Pre-Commit message, "
+        },
+        {
+          "l": 14.52,
+          "t": 66.8,
+          "w": 52.24,
+          "h": 3.99,
+          "text": "indicating the transaction is likely to be committed."
+        },
+        {
+          "l": 10.7,
+          "t": 72.6,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 71.54,
+          "w": 70.03,
+          "h": 3.99,
+          "text": "Participants acknowledge the Pre-Commit, preparing to commit the "
+        },
+        {
+          "l": 14.38,
+          "t": 76.29,
+          "w": 38.0,
+          "h": 3.99,
+          "text": "transaction but not yet completing it."
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_024.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol Working\r\n\u25cf 3. Commit/ Abort Phase (Decision phase):\r\n\u25cb If all participants acknowledge the Pre-Commit, the coordinator sends the \r\nCommit command.\r\n\u25cb If any participant fails to acknowledge the Pre-Commit, the transaction is \r\nAborted.\r\n\u25cf 3PC mitigates blocking issues by adding a timeout mechanism, allowing \r\nparticipants to autonomously decide to commit or abort if they don\u2019t \r\nreceive further messages from the coordinator.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 26.18,
+          "h": 3.85,
+          "text": "Commit Protocols- "
+        },
+        {
+          "l": 30.72,
+          "t": 21.15,
+          "w": 45.05,
+          "h": 4.49,
+          "text": "Three-Phase Commit Protocol Working"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 26.6,
+          "w": 47.76,
+          "h": 4.48,
+          "text": "3. Commit/ Abort Phase (Decision phase):"
+        },
+        {
+          "l": 10.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 31.82,
+          "w": 76.47,
+          "h": 4.01,
+          "text": "If all participants acknowledge the Pre-Commit, the coordinator sends the "
+        },
+        {
+          "l": 14.48,
+          "t": 36.58,
+          "w": 19.52,
+          "h": 3.1,
+          "text": "Commit command."
+        },
+        {
+          "l": 10.7,
+          "t": 42.38,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 41.3,
+          "w": 75.27,
+          "h": 4.01,
+          "text": "If any participant fails to acknowledge the Pre-Commit, the transaction is "
+        },
+        {
+          "l": 14.35,
+          "t": 46.06,
+          "w": 8.82,
+          "h": 3.1,
+          "text": "Aborted."
+        },
+        {
+          "l": 5.7,
+          "t": 52.33,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 50.9,
+          "w": 83.4,
+          "h": 4.49,
+          "text": "3PC mitigates blocking issues by adding a timeout mechanism, allowing "
+        },
+        {
+          "l": 9.56,
+          "t": 56.21,
+          "w": 80.07,
+          "h": 4.52,
+          "text": "participants to autonomously decide to commit or abort if they don\u2019t "
+        },
+        {
+          "l": 9.56,
+          "t": 61.54,
+          "w": 54.68,
+          "h": 4.51,
+          "text": "receive further messages from the coordinator."
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_025.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol Working\r\nAdvantages:\r\n\u25cf Improved fault tolerance\r\n\u25cf Data consistency\r\n\u25cf Reduced global deadlock risk\r\nChallenges and limitations\r\n\u25cf Increased message overhead\r\n\u25cf Blocking nature\r\n\u25cf Complexity",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 26.18,
+          "h": 3.85,
+          "text": "Commit Protocols- "
+        },
+        {
+          "l": 30.72,
+          "t": 21.15,
+          "w": 45.05,
+          "h": 4.49,
+          "text": "Three-Phase Commit Protocol Working"
+        },
+        {
+          "l": 4.35,
+          "t": 26.6,
+          "w": 13.97,
+          "h": 4.49,
+          "text": "Advantages:"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 31.82,
+          "w": 25.25,
+          "h": 4.01,
+          "text": "Improved fault tolerance"
+        },
+        {
+          "l": 5.7,
+          "t": 37.64,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 36.68,
+          "w": 17.24,
+          "h": 3.9,
+          "text": "Data consistency"
+        },
+        {
+          "l": 5.7,
+          "t": 42.38,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 41.32,
+          "w": 29.76,
+          "h": 3.99,
+          "text": "Reduced global deadlock risk"
+        },
+        {
+          "l": 4.5,
+          "t": 46.16,
+          "w": 30.34,
+          "h": 4.49,
+          "text": "Challenges and limitations"
+        },
+        {
+          "l": 5.7,
+          "t": 52.45,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 51.4,
+          "w": 29.74,
+          "h": 3.99,
+          "text": "Increased message overhead"
+        },
+        {
+          "l": 5.7,
+          "t": 57.19,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 56.14,
+          "w": 15.83,
+          "h": 3.99,
+          "text": "Blocking nature"
+        },
+        {
+          "l": 5.7,
+          "t": 61.93,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.48,
+          "t": 60.88,
+          "w": 11.44,
+          "h": 3.99,
+          "text": "Complexity"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_026.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 24.47,
+          "h": 3.85,
+          "text": "Commit Protocols"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_027.webp",
+      "text": "Transaction Management in Distributed Databases\r\nOperating System Support for Transaction Management\r\nThe following are the main benefits of operating system (OS)-supported \r\ntransaction management:\r\n1. Typically, DBMSs use their own semaphores to guarantee mutually \r\nexclusive access to shared resources. OS-level knowledge of semaphores \r\ncan help eliminate performance degradation.\r\n2. Specialized hardware support for locking can be exploited to reduce \r\nassociated costs.\r\n3. Providing a set of common transaction support operations though the \r\nkernel allows application developers to focus on adding new features to \r\ntheir products as opposed to reimplementing the common functionality \r\nfor each application.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 9.54,
+          "w": 80.02,
+          "h": 7.46,
+          "text": "Transaction Management in Distributed Databases"
+        },
+        {
+          "l": 4.51,
+          "t": 20.27,
+          "w": 77.35,
+          "h": 5.01,
+          "text": "Operating System Support for Transaction Management"
+        },
+        {
+          "l": 4.37,
+          "t": 25.56,
+          "w": 83.76,
+          "h": 4.52,
+          "text": "The following are the main benefits of operating system (OS)-supported "
+        },
+        {
+          "l": 4.39,
+          "t": 30.49,
+          "w": 29.76,
+          "h": 4.38,
+          "text": "transaction management:"
+        },
+        {
+          "l": 4.99,
+          "t": 35.39,
+          "w": 1.68,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 9.37,
+          "t": 35.18,
+          "w": 78.06,
+          "h": 4.49,
+          "text": "Typically, DBMSs use their own semaphores to guarantee mutually "
+        },
+        {
+          "l": 9.49,
+          "t": 39.96,
+          "w": 85.2,
+          "h": 4.51,
+          "text": "exclusive access to shared resources. OS-level knowledge of semaphores "
+        },
+        {
+          "l": 9.49,
+          "t": 44.76,
+          "w": 52.26,
+          "h": 4.51,
+          "text": "can help eliminate performance degradation."
+        },
+        {
+          "l": 4.88,
+          "t": 49.74,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 9.47,
+          "t": 49.56,
+          "w": 79.49,
+          "h": 4.51,
+          "text": "Specialized hardware support for locking can be exploited to reduce "
+        },
+        {
+          "l": 9.46,
+          "t": 54.38,
+          "w": 19.28,
+          "h": 3.48,
+          "text": "associated costs."
+        },
+        {
+          "l": 4.87,
+          "t": 59.34,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 9.59,
+          "t": 59.16,
+          "w": 81.86,
+          "h": 4.51,
+          "text": "Providing a set of common transaction support operations though the "
+        },
+        {
+          "l": 9.56,
+          "t": 63.96,
+          "w": 83.76,
+          "h": 4.51,
+          "text": "kernel allows application developers to focus on adding new features to "
+        },
+        {
+          "l": 9.39,
+          "t": 68.76,
+          "w": 84.01,
+          "h": 4.52,
+          "text": "their products as opposed to reimplementing the common functionality "
+        },
+        {
+          "l": 9.38,
+          "t": 73.56,
+          "w": 23.46,
+          "h": 4.51,
+          "text": "for each application."
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_028.webp",
+      "text": "Query Processing and Optimization in Distributed Databases\r\nDistributed Query Processing\r\nA distributed database query is processed in stages as follows:\r\n1. Query Mapping\r\n2. Localization\r\n3. Global Query Optimization\r\n4. Local Query Optimization\r\nThe first three stages are performed at a central control site, whereas the last \r\nstage is performed locally.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        },
+        {
+          "l": 4.6,
+          "t": 20.77,
+          "w": 40.24,
+          "h": 4.99,
+          "text": "Distributed Query Processing"
+        },
+        {
+          "l": 4.35,
+          "t": 26.58,
+          "w": 72.25,
+          "h": 4.52,
+          "text": "A distributed database query is processed in stages as follows:"
+        },
+        {
+          "l": 4.99,
+          "t": 32.14,
+          "w": 1.68,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 9.5,
+          "t": 32.05,
+          "w": 17.8,
+          "h": 4.38,
+          "text": "Query Mapping"
+        },
+        {
+          "l": 4.88,
+          "t": 37.43,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 9.59,
+          "t": 37.27,
+          "w": 13.31,
+          "h": 3.47,
+          "text": "Localization"
+        },
+        {
+          "l": 4.87,
+          "t": 42.76,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 9.5,
+          "t": 42.6,
+          "w": 30.63,
+          "h": 4.49,
+          "text": "Global Query Optimization"
+        },
+        {
+          "l": 4.81,
+          "t": 48.12,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 9.59,
+          "t": 47.93,
+          "w": 29.06,
+          "h": 4.49,
+          "text": "Local Query Optimization"
+        },
+        {
+          "l": 4.37,
+          "t": 53.25,
+          "w": 90.5,
+          "h": 4.51,
+          "text": "The first three stages are performed at a central control site, whereas the last "
+        },
+        {
+          "l": 4.47,
+          "t": 58.58,
+          "w": 30.12,
+          "h": 4.52,
+          "text": "stage is performed locally."
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_029.webp",
+      "text": "Distributed Query Processing\r\nA distributed database query is processed in stages as follows:\r\n1. Query Mapping\r\n2. Localization\r\n3. Global Query Optimization\r\n4. Local Query Optimization\r\nThe first three stages are performed at a central control site, whereas the last \r\nstage is performed locally.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.77,
+          "w": 40.24,
+          "h": 4.99,
+          "text": "Distributed Query Processing"
+        },
+        {
+          "l": 4.35,
+          "t": 26.58,
+          "w": 72.25,
+          "h": 4.52,
+          "text": "A distributed database query is processed in stages as follows:"
+        },
+        {
+          "l": 4.99,
+          "t": 32.14,
+          "w": 1.68,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 9.5,
+          "t": 32.05,
+          "w": 17.8,
+          "h": 4.38,
+          "text": "Query Mapping"
+        },
+        {
+          "l": 4.88,
+          "t": 37.43,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 9.59,
+          "t": 37.27,
+          "w": 13.31,
+          "h": 3.47,
+          "text": "Localization"
+        },
+        {
+          "l": 4.87,
+          "t": 42.76,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 9.5,
+          "t": 42.6,
+          "w": 30.63,
+          "h": 4.49,
+          "text": "Global Query Optimization"
+        },
+        {
+          "l": 4.81,
+          "t": 48.12,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 9.59,
+          "t": 47.93,
+          "w": 29.06,
+          "h": 4.49,
+          "text": "Local Query Optimization"
+        },
+        {
+          "l": 4.37,
+          "t": 53.25,
+          "w": 90.5,
+          "h": 4.51,
+          "text": "The first three stages are performed at a central control site, whereas the last "
+        },
+        {
+          "l": 4.47,
+          "t": 58.58,
+          "w": 30.12,
+          "h": 4.52,
+          "text": "stage is performed locally."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_030.webp",
+      "text": "Distributed Query Processing\r\n1. Query Mapping\r\n\u25cf The input query on distributed data is specified formally using a query \r\nlanguage.\r\n\u25cf It is first normalized, analyzed for semantic errors,\r\n\u25cf simplified, and finally restructured into an algebraic query on global relations.\r\n\u25cf This translation is largely identical to the one performed in a centralized DBMS.\r\n2. Localization\r\n\u25cf This stage maps the distributed query on the global schema to separate queries \r\non individual fragments using data distribution and replication information.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 1.19,
+          "t": 20.77,
+          "w": 40.24,
+          "h": 4.99,
+          "text": "Distributed Query Processing"
+        },
+        {
+          "l": 1.58,
+          "t": 26.81,
+          "w": 1.68,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 6.09,
+          "t": 26.71,
+          "w": 17.8,
+          "h": 4.38,
+          "text": "Query Mapping"
+        },
+        {
+          "l": 2.15,
+          "t": 33.12,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 5.96,
+          "t": 31.91,
+          "w": 82.0,
+          "h": 4.52,
+          "text": "The input query on distributed data is specified formally using a query "
+        },
+        {
+          "l": 6.15,
+          "t": 37.27,
+          "w": 10.84,
+          "h": 4.49,
+          "text": "language."
+        },
+        {
+          "l": 2.15,
+          "t": 43.79,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 6.18,
+          "t": 42.58,
+          "w": 57.84,
+          "h": 4.52,
+          "text": "It is first normalized, analyzed for semantic errors,"
+        },
+        {
+          "l": 2.15,
+          "t": 49.12,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 6.06,
+          "t": 47.91,
+          "w": 89.76,
+          "h": 4.52,
+          "text": "simplified, and finally restructured into an algebraic query on global relations."
+        },
+        {
+          "l": 2.15,
+          "t": 54.45,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 5.96,
+          "t": 53.25,
+          "w": 91.45,
+          "h": 4.52,
+          "text": "This translation is largely identical to the one performed in a centralized DBMS."
+        },
+        {
+          "l": 1.47,
+          "t": 58.76,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 6.18,
+          "t": 58.6,
+          "w": 13.31,
+          "h": 3.47,
+          "text": "Localization"
+        },
+        {
+          "l": 2.15,
+          "t": 65.12,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 5.96,
+          "t": 63.93,
+          "w": 93.31,
+          "h": 4.49,
+          "text": "This stage maps the distributed query on the global schema to separate queries "
+        },
+        {
+          "l": 6.08,
+          "t": 69.25,
+          "w": 87.27,
+          "h": 4.51,
+          "text": "on individual fragments using data distribution and replication information."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_031.webp",
+      "text": "Distributed Query Processing\r\n3. Global Query Optimization\r\n\u25cf Optimization consists of selecting a strategy from a list of candidates that \r\nis closest to optimal. \r\n\u25cf A list of candidate queries can be obtained by permuting the ordering of \r\noperations within a fragment query generated by the previous stage. \r\n\u25cf Time is the preferred unit for measuring cost. \r\n\u25cf The total cost is a weighted combination of costs such as CPU cost, I/O \r\ncosts, and communication costs.\r\n\u25cf The communication costs are the most significant.\r\n4. Local Query Optimization\r\n\u25cf This stage is common to all sites in the DDB.\r\n\u25cf The techniques are similar to those used in centralized systems.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.29,
+          "w": 40.24,
+          "h": 4.99,
+          "text": "Distributed Query Processing"
+        },
+        {
+          "l": 4.87,
+          "t": 25.74,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 9.5,
+          "t": 25.58,
+          "w": 30.63,
+          "h": 4.49,
+          "text": "Global Query Optimization"
+        },
+        {
+          "l": 5.55,
+          "t": 31.57,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 30.36,
+          "w": 85.45,
+          "h": 4.52,
+          "text": "Optimization consists of selecting a strategy from a list of candidates that "
+        },
+        {
+          "l": 9.54,
+          "t": 35.18,
+          "w": 24.15,
+          "h": 4.48,
+          "text": "is closest to optimal. "
+        },
+        {
+          "l": 5.55,
+          "t": 41.17,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 39.96,
+          "w": 84.45,
+          "h": 4.52,
+          "text": "A list of candidate queries can be obtained by permuting the ordering of "
+        },
+        {
+          "l": 9.49,
+          "t": 44.76,
+          "w": 80.38,
+          "h": 4.52,
+          "text": "operations within a fragment query generated by the previous stage. "
+        },
+        {
+          "l": 5.55,
+          "t": 50.77,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 49.56,
+          "w": 53.43,
+          "h": 4.51,
+          "text": "Time is the preferred unit for measuring cost. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.57,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 54.36,
+          "w": 82.18,
+          "h": 4.51,
+          "text": "The total cost is a weighted combination of costs such as CPU cost, I/O "
+        },
+        {
+          "l": 9.49,
+          "t": 59.18,
+          "w": 37.47,
+          "h": 4.0,
+          "text": "costs, and communication costs."
+        },
+        {
+          "l": 5.55,
+          "t": 65.17,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 63.96,
+          "w": 58.12,
+          "h": 4.51,
+          "text": "The communication costs are the most significant."
+        },
+        {
+          "l": 4.81,
+          "t": 68.97,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 9.59,
+          "t": 68.78,
+          "w": 29.06,
+          "h": 4.49,
+          "text": "Local Query Optimization"
+        },
+        {
+          "l": 5.55,
+          "t": 74.77,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 73.58,
+          "w": 50.98,
+          "h": 4.49,
+          "text": "This stage is common to all sites in the DDB."
+        },
+        {
+          "l": 5.55,
+          "t": 79.57,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 78.38,
+          "w": 73.98,
+          "h": 4.49,
+          "text": "The techniques are similar to those used in centralized systems."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_032.webp",
+      "text": "Distributed Query Processing\r\n3. Global Query Optimization\r\n\u25cf Optimization consists of selecting a strategy from a list of candidates that \r\nis closest to optimal. \r\n\u25cf A list of candidate queries can be obtained by permuting the ordering of \r\noperations within a fragment query generated by the previous stage. \r\n\u25cf Time is the preferred unit for measuring cost. \r\n\u25cf The total cost is a weighted combination of costs such as CPU cost, I/O \r\ncosts, and communication costs.\r\n\u25cf The communication costs are the most significant.\r\n4. Local Query Optimization\r\n\u25cf This stage is common to all sites in the DDB.\r\n\u25cf The techniques are similar to those used in centralized systems.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.29,
+          "w": 40.24,
+          "h": 4.99,
+          "text": "Distributed Query Processing"
+        },
+        {
+          "l": 4.87,
+          "t": 25.74,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 9.5,
+          "t": 25.58,
+          "w": 30.63,
+          "h": 4.49,
+          "text": "Global Query Optimization"
+        },
+        {
+          "l": 5.55,
+          "t": 31.57,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 30.36,
+          "w": 85.45,
+          "h": 4.52,
+          "text": "Optimization consists of selecting a strategy from a list of candidates that "
+        },
+        {
+          "l": 9.54,
+          "t": 35.18,
+          "w": 24.15,
+          "h": 4.48,
+          "text": "is closest to optimal. "
+        },
+        {
+          "l": 5.55,
+          "t": 41.17,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 39.96,
+          "w": 84.45,
+          "h": 4.52,
+          "text": "A list of candidate queries can be obtained by permuting the ordering of "
+        },
+        {
+          "l": 9.49,
+          "t": 44.76,
+          "w": 80.38,
+          "h": 4.52,
+          "text": "operations within a fragment query generated by the previous stage. "
+        },
+        {
+          "l": 5.55,
+          "t": 50.77,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 49.56,
+          "w": 53.43,
+          "h": 4.51,
+          "text": "Time is the preferred unit for measuring cost. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.57,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 54.36,
+          "w": 82.18,
+          "h": 4.51,
+          "text": "The total cost is a weighted combination of costs such as CPU cost, I/O "
+        },
+        {
+          "l": 9.49,
+          "t": 59.18,
+          "w": 37.47,
+          "h": 4.0,
+          "text": "costs, and communication costs."
+        },
+        {
+          "l": 5.55,
+          "t": 65.17,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 63.96,
+          "w": 58.12,
+          "h": 4.51,
+          "text": "The communication costs are the most significant."
+        },
+        {
+          "l": 4.81,
+          "t": 68.97,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 9.59,
+          "t": 68.78,
+          "w": 29.06,
+          "h": 4.49,
+          "text": "Local Query Optimization"
+        },
+        {
+          "l": 5.55,
+          "t": 74.77,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 73.58,
+          "w": 50.98,
+          "h": 4.49,
+          "text": "This stage is common to all sites in the DDB."
+        },
+        {
+          "l": 5.55,
+          "t": 79.57,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 78.38,
+          "w": 73.98,
+          "h": 4.49,
+          "text": "The techniques are similar to those used in centralized systems."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_033.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\n\u25cf One issue in processing and optimizing a query in a distributed system is \r\nthe cost of transferring data over the network.\r\n\u25cf This data includes intermediate files that are transferred to other sites for \r\nfurther processing, as well as the final result files that may have to be \r\ntransferred to the site where the query result is needed.\r\n\u25cf DDBMS query optimization algorithms consider the goal of reducing the \r\namount of data transfer as an optimization criterion in choosing a \r\ndistributed query execution strategy.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 26.76,
+          "w": 5.37,
+          "h": 3.31,
+          "text": "One "
+        },
+        {
+          "l": 15.07,
+          "t": 26.71,
+          "w": 5.62,
+          "h": 3.36,
+          "text": "issue "
+        },
+        {
+          "l": 20.83,
+          "t": 26.6,
+          "w": 73.6,
+          "h": 4.49,
+          "text": " in processing and optimizing a query in a distributed system is "
+        },
+        {
+          "l": 9.39,
+          "t": 31.93,
+          "w": 4.43,
+          "h": 3.47,
+          "text": "the "
+        },
+        {
+          "l": 13.96,
+          "t": 31.91,
+          "w": 27.74,
+          "h": 4.51,
+          "text": "cost of transferring data "
+        },
+        {
+          "l": 41.94,
+          "t": 31.93,
+          "w": 21.01,
+          "h": 3.48,
+          "text": " over the network."
+        },
+        {
+          "l": 5.55,
+          "t": 38.45,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 37.25,
+          "w": 86.18,
+          "h": 3.49,
+          "text": "This data includes intermediate files that are transferred to other sites for "
+        },
+        {
+          "l": 9.38,
+          "t": 42.58,
+          "w": 80.96,
+          "h": 4.52,
+          "text": "further processing, as well as the final result files that may have to be "
+        },
+        {
+          "l": 9.39,
+          "t": 47.91,
+          "w": 64.95,
+          "h": 4.52,
+          "text": "transferred to the site where the query result is needed."
+        },
+        {
+          "l": 5.55,
+          "t": 54.45,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 53.25,
+          "w": 83.94,
+          "h": 4.52,
+          "text": "DDBMS query optimization algorithms consider the goal of reducing the "
+        },
+        {
+          "l": 9.46,
+          "t": 58.58,
+          "w": 76.9,
+          "h": 4.51,
+          "text": "amount of data transfer as an optimization criterion in choosing a "
+        },
+        {
+          "l": 9.49,
+          "t": 63.93,
+          "w": 42.56,
+          "h": 4.49,
+          "text": "distributed query execution strategy."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_034.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query\r\n\u25cf Consider the Employee and Department relations distributed at two sites as shown \r\nin the figure.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 4.46,
+          "t": 26.6,
+          "w": 16.94,
+          "h": 4.49,
+          "text": "Sample query"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.48,
+          "t": 31.84,
+          "w": 86.21,
+          "h": 3.99,
+          "text": "Consider the Employee and Department relations distributed at two sites as shown "
+        },
+        {
+          "l": 9.52,
+          "t": 36.56,
+          "w": 12.75,
+          "h": 4.01,
+          "text": "in the figure."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_035.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query\r\n\u25cf Assumption: Neither relation is fragmented.\r\n\u25cf \u2234, the size of the EMPLOYEE relation is 100 * 10,000 = 106\r\n bytes, and\r\n\u25cf the size of the DEPARTMENT relation is 35 * 100 = 3,500 bytes. \r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 4.46,
+          "t": 26.6,
+          "w": 16.94,
+          "h": 4.49,
+          "text": "Sample query"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 31.82,
+          "w": 45.2,
+          "h": 4.01,
+          "text": "Assumption: Neither relation is fragmented."
+        },
+        {
+          "l": 5.7,
+          "t": 37.64,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.65,
+          "t": 36.84,
+          "w": 1.6,
+          "h": 2.55,
+          "text": "\u2234"
+        },
+        {
+          "l": 11.62,
+          "t": 36.56,
+          "w": 56.59,
+          "h": 3.57,
+          "text": ", the size of the EMPLOYEE relation is 100 * 10,000 = 10"
+        },
+        {
+          "l": 68.48,
+          "t": 36.21,
+          "w": 0.69,
+          "h": 1.96,
+          "text": "6"
+        },
+        {
+          "l": 69.24,
+          "t": 36.58,
+          "w": 11.05,
+          "h": 3.99,
+          "text": " bytes, and"
+        },
+        {
+          "l": 5.7,
+          "t": 42.38,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 41.3,
+          "w": 64.78,
+          "h": 4.01,
+          "text": "the size of the DEPARTMENT relation is 35 * 100 = 3,500 bytes. "
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_036.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 1\r\n\u25cf Consider the query Q:\r\n\u25cf For each employee, retrieve the employee name and the name of the department \r\nfor which the employee works. \r\n\u25cf This can be stated as follows in the relational algebra:\r\nQ: \u03c0Fname,Lname,Dname(EMPLOYEE \u2a1dDno=Dnumber DEPARTMENT)\r\n\u25cf The result of this query will include 10,000 records, assuming that every employee \r\nis related to a department. \r\n\u25cf Suppose that each record in the query result is 40 bytes long. \r\n\u25cf The query is submitted at a distinct site 3, which is called the result site because the \r\nquery result is needed there. \r\n\u25cf Neither the EMPLOYEE nor the DEPARTMENT relations reside at site 3.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 4.46,
+          "t": 26.6,
+          "w": 18.62,
+          "h": 4.49,
+          "text": "Sample query 1"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.48,
+          "t": 31.84,
+          "w": 22.35,
+          "h": 3.99,
+          "text": "Consider the query Q:"
+        },
+        {
+          "l": 5.7,
+          "t": 37.64,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 36.56,
+          "w": 84.85,
+          "h": 4.01,
+          "text": "For each employee, retrieve the employee name and the name of the department "
+        },
+        {
+          "l": 9.38,
+          "t": 41.3,
+          "w": 32.23,
+          "h": 4.01,
+          "text": "for which the employee works. "
+        },
+        {
+          "l": 5.7,
+          "t": 47.12,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 46.04,
+          "w": 54.98,
+          "h": 4.01,
+          "text": "This can be stated as follows in the relational algebra:"
+        },
+        {
+          "l": 14.48,
+          "t": 50.94,
+          "w": 4.13,
+          "h": 3.58,
+          "text": "Q: \u03c0"
+        },
+        {
+          "l": 18.83,
+          "t": 53.42,
+          "w": 14.95,
+          "h": 2.25,
+          "text": "Fname,Lname,Dname"
+        },
+        {
+          "l": 33.95,
+          "t": 50.94,
+          "w": 12.3,
+          "h": 3.53,
+          "text": "(EMPLOYEE "
+        },
+        {
+          "l": 46.37,
+          "t": 51.7,
+          "w": 1.34,
+          "h": 2.27,
+          "text": "\u2a1d"
+        },
+        {
+          "l": 47.97,
+          "t": 53.3,
+          "w": 10.15,
+          "h": 2.05,
+          "text": "Dno=Dnumber "
+        },
+        {
+          "l": 58.15,
+          "t": 50.97,
+          "w": 15.44,
+          "h": 3.5,
+          "text": " DEPARTMENT)"
+        },
+        {
+          "l": 5.7,
+          "t": 61.34,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 60.27,
+          "w": 85.19,
+          "h": 4.01,
+          "text": "The result of this query will include 10,000 records, assuming that every employee "
+        },
+        {
+          "l": 9.52,
+          "t": 65.03,
+          "w": 27.96,
+          "h": 3.99,
+          "text": "is related to a department. "
+        },
+        {
+          "l": 5.7,
+          "t": 70.82,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 69.77,
+          "w": 63.63,
+          "h": 3.99,
+          "text": "Suppose that each record in the query result is 40 bytes long. "
+        },
+        {
+          "l": 5.7,
+          "t": 75.56,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 74.51,
+          "w": 86.74,
+          "h": 3.99,
+          "text": "The query is submitted at a distinct site 3, which is called the result site because the "
+        },
+        {
+          "l": 9.47,
+          "t": 79.25,
+          "w": 30.24,
+          "h": 3.99,
+          "text": "query result is needed there. "
+        },
+        {
+          "l": 5.7,
+          "t": 85.04,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 83.99,
+          "w": 71.99,
+          "h": 3.1,
+          "text": "Neither the EMPLOYEE nor the DEPARTMENT relations reside at site 3."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_037.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 1\r\n\u25cf There are three simple strategies for executing this distributed query:\r\n1. Transfer both the EMPLOYEE and the DEPARTMENT relations to the result site, and \r\nperform the join at site 3. In this case, a total of 1,000,000 + 3,500 = 1,003,500 bytes \r\nmust be transferred.\r\n2. Transfer the EMPLOYEE relation to site 2, execute the join at site 2, and send the \r\nresult to site 3. The size of the query result is 40 * 10,000 = 400,000 bytes, so \r\n400,000 + 1,000,000 = 1,400,000 bytes must be transferred.\r\n3. Transfer the DEPARTMENT relation to site 1, execute the join at site 1, and send the \r\nresult to site 3. In this case, 400,000 + 3,500 = 403,500 bytes must be transferred.\r\n\u25cf If minimizing the amount of data transfer is our optimization criterion, we should \r\nchoose strategy 3.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 4.46,
+          "t": 26.6,
+          "w": 18.62,
+          "h": 4.49,
+          "text": "Sample query 1"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 31.84,
+          "w": 10.5,
+          "h": 3.08,
+          "text": "There are "
+        },
+        {
+          "l": 19.92,
+          "t": 31.84,
+          "w": 23.5,
+          "h": 3.99,
+          "text": "three simple strategies "
+        },
+        {
+          "l": 43.54,
+          "t": 31.82,
+          "w": 37.39,
+          "h": 4.01,
+          "text": " for executing this distributed query:"
+        },
+        {
+          "l": 5.19,
+          "t": 36.76,
+          "w": 1.49,
+          "h": 2.92,
+          "text": "1. "
+        },
+        {
+          "l": 9.37,
+          "t": 36.56,
+          "w": 85.89,
+          "h": 3.57,
+          "text": "Transfer both the EMPLOYEE and the DEPARTMENT relations to the result site, and "
+        },
+        {
+          "l": 9.54,
+          "t": 41.3,
+          "w": 86.24,
+          "h": 4.01,
+          "text": "perform the join at site 3. In this case, a total of 1,000,000 + 3,500 = 1,003,500 bytes "
+        },
+        {
+          "l": 9.54,
+          "t": 46.04,
+          "w": 21.02,
+          "h": 3.12,
+          "text": "must be transferred."
+        },
+        {
+          "l": 5.1,
+          "t": 50.95,
+          "w": 1.58,
+          "h": 2.96,
+          "text": "2. "
+        },
+        {
+          "l": 9.37,
+          "t": 50.78,
+          "w": 83.29,
+          "h": 4.01,
+          "text": "Transfer the EMPLOYEE relation to site 2, execute the join at site 2, and send the "
+        },
+        {
+          "l": 9.54,
+          "t": 55.53,
+          "w": 79.14,
+          "h": 4.01,
+          "text": "result to site 3. The size of the query result is 40 * 10,000 = 400,000 bytes, so "
+        },
+        {
+          "l": 9.39,
+          "t": 60.27,
+          "w": 60.96,
+          "h": 4.01,
+          "text": "400,000 + 1,000,000 = 1,400,000 bytes must be transferred."
+        },
+        {
+          "l": 5.09,
+          "t": 65.17,
+          "w": 1.59,
+          "h": 2.96,
+          "text": "3. "
+        },
+        {
+          "l": 9.37,
+          "t": 65.01,
+          "w": 86.43,
+          "h": 4.01,
+          "text": "Transfer the DEPARTMENT relation to site 1, execute the join at site 1, and send the "
+        },
+        {
+          "l": 9.54,
+          "t": 69.75,
+          "w": 83.11,
+          "h": 4.01,
+          "text": "result to site 3. In this case, 400,000 + 3,500 = 403,500 bytes must be transferred."
+        },
+        {
+          "l": 5.7,
+          "t": 75.56,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 74.49,
+          "w": 83.95,
+          "h": 4.01,
+          "text": "If minimizing the amount of data transfer is our optimization criterion, we should "
+        },
+        {
+          "l": 9.47,
+          "t": 79.25,
+          "w": 7.85,
+          "h": 3.08,
+          "text": "choose "
+        },
+        {
+          "l": 17.44,
+          "t": 79.39,
+          "w": 9.95,
+          "h": 3.85,
+          "text": "strategy 3"
+        },
+        {
+          "l": 27.69,
+          "t": 81.84,
+          "w": 0.26,
+          "h": 0.51,
+          "text": "."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_038.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 2\r\n\u25cf Now consider another query Q\u2032: \r\n\u25cf For each department, retrieve the department name and the name of the \r\ndepartment manager. \r\n\u25cf This can be stated as follows in the relational algebra:\r\nQ\u2032: \u03c0Fname,Lname,Dname(DEPARTMENT \u2a1dMgr_ssn=Ssn EMPLOYEE)\r\n\u25cf Again, suppose that the query is submitted at site 3. \r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 4.46,
+          "t": 26.6,
+          "w": 18.94,
+          "h": 4.49,
+          "text": "Sample query 2"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 31.84,
+          "w": 33.32,
+          "h": 3.99,
+          "text": "Now consider another query Q\u2032: "
+        },
+        {
+          "l": 5.7,
+          "t": 37.64,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 36.56,
+          "w": 76.3,
+          "h": 4.01,
+          "text": "For each department, retrieve the department name and the name of the "
+        },
+        {
+          "l": 9.47,
+          "t": 41.32,
+          "w": 23.2,
+          "h": 3.99,
+          "text": "department manager. "
+        },
+        {
+          "l": 5.7,
+          "t": 47.12,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 46.04,
+          "w": 54.98,
+          "h": 4.01,
+          "text": "This can be stated as follows in the relational algebra:"
+        },
+        {
+          "l": 14.48,
+          "t": 50.94,
+          "w": 4.64,
+          "h": 3.58,
+          "text": "Q\u2032: \u03c0"
+        },
+        {
+          "l": 19.34,
+          "t": 53.42,
+          "w": 14.95,
+          "h": 2.25,
+          "text": "Fname,Lname,Dname"
+        },
+        {
+          "l": 34.46,
+          "t": 50.97,
+          "w": 15.44,
+          "h": 3.5,
+          "text": "(DEPARTMENT "
+        },
+        {
+          "l": 50.03,
+          "t": 51.7,
+          "w": 1.34,
+          "h": 2.27,
+          "text": "\u2a1d"
+        },
+        {
+          "l": 51.62,
+          "t": 53.4,
+          "w": 8.71,
+          "h": 2.57,
+          "text": "Mgr_ssn=Ssn "
+        },
+        {
+          "l": 60.46,
+          "t": 50.94,
+          "w": 12.3,
+          "h": 3.53,
+          "text": " EMPLOYEE)"
+        },
+        {
+          "l": 5.7,
+          "t": 61.34,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 60.29,
+          "w": 54.16,
+          "h": 3.99,
+          "text": "Again, suppose that the query is submitted at site 3. "
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_039.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 2\r\n\u25cf The same three strategies for executing query Q apply to Q\u2032, except that the result \r\nof Q\u2032 includes only 100 records, assuming that each department has a manager:\r\n1. Transfer both the EMPLOYEE and the DEPARTMENT relations to the result site, and \r\nperform the join at site 3. In this case, a total of 1,000,000 + 3,500 = 1,003,500 bytes \r\nmust be transferred.\r\n2. Transfer the EMPLOYEE relation to site 2, execute the join at site 2, and send the \r\nresult to site 3. The size of the query result is 40 * 100 = 4,000 bytes, so 4,000 + \r\n1,000,000 = 1,004,000 bytes must be transferred.\r\n3. Transfer the DEPARTMENT relation to site 1, execute the join at site 1, and send the \r\nresult to site 3. In this case, 4,000 + 3,500 = 7,500 bytes must be transferred.\r\n\u25cf Again, we would choose strategy 3\u2014this time by an overwhelming margin over \r\nstrategies 1 and 2.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 4.46,
+          "t": 26.6,
+          "w": 18.94,
+          "h": 4.49,
+          "text": "Sample query 2"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 31.84,
+          "w": 10.56,
+          "h": 3.08,
+          "text": "The same "
+        },
+        {
+          "l": 19.97,
+          "t": 31.84,
+          "w": 16.09,
+          "h": 3.99,
+          "text": "three strategies "
+        },
+        {
+          "l": 36.17,
+          "t": 31.82,
+          "w": 58.53,
+          "h": 4.01,
+          "text": " for executing query Q apply to Q\u2032, except that the result "
+        },
+        {
+          "l": 9.47,
+          "t": 36.56,
+          "w": 82.17,
+          "h": 4.01,
+          "text": "of Q\u2032 includes only 100 records, assuming that each department has a manager:"
+        },
+        {
+          "l": 5.19,
+          "t": 41.5,
+          "w": 1.49,
+          "h": 2.92,
+          "text": "1. "
+        },
+        {
+          "l": 9.37,
+          "t": 41.3,
+          "w": 85.89,
+          "h": 3.57,
+          "text": "Transfer both the EMPLOYEE and the DEPARTMENT relations to the result site, and "
+        },
+        {
+          "l": 9.54,
+          "t": 46.04,
+          "w": 86.24,
+          "h": 4.01,
+          "text": "perform the join at site 3. In this case, a total of 1,000,000 + 3,500 = 1,003,500 bytes "
+        },
+        {
+          "l": 9.54,
+          "t": 50.78,
+          "w": 21.02,
+          "h": 3.12,
+          "text": "must be transferred."
+        },
+        {
+          "l": 5.1,
+          "t": 55.69,
+          "w": 1.58,
+          "h": 2.96,
+          "text": "2. "
+        },
+        {
+          "l": 9.37,
+          "t": 55.53,
+          "w": 83.29,
+          "h": 4.01,
+          "text": "Transfer the EMPLOYEE relation to site 2, execute the join at site 2, and send the "
+        },
+        {
+          "l": 9.54,
+          "t": 60.27,
+          "w": 81.56,
+          "h": 4.01,
+          "text": "result to site 3. The size of the query result is 40 * 100 = 4,000 bytes, so 4,000 + "
+        },
+        {
+          "l": 9.55,
+          "t": 65.01,
+          "w": 50.2,
+          "h": 4.01,
+          "text": "1,000,000 = 1,004,000 bytes must be transferred."
+        },
+        {
+          "l": 5.09,
+          "t": 69.91,
+          "w": 1.59,
+          "h": 2.96,
+          "text": "3. "
+        },
+        {
+          "l": 9.37,
+          "t": 69.75,
+          "w": 86.43,
+          "h": 4.01,
+          "text": "Transfer the DEPARTMENT relation to site 1, execute the join at site 1, and send the "
+        },
+        {
+          "l": 9.54,
+          "t": 74.49,
+          "w": 78.03,
+          "h": 4.01,
+          "text": "result to site 3. In this case, 4,000 + 3,500 = 7,500 bytes must be transferred."
+        },
+        {
+          "l": 5.7,
+          "t": 80.3,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 79.25,
+          "w": 25.34,
+          "h": 3.99,
+          "text": "Again, we would choose "
+        },
+        {
+          "l": 34.83,
+          "t": 79.39,
+          "w": 9.95,
+          "h": 3.85,
+          "text": "strategy 3"
+        },
+        {
+          "l": 45.0,
+          "t": 79.25,
+          "w": 46.24,
+          "h": 3.99,
+          "text": "\u2014this time by an overwhelming margin over "
+        },
+        {
+          "l": 9.46,
+          "t": 83.99,
+          "w": 18.62,
+          "h": 3.99,
+          "text": "strategies 1 and 2."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_040.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 2\r\n\u25cf The preceding three strategies are the most obvious ones for the case where the \r\nresult site (site 3) is different from all the sites that contain files involved in the \r\nquery (sites 1 and 2). However, suppose that the result site is site 2;\r\n\u25cf then we have two simple strategies:\r\n1. Transfer the EMPLOYEE relation to site 2, execute the query, and present the result \r\nto the user at site 2. Here, the same number of bytes\u20141,000,000\u2014must be \r\ntransferred for both Q and Q\u2032.\r\n2. Transfer the DEPARTMENT relation to site 1, execute the query at site 1, and send \r\nthe result back to site 2. In this case 400,000 + 3,500 = 403,500 bytes must be \r\ntransferred for Q and 4,000 + 3,500 = 7,500 bytes for Q\u2032.\r\n\u25cf A more complex strategy, which sometimes works better than these simple \r\nstrategies, uses an operation called semijoin.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.74,
+          "w": 71.71,
+          "h": 5.01,
+          "text": "Data Transfer Costs of Distributed Query Processing"
+        },
+        {
+          "l": 4.46,
+          "t": 26.6,
+          "w": 18.94,
+          "h": 4.49,
+          "text": "Sample query 2"
+        },
+        {
+          "l": 5.7,
+          "t": 32.9,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 31.82,
+          "w": 83.84,
+          "h": 4.01,
+          "text": "The preceding three strategies are the most obvious ones for the case where the "
+        },
+        {
+          "l": 9.54,
+          "t": 36.56,
+          "w": 80.94,
+          "h": 3.69,
+          "text": "result site (site 3) is different from all the sites that contain files involved in the "
+        },
+        {
+          "l": 9.47,
+          "t": 41.32,
+          "w": 69.11,
+          "h": 3.99,
+          "text": "query (sites 1 and 2). However, suppose that the result site is site 2;"
+        },
+        {
+          "l": 5.7,
+          "t": 47.12,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 46.06,
+          "w": 36.72,
+          "h": 3.99,
+          "text": "then we have two simple strategies:"
+        },
+        {
+          "l": 5.19,
+          "t": 50.99,
+          "w": 1.49,
+          "h": 2.92,
+          "text": "1. "
+        },
+        {
+          "l": 9.37,
+          "t": 50.78,
+          "w": 86.22,
+          "h": 4.01,
+          "text": "Transfer the EMPLOYEE relation to site 2, execute the query, and present the result "
+        },
+        {
+          "l": 9.38,
+          "t": 55.53,
+          "w": 77.96,
+          "h": 4.01,
+          "text": "to the user at site 2. Here, the same number of bytes\u20141,000,000\u2014must be "
+        },
+        {
+          "l": 9.38,
+          "t": 60.27,
+          "w": 30.78,
+          "h": 3.73,
+          "text": "transferred for both Q and Q\u2032."
+        },
+        {
+          "l": 5.1,
+          "t": 65.17,
+          "w": 1.58,
+          "h": 2.96,
+          "text": "2. "
+        },
+        {
+          "l": 9.37,
+          "t": 65.01,
+          "w": 84.62,
+          "h": 4.01,
+          "text": "Transfer the DEPARTMENT relation to site 1, execute the query at site 1, and send "
+        },
+        {
+          "l": 9.38,
+          "t": 69.77,
+          "w": 79.88,
+          "h": 3.99,
+          "text": "the result back to site 2. In this case 400,000 + 3,500 = 403,500 bytes must be "
+        },
+        {
+          "l": 9.38,
+          "t": 74.49,
+          "w": 57.42,
+          "h": 4.01,
+          "text": "transferred for Q and 4,000 + 3,500 = 7,500 bytes for Q\u2032."
+        },
+        {
+          "l": 5.7,
+          "t": 80.3,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 79.25,
+          "w": 78.27,
+          "h": 3.99,
+          "text": "A more complex strategy, which sometimes works better than these simple "
+        },
+        {
+          "l": 9.46,
+          "t": 83.99,
+          "w": 36.91,
+          "h": 3.99,
+          "text": "strategies, uses an operation called "
+        },
+        {
+          "l": 46.51,
+          "t": 84.09,
+          "w": 8.45,
+          "h": 3.89,
+          "text": "semijoin"
+        },
+        {
+          "l": 55.31,
+          "t": 86.58,
+          "w": 0.26,
+          "h": 0.51,
+          "text": "."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_041.webp",
+      "text": "Semijoin operator\r\n\u25cf A semi join is a relational algebra operation that returns rows from the \r\nleft table only if a matching record exists in the right table, without adding \r\nany columns from the right table.\r\n\u25cf Left semi-join is denoted by (R \u22c9 S).\r\n\u25cf Key Characteristics\r\n\u25cb Columns Returned: Only includes columns from the left (first) table.\r\n\u25cb Existence Check: Acts as a filter based on whether data exists in the related \r\ntable, ensuring each left-table row is returned at most once (unlike regular \r\njoins which can duplicate rows if there are multiple matches).\r\n\u25cf Highly effective for query optimization in distributed databases, as it \r\nminimizes network data transfer by sending only matching keys or \r\nprojected column lists between database sites instead of full tables.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.47,
+          "t": 20.77,
+          "w": 24.75,
+          "h": 4.99,
+          "text": "Semijoin operator"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 26.58,
+          "w": 82.59,
+          "h": 4.51,
+          "text": "A semi join is a relational algebra operation that returns rows from the "
+        },
+        {
+          "l": 9.56,
+          "t": 31.91,
+          "w": 86.11,
+          "h": 4.52,
+          "text": "left table only if a matching record exists in the right table, without adding "
+        },
+        {
+          "l": 9.46,
+          "t": 37.25,
+          "w": 38.43,
+          "h": 4.52,
+          "text": "any columns from the right table."
+        },
+        {
+          "l": 5.55,
+          "t": 43.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.58,
+          "w": 35.37,
+          "h": 4.52,
+          "text": "Left semi-join is denoted by (R "
+        },
+        {
+          "l": 45.08,
+          "t": 43.31,
+          "w": 1.12,
+          "h": 2.2,
+          "text": "\u22c9 "
+        },
+        {
+          "l": 46.26,
+          "t": 42.76,
+          "w": 3.23,
+          "h": 3.96,
+          "text": " S)."
+        },
+        {
+          "l": 5.55,
+          "t": 49.12,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 47.93,
+          "w": 23.63,
+          "h": 4.49,
+          "text": "Key Characteristics"
+        },
+        {
+          "l": 10.7,
+          "t": 54.23,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.48,
+          "t": 53.17,
+          "w": 19.64,
+          "h": 3.1,
+          "text": "Columns Returned: "
+        },
+        {
+          "l": 34.29,
+          "t": 53.15,
+          "w": 49.5,
+          "h": 4.01,
+          "text": " Only includes columns from the left (first) table."
+        },
+        {
+          "l": 10.7,
+          "t": 58.97,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 57.92,
+          "w": 16.74,
+          "h": 3.1,
+          "text": "Existence Check: "
+        },
+        {
+          "l": 31.48,
+          "t": 57.9,
+          "w": 60.88,
+          "h": 3.1,
+          "text": " Acts as a filter based on whether data exists in the related "
+        },
+        {
+          "l": 14.38,
+          "t": 62.64,
+          "w": 77.21,
+          "h": 4.01,
+          "text": "table, ensuring each left-table row is returned at most once (unlike regular "
+        },
+        {
+          "l": 14.23,
+          "t": 67.38,
+          "w": 63.08,
+          "h": 4.01,
+          "text": "joins which can duplicate rows if there are multiple matches)."
+        },
+        {
+          "l": 5.55,
+          "t": 73.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 72.21,
+          "w": 79.59,
+          "h": 4.52,
+          "text": "Highly effective for query optimization in distributed databases, as it "
+        },
+        {
+          "l": 9.56,
+          "t": 77.54,
+          "w": 77.52,
+          "h": 4.52,
+          "text": "minimizes network data transfer by sending only matching keys or "
+        },
+        {
+          "l": 9.56,
+          "t": 82.88,
+          "w": 78.08,
+          "h": 4.51,
+          "text": "projected column lists between database sites instead of full tables."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_042.webp",
+      "text": "Distributed Query Processing Using Semijoin\r\n\u25cf The semijoin operation reduces the number of tuples in a relation before \r\ntransferring it to another site.\r\n\u25cf Intuitively, the idea is to send the joining column of one relation R to the \r\nsite where the other relation S is located; \r\n\u25cf this column is then joined with S. \r\n\u25cf Following that, the join attributes, along with the attributes required in \r\nthe result, are projected out and shipped back to the original site and \r\njoined with R.\r\n\u25cf Hence, only the joining column of R is transferred in one direction, and a \r\nsubset of S with no extraneous tuples or attributes is transferred in the \r\nother direction. If only a small fraction of the tuples in S participate in the \r\njoin, this can be an efficient solution to minimizing data transfer.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.29,
+          "w": 61.19,
+          "h": 4.99,
+          "text": "Distributed Query Processing Using Semijoin"
+        },
+        {
+          "l": 5.55,
+          "t": 26.77,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 25.56,
+          "w": 85.46,
+          "h": 4.51,
+          "text": "The semijoin operation reduces the number of tuples in a relation before "
+        },
+        {
+          "l": 9.39,
+          "t": 30.36,
+          "w": 34.14,
+          "h": 4.51,
+          "text": "transferring it to another site."
+        },
+        {
+          "l": 5.55,
+          "t": 36.37,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 35.16,
+          "w": 83.96,
+          "h": 4.52,
+          "text": "Intuitively, the idea is to send the joining column of one relation R to the "
+        },
+        {
+          "l": 9.47,
+          "t": 39.98,
+          "w": 48.01,
+          "h": 4.0,
+          "text": "site where the other relation S is located; "
+        },
+        {
+          "l": 5.55,
+          "t": 45.97,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.39,
+          "t": 44.78,
+          "w": 38.86,
+          "h": 4.49,
+          "text": "this column is then joined with S. "
+        },
+        {
+          "l": 5.55,
+          "t": 50.77,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 49.58,
+          "w": 82.16,
+          "h": 4.49,
+          "text": "Following that, the join attributes, along with the attributes required in "
+        },
+        {
+          "l": 9.39,
+          "t": 54.38,
+          "w": 81.02,
+          "h": 4.49,
+          "text": "the result, are projected out and shipped back to the original site and "
+        },
+        {
+          "l": 9.21,
+          "t": 59.18,
+          "w": 15.66,
+          "h": 4.49,
+          "text": "joined with R."
+        },
+        {
+          "l": 5.55,
+          "t": 65.17,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 63.96,
+          "w": 84.45,
+          "h": 4.52,
+          "text": "Hence, only the joining column of R is transferred in one direction, and a "
+        },
+        {
+          "l": 9.47,
+          "t": 68.76,
+          "w": 83.02,
+          "h": 4.51,
+          "text": "subset of S with no extraneous tuples or attributes is transferred in the "
+        },
+        {
+          "l": 9.49,
+          "t": 73.56,
+          "w": 85.25,
+          "h": 4.52,
+          "text": "other direction. If only a small fraction of the tuples in S participate in the "
+        },
+        {
+          "l": 9.21,
+          "t": 78.36,
+          "w": 74.61,
+          "h": 4.51,
+          "text": "join, this can be an efficient solution to minimizing data transfer."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_043.webp",
+      "text": "Distributed Query Processing Using Semijoin\r\n\u25cf To illustrate this, consider the following strategy for executing Q or Q\u2032:\r\n1. Project the join attributes of DEPARTMENT at site 2, and transfer them to site 1. For \r\nQ, we transfer F = \u03c0Dnumber(DEPARTMENT), whose size is 4 * 100 = 400 bytes, \r\nwhereas for Q\u2032, we transfer F\u2032 = \u03c0Mgr_ssn(DEPARTMENT), whose size is 9 * 100 = 900 \r\nbytes.\r\n2. Join the transferred file with the EMPLOYEE relation at site 1, and transfer the \r\nrequired attributes from the resulting file to site 2. For Q, we transfer R = \u03c0Dno, Fname, \r\nLname(F \u22c9Dnumber=Dno EMPLOYEE), whose size is 34 * 10,000 = 340,000 bytes, whereas \r\nfor Q\u2032, we transfer R\u2032 = \u03c0Mgr_ssn, Fname, Lname (F\u2032 \u22c9\r\nMgr_ssn=Ssn EMPLOYEE), whose size is 39 \r\n* 100 = 3,900 bytes.\r\n3. Execute the query by joining the transferred file R or R\u2032 with DEPARTMENT, and \r\npresent the result to the user at site 2.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.77,
+          "w": 61.19,
+          "h": 4.99,
+          "text": "Distributed Query Processing Using Semijoin"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 26.58,
+          "w": 80.9,
+          "h": 4.52,
+          "text": "To illustrate this, consider the following strategy for executing Q or Q\u2032:"
+        },
+        {
+          "l": 5.19,
+          "t": 32.02,
+          "w": 1.49,
+          "h": 2.92,
+          "text": "1. "
+        },
+        {
+          "l": 9.56,
+          "t": 31.82,
+          "w": 86.14,
+          "h": 4.01,
+          "text": "Project the join attributes of DEPARTMENT at site 2, and transfer them to site 1. For "
+        },
+        {
+          "l": 9.48,
+          "t": 36.56,
+          "w": 20.05,
+          "h": 3.73,
+          "text": "Q, we transfer F = \u03c0"
+        },
+        {
+          "l": 29.77,
+          "t": 39.08,
+          "w": 6.44,
+          "h": 2.05,
+          "text": "Dnumber"
+        },
+        {
+          "l": 36.32,
+          "t": 36.58,
+          "w": 51.6,
+          "h": 3.99,
+          "text": "(DEPARTMENT), whose size is 4 * 100 = 400 bytes, "
+        },
+        {
+          "l": 9.37,
+          "t": 41.3,
+          "w": 34.09,
+          "h": 3.73,
+          "text": "whereas for Q\u2032, we transfer F\u2032 = \u03c0"
+        },
+        {
+          "l": 43.72,
+          "t": 43.94,
+          "w": 5.44,
+          "h": 2.54,
+          "text": "Mgr_ssn"
+        },
+        {
+          "l": 49.37,
+          "t": 41.32,
+          "w": 44.89,
+          "h": 3.67,
+          "text": "(DEPARTMENT), whose size is 9 * 100 = 900 "
+        },
+        {
+          "l": 9.54,
+          "t": 46.06,
+          "w": 5.8,
+          "h": 3.99,
+          "text": "bytes."
+        },
+        {
+          "l": 5.1,
+          "t": 50.95,
+          "w": 1.58,
+          "h": 2.96,
+          "text": "2. "
+        },
+        {
+          "l": 9.17,
+          "t": 50.78,
+          "w": 80.48,
+          "h": 3.8,
+          "text": "Join the transferred file with the EMPLOYEE relation at site 1, and transfer the "
+        },
+        {
+          "l": 9.54,
+          "t": 55.53,
+          "w": 76.65,
+          "h": 4.01,
+          "text": "required attributes from the resulting file to site 2. For Q, we transfer R = \u03c0"
+        },
+        {
+          "l": 86.49,
+          "t": 58.16,
+          "w": 8.96,
+          "h": 2.25,
+          "text": "Dno, Fname, "
+        },
+        {
+          "l": 9.49,
+          "t": 63.38,
+          "w": 4.48,
+          "h": 1.93,
+          "text": "Lname"
+        },
+        {
+          "l": 14.14,
+          "t": 60.94,
+          "w": 2.29,
+          "h": 3.48,
+          "text": "(F "
+        },
+        {
+          "l": 16.5,
+          "t": 61.09,
+          "w": 1.11,
+          "h": 2.2,
+          "text": "\u22c9"
+        },
+        {
+          "l": 17.83,
+          "t": 63.26,
+          "w": 10.09,
+          "h": 2.05,
+          "text": "Dnumber=Dno "
+        },
+        {
+          "l": 28.01,
+          "t": 60.76,
+          "w": 66.58,
+          "h": 3.99,
+          "text": " EMPLOYEE), whose size is 34 * 10,000 = 340,000 bytes, whereas "
+        },
+        {
+          "l": 9.38,
+          "t": 66.07,
+          "w": 24.96,
+          "h": 3.73,
+          "text": "for Q\u2032, we transfer R\u2032 = \u03c0"
+        },
+        {
+          "l": 34.59,
+          "t": 68.71,
+          "w": 16.41,
+          "h": 2.54,
+          "text": "Mgr_ssn, Fname, Lname "
+        },
+        {
+          "l": 51.09,
+          "t": 66.27,
+          "w": 3.46,
+          "h": 3.48,
+          "text": " (F\u2032 "
+        },
+        {
+          "l": 54.63,
+          "t": 66.42,
+          "w": 1.12,
+          "h": 2.2,
+          "text": "\u22c9"
+        },
+        {
+          "l": 55.96,
+          "t": 68.68,
+          "w": 8.71,
+          "h": 2.57,
+          "text": "Mgr_ssn=Ssn "
+        },
+        {
+          "l": 64.79,
+          "t": 66.09,
+          "w": 30.62,
+          "h": 3.67,
+          "text": " EMPLOYEE), whose size is 39 "
+        },
+        {
+          "l": 9.44,
+          "t": 70.95,
+          "w": 20.14,
+          "h": 3.99,
+          "text": "* 100 = 3,900 bytes."
+        },
+        {
+          "l": 5.09,
+          "t": 75.84,
+          "w": 1.59,
+          "h": 2.96,
+          "text": "3. "
+        },
+        {
+          "l": 9.56,
+          "t": 75.67,
+          "w": 81.78,
+          "h": 4.01,
+          "text": "Execute the query by joining the transferred file R or R\u2032 with DEPARTMENT, and "
+        },
+        {
+          "l": 9.54,
+          "t": 80.43,
+          "w": 39.18,
+          "h": 3.99,
+          "text": "present the result to the user at site 2."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_044.webp",
+      "text": "Distributed Query Processing Using Semijoin\r\n\u25cf Using this strategy, we transfer 340,400 bytes for Q and 4,800 bytes for Q\u2032. \r\n\u25cf We limited the EMPLOYEE attributes and tuples transmitted to site 2 in step 2 to \r\nonly those that will actually be joined with a DEPARTMENT tuple in step 3. \r\n\u25cf For query Q, this turned out to include all EMPLOYEE tuples, so little improvement \r\nwas achieved.\r\n\u25cf However, for Q\u2032 only 100 out of the 10,000 EMPLOYEE tuples were needed.\r\n\u25cf A semijoin operation R \u22c9\r\nA=B S, where A and B are domain-compatible attributes of R \r\nand S, respectively, produces the same result as the relational algebra expression \r\n\u03c0R(R \u22c9\r\nA=B S). \r\n\u25cf In a distributed environment where R and S reside at different sites, the semijoin is \r\ntypically implemented by first transferring F = \u03c0B\r\n(S) to the site where R resides and \r\nthen joining F with R, thus leading to the strategy discussed here.\r\n\u25cf The semijoin operation is not commutative; that is,\r\nR \u22c9 S \u2260S \u22c9 R\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 20.29,
+          "w": 61.19,
+          "h": 4.99,
+          "text": "Distributed Query Processing Using Semijoin"
+        },
+        {
+          "l": 5.7,
+          "t": 26.59,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 25.52,
+          "w": 77.01,
+          "h": 4.01,
+          "text": "Using this strategy, we transfer 340,400 bytes for Q and 4,800 bytes for Q\u2032. "
+        },
+        {
+          "l": 5.7,
+          "t": 30.86,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 29.8,
+          "w": 82.99,
+          "h": 3.99,
+          "text": "We limited the EMPLOYEE attributes and tuples transmitted to site 2 in step 2 to "
+        },
+        {
+          "l": 9.47,
+          "t": 34.07,
+          "w": 76.13,
+          "h": 3.99,
+          "text": "only those that will actually be joined with a DEPARTMENT tuple in step 3. "
+        },
+        {
+          "l": 5.7,
+          "t": 39.39,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 38.34,
+          "w": 84.83,
+          "h": 3.99,
+          "text": "For query Q, this turned out to include all EMPLOYEE tuples, so little improvement "
+        },
+        {
+          "l": 9.37,
+          "t": 42.6,
+          "w": 14.16,
+          "h": 3.1,
+          "text": "was achieved."
+        },
+        {
+          "l": 5.7,
+          "t": 47.92,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 46.85,
+          "w": 76.65,
+          "h": 4.01,
+          "text": "However, for Q\u2032 only 100 out of the 10,000 EMPLOYEE tuples were needed."
+        },
+        {
+          "l": 5.7,
+          "t": 52.62,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 51.66,
+          "w": 23.94,
+          "h": 3.89,
+          "text": "A semijoin operation R "
+        },
+        {
+          "l": 33.38,
+          "t": 51.89,
+          "w": 1.11,
+          "h": 2.2,
+          "text": "\u22c9"
+        },
+        {
+          "l": 34.56,
+          "t": 54.17,
+          "w": 2.66,
+          "h": 1.92,
+          "text": "A=B "
+        },
+        {
+          "l": 37.3,
+          "t": 51.54,
+          "w": 58.51,
+          "h": 4.01,
+          "text": " S, where A and B are domain-compatible attributes of R "
+        },
+        {
+          "l": 9.45,
+          "t": 55.94,
+          "w": 84.5,
+          "h": 3.99,
+          "text": "AB \r\nand S, respectively, produces the same result as the relational algebra expression "
+        },
+        {
+          "l": 9.37,
+          "t": 60.81,
+          "w": 5.39,
+          "h": 3.48,
+          "text": "\u03c0R(R "
+        },
+        {
+          "l": 14.83,
+          "t": 60.96,
+          "w": 1.11,
+          "h": 2.2,
+          "text": "\u22c9"
+        },
+        {
+          "l": 16.02,
+          "t": 63.24,
+          "w": 2.66,
+          "h": 1.92,
+          "text": "A=B \r\ni"
+        },
+        {
+          "l": 18.76,
+          "t": 60.77,
+          "w": 3.6,
+          "h": 3.52,
+          "text": " S). "
+        },
+        {
+          "l": 5.7,
+          "t": 66.06,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 64.98,
+          "w": 85.75,
+          "h": 4.01,
+          "text": "AB \r\nIn a distributed environment where R and S reside at different sites, the semijoin is "
+        },
+        {
+          "l": 9.38,
+          "t": 69.25,
+          "w": 48.79,
+          "h": 4.01,
+          "text": "typically implemented by first transferring F = \u03c0"
+        },
+        {
+          "l": 58.44,
+          "t": 71.89,
+          "w": 0.73,
+          "h": 1.91,
+          "text": "B"
+        },
+        {
+          "l": 59.34,
+          "t": 69.27,
+          "w": 35.46,
+          "h": 3.67,
+          "text": "(S) to the site where R resides and "
+        },
+        {
+          "l": 9.38,
+          "t": 73.54,
+          "w": 66.8,
+          "h": 3.99,
+          "text": "B\r\nthen joining F with R, thus leading to the strategy discussed here."
+        },
+        {
+          "l": 5.7,
+          "t": 83.12,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 82.07,
+          "w": 26.6,
+          "h": 3.99,
+          "text": "The semijoin operation is "
+        },
+        {
+          "l": 36.18,
+          "t": 82.17,
+          "w": 17.36,
+          "h": 2.98,
+          "text": "not commutative"
+        },
+        {
+          "l": 53.74,
+          "t": 82.07,
+          "w": 7.87,
+          "h": 3.55,
+          "text": "; that is,"
+        },
+        {
+          "l": 14.56,
+          "t": 86.94,
+          "w": 1.73,
+          "h": 2.86,
+          "text": "R "
+        },
+        {
+          "l": 16.36,
+          "t": 87.09,
+          "w": 1.11,
+          "h": 2.2,
+          "text": "\u22c9 "
+        },
+        {
+          "l": 18.35,
+          "t": 86.9,
+          "w": 4.74,
+          "h": 2.94,
+          "text": "S \u2260S "
+        },
+        {
+          "l": 23.17,
+          "t": 87.09,
+          "w": 1.12,
+          "h": 2.2,
+          "text": "\u22c9 "
+        },
+        {
+          "l": 25.26,
+          "t": 86.94,
+          "w": 1.12,
+          "h": 2.86,
+          "text": "R"
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_045.webp",
+      "text": "Query and Update Decomposition\r\n\u25cf A DDBMS that supports full distribution, fragmentation, and replication \r\ntransparency allows the user to specify a query or update request just as \r\nthough the DBMS were centralized. \r\n\u25cf For updates, the DDBMS is responsible for maintaining consistency \r\namong replicated items by using one of the distributed concurrency \r\ncontrol algorithms. \r\n\u25cf For queries, a query decomposition module must break up or decompose \r\na query into subqueries that can be executed at the individual sites.\r\n\u25cf Additionally, a strategy for combining the results of the subqueries to \r\nform the query result must be generated. \r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.51,
+          "t": 20.77,
+          "w": 46.56,
+          "h": 4.99,
+          "text": "Query and Update Decomposition"
+        },
+        {
+          "l": 5.55,
+          "t": 27.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 26.58,
+          "w": 83.25,
+          "h": 4.51,
+          "text": "A DDBMS that supports full distribution, fragmentation, and replication "
+        },
+        {
+          "l": 9.39,
+          "t": 31.91,
+          "w": 85.09,
+          "h": 4.52,
+          "text": "transparency allows the user to specify a query or update request just as "
+        },
+        {
+          "l": 9.39,
+          "t": 37.27,
+          "w": 41.61,
+          "h": 4.49,
+          "text": "though the DBMS were centralized. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.58,
+          "w": 78.25,
+          "h": 4.52,
+          "text": "For updates, the DDBMS is responsible for maintaining consistency "
+        },
+        {
+          "l": 9.46,
+          "t": 47.91,
+          "w": 79.26,
+          "h": 4.52,
+          "text": "among replicated items by using one of the distributed concurrency "
+        },
+        {
+          "l": 9.49,
+          "t": 53.27,
+          "w": 22.53,
+          "h": 4.49,
+          "text": "control algorithms. "
+        },
+        {
+          "l": 5.55,
+          "t": 59.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 58.6,
+          "w": 86.14,
+          "h": 4.49,
+          "text": "For queries, a query decomposition module must break up or decompose "
+        },
+        {
+          "l": 9.46,
+          "t": 63.93,
+          "w": 78.2,
+          "h": 4.49,
+          "text": "a query into subqueries that can be executed at the individual sites."
+        },
+        {
+          "l": 5.55,
+          "t": 70.45,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 69.25,
+          "w": 81.03,
+          "h": 4.52,
+          "text": "Additionally, a strategy for combining the results of the subqueries to "
+        },
+        {
+          "l": 9.38,
+          "t": 74.58,
+          "w": 48.82,
+          "h": 4.52,
+          "text": "form the query result must be generated. "
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_theory_module_4_module4-part2_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part2_pdf/thumb_046.webp",
+      "text": "Query and Update Decomposition\r\n\u25cf Whenever the DDBMS determines that an item referenced in the query is \r\nreplicated, it must choose or materialize a particular replica during query \r\nexecution.\r\n\u25cf To determine which replicas include the data items referenced in a query, the\r\n\u25cf DDBMS refers to the fragmentation, replication, and distribution information\r\n\u25cf stored in the DDBMS catalog. \r\n\u25cf For vertical fragmentation, the attribute list for each fragment is kept in the \r\ncatalog. \r\n\u25cf For horizontal fragmentation, a condition, sometimes called a guard, is kept \r\nfor each fragment. \r\n\u25cb This is basically a selection condition that specifies which tuples exist in the \r\nfragment; it is called a guard because only tuples that satisfy this condition are \r\npermitted to be stored in the fragment.\r\n\u25cf For mixed fragments, both the attribute list and the guard condition are kept \r\nin the catalog.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.51,
+          "t": 19.82,
+          "w": 46.56,
+          "h": 4.99,
+          "text": "Query and Update Decomposition\r\nWhhDDBMS dih"
+        },
+        {
+          "l": 5.63,
+          "t": 25.68,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 24.54,
+          "w": 80.95,
+          "h": 4.26,
+          "text": "y pp\r\nWhenever the DDBMS determines that an item referenced in the query is \r\nlidihiliillidi"
+        },
+        {
+          "l": 9.55,
+          "t": 28.59,
+          "w": 80.34,
+          "h": 4.24,
+          "text": "qy \r\nreplicated, it must choose or materialize a particular replica during query \r\ni"
+        },
+        {
+          "l": 9.48,
+          "t": 32.73,
+          "w": 11.08,
+          "h": 3.19,
+          "text": "p\r\nexecution."
+        },
+        {
+          "l": 5.63,
+          "t": 37.77,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 36.63,
+          "w": 84.83,
+          "h": 4.26,
+          "text": "To determine which replicas include the data items referenced in a query, the\r\nDDBMS fhfiliid diibiifi"
+        },
+        {
+          "l": 5.63,
+          "t": 41.8,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.58,
+          "t": 40.66,
+          "w": 83.8,
+          "h": 4.26,
+          "text": "pqy\r\nDDBMS refers to the fragmentation, replication, and distribution information\r\nd ihDDBMS l"
+        },
+        {
+          "l": 5.63,
+          "t": 45.83,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 44.71,
+          "w": 32.58,
+          "h": 4.24,
+          "text": "g\r\nstored in the DDBMS catalog. \r\nFil fih"
+        },
+        {
+          "l": 5.63,
+          "t": 49.86,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.58,
+          "t": 48.72,
+          "w": 82.75,
+          "h": 4.26,
+          "text": "g\r\nFor vertical fragmentation, the attribute list for each fragment is kept in the \r\nl"
+        },
+        {
+          "l": 9.48,
+          "t": 52.77,
+          "w": 8.98,
+          "h": 4.24,
+          "text": "catalog. \r\nFhi"
+        },
+        {
+          "l": 5.63,
+          "t": 57.92,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.58,
+          "t": 56.78,
+          "w": 83.31,
+          "h": 4.26,
+          "text": "g\r\nFor horizontal fragmentation, a condition, sometimes called a guard, is kept \r\nfh f"
+        },
+        {
+          "l": 9.38,
+          "t": 60.81,
+          "w": 20.95,
+          "h": 4.26,
+          "text": "g\r\nfor each fragment. "
+        },
+        {
+          "l": 10.63,
+          "t": 65.98,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.37,
+          "t": 65.22,
+          "w": 73.0,
+          "h": 3.76,
+          "text": "This is basically a selection condition that specifies which tuples exist in the \r\nfiilld d bllhifhidii"
+        },
+        {
+          "l": 14.38,
+          "t": 68.87,
+          "w": 76.29,
+          "h": 3.76,
+          "text": "y pp\r\nfragment; it is called a guard because only tuples that satisfy this condition are "
+        },
+        {
+          "l": 14.52,
+          "t": 72.81,
+          "w": 37.77,
+          "h": 3.76,
+          "text": "permitted to be stored in the fragment.\r\nd fbh hb"
+        },
+        {
+          "l": 5.63,
+          "t": 77.6,
+          "w": 1.02,
+          "h": 1.83,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.58,
+          "t": 76.45,
+          "w": 84.54,
+          "h": 4.26,
+          "text": "pg\r\nFor mixed fragments, both the attribute list and the guard condition are kept \r\nihl"
+        },
+        {
+          "l": 9.53,
+          "t": 80.5,
+          "w": 15.03,
+          "h": 4.24,
+          "text": "g\r\nin the catalog."
+        },
+        {
+          "l": 1.07,
+          "t": 9.51,
+          "w": 95.54,
+          "h": 7.49,
+          "text": "Query Processing and Optimization in Distributed Databases"
+        }
+      ]
+    }
+  ]
+}

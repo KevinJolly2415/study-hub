@@ -1,0 +1,78 @@
+{
+  "mtime": 1793812321.135838,
+  "aspectRatio": 0.77,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_001.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_002.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_003.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_004.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_005.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_006.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_007.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_mock_exam_2_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_mock_exam_2_pdf/thumb_008.webp",
+      "text": "",
+      "width": 1224,
+      "height": 1584,
+      "rects": []
+    }
+  ]
+}

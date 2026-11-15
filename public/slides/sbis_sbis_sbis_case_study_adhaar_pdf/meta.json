@@ -1,0 +1,1613 @@
+{
+  "mtime": 1791435805.8270469,
+  "aspectRatio": 0.77,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/slide_001.webp",
+      "thumb": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/thumb_001.webp",
+      "text": "Aadhaar \u2014 Digital Identity and Governance in India\r\nCase Study: Aadhaar \u2014 Digital Identity and Governance \r\nin India\r\nA Digital Governance Case Study\r\n1. Introduction \r\nAadhaar is India's nationwide digital identity system, administered by the Unique Identification \r\nAuthority of India (UIDAI). It provides residents with a unique 12-digit identification number associated \r\nwith demographic and biometric information. The system was developed to provide a reliable means \r\nof identity verification and to support more efficient delivery of public and private services. \r\nFrom a digital-governance perspective, Aadhaar is significant because it connects identity \r\ninfrastructure with service delivery. It has been used in areas such as welfare administration, banking \r\nand financial services, mobile connections and other identity-based transactions, subject to applicable \r\nlaw and policy. The case therefore illustrates both the potential of large-scale digital public \r\ninfrastructure and the governance questions that arise when sensitive personal data and essential \r\nservices become connected to a digital identity system. \r\nThe case is particularly relevant to public administration because it involves technology, institutional \r\ndesign, citizen access, efficiency, regulation, privacy, cybersecurity, accountability and judicial \r\noversight at the same time. \r\n2. Problem Statement \r\nBefore large-scale digital identity infrastructure, government and service providers often depended on \r\nmultiple identity documents and manual verification processes. This created difficulties in establishing \r\nidentity consistently across different systems. In welfare programmes, inaccurate identification, \r\nduplication of records, administrative delays and difficulties in verifying beneficiaries could reduce the \r\neffectiveness of service delivery. \r\nThe governance problem was therefore broader than the absence of a single identity document. It \r\ninvolved the need for a scalable mechanism through which an individual's identity could be verified \r\nacross different service-delivery environments while reducing administrative friction. \r\nMajor problems addressed by the initiative included: \r\n\u25cf Fragmented identity and documentation systems. \r\n\u25cf Difficulty in verifying identity at scale. \r\n\u25cf Administrative delays in identity verification. \r\n\u25cf Possibility of duplicate or inaccurate records in some databases. \r\n\u25cf Challenges in delivering benefits and services to intended beneficiaries. \r\n\u25cf Limited interoperability between different service-delivery systems. \r\n\u25cf Need for a scalable digital identity infrastructure for a large population.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 33.24,
+          "t": 94.37,
+          "w": 33.42,
+          "h": 1.08,
+          "text": "Aadhaar \u2014 Digital Identity and Governance in India"
+        },
+        {
+          "l": 10.98,
+          "t": 6.82,
+          "w": 78.87,
+          "h": 2.15,
+          "text": "Case Study: Aadhaar \u2014 Digital Identity and Governance "
+        },
+        {
+          "l": 45.05,
+          "t": 9.85,
+          "w": 9.99,
+          "h": 1.67,
+          "text": "in India"
+        },
+        {
+          "l": 35.35,
+          "t": 13.94,
+          "w": 29.36,
+          "h": 1.43,
+          "text": "A Digital Governance Case Study"
+        },
+        {
+          "l": 9.58,
+          "t": 19.15,
+          "w": 14.52,
+          "h": 1.24,
+          "text": "1. Introduction "
+        },
+        {
+          "l": 9.41,
+          "t": 21.43,
+          "w": 74.81,
+          "h": 1.32,
+          "text": "Aadhaar is India's nationwide digital identity system, administered by the Unique Identification "
+        },
+        {
+          "l": 9.41,
+          "t": 23.26,
+          "w": 81.16,
+          "h": 1.32,
+          "text": "Authority of India (UIDAI). It provides residents with a unique 12-digit identification number associated "
+        },
+        {
+          "l": 9.42,
+          "t": 25.11,
+          "w": 80.04,
+          "h": 1.32,
+          "text": "with demographic and biometric information. The system was developed to provide a reliable means "
+        },
+        {
+          "l": 9.47,
+          "t": 26.96,
+          "w": 71.29,
+          "h": 1.32,
+          "text": "of identity verification and to support more efficient delivery of public and private services. "
+        },
+        {
+          "l": 9.56,
+          "t": 30.03,
+          "w": 71.54,
+          "h": 1.32,
+          "text": "From a digital-governance perspective, Aadhaar is significant because it connects identity "
+        },
+        {
+          "l": 9.53,
+          "t": 31.87,
+          "w": 80.52,
+          "h": 1.32,
+          "text": "infrastructure with service delivery. It has been used in areas such as welfare administration, banking "
+        },
+        {
+          "l": 9.48,
+          "t": 33.71,
+          "w": 81.18,
+          "h": 1.32,
+          "text": "and financial services, mobile connections and other identity-based transactions, subject to applicable "
+        },
+        {
+          "l": 9.53,
+          "t": 35.55,
+          "w": 71.74,
+          "h": 1.32,
+          "text": "law and policy. The case therefore illustrates both the potential of large-scale digital public "
+        },
+        {
+          "l": 9.53,
+          "t": 37.38,
+          "w": 78.05,
+          "h": 1.32,
+          "text": "infrastructure and the governance questions that arise when sensitive personal data and essential "
+        },
+        {
+          "l": 9.47,
+          "t": 39.25,
+          "w": 44.27,
+          "h": 1.3,
+          "text": "services become connected to a digital identity system. "
+        },
+        {
+          "l": 9.45,
+          "t": 42.34,
+          "w": 79.39,
+          "h": 1.3,
+          "text": "The case is particularly relevant to public administration because it involves technology, institutional "
+        },
+        {
+          "l": 9.47,
+          "t": 44.15,
+          "w": 74.89,
+          "h": 1.32,
+          "text": "design, citizen access, efficiency, regulation, privacy, cybersecurity, accountability and judicial "
+        },
+        {
+          "l": 9.47,
+          "t": 46.02,
+          "w": 22.01,
+          "h": 1.3,
+          "text": "oversight at the same time. "
+        },
+        {
+          "l": 9.51,
+          "t": 51.05,
+          "w": 21.25,
+          "h": 1.24,
+          "text": "2. Problem Statement "
+        },
+        {
+          "l": 9.54,
+          "t": 53.34,
+          "w": 80.82,
+          "h": 1.32,
+          "text": "Before large-scale digital identity infrastructure, government and service providers often depended on "
+        },
+        {
+          "l": 9.53,
+          "t": 55.18,
+          "w": 80.83,
+          "h": 1.32,
+          "text": "multiple identity documents and manual verification processes. This created difficulties in establishing "
+        },
+        {
+          "l": 9.53,
+          "t": 57.02,
+          "w": 75.48,
+          "h": 1.32,
+          "text": "identity consistently across different systems. In welfare programmes, inaccurate identification, "
+        },
+        {
+          "l": 9.47,
+          "t": 58.85,
+          "w": 80.58,
+          "h": 1.32,
+          "text": "duplication of records, administrative delays and difficulties in verifying beneficiaries could reduce the "
+        },
+        {
+          "l": 9.48,
+          "t": 60.7,
+          "w": 26.27,
+          "h": 1.32,
+          "text": "effectiveness of service delivery. "
+        },
+        {
+          "l": 9.45,
+          "t": 63.79,
+          "w": 78.04,
+          "h": 1.32,
+          "text": "The governance problem was therefore broader than the absence of a single identity document. It "
+        },
+        {
+          "l": 9.53,
+          "t": 65.62,
+          "w": 78.48,
+          "h": 1.32,
+          "text": "involved the need for a scalable mechanism through which an individual's identity could be verified "
+        },
+        {
+          "l": 9.48,
+          "t": 67.47,
+          "w": 66.79,
+          "h": 1.32,
+          "text": "across different service-delivery environments while reducing administrative friction. "
+        },
+        {
+          "l": 9.55,
+          "t": 70.59,
+          "w": 41.67,
+          "h": 1.3,
+          "text": "Major problems addressed by the initiative included: "
+        },
+        {
+          "l": 9.57,
+          "t": 74.01,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 73.7,
+          "w": 41.57,
+          "h": 1.3,
+          "text": " Fragmented identity and documentation systems. "
+        },
+        {
+          "l": 9.57,
+          "t": 75.87,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 75.55,
+          "w": 31.6,
+          "h": 1.32,
+          "text": " Difficulty in verifying identity at scale. "
+        },
+        {
+          "l": 9.57,
+          "t": 77.72,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 77.4,
+          "w": 37.0,
+          "h": 1.32,
+          "text": " Administrative delays in identity verification. "
+        },
+        {
+          "l": 9.57,
+          "t": 79.59,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 79.26,
+          "w": 53.47,
+          "h": 1.32,
+          "text": " Possibility of duplicate or inaccurate records in some databases. "
+        },
+        {
+          "l": 9.57,
+          "t": 81.44,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 81.11,
+          "w": 59.25,
+          "h": 1.32,
+          "text": " Challenges in delivering benefits and services to intended beneficiaries. "
+        },
+        {
+          "l": 9.57,
+          "t": 83.3,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 82.97,
+          "w": 55.17,
+          "h": 1.32,
+          "text": " Limited interoperability between different service-delivery systems. "
+        },
+        {
+          "l": 9.57,
+          "t": 85.15,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 84.82,
+          "w": 58.05,
+          "h": 1.32,
+          "text": " Need for a scalable digital identity infrastructure for a large population. "
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/slide_002.webp",
+      "thumb": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/thumb_002.webp",
+      "text": "Aadhaar \u2014 Digital Identity and Governance in India\r\n3. Proposed Solution \r\nThe proposed solution was to establish a standardized digital identity infrastructure based on a unique \r\nAadhaar number and a centralized identity database managed by UIDAI. Aadhaar enrolment captures \r\nspecified demographic information and biometric information and uses this information to establish \r\nuniqueness and enable identity authentication. \r\nThe governance model separates the function of identity verification from the individual services that \r\nmay use it. Instead of requiring every institution to create its own independent biometric identity \r\nsystem, Aadhaar provides a common identity layer that can be used, where legally permitted, for \r\nauthentication and verification. \r\nThe broader strategic idea can therefore be expressed as: \r\ncreate common digital identity infrastructure \u2192 enable reliable authentication \u2192 connect identity with \r\nauthorized services \u2192 improve administrative processes and citizen access. \r\n4. Implementation \r\nImplementation of Aadhaar has taken place progressively rather than as a single deployment event. \r\nThe major stages can be understood as follows: \r\nStep 1: Institutional establishment\r\nUIDAI was established to develop and operate the Aadhaar identity infrastructure and to establish \r\nstandards and processes for enrolment, authentication and identity management. \r\nStep 2: Enrolment and identity creation\r\nResidents enrol through authorized channels by providing prescribed demographic and biometric \r\ninformation. The information is processed to create an Aadhaar identity record, subject to the \r\napplicable enrolment and deduplication procedures. \r\nStep 3: Identity authentication\r\nAuthentication mechanisms allow an authorized requesting entity to verify whether identity information \r\ncorresponds to an Aadhaar number or identity record. Different authentication methods may be used \r\ndepending on the service and permitted technology. \r\nStep 4: Integration with services\r\nGovernment departments, financial institutions and other permitted entities can integrate identity \r\nverification into their workflows where supported by law, regulations and the relevant technical \r\narrangements. \r\nStep 5: Expansion into digital public infrastructure\r\nAadhaar became part of a wider ecosystem involving digital payments, banking, benefit delivery and \r\nother public-service systems. Its role therefore evolved from identity creation toward functioning as a \r\nfoundational digital infrastructure layer. \r\nStep 6: Governance, regulation and judicial oversight",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 33.24,
+          "t": 94.37,
+          "w": 33.42,
+          "h": 1.08,
+          "text": "Aadhaar \u2014 Digital Identity and Governance in India"
+        },
+        {
+          "l": 9.51,
+          "t": 6.82,
+          "w": 20.12,
+          "h": 1.53,
+          "text": "3. Proposed Solution "
+        },
+        {
+          "l": 9.45,
+          "t": 9.12,
+          "w": 81.42,
+          "h": 1.32,
+          "text": "The proposed solution was to establish a standardized digital identity infrastructure based on a unique "
+        },
+        {
+          "l": 9.41,
+          "t": 10.97,
+          "w": 81.45,
+          "h": 1.3,
+          "text": "Aadhaar number and a centralized identity database managed by UIDAI. Aadhaar enrolment captures "
+        },
+        {
+          "l": 9.47,
+          "t": 12.79,
+          "w": 78.52,
+          "h": 1.32,
+          "text": "specified demographic information and biometric information and uses this information to establish "
+        },
+        {
+          "l": 9.53,
+          "t": 14.66,
+          "w": 37.32,
+          "h": 1.3,
+          "text": "uniqueness and enable identity authentication. "
+        },
+        {
+          "l": 9.45,
+          "t": 17.73,
+          "w": 79.92,
+          "h": 1.32,
+          "text": "The governance model separates the function of identity verification from the individual services that "
+        },
+        {
+          "l": 9.53,
+          "t": 19.56,
+          "w": 75.85,
+          "h": 1.32,
+          "text": "may use it. Instead of requiring every institution to create its own independent biometric identity "
+        },
+        {
+          "l": 9.47,
+          "t": 21.4,
+          "w": 77.01,
+          "h": 1.32,
+          "text": "system, Aadhaar provides a common identity layer that can be used, where legally permitted, for "
+        },
+        {
+          "l": 9.48,
+          "t": 23.26,
+          "w": 24.68,
+          "h": 1.04,
+          "text": "authentication and verification. "
+        },
+        {
+          "l": 9.45,
+          "t": 26.35,
+          "w": 46.67,
+          "h": 1.32,
+          "text": "The broader strategic idea can therefore be expressed as: "
+        },
+        {
+          "l": 9.48,
+          "t": 29.44,
+          "w": 80.29,
+          "h": 1.32,
+          "text": "create common digital identity infrastructure \u2192 enable reliable authentication \u2192 connect identity with "
+        },
+        {
+          "l": 9.48,
+          "t": 31.31,
+          "w": 61.01,
+          "h": 1.29,
+          "text": "authorized services \u2192 improve administrative processes and citizen access. "
+        },
+        {
+          "l": 9.45,
+          "t": 36.34,
+          "w": 18.12,
+          "h": 1.53,
+          "text": "4. Implementation "
+        },
+        {
+          "l": 9.58,
+          "t": 38.62,
+          "w": 79.48,
+          "h": 1.32,
+          "text": "Implementation of Aadhaar has taken place progressively rather than as a single deployment event. "
+        },
+        {
+          "l": 9.45,
+          "t": 40.47,
+          "w": 38.59,
+          "h": 1.32,
+          "text": "The major stages can be understood as follows: "
+        },
+        {
+          "l": 9.48,
+          "t": 43.58,
+          "w": 29.17,
+          "h": 1.3,
+          "text": "Step 1: Institutional establishment"
+        },
+        {
+          "l": 9.55,
+          "t": 46.65,
+          "w": 77.8,
+          "h": 1.32,
+          "text": "UIDAI was established to develop and operate the Aadhaar identity infrastructure and to establish "
+        },
+        {
+          "l": 9.47,
+          "t": 48.52,
+          "w": 64.92,
+          "h": 1.32,
+          "text": "standards and processes for enrolment, authentication and identity management. "
+        },
+        {
+          "l": 9.48,
+          "t": 51.61,
+          "w": 33.25,
+          "h": 1.32,
+          "text": "Step 2: Enrolment and identity creation"
+        },
+        {
+          "l": 9.55,
+          "t": 54.72,
+          "w": 77.23,
+          "h": 1.3,
+          "text": "Residents enrol through authorized channels by providing prescribed demographic and biometric "
+        },
+        {
+          "l": 9.53,
+          "t": 56.53,
+          "w": 74.07,
+          "h": 1.32,
+          "text": "information. The information is processed to create an Aadhaar identity record, subject to the "
+        },
+        {
+          "l": 9.48,
+          "t": 58.4,
+          "w": 41.55,
+          "h": 1.29,
+          "text": "applicable enrolment and deduplication procedures. "
+        },
+        {
+          "l": 9.48,
+          "t": 61.49,
+          "w": 25.47,
+          "h": 1.32,
+          "text": "Step 3: Identity authentication"
+        },
+        {
+          "l": 9.41,
+          "t": 64.56,
+          "w": 81.36,
+          "h": 1.32,
+          "text": "Authentication mechanisms allow an authorized requesting entity to verify whether identity information "
+        },
+        {
+          "l": 9.48,
+          "t": 66.4,
+          "w": 80.16,
+          "h": 1.32,
+          "text": "corresponds to an Aadhaar number or identity record. Different authentication methods may be used "
+        },
+        {
+          "l": 9.47,
+          "t": 68.28,
+          "w": 41.64,
+          "h": 1.3,
+          "text": "depending on the service and permitted technology. "
+        },
+        {
+          "l": 9.48,
+          "t": 71.35,
+          "w": 27.43,
+          "h": 1.32,
+          "text": "Step 4: Integration with services"
+        },
+        {
+          "l": 9.51,
+          "t": 74.44,
+          "w": 76.68,
+          "h": 1.32,
+          "text": "Government departments, financial institutions and other permitted entities can integrate identity "
+        },
+        {
+          "l": 9.44,
+          "t": 76.27,
+          "w": 75.04,
+          "h": 1.32,
+          "text": "verification into their workflows where supported by law, regulations and the relevant technical "
+        },
+        {
+          "l": 9.48,
+          "t": 78.16,
+          "w": 12.01,
+          "h": 1.28,
+          "text": "arrangements. "
+        },
+        {
+          "l": 9.48,
+          "t": 81.23,
+          "w": 42.99,
+          "h": 1.32,
+          "text": "Step 5: Expansion into digital public infrastructure"
+        },
+        {
+          "l": 9.41,
+          "t": 84.31,
+          "w": 79.93,
+          "h": 1.32,
+          "text": "Aadhaar became part of a wider ecosystem involving digital payments, banking, benefit delivery and "
+        },
+        {
+          "l": 9.47,
+          "t": 86.14,
+          "w": 79.97,
+          "h": 1.32,
+          "text": "other public-service systems. Its role therefore evolved from identity creation toward functioning as a "
+        },
+        {
+          "l": 9.43,
+          "t": 88.0,
+          "w": 31.3,
+          "h": 1.32,
+          "text": "foundational digital infrastructure layer. "
+        },
+        {
+          "l": 9.48,
+          "t": 91.09,
+          "w": 45.44,
+          "h": 1.32,
+          "text": "Step 6: Governance, regulation and judicial oversight"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/slide_003.webp",
+      "thumb": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/thumb_003.webp",
+      "text": "Aadhaar \u2014 Digital Identity and Governance in India\r\nThe system has been subject to legislation, regulations, policy changes and extensive judicial \r\nscrutiny. These mechanisms are important because digital identity affects both administrative \r\nefficiency and individual rights. \r\n5. Role / Mapping \r\nRequirement / Governance Need Aadhaar Role / Response\r\nReliable identity verification Provides a standardized digital identity and \r\nauthentication infrastructure. \r\nEfficient public-service delivery Can support identity verification in authorized \r\ngovernment service and welfare process. \r\nFinancial inclusion Aadhaar has been integrated into parts of India's \r\ndigital financial and banking ecosyste \r\nReduction of administrative duplication A common identity layer can help identify \r\nduplicate identities within systems designed t \r\nDigital service integration Provides an identity layer that can connect with \r\nauthorized digital service workflows. \r\nScalability Designed for identity management and \r\nauthentication at very large population scale. \r\nCitizen convenience Digital authentication can reduce the need for \r\nrepeated physical identity verification in s \r\nAccountability and safeguards Legislation, regulations, institutional controls and \r\njudicial decisions provide governance",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 33.24,
+          "t": 94.37,
+          "w": 33.42,
+          "h": 1.08,
+          "text": "Aadhaar \u2014 Digital Identity and Governance in India"
+        },
+        {
+          "l": 9.45,
+          "t": 6.66,
+          "w": 74.54,
+          "h": 1.3,
+          "text": "The system has been subject to legislation, regulations, policy changes and extensive judicial "
+        },
+        {
+          "l": 9.47,
+          "t": 8.47,
+          "w": 74.33,
+          "h": 1.32,
+          "text": "scrutiny. These mechanisms are important because digital identity affects both administrative "
+        },
+        {
+          "l": 9.48,
+          "t": 10.32,
+          "w": 24.8,
+          "h": 1.32,
+          "text": "efficiency and individual rights. "
+        },
+        {
+          "l": 9.52,
+          "t": 58.88,
+          "w": 17.39,
+          "h": 1.62,
+          "text": "5. Role / Mapping "
+        },
+        {
+          "l": 10.43,
+          "t": 61.31,
+          "w": 27.5,
+          "h": 1.3,
+          "text": "Requirement / Governance Need "
+        },
+        {
+          "l": 50.88,
+          "t": 61.31,
+          "w": 21.59,
+          "h": 1.3,
+          "text": "Aadhaar Role / Response"
+        },
+        {
+          "l": 10.44,
+          "t": 63.77,
+          "w": 22.11,
+          "h": 1.32,
+          "text": "Reliable identity verification "
+        },
+        {
+          "l": 51.02,
+          "t": 62.99,
+          "w": 34.49,
+          "h": 1.3,
+          "text": "Provides a standardized digital identity and "
+        },
+        {
+          "l": 50.95,
+          "t": 64.56,
+          "w": 23.11,
+          "h": 1.04,
+          "text": "authentication infrastructure. "
+        },
+        {
+          "l": 10.44,
+          "t": 67.03,
+          "w": 24.9,
+          "h": 1.32,
+          "text": "Efficient public-service delivery "
+        },
+        {
+          "l": 50.97,
+          "t": 66.23,
+          "w": 36.24,
+          "h": 1.32,
+          "text": "Can support identity verification in authorized "
+        },
+        {
+          "l": 50.94,
+          "t": 67.82,
+          "w": 33.18,
+          "h": 1.32,
+          "text": "government service and welfare process. "
+        },
+        {
+          "l": 10.44,
+          "t": 70.29,
+          "w": 15.02,
+          "h": 1.03,
+          "text": "Financial inclusion "
+        },
+        {
+          "l": 50.88,
+          "t": 69.49,
+          "w": 39.2,
+          "h": 1.32,
+          "text": "Aadhaar has been integrated into parts of India's "
+        },
+        {
+          "l": 50.94,
+          "t": 71.08,
+          "w": 30.09,
+          "h": 1.32,
+          "text": "digital financial and banking ecosyste "
+        },
+        {
+          "l": 10.44,
+          "t": 73.53,
+          "w": 31.1,
+          "h": 1.3,
+          "text": "Reduction of administrative duplication "
+        },
+        {
+          "l": 50.88,
+          "t": 72.74,
+          "w": 33.15,
+          "h": 1.32,
+          "text": "A common identity layer can help identify "
+        },
+        {
+          "l": 50.94,
+          "t": 74.35,
+          "w": 36.16,
+          "h": 1.3,
+          "text": "duplicate identities within systems designed t "
+        },
+        {
+          "l": 10.43,
+          "t": 76.81,
+          "w": 20.41,
+          "h": 1.3,
+          "text": "Digital service integration "
+        },
+        {
+          "l": 51.02,
+          "t": 76.02,
+          "w": 37.8,
+          "h": 1.3,
+          "text": "Provides an identity layer that can connect with "
+        },
+        {
+          "l": 50.95,
+          "t": 77.59,
+          "w": 29.07,
+          "h": 1.32,
+          "text": "authorized digital service workflows. "
+        },
+        {
+          "l": 10.38,
+          "t": 80.05,
+          "w": 8.5,
+          "h": 1.32,
+          "text": "Scalability "
+        },
+        {
+          "l": 51.02,
+          "t": 79.26,
+          "w": 31.23,
+          "h": 1.32,
+          "text": "Designed for identity management and "
+        },
+        {
+          "l": 50.95,
+          "t": 80.87,
+          "w": 35.96,
+          "h": 1.3,
+          "text": "authentication at very large population scale. "
+        },
+        {
+          "l": 10.38,
+          "t": 83.31,
+          "w": 16.47,
+          "h": 1.04,
+          "text": "Citizen convenience "
+        },
+        {
+          "l": 51.02,
+          "t": 82.52,
+          "w": 36.5,
+          "h": 1.32,
+          "text": "Digital authentication can reduce the need for "
+        },
+        {
+          "l": 51.0,
+          "t": 84.11,
+          "w": 33.04,
+          "h": 1.32,
+          "text": "repeated physical identity verification in s "
+        },
+        {
+          "l": 10.29,
+          "t": 86.56,
+          "w": 24.45,
+          "h": 1.32,
+          "text": "Accountability and safeguards "
+        },
+        {
+          "l": 51.01,
+          "t": 85.79,
+          "w": 39.01,
+          "h": 1.3,
+          "text": "Legislation, regulations, institutional controls and "
+        },
+        {
+          "l": 50.8,
+          "t": 87.38,
+          "w": 30.32,
+          "h": 1.3,
+          "text": "judicial decisions provide governance "
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/slide_004.webp",
+      "thumb": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/thumb_004.webp",
+      "text": "Aadhaar \u2014 Digital Identity and Governance in India\r\n6. Benefits \r\n\u25cf Scalable digital identity: provides a common identity framework capable of serving a very large \r\npopulation. \r\n\u25cf Faster verification: digital authentication can reduce manual identity-verification steps where the \r\nservice is designed around Aadhaar. \r\n\u25cf Service-delivery efficiency: identity verification can be incorporated into government and other \r\nauthorized service workflows. \r\n\u25cf Financial ecosystem support: Aadhaar has supported identity-based processes in parts of India's \r\nbanking and payment infrastructure. \r\n\u25cf Interoperability: a common identity layer can allow multiple authorized systems to verify identity \r\nwithout each system creating a separate identity infrastructure. \r\n\u25cf Convenience: digital verification can reduce dependence on carrying and repeatedly submitting \r\nphysical documents for some transactions. \r\n\u25cf Digital public infrastructure: Aadhaar demonstrates how a foundational government platform can \r\nbecome a building block for broader digital services. \r\n7. Challenges \r\nAadhaar's scale also creates substantial governance challenges. The existence of digital \r\ninfrastructure does not automatically guarantee inclusion, accuracy or privacy. The following issues \r\nare important when evaluating the system critically: \r\n\u25cf Privacy and data protection: biometric and demographic information is highly sensitive, making \r\nstrong legal, technical and organizational safeguards essential. \r\n\u25cf Cybersecurity risk: large-scale digital identity infrastructure is an attractive target for misuse, fraud \r\nand cyberattacks, requiring continuous security controls. \r\n\u25cf Authentication failures: biometric or technical failures can create practical difficulties, particularly \r\nwhere identity verification is tied to access to essential services. \r\n\u25cf Digital exclusion: lack of connectivity, infrastructure, awareness or documentation can \r\ndisproportionately affect vulnerable populations. \r\n\u25cf Function creep: expansion of a digital identity system into additional areas creates a governance \r\nneed to define clear limits on permissible use. \r\n\u25cf Surveillance concerns: the linkage of identity with multiple transactions can raise concerns about \r\ntracking and the concentration of information. \r\n\u25cf Accountability: citizens need accessible mechanisms to challenge errors, correct information and \r\nseek remedies when authentication or identity-related problems occur. \r\n\u25cf Legal and constitutional concerns: the Aadhaar framework has required judicial examination of \r\nquestions involving privacy, proportionality, legislative authority and the conditions under which \r\nidentity may be required. \r\n\u25cf Dependence on infrastructure: digital systems require reliable devices, connectivity, authentication \r\nservices and institutional capacity, particularly in remote areas. \r\n8. Result \r\nAadhaar has become one of the world's largest digital identity infrastructures and an important \r\ncomponent of India's digital public infrastructure. Its most significant governance result is the creation",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 33.24,
+          "t": 94.37,
+          "w": 33.42,
+          "h": 1.08,
+          "text": "Aadhaar \u2014 Digital Identity and Governance in India"
+        },
+        {
+          "l": 9.51,
+          "t": 6.83,
+          "w": 10.51,
+          "h": 1.25,
+          "text": "6. Benefits "
+        },
+        {
+          "l": 9.57,
+          "t": 9.48,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 9.15,
+          "w": 77.33,
+          "h": 1.32,
+          "text": " Scalable digital identity: provides a common identity framework capable of serving a very large "
+        },
+        {
+          "l": 12.47,
+          "t": 10.99,
+          "w": 9.18,
+          "h": 1.29,
+          "text": "population. "
+        },
+        {
+          "l": 9.57,
+          "t": 13.18,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 12.85,
+          "w": 78.23,
+          "h": 1.32,
+          "text": " Faster verification: digital authentication can reduce manual identity-verification steps where the "
+        },
+        {
+          "l": 12.41,
+          "t": 14.69,
+          "w": 29.6,
+          "h": 1.3,
+          "text": "service is designed around Aadhaar. "
+        },
+        {
+          "l": 9.57,
+          "t": 16.86,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 16.53,
+          "w": 76.72,
+          "h": 1.32,
+          "text": " Service-delivery efficiency: identity verification can be incorporated into government and other "
+        },
+        {
+          "l": 12.42,
+          "t": 18.37,
+          "w": 23.88,
+          "h": 1.04,
+          "text": "authorized service workflows. "
+        },
+        {
+          "l": 9.57,
+          "t": 20.56,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 20.23,
+          "w": 79.18,
+          "h": 1.32,
+          "text": " Financial ecosystem support: Aadhaar has supported identity-based processes in parts of India's "
+        },
+        {
+          "l": 12.47,
+          "t": 22.06,
+          "w": 29.03,
+          "h": 1.32,
+          "text": "banking and payment infrastructure. "
+        },
+        {
+          "l": 9.57,
+          "t": 24.25,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 23.93,
+          "w": 77.72,
+          "h": 1.32,
+          "text": " Interoperability: a common identity layer can allow multiple authorized systems to verify identity "
+        },
+        {
+          "l": 12.36,
+          "t": 25.74,
+          "w": 50.29,
+          "h": 1.32,
+          "text": "without each system creating a separate identity infrastructure. "
+        },
+        {
+          "l": 9.57,
+          "t": 27.94,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 27.61,
+          "w": 77.83,
+          "h": 1.32,
+          "text": " Convenience: digital verification can reduce dependence on carrying and repeatedly submitting "
+        },
+        {
+          "l": 12.47,
+          "t": 29.44,
+          "w": 34.32,
+          "h": 1.32,
+          "text": "physical documents for some transactions. "
+        },
+        {
+          "l": 9.57,
+          "t": 31.63,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 31.31,
+          "w": 78.64,
+          "h": 1.32,
+          "text": " Digital public infrastructure: Aadhaar demonstrates how a foundational government platform can "
+        },
+        {
+          "l": 12.47,
+          "t": 33.15,
+          "w": 41.68,
+          "h": 1.32,
+          "text": "become a building block for broader digital services. "
+        },
+        {
+          "l": 9.5,
+          "t": 38.19,
+          "w": 12.92,
+          "h": 1.53,
+          "text": "7. Challenges "
+        },
+        {
+          "l": 9.41,
+          "t": 40.49,
+          "w": 70.84,
+          "h": 1.32,
+          "text": "Aadhaar's scale also creates substantial governance challenges. The existence of digital "
+        },
+        {
+          "l": 9.53,
+          "t": 42.32,
+          "w": 78.92,
+          "h": 1.32,
+          "text": "infrastructure does not automatically guarantee inclusion, accuracy or privacy. The following issues "
+        },
+        {
+          "l": 9.48,
+          "t": 44.19,
+          "w": 41.07,
+          "h": 1.3,
+          "text": "are important when evaluating the system critically: "
+        },
+        {
+          "l": 9.57,
+          "t": 47.62,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 47.29,
+          "w": 77.43,
+          "h": 1.32,
+          "text": " Privacy and data protection: biometric and demographic information is highly sensitive, making "
+        },
+        {
+          "l": 12.41,
+          "t": 49.11,
+          "w": 50.44,
+          "h": 1.32,
+          "text": "strong legal, technical and organizational safeguards essential. "
+        },
+        {
+          "l": 9.57,
+          "t": 51.3,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 50.97,
+          "w": 79.85,
+          "h": 1.32,
+          "text": " Cybersecurity risk: large-scale digital identity infrastructure is an attractive target for misuse, fraud "
+        },
+        {
+          "l": 12.42,
+          "t": 52.82,
+          "w": 45.16,
+          "h": 1.3,
+          "text": "and cyberattacks, requiring continuous security controls. "
+        },
+        {
+          "l": 9.57,
+          "t": 55.0,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 54.67,
+          "w": 78.42,
+          "h": 1.32,
+          "text": " Authentication failures: biometric or technical failures can create practical difficulties, particularly "
+        },
+        {
+          "l": 12.36,
+          "t": 56.5,
+          "w": 51.08,
+          "h": 1.32,
+          "text": "where identity verification is tied to access to essential services. "
+        },
+        {
+          "l": 9.57,
+          "t": 58.69,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 58.37,
+          "w": 70.36,
+          "h": 1.32,
+          "text": " Digital exclusion: lack of connectivity, infrastructure, awareness or documentation can "
+        },
+        {
+          "l": 12.41,
+          "t": 60.18,
+          "w": 38.47,
+          "h": 1.32,
+          "text": "disproportionately affect vulnerable populations. "
+        },
+        {
+          "l": 9.57,
+          "t": 62.39,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 62.06,
+          "w": 78.81,
+          "h": 1.32,
+          "text": " Function creep: expansion of a digital identity system into additional areas creates a governance "
+        },
+        {
+          "l": 12.47,
+          "t": 63.88,
+          "w": 36.71,
+          "h": 1.3,
+          "text": "need to define clear limits on permissible use. "
+        },
+        {
+          "l": 9.57,
+          "t": 66.07,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 65.74,
+          "w": 78.91,
+          "h": 1.32,
+          "text": " Surveillance concerns: the linkage of identity with multiple transactions can raise concerns about "
+        },
+        {
+          "l": 12.39,
+          "t": 67.58,
+          "w": 36.42,
+          "h": 1.32,
+          "text": "tracking and the concentration of information. "
+        },
+        {
+          "l": 9.57,
+          "t": 69.77,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 69.44,
+          "w": 79.13,
+          "h": 1.32,
+          "text": " Accountability: citizens need accessible mechanisms to challenge errors, correct information and "
+        },
+        {
+          "l": 12.41,
+          "t": 71.29,
+          "w": 56.25,
+          "h": 1.3,
+          "text": "seek remedies when authentication or identity-related problems occur. "
+        },
+        {
+          "l": 9.57,
+          "t": 73.47,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 73.14,
+          "w": 77.34,
+          "h": 1.32,
+          "text": " Legal and constitutional concerns: the Aadhaar framework has required judicial examination of "
+        },
+        {
+          "l": 12.42,
+          "t": 74.97,
+          "w": 75.57,
+          "h": 1.3,
+          "text": "questions involving privacy, proportionality, legislative authority and the conditions under which "
+        },
+        {
+          "l": 12.47,
+          "t": 76.82,
+          "w": 20.05,
+          "h": 1.3,
+          "text": "identity may be required. "
+        },
+        {
+          "l": 9.57,
+          "t": 79.0,
+          "w": 0.77,
+          "h": 0.61,
+          "text": "\u25cf "
+        },
+        {
+          "l": 10.49,
+          "t": 78.67,
+          "w": 80.3,
+          "h": 1.32,
+          "text": " Dependence on infrastructure: digital systems require reliable devices, connectivity, authentication "
+        },
+        {
+          "l": 12.41,
+          "t": 80.52,
+          "w": 50.24,
+          "h": 1.3,
+          "text": "services and institutional capacity, particularly in remote areas. "
+        },
+        {
+          "l": 9.48,
+          "t": 85.55,
+          "w": 8.65,
+          "h": 1.24,
+          "text": "8. Result "
+        },
+        {
+          "l": 9.41,
+          "t": 87.84,
+          "w": 75.22,
+          "h": 1.32,
+          "text": "Aadhaar has become one of the world's largest digital identity infrastructures and an important "
+        },
+        {
+          "l": 9.48,
+          "t": 89.68,
+          "w": 80.52,
+          "h": 1.32,
+          "text": "component of India's digital public infrastructure. Its most significant governance result is the creation "
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/slide_005.webp",
+      "thumb": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/thumb_005.webp",
+      "text": "Aadhaar \u2014 Digital Identity and Governance in India\r\nof a common identity and authentication layer that can be used across multiple authorized systems \r\nrather than requiring every institution to maintain a completely independent identity mechanism. \r\nThe system has contributed to the digitisation of identity verification and has been incorporated into a \r\nrange of public and private-sector processes. At the same time, the experience demonstrates that \r\ntechnological scale must be accompanied by safeguards for privacy, inclusion, cybersecurity and \r\naccountability. Therefore, Aadhaar should not be assessed solely by the number of enrolments or \r\ntransactions; its effectiveness also depends on whether people can use the system reliably and \r\nwhether rights and safeguards are protected. \r\n9. Conclusion \r\nAadhaar represents a major example of digital governance in India because it addresses a \r\nfundamental administrative function\u2014identity\u2014and turns it into shared digital infrastructure. Its \r\narchitecture has enabled identity verification to be incorporated into numerous digital service \r\necosystems and has influenced the development of India's wider digital public infrastructure. \r\nHowever, Aadhaar also demonstrates that digital transformation is not purely a technical exercise. \r\nEffective digital governance requires institutional capacity, legal safeguards, cybersecurity, \r\ntransparency, accessibility and mechanisms for correcting errors. The principal lesson from the \r\nAadhaar case is therefore that large-scale digital infrastructure can improve government capability, \r\nbut its legitimacy and effectiveness depend on balancing administrative efficiency with citizens' rights \r\nand practical inclusion. \r\n10. Case Study in Short \r\nElement Summary\r\nProblem Fragmented identity verification, manual \r\nprocesses, administrative friction and difficulties \r\nin establishing identity co\r\nSolution A nationwide digital identity infrastructure \r\nproviding a unique Aadhaar number and \r\nmechanisms for identity authen \r\nTools / Technology Biometric and demographic information, UIDAI \r\nidentity infrastructure, authentication \r\nmechanisms and digital integr\r\nProcess Enrolment \u2192 identity creation and deduplication \r\n\u2192 authentication \u2192 integration with authorized \r\nservices \u2192 ongoin\r\nBenefits Scalable identity verification, faster digital \r\nauthentication, service-delivery support, \r\ninteroperability and convenienc \r\nChallenges Privacy, cybersecurity, authentication failures, \r\ndigital exclusion, function creep, surveillance \r\nconcerns, accountabil\r\nOutcome Aadhaar became a foundational component of \r\nIndia's digital public infrastructure and a major \r\nexample of large-sca",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 33.24,
+          "t": 94.37,
+          "w": 33.42,
+          "h": 1.08,
+          "text": "Aadhaar \u2014 Digital Identity and Governance in India"
+        },
+        {
+          "l": 9.47,
+          "t": 6.64,
+          "w": 78.78,
+          "h": 1.32,
+          "text": "of a common identity and authentication layer that can be used across multiple authorized systems "
+        },
+        {
+          "l": 9.53,
+          "t": 8.5,
+          "w": 76.13,
+          "h": 1.3,
+          "text": "rather than requiring every institution to maintain a completely independent identity mechanism. "
+        },
+        {
+          "l": 9.45,
+          "t": 11.58,
+          "w": 80.55,
+          "h": 1.32,
+          "text": "The system has contributed to the digitisation of identity verification and has been incorporated into a "
+        },
+        {
+          "l": 9.53,
+          "t": 13.41,
+          "w": 77.87,
+          "h": 1.32,
+          "text": "range of public and private-sector processes. At the same time, the experience demonstrates that "
+        },
+        {
+          "l": 9.44,
+          "t": 15.24,
+          "w": 77.33,
+          "h": 1.32,
+          "text": "technological scale must be accompanied by safeguards for privacy, inclusion, cybersecurity and "
+        },
+        {
+          "l": 9.48,
+          "t": 17.08,
+          "w": 77.81,
+          "h": 1.32,
+          "text": "accountability. Therefore, Aadhaar should not be assessed solely by the number of enrolments or "
+        },
+        {
+          "l": 9.44,
+          "t": 18.93,
+          "w": 76.05,
+          "h": 1.32,
+          "text": "transactions; its effectiveness also depends on whether people can use the system reliably and "
+        },
+        {
+          "l": 9.42,
+          "t": 20.77,
+          "w": 36.23,
+          "h": 1.32,
+          "text": "whether rights and safeguards are protected. "
+        },
+        {
+          "l": 9.49,
+          "t": 25.81,
+          "w": 13.06,
+          "h": 1.24,
+          "text": "9. Conclusion "
+        },
+        {
+          "l": 9.41,
+          "t": 28.11,
+          "w": 72.36,
+          "h": 1.32,
+          "text": "Aadhaar represents a major example of digital governance in India because it addresses a "
+        },
+        {
+          "l": 9.43,
+          "t": 29.94,
+          "w": 75.37,
+          "h": 1.32,
+          "text": "fundamental administrative function\u2014identity\u2014and turns it into shared digital infrastructure. Its "
+        },
+        {
+          "l": 9.48,
+          "t": 31.77,
+          "w": 73.6,
+          "h": 1.32,
+          "text": "architecture has enabled identity verification to be incorporated into numerous digital service "
+        },
+        {
+          "l": 9.48,
+          "t": 33.64,
+          "w": 73.54,
+          "h": 1.32,
+          "text": "ecosystems and has influenced the development of India's wider digital public infrastructure. "
+        },
+        {
+          "l": 9.56,
+          "t": 36.71,
+          "w": 78.0,
+          "h": 1.32,
+          "text": "However, Aadhaar also demonstrates that digital transformation is not purely a technical exercise. "
+        },
+        {
+          "l": 9.55,
+          "t": 38.55,
+          "w": 72.1,
+          "h": 1.32,
+          "text": "Effective digital governance requires institutional capacity, legal safeguards, cybersecurity, "
+        },
+        {
+          "l": 9.44,
+          "t": 40.4,
+          "w": 75.75,
+          "h": 1.32,
+          "text": "transparency, accessibility and mechanisms for correcting errors. The principal lesson from the "
+        },
+        {
+          "l": 9.41,
+          "t": 42.23,
+          "w": 78.76,
+          "h": 1.32,
+          "text": "Aadhaar case is therefore that large-scale digital infrastructure can improve government capability, "
+        },
+        {
+          "l": 9.53,
+          "t": 44.06,
+          "w": 80.24,
+          "h": 1.32,
+          "text": "but its legitimacy and effectiveness depend on balancing administrative efficiency with citizens' rights "
+        },
+        {
+          "l": 9.48,
+          "t": 45.93,
+          "w": 18.59,
+          "h": 1.29,
+          "text": "and practical inclusion. "
+        },
+        {
+          "l": 9.58,
+          "t": 50.96,
+          "w": 22.09,
+          "h": 1.53,
+          "text": "10. Case Study in Short "
+        },
+        {
+          "l": 10.43,
+          "t": 53.32,
+          "w": 6.86,
+          "h": 1.03,
+          "text": "Element "
+        },
+        {
+          "l": 50.95,
+          "t": 53.31,
+          "w": 8.11,
+          "h": 1.32,
+          "text": "Summary"
+        },
+        {
+          "l": 10.43,
+          "t": 54.97,
+          "w": 72.79,
+          "h": 1.32,
+          "text": "Problem Fragmented identity verification, manual "
+        },
+        {
+          "l": 51.0,
+          "t": 56.56,
+          "w": 38.3,
+          "h": 1.3,
+          "text": "processes, administrative friction and difficulties "
+        },
+        {
+          "l": 51.0,
+          "t": 58.19,
+          "w": 19.79,
+          "h": 1.3,
+          "text": "in establishing identity co"
+        },
+        {
+          "l": 10.38,
+          "t": 59.82,
+          "w": 73.65,
+          "h": 1.32,
+          "text": "Solution A nationwide digital identity infrastructure "
+        },
+        {
+          "l": 51.0,
+          "t": 61.44,
+          "w": 32.45,
+          "h": 1.3,
+          "text": "providing a unique Aadhaar number and "
+        },
+        {
+          "l": 51.0,
+          "t": 63.02,
+          "w": 25.22,
+          "h": 1.32,
+          "text": "mechanisms for identity authen "
+        },
+        {
+          "l": 10.34,
+          "t": 64.68,
+          "w": 78.08,
+          "h": 1.32,
+          "text": "Tools / Technology Biometric and demographic information, UIDAI "
+        },
+        {
+          "l": 51.0,
+          "t": 66.27,
+          "w": 29.23,
+          "h": 1.32,
+          "text": "identity infrastructure, authentication "
+        },
+        {
+          "l": 51.0,
+          "t": 67.9,
+          "w": 23.68,
+          "h": 1.3,
+          "text": "mechanisms and digital integr"
+        },
+        {
+          "l": 10.43,
+          "t": 69.55,
+          "w": 79.08,
+          "h": 1.3,
+          "text": "Process Enrolment \u2192 identity creation and deduplication "
+        },
+        {
+          "l": 50.95,
+          "t": 71.14,
+          "w": 37.66,
+          "h": 1.3,
+          "text": "\u2192 authentication \u2192 integration with authorized "
+        },
+        {
+          "l": 50.94,
+          "t": 72.75,
+          "w": 7.04,
+          "h": 1.03,
+          "text": "services "
+        },
+        {
+          "l": 58.05,
+          "t": 72.75,
+          "w": 7.5,
+          "h": 1.3,
+          "text": "\u2192 ongoin"
+        },
+        {
+          "l": 10.43,
+          "t": 74.38,
+          "w": 73.8,
+          "h": 1.32,
+          "text": "Benefits Scalable identity verification, faster digital "
+        },
+        {
+          "l": 50.95,
+          "t": 76.0,
+          "w": 32.08,
+          "h": 1.3,
+          "text": "authentication, service-delivery support, "
+        },
+        {
+          "l": 51.0,
+          "t": 77.59,
+          "w": 25.13,
+          "h": 1.3,
+          "text": "interoperability and convenienc "
+        },
+        {
+          "l": 10.38,
+          "t": 79.24,
+          "w": 77.43,
+          "h": 1.32,
+          "text": "Challenges Privacy, cybersecurity, authentication failures, "
+        },
+        {
+          "l": 50.94,
+          "t": 80.84,
+          "w": 35.87,
+          "h": 1.32,
+          "text": "digital exclusion, function creep, surveillance "
+        },
+        {
+          "l": 50.95,
+          "t": 82.46,
+          "w": 17.19,
+          "h": 1.21,
+          "text": "concerns, accountabil"
+        },
+        {
+          "l": 10.38,
+          "t": 84.09,
+          "w": 77.87,
+          "h": 1.31,
+          "text": "Outcome Aadhaar became a foundational component of "
+        },
+        {
+          "l": 51.05,
+          "t": 85.7,
+          "w": 36.83,
+          "h": 1.32,
+          "text": "India's digital public infrastructure and a major "
+        },
+        {
+          "l": 50.95,
+          "t": 87.29,
+          "w": 13.16,
+          "h": 1.32,
+          "text": "example of large"
+        },
+        {
+          "l": 64.23,
+          "t": 87.89,
+          "w": 0.49,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 64.84,
+          "t": 87.57,
+          "w": 2.67,
+          "h": 0.76,
+          "text": "sca"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/slide_006.webp",
+      "thumb": "/slides/sbis_sbis_sbis_case_study_adhaar_pdf/thumb_006.webp",
+      "text": "Aadhaar \u2014 Digital Identity and Governance in India\r\nSelected References \r\n1. Unique Identification Authority of India (UIDAI), official Aadhaar and institutional resources. \r\n2. Aadhaar Act, 2016 and subsequent amendments and regulations. \r\n3. Supreme Court of India, Justice K. S. Puttaswamy (Retd.) v. Union of India (Aadhaar judgment), \r\n2018. \r\n4. Government of India, Digital India programme and digital public infrastructure resources.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 33.24,
+          "t": 94.37,
+          "w": 33.42,
+          "h": 1.08,
+          "text": "Aadhaar \u2014 Digital Identity and Governance in India"
+        },
+        {
+          "l": 9.48,
+          "t": 6.83,
+          "w": 19.54,
+          "h": 1.25,
+          "text": "Selected References "
+        },
+        {
+          "l": 9.61,
+          "t": 9.14,
+          "w": 74.26,
+          "h": 1.32,
+          "text": "1. Unique Identification Authority of India (UIDAI), official Aadhaar and institutional resources. "
+        },
+        {
+          "l": 9.46,
+          "t": 12.24,
+          "w": 54.76,
+          "h": 1.31,
+          "text": "2. Aadhaar Act, 2016 and subsequent amendments and regulations. "
+        },
+        {
+          "l": 9.49,
+          "t": 15.32,
+          "w": 78.59,
+          "h": 1.32,
+          "text": "3. Supreme Court of India, Justice K. S. Puttaswamy (Retd.) v. Union of India (Aadhaar judgment), "
+        },
+        {
+          "l": 9.46,
+          "t": 17.18,
+          "w": 4.93,
+          "h": 1.03,
+          "text": "2018. "
+        },
+        {
+          "l": 9.44,
+          "t": 20.27,
+          "w": 72.54,
+          "h": 1.32,
+          "text": "4. Government of India, Digital India programme and digital public infrastructure resources. "
+        }
+      ]
+    }
+  ]
+}

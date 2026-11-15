@@ -1,0 +1,3252 @@
+{
+  "mtime": 1793934635.578241,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_001.webp",
+      "text": "Module 5: Big Data\r\nBy MS. ALVINA LOPES\r\nPART 1",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 28.49,
+          "t": 31.26,
+          "w": 43.12,
+          "h": 10.59,
+          "text": "Module 5: Big Data"
+        },
+        {
+          "l": 33.57,
+          "t": 58.4,
+          "w": 33.0,
+          "h": 5.78,
+          "text": "By MS. ALVINA LOPES"
+        },
+        {
+          "l": 42.95,
+          "t": 44.0,
+          "w": 13.07,
+          "h": 5.39,
+          "text": "PART 1"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Introduction\r\n\u2756 Characteristics of Big Data \r\n\u2756 Introduction to Big Data Analytics\r\n\u2756 Sources of Big Data\r\n\u2756 Traditional Data vs Big Data\r\n\u2756 Applications of Big Data",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 13.87,
+          "h": 5.9,
+          "text": "Contents"
+        },
+        {
+          "l": 4.72,
+          "t": 23.64,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 23.43,
+          "w": 14.01,
+          "h": 3.47,
+          "text": "Introduction"
+        },
+        {
+          "l": 4.72,
+          "t": 29.78,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.5,
+          "t": 29.54,
+          "w": 30.99,
+          "h": 4.51,
+          "text": "Characteristics of Big Data "
+        },
+        {
+          "l": 4.72,
+          "t": 35.91,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.59,
+          "t": 35.69,
+          "w": 38.45,
+          "h": 4.49,
+          "text": "Introduction to Big Data Analytics"
+        },
+        {
+          "l": 4.72,
+          "t": 42.04,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.47,
+          "t": 41.8,
+          "w": 22.25,
+          "h": 4.51,
+          "text": "Sources of Big Data"
+        },
+        {
+          "l": 4.72,
+          "t": 48.18,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.37,
+          "t": 47.96,
+          "w": 31.87,
+          "h": 4.49,
+          "text": "Traditional Data vs Big Data"
+        },
+        {
+          "l": 4.72,
+          "t": 54.31,
+          "w": 1.76,
+          "h": 3.17,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.35,
+          "t": 54.07,
+          "w": 27.38,
+          "h": 4.51,
+          "text": "Applications of Big Data"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_003.webp",
+      "text": "Introduction\r\n\u25cf Everyday we use YouTube, Instagram, Amazon, Netflix and Google Maps.\r\n\u25cf Question\r\n\u25cb How does YouTube recommend videos?\r\n\u25cb How does Amazon suggest products?\r\n\u25cb How does Google Maps show traffic?\r\n\u25cf Answer: Because they use Big Data Analytics.\r\n\u25cf Big Data means huge amount of data.\r\n\u25cf Analytics means analyzing data to make better decisions.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 19.22,
+          "h": 5.86,
+          "text": "Introduction"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 84.04,
+          "h": 4.52,
+          "text": "Everyday we use YouTube, Instagram, Amazon, Netflix and Google Maps."
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.49,
+          "t": 30.16,
+          "w": 11.05,
+          "h": 4.18,
+          "text": "Question"
+        },
+        {
+          "l": 10.84,
+          "t": 37.03,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 36.1,
+          "w": 35.96,
+          "h": 2.71,
+          "text": "How does YouTube recommend videos?"
+        },
+        {
+          "l": 10.84,
+          "t": 41.8,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 40.87,
+          "w": 33.48,
+          "h": 3.49,
+          "text": "How does Amazon suggest products?"
+        },
+        {
+          "l": 10.84,
+          "t": 46.57,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 45.63,
+          "w": 33.0,
+          "h": 3.51,
+          "text": "How does Google Maps show traffic?"
+        },
+        {
+          "l": 5.55,
+          "t": 51.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 50.79,
+          "w": 9.92,
+          "h": 3.29,
+          "text": "Answer: "
+        },
+        {
+          "l": 19.42,
+          "t": 50.6,
+          "w": 42.65,
+          "h": 4.49,
+          "text": " Because they use Big Data Analytics."
+        },
+        {
+          "l": 5.55,
+          "t": 57.92,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 56.71,
+          "w": 44.18,
+          "h": 4.51,
+          "text": "Big Data means huge amount of data."
+        },
+        {
+          "l": 5.55,
+          "t": 64.05,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 62.87,
+          "w": 65.93,
+          "h": 4.49,
+          "text": "Analytics means analyzing data to make better decisions."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_004.webp",
+      "text": "Introduction\r\n\u25cf Everyday we use YouTube, Instagram, Amazon, Netflix and Google Maps.\r\n\u25cf Question\r\n\u25cb How does YouTube recommend videos?\r\n\u25cb How does Amazon suggest products?\r\n\u25cb How does Google Maps show traffic?\r\n\u25cf Answer: Because they use Big Data Analytics.\r\n\u25cf Big Data means huge amount of data.\r\n\u25cf Analytics means analyzing data to make better decisions.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 19.22,
+          "h": 5.86,
+          "text": "Introduction"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 84.04,
+          "h": 4.52,
+          "text": "Everyday we use YouTube, Instagram, Amazon, Netflix and Google Maps."
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.49,
+          "t": 30.16,
+          "w": 11.05,
+          "h": 4.18,
+          "text": "Question"
+        },
+        {
+          "l": 10.84,
+          "t": 37.03,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 36.1,
+          "w": 35.96,
+          "h": 2.71,
+          "text": "How does YouTube recommend videos?"
+        },
+        {
+          "l": 10.84,
+          "t": 41.8,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 40.87,
+          "w": 33.48,
+          "h": 3.49,
+          "text": "How does Amazon suggest products?"
+        },
+        {
+          "l": 10.84,
+          "t": 46.57,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 45.63,
+          "w": 33.0,
+          "h": 3.51,
+          "text": "How does Google Maps show traffic?"
+        },
+        {
+          "l": 5.55,
+          "t": 51.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 50.79,
+          "w": 9.92,
+          "h": 3.29,
+          "text": "Answer: "
+        },
+        {
+          "l": 19.42,
+          "t": 50.6,
+          "w": 42.65,
+          "h": 4.49,
+          "text": " Because they use Big Data Analytics."
+        },
+        {
+          "l": 5.55,
+          "t": 57.92,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 56.71,
+          "w": 44.18,
+          "h": 4.51,
+          "text": "Big Data means huge amount of data."
+        },
+        {
+          "l": 5.55,
+          "t": 64.05,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 62.87,
+          "w": 65.93,
+          "h": 4.49,
+          "text": "Analytics means analyzing data to make better decisions."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_005.webp",
+      "text": "Introduction\r\nWhat is Big Data?\r\n\u25cf Big data is data that exceeds the processing capacity of conventional \r\ndatabase systems.\r\n\u25cf The data is too big, moves too fast, or doesn\u2019t fit the structures of your \r\ndatabase architectures.\r\n\u25cf To gain value from this data, you must choose an alternative way to \r\nprocess it.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 19.22,
+          "h": 5.86,
+          "text": "Introduction"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 23.93,
+          "h": 4.99,
+          "text": "What is Big Data?"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 79.98,
+          "h": 4.52,
+          "text": "Big data is data that exceeds the processing capacity of conventional "
+        },
+        {
+          "l": 9.49,
+          "t": 36.97,
+          "w": 21.1,
+          "h": 4.49,
+          "text": "database systems."
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 43.08,
+          "w": 82.25,
+          "h": 4.52,
+          "text": "The data is too big, moves too fast, or doesn\u2019t fit the structures of your "
+        },
+        {
+          "l": 9.49,
+          "t": 49.24,
+          "w": 26.97,
+          "h": 3.48,
+          "text": "database architectures."
+        },
+        {
+          "l": 5.55,
+          "t": 56.56,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 55.35,
+          "w": 78.98,
+          "h": 4.52,
+          "text": "To gain value from this data, you must choose an alternative way to "
+        },
+        {
+          "l": 9.56,
+          "t": 61.62,
+          "w": 11.46,
+          "h": 4.37,
+          "text": "process it."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_006.webp",
+      "text": "Introduction\r\nBig Data Definition- By Gartner\r\n\u25cf \u201cBig data\u201d is\r\n\u25cf high-volume, -velocity and -variety information assets\r\n\u25cf that demand cost-effective, innovative forms of information processing\r\n\u25cf for enhanced insight and decision making.\r\nBig Data = large, fast, diverse datasets",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 19.22,
+          "h": 5.86,
+          "text": "Introduction"
+        },
+        {
+          "l": 4.6,
+          "t": 24.09,
+          "w": 42.56,
+          "h": 5.01,
+          "text": "Big Data Definition- By Gartner"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 30.84,
+          "w": 13.5,
+          "h": 4.49,
+          "text": "\u201cBig data\u201d is"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 36.95,
+          "w": 61.7,
+          "h": 4.52,
+          "text": "high-volume, -velocity and -variety information assets"
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.39,
+          "t": 43.08,
+          "w": 82.45,
+          "h": 4.51,
+          "text": "that demand cost-effective, innovative forms of information processing"
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 49.22,
+          "w": 48.9,
+          "h": 4.51,
+          "text": "for enhanced insight and decision making."
+        },
+        {
+          "l": 4.59,
+          "t": 58.31,
+          "w": 43.71,
+          "h": 4.51,
+          "text": "Big Data = large, fast, diverse datasets"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_007.webp",
+      "text": "Introduction\r\nEveryday Examples of Big Data:\r\n\u25cf Transportation: Millions of trip start and end locations logged by Uber or\r\nreal-time GPS coordinates from city buses.\r\n\u25cf Social Media: Billions of daily interactions and multimedia uploads forming\r\nan unstructured dataset.\r\n\u25cf IoT Devices: A smart factory capturing sensor readings from hundreds of\r\nmachines every second.\r\n\u25cf Weather Monitoring Systems: High-resolution atmospheric data used for\r\nforecasting and climate modeling.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 19.22,
+          "h": 5.86,
+          "text": "Introduction"
+        },
+        {
+          "l": 4.6,
+          "t": 24.09,
+          "w": 42.76,
+          "h": 5.01,
+          "text": "Everyday Examples of Big Data:"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.4,
+          "t": 30.84,
+          "w": 18.41,
+          "h": 4.49,
+          "text": "Transportation"
+        },
+        {
+          "l": 28.14,
+          "t": 30.82,
+          "w": 65.52,
+          "h": 4.52,
+          "text": ": Millions of trip start and end locations logged by Uber or"
+        },
+        {
+          "l": 9.56,
+          "t": 36.95,
+          "w": 48.22,
+          "h": 4.52,
+          "text": "real-time GPS coordinates from city buses."
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 43.1,
+          "w": 15.08,
+          "h": 3.47,
+          "text": "Social Media"
+        },
+        {
+          "l": 24.89,
+          "t": 43.08,
+          "w": 70.64,
+          "h": 4.52,
+          "text": ": Billions of daily interactions and multimedia uploads forming"
+        },
+        {
+          "l": 9.46,
+          "t": 49.24,
+          "w": 28.11,
+          "h": 3.48,
+          "text": "an unstructured dataset."
+        },
+        {
+          "l": 5.55,
+          "t": 56.56,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 55.37,
+          "w": 13.49,
+          "h": 3.47,
+          "text": "IoT Devices"
+        },
+        {
+          "l": 23.31,
+          "t": 55.35,
+          "w": 70.09,
+          "h": 4.52,
+          "text": ": A smart factory capturing sensor readings from hundreds of"
+        },
+        {
+          "l": 9.56,
+          "t": 61.5,
+          "w": 27.05,
+          "h": 4.49,
+          "text": "machines every second."
+        },
+        {
+          "l": 5.55,
+          "t": 68.82,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 67.64,
+          "w": 35.68,
+          "h": 4.49,
+          "text": "Weather Monitoring Systems"
+        },
+        {
+          "l": 45.28,
+          "t": 67.62,
+          "w": 49.74,
+          "h": 4.51,
+          "text": ": High-resolution atmospheric data used for"
+        },
+        {
+          "l": 9.38,
+          "t": 72.95,
+          "w": 38.56,
+          "h": 4.51,
+          "text": "forecasting and climate modeling."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_008.webp",
+      "text": "Characteristics of Big Data\r\n\u25cf Big Data is characterized by the 5 V\u2019s.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 41.6,
+          "h": 7.49,
+          "text": "Characteristics of Big Data"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 42.55,
+          "h": 4.49,
+          "text": "Big Data is characterized by the 5 V\u2019s."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_009.webp",
+      "text": "Characteristics of Big Data\r\n\u25cf Volume \u2013 massive amounts of data\r\n\u25cf Velocity \u2013 speed of data generation & processing\r\n\u25cf Variety \u2013 structured, semi-structured, unstructured data\r\n\u25cf Veracity \u2013 data quality, accuracy, trustworthiness\r\n\u25cf Value \u2013 extracting meaningful insights",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 41.6,
+          "h": 7.49,
+          "text": "Characteristics of Big Data"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.02,
+          "w": 9.4,
+          "h": 3.47,
+          "text": "Volume "
+        },
+        {
+          "l": 18.86,
+          "t": 24.0,
+          "w": 31.53,
+          "h": 3.49,
+          "text": " \u2013 massive amounts of data"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 30.16,
+          "w": 9.96,
+          "h": 4.49,
+          "text": "Velocity "
+        },
+        {
+          "l": 19.31,
+          "t": 30.13,
+          "w": 47.34,
+          "h": 4.51,
+          "text": " \u2013 speed of data generation & processing"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 36.29,
+          "w": 9.01,
+          "h": 4.49,
+          "text": "Variety "
+        },
+        {
+          "l": 18.36,
+          "t": 36.29,
+          "w": 56.78,
+          "h": 4.0,
+          "text": " \u2013 structured, semi-structured, unstructured data"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 42.42,
+          "w": 10.3,
+          "h": 4.49,
+          "text": "Veracity "
+        },
+        {
+          "l": 19.65,
+          "t": 42.42,
+          "w": 47.23,
+          "h": 4.49,
+          "text": " \u2013 data quality, accuracy, trustworthiness"
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 48.56,
+          "w": 6.91,
+          "h": 3.47,
+          "text": "Value "
+        },
+        {
+          "l": 16.36,
+          "t": 48.53,
+          "w": 37.45,
+          "h": 4.51,
+          "text": " \u2013 extracting meaningful insights"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_010.webp",
+      "text": "Characteristics of Big Data\r\nVolume\r\n\u25cf Definition: Scale of data (TBs, PBs, ZBs)\r\n\u25cf Example: Facebook generates ~4PB/day\r\n\u25cf The main challenges of managing huge data include storage limitations, \r\nprocessing power requirements, and bandwidth capabilities.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 41.6,
+          "h": 7.49,
+          "text": "Characteristics of Big Data"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 10.44,
+          "h": 3.85,
+          "text": "Volume"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 44.6,
+          "h": 4.15,
+          "text": "Definition: Scale of data (TBs, PBs, ZBs)"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.97,
+          "w": 46.07,
+          "h": 4.49,
+          "text": "Example: Facebook generates ~4PB/day"
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 43.08,
+          "w": 83.81,
+          "h": 4.51,
+          "text": "The main challenges of managing huge data include storage limitations, "
+        },
+        {
+          "l": 9.56,
+          "t": 49.24,
+          "w": 69.91,
+          "h": 4.49,
+          "text": "processing power requirements, and bandwidth capabilities."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_011.webp",
+      "text": "Characteristics of Big Data\r\nVelocity\r\n\u25cf Definition: Speed of data generation & processing\r\n\u25cf Real-time analytics allows companies to respond instantly to changing \r\nconditions.\r\n\u25cf Example: Stock market tick data, IoT sensors",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 41.6,
+          "h": 7.49,
+          "text": "Characteristics of Big Data"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 11.07,
+          "h": 4.99,
+          "text": "Velocity"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 57.44,
+          "h": 4.51,
+          "text": "Definition: Speed of data generation & processing"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.97,
+          "w": 81.58,
+          "h": 4.49,
+          "text": "Real-time analytics allows companies to respond instantly to changing "
+        },
+        {
+          "l": 9.49,
+          "t": 43.1,
+          "w": 12.47,
+          "h": 3.48,
+          "text": "conditions."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 49.24,
+          "w": 51.21,
+          "h": 4.48,
+          "text": "Example: Stock market tick data, IoT sensors"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_012.webp",
+      "text": "Characteristics of Big Data\r\nVariety\r\n\u25cf Definition: Structured, semi-structured, unstructured\r\n\u25cf Examples: Tables, JSON/XML, images, videos, tweets\r\n\u25cf Challenges: Too many data sources and the data is not properly organized \r\nand managed.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 41.6,
+          "h": 7.49,
+          "text": "Characteristics of Big Data"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 10.01,
+          "h": 4.99,
+          "text": "Variety"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 61.02,
+          "h": 4.02,
+          "text": "Definition: Structured, semi-structured, unstructured"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.97,
+          "w": 60.03,
+          "h": 4.49,
+          "text": "Examples: Tables, JSON/XML, images, videos, tweets"
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 43.1,
+          "w": 86.61,
+          "h": 4.49,
+          "text": "Challenges: Too many data sources and the data is not properly organized "
+        },
+        {
+          "l": 9.46,
+          "t": 49.24,
+          "w": 16.36,
+          "h": 4.49,
+          "text": "and managed."
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_013.webp",
+      "text": "Characteristics of Big Data\r\nVeracity\r\n\u25cf Veracity: Accuracy, trustworthiness\r\n\u25cf Poor data quality or inaccuracies can lead to incorrect conclusions.\r\n\u25cf Challenge: Data quality and Data quality management is an issue.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 41.6,
+          "h": 7.49,
+          "text": "Characteristics of Big Data"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 11.44,
+          "h": 4.99,
+          "text": "Veracity"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 30.84,
+          "w": 40.46,
+          "h": 4.49,
+          "text": "Veracity: Accuracy, trustworthiness"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.97,
+          "w": 76.94,
+          "h": 4.49,
+          "text": "Poor data quality or inaccuracies can lead to incorrect conclusions."
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 43.1,
+          "w": 75.55,
+          "h": 4.49,
+          "text": "Challenge: Data quality and Data quality management is an issue."
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_014.webp",
+      "text": "Characteristics of Big Data\r\nValue\r\n\u25cf Value: Extracting insights for decision-making.\r\n\u25cf It is not just the amount of data that we store or process. \r\n\u25cf It is actually the amount of valuable, reliable and trustworthy data that \r\nneeds to be stored, processed, analyzed to find insights.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 10.04,
+          "w": 41.6,
+          "h": 7.49,
+          "text": "Characteristics of Big Data"
+        },
+        {
+          "l": 4.35,
+          "t": 21.85,
+          "w": 7.67,
+          "h": 3.85,
+          "text": "Value"
+        },
+        {
+          "l": 5.55,
+          "t": 29.75,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 28.55,
+          "w": 53.02,
+          "h": 4.51,
+          "text": "Value: Extracting insights for decision-making."
+        },
+        {
+          "l": 5.55,
+          "t": 35.89,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 34.68,
+          "w": 66.52,
+          "h": 4.51,
+          "text": "It is not just the amount of data that we store or process. "
+        },
+        {
+          "l": 5.55,
+          "t": 42.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 40.81,
+          "w": 82.18,
+          "h": 4.52,
+          "text": "It is actually the amount of valuable, reliable and trustworthy data that "
+        },
+        {
+          "l": 9.56,
+          "t": 46.95,
+          "w": 64.76,
+          "h": 4.52,
+          "text": "needs to be stored, processed, analyzed to find insights."
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_015.webp",
+      "text": "Types of Big Data",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 27.37,
+          "h": 7.46,
+          "text": "Types of Big Data"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_016.webp",
+      "text": "Types of Big Data\r\nStructured Data\r\n\u25cf highly organized and resides in fixed fields.\r\n\u25cf straightforward to store, retrieve, and analyze.\r\n\u25cf fits neatly into relational databases or spreadsheets.\r\n\u25cf ideal for traditional data analysis techniques.\r\n\u25cf is easy to manage but often represents only a fraction of the total data \r\navailable.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 27.37,
+          "h": 7.46,
+          "text": "Types of Big Data"
+        },
+        {
+          "l": 4.47,
+          "t": 24.12,
+          "w": 21.93,
+          "h": 3.85,
+          "text": "Structured Data"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 30.82,
+          "w": 49.5,
+          "h": 4.52,
+          "text": "highly organized and resides in fixed fields."
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 36.95,
+          "w": 53.62,
+          "h": 4.52,
+          "text": "straightforward to store, retrieve, and analyze."
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 43.08,
+          "w": 60.61,
+          "h": 4.52,
+          "text": "fits neatly into relational databases or spreadsheets."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 49.22,
+          "w": 51.71,
+          "h": 4.52,
+          "text": "ideal for traditional data analysis techniques."
+        },
+        {
+          "l": 5.55,
+          "t": 56.56,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 55.35,
+          "w": 82.35,
+          "h": 4.52,
+          "text": "is easy to manage but often represents only a fraction of the total data "
+        },
+        {
+          "l": 9.46,
+          "t": 61.5,
+          "w": 10.59,
+          "h": 3.48,
+          "text": "available."
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_017.webp",
+      "text": "Types of Big Data\r\nStructured Data\r\nExamples:\r\n\u25cf Financial Transactions: Records of purchases, payments, and credits\r\nstored in databases.\r\n\u25cf Inventory Databases: Data on stock levels, sales, and supply chain\r\nmovements.\r\n\u25cf CRM Systems: Customer names, phone numbers, and purchase histories.\r\nApplications:\r\n\u25cf Banking, retail.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 27.37,
+          "h": 7.46,
+          "text": "Types of Big Data"
+        },
+        {
+          "l": 4.47,
+          "t": 24.12,
+          "w": 21.93,
+          "h": 3.85,
+          "text": "Structured Data"
+        },
+        {
+          "l": 4.57,
+          "t": 30.84,
+          "w": 12.07,
+          "h": 4.49,
+          "text": "Examples:"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 36.97,
+          "w": 27.26,
+          "h": 3.47,
+          "text": "Financial Transactions"
+        },
+        {
+          "l": 37.07,
+          "t": 36.95,
+          "w": 52.27,
+          "h": 4.52,
+          "text": ": Records of purchases, payments, and credits"
+        },
+        {
+          "l": 9.47,
+          "t": 43.1,
+          "w": 22.9,
+          "h": 3.48,
+          "text": "stored in databases."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 49.24,
+          "w": 25.21,
+          "h": 4.49,
+          "text": "Inventory Databases"
+        },
+        {
+          "l": 35.04,
+          "t": 49.24,
+          "w": 51.23,
+          "h": 4.49,
+          "text": ": Data on stock levels, sales, and supply chain"
+        },
+        {
+          "l": 9.56,
+          "t": 55.82,
+          "w": 13.89,
+          "h": 3.03,
+          "text": "movements."
+        },
+        {
+          "l": 5.55,
+          "t": 62.69,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.49,
+          "t": 61.66,
+          "w": 16.12,
+          "h": 4.33,
+          "text": "CRM Systems"
+        },
+        {
+          "l": 25.87,
+          "t": 61.5,
+          "w": 68.29,
+          "h": 4.48,
+          "text": ": Customer names, phone numbers, and purchase histories."
+        },
+        {
+          "l": 4.35,
+          "t": 67.64,
+          "w": 13.88,
+          "h": 4.49,
+          "text": "Application"
+        },
+        {
+          "l": 18.5,
+          "t": 68.56,
+          "w": 1.68,
+          "h": 2.56,
+          "text": "s:"
+        },
+        {
+          "l": 5.55,
+          "t": 74.96,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 73.77,
+          "w": 18.37,
+          "h": 4.49,
+          "text": "Banking, retail."
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_018.webp",
+      "text": "Types of Big Data\r\nUnstructured Data\r\n\u25cf Does not follow any organized format.\r\n\u25cf needs a predefined model or framework. \r\n\u25cf more challenging to process and analyze.\r\n\u25cf makes up the bulk of big data.\r\n\u25cf requires advanced technologies like AI and machine learning for \r\nmeaningful insights.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 27.37,
+          "h": 7.46,
+          "text": "Types of Big Data"
+        },
+        {
+          "l": 4.58,
+          "t": 24.12,
+          "w": 25.6,
+          "h": 3.85,
+          "text": "Unstructured Data"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 43.99,
+          "h": 4.52,
+          "text": "Does not follow any organized format."
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 36.95,
+          "w": 48.21,
+          "h": 4.51,
+          "text": "needs a predefined model or framework. "
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 43.1,
+          "w": 47.55,
+          "h": 4.49,
+          "text": "more challenging to process and analyze."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 49.22,
+          "w": 34.69,
+          "h": 4.51,
+          "text": "makes up the bulk of big data."
+        },
+        {
+          "l": 5.55,
+          "t": 56.56,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 55.35,
+          "w": 74.87,
+          "h": 4.51,
+          "text": "requires advanced technologies like AI and machine learning for "
+        },
+        {
+          "l": 9.56,
+          "t": 61.48,
+          "w": 23.01,
+          "h": 4.51,
+          "text": "meaningful insights."
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_019.webp",
+      "text": "Types of Big Data\r\nUnstructured Data\r\nExamples:\r\n\u25cf Text Documents: Emails, blogs, and legal documents.\r\n\u25cf Multimedia Content: Images, videos, and audio files uploaded to\r\nplatforms like YouTube and Spotify.\r\n\u25cf Social Media Comments: Tweets, reviews, and comments that convey\r\nuser opinions and emotions.\r\nApplications:\r\n\u25cf Market Research(AI-powered sentiment analysis)\r\n\u25cf healthcare(analyzing X-rays or MRI scans)",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 27.37,
+          "h": 7.46,
+          "text": "Types of Big Data"
+        },
+        {
+          "l": 4.58,
+          "t": 24.12,
+          "w": 25.6,
+          "h": 3.85,
+          "text": "Unstructured Data"
+        },
+        {
+          "l": 4.57,
+          "t": 30.84,
+          "w": 12.07,
+          "h": 4.49,
+          "text": "Examples:"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.4,
+          "t": 37.18,
+          "w": 21.37,
+          "h": 3.28,
+          "text": "Text Documents: "
+        },
+        {
+          "l": 30.99,
+          "t": 36.97,
+          "w": 39.63,
+          "h": 4.49,
+          "text": "Emails, blogs, and legal documents"
+        },
+        {
+          "l": 70.9,
+          "t": 39.89,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 43.1,
+          "w": 25.14,
+          "h": 3.48,
+          "text": "Multimedia Content: "
+        },
+        {
+          "l": 34.83,
+          "t": 43.08,
+          "w": 49.93,
+          "h": 4.51,
+          "text": " Images, videos, and audio files uploaded to"
+        },
+        {
+          "l": 9.56,
+          "t": 49.22,
+          "w": 39.81,
+          "h": 4.52,
+          "text": "platforms like YouTube and Spotify"
+        },
+        {
+          "l": 49.53,
+          "t": 52.15,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.55,
+          "t": 56.56,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 55.37,
+          "w": 29.8,
+          "h": 3.48,
+          "text": "Social Media Comments: "
+        },
+        {
+          "l": 39.38,
+          "t": 55.37,
+          "w": 51.1,
+          "h": 4.49,
+          "text": " Tweets, reviews, and comments that convey"
+        },
+        {
+          "l": 9.55,
+          "t": 61.5,
+          "w": 31.8,
+          "h": 4.48,
+          "text": "user opinions and emotions"
+        },
+        {
+          "l": 41.62,
+          "t": 64.42,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 4.35,
+          "t": 67.64,
+          "w": 15.84,
+          "h": 4.49,
+          "text": "Applications:"
+        },
+        {
+          "l": 5.55,
+          "t": 74.96,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 73.77,
+          "w": 20.52,
+          "h": 3.47,
+          "text": "Market Research"
+        },
+        {
+          "l": 30.35,
+          "t": 73.77,
+          "w": 36.42,
+          "h": 4.49,
+          "text": "(AI-powered sentiment analysis)"
+        },
+        {
+          "l": 5.55,
+          "t": 81.09,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 79.9,
+          "w": 13.07,
+          "h": 3.47,
+          "text": "healthcare"
+        },
+        {
+          "l": 22.79,
+          "t": 79.9,
+          "w": 34.81,
+          "h": 4.49,
+          "text": "(analyzing X-rays or MRI scans)"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_020.webp",
+      "text": "Types of Big Data\r\nSemi structured Data\r\n\u25cf combines elements of both structured and unstructured data. \r\n\u25cf It has an organizational framework, such as tags or markers. \r\n\u25cf but lacks the rigid format of relational databases.\r\n\u25cf bridges the gap between the flexibility of unstructured data and the \r\norganization of structured data.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 27.37,
+          "h": 7.46,
+          "text": "Types of Big Data"
+        },
+        {
+          "l": 4.47,
+          "t": 24.12,
+          "w": 29.24,
+          "h": 3.85,
+          "text": "Semi structured Data"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.49,
+          "t": 30.82,
+          "w": 72.66,
+          "h": 3.51,
+          "text": "combines elements of both structured and unstructured data. "
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.95,
+          "w": 70.46,
+          "h": 4.51,
+          "text": "It has an organizational framework, such as tags or markers. "
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 43.08,
+          "w": 56.65,
+          "h": 4.51,
+          "text": "but lacks the rigid format of relational databases."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 49.22,
+          "w": 79.02,
+          "h": 4.52,
+          "text": "bridges the gap between the flexibility of unstructured data and the "
+        },
+        {
+          "l": 9.49,
+          "t": 55.35,
+          "w": 36.55,
+          "h": 4.51,
+          "text": "organization of structured data."
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_021.webp",
+      "text": "Types of Big Data\r\nSemi structured Data\r\nExamples:\r\n\u25cf XML Files: These are used in data exchange between systems with\r\nstructured tags defining elements.\r\n\u25cf JSON Documents: These are commonly used to transmit data between\r\nweb applications and servers.\r\n\u25cf E-commerce Product Catalogs: Products are described using structured\r\nattributes (like price and stock) alongside unstructured descriptions.\r\nApplications:\r\n\u25cf APIs, Cloud Storage.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 27.37,
+          "h": 7.46,
+          "text": "Types of Big Data"
+        },
+        {
+          "l": 4.47,
+          "t": 24.12,
+          "w": 29.24,
+          "h": 3.85,
+          "text": "Semi structured Data"
+        },
+        {
+          "l": 4.57,
+          "t": 30.84,
+          "w": 12.07,
+          "h": 4.49,
+          "text": "Examples:"
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 36.97,
+          "w": 12.1,
+          "h": 3.48,
+          "text": "XML Files: "
+        },
+        {
+          "l": 21.58,
+          "t": 36.97,
+          "w": 64.06,
+          "h": 4.49,
+          "text": " These are used in data exchange between systems with"
+        },
+        {
+          "l": 9.47,
+          "t": 43.08,
+          "w": 38.39,
+          "h": 4.51,
+          "text": "structured tags defining elements"
+        },
+        {
+          "l": 48.13,
+          "t": 46.02,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.16,
+          "t": 49.39,
+          "w": 21.6,
+          "h": 4.2,
+          "text": "JSON Documents: "
+        },
+        {
+          "l": 30.88,
+          "t": 49.24,
+          "w": 60.27,
+          "h": 4.49,
+          "text": " These are commonly used to transmit data between"
+        },
+        {
+          "l": 9.38,
+          "t": 55.37,
+          "w": 33.15,
+          "h": 4.48,
+          "text": "web applications and servers"
+        },
+        {
+          "l": 42.81,
+          "t": 58.29,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.55,
+          "t": 62.69,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 61.5,
+          "w": 36.98,
+          "h": 4.49,
+          "text": "E-commerce Product Catalogs: "
+        },
+        {
+          "l": 46.67,
+          "t": 61.5,
+          "w": 46.38,
+          "h": 4.49,
+          "text": " Products are described using structured"
+        },
+        {
+          "l": 9.46,
+          "t": 67.64,
+          "w": 76.9,
+          "h": 4.49,
+          "text": "attributes (like price and stock) alongside unstructured descriptions"
+        },
+        {
+          "l": 86.65,
+          "t": 70.55,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 4.35,
+          "t": 73.77,
+          "w": 15.84,
+          "h": 4.49,
+          "text": "Applications:"
+        },
+        {
+          "l": 5.55,
+          "t": 81.09,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 80.1,
+          "w": 5.21,
+          "h": 3.28,
+          "text": "APIs"
+        },
+        {
+          "l": 14.71,
+          "t": 82.81,
+          "w": 1.27,
+          "h": 1.09,
+          "text": ", "
+        },
+        {
+          "l": 16.11,
+          "t": 79.9,
+          "w": 16.85,
+          "h": 4.49,
+          "text": "Cloud Storage"
+        },
+        {
+          "l": 33.18,
+          "t": 82.64,
+          "w": 0.43,
+          "h": 0.74,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_022.webp",
+      "text": "Sources of Big Data\r\n\u25cf Social media platforms (Facebook, Twitter, Instagram)\r\n\u25cf IoT devices & sensors (smart homes, wearables)\r\n\u25cf Business transactions (e-commerce, banking)\r\n\u25cf Healthcare systems (patient records, medical imaging)\r\n\u25cf Scientific research (genomics, astronomy)\r\n\u25cf Government & public data (census, traffic monitoring)",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 30.67,
+          "h": 7.49,
+          "text": "Sources of Big Data"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 24.0,
+          "w": 62.09,
+          "h": 4.51,
+          "text": "Social media platforms (Facebook, Twitter, Instagram)"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.16,
+          "w": 55.3,
+          "h": 4.12,
+          "text": "IoT devices & sensors (smart homes, wearables)"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 52.18,
+          "h": 4.49,
+          "text": "Business transactions (e-commerce, banking)"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 62.54,
+          "h": 4.49,
+          "text": "Healthcare systems (patient records, medical imaging)"
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 48.53,
+          "w": 48.02,
+          "h": 4.52,
+          "text": "Scientific research (genomics, astronomy)"
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 54.67,
+          "w": 62.23,
+          "h": 4.51,
+          "text": "Government & public data (census, traffic monitoring)"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_023.webp",
+      "text": "Traditional Data vs Big Data\r\nAspect Traditional Data Big Data\r\nSize MBs to GBs TBs to PBs\r\nType of data Mostly structured Structured, \r\nsemi-structured, \r\nunstructured\r\nData integration Easy Difficult\r\nProcessing tools RDBMS, SQL Hadoop, Spark, NoSQL\r\nStorage Single server Distributed systems\r\nAnalysis Batch processing Real-time + batch",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 44.12,
+          "h": 7.46,
+          "text": "Traditional Data vs Big Data"
+        },
+        {
+          "l": 11.35,
+          "t": 30.36,
+          "w": 7.39,
+          "h": 3.82,
+          "text": "Aspect "
+        },
+        {
+          "l": 37.79,
+          "t": 30.19,
+          "w": 17.88,
+          "h": 3.08,
+          "text": "Traditional Data "
+        },
+        {
+          "l": 64.33,
+          "t": 30.19,
+          "w": 8.92,
+          "h": 3.99,
+          "text": "Big Data"
+        },
+        {
+          "l": 11.47,
+          "t": 38.59,
+          "w": 3.84,
+          "h": 2.98,
+          "text": "Size "
+        },
+        {
+          "l": 37.96,
+          "t": 38.63,
+          "w": 11.56,
+          "h": 2.94,
+          "text": "MBs to GBs "
+        },
+        {
+          "l": 64.15,
+          "t": 38.67,
+          "w": 10.7,
+          "h": 2.9,
+          "text": "TBs to PBs"
+        },
+        {
+          "l": 11.37,
+          "t": 46.76,
+          "w": 12.59,
+          "h": 4.01,
+          "text": "Type of data "
+        },
+        {
+          "l": 37.96,
+          "t": 46.78,
+          "w": 17.87,
+          "h": 3.99,
+          "text": "Mostly structured "
+        },
+        {
+          "l": 64.25,
+          "t": 46.78,
+          "w": 12.04,
+          "h": 3.55,
+          "text": "Structured, "
+        },
+        {
+          "l": 64.24,
+          "t": 51.52,
+          "w": 17.52,
+          "h": 3.55,
+          "text": "semi-structured, "
+        },
+        {
+          "l": 64.31,
+          "t": 56.26,
+          "w": 13.2,
+          "h": 3.08,
+          "text": "unstructured"
+        },
+        {
+          "l": 11.57,
+          "t": 64.66,
+          "w": 16.4,
+          "h": 3.89,
+          "text": "Data integration "
+        },
+        {
+          "l": 37.96,
+          "t": 64.74,
+          "w": 4.42,
+          "h": 3.81,
+          "text": "Easy "
+        },
+        {
+          "l": 64.35,
+          "t": 64.54,
+          "w": 7.73,
+          "h": 3.1,
+          "text": "Difficult"
+        },
+        {
+          "l": 11.57,
+          "t": 72.85,
+          "w": 16.47,
+          "h": 3.99,
+          "text": "Processing tools "
+        },
+        {
+          "l": 37.96,
+          "t": 72.99,
+          "w": 12.61,
+          "h": 3.58,
+          "text": "RDBMS, SQL "
+        },
+        {
+          "l": 64.35,
+          "t": 72.85,
+          "w": 23.28,
+          "h": 3.99,
+          "text": "Hadoop, Spark, NoSQL"
+        },
+        {
+          "l": 11.47,
+          "t": 81.29,
+          "w": 7.71,
+          "h": 3.85,
+          "text": "Storage "
+        },
+        {
+          "l": 37.86,
+          "t": 81.15,
+          "w": 13.06,
+          "h": 3.99,
+          "text": "Single server "
+        },
+        {
+          "l": 64.35,
+          "t": 81.15,
+          "w": 20.24,
+          "h": 3.99,
+          "text": "Distributed systems"
+        },
+        {
+          "l": 11.35,
+          "t": 89.45,
+          "w": 8.25,
+          "h": 3.99,
+          "text": "Analysis "
+        },
+        {
+          "l": 37.96,
+          "t": 89.45,
+          "w": 17.35,
+          "h": 3.99,
+          "text": "Batch processing "
+        },
+        {
+          "l": 64.35,
+          "t": 89.45,
+          "w": 17.61,
+          "h": 3.08,
+          "text": "Real-time + batch"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_024.webp",
+      "text": "Applications of Big Data\r\n\u25cf Business & Marketing \u2013 customer behavior analysis, targeted ads\r\n\u25cf Healthcare \u2013 predictive diagnosis, drug discovery\r\n\u25cf Finance \u2013 fraud detection, risk management\r\n\u25cf Transportation \u2013 traffic prediction, route optimization\r\n\u25cf Retail \u2013 inventory management, recommendation systems\r\n\u25cf Government \u2013 smart cities, crime prediction\r\n\u25cf Science & Research \u2013 climate modeling, space exploration",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.23,
+          "w": 38.18,
+          "h": 7.46,
+          "text": "Applications of Big Data"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 75.07,
+          "h": 4.49,
+          "text": "Business & Marketing \u2013 customer behavior analysis, targeted ads"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.36,
+          "w": 56.41,
+          "h": 4.49,
+          "text": "Healthcare \u2013 predictive diagnosis, drug discovery"
+        },
+        {
+          "l": 5.55,
+          "t": 35.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 34.67,
+          "w": 50.75,
+          "h": 4.51,
+          "text": "Finance \u2013 fraud detection, risk management"
+        },
+        {
+          "l": 5.55,
+          "t": 41.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 40.0,
+          "w": 61.91,
+          "h": 4.51,
+          "text": "Transportation \u2013 traffic prediction, route optimization"
+        },
+        {
+          "l": 5.55,
+          "t": 46.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 45.36,
+          "w": 67.36,
+          "h": 4.49,
+          "text": "Retail \u2013 inventory management, recommendation systems"
+        },
+        {
+          "l": 5.55,
+          "t": 51.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 50.69,
+          "w": 50.6,
+          "h": 4.48,
+          "text": "Government \u2013 smart cities, crime prediction"
+        },
+        {
+          "l": 5.55,
+          "t": 57.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 56.02,
+          "w": 66.71,
+          "h": 4.49,
+          "text": "Science & Research \u2013 climate modeling, space exploration"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_025.webp",
+      "text": "Applications of Big Data\r\n\u25cf Business & Marketing \r\n\u25cb Analyzes customer behavior and preferences.\r\n\u25cb Helps businesses create targeted advertisements.\r\n\u25cb Improves customer satisfaction and sales. \r\n\u25cf Healthcare\r\n\u25cb Supports predictive diagnosis and early disease detection.\r\n\u25cb Helps in drug discovery and medical research.\r\n\u25cb Enables personalized treatment plans.\r\n\u25cf Finance\r\n\u25cb Detects fraudulent transactions.\r\n\u25cb Helps assess financial risks.\r\n\u25cb Supports credit scoring and investment decisions.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.23,
+          "w": 38.18,
+          "h": 7.46,
+          "text": "Applications of Big Data"
+        },
+        {
+          "l": 5.55,
+          "t": 24.78,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 23.6,
+          "w": 25.58,
+          "h": 4.49,
+          "text": "Business & Marketing "
+        },
+        {
+          "l": 10.7,
+          "t": 29.41,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 28.33,
+          "w": 47.01,
+          "h": 4.01,
+          "text": "Analyzes customer behavior and preferences."
+        },
+        {
+          "l": 10.7,
+          "t": 33.67,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 32.62,
+          "w": 51.02,
+          "h": 3.99,
+          "text": "Helps businesses create targeted advertisements."
+        },
+        {
+          "l": 10.7,
+          "t": 37.94,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 36.86,
+          "w": 43.65,
+          "h": 4.01,
+          "text": "Improves customer satisfaction and sales. "
+        },
+        {
+          "l": 5.55,
+          "t": 47.18,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 46.0,
+          "w": 12.32,
+          "h": 3.47,
+          "text": "Healthcare"
+        },
+        {
+          "l": 10.7,
+          "t": 51.81,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 50.75,
+          "w": 59.6,
+          "h": 3.99,
+          "text": "Supports predictive diagnosis and early disease detection."
+        },
+        {
+          "l": 10.7,
+          "t": 56.07,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 55.02,
+          "w": 47.07,
+          "h": 3.99,
+          "text": "Helps in drug discovery and medical research."
+        },
+        {
+          "l": 10.7,
+          "t": 60.34,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 59.28,
+          "w": 39.24,
+          "h": 3.99,
+          "text": "Enables personalized treatment plans."
+        },
+        {
+          "l": 5.55,
+          "t": 69.58,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 68.51,
+          "w": 8.6,
+          "h": 3.36,
+          "text": "Finance"
+        },
+        {
+          "l": 10.7,
+          "t": 74.21,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 73.13,
+          "w": 32.85,
+          "h": 3.12,
+          "text": "Detects fraudulent transactions."
+        },
+        {
+          "l": 10.7,
+          "t": 78.47,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 77.4,
+          "w": 27.93,
+          "h": 4.01,
+          "text": "Helps assess financial risks."
+        },
+        {
+          "l": 10.7,
+          "t": 82.74,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 81.68,
+          "w": 51.13,
+          "h": 3.99,
+          "text": "Supports credit scoring and investment decisions."
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_026.webp",
+      "text": "Applications of Big Data\r\n\u25cf Transportation\r\n\u25cb Predicts traffic congestion.\r\n\u25cb Optimizes routes and travel time.\r\n\u25cb Improves public transportation planning.\r\n\u25cf Retail\r\n\u25cb Manages inventory and stock levels.\r\n\u25cb Recommends products based on customer preferences.\r\n\u25cb Forecasts product demand and sales.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.23,
+          "w": 38.18,
+          "h": 7.46,
+          "text": "Applications of Big Data"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 24.13,
+          "w": 17.16,
+          "h": 4.37,
+          "text": "Transportation"
+        },
+        {
+          "l": 10.7,
+          "t": 30.32,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 29.24,
+          "w": 27.04,
+          "h": 4.01,
+          "text": "Predicts traffic congestion."
+        },
+        {
+          "l": 10.7,
+          "t": 35.06,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.48,
+          "t": 34.0,
+          "w": 34.14,
+          "h": 3.99,
+          "text": "Optimizes routes and travel time."
+        },
+        {
+          "l": 10.7,
+          "t": 39.8,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 38.74,
+          "w": 41.91,
+          "h": 3.99,
+          "text": "Improves public transportation planning."
+        },
+        {
+          "l": 5.55,
+          "t": 49.51,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.32,
+          "w": 6.02,
+          "h": 3.47,
+          "text": "Retail"
+        },
+        {
+          "l": 10.7,
+          "t": 54.61,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 53.56,
+          "w": 36.77,
+          "h": 3.99,
+          "text": "Manages inventory and stock levels."
+        },
+        {
+          "l": 10.7,
+          "t": 59.35,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 58.28,
+          "w": 57.63,
+          "h": 4.01,
+          "text": "Recommends products based on customer preferences."
+        },
+        {
+          "l": 10.7,
+          "t": 64.1,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 63.04,
+          "w": 38.24,
+          "h": 3.99,
+          "text": "Forecasts product demand and sales."
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_027.webp",
+      "text": "Applications of Big Data\r\n\u25cf Government\r\n\u25cb Supports smart city development.\r\n\u25cb Helps analyze crime patterns.\r\n\u25cb Improves public services and resource allocation.\r\n\u25cf Science & Research\r\n\u25cb Supports climate modeling and weather forecasting.\r\n\u25cb Helps analyze astronomical and space exploration data.\r\n\u25cb Accelerates scientific discoveries through large-scale data analysis.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.23,
+          "w": 38.18,
+          "h": 7.46,
+          "text": "Applications of Big Data"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.18,
+          "w": 14.45,
+          "h": 3.31,
+          "text": "Government"
+        },
+        {
+          "l": 10.7,
+          "t": 30.32,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 29.26,
+          "w": 34.66,
+          "h": 3.99,
+          "text": "Supports smart city development."
+        },
+        {
+          "l": 10.7,
+          "t": 35.06,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 34.0,
+          "w": 30.16,
+          "h": 3.99,
+          "text": "Helps analyze crime patterns."
+        },
+        {
+          "l": 10.7,
+          "t": 39.8,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 38.74,
+          "w": 50.4,
+          "h": 3.99,
+          "text": "Improves public services and resource allocation."
+        },
+        {
+          "l": 5.55,
+          "t": 50.1,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 48.91,
+          "w": 22.19,
+          "h": 3.47,
+          "text": "Science & Research"
+        },
+        {
+          "l": 10.7,
+          "t": 55.21,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 54.13,
+          "w": 53.73,
+          "h": 4.01,
+          "text": "Supports climate modeling and weather forecasting."
+        },
+        {
+          "l": 10.7,
+          "t": 59.95,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 58.89,
+          "w": 57.18,
+          "h": 3.99,
+          "text": "Helps analyze astronomical and space exploration data."
+        },
+        {
+          "l": 10.7,
+          "t": 64.69,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 63.61,
+          "w": 68.35,
+          "h": 4.01,
+          "text": "Accelerates scientific discoveries through large-scale data analysis."
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_028.webp",
+      "text": "Introduction to Big Data Analytics\r\nWhat is Data Analytics?\r\n\u25cf Data analytics is a discipline focused on extracting insights from data.\r\n\u25cf It comprises the processes, tools and techniques of data analysis and \r\nmanagement, including the collection, organization, and storage of data.\r\n\u25cf The chief aim of data analytics is to apply statistical analysis and \r\ntechnologies on data to find trends and solve problems.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 53.24,
+          "h": 7.46,
+          "text": "Introduction to Big Data Analytics"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 32.36,
+          "h": 4.99,
+          "text": "What is Data Analytics?"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 80.04,
+          "h": 4.52,
+          "text": "Data analytics is a discipline focused on extracting insights from data."
+        },
+        {
+          "l": 5.55,
+          "t": 38.16,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.95,
+          "w": 80.71,
+          "h": 4.52,
+          "text": "It comprises the processes, tools and techniques of data analysis and "
+        },
+        {
+          "l": 9.56,
+          "t": 43.08,
+          "w": 83.67,
+          "h": 4.51,
+          "text": "management, including the collection, organization, and storage of data."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 49.22,
+          "w": 74.71,
+          "h": 4.52,
+          "text": "The chief aim of data analytics is to apply statistical analysis and "
+        },
+        {
+          "l": 9.39,
+          "t": 55.35,
+          "w": 64.63,
+          "h": 4.51,
+          "text": "technologies on data to find trends and solve problems."
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_029.webp",
+      "text": "Introduction to Big Data Analytics\r\nWhat is Data Analytics?\r\n\u25cf Data analytics has become increasingly important in the enterprise as a \r\nmeans for analyzing and shaping business processes and improving \r\ndecision-making and business results.\r\n\u25cf Data analytics draws from a range of disciplines \u2014 including computer \r\nprogramming, mathematics, and statistics \u2014 to perform analysis on data \r\nin an effort to describe, predict, and improve performance.\r\n\u25cf To ensure robust analysis, data analytics teams leverage a range of data \r\nmanagement techniques, including data mining, data cleansing, data \r\ntransformation, data modeling, and more.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 53.24,
+          "h": 7.46,
+          "text": "Introduction to Big Data Analytics"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 32.36,
+          "h": 4.99,
+          "text": "What is Data Analytics?"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.84,
+          "w": 83.32,
+          "h": 4.49,
+          "text": "Data analytics has become increasingly important in the enterprise as a "
+        },
+        {
+          "l": 9.56,
+          "t": 36.95,
+          "w": 79.3,
+          "h": 4.52,
+          "text": "means for analyzing and shaping business processes and improving "
+        },
+        {
+          "l": 9.49,
+          "t": 43.1,
+          "w": 43.72,
+          "h": 4.49,
+          "text": "decision-making and business results."
+        },
+        {
+          "l": 5.55,
+          "t": 50.42,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 49.22,
+          "w": 82.15,
+          "h": 4.52,
+          "text": "Data analytics draws from a range of disciplines \u2014 including computer "
+        },
+        {
+          "l": 9.56,
+          "t": 55.35,
+          "w": 85.12,
+          "h": 4.52,
+          "text": "programming, mathematics, and statistics \u2014 to perform analysis on data "
+        },
+        {
+          "l": 9.54,
+          "t": 61.48,
+          "w": 68.05,
+          "h": 4.51,
+          "text": "in an effort to describe, predict, and improve performance."
+        },
+        {
+          "l": 5.55,
+          "t": 68.82,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 67.62,
+          "w": 84.15,
+          "h": 4.52,
+          "text": "To ensure robust analysis, data analytics teams leverage a range of data "
+        },
+        {
+          "l": 9.56,
+          "t": 73.77,
+          "w": 80.25,
+          "h": 4.49,
+          "text": "management techniques, including data mining, data cleansing, data "
+        },
+        {
+          "l": 9.39,
+          "t": 79.88,
+          "w": 48.72,
+          "h": 4.51,
+          "text": "transformation, data modeling, and more."
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_030.webp",
+      "text": "Introduction to Big Data Analytics\r\nData Analytics vs Data Analysis\r\n\u25cf Data analysis is a subset of data analytics concerned with examining, \r\ncleansing, transforming, and modeling data to derive conclusions.\r\n\u25cf Data analytics includes the tools and techniques used to perform data \r\nanalysis.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 53.24,
+          "h": 7.46,
+          "text": "Introduction to Big Data Analytics"
+        },
+        {
+          "l": 4.6,
+          "t": 24.12,
+          "w": 42.87,
+          "h": 4.99,
+          "text": "Data Analytics vs Data Analysis"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 80.16,
+          "h": 4.52,
+          "text": "Data analysis is a subset of data analytics concerned with examining, "
+        },
+        {
+          "l": 9.49,
+          "t": 36.95,
+          "w": 76.02,
+          "h": 4.51,
+          "text": "cleansing, transforming, and modeling data to derive conclusions."
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 43.08,
+          "w": 81.78,
+          "h": 4.52,
+          "text": "Data analytics includes the tools and techniques used to perform data "
+        },
+        {
+          "l": 9.46,
+          "t": 49.24,
+          "w": 10.39,
+          "h": 4.49,
+          "text": "analysis. "
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_031.webp",
+      "text": "Introduction to Big Data Analytics\r\nTypes of Data Analytics",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 53.24,
+          "h": 7.46,
+          "text": "Introduction to Big Data Analytics"
+        },
+        {
+          "l": 4.4,
+          "t": 24.09,
+          "w": 32.07,
+          "h": 5.01,
+          "text": "Types of Data Analytics"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_theory_module_5_module_5__big-data_part1_pdf/thumb_032.webp",
+      "text": "Introduction to Big Data Analytics\r\nWhat is Big Data Analytics?\r\n\u25cf Big data analytics refers to collecting, processing, cleaning, and analyzing \r\nlarge datasets to help organizations operationalize their big data.\r\n\u25cf Big data analytics describes the process of uncovering trends, patterns, \r\nand correlations in large amounts of raw data to help make \r\ndata-informed decisions.\r\n\u25cf Big data analytics is the use of advanced analytic techniques against very \r\nlarge, diverse data sets that include structured, semi-structured and \r\nunstructured data, from different sources, and in different sizes from \r\nterabytes to zettabytes.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 53.24,
+          "h": 7.46,
+          "text": "Introduction to Big Data Analytics"
+        },
+        {
+          "l": 4.35,
+          "t": 24.12,
+          "w": 37.35,
+          "h": 4.99,
+          "text": "What is Big Data Analytics?"
+        },
+        {
+          "l": 5.55,
+          "t": 32.02,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.82,
+          "w": 84.82,
+          "h": 4.52,
+          "text": "Big data analytics refers to collecting, processing, cleaning, and analyzing "
+        },
+        {
+          "l": 9.56,
+          "t": 36.97,
+          "w": 75.11,
+          "h": 4.49,
+          "text": "large datasets to help organizations operationalize their big data."
+        },
+        {
+          "l": 5.55,
+          "t": 44.29,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 43.08,
+          "w": 83.05,
+          "h": 4.52,
+          "text": "Big data analytics describes the process of uncovering trends, patterns, "
+        },
+        {
+          "l": 9.46,
+          "t": 49.22,
+          "w": 69.44,
+          "h": 4.51,
+          "text": "and correlations in large amounts of raw data to help make "
+        },
+        {
+          "l": 9.49,
+          "t": 55.35,
+          "w": 28.55,
+          "h": 3.51,
+          "text": "data-informed decisions."
+        },
+        {
+          "l": 5.55,
+          "t": 62.69,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 61.48,
+          "w": 84.77,
+          "h": 4.52,
+          "text": "Big data analytics is the use of advanced analytic techniques against very "
+        },
+        {
+          "l": 9.56,
+          "t": 67.64,
+          "w": 79.33,
+          "h": 4.49,
+          "text": "large, diverse data sets that include structured, semi-structured and "
+        },
+        {
+          "l": 9.55,
+          "t": 73.75,
+          "w": 80.77,
+          "h": 4.02,
+          "text": "unstructured data, from different sources, and in different sizes from "
+        },
+        {
+          "l": 9.39,
+          "t": 79.9,
+          "w": 27.08,
+          "h": 4.49,
+          "text": "terabytes to zettabytes."
+        }
+      ]
+    }
+  ]
+}

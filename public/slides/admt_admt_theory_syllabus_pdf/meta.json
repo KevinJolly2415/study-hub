@@ -1,0 +1,1653 @@
+{
+  "mtime": 1790143004.1100082,
+  "aspectRatio": 0.71,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_theory_syllabus_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_theory_syllabus_pdf/thumb_001.webp",
+      "text": "Advanced Data Management Technologies (IT5PE_CR1) \r\nTeaching Scheme\r\nCourse Code Course Name Contact \r\nHours\r\nCredits\r\nIT5PE_CR1 Advanced Data Management \r\nTechnologies\r\n03 03\r\nExamination and Evaluation Scheme\r\nFormative \r\nAssessment Summative Assessment\r\nISE# MSE ESE Total \r\nMarks Duration Marks Marks Duration \r\n(Hrs.) Marks Duration (Hrs.)\r\n20 CA 20 1 60 2.5 100\r\nCourse Objectives\r\nSr. \r\nNo. Objectives\r\nThe course aims:\r\n1\r\nTo introduce advanced concepts of transaction management and recovery techniques.\r\n2\r\nTo impart knowledge related to query processing and query optimizer phases of a database \r\nmanagement system\r\n3\r\nTo introduce concepts of advanced access control techniques like role based and discretionary \r\nmethods \r\n4\r\nTo introduce advanced database models like distributed databases and emerging data models \r\nlike temporal, mobile and spatial databases. \r\n5\r\nTo introduce the concepts of Big Data technologies and frameworks used to store, process and \r\nanalyze large-scale datasets for strategic decision making.\r\nCourse Outcomes\r\nThe student will be able to:\r\n1\r\nExplain and analyze the concept of a transaction, and evaluate how ACID properties are \r\npreserved during concurrent transactions in a database\r\n2\r\nMeasure and evaluate query costs, and design alternative efficient paths for optimized query \r\nexecution\r\n3 Apply and integrate advanced access control protocols to regulate and secure database usage\r\n4\r\nCreate distributed database models and understand design of applications using advanced \r\nparadigms such as mobile and spatial databases",
+      "width": 1193,
+      "height": 1685,
+      "rects": [
+        {
+          "l": 20.54,
+          "t": 7.01,
+          "w": 66.25,
+          "h": 1.69,
+          "text": "Advanced Data Management Technologies (IT5PE_CR1) "
+        },
+        {
+          "l": 7.39,
+          "t": 11.46,
+          "w": 17.42,
+          "h": 1.49,
+          "text": "Teaching Scheme"
+        },
+        {
+          "l": 20.22,
+          "t": 14.79,
+          "w": 10.99,
+          "h": 0.98,
+          "text": "Course Code "
+        },
+        {
+          "l": 45.73,
+          "t": 14.79,
+          "w": 11.55,
+          "h": 0.98,
+          "text": "Course Name "
+        },
+        {
+          "l": 68.11,
+          "t": 14.79,
+          "w": 7.23,
+          "h": 0.98,
+          "text": "Contact "
+        },
+        {
+          "l": 68.79,
+          "t": 16.45,
+          "w": 5.26,
+          "h": 0.96,
+          "text": "Hours"
+        },
+        {
+          "l": 78.45,
+          "t": 14.78,
+          "w": 6.21,
+          "h": 0.99,
+          "text": "Credits"
+        },
+        {
+          "l": 20.77,
+          "t": 18.13,
+          "w": 9.65,
+          "h": 1.27,
+          "text": "IT5PE_CR1 "
+        },
+        {
+          "l": 39.77,
+          "t": 18.11,
+          "w": 23.96,
+          "h": 1.3,
+          "text": "Advanced Data Management "
+        },
+        {
+          "l": 46.11,
+          "t": 19.75,
+          "w": 10.7,
+          "h": 1.3,
+          "text": "Technologies"
+        },
+        {
+          "l": 70.49,
+          "t": 18.14,
+          "w": 1.77,
+          "h": 0.98,
+          "text": "03 "
+        },
+        {
+          "l": 80.62,
+          "t": 18.14,
+          "w": 1.77,
+          "h": 0.98,
+          "text": "03"
+        },
+        {
+          "l": 7.36,
+          "t": 22.96,
+          "w": 37.02,
+          "h": 1.16,
+          "text": "Examination and Evaluation Scheme"
+        },
+        {
+          "l": 18.11,
+          "t": 26.29,
+          "w": 9.4,
+          "h": 0.98,
+          "text": "Formative "
+        },
+        {
+          "l": 17.62,
+          "t": 27.93,
+          "w": 9.81,
+          "h": 0.98,
+          "text": "Assessment "
+        },
+        {
+          "l": 45.88,
+          "t": 27.11,
+          "w": 10.14,
+          "h": 0.99,
+          "text": "Summative "
+        },
+        {
+          "l": 56.04,
+          "t": 27.12,
+          "w": 9.81,
+          "h": 0.98,
+          "text": "Assessment"
+        },
+        {
+          "l": 20.6,
+          "t": 29.85,
+          "w": 3.12,
+          "h": 0.99,
+          "text": "ISE"
+        },
+        {
+          "l": 23.85,
+          "t": 29.7,
+          "w": 0.62,
+          "h": 0.66,
+          "text": "# "
+        },
+        {
+          "l": 41.78,
+          "t": 29.85,
+          "w": 4.23,
+          "h": 0.99,
+          "text": "MSE "
+        },
+        {
+          "l": 65.79,
+          "t": 29.85,
+          "w": 3.68,
+          "h": 0.99,
+          "text": "ESE "
+        },
+        {
+          "l": 81.49,
+          "t": 30.71,
+          "w": 5.02,
+          "h": 0.96,
+          "text": "Total "
+        },
+        {
+          "l": 14.3,
+          "t": 32.61,
+          "w": 5.58,
+          "h": 0.96,
+          "text": "Marks "
+        },
+        {
+          "l": 22.78,
+          "t": 32.59,
+          "w": 7.74,
+          "h": 0.98,
+          "text": "Duration "
+        },
+        {
+          "l": 33.45,
+          "t": 32.61,
+          "w": 5.58,
+          "h": 0.96,
+          "text": "Marks "
+        },
+        {
+          "l": 80.89,
+          "t": 32.35,
+          "w": 5.58,
+          "h": 0.96,
+          "text": "Marks "
+        },
+        {
+          "l": 44.19,
+          "t": 31.77,
+          "w": 8.31,
+          "h": 0.98,
+          "text": "Duration "
+        },
+        {
+          "l": 45.61,
+          "t": 33.41,
+          "w": 4.92,
+          "h": 1.25,
+          "text": "(Hrs.) "
+        },
+        {
+          "l": 57.05,
+          "t": 32.61,
+          "w": 5.58,
+          "h": 0.96,
+          "text": "Marks "
+        },
+        {
+          "l": 65.05,
+          "t": 32.59,
+          "w": 13.3,
+          "h": 1.25,
+          "text": "Duration (Hrs.)"
+        },
+        {
+          "l": 16.15,
+          "t": 35.11,
+          "w": 1.9,
+          "h": 0.98,
+          "text": "20 "
+        },
+        {
+          "l": 25.34,
+          "t": 35.11,
+          "w": 2.71,
+          "h": 0.98,
+          "text": "CA "
+        },
+        {
+          "l": 35.3,
+          "t": 35.11,
+          "w": 1.9,
+          "h": 0.98,
+          "text": "20 "
+        },
+        {
+          "l": 47.8,
+          "t": 35.11,
+          "w": 0.53,
+          "h": 0.96,
+          "text": "1 "
+        },
+        {
+          "l": 58.93,
+          "t": 35.11,
+          "w": 1.85,
+          "h": 0.98,
+          "text": "60 "
+        },
+        {
+          "l": 70.52,
+          "t": 35.11,
+          "w": 2.34,
+          "h": 0.98,
+          "text": "2.5 "
+        },
+        {
+          "l": 82.43,
+          "t": 35.11,
+          "w": 2.71,
+          "h": 0.98,
+          "text": "100"
+        },
+        {
+          "l": 7.4,
+          "t": 38.29,
+          "w": 18.17,
+          "h": 1.49,
+          "text": "Course Objectives"
+        },
+        {
+          "l": 8.36,
+          "t": 41.62,
+          "w": 2.91,
+          "h": 0.99,
+          "text": "Sr. "
+        },
+        {
+          "l": 7.94,
+          "t": 43.28,
+          "w": 2.85,
+          "h": 0.96,
+          "text": "No. "
+        },
+        {
+          "l": 47.7,
+          "t": 42.45,
+          "w": 8.89,
+          "h": 1.27,
+          "text": "Objectives"
+        },
+        {
+          "l": 7.61,
+          "t": 45.11,
+          "w": 13.51,
+          "h": 1.01,
+          "text": "The course aims:"
+        },
+        {
+          "l": 9.11,
+          "t": 48.33,
+          "w": 0.53,
+          "h": 0.96,
+          "text": "1"
+        },
+        {
+          "l": 14.0,
+          "t": 47.56,
+          "w": 52.13,
+          "h": 1.3,
+          "text": "To introduce advanced concepts of transaction management and "
+        },
+        {
+          "l": 66.16,
+          "t": 47.56,
+          "w": 16.49,
+          "h": 1.3,
+          "text": "recovery techniques."
+        },
+        {
+          "l": 8.92,
+          "t": 52.76,
+          "w": 0.88,
+          "h": 0.96,
+          "text": "2"
+        },
+        {
+          "l": 14.0,
+          "t": 51.92,
+          "w": 76.87,
+          "h": 1.3,
+          "text": "To impart knowledge related to query processing and query optimizer phases of a database "
+        },
+        {
+          "l": 13.95,
+          "t": 53.7,
+          "w": 16.34,
+          "h": 1.15,
+          "text": "management system"
+        },
+        {
+          "l": 8.96,
+          "t": 57.66,
+          "w": 0.76,
+          "h": 0.98,
+          "text": "3"
+        },
+        {
+          "l": 14.0,
+          "t": 56.44,
+          "w": 76.87,
+          "h": 1.3,
+          "text": "To introduce concepts of advanced access control techniques like role based and discretionary "
+        },
+        {
+          "l": 13.95,
+          "t": 58.08,
+          "w": 7.31,
+          "h": 1.01,
+          "text": "methods "
+        },
+        {
+          "l": 8.91,
+          "t": 62.88,
+          "w": 0.9,
+          "h": 0.96,
+          "text": "4"
+        },
+        {
+          "l": 14.0,
+          "t": 61.7,
+          "w": 76.87,
+          "h": 1.3,
+          "text": "To introduce advanced database models like distributed databases and emerging data models "
+        },
+        {
+          "l": 14.0,
+          "t": 63.34,
+          "w": 35.58,
+          "h": 1.29,
+          "text": "like temporal, mobile and spatial databases. "
+        },
+        {
+          "l": 8.98,
+          "t": 68.27,
+          "w": 0.78,
+          "h": 0.96,
+          "text": "5"
+        },
+        {
+          "l": 14.5,
+          "t": 66.9,
+          "w": 76.4,
+          "h": 1.3,
+          "text": "To introduce the concepts of Big Data technologies and frameworks used to store, process and "
+        },
+        {
+          "l": 14.01,
+          "t": 68.54,
+          "w": 10.53,
+          "h": 1.3,
+          "text": "analyze large"
+        },
+        {
+          "l": 24.69,
+          "t": 69.16,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 25.37,
+          "t": 68.54,
+          "w": 35.1,
+          "h": 1.3,
+          "text": "scale datasets for strategic decision making."
+        },
+        {
+          "l": 7.4,
+          "t": 73.35,
+          "w": 17.65,
+          "h": 1.15,
+          "text": "Course Outcomes"
+        },
+        {
+          "l": 7.26,
+          "t": 77.43,
+          "w": 23.06,
+          "h": 0.98,
+          "text": "The student will be able to:"
+        },
+        {
+          "l": 9.09,
+          "t": 81.68,
+          "w": 0.53,
+          "h": 0.96,
+          "text": "1"
+        },
+        {
+          "l": 13.39,
+          "t": 80.4,
+          "w": 47.02,
+          "h": 1.3,
+          "text": "Explain and analyze the concept of a transaction, and "
+        },
+        {
+          "l": 60.99,
+          "t": 80.4,
+          "w": 29.87,
+          "h": 1.29,
+          "text": "evaluate how ACID properties are "
+        },
+        {
+          "l": 13.35,
+          "t": 81.97,
+          "w": 43.65,
+          "h": 1.3,
+          "text": "preserved during concurrent transactions in a database"
+        },
+        {
+          "l": 8.9,
+          "t": 86.55,
+          "w": 0.88,
+          "h": 0.96,
+          "text": "2"
+        },
+        {
+          "l": 13.39,
+          "t": 85.73,
+          "w": 74.76,
+          "h": 1.3,
+          "text": "Measure and evaluate query costs, and design alternative efficient paths for optimized query "
+        },
+        {
+          "l": 13.43,
+          "t": 87.3,
+          "w": 7.73,
+          "h": 1.01,
+          "text": "execution"
+        },
+        {
+          "l": 8.94,
+          "t": 90.27,
+          "w": 0.76,
+          "h": 0.98,
+          "text": "3 "
+        },
+        {
+          "l": 13.37,
+          "t": 90.16,
+          "w": 36.41,
+          "h": 1.3,
+          "text": "Apply and integrate advanced access control "
+        },
+        {
+          "l": 49.8,
+          "t": 90.16,
+          "w": 38.06,
+          "h": 1.3,
+          "text": "protocols to regulate and secure database usage"
+        },
+        {
+          "l": 8.89,
+          "t": 93.99,
+          "w": 0.9,
+          "h": 0.96,
+          "text": "4"
+        },
+        {
+          "l": 13.42,
+          "t": 93.17,
+          "w": 77.44,
+          "h": 1.3,
+          "text": "Create distributed database models and understand design of applications using advanced "
+        },
+        {
+          "l": 13.35,
+          "t": 94.74,
+          "w": 38.15,
+          "h": 1.3,
+          "text": "paradigms such as mobile and spatial databases"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_theory_syllabus_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_theory_syllabus_pdf/thumb_002.webp",
+      "text": "5\r\nUnderstand Big Data concepts and explain technologies such as Hadoop, HDFS, MapReduce, \r\nSpark and NoSQL databases used for large-scale data processing and analytics.\r\n3.5 Course Contents\r\nModule Unit Detailed Contents Hours\r\n0.0\r\nPrerequisite\r\nKnowledge of basic concepts of a Relational database, SQL concepts 00\r\n1.0\r\nTransactions Management, Concurrency and Recovery\r\n1.1 Transaction concept, Transaction states, ACID properties, Implementation of \r\natomicity and durability, Concurrent Executions, Serializability, \r\nRecoverability, Implementation of isolation, \r\n08 1.2 Concurrency Control: Lock-based, Time-stamp based, Validation based \r\nprotocols, Deadlock handling, \r\n1.3 Recovery System: Failure Classification, Storage structure, Recovery & \r\natomicity, Log based recovery, Checkpoints, Shadow Paging, ARIES \r\nAlgorithm\r\n2.0\r\nQuery Processing and Optimization\r\n2.1 Operation on Files; Hashing Techniques; Types of indexes: Single-Level \r\nOrdered Indexes; Multilevel Indexes; Dynamic Multilevel Indexes, \r\nOverview of B-Trees and B+Trees; Indexes on Multiple Keys.\r\n08 2.2 Query Processing Overview, Steps of Query Processing, Measures of Query \r\nCost for Selection Operation, Sorting, Join Operation & Other Operations, \r\nEvaluation of Expressions. \r\n2.3 Query Optimization Overview, Transformation of Relational Expressions. \r\nEstimating Statistics of Expression Results, Choice of Evaluation Plans\r\n3.0\r\nData Security\r\n3.1 Advanced Database Access protocols: Discretionary Access Control Based \r\non Granting and Revoking Privileges; \r\n07\r\n3.2 Mandatory Access Control and Role Based Access Control, Remote Database \r\naccess protocol.\r\n3.3 SQL Injection; Introduction to Statistical Database Security, Introduction to \r\nflow control\r\n4.0\r\nDistributed Databases \r\n4.1 Introduction: Distributed Data Processing, What is a Distributed Database \r\nSystem? Design Issues. Distributed DBMS Architecture. Distributed \r\nDatabase Design, Data Fragmentation & Allocation in distributed databases.\r\nOverview of Query Processing and Query Optimization in Distributed \r\nDatabases;\r\n4.2 Overview of Transaction Management in Distributed 08\r\nDatabases; Overview of Concurrency Control and Recovery in \r\nDistributed Databases.\r\n4.3 Overview of Advanced Database models like Mobile databases, Temporal \r\ndatabases, Spatial databases.\r\nIntroduction to Big Data",
+      "width": 1193,
+      "height": 1685,
+      "rects": [
+        {
+          "l": 8.96,
+          "t": 9.28,
+          "w": 0.78,
+          "h": 0.96,
+          "text": "5"
+        },
+        {
+          "l": 13.36,
+          "t": 7.58,
+          "w": 53.19,
+          "h": 1.3,
+          "text": "Understand Big Data concepts and explain technologies such as "
+        },
+        {
+          "l": 66.79,
+          "t": 7.58,
+          "w": 24.54,
+          "h": 1.29,
+          "text": "Hadoop, HDFS, MapReduce, "
+        },
+        {
+          "l": 13.48,
+          "t": 9.22,
+          "w": 34.45,
+          "h": 1.3,
+          "text": "Spark and NoSQL databases used for large"
+        },
+        {
+          "l": 48.09,
+          "t": 9.83,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 48.77,
+          "t": 9.22,
+          "w": 28.33,
+          "h": 1.3,
+          "text": "scale data processing and analytics."
+        },
+        {
+          "l": 7.35,
+          "t": 13.32,
+          "w": 20.17,
+          "h": 1.15,
+          "text": "3.5 Course Contents"
+        },
+        {
+          "l": 4.57,
+          "t": 18.34,
+          "w": 6.51,
+          "h": 0.96,
+          "text": "Module "
+        },
+        {
+          "l": 13.64,
+          "t": 18.32,
+          "w": 3.74,
+          "h": 0.99,
+          "text": "Unit "
+        },
+        {
+          "l": 20.16,
+          "t": 18.32,
+          "w": 15.26,
+          "h": 0.99,
+          "text": "Detailed Contents "
+        },
+        {
+          "l": 84.38,
+          "t": 18.34,
+          "w": 5.26,
+          "h": 0.96,
+          "text": "Hours"
+        },
+        {
+          "l": 6.9,
+          "t": 23.14,
+          "w": 2.37,
+          "h": 0.98,
+          "text": "0.0"
+        },
+        {
+          "l": 20.19,
+          "t": 21.18,
+          "w": 10.42,
+          "h": 1.27,
+          "text": "Prerequisite"
+        },
+        {
+          "l": 20.17,
+          "t": 23.15,
+          "w": 48.7,
+          "h": 1.3,
+          "text": "Knowledge of basic concepts of a Relational database, SQL "
+        },
+        {
+          "l": 68.96,
+          "t": 23.3,
+          "w": 6.9,
+          "h": 1.15,
+          "text": "concepts "
+        },
+        {
+          "l": 85.31,
+          "t": 23.47,
+          "w": 1.87,
+          "h": 0.98,
+          "text": "00"
+        },
+        {
+          "l": 6.96,
+          "t": 32.38,
+          "w": 2.31,
+          "h": 0.98,
+          "text": "1.0"
+        },
+        {
+          "l": 20.21,
+          "t": 25.16,
+          "w": 47.46,
+          "h": 1.27,
+          "text": "Transactions Management, Concurrency and Recovery"
+        },
+        {
+          "l": 14.88,
+          "t": 28.0,
+          "w": 2.04,
+          "h": 0.98,
+          "text": "1.1 "
+        },
+        {
+          "l": 20.2,
+          "t": 27.98,
+          "w": 62.18,
+          "h": 1.29,
+          "text": "Transaction concept, Transaction states, ACID properties, Implementation of "
+        },
+        {
+          "l": 20.21,
+          "t": 29.61,
+          "w": 62.15,
+          "h": 1.3,
+          "text": "atomicity and durability, Concurrent Executions, Serializability, "
+        },
+        {
+          "l": 20.17,
+          "t": 31.25,
+          "w": 36.19,
+          "h": 1.3,
+          "text": "Recoverability, Implementation of isolation, "
+        },
+        {
+          "l": 86.08,
+          "t": 33.8,
+          "w": 1.82,
+          "h": 0.98,
+          "text": "08 "
+        },
+        {
+          "l": 14.88,
+          "t": 32.97,
+          "w": 2.2,
+          "h": 0.98,
+          "text": "1.2 "
+        },
+        {
+          "l": 20.21,
+          "t": 32.95,
+          "w": 23.44,
+          "h": 1.3,
+          "text": "Concurrency Control: Lock"
+        },
+        {
+          "l": 43.74,
+          "t": 33.57,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 44.32,
+          "t": 32.95,
+          "w": 10.41,
+          "h": 1.23,
+          "text": "based, Time"
+        },
+        {
+          "l": 54.88,
+          "t": 33.57,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 55.56,
+          "t": 32.95,
+          "w": 26.83,
+          "h": 1.29,
+          "text": "stamp based, Validation based "
+        },
+        {
+          "l": 20.13,
+          "t": 34.59,
+          "w": 25.28,
+          "h": 1.3,
+          "text": "protocols, Deadlock handling, "
+        },
+        {
+          "l": 14.88,
+          "t": 36.31,
+          "w": 2.11,
+          "h": 0.98,
+          "text": "1.3 "
+        },
+        {
+          "l": 20.17,
+          "t": 36.28,
+          "w": 62.18,
+          "h": 1.3,
+          "text": "Recovery System: Failure Classification, Storage structure, Recovery & "
+        },
+        {
+          "l": 20.21,
+          "t": 37.92,
+          "w": 62.15,
+          "h": 1.3,
+          "text": "atomicity, Log based recovery, Checkpoints, Shadow Paging, ARIES "
+        },
+        {
+          "l": 20.15,
+          "t": 39.56,
+          "w": 8.36,
+          "h": 1.3,
+          "text": "Algorithm"
+        },
+        {
+          "l": 6.87,
+          "t": 49.54,
+          "w": 2.39,
+          "h": 0.98,
+          "text": "2.0"
+        },
+        {
+          "l": 20.21,
+          "t": 41.29,
+          "w": 30.68,
+          "h": 1.27,
+          "text": "Query Processing and Optimization"
+        },
+        {
+          "l": 14.68,
+          "t": 44.12,
+          "w": 2.23,
+          "h": 0.98,
+          "text": "2.1 "
+        },
+        {
+          "l": 20.21,
+          "t": 44.09,
+          "w": 53.44,
+          "h": 1.3,
+          "text": "Operation on Files; Hashing Techniques; Types of indexes: Single"
+        },
+        {
+          "l": 73.81,
+          "t": 44.71,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 74.43,
+          "t": 44.09,
+          "w": 5.03,
+          "h": 1.01,
+          "text": "Level "
+        },
+        {
+          "l": 20.21,
+          "t": 45.73,
+          "w": 55.57,
+          "h": 1.3,
+          "text": "Ordered Indexes; Multilevel Indexes; Dynamic Multilevel Indexes, "
+        },
+        {
+          "l": 20.21,
+          "t": 47.37,
+          "w": 11.78,
+          "h": 1.01,
+          "text": "Overview of B"
+        },
+        {
+          "l": 32.18,
+          "t": 47.99,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 32.82,
+          "t": 47.37,
+          "w": 37.55,
+          "h": 1.3,
+          "text": "Trees and B+Trees; Indexes on Multiple Keys."
+        },
+        {
+          "l": 86.34,
+          "t": 50.14,
+          "w": 1.87,
+          "h": 0.98,
+          "text": "08 "
+        },
+        {
+          "l": 14.68,
+          "t": 49.52,
+          "w": 2.39,
+          "h": 0.98,
+          "text": "2.2 "
+        },
+        {
+          "l": 20.21,
+          "t": 49.5,
+          "w": 62.15,
+          "h": 1.3,
+          "text": "Query Processing Overview, Steps of Query Processing, Measures of Query "
+        },
+        {
+          "l": 20.21,
+          "t": 51.14,
+          "w": 62.14,
+          "h": 1.3,
+          "text": "Cost for Selection Operation, Sorting, Join Operation & Other Operations, "
+        },
+        {
+          "l": 20.18,
+          "t": 52.77,
+          "w": 22.1,
+          "h": 1.29,
+          "text": "Evaluation of Expressions. "
+        },
+        {
+          "l": 14.68,
+          "t": 54.51,
+          "w": 2.31,
+          "h": 0.98,
+          "text": "2.3 "
+        },
+        {
+          "l": 20.21,
+          "t": 54.48,
+          "w": 51.11,
+          "h": 1.3,
+          "text": "Query Optimization Overview, Transformation of Relational "
+        },
+        {
+          "l": 71.71,
+          "t": 54.48,
+          "w": 10.68,
+          "h": 1.29,
+          "text": "Expressions. "
+        },
+        {
+          "l": 20.18,
+          "t": 56.12,
+          "w": 57.41,
+          "h": 1.3,
+          "text": "Estimating Statistics of Expression Results, Choice of Evaluation Plans"
+        },
+        {
+          "l": 6.86,
+          "t": 65.81,
+          "w": 2.41,
+          "h": 0.98,
+          "text": "3.0"
+        },
+        {
+          "l": 20.16,
+          "t": 57.84,
+          "w": 11.73,
+          "h": 1.27,
+          "text": "Data Security"
+        },
+        {
+          "l": 14.72,
+          "t": 61.18,
+          "w": 2.19,
+          "h": 0.98,
+          "text": "3.1 "
+        },
+        {
+          "l": 20.15,
+          "t": 61.15,
+          "w": 62.19,
+          "h": 1.3,
+          "text": "Advanced Database Access protocols: Discretionary Access Control Based "
+        },
+        {
+          "l": 20.2,
+          "t": 62.79,
+          "w": 30.96,
+          "h": 1.3,
+          "text": "on Granting and Revoking Privileges; "
+        },
+        {
+          "l": 86.34,
+          "t": 66.77,
+          "w": 1.89,
+          "h": 0.98,
+          "text": "07"
+        },
+        {
+          "l": 14.72,
+          "t": 65.07,
+          "w": 2.35,
+          "h": 0.98,
+          "text": "3.2 "
+        },
+        {
+          "l": 20.17,
+          "t": 65.05,
+          "w": 62.2,
+          "h": 1.3,
+          "text": "Mandatory Access Control and Role Based Access Control, Remote Database "
+        },
+        {
+          "l": 20.21,
+          "t": 66.69,
+          "w": 12.62,
+          "h": 1.29,
+          "text": "access protocol."
+        },
+        {
+          "l": 14.72,
+          "t": 68.41,
+          "w": 2.27,
+          "h": 0.98,
+          "text": "3.3 "
+        },
+        {
+          "l": 20.26,
+          "t": 68.38,
+          "w": 25.16,
+          "h": 1.3,
+          "text": "SQL Injection; Introduction to "
+        },
+        {
+          "l": 45.66,
+          "t": 68.38,
+          "w": 36.72,
+          "h": 1.3,
+          "text": "Statistical Database Security, Introduction to "
+        },
+        {
+          "l": 20.21,
+          "t": 70.02,
+          "w": 9.76,
+          "h": 1.01,
+          "text": "flow control"
+        },
+        {
+          "l": 6.88,
+          "t": 81.02,
+          "w": 2.39,
+          "h": 0.98,
+          "text": "4.0"
+        },
+        {
+          "l": 20.16,
+          "t": 72.42,
+          "w": 19.53,
+          "h": 0.98,
+          "text": "Distributed Databases "
+        },
+        {
+          "l": 13.63,
+          "t": 74.54,
+          "w": 2.24,
+          "h": 0.98,
+          "text": "4.1 "
+        },
+        {
+          "l": 20.19,
+          "t": 74.51,
+          "w": 62.17,
+          "h": 1.3,
+          "text": "Introduction: Distributed Data Processing, What is a Distributed Database "
+        },
+        {
+          "l": 20.26,
+          "t": 76.15,
+          "w": 62.1,
+          "h": 1.3,
+          "text": "System? Design Issues. Distributed DBMS Architecture. Distributed "
+        },
+        {
+          "l": 20.17,
+          "t": 77.79,
+          "w": 7.82,
+          "h": 1.01,
+          "text": "Database "
+        },
+        {
+          "l": 28.04,
+          "t": 77.79,
+          "w": 53.54,
+          "h": 1.3,
+          "text": "Design, Data Fragmentation & Allocation in distributed databases."
+        },
+        {
+          "l": 20.71,
+          "t": 79.43,
+          "w": 61.64,
+          "h": 1.3,
+          "text": "Overview of Query Processing and Query Optimization in Distributed "
+        },
+        {
+          "l": 20.17,
+          "t": 81.07,
+          "w": 8.53,
+          "h": 1.23,
+          "text": "Databases;"
+        },
+        {
+          "l": 13.63,
+          "t": 82.79,
+          "w": 2.4,
+          "h": 0.98,
+          "text": "4.2 "
+        },
+        {
+          "l": 20.21,
+          "t": 82.76,
+          "w": 45.72,
+          "h": 1.3,
+          "text": "Overview of Transaction Management in Distributed "
+        },
+        {
+          "l": 86.08,
+          "t": 82.79,
+          "w": 1.82,
+          "h": 0.98,
+          "text": "08"
+        },
+        {
+          "l": 26.21,
+          "t": 84.4,
+          "w": 17.1,
+          "h": 1.23,
+          "text": "Databases; Overview "
+        },
+        {
+          "l": 44.37,
+          "t": 84.41,
+          "w": 12.91,
+          "h": 1.29,
+          "text": "of Concurrency "
+        },
+        {
+          "l": 58.55,
+          "t": 84.4,
+          "w": 23.84,
+          "h": 1.3,
+          "text": "Control and Recovery in "
+        },
+        {
+          "l": 20.17,
+          "t": 86.04,
+          "w": 18.02,
+          "h": 1.01,
+          "text": "Distributed Databases."
+        },
+        {
+          "l": 13.63,
+          "t": 89.4,
+          "w": 2.32,
+          "h": 0.98,
+          "text": "4.3 "
+        },
+        {
+          "l": 20.21,
+          "t": 89.38,
+          "w": 62.15,
+          "h": 1.29,
+          "text": "Overview of Advanced Database models like Mobile databases, Temporal "
+        },
+        {
+          "l": 20.2,
+          "t": 91.02,
+          "w": 22.81,
+          "h": 1.29,
+          "text": "databases, Spatial databases."
+        },
+        {
+          "l": 20.18,
+          "t": 92.73,
+          "w": 21.12,
+          "h": 1.27,
+          "text": "Introduction to Big Data"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_theory_syllabus_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_theory_syllabus_pdf/thumb_003.webp",
+      "text": "5.0\r\n5.1 Introduction to Big Data; Characteristics of Big Data (Volume, Velocity, \r\nVariety, Veracity, Value); Sources of Big Data; Traditional Data vs Big Data; \r\nApplications of Big Data in various domains such as healthcare, banking, social \r\nmedia and e-commerce.\r\n08\r\n5.2 Overview of Big Data Technologies; Hadoop Ecosystem; Hadoop \r\nDistributed File System (HDFS); MapReduce Framework; YARN \r\narchitecture and role in resource management.\r\n5.3 Introduction to Big Data Processing Frameworks; Apache Spark Overview; \r\nNoSQL Databases \u2013 Key-Value Stores, Column-Oriented Databases, \r\nDocument Databases, Graph Databases; Applications of Big Data Analytics \r\nin Business Intelligence and Decision Support Systems.\r\nTotal 39\r\nSuggested Learning Resources:\r\nText Books:\r\n1. Database System Concepts, VI edition, Korth, Slberchatz, Sudarshan, McGraw \u2013 Hill, 2010\r\n2. Fundamentals of Database Systems, VI Edition, Ramez Elmasri and Shamkant B. Navathe, \r\nPearson Education, 2011.\r\n3. Data Warehousing, IV Edition, Reema Thareja, Oxford University Press, 2009.\r\n4. Database Management Systems, III Edition, Raghu Ramakrishnan and Johannes Gehrke, \r\nMcGraw Hill Education, 2003.\r\n5. Big Data Analytics, I Edition, Seema Acharya, Subhasini Chellappan, Wiley India, 2015.\r\nReference Books:\r\n1. Database System Implementation, I Edition, Hector Garcia-Molina, Jeffrey D. Ullman, Jennifer \r\nWidom, Pearson / Prentice Hall, 1999.\r\n2. Database Systems: A Practical Approach to Design, Implementation and Management, IV Edition, \r\nThomas M. Connolly, Carolyn Begg, Pearson Ltd., 2004.\r\n3. The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling, III Edition, Ralph \r\nKimball, Margy Ross, Wiley India, 2013.\r\n4. Data Mining: Concepts and Techniques, III Edition, Jiawei Han, Micheline Kamber, Jian Pei, \r\nMorgan Kaufmann, 2011.\r\nWeb Resources\r\n1. NPTEL course on Data Base Management System By Prof. Partha Pratim Das, Prof. Samiran \r\nChattopadhyay, IIT Kharagpur Data Base Management System - Course\r\n2. NPTEL course on Big Data Computing by By Prof. Rajiv Misra, IIT Patna Big Data Computing -\r\nCourse",
+      "width": 1193,
+      "height": 1685,
+      "rects": [
+        {
+          "l": 6.89,
+          "t": 18.32,
+          "w": 2.37,
+          "h": 0.98,
+          "text": "5.0"
+        },
+        {
+          "l": 14.8,
+          "t": 6.99,
+          "w": 2.17,
+          "h": 0.98,
+          "text": "5.1 "
+        },
+        {
+          "l": 19.34,
+          "t": 6.96,
+          "w": 22.28,
+          "h": 1.3,
+          "text": "Introduction to Big Data; "
+        },
+        {
+          "l": 42.24,
+          "t": 6.96,
+          "w": 40.95,
+          "h": 1.3,
+          "text": "Characteristics of Big Data (Volume, Velocity, "
+        },
+        {
+          "l": 19.31,
+          "t": 8.6,
+          "w": 63.85,
+          "h": 1.3,
+          "text": "Variety, Veracity, Value); Sources of Big Data; Traditional Data vs Big Data; "
+        },
+        {
+          "l": 19.31,
+          "t": 10.24,
+          "w": 63.9,
+          "h": 1.3,
+          "text": "Applications of Big Data in various domains such as healthcare, banking, social "
+        },
+        {
+          "l": 19.31,
+          "t": 11.88,
+          "w": 9.64,
+          "h": 1.01,
+          "text": "media and e"
+        },
+        {
+          "l": 29.08,
+          "t": 12.5,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 29.75,
+          "t": 12.21,
+          "w": 8.66,
+          "h": 0.68,
+          "text": "commerce."
+        },
+        {
+          "l": 86.34,
+          "t": 15.26,
+          "w": 1.87,
+          "h": 0.98,
+          "text": "08"
+        },
+        {
+          "l": 14.8,
+          "t": 13.63,
+          "w": 2.34,
+          "h": 0.98,
+          "text": "5.2 "
+        },
+        {
+          "l": 20.21,
+          "t": 13.61,
+          "w": 16.37,
+          "h": 1.3,
+          "text": "Overview of Big "
+        },
+        {
+          "l": 37.83,
+          "t": 13.61,
+          "w": 44.54,
+          "h": 1.3,
+          "text": "Data Technologies; Hadoop Ecosystem; Hadoop "
+        },
+        {
+          "l": 20.17,
+          "t": 15.25,
+          "w": 62.19,
+          "h": 1.3,
+          "text": "Distributed File System (HDFS); MapReduce Framework; YARN "
+        },
+        {
+          "l": 20.21,
+          "t": 16.88,
+          "w": 36.99,
+          "h": 1.3,
+          "text": "architecture and role in resource management."
+        },
+        {
+          "l": 14.8,
+          "t": 18.61,
+          "w": 2.25,
+          "h": 0.98,
+          "text": "5.3 "
+        },
+        {
+          "l": 20.19,
+          "t": 18.58,
+          "w": 62.16,
+          "h": 1.3,
+          "text": "Introduction to Big Data Processing Frameworks; Apache Spark Overview; "
+        },
+        {
+          "l": 20.11,
+          "t": 20.22,
+          "w": 16.45,
+          "h": 1.27,
+          "text": "NoSQL Databases "
+        },
+        {
+          "l": 37.56,
+          "t": 20.84,
+          "w": 1.04,
+          "h": 0.06,
+          "text": "\u2013 "
+        },
+        {
+          "l": 40.15,
+          "t": 20.26,
+          "w": 3.3,
+          "h": 1.25,
+          "text": "Key"
+        },
+        {
+          "l": 43.54,
+          "t": 20.84,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 44.14,
+          "t": 20.22,
+          "w": 19.83,
+          "h": 1.23,
+          "text": "Value Stores, Column"
+        },
+        {
+          "l": 64.08,
+          "t": 20.84,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 64.73,
+          "t": 20.22,
+          "w": 17.66,
+          "h": 1.23,
+          "text": "Oriented Databases, "
+        },
+        {
+          "l": 20.17,
+          "t": 21.86,
+          "w": 62.18,
+          "h": 1.3,
+          "text": "Document Databases, Graph Databases; Applications of Big Data Analytics "
+        },
+        {
+          "l": 20.19,
+          "t": 23.5,
+          "w": 44.68,
+          "h": 1.3,
+          "text": "in Business Intelligence and Decision Support Systems."
+        },
+        {
+          "l": 77.38,
+          "t": 25.24,
+          "w": 4.5,
+          "h": 0.96,
+          "text": "Total "
+        },
+        {
+          "l": 86.04,
+          "t": 25.22,
+          "w": 1.91,
+          "h": 0.98,
+          "text": "39"
+        },
+        {
+          "l": 9.69,
+          "t": 31.68,
+          "w": 31.12,
+          "h": 1.49,
+          "text": "Suggested Learning Resources:"
+        },
+        {
+          "l": 9.64,
+          "t": 34.98,
+          "w": 10.1,
+          "h": 0.96,
+          "text": "Text Books:"
+        },
+        {
+          "l": 12.82,
+          "t": 38.02,
+          "w": 1.13,
+          "h": 0.98,
+          "text": "1. "
+        },
+        {
+          "l": 15.64,
+          "t": 37.99,
+          "w": 46.58,
+          "h": 1.3,
+          "text": "Database System Concepts, VI edition, Korth, Slberchatz, "
+        },
+        {
+          "l": 62.97,
+          "t": 37.99,
+          "w": 16.92,
+          "h": 1.23,
+          "text": "Sudarshan, McGraw \u2013 "
+        },
+        {
+          "l": 79.89,
+          "t": 38.61,
+          "w": 1.04,
+          "h": 0.06,
+          "text": "\u2013 "
+        },
+        {
+          "l": 81.45,
+          "t": 37.99,
+          "w": 8.07,
+          "h": 1.23,
+          "text": "Hill, 2010"
+        },
+        {
+          "l": 12.63,
+          "t": 39.83,
+          "w": 1.32,
+          "h": 0.98,
+          "text": "2. "
+        },
+        {
+          "l": 15.64,
+          "t": 39.8,
+          "w": 73.96,
+          "h": 1.3,
+          "text": "Fundamentals of Database Systems, VI Edition, Ramez Elmasri and Shamkant B. Navathe, "
+        },
+        {
+          "l": 15.64,
+          "t": 41.6,
+          "w": 20.39,
+          "h": 1.23,
+          "text": "Pearson Education, 2011."
+        },
+        {
+          "l": 12.67,
+          "t": 43.43,
+          "w": 1.28,
+          "h": 0.98,
+          "text": "3. "
+        },
+        {
+          "l": 15.64,
+          "t": 43.41,
+          "w": 45.13,
+          "h": 1.3,
+          "text": "Data Warehousing, IV Edition, Reema Thareja, Oxford "
+        },
+        {
+          "l": 60.8,
+          "t": 43.41,
+          "w": 18.65,
+          "h": 1.3,
+          "text": "University Press, 2009."
+        },
+        {
+          "l": 12.62,
+          "t": 45.23,
+          "w": 1.33,
+          "h": 0.98,
+          "text": "4. "
+        },
+        {
+          "l": 15.64,
+          "t": 45.21,
+          "w": 72.11,
+          "h": 1.3,
+          "text": "Database Management Systems, III Edition, Raghu Ramakrishnan and Johannes Gehrke, "
+        },
+        {
+          "l": 15.64,
+          "t": 47.02,
+          "w": 24.8,
+          "h": 1.23,
+          "text": "McGraw Hill Education, 2003."
+        },
+        {
+          "l": 12.68,
+          "t": 48.86,
+          "w": 1.27,
+          "h": 0.96,
+          "text": "5. "
+        },
+        {
+          "l": 15.64,
+          "t": 48.81,
+          "w": 71.75,
+          "h": 1.3,
+          "text": "Big Data Analytics, I Edition, Seema Acharya, Subhasini Chellappan, Wiley India, 2015."
+        },
+        {
+          "l": 9.61,
+          "t": 52.07,
+          "w": 14.81,
+          "h": 0.98,
+          "text": "Reference Books:"
+        },
+        {
+          "l": 12.82,
+          "t": 55.14,
+          "w": 1.13,
+          "h": 0.98,
+          "text": "1. "
+        },
+        {
+          "l": 15.64,
+          "t": 55.11,
+          "w": 47.46,
+          "h": 1.3,
+          "text": "Database System Implementation, I Edition, Hector Garcia"
+        },
+        {
+          "l": 63.21,
+          "t": 55.73,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 63.83,
+          "t": 55.11,
+          "w": 29.38,
+          "h": 1.3,
+          "text": "Molina, Jeffrey D. Ullman, Jennifer "
+        },
+        {
+          "l": 15.63,
+          "t": 56.75,
+          "w": 30.89,
+          "h": 1.23,
+          "text": "Widom, Pearson / Prentice Hall, 1999."
+        },
+        {
+          "l": 12.63,
+          "t": 58.42,
+          "w": 1.32,
+          "h": 0.98,
+          "text": "2. "
+        },
+        {
+          "l": 15.64,
+          "t": 58.39,
+          "w": 80.07,
+          "h": 1.3,
+          "text": "Database Systems: A Practical Approach to Design, Implementation and Management, IV Edition, "
+        },
+        {
+          "l": 15.67,
+          "t": 60.03,
+          "w": 46.05,
+          "h": 1.3,
+          "text": "Thomas M. Connolly, Carolyn Begg, Pearson Ltd., 2004."
+        },
+        {
+          "l": 12.67,
+          "t": 61.69,
+          "w": 1.28,
+          "h": 0.98,
+          "text": "3. "
+        },
+        {
+          "l": 15.67,
+          "t": 61.67,
+          "w": 78.57,
+          "h": 1.3,
+          "text": "The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling, III Edition, Ralph "
+        },
+        {
+          "l": 15.64,
+          "t": 63.31,
+          "w": 33.29,
+          "h": 1.3,
+          "text": "Kimball, Margy Ross, Wiley India, 2013."
+        },
+        {
+          "l": 12.62,
+          "t": 64.97,
+          "w": 1.33,
+          "h": 0.98,
+          "text": "4. "
+        },
+        {
+          "l": 15.64,
+          "t": 64.95,
+          "w": 75.86,
+          "h": 1.3,
+          "text": "Data Mining: Concepts and Techniques, III Edition, Jiawei Han, Micheline Kamber, Jian Pei, "
+        },
+        {
+          "l": 15.64,
+          "t": 66.59,
+          "w": 20.74,
+          "h": 1.29,
+          "text": "Morgan Kaufmann, 2011."
+        },
+        {
+          "l": 9.59,
+          "t": 71.34,
+          "w": 13.13,
+          "h": 0.96,
+          "text": "Web Resources"
+        },
+        {
+          "l": 12.82,
+          "t": 74.35,
+          "w": 77.61,
+          "h": 1.3,
+          "text": "1. NPTEL course on Data Base Management System By Prof. Partha Pratim Das, Prof. Samiran "
+        },
+        {
+          "l": 12.66,
+          "t": 75.99,
+          "w": 25.29,
+          "h": 1.3,
+          "text": "Chattopadhyay, IIT Kharagpur "
+        },
+        {
+          "l": 37.99,
+          "t": 76.02,
+          "w": 26.15,
+          "h": 1.27,
+          "text": "Data Base Management System "
+        },
+        {
+          "l": 64.24,
+          "t": 76.61,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "- "
+        },
+        {
+          "l": 65.4,
+          "t": 76.02,
+          "w": 5.58,
+          "h": 0.98,
+          "text": "Course"
+        },
+        {
+          "l": 12.63,
+          "t": 77.63,
+          "w": 62.23,
+          "h": 1.3,
+          "text": "2. NPTEL course on Big Data Computing by By Prof. Rajiv Misra, IIT Patna "
+        },
+        {
+          "l": 75.43,
+          "t": 77.63,
+          "w": 17.25,
+          "h": 1.3,
+          "text": "Big Data Computing "
+        },
+        {
+          "l": 92.77,
+          "t": 78.25,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 12.66,
+          "t": 79.3,
+          "w": 5.58,
+          "h": 0.98,
+          "text": "Course"
+        }
+      ]
+    }
+  ]
+}

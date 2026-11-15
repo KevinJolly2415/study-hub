@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build output
+dist/
+build/
+
+# Temporary and cache files
+.cache/
+*.tmp
+*.log
+_temp_*
+_temp_png/
+
+# Local environment and IDE settings
+.env
+.env.local
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

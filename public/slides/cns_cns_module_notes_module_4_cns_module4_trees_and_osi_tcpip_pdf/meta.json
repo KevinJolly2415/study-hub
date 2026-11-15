@@ -1,0 +1,4946 @@
+{
+  "mtime": 1794565582.982437,
+  "aspectRatio": 1.56,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/slide_001.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/thumb_001.webp",
+      "text": "Module 4: full concept tree\r\nTop umbrella term at the top, details below it. Everything shown is from your PPT.\r\nIP level security Transport level security Email security\r\nModule 4\r\nIP Security,\r\nTransport Level\r\nSecurity &\r\nEmail Security\r\nIP Level Security\r\n(IPSec)\r\nWhat it is\r\nProtocols by IETF that\r\nsecure packets at the\r\nnetwork (IP) layer\r\nWhy security at IP\r\nlayer?\r\nApp-layer security\r\ncovers only some apps\r\n(PGP, S/MIME = email\r\nonly)\r\nSome apps use UDP, so\r\nSSL/TLS (needs TCP)\r\ncan't protect them\r\nRouting protocols use IP\r\ndirectly\r\nApplications\r\nSecure branch-office\r\nconnectivity\r\nSecure remote access\r\nExtranet / intranet with\r\npartners\r\nSafer e-commerce\r\nServices (RFC\r\n4301)\r\nAccess control\r\nMessage integrity\r\nEntity authentication\r\nRejection of replayed\r\npackets\r\nConfidentiality\r\nModes of\r\noperation\r\nTransport mode\r\nProtects only the IP payload,\r\nnot the IP header\r\nHost-to-host (end-to-end)\r\nLower overhead\r\nAH: authenticates payload +\r\nparts of header\r\nESP: encrypts payload (not\r\nheader)\r\nTunnel mode\r\nProtects the entire IP packet,\r\nadds a new IP header\r\nGateway-to-gateway, VPNs\r\nMore overhead\r\nAH: authenticates inner\r\npacket + parts of outer\r\nheader\r\nESP: encrypts entire inner\r\npacket incl. its header\r\nProtection\r\nmechanisms\r\n(sub-protocols)\r\nAH\r\nAuthentication\r\nHeader\r\nSource authentication +\r\nintegrity, NO privacy\r\nIP protocol field = 51\r\nHeader fields\r\nNext header\r\nPayload length\r\nSPI (Security Parameter\r\nIndex)\r\nSequence number (stops\r\nreplay)\r\nAuthentication data (hash)\r\nESP\r\nEncapsulating\r\nSecurity Payload\r\nAuthentication + integrity +\r\nprivacy\r\nIP protocol field = 50\r\nAdds header + trailer; auth\r\ndata at the end\r\nSteps: add trailer, encrypt,\r\nadd header, compute auth\r\ndata, add IP header\r\nKey components\r\nSA\r\nSecurity Association\r\nLogical connection between\r\ntwo endpoints\r\nHolds: protocols, algorithms,\r\nkeys, lifetime\r\nIdentified by the SPI\r\nIKE\r\nInternet Key\r\nExchange\r\nNegotiates, establishes and\r\nmanages SAs\r\nFunctions: authentication,\r\nkey generation, SA setup, SA\r\nmanagement\r\nPhase 1: secure channel\r\n(public-key auth)\r\nPhase 2: negotiate SA\r\nparameters\r\nIPSec\r\nArchitecture\r\n(documents)\r\nArchitecture\r\nESP protocol\r\nAH protocol\r\nEncryption algorithm\r\nAuthentication\r\nalgorithm\r\nDOI (Domain of\r\nInterpretation)\r\nKey management\r\nTransport Level\r\nSecurity\r\nWeb security\r\nconsiderations\r\nWWW = client/server\r\nover TCP/IP, so it is\r\nvulnerable\r\nApproaches: IP level\r\n(IPSec), Transport level\r\n(SSL/TLS), Application\r\nlevel\r\nNeed of transport\r\nlevel security\r\nEntity authentication\r\nMessage integrity\r\nConfidentiality\r\nSSL\r\nSecure Sockets\r\nLayer\r\nNetscape, 1994; latest\r\n= SSLv3\r\nConnection vs\r\nSession\r\nConnection: transient,\r\npeer-to-peer, tied to one\r\nsession\r\nSession: client-server\r\nassociation made by\r\nHandshake, shared by many\r\nconnections\r\nSSL Protocol Stack\r\n(2 layers, 4\r\nprotocols)\r\nUpper layer\r\nHandshake Protocol\r\nNegotiates cipher suite,\r\nauthenticates parties, builds\r\nsecrets\r\nDone in 4 phases\r\nChangeCipherSpec\r\nProtocol\r\nMoves pending state to\r\nactive state (1-byte\r\nmessage)\r\nAlert Protocol\r\nReports errors, 2 bytes: level\r\n(warning 1 / fatal 2) + code\r\nLower layer\r\nRecord Protocol\r\n(carries everything)\r\nServices: message integrity\r\n(MAC) + confidentiality\r\n(encryption)\r\nSteps: fragment (2^14 B),\r\ncompress (optional), MAC,\r\nencrypt, add header\r\nHeader: content type, major\r\nver, minor ver, compressed\r\nlength\r\nKey exchange\r\nmethods (6)\r\nNULL\r\nRSA\r\nAnonymous DH\r\nEphemeral DH\r\nFixed DH\r\nFortezza\r\nCipher suite\r\n= key exchange +\r\nencryption + hash algorithm\r\ne.g.\r\nSSL_DHE_RSA_WITH_DES_CBC_SHA\r\nTLS\r\nTransport Layer\r\nSecurity\r\nIETF standard version\r\nof SSL (TLS 1.0 ~\r\nSSLv3)\r\nDifferences from SSL\r\nNo Fortezza, so 5\r\nkey-exchange methods\r\nAlerts: no NoCertificate,\r\nsome new ones added\r\nHandshake: CertificateVerify\r\nand Finished hashes\r\nsimplified\r\nRecord layer: HMAC, with\r\nprotocol version added\r\nCryptographic secret\r\ngeneration\r\nBuilding blocks\r\nData-expansion function\r\n(HMAC with MD5 or SHA-1)\r\nPRF = secret + label + seed\r\n(MD5 XOR SHA-1\r\nexpansions)\r\nFlow\r\n1. Pre-master secret (same\r\nas SSL)\r\n2. Master secret (label\r\n\"master secret\")\r\n3. Key material (label \"key\r\nexpansion\")\r\nHTTPS\r\n(HTTP + SSL/TLS)\r\nUses https:// and port\r\n443 (HTTP uses 80)\r\nEncrypted: URL,\r\ncontent, forms, cookies,\r\nHTTP headers\r\nStart: TLS Client Hello,\r\nhandshake, then HTTP\r\nrequest\r\nClose: close_notify\r\nalert, then TCP closes\r\nSSH\r\nSecure Shell\r\nSecure network\r\ncommunication, simple\r\nand inexpensive\r\nEmail Security\r\nBackground\r\nRFC 5322 (SMTP\r\nformat)\r\nHeader lines, blank line, then\r\nbody\r\nKeywords: From, To, Subject,\r\nDate\r\nSMTP limitations\r\nNo binary / executable files\r\nNo national language\r\ncharacters\r\nSize limits\r\nASCII-EBCDIC mapping and\r\nX.400 gateway problems\r\nMIME\r\nMultipurpose\r\nInternet Mail\r\nExtensions\r\n5 header fields\r\nMIME-Version\r\nContent-Type\r\nContent-Transfer-Encoding\r\nContent-ID\r\nContent-Description\r\nContent types: 7 major,\r\n15 subtypes\r\nTransfer encodings\r\n7bit, 8bit, binary (no\r\nencoding done)\r\nquoted-printable\r\nbase64 (radix-64)\r\nx-token\r\nNative vs canonical\r\nform\r\nS/MIME\r\nSecure MIME\r\nSecurity enhancement\r\nto MIME (RSA Data\r\nSecurity)\r\nUses\r\napplication/pkcs7-mime\r\ncontent type\r\nCMS data content\r\ntypes\r\nSigned-data: integrity\r\n(signature)\r\nEnveloped-data: privacy\r\nDigested-data: integrity\r\nEncrypted-data: no recipient,\r\nfor storage\r\nAuthenticated-data:\r\nauthentication (MAC)\r\nFunctionality\r\nEnveloped data\r\nSigned data\r\nClear-signed data\r\nSigned and enveloped data\r\nAlgorithms\r\nDigital signature: DSS\r\nSession key encryption:\r\nDiffie-Hellman / ElGamal\r\nMessage encryption: Triple\r\nDES\r\nPublic-key certificates\r\nsigned by CAs",
+      "width": 8613,
+      "height": 4293,
+      "rects": [
+        {
+          "l": 0.93,
+          "t": 1.1,
+          "w": 10.51,
+          "h": 1.35,
+          "text": "Module 4: full concept tree"
+        },
+        {
+          "l": 0.87,
+          "t": 2.96,
+          "w": 14.29,
+          "h": 0.68,
+          "text": "Top umbrella term at the top, details below it. Everything shown is from your PPT."
+        },
+        {
+          "l": 1.53,
+          "t": 4.43,
+          "w": 2.71,
+          "h": 0.68,
+          "text": "IP level security "
+        },
+        {
+          "l": 5.75,
+          "t": 4.43,
+          "w": 4.11,
+          "h": 0.68,
+          "text": "Transport level security "
+        },
+        {
+          "l": 11.36,
+          "t": 4.43,
+          "w": 2.42,
+          "h": 0.68,
+          "text": "Email security"
+        },
+        {
+          "l": 48.06,
+          "t": 7.22,
+          "w": 2.28,
+          "h": 0.7,
+          "text": "Module 4"
+        },
+        {
+          "l": 48.06,
+          "t": 8.4,
+          "w": 2.46,
+          "h": 0.88,
+          "text": "IP Security,"
+        },
+        {
+          "l": 48.01,
+          "t": 9.58,
+          "w": 3.49,
+          "h": 0.88,
+          "text": "Transport Level"
+        },
+        {
+          "l": 48.04,
+          "t": 10.76,
+          "w": 2.31,
+          "h": 0.88,
+          "text": "Security &"
+        },
+        {
+          "l": 48.06,
+          "t": 11.94,
+          "w": 3.2,
+          "h": 0.88,
+          "text": "Email Security"
+        },
+        {
+          "l": 21.05,
+          "t": 15.92,
+          "w": 4.23,
+          "h": 0.89,
+          "text": "IP Level Security"
+        },
+        {
+          "l": 21.04,
+          "t": 17.1,
+          "w": 1.5,
+          "h": 0.81,
+          "text": "(IPSec)"
+        },
+        {
+          "l": 1.16,
+          "t": 22.54,
+          "w": 2.05,
+          "h": 0.59,
+          "text": "What it is"
+        },
+        {
+          "l": 1.63,
+          "t": 24.7,
+          "w": 3.57,
+          "h": 0.64,
+          "text": "Protocols by IETF that"
+        },
+        {
+          "l": 1.62,
+          "t": 25.56,
+          "w": 3.55,
+          "h": 0.64,
+          "text": "secure packets at the"
+        },
+        {
+          "l": 1.63,
+          "t": 26.43,
+          "w": 2.91,
+          "h": 0.64,
+          "text": "network (IP) layer"
+        },
+        {
+          "l": 6.29,
+          "t": 22.04,
+          "w": 3.92,
+          "h": 0.75,
+          "text": "Why security at IP"
+        },
+        {
+          "l": 6.31,
+          "t": 23.04,
+          "w": 1.25,
+          "h": 0.75,
+          "text": "layer?"
+        },
+        {
+          "l": 6.74,
+          "t": 25.2,
+          "w": 3.01,
+          "h": 0.64,
+          "text": "App-layer security"
+        },
+        {
+          "l": 6.75,
+          "t": 26.06,
+          "w": 3.77,
+          "h": 0.64,
+          "text": "covers only some apps"
+        },
+        {
+          "l": 6.76,
+          "t": 26.93,
+          "w": 3.53,
+          "h": 0.59,
+          "text": "(PGP, S/MIME = email"
+        },
+        {
+          "l": 6.75,
+          "t": 27.79,
+          "w": 0.78,
+          "h": 0.64,
+          "text": "only)"
+        },
+        {
+          "l": 6.76,
+          "t": 29.78,
+          "w": 3.87,
+          "h": 0.63,
+          "text": "Some apps use UDP, so"
+        },
+        {
+          "l": 6.76,
+          "t": 30.63,
+          "w": 3.36,
+          "h": 0.59,
+          "text": "SSL/TLS (needs TCP)"
+        },
+        {
+          "l": 6.75,
+          "t": 31.5,
+          "w": 3.04,
+          "h": 0.64,
+          "text": "can't protect them"
+        },
+        {
+          "l": 6.77,
+          "t": 33.48,
+          "w": 3.96,
+          "h": 0.64,
+          "text": "Routing protocols use IP"
+        },
+        {
+          "l": 6.75,
+          "t": 34.34,
+          "w": 1.21,
+          "h": 0.64,
+          "text": "directly"
+        },
+        {
+          "l": 11.81,
+          "t": 22.54,
+          "w": 2.65,
+          "h": 0.74,
+          "text": "Applications"
+        },
+        {
+          "l": 12.28,
+          "t": 24.7,
+          "w": 3.39,
+          "h": 0.51,
+          "text": "Secure branch-office"
+        },
+        {
+          "l": 12.28,
+          "t": 25.56,
+          "w": 1.99,
+          "h": 0.64,
+          "text": "connectivity"
+        },
+        {
+          "l": 12.28,
+          "t": 27.56,
+          "w": 3.63,
+          "h": 0.5,
+          "text": "Secure remote access"
+        },
+        {
+          "l": 12.29,
+          "t": 29.53,
+          "w": 3.8,
+          "h": 0.57,
+          "text": "Extranet / intranet with"
+        },
+        {
+          "l": 12.29,
+          "t": 30.43,
+          "w": 1.35,
+          "h": 0.6,
+          "text": "partners"
+        },
+        {
+          "l": 12.28,
+          "t": 32.37,
+          "w": 3.01,
+          "h": 0.51,
+          "text": "Safer e-commerce"
+        },
+        {
+          "l": 17.22,
+          "t": 22.04,
+          "w": 2.91,
+          "h": 0.68,
+          "text": "Services (RFC"
+        },
+        {
+          "l": 17.21,
+          "t": 23.04,
+          "w": 1.19,
+          "h": 0.68,
+          "text": "4301)"
+        },
+        {
+          "l": 17.65,
+          "t": 25.2,
+          "w": 2.36,
+          "h": 0.51,
+          "text": "Access control"
+        },
+        {
+          "l": 17.68,
+          "t": 27.18,
+          "w": 2.91,
+          "h": 0.64,
+          "text": "Message integrity"
+        },
+        {
+          "l": 17.68,
+          "t": 29.16,
+          "w": 3.41,
+          "h": 0.64,
+          "text": "Entity authentication"
+        },
+        {
+          "l": 17.68,
+          "t": 31.14,
+          "w": 3.46,
+          "h": 0.64,
+          "text": "Rejection of replayed"
+        },
+        {
+          "l": 17.68,
+          "t": 32.01,
+          "w": 1.24,
+          "h": 0.64,
+          "text": "packets"
+        },
+        {
+          "l": 17.67,
+          "t": 33.99,
+          "w": 2.38,
+          "h": 0.64,
+          "text": "Confidentiality"
+        },
+        {
+          "l": 22.27,
+          "t": 22.04,
+          "w": 1.94,
+          "h": 0.59,
+          "text": "Modes of"
+        },
+        {
+          "l": 22.25,
+          "t": 23.04,
+          "w": 2.05,
+          "h": 0.74,
+          "text": "operation"
+        },
+        {
+          "l": 22.69,
+          "t": 25.2,
+          "w": 2.96,
+          "h": 0.64,
+          "text": "Transport mode"
+        },
+        {
+          "l": 23.17,
+          "t": 27.23,
+          "w": 4.18,
+          "h": 0.57,
+          "text": "Protects only the IP payload,"
+        },
+        {
+          "l": 23.17,
+          "t": 28.0,
+          "w": 2.53,
+          "h": 0.46,
+          "text": "not the IP header"
+        },
+        {
+          "l": 23.17,
+          "t": 29.89,
+          "w": 3.72,
+          "h": 0.53,
+          "text": "Host-to-host (end-to-end)"
+        },
+        {
+          "l": 23.17,
+          "t": 31.78,
+          "w": 2.33,
+          "h": 0.46,
+          "text": "Lower overhead"
+        },
+        {
+          "l": 23.14,
+          "t": 33.67,
+          "w": 4.23,
+          "h": 0.57,
+          "text": "AH: authenticates payload +"
+        },
+        {
+          "l": 23.17,
+          "t": 34.45,
+          "w": 2.25,
+          "h": 0.57,
+          "text": "parts of header"
+        },
+        {
+          "l": 23.17,
+          "t": 36.34,
+          "w": 3.96,
+          "h": 0.57,
+          "text": "ESP: encrypts payload (not"
+        },
+        {
+          "l": 23.17,
+          "t": 37.11,
+          "w": 1.11,
+          "h": 0.53,
+          "text": "header)"
+        },
+        {
+          "l": 22.69,
+          "t": 39.02,
+          "w": 2.4,
+          "h": 0.51,
+          "text": "Tunnel mode"
+        },
+        {
+          "l": 23.17,
+          "t": 41.05,
+          "w": 4.25,
+          "h": 0.57,
+          "text": "Protects the entire IP packet,"
+        },
+        {
+          "l": 23.16,
+          "t": 41.82,
+          "w": 3.17,
+          "h": 0.46,
+          "text": "adds a new IP header"
+        },
+        {
+          "l": 23.16,
+          "t": 43.72,
+          "w": 4.0,
+          "h": 0.56,
+          "text": "Gateway-to-gateway, VPNs"
+        },
+        {
+          "l": 23.17,
+          "t": 45.6,
+          "w": 2.18,
+          "h": 0.46,
+          "text": "More overhead"
+        },
+        {
+          "l": 23.14,
+          "t": 47.49,
+          "w": 3.51,
+          "h": 0.46,
+          "text": "AH: authenticates inner"
+        },
+        {
+          "l": 23.17,
+          "t": 48.27,
+          "w": 3.43,
+          "h": 0.57,
+          "text": "packet + parts of outer"
+        },
+        {
+          "l": 23.17,
+          "t": 49.04,
+          "w": 1.02,
+          "h": 0.46,
+          "text": "header"
+        },
+        {
+          "l": 23.17,
+          "t": 50.93,
+          "w": 3.82,
+          "h": 0.57,
+          "text": "ESP: encrypts entire inner"
+        },
+        {
+          "l": 23.17,
+          "t": 51.7,
+          "w": 3.26,
+          "h": 0.57,
+          "text": "packet incl. its header"
+        },
+        {
+          "l": 28.54,
+          "t": 21.54,
+          "w": 2.19,
+          "h": 0.59,
+          "text": "Protection"
+        },
+        {
+          "l": 28.53,
+          "t": 22.54,
+          "w": 2.62,
+          "h": 0.59,
+          "text": "mechanisms"
+        },
+        {
+          "l": 28.53,
+          "t": 23.54,
+          "w": 2.82,
+          "h": 0.74,
+          "text": "(sub-protocols)"
+        },
+        {
+          "l": 28.95,
+          "t": 25.72,
+          "w": 0.5,
+          "h": 0.48,
+          "text": "AH"
+        },
+        {
+          "l": 28.96,
+          "t": 26.56,
+          "w": 2.4,
+          "h": 0.51,
+          "text": "Authentication"
+        },
+        {
+          "l": 28.99,
+          "t": 27.43,
+          "w": 1.17,
+          "h": 0.51,
+          "text": "Header"
+        },
+        {
+          "l": 29.43,
+          "t": 29.46,
+          "w": 3.56,
+          "h": 0.46,
+          "text": "Source authentication +"
+        },
+        {
+          "l": 29.43,
+          "t": 30.23,
+          "w": 3.04,
+          "h": 0.57,
+          "text": "integrity, NO privacy"
+        },
+        {
+          "l": 29.44,
+          "t": 32.12,
+          "w": 3.06,
+          "h": 0.57,
+          "text": "IP protocol field = 51"
+        },
+        {
+          "l": 29.43,
+          "t": 34.01,
+          "w": 2.19,
+          "h": 0.46,
+          "text": "Header fields"
+        },
+        {
+          "l": 29.89,
+          "t": 35.97,
+          "w": 1.8,
+          "h": 0.46,
+          "text": "Next header"
+        },
+        {
+          "l": 29.89,
+          "t": 37.86,
+          "w": 2.15,
+          "h": 0.57,
+          "text": "Payload length"
+        },
+        {
+          "l": 29.88,
+          "t": 39.75,
+          "w": 3.5,
+          "h": 0.57,
+          "text": "SPI (Security Parameter"
+        },
+        {
+          "l": 29.89,
+          "t": 40.52,
+          "w": 0.88,
+          "h": 0.53,
+          "text": "Index)"
+        },
+        {
+          "l": 29.88,
+          "t": 42.41,
+          "w": 3.68,
+          "h": 0.57,
+          "text": "Sequence number (stops"
+        },
+        {
+          "l": 29.89,
+          "t": 43.19,
+          "w": 0.99,
+          "h": 0.57,
+          "text": "replay)"
+        },
+        {
+          "l": 29.86,
+          "t": 45.08,
+          "w": 3.94,
+          "h": 0.53,
+          "text": "Authentication data (hash)"
+        },
+        {
+          "l": 28.98,
+          "t": 47.0,
+          "w": 0.66,
+          "h": 0.5,
+          "text": "ESP"
+        },
+        {
+          "l": 28.99,
+          "t": 47.85,
+          "w": 2.27,
+          "h": 0.64,
+          "text": "Encapsulating"
+        },
+        {
+          "l": 28.98,
+          "t": 48.71,
+          "w": 2.71,
+          "h": 0.64,
+          "text": "Security Payload"
+        },
+        {
+          "l": 29.41,
+          "t": 50.74,
+          "w": 4.17,
+          "h": 0.57,
+          "text": "Authentication + integrity +"
+        },
+        {
+          "l": 29.43,
+          "t": 51.52,
+          "w": 1.05,
+          "h": 0.57,
+          "text": "privacy"
+        },
+        {
+          "l": 29.44,
+          "t": 53.41,
+          "w": 3.07,
+          "h": 0.57,
+          "text": "IP protocol field = 50"
+        },
+        {
+          "l": 29.41,
+          "t": 55.3,
+          "w": 4.03,
+          "h": 0.52,
+          "text": "Adds header + trailer; auth"
+        },
+        {
+          "l": 29.42,
+          "t": 56.07,
+          "w": 2.25,
+          "h": 0.46,
+          "text": "data at the end"
+        },
+        {
+          "l": 29.43,
+          "t": 57.96,
+          "w": 3.92,
+          "h": 0.57,
+          "text": "Steps: add trailer, encrypt,"
+        },
+        {
+          "l": 29.42,
+          "t": 58.73,
+          "w": 3.91,
+          "h": 0.57,
+          "text": "add header, compute auth"
+        },
+        {
+          "l": 29.42,
+          "t": 59.5,
+          "w": 2.89,
+          "h": 0.52,
+          "text": "data, add IP header"
+        },
+        {
+          "l": 34.95,
+          "t": 22.56,
+          "w": 3.53,
+          "h": 0.73,
+          "text": "Key components"
+        },
+        {
+          "l": 35.39,
+          "t": 24.71,
+          "w": 0.47,
+          "h": 0.5,
+          "text": "SA"
+        },
+        {
+          "l": 35.39,
+          "t": 25.56,
+          "w": 3.29,
+          "h": 0.64,
+          "text": "Security Association"
+        },
+        {
+          "l": 35.85,
+          "t": 27.6,
+          "w": 4.08,
+          "h": 0.57,
+          "text": "Logical connection between"
+        },
+        {
+          "l": 35.82,
+          "t": 28.37,
+          "w": 2.08,
+          "h": 0.57,
+          "text": "two endpoints"
+        },
+        {
+          "l": 35.85,
+          "t": 30.26,
+          "w": 4.19,
+          "h": 0.57,
+          "text": "Holds: protocols, algorithms,"
+        },
+        {
+          "l": 35.84,
+          "t": 31.03,
+          "w": 1.95,
+          "h": 0.57,
+          "text": "keys, lifetime"
+        },
+        {
+          "l": 35.85,
+          "t": 32.92,
+          "w": 2.92,
+          "h": 0.57,
+          "text": "Identified by the SPI"
+        },
+        {
+          "l": 35.39,
+          "t": 34.85,
+          "w": 0.55,
+          "h": 0.48,
+          "text": "IKE"
+        },
+        {
+          "l": 35.4,
+          "t": 35.71,
+          "w": 2.0,
+          "h": 0.62,
+          "text": "Internet Key"
+        },
+        {
+          "l": 35.4,
+          "t": 36.56,
+          "w": 1.57,
+          "h": 0.64,
+          "text": "Exchange"
+        },
+        {
+          "l": 35.85,
+          "t": 38.59,
+          "w": 4.05,
+          "h": 0.57,
+          "text": "Negotiates, establishes and"
+        },
+        {
+          "l": 35.84,
+          "t": 39.37,
+          "w": 1.96,
+          "h": 0.56,
+          "text": "manages SAs"
+        },
+        {
+          "l": 35.85,
+          "t": 41.25,
+          "w": 3.81,
+          "h": 0.52,
+          "text": "Functions: authentication,"
+        },
+        {
+          "l": 35.84,
+          "t": 42.02,
+          "w": 4.28,
+          "h": 0.57,
+          "text": "key generation, SA setup, SA"
+        },
+        {
+          "l": 35.84,
+          "t": 42.83,
+          "w": 1.95,
+          "h": 0.54,
+          "text": "management"
+        },
+        {
+          "l": 35.85,
+          "t": 44.68,
+          "w": 3.56,
+          "h": 0.46,
+          "text": "Phase 1: secure channel"
+        },
+        {
+          "l": 35.84,
+          "t": 45.46,
+          "w": 2.47,
+          "h": 0.57,
+          "text": "(public-key auth)"
+        },
+        {
+          "l": 35.85,
+          "t": 47.35,
+          "w": 3.23,
+          "h": 0.57,
+          "text": "Phase 2: negotiate SA"
+        },
+        {
+          "l": 35.84,
+          "t": 48.15,
+          "w": 1.67,
+          "h": 0.54,
+          "text": "parameters"
+        },
+        {
+          "l": 41.25,
+          "t": 21.55,
+          "w": 1.12,
+          "h": 0.58,
+          "text": "IPSec"
+        },
+        {
+          "l": 41.21,
+          "t": 22.54,
+          "w": 2.67,
+          "h": 0.59,
+          "text": "Architecture"
+        },
+        {
+          "l": 41.24,
+          "t": 23.54,
+          "w": 2.36,
+          "h": 0.68,
+          "text": "(documents)"
+        },
+        {
+          "l": 41.67,
+          "t": 25.7,
+          "w": 2.02,
+          "h": 0.51,
+          "text": "Architecture"
+        },
+        {
+          "l": 41.7,
+          "t": 27.68,
+          "w": 2.02,
+          "h": 0.64,
+          "text": "ESP protocol"
+        },
+        {
+          "l": 41.67,
+          "t": 29.66,
+          "w": 1.9,
+          "h": 0.64,
+          "text": "AH protocol"
+        },
+        {
+          "l": 41.7,
+          "t": 31.64,
+          "w": 3.41,
+          "h": 0.64,
+          "text": "Encryption algorithm"
+        },
+        {
+          "l": 41.67,
+          "t": 33.63,
+          "w": 2.4,
+          "h": 0.51,
+          "text": "Authentication"
+        },
+        {
+          "l": 41.68,
+          "t": 34.49,
+          "w": 1.55,
+          "h": 0.64,
+          "text": "algorithm"
+        },
+        {
+          "l": 41.7,
+          "t": 36.47,
+          "w": 2.53,
+          "h": 0.59,
+          "text": "DOI (Domain of"
+        },
+        {
+          "l": 41.7,
+          "t": 37.33,
+          "w": 2.36,
+          "h": 0.64,
+          "text": "Interpretation)"
+        },
+        {
+          "l": 41.7,
+          "t": 39.33,
+          "w": 2.9,
+          "h": 0.62,
+          "text": "Key management"
+        },
+        {
+          "l": 61.28,
+          "t": 15.92,
+          "w": 3.97,
+          "h": 0.88,
+          "text": "Transport Level"
+        },
+        {
+          "l": 61.31,
+          "t": 17.1,
+          "w": 1.81,
+          "h": 0.88,
+          "text": "Security"
+        },
+        {
+          "l": 46.23,
+          "t": 22.04,
+          "w": 2.81,
+          "h": 0.75,
+          "text": "Web security"
+        },
+        {
+          "l": 46.24,
+          "t": 23.04,
+          "w": 3.15,
+          "h": 0.59,
+          "text": "considerations"
+        },
+        {
+          "l": 46.69,
+          "t": 25.2,
+          "w": 3.52,
+          "h": 0.57,
+          "text": "WWW = client/server"
+        },
+        {
+          "l": 46.69,
+          "t": 26.06,
+          "w": 3.13,
+          "h": 0.58,
+          "text": "over TCP/IP, so it is"
+        },
+        {
+          "l": 46.69,
+          "t": 26.93,
+          "w": 1.73,
+          "h": 0.51,
+          "text": "vulnerable"
+        },
+        {
+          "l": 46.68,
+          "t": 28.91,
+          "w": 3.32,
+          "h": 0.64,
+          "text": "Approaches: IP level"
+        },
+        {
+          "l": 46.7,
+          "t": 29.77,
+          "w": 3.79,
+          "h": 0.64,
+          "text": "(IPSec), Transport level"
+        },
+        {
+          "l": 46.7,
+          "t": 30.63,
+          "w": 3.57,
+          "h": 0.64,
+          "text": "(SSL/TLS), Application"
+        },
+        {
+          "l": 46.71,
+          "t": 31.5,
+          "w": 0.72,
+          "h": 0.51,
+          "text": "level"
+        },
+        {
+          "l": 51.6,
+          "t": 22.04,
+          "w": 3.81,
+          "h": 0.74,
+          "text": "Need of transport"
+        },
+        {
+          "l": 51.59,
+          "t": 23.04,
+          "w": 2.87,
+          "h": 0.75,
+          "text": "level security"
+        },
+        {
+          "l": 52.05,
+          "t": 25.2,
+          "w": 3.41,
+          "h": 0.64,
+          "text": "Entity authentication"
+        },
+        {
+          "l": 52.05,
+          "t": 27.18,
+          "w": 2.91,
+          "h": 0.64,
+          "text": "Message integrity"
+        },
+        {
+          "l": 52.03,
+          "t": 29.16,
+          "w": 2.38,
+          "h": 0.64,
+          "text": "Confidentiality"
+        },
+        {
+          "l": 56.6,
+          "t": 21.55,
+          "w": 0.76,
+          "h": 0.58,
+          "text": "SSL"
+        },
+        {
+          "l": 56.6,
+          "t": 22.54,
+          "w": 2.9,
+          "h": 0.59,
+          "text": "Secure Sockets"
+        },
+        {
+          "l": 56.61,
+          "t": 23.56,
+          "w": 1.03,
+          "h": 0.72,
+          "text": "Layer"
+        },
+        {
+          "l": 57.06,
+          "t": 25.7,
+          "w": 3.71,
+          "h": 0.64,
+          "text": "Netscape, 1994; latest"
+        },
+        {
+          "l": 57.06,
+          "t": 26.58,
+          "w": 1.33,
+          "h": 0.5,
+          "text": "= SSLv3"
+        },
+        {
+          "l": 57.04,
+          "t": 28.55,
+          "w": 2.59,
+          "h": 0.51,
+          "text": "Connection vs"
+        },
+        {
+          "l": 57.05,
+          "t": 29.41,
+          "w": 1.38,
+          "h": 0.51,
+          "text": "Session"
+        },
+        {
+          "l": 57.49,
+          "t": 31.44,
+          "w": 3.24,
+          "h": 0.52,
+          "text": "Connection: transient,"
+        },
+        {
+          "l": 57.5,
+          "t": 32.21,
+          "w": 3.61,
+          "h": 0.57,
+          "text": "peer-to-peer, tied to one"
+        },
+        {
+          "l": 57.49,
+          "t": 32.98,
+          "w": 1.05,
+          "h": 0.46,
+          "text": "session"
+        },
+        {
+          "l": 57.5,
+          "t": 34.87,
+          "w": 3.16,
+          "h": 0.46,
+          "text": "Session: client-server"
+        },
+        {
+          "l": 57.49,
+          "t": 35.65,
+          "w": 3.03,
+          "h": 0.57,
+          "text": "association made by"
+        },
+        {
+          "l": 57.51,
+          "t": 36.42,
+          "w": 4.2,
+          "h": 0.57,
+          "text": "Handshake, shared by many"
+        },
+        {
+          "l": 57.49,
+          "t": 37.19,
+          "w": 1.75,
+          "h": 0.46,
+          "text": "connections"
+        },
+        {
+          "l": 57.05,
+          "t": 39.1,
+          "w": 3.49,
+          "h": 0.51,
+          "text": "SSL Protocol Stack"
+        },
+        {
+          "l": 57.05,
+          "t": 39.96,
+          "w": 1.82,
+          "h": 0.64,
+          "text": "(2 layers, 4"
+        },
+        {
+          "l": 57.05,
+          "t": 40.83,
+          "w": 1.6,
+          "h": 0.64,
+          "text": "protocols)"
+        },
+        {
+          "l": 57.5,
+          "t": 42.86,
+          "w": 1.93,
+          "h": 0.58,
+          "text": "Upper layer"
+        },
+        {
+          "l": 57.96,
+          "t": 44.82,
+          "w": 3.3,
+          "h": 0.46,
+          "text": "Handshake Protocol"
+        },
+        {
+          "l": 58.41,
+          "t": 46.78,
+          "w": 3.47,
+          "h": 0.57,
+          "text": "Negotiates cipher suite,"
+        },
+        {
+          "l": 58.4,
+          "t": 47.55,
+          "w": 4.19,
+          "h": 0.57,
+          "text": "authenticates parties, builds"
+        },
+        {
+          "l": 58.4,
+          "t": 48.36,
+          "w": 1.04,
+          "h": 0.42,
+          "text": "secrets"
+        },
+        {
+          "l": 58.41,
+          "t": 50.21,
+          "w": 2.52,
+          "h": 0.57,
+          "text": "Done in 4 phases"
+        },
+        {
+          "l": 57.94,
+          "t": 52.1,
+          "w": 3.1,
+          "h": 0.58,
+          "text": "ChangeCipherSpec"
+        },
+        {
+          "l": 57.96,
+          "t": 52.87,
+          "w": 1.34,
+          "h": 0.46,
+          "text": "Protocol"
+        },
+        {
+          "l": 58.41,
+          "t": 54.84,
+          "w": 3.43,
+          "h": 0.57,
+          "text": "Moves pending state to"
+        },
+        {
+          "l": 58.4,
+          "t": 55.61,
+          "w": 2.87,
+          "h": 0.57,
+          "text": "active state (1-byte"
+        },
+        {
+          "l": 58.41,
+          "t": 56.38,
+          "w": 1.39,
+          "h": 0.57,
+          "text": "message)"
+        },
+        {
+          "l": 57.93,
+          "t": 58.27,
+          "w": 2.29,
+          "h": 0.46,
+          "text": "Alert Protocol"
+        },
+        {
+          "l": 58.41,
+          "t": 60.23,
+          "w": 4.25,
+          "h": 0.57,
+          "text": "Reports errors, 2 bytes: level"
+        },
+        {
+          "l": 58.41,
+          "t": 61.0,
+          "w": 4.05,
+          "h": 0.57,
+          "text": "(warning 1 / fatal 2) + code"
+        },
+        {
+          "l": 57.5,
+          "t": 62.89,
+          "w": 1.93,
+          "h": 0.58,
+          "text": "Lower layer"
+        },
+        {
+          "l": 57.96,
+          "t": 64.85,
+          "w": 2.61,
+          "h": 0.46,
+          "text": "Record Protocol"
+        },
+        {
+          "l": 57.95,
+          "t": 65.62,
+          "w": 2.88,
+          "h": 0.57,
+          "text": "(carries everything)"
+        },
+        {
+          "l": 58.4,
+          "t": 67.58,
+          "w": 4.09,
+          "h": 0.57,
+          "text": "Services: message integrity"
+        },
+        {
+          "l": 58.41,
+          "t": 68.36,
+          "w": 3.41,
+          "h": 0.57,
+          "text": "(MAC) + confidentiality"
+        },
+        {
+          "l": 58.41,
+          "t": 69.13,
+          "w": 1.76,
+          "h": 0.57,
+          "text": "(encryption)"
+        },
+        {
+          "l": 58.4,
+          "t": 71.02,
+          "w": 3.87,
+          "h": 0.57,
+          "text": "Steps: fragment (2^14 B),"
+        },
+        {
+          "l": 58.4,
+          "t": 71.79,
+          "w": 3.86,
+          "h": 0.57,
+          "text": "compress (optional), MAC,"
+        },
+        {
+          "l": 58.4,
+          "t": 72.56,
+          "w": 3.0,
+          "h": 0.57,
+          "text": "encrypt, add header"
+        },
+        {
+          "l": 58.41,
+          "t": 74.45,
+          "w": 4.17,
+          "h": 0.57,
+          "text": "Header: content type, major"
+        },
+        {
+          "l": 58.39,
+          "t": 75.23,
+          "w": 4.05,
+          "h": 0.57,
+          "text": "ver, minor ver, compressed"
+        },
+        {
+          "l": 58.41,
+          "t": 76.0,
+          "w": 0.89,
+          "h": 0.57,
+          "text": "length"
+        },
+        {
+          "l": 57.05,
+          "t": 77.91,
+          "w": 2.55,
+          "h": 0.65,
+          "text": "Key exchange"
+        },
+        {
+          "l": 57.05,
+          "t": 78.77,
+          "w": 2.21,
+          "h": 0.59,
+          "text": "methods (6)"
+        },
+        {
+          "l": 57.51,
+          "t": 80.82,
+          "w": 0.74,
+          "h": 0.44,
+          "text": "NULL"
+        },
+        {
+          "l": 57.51,
+          "t": 82.7,
+          "w": 0.56,
+          "h": 0.45,
+          "text": "RSA"
+        },
+        {
+          "l": 57.48,
+          "t": 84.6,
+          "w": 2.26,
+          "h": 0.56,
+          "text": "Anonymous DH"
+        },
+        {
+          "l": 57.51,
+          "t": 86.47,
+          "w": 2.09,
+          "h": 0.57,
+          "text": "Ephemeral DH"
+        },
+        {
+          "l": 57.51,
+          "t": 88.36,
+          "w": 1.28,
+          "h": 0.46,
+          "text": "Fixed DH"
+        },
+        {
+          "l": 57.51,
+          "t": 90.27,
+          "w": 1.21,
+          "h": 0.44,
+          "text": "Fortezza"
+        },
+        {
+          "l": 57.04,
+          "t": 92.16,
+          "w": 2.23,
+          "h": 0.64,
+          "text": "Cipher suite"
+        },
+        {
+          "l": 57.51,
+          "t": 94.2,
+          "w": 2.69,
+          "h": 0.57,
+          "text": "= key exchange +"
+        },
+        {
+          "l": 57.49,
+          "t": 94.97,
+          "w": 4.21,
+          "h": 0.57,
+          "text": "encryption + hash algorithm"
+        },
+        {
+          "l": 57.49,
+          "t": 96.98,
+          "w": 0.51,
+          "h": 0.46,
+          "text": "e.g."
+        },
+        {
+          "l": 57.5,
+          "t": 97.64,
+          "w": 5.25,
+          "h": 0.58,
+          "text": "SSL_DHE_RSA_WITH_DES_CBC_SHA"
+        },
+        {
+          "l": 63.84,
+          "t": 21.55,
+          "w": 0.75,
+          "h": 0.58,
+          "text": "TLS"
+        },
+        {
+          "l": 63.84,
+          "t": 22.56,
+          "w": 3.04,
+          "h": 0.72,
+          "text": "Transport Layer"
+        },
+        {
+          "l": 63.86,
+          "t": 23.54,
+          "w": 1.54,
+          "h": 0.74,
+          "text": "Security"
+        },
+        {
+          "l": 64.32,
+          "t": 25.7,
+          "w": 3.53,
+          "h": 0.51,
+          "text": "IETF standard version"
+        },
+        {
+          "l": 64.31,
+          "t": 26.56,
+          "w": 2.82,
+          "h": 0.59,
+          "text": "of SSL (TLS 1.0 ~"
+        },
+        {
+          "l": 64.31,
+          "t": 27.43,
+          "w": 1.09,
+          "h": 0.59,
+          "text": "SSLv3)"
+        },
+        {
+          "l": 64.32,
+          "t": 29.41,
+          "w": 3.9,
+          "h": 0.51,
+          "text": "Differences from SSL"
+        },
+        {
+          "l": 64.77,
+          "t": 31.46,
+          "w": 2.51,
+          "h": 0.5,
+          "text": "No Fortezza, so 5"
+        },
+        {
+          "l": 64.77,
+          "t": 32.21,
+          "w": 3.43,
+          "h": 0.57,
+          "text": "key-exchange methods"
+        },
+        {
+          "l": 64.74,
+          "t": 34.1,
+          "w": 3.52,
+          "h": 0.52,
+          "text": "Alerts: no NoCertificate,"
+        },
+        {
+          "l": 64.76,
+          "t": 34.87,
+          "w": 3.29,
+          "h": 0.46,
+          "text": "some new ones added"
+        },
+        {
+          "l": 64.77,
+          "t": 36.76,
+          "w": 4.21,
+          "h": 0.57,
+          "text": "Handshake: CertificateVerify"
+        },
+        {
+          "l": 64.76,
+          "t": 37.54,
+          "w": 2.99,
+          "h": 0.46,
+          "text": "and Finished hashes"
+        },
+        {
+          "l": 64.76,
+          "t": 38.31,
+          "w": 1.39,
+          "h": 0.57,
+          "text": "simplified"
+        },
+        {
+          "l": 64.77,
+          "t": 40.2,
+          "w": 3.72,
+          "h": 0.57,
+          "text": "Record layer: HMAC, with"
+        },
+        {
+          "l": 64.77,
+          "t": 40.97,
+          "w": 3.36,
+          "h": 0.57,
+          "text": "protocol version added"
+        },
+        {
+          "l": 64.31,
+          "t": 42.88,
+          "w": 3.9,
+          "h": 0.65,
+          "text": "Cryptographic secret"
+        },
+        {
+          "l": 64.3,
+          "t": 43.74,
+          "w": 2.0,
+          "h": 0.65,
+          "text": "generation"
+        },
+        {
+          "l": 64.77,
+          "t": 45.77,
+          "w": 2.5,
+          "h": 0.58,
+          "text": "Building blocks"
+        },
+        {
+          "l": 65.22,
+          "t": 47.74,
+          "w": 3.58,
+          "h": 0.57,
+          "text": "Data-expansion function"
+        },
+        {
+          "l": 65.22,
+          "t": 48.51,
+          "w": 3.95,
+          "h": 0.53,
+          "text": "(HMAC with MD5 or SHA-1)"
+        },
+        {
+          "l": 65.22,
+          "t": 50.4,
+          "w": 4.15,
+          "h": 0.46,
+          "text": "PRF = secret + label + seed"
+        },
+        {
+          "l": 65.22,
+          "t": 51.17,
+          "w": 2.47,
+          "h": 0.53,
+          "text": "(MD5 XOR SHA-1"
+        },
+        {
+          "l": 65.21,
+          "t": 51.94,
+          "w": 1.75,
+          "h": 0.57,
+          "text": "expansions)"
+        },
+        {
+          "l": 64.77,
+          "t": 53.83,
+          "w": 0.74,
+          "h": 0.46,
+          "text": "Flow"
+        },
+        {
+          "l": 65.23,
+          "t": 55.79,
+          "w": 3.99,
+          "h": 0.53,
+          "text": "1. Pre-master secret (same"
+        },
+        {
+          "l": 65.21,
+          "t": 56.57,
+          "w": 1.04,
+          "h": 0.53,
+          "text": "as SSL)"
+        },
+        {
+          "l": 65.22,
+          "t": 58.45,
+          "w": 3.27,
+          "h": 0.53,
+          "text": "2. Master secret (label"
+        },
+        {
+          "l": 65.22,
+          "t": 59.23,
+          "w": 2.39,
+          "h": 0.53,
+          "text": "\"master secret\")"
+        },
+        {
+          "l": 65.22,
+          "t": 61.12,
+          "w": 3.91,
+          "h": 0.57,
+          "text": "3. Key material (label \"key"
+        },
+        {
+          "l": 65.21,
+          "t": 61.89,
+          "w": 1.73,
+          "h": 0.57,
+          "text": "expansion\")"
+        },
+        {
+          "l": 70.51,
+          "t": 22.05,
+          "w": 1.34,
+          "h": 0.58,
+          "text": "HTTPS"
+        },
+        {
+          "l": 70.51,
+          "t": 23.04,
+          "w": 3.3,
+          "h": 0.68,
+          "text": "(HTTP + SSL/TLS)"
+        },
+        {
+          "l": 70.96,
+          "t": 25.2,
+          "w": 3.55,
+          "h": 0.64,
+          "text": "Uses https:// and port"
+        },
+        {
+          "l": 70.94,
+          "t": 26.06,
+          "w": 3.19,
+          "h": 0.59,
+          "text": "443 (HTTP uses 80)"
+        },
+        {
+          "l": 70.96,
+          "t": 28.05,
+          "w": 2.6,
+          "h": 0.64,
+          "text": "Encrypted: URL,"
+        },
+        {
+          "l": 70.94,
+          "t": 28.91,
+          "w": 3.93,
+          "h": 0.58,
+          "text": "content, forms, cookies,"
+        },
+        {
+          "l": 70.96,
+          "t": 29.77,
+          "w": 2.25,
+          "h": 0.51,
+          "text": "HTTP headers"
+        },
+        {
+          "l": 70.95,
+          "t": 31.75,
+          "w": 3.68,
+          "h": 0.58,
+          "text": "Start: TLS Client Hello,"
+        },
+        {
+          "l": 70.96,
+          "t": 32.62,
+          "w": 3.69,
+          "h": 0.58,
+          "text": "handshake, then HTTP"
+        },
+        {
+          "l": 70.96,
+          "t": 33.52,
+          "w": 1.23,
+          "h": 0.6,
+          "text": "request"
+        },
+        {
+          "l": 70.95,
+          "t": 35.46,
+          "w": 3.05,
+          "h": 0.66,
+          "text": "Close: close_notify"
+        },
+        {
+          "l": 70.95,
+          "t": 36.32,
+          "w": 3.56,
+          "h": 0.58,
+          "text": "alert, then TCP closes"
+        },
+        {
+          "l": 76.02,
+          "t": 22.05,
+          "w": 0.81,
+          "h": 0.58,
+          "text": "SSH"
+        },
+        {
+          "l": 76.02,
+          "t": 23.04,
+          "w": 2.32,
+          "h": 0.59,
+          "text": "Secure Shell"
+        },
+        {
+          "l": 76.47,
+          "t": 25.2,
+          "w": 2.57,
+          "h": 0.51,
+          "text": "Secure network"
+        },
+        {
+          "l": 76.46,
+          "t": 26.06,
+          "w": 3.82,
+          "h": 0.64,
+          "text": "communication, simple"
+        },
+        {
+          "l": 76.46,
+          "t": 26.93,
+          "w": 2.68,
+          "h": 0.64,
+          "text": "and inexpensive"
+        },
+        {
+          "l": 88.32,
+          "t": 16.51,
+          "w": 3.62,
+          "h": 0.89,
+          "text": "Email Security"
+        },
+        {
+          "l": 81.42,
+          "t": 22.54,
+          "w": 2.51,
+          "h": 0.75,
+          "text": "Background"
+        },
+        {
+          "l": 81.87,
+          "t": 24.7,
+          "w": 3.02,
+          "h": 0.59,
+          "text": "RFC 5322 (SMTP"
+        },
+        {
+          "l": 81.85,
+          "t": 25.56,
+          "w": 1.38,
+          "h": 0.59,
+          "text": "format)"
+        },
+        {
+          "l": 82.32,
+          "t": 27.6,
+          "w": 4.29,
+          "h": 0.52,
+          "text": "Header lines, blank line, then"
+        },
+        {
+          "l": 82.32,
+          "t": 28.37,
+          "w": 0.7,
+          "h": 0.57,
+          "text": "body"
+        },
+        {
+          "l": 82.32,
+          "t": 30.26,
+          "w": 4.27,
+          "h": 0.57,
+          "text": "Keywords: From, To, Subject,"
+        },
+        {
+          "l": 82.32,
+          "t": 31.05,
+          "w": 0.66,
+          "h": 0.44,
+          "text": "Date"
+        },
+        {
+          "l": 81.86,
+          "t": 32.94,
+          "w": 3.11,
+          "h": 0.51,
+          "text": "SMTP limitations"
+        },
+        {
+          "l": 82.32,
+          "t": 34.97,
+          "w": 4.01,
+          "h": 0.57,
+          "text": "No binary / executable files"
+        },
+        {
+          "l": 82.32,
+          "t": 36.86,
+          "w": 3.12,
+          "h": 0.57,
+          "text": "No national language"
+        },
+        {
+          "l": 82.31,
+          "t": 37.63,
+          "w": 1.54,
+          "h": 0.46,
+          "text": "characters"
+        },
+        {
+          "l": 82.31,
+          "t": 39.52,
+          "w": 1.47,
+          "h": 0.46,
+          "text": "Size limits"
+        },
+        {
+          "l": 82.29,
+          "t": 41.41,
+          "w": 4.01,
+          "h": 0.57,
+          "text": "ASCII-EBCDIC mapping and"
+        },
+        {
+          "l": 82.3,
+          "t": 42.19,
+          "w": 3.68,
+          "h": 0.57,
+          "text": "X.400 gateway problems"
+        },
+        {
+          "l": 87.76,
+          "t": 21.06,
+          "w": 1.1,
+          "h": 0.56,
+          "text": "MIME"
+        },
+        {
+          "l": 87.76,
+          "t": 22.04,
+          "w": 2.43,
+          "h": 0.74,
+          "text": "Multipurpose"
+        },
+        {
+          "l": 87.76,
+          "t": 23.04,
+          "w": 2.35,
+          "h": 0.59,
+          "text": "Internet Mail"
+        },
+        {
+          "l": 87.76,
+          "t": 24.04,
+          "w": 2.02,
+          "h": 0.59,
+          "text": "Extensions"
+        },
+        {
+          "l": 88.2,
+          "t": 26.2,
+          "w": 2.75,
+          "h": 0.51,
+          "text": "5 header fields"
+        },
+        {
+          "l": 88.66,
+          "t": 28.23,
+          "w": 1.95,
+          "h": 0.46,
+          "text": "MIME-Version"
+        },
+        {
+          "l": 88.64,
+          "t": 30.13,
+          "w": 1.98,
+          "h": 0.56,
+          "text": "Content-Type"
+        },
+        {
+          "l": 88.64,
+          "t": 32.01,
+          "w": 3.94,
+          "h": 0.57,
+          "text": "Content-Transfer-Encoding"
+        },
+        {
+          "l": 88.64,
+          "t": 33.91,
+          "w": 1.56,
+          "h": 0.45,
+          "text": "Content-ID"
+        },
+        {
+          "l": 88.64,
+          "t": 35.79,
+          "w": 2.93,
+          "h": 0.57,
+          "text": "Content-Description"
+        },
+        {
+          "l": 88.19,
+          "t": 37.7,
+          "w": 3.87,
+          "h": 0.64,
+          "text": "Content types: 7 major,"
+        },
+        {
+          "l": 88.21,
+          "t": 38.57,
+          "w": 1.98,
+          "h": 0.64,
+          "text": "15 subtypes"
+        },
+        {
+          "l": 88.18,
+          "t": 40.55,
+          "w": 3.57,
+          "h": 0.65,
+          "text": "Transfer encodings"
+        },
+        {
+          "l": 88.65,
+          "t": 42.58,
+          "w": 3.0,
+          "h": 0.57,
+          "text": "7bit, 8bit, binary (no"
+        },
+        {
+          "l": 88.64,
+          "t": 43.35,
+          "w": 2.26,
+          "h": 0.57,
+          "text": "encoding done)"
+        },
+        {
+          "l": 88.64,
+          "t": 45.24,
+          "w": 2.44,
+          "h": 0.57,
+          "text": "quoted-printable"
+        },
+        {
+          "l": 88.65,
+          "t": 47.13,
+          "w": 2.58,
+          "h": 0.53,
+          "text": "base64 (radix-64)"
+        },
+        {
+          "l": 88.64,
+          "t": 49.02,
+          "w": 1.09,
+          "h": 0.46,
+          "text": "x-token"
+        },
+        {
+          "l": 88.21,
+          "t": 50.93,
+          "w": 3.16,
+          "h": 0.51,
+          "text": "Native vs canonical"
+        },
+        {
+          "l": 88.18,
+          "t": 51.79,
+          "w": 0.74,
+          "h": 0.51,
+          "text": "form"
+        },
+        {
+          "l": 93.64,
+          "t": 22.05,
+          "w": 1.53,
+          "h": 0.64,
+          "text": "S/MIME"
+        },
+        {
+          "l": 93.63,
+          "t": 23.05,
+          "w": 2.41,
+          "h": 0.58,
+          "text": "Secure MIME"
+        },
+        {
+          "l": 94.08,
+          "t": 25.2,
+          "w": 3.72,
+          "h": 0.64,
+          "text": "Security enhancement"
+        },
+        {
+          "l": 94.07,
+          "t": 26.06,
+          "w": 3.07,
+          "h": 0.59,
+          "text": "to MIME (RSA Data"
+        },
+        {
+          "l": 94.08,
+          "t": 26.93,
+          "w": 1.44,
+          "h": 0.64,
+          "text": "Security)"
+        },
+        {
+          "l": 94.09,
+          "t": 28.93,
+          "w": 0.74,
+          "h": 0.49,
+          "text": "Uses"
+        },
+        {
+          "l": 94.08,
+          "t": 29.77,
+          "w": 3.92,
+          "h": 0.64,
+          "text": "application/pkcs7-mime"
+        },
+        {
+          "l": 94.08,
+          "t": 30.67,
+          "w": 2.07,
+          "h": 0.6,
+          "text": "content type"
+        },
+        {
+          "l": 94.08,
+          "t": 32.62,
+          "w": 3.29,
+          "h": 0.51,
+          "text": "CMS data content"
+        },
+        {
+          "l": 94.07,
+          "t": 33.52,
+          "w": 1.01,
+          "h": 0.61,
+          "text": "types"
+        },
+        {
+          "l": 94.53,
+          "t": 35.51,
+          "w": 3.2,
+          "h": 0.57,
+          "text": "Signed-data: integrity"
+        },
+        {
+          "l": 94.54,
+          "t": 36.28,
+          "w": 1.58,
+          "h": 0.57,
+          "text": "(signature)"
+        },
+        {
+          "l": 94.54,
+          "t": 38.17,
+          "w": 3.57,
+          "h": 0.57,
+          "text": "Enveloped-data: privacy"
+        },
+        {
+          "l": 94.54,
+          "t": 40.06,
+          "w": 3.5,
+          "h": 0.57,
+          "text": "Digested-data: integrity"
+        },
+        {
+          "l": 94.54,
+          "t": 41.95,
+          "w": 4.28,
+          "h": 0.57,
+          "text": "Encrypted-data: no recipient,"
+        },
+        {
+          "l": 94.52,
+          "t": 42.72,
+          "w": 1.6,
+          "h": 0.57,
+          "text": "for storage"
+        },
+        {
+          "l": 94.52,
+          "t": 44.62,
+          "w": 2.93,
+          "h": 0.46,
+          "text": "Authenticated-data:"
+        },
+        {
+          "l": 94.53,
+          "t": 45.39,
+          "w": 3.1,
+          "h": 0.53,
+          "text": "authentication (MAC)"
+        },
+        {
+          "l": 94.09,
+          "t": 47.3,
+          "w": 2.41,
+          "h": 0.65,
+          "text": "Functionality"
+        },
+        {
+          "l": 94.54,
+          "t": 49.33,
+          "w": 2.26,
+          "h": 0.57,
+          "text": "Enveloped data"
+        },
+        {
+          "l": 94.53,
+          "t": 51.22,
+          "w": 1.73,
+          "h": 0.57,
+          "text": "Signed data"
+        },
+        {
+          "l": 94.53,
+          "t": 53.11,
+          "w": 2.58,
+          "h": 0.57,
+          "text": "Clear-signed data"
+        },
+        {
+          "l": 94.53,
+          "t": 55.0,
+          "w": 4.02,
+          "h": 0.57,
+          "text": "Signed and enveloped data"
+        },
+        {
+          "l": 94.06,
+          "t": 56.91,
+          "w": 2.03,
+          "h": 0.65,
+          "text": "Algorithms"
+        },
+        {
+          "l": 94.54,
+          "t": 58.94,
+          "w": 3.2,
+          "h": 0.57,
+          "text": "Digital signature: DSS"
+        },
+        {
+          "l": 94.53,
+          "t": 60.83,
+          "w": 3.47,
+          "h": 0.57,
+          "text": "Session key encryption:"
+        },
+        {
+          "l": 94.54,
+          "t": 61.6,
+          "w": 3.58,
+          "h": 0.51,
+          "text": "Diffie-Hellman / ElGamal"
+        },
+        {
+          "l": 94.54,
+          "t": 63.49,
+          "w": 3.96,
+          "h": 0.57,
+          "text": "Message encryption: Triple"
+        },
+        {
+          "l": 94.54,
+          "t": 64.28,
+          "w": 0.56,
+          "h": 0.45,
+          "text": "DES"
+        },
+        {
+          "l": 94.09,
+          "t": 66.18,
+          "w": 3.59,
+          "h": 0.64,
+          "text": "Public-key certificates"
+        },
+        {
+          "l": 94.08,
+          "t": 67.04,
+          "w": 2.31,
+          "h": 0.64,
+          "text": "signed by CAs"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/slide_002.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/thumb_002.webp",
+      "text": "Module 4: simplified tree\r\nBig ideas only, with a one-line meaning for each.\r\nIP level security Transport level security Email security\r\nModule 4\r\nSecurity\r\nIPSec\r\n(network layer)\r\nModes\r\nTransport\r\nTunnel\r\nProtocols\r\nAH: authentication only\r\nESP: authentication +\r\nencryption\r\nKey parts\r\nSA: the agreed rules\r\nIKE: sets up the keys\r\nTransport Level\r\nSecurity\r\nSSL\r\nRecord: carries data\r\nHandshake: sets up\r\nkeys\r\nChangeCipherSpec\r\nAlert: errors\r\nTLS\r\nNewer, standard\r\nversion of SSL\r\nHTTPS\r\nHTTP + SSL/TLS\r\nSSH\r\nSecure remote login\r\nEmail Security\r\nMIME\r\nLets email carry files,\r\nother languages\r\nS/MIME\r\nMIME + signing and\r\nencryption",
+      "width": 3687,
+      "height": 1241,
+      "rects": [
+        {
+          "l": 2.18,
+          "t": 3.82,
+          "w": 22.78,
+          "h": 4.68,
+          "text": "Module 4: simplified tree"
+        },
+        {
+          "l": 2.11,
+          "t": 10.25,
+          "w": 19.73,
+          "h": 2.34,
+          "text": "Big ideas only, with a one-line meaning for each."
+        },
+        {
+          "l": 3.58,
+          "t": 15.33,
+          "w": 6.32,
+          "h": 2.34,
+          "text": "IP level security "
+        },
+        {
+          "l": 13.43,
+          "t": 15.33,
+          "w": 9.61,
+          "h": 2.34,
+          "text": "Transport level security "
+        },
+        {
+          "l": 26.53,
+          "t": 15.33,
+          "w": 5.66,
+          "h": 2.34,
+          "text": "Email security"
+        },
+        {
+          "l": 47.37,
+          "t": 24.99,
+          "w": 5.32,
+          "h": 2.43,
+          "text": "Module 4"
+        },
+        {
+          "l": 47.34,
+          "t": 29.07,
+          "w": 4.24,
+          "h": 3.04,
+          "text": "Security"
+        },
+        {
+          "l": 12.69,
+          "t": 42.89,
+          "w": 3.11,
+          "h": 2.37,
+          "text": "IPSec"
+        },
+        {
+          "l": 12.68,
+          "t": 46.92,
+          "w": 7.92,
+          "h": 3.04,
+          "text": "(network layer)"
+        },
+        {
+          "l": 2.77,
+          "t": 60.55,
+          "w": 3.16,
+          "h": 2.06,
+          "text": "Modes"
+        },
+        {
+          "l": 3.74,
+          "t": 68.11,
+          "w": 3.72,
+          "h": 2.15,
+          "text": "Transport"
+        },
+        {
+          "l": 3.74,
+          "t": 74.89,
+          "w": 2.56,
+          "h": 1.78,
+          "text": "Tunnel"
+        },
+        {
+          "l": 9.98,
+          "t": 60.55,
+          "w": 4.61,
+          "h": 2.06,
+          "text": "Protocols"
+        },
+        {
+          "l": 10.96,
+          "t": 68.04,
+          "w": 9.08,
+          "h": 2.22,
+          "text": "AH: authentication only"
+        },
+        {
+          "l": 11.03,
+          "t": 74.89,
+          "w": 8.3,
+          "h": 1.78,
+          "text": "ESP: authentication +"
+        },
+        {
+          "l": 10.99,
+          "t": 77.88,
+          "w": 4.02,
+          "h": 2.22,
+          "text": "encryption"
+        },
+        {
+          "l": 22.67,
+          "t": 60.64,
+          "w": 4.71,
+          "h": 2.51,
+          "text": "Key parts"
+        },
+        {
+          "l": 23.7,
+          "t": 68.04,
+          "w": 7.82,
+          "h": 2.22,
+          "text": "SA: the agreed rules"
+        },
+        {
+          "l": 23.73,
+          "t": 74.89,
+          "w": 7.96,
+          "h": 2.22,
+          "text": "IKE: sets up the keys"
+        },
+        {
+          "l": 49.59,
+          "t": 42.83,
+          "w": 9.28,
+          "h": 3.04,
+          "text": "Transport Level"
+        },
+        {
+          "l": 49.66,
+          "t": 46.92,
+          "w": 4.24,
+          "h": 3.04,
+          "text": "Security"
+        },
+        {
+          "l": 34.3,
+          "t": 60.6,
+          "w": 1.77,
+          "h": 2.01,
+          "text": "SSL"
+        },
+        {
+          "l": 35.36,
+          "t": 68.04,
+          "w": 7.69,
+          "h": 1.78,
+          "text": "Record: carries data"
+        },
+        {
+          "l": 35.36,
+          "t": 74.89,
+          "w": 7.52,
+          "h": 2.22,
+          "text": "Handshake: sets up"
+        },
+        {
+          "l": 35.36,
+          "t": 77.88,
+          "w": 1.67,
+          "h": 2.22,
+          "text": "keys"
+        },
+        {
+          "l": 35.33,
+          "t": 84.73,
+          "w": 7.27,
+          "h": 2.22,
+          "text": "ChangeCipherSpec"
+        },
+        {
+          "l": 35.3,
+          "t": 91.59,
+          "w": 4.6,
+          "h": 1.78,
+          "text": "Alert: errors"
+        },
+        {
+          "l": 45.59,
+          "t": 60.6,
+          "w": 1.76,
+          "h": 2.01,
+          "text": "TLS"
+        },
+        {
+          "l": 46.72,
+          "t": 68.04,
+          "w": 6.26,
+          "h": 2.01,
+          "text": "Newer, standard"
+        },
+        {
+          "l": 46.67,
+          "t": 71.02,
+          "w": 5.45,
+          "h": 1.78,
+          "text": "version of SSL"
+        },
+        {
+          "l": 55.66,
+          "t": 60.6,
+          "w": 3.12,
+          "h": 2.01,
+          "text": "HTTPS"
+        },
+        {
+          "l": 56.71,
+          "t": 68.08,
+          "w": 6.07,
+          "h": 1.92,
+          "text": "HTTP + SSL/TLS"
+        },
+        {
+          "l": 65.4,
+          "t": 60.6,
+          "w": 1.89,
+          "h": 2.01,
+          "text": "SSH"
+        },
+        {
+          "l": 66.45,
+          "t": 68.04,
+          "w": 7.72,
+          "h": 2.22,
+          "text": "Secure remote login"
+        },
+        {
+          "l": 82.84,
+          "t": 44.88,
+          "w": 8.45,
+          "h": 3.07,
+          "text": "Email Security"
+        },
+        {
+          "l": 76.81,
+          "t": 60.64,
+          "w": 2.58,
+          "h": 1.94,
+          "text": "MIME"
+        },
+        {
+          "l": 77.86,
+          "t": 68.04,
+          "w": 8.14,
+          "h": 2.22,
+          "text": "Lets email carry files,"
+        },
+        {
+          "l": 77.83,
+          "t": 71.02,
+          "w": 6.22,
+          "h": 2.22,
+          "text": "other languages"
+        },
+        {
+          "l": 88.65,
+          "t": 60.6,
+          "w": 3.57,
+          "h": 2.22,
+          "text": "S/MIME"
+        },
+        {
+          "l": 89.72,
+          "t": 68.04,
+          "w": 7.53,
+          "h": 2.22,
+          "text": "MIME + signing and"
+        },
+        {
+          "l": 89.68,
+          "t": 71.02,
+          "w": 4.02,
+          "h": 2.22,
+          "text": "encryption"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/slide_003.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/thumb_003.webp",
+      "text": "Module 4: who comes under whom (parent hierarchy)\r\nOnly terms from your PPT. Grey italic tags show the slide number where each term appears.\r\nIP level security Transport level security Email security\r\nModule 4\r\nIP Security, Transport\r\nLevel Security & Email\r\nSecurity\r\nslide 1-2\r\nIP Level Security\r\nslides 2, 4\r\nIPSec\r\nIP Security\r\nslide 4\r\nModes\r\nslide 8\r\nTransport mode\r\nslide 9\r\nTunnel mode\r\nslide 11\r\nProtocol suite\r\n(two sub-protocols)\r\nslide 15\r\nAH\r\nAuthentication Header\r\nslide 17\r\nESP\r\nEncapsulating Security\r\nPayload\r\nslide 22\r\nKey components\r\nslide 16\r\nSA\r\nSecurity Association\r\nslide 32\r\nIKE\r\nInternet Key Exchange\r\nslide 33\r\nSecurity Architecture\r\n(documents)\r\nslide 30\r\nArchitecture, ESP protocol,\r\nAH protocol, Encryption\r\nalgorithm, Authentication\r\nalgorithm, DOI, Key\r\nmanagement\r\nslide 30\r\nTransport Level\r\nSecurity\r\nslides 2, 36\r\nWeb security\r\nconsiderations\r\nslide 3\r\nSSL\r\nSecure Sockets\r\nLayer\r\nslide 40\r\nSSL Protocol Stack\r\n(4 protocols, 2\r\nlayers)\r\nslides 41, 46\r\nUpper layer\r\nslide 46\r\nHandshake Protocol\r\nslide 52\r\nChangeCipherSpec Protocol\r\nslide 55\r\nAlert Protocol\r\nslide 56\r\nLower layer\r\nslide 46\r\nRecord Protocol\r\n(carries the other three)\r\nslide 48\r\nTLS\r\nTransport Layer\r\nSecurity\r\n(IETF version of\r\nSSL)\r\nslide 61\r\nHTTPS\r\n(HTTP over\r\nSSL/TLS)\r\nslide 82\r\nSSH\r\nSecure Shell\r\nslide 84\r\nEmail Security\r\nslide 85\r\nBackground\r\nslides 86-89\r\nRFC 5322\r\n(basic email format)\r\nslide 87\r\nMIME\r\n(extends RFC 5322)\r\nslide 89\r\nS/MIME\r\nSecure MIME\r\nslides 86, 100\r\nCMS\r\nCryptographic\r\nMessage Syntax\r\nslide 100\r\nSigned-data\r\nslide 101\r\nEnveloped-data\r\nslide 102\r\nDigested-data\r\nslide 103\r\nEncrypted-data\r\nslide 104\r\nAuthenticated-data\r\nslide 105\r\nParent chains: read from the term up to the top\r\nAH \u2192 IPSec protocol suite \u2192 IPSec \u2192 IP Level Security \u2192 Module 4\r\nESP \u2192 IPSec protocol suite \u2192 IPSec \u2192 IP Level Security \u2192 Module 4\r\nSA \u2192 Key components \u2192 IPSec \u2192 IP Level Security \u2192 Module 4\r\nIKE \u2192 Key components \u2192 IPSec \u2192 IP Level Security \u2192 Module 4\r\nHandshake Protocol \u2192 Upper layer \u2192 SSL Protocol Stack \u2192 SSL \u2192 Transport Level Security \u2192 Module 4\r\nChangeCipherSpec Protocol \u2192 Upper layer \u2192 SSL Protocol Stack \u2192 SSL \u2192 Transport Level Security \u2192 Module 4\r\nAlert Protocol \u2192 Upper layer \u2192 SSL Protocol Stack \u2192 SSL \u2192 Transport Level Security \u2192 Module 4\r\nRecord Protocol \u2192 Lower layer \u2192 SSL Protocol Stack \u2192 SSL \u2192 Transport Level Security \u2192 Module 4\r\nTLS \u2192 Transport Level Security \u2192 Module 4\r\nHTTPS \u2192 Transport Level Security \u2192 Module 4\r\nSSH \u2192 Transport Level Security \u2192 Module 4\r\nCMS \u2192 S/MIME \u2192 Email Security \u2192 Module 4\r\nSigned-data \u2192 CMS \u2192 S/MIME \u2192 Email Security \u2192 Module 4",
+      "width": 4857,
+      "height": 2528,
+      "rects": [
+        {
+          "l": 1.66,
+          "t": 1.88,
+          "w": 37.15,
+          "h": 2.31,
+          "text": "Module 4: who comes under whom (parent hierarchy)"
+        },
+        {
+          "l": 1.58,
+          "t": 5.03,
+          "w": 28.51,
+          "h": 1.15,
+          "text": "Only terms from your PPT. Grey italic tags show the slide number where each term appears."
+        },
+        {
+          "l": 2.72,
+          "t": 7.53,
+          "w": 4.8,
+          "h": 1.15,
+          "text": "IP level security "
+        },
+        {
+          "l": 10.2,
+          "t": 7.53,
+          "w": 7.29,
+          "h": 1.15,
+          "text": "Transport level security "
+        },
+        {
+          "l": 20.14,
+          "t": 7.53,
+          "w": 4.29,
+          "h": 1.15,
+          "text": "Email security"
+        },
+        {
+          "l": 44.99,
+          "t": 12.26,
+          "w": 4.04,
+          "h": 1.19,
+          "text": "Module 4"
+        },
+        {
+          "l": 44.99,
+          "t": 14.27,
+          "w": 8.56,
+          "h": 1.49,
+          "text": "IP Security, Transport"
+        },
+        {
+          "l": 44.99,
+          "t": 16.28,
+          "w": 8.89,
+          "h": 1.49,
+          "text": "Level Security & Email"
+        },
+        {
+          "l": 44.97,
+          "t": 18.28,
+          "w": 3.22,
+          "h": 1.49,
+          "text": "Security"
+        },
+        {
+          "l": 44.92,
+          "t": 20.37,
+          "w": 1.69,
+          "h": 0.6,
+          "text": "slide 1-2"
+        },
+        {
+          "l": 14.34,
+          "t": 27.05,
+          "w": 7.5,
+          "h": 1.5,
+          "text": "IP Level Security"
+        },
+        {
+          "l": 14.27,
+          "t": 29.14,
+          "w": 2.0,
+          "h": 0.68,
+          "text": "slides 2, 4"
+        },
+        {
+          "l": 16.04,
+          "t": 38.32,
+          "w": 1.99,
+          "h": 0.99,
+          "text": "IPSec"
+        },
+        {
+          "l": 16.05,
+          "t": 39.99,
+          "w": 3.53,
+          "h": 1.26,
+          "text": "IP Security"
+        },
+        {
+          "l": 15.98,
+          "t": 41.84,
+          "w": 1.28,
+          "h": 0.6,
+          "text": "slide 4"
+        },
+        {
+          "l": 2.09,
+          "t": 51.42,
+          "w": 2.07,
+          "h": 0.87,
+          "text": "Modes"
+        },
+        {
+          "l": 2.04,
+          "t": 53.08,
+          "w": 1.29,
+          "h": 0.6,
+          "text": "slide 8"
+        },
+        {
+          "l": 2.84,
+          "t": 55.87,
+          "w": 4.17,
+          "h": 0.98,
+          "text": "Transport mode"
+        },
+        {
+          "l": 2.85,
+          "t": 57.41,
+          "w": 1.29,
+          "h": 0.6,
+          "text": "slide 9"
+        },
+        {
+          "l": 2.84,
+          "t": 60.09,
+          "w": 3.41,
+          "h": 0.78,
+          "text": "Tunnel mode"
+        },
+        {
+          "l": 2.85,
+          "t": 61.63,
+          "w": 1.51,
+          "h": 0.6,
+          "text": "slide 11"
+        },
+        {
+          "l": 8.93,
+          "t": 50.68,
+          "w": 4.52,
+          "h": 0.87,
+          "text": "Protocol suite"
+        },
+        {
+          "l": 8.93,
+          "t": 52.15,
+          "w": 5.58,
+          "h": 1.09,
+          "text": "(two sub-protocols)"
+        },
+        {
+          "l": 8.88,
+          "t": 53.81,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 15"
+        },
+        {
+          "l": 9.68,
+          "t": 56.64,
+          "w": 0.7,
+          "h": 0.74,
+          "text": "AH"
+        },
+        {
+          "l": 9.68,
+          "t": 57.92,
+          "w": 5.92,
+          "h": 0.78,
+          "text": "Authentication Header"
+        },
+        {
+          "l": 9.68,
+          "t": 59.46,
+          "w": 1.56,
+          "h": 0.6,
+          "text": "slide 17"
+        },
+        {
+          "l": 9.73,
+          "t": 62.16,
+          "w": 0.91,
+          "h": 0.76,
+          "text": "ESP"
+        },
+        {
+          "l": 9.73,
+          "t": 63.45,
+          "w": 5.95,
+          "h": 0.98,
+          "text": "Encapsulating Security"
+        },
+        {
+          "l": 9.73,
+          "t": 64.76,
+          "w": 1.97,
+          "h": 0.98,
+          "text": "Payload"
+        },
+        {
+          "l": 9.68,
+          "t": 66.3,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 22"
+        },
+        {
+          "l": 17.67,
+          "t": 51.45,
+          "w": 5.4,
+          "h": 1.06,
+          "text": "Key components"
+        },
+        {
+          "l": 17.62,
+          "t": 53.08,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 16"
+        },
+        {
+          "l": 18.46,
+          "t": 55.89,
+          "w": 0.65,
+          "h": 0.76,
+          "text": "SA"
+        },
+        {
+          "l": 18.46,
+          "t": 57.19,
+          "w": 5.23,
+          "h": 0.98,
+          "text": "Security Association"
+        },
+        {
+          "l": 18.43,
+          "t": 58.73,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 32"
+        },
+        {
+          "l": 18.47,
+          "t": 61.44,
+          "w": 0.74,
+          "h": 0.74,
+          "text": "IKE"
+        },
+        {
+          "l": 18.47,
+          "t": 62.72,
+          "w": 5.9,
+          "h": 0.98,
+          "text": "Internet Key Exchange"
+        },
+        {
+          "l": 18.43,
+          "t": 64.26,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 33"
+        },
+        {
+          "l": 26.31,
+          "t": 50.68,
+          "w": 6.99,
+          "h": 1.1,
+          "text": "Security Architecture"
+        },
+        {
+          "l": 26.32,
+          "t": 52.15,
+          "w": 3.62,
+          "h": 1.0,
+          "text": "(documents)"
+        },
+        {
+          "l": 26.28,
+          "t": 53.81,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 30"
+        },
+        {
+          "l": 27.08,
+          "t": 56.61,
+          "w": 6.98,
+          "h": 0.98,
+          "text": "Architecture, ESP protocol,"
+        },
+        {
+          "l": 27.08,
+          "t": 57.92,
+          "w": 6.17,
+          "h": 0.98,
+          "text": "AH protocol, Encryption"
+        },
+        {
+          "l": 27.11,
+          "t": 59.23,
+          "w": 6.64,
+          "h": 0.98,
+          "text": "algorithm, Authentication"
+        },
+        {
+          "l": 27.11,
+          "t": 60.54,
+          "w": 5.1,
+          "h": 0.98,
+          "text": "algorithm, DOI, Key"
+        },
+        {
+          "l": 27.12,
+          "t": 61.91,
+          "w": 3.45,
+          "h": 0.92,
+          "text": "management"
+        },
+        {
+          "l": 27.08,
+          "t": 63.4,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 30"
+        },
+        {
+          "l": 55.24,
+          "t": 26.04,
+          "w": 7.05,
+          "h": 1.49,
+          "text": "Transport Level"
+        },
+        {
+          "l": 55.29,
+          "t": 28.05,
+          "w": 3.67,
+          "h": 1.5,
+          "text": "Security"
+        },
+        {
+          "l": 55.24,
+          "t": 30.14,
+          "w": 2.27,
+          "h": 0.68,
+          "text": "slides 2, 36"
+        },
+        {
+          "l": 36.01,
+          "t": 38.3,
+          "w": 4.98,
+          "h": 1.27,
+          "text": "Web security"
+        },
+        {
+          "l": 36.02,
+          "t": 39.99,
+          "w": 5.58,
+          "h": 1.01,
+          "text": "considerations"
+        },
+        {
+          "l": 36.0,
+          "t": 41.84,
+          "w": 1.29,
+          "h": 0.6,
+          "text": "slide 3"
+        },
+        {
+          "l": 49.25,
+          "t": 37.47,
+          "w": 1.34,
+          "h": 0.99,
+          "text": "SSL"
+        },
+        {
+          "l": 49.24,
+          "t": 39.14,
+          "w": 5.14,
+          "h": 1.01,
+          "text": "Secure Sockets"
+        },
+        {
+          "l": 49.27,
+          "t": 40.88,
+          "w": 1.83,
+          "h": 1.22,
+          "text": "Layer"
+        },
+        {
+          "l": 49.2,
+          "t": 42.69,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 40"
+        },
+        {
+          "l": 49.07,
+          "t": 49.95,
+          "w": 6.19,
+          "h": 0.87,
+          "text": "SSL Protocol Stack"
+        },
+        {
+          "l": 49.08,
+          "t": 51.42,
+          "w": 4.13,
+          "h": 1.09,
+          "text": "(4 protocols, 2"
+        },
+        {
+          "l": 49.08,
+          "t": 52.88,
+          "w": 1.9,
+          "h": 1.09,
+          "text": "layers)"
+        },
+        {
+          "l": 49.03,
+          "t": 54.54,
+          "w": 2.52,
+          "h": 0.68,
+          "text": "slides 41, 46"
+        },
+        {
+          "l": 43.6,
+          "t": 60.07,
+          "w": 3.41,
+          "h": 0.98,
+          "text": "Upper layer"
+        },
+        {
+          "l": 43.56,
+          "t": 61.61,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 46"
+        },
+        {
+          "l": 44.41,
+          "t": 64.41,
+          "w": 5.14,
+          "h": 0.78,
+          "text": "Handshake Protocol"
+        },
+        {
+          "l": 44.36,
+          "t": 65.95,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 52"
+        },
+        {
+          "l": 44.38,
+          "t": 68.63,
+          "w": 7.22,
+          "h": 0.98,
+          "text": "ChangeCipherSpec Protocol"
+        },
+        {
+          "l": 44.36,
+          "t": 70.17,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 55"
+        },
+        {
+          "l": 44.36,
+          "t": 72.85,
+          "w": 3.5,
+          "h": 0.78,
+          "text": "Alert Protocol"
+        },
+        {
+          "l": 44.36,
+          "t": 74.39,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 56"
+        },
+        {
+          "l": 53.61,
+          "t": 60.07,
+          "w": 3.42,
+          "h": 0.98,
+          "text": "Lower layer"
+        },
+        {
+          "l": 53.57,
+          "t": 61.61,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 46"
+        },
+        {
+          "l": 54.42,
+          "t": 64.41,
+          "w": 4.05,
+          "h": 0.78,
+          "text": "Record Protocol"
+        },
+        {
+          "l": 54.41,
+          "t": 65.72,
+          "w": 6.26,
+          "h": 0.9,
+          "text": "(carries the other three)"
+        },
+        {
+          "l": 54.37,
+          "t": 67.26,
+          "w": 1.55,
+          "h": 0.6,
+          "text": "slide 48"
+        },
+        {
+          "l": 62.62,
+          "t": 35.77,
+          "w": 1.33,
+          "h": 0.99,
+          "text": "TLS"
+        },
+        {
+          "l": 62.61,
+          "t": 37.49,
+          "w": 5.39,
+          "h": 1.22,
+          "text": "Transport Layer"
+        },
+        {
+          "l": 62.66,
+          "t": 39.14,
+          "w": 2.72,
+          "h": 1.26,
+          "text": "Security"
+        },
+        {
+          "l": 62.67,
+          "t": 40.84,
+          "w": 5.22,
+          "h": 1.16,
+          "text": "(IETF version of"
+        },
+        {
+          "l": 62.66,
+          "t": 42.54,
+          "w": 1.4,
+          "h": 1.16,
+          "text": "SSL)"
+        },
+        {
+          "l": 62.62,
+          "t": 44.39,
+          "w": 1.51,
+          "h": 0.6,
+          "text": "slide 61"
+        },
+        {
+          "l": 70.62,
+          "t": 37.47,
+          "w": 2.37,
+          "h": 0.99,
+          "text": "HTTPS"
+        },
+        {
+          "l": 70.61,
+          "t": 39.15,
+          "w": 3.69,
+          "h": 1.16,
+          "text": "(HTTP over"
+        },
+        {
+          "l": 70.6,
+          "t": 40.84,
+          "w": 2.85,
+          "h": 1.16,
+          "text": "SSL/TLS)"
+        },
+        {
+          "l": 70.56,
+          "t": 42.69,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 82"
+        },
+        {
+          "l": 76.78,
+          "t": 38.32,
+          "w": 1.44,
+          "h": 0.99,
+          "text": "SSH"
+        },
+        {
+          "l": 76.77,
+          "t": 39.99,
+          "w": 4.11,
+          "h": 1.01,
+          "text": "Secure Shell"
+        },
+        {
+          "l": 76.73,
+          "t": 41.84,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 84"
+        },
+        {
+          "l": 87.5,
+          "t": 27.05,
+          "w": 6.41,
+          "h": 1.5,
+          "text": "Email Security"
+        },
+        {
+          "l": 87.43,
+          "t": 29.14,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 85"
+        },
+        {
+          "l": 83.48,
+          "t": 39.14,
+          "w": 4.45,
+          "h": 1.27,
+          "text": "Background"
+        },
+        {
+          "l": 83.42,
+          "t": 40.99,
+          "w": 2.41,
+          "h": 0.6,
+          "text": "slides 86-89"
+        },
+        {
+          "l": 84.28,
+          "t": 43.85,
+          "w": 2.72,
+          "h": 0.85,
+          "text": "RFC 5322"
+        },
+        {
+          "l": 84.27,
+          "t": 45.29,
+          "w": 5.83,
+          "h": 1.0,
+          "text": "(basic email format)"
+        },
+        {
+          "l": 84.22,
+          "t": 46.95,
+          "w": 1.56,
+          "h": 0.6,
+          "text": "slide 87"
+        },
+        {
+          "l": 84.28,
+          "t": 49.7,
+          "w": 1.46,
+          "h": 0.82,
+          "text": "MIME"
+        },
+        {
+          "l": 84.27,
+          "t": 51.13,
+          "w": 5.72,
+          "h": 1.0,
+          "text": "(extends RFC 5322)"
+        },
+        {
+          "l": 84.22,
+          "t": 52.79,
+          "w": 1.54,
+          "h": 0.6,
+          "text": "slide 89"
+        },
+        {
+          "l": 92.59,
+          "t": 38.32,
+          "w": 2.71,
+          "h": 1.09,
+          "text": "S/MIME"
+        },
+        {
+          "l": 92.58,
+          "t": 40.02,
+          "w": 4.28,
+          "h": 0.99,
+          "text": "Secure MIME"
+        },
+        {
+          "l": 92.54,
+          "t": 41.84,
+          "w": 2.78,
+          "h": 0.68,
+          "text": "slides 86, 100"
+        },
+        {
+          "l": 92.09,
+          "t": 49.97,
+          "w": 1.36,
+          "h": 0.85,
+          "text": "CMS"
+        },
+        {
+          "l": 92.1,
+          "t": 51.42,
+          "w": 4.09,
+          "h": 1.09,
+          "text": "Cryptographic"
+        },
+        {
+          "l": 92.12,
+          "t": 52.9,
+          "w": 4.71,
+          "h": 1.07,
+          "text": "Message Syntax"
+        },
+        {
+          "l": 92.07,
+          "t": 54.54,
+          "w": 1.8,
+          "h": 0.6,
+          "text": "slide 100"
+        },
+        {
+          "l": 92.9,
+          "t": 57.34,
+          "w": 3.09,
+          "h": 0.98,
+          "text": "Signed-data"
+        },
+        {
+          "l": 92.87,
+          "t": 58.88,
+          "w": 1.76,
+          "h": 0.6,
+          "text": "slide 101"
+        },
+        {
+          "l": 92.92,
+          "t": 61.56,
+          "w": 4.02,
+          "h": 0.98,
+          "text": "Enveloped-data"
+        },
+        {
+          "l": 92.87,
+          "t": 63.1,
+          "w": 1.8,
+          "h": 0.6,
+          "text": "slide 102"
+        },
+        {
+          "l": 92.92,
+          "t": 65.78,
+          "w": 3.61,
+          "h": 0.98,
+          "text": "Digested-data"
+        },
+        {
+          "l": 92.87,
+          "t": 67.32,
+          "w": 1.8,
+          "h": 0.6,
+          "text": "slide 103"
+        },
+        {
+          "l": 92.92,
+          "t": 70.0,
+          "w": 3.94,
+          "h": 0.98,
+          "text": "Encrypted-data"
+        },
+        {
+          "l": 92.87,
+          "t": 71.54,
+          "w": 1.79,
+          "h": 0.6,
+          "text": "slide 104"
+        },
+        {
+          "l": 92.87,
+          "t": 74.22,
+          "w": 5.03,
+          "h": 0.78,
+          "text": "Authenticated-data"
+        },
+        {
+          "l": 92.87,
+          "t": 75.76,
+          "w": 1.8,
+          "h": 0.6,
+          "text": "slide 105"
+        },
+        {
+          "l": 1.62,
+          "t": 79.41,
+          "w": 23.26,
+          "h": 1.61,
+          "text": "Parent chains: read from the term up to the top"
+        },
+        {
+          "l": 1.55,
+          "t": 82.78,
+          "w": 0.93,
+          "h": 0.87,
+          "text": "AH "
+        },
+        {
+          "l": 2.82,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 3.83,
+          "t": 82.74,
+          "w": 6.0,
+          "h": 1.15,
+          "text": "IPSec protocol suite "
+        },
+        {
+          "l": 10.14,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 11.16,
+          "t": 82.76,
+          "w": 1.57,
+          "h": 0.9,
+          "text": "IPSec "
+        },
+        {
+          "l": 13.05,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 14.06,
+          "t": 82.74,
+          "w": 5.04,
+          "h": 1.15,
+          "text": "IP Level Security "
+        },
+        {
+          "l": 19.4,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 20.41,
+          "t": 82.74,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 1.6,
+          "t": 85.02,
+          "w": 1.24,
+          "h": 0.9,
+          "text": "ESP "
+        },
+        {
+          "l": 3.15,
+          "t": 85.26,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 4.16,
+          "t": 85.0,
+          "w": 6.0,
+          "h": 1.15,
+          "text": "IPSec protocol suite "
+        },
+        {
+          "l": 10.47,
+          "t": 85.26,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 11.48,
+          "t": 85.02,
+          "w": 1.57,
+          "h": 0.9,
+          "text": "IPSec "
+        },
+        {
+          "l": 13.37,
+          "t": 85.26,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 14.38,
+          "t": 85.0,
+          "w": 5.04,
+          "h": 1.15,
+          "text": "IP Level Security "
+        },
+        {
+          "l": 19.72,
+          "t": 85.26,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 20.74,
+          "t": 85.0,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 1.59,
+          "t": 87.27,
+          "w": 0.88,
+          "h": 0.9,
+          "text": "SA "
+        },
+        {
+          "l": 2.75,
+          "t": 87.52,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 3.76,
+          "t": 87.29,
+          "w": 5.07,
+          "h": 1.11,
+          "text": "Key components "
+        },
+        {
+          "l": 9.12,
+          "t": 87.52,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 10.13,
+          "t": 87.27,
+          "w": 1.57,
+          "h": 0.9,
+          "text": "IPSec "
+        },
+        {
+          "l": 12.02,
+          "t": 87.52,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 13.03,
+          "t": 87.25,
+          "w": 5.04,
+          "h": 1.15,
+          "text": "IP Level Security "
+        },
+        {
+          "l": 18.37,
+          "t": 87.52,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 19.39,
+          "t": 87.25,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 1.6,
+          "t": 89.54,
+          "w": 1.03,
+          "h": 0.87,
+          "text": "IKE "
+        },
+        {
+          "l": 2.96,
+          "t": 89.77,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 3.97,
+          "t": 89.54,
+          "w": 5.07,
+          "h": 1.11,
+          "text": "Key components "
+        },
+        {
+          "l": 9.32,
+          "t": 89.77,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 10.34,
+          "t": 89.53,
+          "w": 1.57,
+          "h": 0.9,
+          "text": "IPSec "
+        },
+        {
+          "l": 12.23,
+          "t": 89.77,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 13.24,
+          "t": 89.51,
+          "w": 5.04,
+          "h": 1.15,
+          "text": "IP Level Security "
+        },
+        {
+          "l": 18.58,
+          "t": 89.77,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 19.59,
+          "t": 89.51,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 1.6,
+          "t": 91.76,
+          "w": 6.87,
+          "h": 0.92,
+          "text": "Handshake Protocol "
+        },
+        {
+          "l": 8.8,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 9.8,
+          "t": 91.76,
+          "w": 3.56,
+          "h": 1.15,
+          "text": "Upper layer "
+        },
+        {
+          "l": 13.65,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 14.64,
+          "t": 91.76,
+          "w": 5.7,
+          "h": 0.92,
+          "text": "SSL Protocol Stack "
+        },
+        {
+          "l": 20.61,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 21.6,
+          "t": 91.78,
+          "w": 1.08,
+          "h": 0.9,
+          "text": "SSL "
+        },
+        {
+          "l": 22.97,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 23.92,
+          "t": 91.76,
+          "w": 7.54,
+          "h": 1.15,
+          "text": "Transport Level Security "
+        },
+        {
+          "l": 31.67,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 32.68,
+          "t": 91.76,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 1.58,
+          "t": 94.02,
+          "w": 9.58,
+          "h": 1.16,
+          "text": "ChangeCipherSpec Protocol "
+        },
+        {
+          "l": 11.5,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 12.5,
+          "t": 94.02,
+          "w": 3.56,
+          "h": 1.15,
+          "text": "Upper layer "
+        },
+        {
+          "l": 16.35,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 17.34,
+          "t": 94.02,
+          "w": 5.7,
+          "h": 0.92,
+          "text": "SSL Protocol Stack "
+        },
+        {
+          "l": 23.31,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 24.3,
+          "t": 94.04,
+          "w": 1.08,
+          "h": 0.9,
+          "text": "SSL "
+        },
+        {
+          "l": 25.67,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 26.62,
+          "t": 94.02,
+          "w": 7.54,
+          "h": 1.15,
+          "text": "Transport Level Security "
+        },
+        {
+          "l": 34.37,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 35.38,
+          "t": 94.02,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 1.55,
+          "t": 96.27,
+          "w": 4.77,
+          "h": 0.92,
+          "text": "Alert Protocol "
+        },
+        {
+          "l": 6.65,
+          "t": 96.54,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 7.66,
+          "t": 96.27,
+          "w": 3.56,
+          "h": 1.15,
+          "text": "Upper layer "
+        },
+        {
+          "l": 11.51,
+          "t": 96.54,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 12.5,
+          "t": 96.27,
+          "w": 5.7,
+          "h": 0.92,
+          "text": "SSL Protocol Stack "
+        },
+        {
+          "l": 18.46,
+          "t": 96.54,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 19.46,
+          "t": 96.29,
+          "w": 1.08,
+          "h": 0.9,
+          "text": "SSL "
+        },
+        {
+          "l": 20.83,
+          "t": 96.54,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 21.78,
+          "t": 96.27,
+          "w": 7.54,
+          "h": 1.15,
+          "text": "Transport Level Security "
+        },
+        {
+          "l": 29.52,
+          "t": 96.54,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 30.54,
+          "t": 96.27,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 50.36,
+          "t": 82.74,
+          "w": 5.44,
+          "h": 0.92,
+          "text": "Record Protocol "
+        },
+        {
+          "l": 56.13,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 57.15,
+          "t": 82.74,
+          "w": 3.54,
+          "h": 1.15,
+          "text": "Lower layer "
+        },
+        {
+          "l": 60.97,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 61.96,
+          "t": 82.74,
+          "w": 5.7,
+          "h": 0.92,
+          "text": "SSL Protocol Stack "
+        },
+        {
+          "l": 67.92,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 68.92,
+          "t": 82.76,
+          "w": 1.08,
+          "h": 0.9,
+          "text": "SSL "
+        },
+        {
+          "l": 70.29,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 71.24,
+          "t": 82.74,
+          "w": 7.54,
+          "h": 1.15,
+          "text": "Transport Level Security "
+        },
+        {
+          "l": 78.98,
+          "t": 83.01,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 80.0,
+          "t": 82.74,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 50.31,
+          "t": 85.02,
+          "w": 1.21,
+          "h": 0.9,
+          "text": "TLS "
+        },
+        {
+          "l": 51.84,
+          "t": 85.26,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 52.8,
+          "t": 85.0,
+          "w": 7.54,
+          "h": 1.15,
+          "text": "Transport Level Security "
+        },
+        {
+          "l": 60.54,
+          "t": 85.26,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 61.56,
+          "t": 85.0,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 50.36,
+          "t": 87.27,
+          "w": 2.15,
+          "h": 0.9,
+          "text": "HTTPS "
+        },
+        {
+          "l": 52.86,
+          "t": 87.52,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 53.81,
+          "t": 87.25,
+          "w": 7.54,
+          "h": 1.15,
+          "text": "Transport Level Security "
+        },
+        {
+          "l": 61.55,
+          "t": 87.52,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 62.57,
+          "t": 87.25,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 50.35,
+          "t": 89.53,
+          "w": 1.31,
+          "h": 0.9,
+          "text": "SSH "
+        },
+        {
+          "l": 51.97,
+          "t": 89.77,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 52.92,
+          "t": 89.51,
+          "w": 7.54,
+          "h": 1.15,
+          "text": "Transport Level Security "
+        },
+        {
+          "l": 60.66,
+          "t": 89.77,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 61.67,
+          "t": 89.51,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 50.33,
+          "t": 91.78,
+          "w": 1.44,
+          "h": 0.9,
+          "text": "CMS "
+        },
+        {
+          "l": 52.1,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 53.09,
+          "t": 91.78,
+          "w": 2.16,
+          "h": 0.99,
+          "text": "S/MIME "
+        },
+        {
+          "l": 55.57,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 56.59,
+          "t": 91.76,
+          "w": 4.36,
+          "h": 1.15,
+          "text": "Email Security "
+        },
+        {
+          "l": 61.26,
+          "t": 92.03,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 62.27,
+          "t": 91.76,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        },
+        {
+          "l": 50.35,
+          "t": 94.02,
+          "w": 4.13,
+          "h": 1.16,
+          "text": "Signed-data "
+        },
+        {
+          "l": 54.81,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 55.8,
+          "t": 94.04,
+          "w": 1.29,
+          "h": 0.9,
+          "text": "CMS "
+        },
+        {
+          "l": 57.4,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 58.4,
+          "t": 94.04,
+          "w": 2.16,
+          "h": 0.99,
+          "text": "S/MIME "
+        },
+        {
+          "l": 60.88,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 61.89,
+          "t": 94.02,
+          "w": 4.36,
+          "h": 1.15,
+          "text": "Email Security "
+        },
+        {
+          "l": 66.56,
+          "t": 94.28,
+          "w": 0.45,
+          "h": 0.52,
+          "text": "\u2192 "
+        },
+        {
+          "l": 67.57,
+          "t": 94.02,
+          "w": 2.74,
+          "h": 0.92,
+          "text": "Module 4"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/slide_004.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_4_cns_module4_trees_and_osi_tcpip_pdf/thumb_004.webp",
+      "text": "OSI model vs TCP/IP model: protocols at each layer\r\nSame protocols on both sides. Layers line up row by row, so you can see which OSI layers each TCP/IP layer covers.\r\nModule 4: IP level security Module 4: transport level security Module 4: email security Other protocols\r\nOSI Model (7 layers) TCP/IP Model (4 layers)\r\n7 Application\r\nHTTP HTTPS FTP TFTP SMTP POP3 IMAP\r\nDNS DHCP Telnet SSH SNMP S/MIME\r\n6 Presentation SSL/TLS* MIME JPEG GIF MPEG ASCII EBCDIC\r\n5 Session NetBIOS RPC PPTP SIP SOCKS\r\n4 Transport TCP UDP SCTP\r\n3 Network IP (IPv4/IPv6) ICMP IGMP IPSec AH ESP IKE\r\nOSPF RIP\r\n2 Data Link Ethernet (802.3) Wi-Fi (802.11) PPP HDLC\r\nFrame Relay ARP\r\n1 Physical Twisted-pair cable Fiber optic DSL Bluetooth USB\r\nRS-232\r\nApplication\r\n= OSI layers 7, 6, 5\r\nHTTP HTTPS FTP TFTP SMTP POP3 IMAP\r\nDNS DHCP Telnet SSH SNMP S/MIME\r\nSSL/TLS* MIME JPEG GIF MPEG ASCII EBCDIC\r\nNetBIOS RPC PPTP SIP SOCKS\r\nTransport\r\n= OSI layer 4\r\nTCP UDP SCTP\r\nInternet\r\n= OSI layer 3\r\nIP (IPv4/IPv6) ICMP IGMP IPSec AH ESP IKE\r\nOSPF RIP\r\nNetwork Access\r\n(Link) = OSI 2, 1\r\nEthernet (802.3) Wi-Fi (802.11) PPP HDLC\r\nFrame Relay ARP Twisted-pair cable Fiber optic\r\nDSL Bluetooth USB RS-232\r\n* SSL/TLS: your PPT (slide 38) draws it as a security layer between Application and Transport. Many textbooks place it at the OSI Presentation layer, as drawn here.\r\nPhysical layer items are standards and media, not protocols. Protocol placement can differ slightly between textbooks.",
+      "width": 3600,
+      "height": 2310,
+      "rects": [
+        {
+          "l": 2.59,
+          "t": 2.37,
+          "w": 52.77,
+          "h": 2.79,
+          "text": "OSI model vs TCP/IP model: protocols at each layer"
+        },
+        {
+          "l": 2.56,
+          "t": 6.06,
+          "w": 52.96,
+          "h": 1.38,
+          "text": "Same protocols on both sides. Layers line up row by row, so you can see which OSI layers each TCP/IP layer covers."
+        },
+        {
+          "l": 4.25,
+          "t": 8.96,
+          "w": 11.38,
+          "h": 1.32,
+          "text": "Module 4: IP level security "
+        },
+        {
+          "l": 19.51,
+          "t": 8.96,
+          "w": 14.64,
+          "h": 1.32,
+          "text": "Module 4: transport level security "
+        },
+        {
+          "l": 38.02,
+          "t": 8.96,
+          "w": 10.65,
+          "h": 1.32,
+          "text": "Module 4: email security "
+        },
+        {
+          "l": 52.51,
+          "t": 8.96,
+          "w": 6.71,
+          "h": 1.32,
+          "text": "Other protocols"
+        },
+        {
+          "l": 2.57,
+          "t": 13.13,
+          "w": 16.02,
+          "h": 2.15,
+          "text": "OSI Model (7 layers) "
+        },
+        {
+          "l": 51.67,
+          "t": 13.13,
+          "w": 18.46,
+          "h": 2.15,
+          "text": "TCP/IP Model (4 layers)"
+        },
+        {
+          "l": 3.5,
+          "t": 20.34,
+          "w": 9.09,
+          "h": 1.88,
+          "text": "7 Application"
+        },
+        {
+          "l": 18.16,
+          "t": 19.24,
+          "w": 2.33,
+          "h": 0.95,
+          "text": "HTTP "
+        },
+        {
+          "l": 22.21,
+          "t": 19.22,
+          "w": 2.91,
+          "h": 0.98,
+          "text": "HTTPS "
+        },
+        {
+          "l": 26.86,
+          "t": 19.24,
+          "w": 1.64,
+          "h": 0.95,
+          "text": "FTP "
+        },
+        {
+          "l": 30.11,
+          "t": 19.24,
+          "w": 2.28,
+          "h": 0.95,
+          "text": "TFTP "
+        },
+        {
+          "l": 34.07,
+          "t": 19.22,
+          "w": 2.51,
+          "h": 0.98,
+          "text": "SMTP "
+        },
+        {
+          "l": 38.28,
+          "t": 19.22,
+          "w": 2.37,
+          "h": 0.98,
+          "text": "POP3 "
+        },
+        {
+          "l": 42.37,
+          "t": 19.24,
+          "w": 2.28,
+          "h": 0.95,
+          "text": "IMAP"
+        },
+        {
+          "l": 18.16,
+          "t": 22.34,
+          "w": 1.85,
+          "h": 0.98,
+          "text": "DNS "
+        },
+        {
+          "l": 21.74,
+          "t": 22.34,
+          "w": 2.5,
+          "h": 0.98,
+          "text": "DHCP "
+        },
+        {
+          "l": 25.85,
+          "t": 22.31,
+          "w": 2.95,
+          "h": 1.0,
+          "text": "Telnet "
+        },
+        {
+          "l": 30.36,
+          "t": 22.34,
+          "w": 1.76,
+          "h": 0.98,
+          "text": "SSH "
+        },
+        {
+          "l": 33.8,
+          "t": 22.34,
+          "w": 2.64,
+          "h": 0.98,
+          "text": "SNMP "
+        },
+        {
+          "l": 38.12,
+          "t": 22.34,
+          "w": 3.32,
+          "h": 1.08,
+          "text": "S/MIME"
+        },
+        {
+          "l": 3.49,
+          "t": 31.25,
+          "w": 10.2,
+          "h": 1.51,
+          "text": "6 Presentation "
+        },
+        {
+          "l": 18.14,
+          "t": 31.69,
+          "w": 4.09,
+          "h": 1.08,
+          "text": "SSL/TLS* "
+        },
+        {
+          "l": 23.88,
+          "t": 31.7,
+          "w": 2.4,
+          "h": 0.95,
+          "text": "MIME "
+        },
+        {
+          "l": 27.87,
+          "t": 31.69,
+          "w": 2.16,
+          "h": 1.22,
+          "text": "JPEG "
+        },
+        {
+          "l": 31.72,
+          "t": 31.69,
+          "w": 1.45,
+          "h": 0.98,
+          "text": "GIF "
+        },
+        {
+          "l": 34.9,
+          "t": 31.69,
+          "w": 2.55,
+          "h": 0.98,
+          "text": "MPEG "
+        },
+        {
+          "l": 39.11,
+          "t": 31.69,
+          "w": 2.39,
+          "h": 0.98,
+          "text": "ASCII "
+        },
+        {
+          "l": 43.24,
+          "t": 31.69,
+          "w": 3.3,
+          "h": 0.98,
+          "text": "EBCDIC"
+        },
+        {
+          "l": 3.51,
+          "t": 42.16,
+          "w": 6.52,
+          "h": 1.51,
+          "text": "5 Session "
+        },
+        {
+          "l": 18.16,
+          "t": 42.59,
+          "w": 3.78,
+          "h": 0.98,
+          "text": "NetBIOS "
+        },
+        {
+          "l": 23.66,
+          "t": 42.59,
+          "w": 1.73,
+          "h": 0.98,
+          "text": "RPC "
+        },
+        {
+          "l": 27.11,
+          "t": 42.61,
+          "w": 2.29,
+          "h": 0.95,
+          "text": "PPTP "
+        },
+        {
+          "l": 31.07,
+          "t": 42.59,
+          "w": 1.43,
+          "h": 0.98,
+          "text": "SIP "
+        },
+        {
+          "l": 34.18,
+          "t": 42.59,
+          "w": 3.04,
+          "h": 0.98,
+          "text": "SOCKS"
+        },
+        {
+          "l": 3.47,
+          "t": 53.13,
+          "w": 8.13,
+          "h": 1.82,
+          "text": "4 Transport "
+        },
+        {
+          "l": 18.09,
+          "t": 53.5,
+          "w": 1.75,
+          "h": 0.98,
+          "text": "TCP "
+        },
+        {
+          "l": 21.54,
+          "t": 53.52,
+          "w": 1.87,
+          "h": 0.96,
+          "text": "UDP "
+        },
+        {
+          "l": 25.08,
+          "t": 53.5,
+          "w": 2.3,
+          "h": 0.98,
+          "text": "SCTP"
+        },
+        {
+          "l": 3.5,
+          "t": 63.97,
+          "w": 7.19,
+          "h": 1.51,
+          "text": "3 Network "
+        },
+        {
+          "l": 18.16,
+          "t": 62.83,
+          "w": 6.21,
+          "h": 1.16,
+          "text": "IP (IPv4/IPv6) "
+        },
+        {
+          "l": 26.11,
+          "t": 62.85,
+          "w": 2.25,
+          "h": 0.98,
+          "text": "ICMP "
+        },
+        {
+          "l": 30.05,
+          "t": 62.85,
+          "w": 2.32,
+          "h": 0.98,
+          "text": "IGMP "
+        },
+        {
+          "l": 34.07,
+          "t": 62.85,
+          "w": 2.45,
+          "h": 0.98,
+          "text": "IPSec "
+        },
+        {
+          "l": 38.16,
+          "t": 62.87,
+          "w": 1.26,
+          "h": 0.95,
+          "text": "AH "
+        },
+        {
+          "l": 41.16,
+          "t": 62.85,
+          "w": 1.67,
+          "h": 0.98,
+          "text": "ESP "
+        },
+        {
+          "l": 44.52,
+          "t": 62.87,
+          "w": 1.39,
+          "h": 0.95,
+          "text": "IKE"
+        },
+        {
+          "l": 18.12,
+          "t": 65.97,
+          "w": 2.38,
+          "h": 0.98,
+          "text": "OSPF "
+        },
+        {
+          "l": 22.23,
+          "t": 65.99,
+          "w": 1.45,
+          "h": 0.95,
+          "text": "RIP"
+        },
+        {
+          "l": 3.52,
+          "t": 74.88,
+          "w": 7.93,
+          "h": 1.51,
+          "text": "2 Data Link "
+        },
+        {
+          "l": 18.16,
+          "t": 73.74,
+          "w": 7.63,
+          "h": 1.16,
+          "text": "Ethernet (802.3) "
+        },
+        {
+          "l": 27.48,
+          "t": 73.74,
+          "w": 6.57,
+          "h": 1.16,
+          "text": "Wi-Fi (802.11) "
+        },
+        {
+          "l": 35.79,
+          "t": 73.78,
+          "w": 1.72,
+          "h": 0.95,
+          "text": "PPP "
+        },
+        {
+          "l": 39.2,
+          "t": 73.76,
+          "w": 2.4,
+          "h": 0.98,
+          "text": "HDLC"
+        },
+        {
+          "l": 18.16,
+          "t": 76.86,
+          "w": 5.77,
+          "h": 1.27,
+          "text": "Frame Relay "
+        },
+        {
+          "l": 25.46,
+          "t": 76.9,
+          "w": 1.86,
+          "h": 0.95,
+          "text": "ARP"
+        },
+        {
+          "l": 3.56,
+          "t": 85.79,
+          "w": 6.86,
+          "h": 1.9,
+          "text": "1 Physical "
+        },
+        {
+          "l": 18.09,
+          "t": 84.65,
+          "w": 8.62,
+          "h": 1.26,
+          "text": "Twisted-pair cable "
+        },
+        {
+          "l": 28.33,
+          "t": 84.65,
+          "w": 4.93,
+          "h": 1.26,
+          "text": "Fiber optic "
+        },
+        {
+          "l": 34.98,
+          "t": 84.67,
+          "w": 1.72,
+          "h": 0.98,
+          "text": "DSL "
+        },
+        {
+          "l": 38.38,
+          "t": 84.65,
+          "w": 4.47,
+          "h": 1.0,
+          "text": "Bluetooth "
+        },
+        {
+          "l": 44.58,
+          "t": 84.67,
+          "w": 1.78,
+          "h": 0.98,
+          "text": "USB"
+        },
+        {
+          "l": 18.16,
+          "t": 87.79,
+          "w": 3.18,
+          "h": 0.98,
+          "text": "RS-232"
+        },
+        {
+          "l": 52.59,
+          "t": 30.21,
+          "w": 7.86,
+          "h": 1.88,
+          "text": "Application"
+        },
+        {
+          "l": 52.68,
+          "t": 32.86,
+          "w": 8.33,
+          "h": 1.32,
+          "text": "= OSI layers 7, 6, 5"
+        },
+        {
+          "l": 67.33,
+          "t": 27.03,
+          "w": 2.33,
+          "h": 0.95,
+          "text": "HTTP "
+        },
+        {
+          "l": 71.37,
+          "t": 27.01,
+          "w": 2.91,
+          "h": 0.98,
+          "text": "HTTPS "
+        },
+        {
+          "l": 76.02,
+          "t": 27.03,
+          "w": 1.64,
+          "h": 0.95,
+          "text": "FTP "
+        },
+        {
+          "l": 79.28,
+          "t": 27.03,
+          "w": 2.28,
+          "h": 0.95,
+          "text": "TFTP "
+        },
+        {
+          "l": 83.23,
+          "t": 27.01,
+          "w": 2.51,
+          "h": 0.98,
+          "text": "SMTP "
+        },
+        {
+          "l": 87.44,
+          "t": 27.01,
+          "w": 2.36,
+          "h": 0.98,
+          "text": "POP3 "
+        },
+        {
+          "l": 91.54,
+          "t": 27.03,
+          "w": 2.28,
+          "h": 0.95,
+          "text": "IMAP"
+        },
+        {
+          "l": 67.33,
+          "t": 30.13,
+          "w": 1.85,
+          "h": 0.98,
+          "text": "DNS "
+        },
+        {
+          "l": 70.9,
+          "t": 30.13,
+          "w": 2.5,
+          "h": 0.98,
+          "text": "DHCP "
+        },
+        {
+          "l": 75.02,
+          "t": 30.1,
+          "w": 2.95,
+          "h": 1.0,
+          "text": "Telnet "
+        },
+        {
+          "l": 79.53,
+          "t": 30.13,
+          "w": 1.76,
+          "h": 0.98,
+          "text": "SSH "
+        },
+        {
+          "l": 82.97,
+          "t": 30.13,
+          "w": 2.64,
+          "h": 0.98,
+          "text": "SNMP "
+        },
+        {
+          "l": 87.29,
+          "t": 30.13,
+          "w": 3.32,
+          "h": 1.08,
+          "text": "S/MIME"
+        },
+        {
+          "l": 67.31,
+          "t": 33.24,
+          "w": 4.09,
+          "h": 1.08,
+          "text": "SSL/TLS* "
+        },
+        {
+          "l": 73.04,
+          "t": 33.26,
+          "w": 2.4,
+          "h": 0.95,
+          "text": "MIME "
+        },
+        {
+          "l": 77.04,
+          "t": 33.24,
+          "w": 2.16,
+          "h": 1.22,
+          "text": "JPEG "
+        },
+        {
+          "l": 80.89,
+          "t": 33.24,
+          "w": 1.45,
+          "h": 0.98,
+          "text": "GIF "
+        },
+        {
+          "l": 84.07,
+          "t": 33.24,
+          "w": 2.55,
+          "h": 0.98,
+          "text": "MPEG "
+        },
+        {
+          "l": 88.27,
+          "t": 33.24,
+          "w": 2.39,
+          "h": 0.98,
+          "text": "ASCII "
+        },
+        {
+          "l": 92.41,
+          "t": 33.24,
+          "w": 3.3,
+          "h": 0.98,
+          "text": "EBCDIC"
+        },
+        {
+          "l": 67.33,
+          "t": 36.36,
+          "w": 3.78,
+          "h": 0.98,
+          "text": "NetBIOS "
+        },
+        {
+          "l": 72.83,
+          "t": 36.36,
+          "w": 1.73,
+          "h": 0.98,
+          "text": "RPC "
+        },
+        {
+          "l": 76.27,
+          "t": 36.38,
+          "w": 2.29,
+          "h": 0.95,
+          "text": "PPTP "
+        },
+        {
+          "l": 80.24,
+          "t": 36.36,
+          "w": 1.43,
+          "h": 0.98,
+          "text": "SIP "
+        },
+        {
+          "l": 83.34,
+          "t": 36.36,
+          "w": 3.04,
+          "h": 0.98,
+          "text": "SOCKS"
+        },
+        {
+          "l": 52.59,
+          "t": 52.09,
+          "w": 6.88,
+          "h": 1.82,
+          "text": "Transport"
+        },
+        {
+          "l": 52.68,
+          "t": 54.68,
+          "w": 5.68,
+          "h": 1.32,
+          "text": "= OSI layer 4"
+        },
+        {
+          "l": 67.25,
+          "t": 53.5,
+          "w": 1.75,
+          "h": 0.98,
+          "text": "TCP "
+        },
+        {
+          "l": 70.7,
+          "t": 53.52,
+          "w": 1.87,
+          "h": 0.96,
+          "text": "UDP "
+        },
+        {
+          "l": 74.25,
+          "t": 53.5,
+          "w": 2.3,
+          "h": 0.98,
+          "text": "SCTP"
+        },
+        {
+          "l": 52.7,
+          "t": 63.0,
+          "w": 5.6,
+          "h": 1.45,
+          "text": "Internet"
+        },
+        {
+          "l": 52.68,
+          "t": 65.59,
+          "w": 5.65,
+          "h": 1.32,
+          "text": "= OSI layer 3"
+        },
+        {
+          "l": 67.33,
+          "t": 62.83,
+          "w": 6.21,
+          "h": 1.16,
+          "text": "IP (IPv4/IPv6) "
+        },
+        {
+          "l": 75.28,
+          "t": 62.85,
+          "w": 2.25,
+          "h": 0.98,
+          "text": "ICMP "
+        },
+        {
+          "l": 79.22,
+          "t": 62.85,
+          "w": 2.32,
+          "h": 0.98,
+          "text": "IGMP "
+        },
+        {
+          "l": 83.24,
+          "t": 62.85,
+          "w": 2.45,
+          "h": 0.98,
+          "text": "IPSec "
+        },
+        {
+          "l": 87.33,
+          "t": 62.87,
+          "w": 1.26,
+          "h": 0.95,
+          "text": "AH "
+        },
+        {
+          "l": 90.33,
+          "t": 62.85,
+          "w": 1.67,
+          "h": 0.98,
+          "text": "ESP "
+        },
+        {
+          "l": 93.69,
+          "t": 62.87,
+          "w": 1.39,
+          "h": 0.95,
+          "text": "IKE"
+        },
+        {
+          "l": 67.29,
+          "t": 65.97,
+          "w": 2.38,
+          "h": 0.98,
+          "text": "OSPF "
+        },
+        {
+          "l": 71.4,
+          "t": 65.99,
+          "w": 1.45,
+          "h": 0.95,
+          "text": "RIP"
+        },
+        {
+          "l": 52.7,
+          "t": 79.3,
+          "w": 10.99,
+          "h": 1.51,
+          "text": "Network Access"
+        },
+        {
+          "l": 52.66,
+          "t": 81.95,
+          "w": 7.05,
+          "h": 1.21,
+          "text": "(Link) = OSI 2, 1"
+        },
+        {
+          "l": 67.33,
+          "t": 77.64,
+          "w": 7.63,
+          "h": 1.16,
+          "text": "Ethernet (802.3) "
+        },
+        {
+          "l": 76.64,
+          "t": 77.64,
+          "w": 6.57,
+          "h": 1.16,
+          "text": "Wi-Fi (802.11) "
+        },
+        {
+          "l": 84.95,
+          "t": 77.68,
+          "w": 1.72,
+          "h": 0.95,
+          "text": "PPP "
+        },
+        {
+          "l": 88.36,
+          "t": 77.66,
+          "w": 2.4,
+          "h": 0.98,
+          "text": "HDLC"
+        },
+        {
+          "l": 67.33,
+          "t": 80.75,
+          "w": 5.77,
+          "h": 1.27,
+          "text": "Frame Relay "
+        },
+        {
+          "l": 74.63,
+          "t": 80.79,
+          "w": 1.86,
+          "h": 0.95,
+          "text": "ARP "
+        },
+        {
+          "l": 78.1,
+          "t": 80.75,
+          "w": 8.62,
+          "h": 1.26,
+          "text": "Twisted-pair cable "
+        },
+        {
+          "l": 88.34,
+          "t": 80.75,
+          "w": 4.93,
+          "h": 1.26,
+          "text": "Fiber optic"
+        },
+        {
+          "l": 67.33,
+          "t": 83.89,
+          "w": 1.72,
+          "h": 0.98,
+          "text": "DSL "
+        },
+        {
+          "l": 70.74,
+          "t": 83.87,
+          "w": 4.47,
+          "h": 1.0,
+          "text": "Bluetooth "
+        },
+        {
+          "l": 76.93,
+          "t": 83.89,
+          "w": 1.78,
+          "h": 0.98,
+          "text": "USB "
+        },
+        {
+          "l": 80.43,
+          "t": 83.89,
+          "w": 3.18,
+          "h": 0.98,
+          "text": "RS-232"
+        },
+        {
+          "l": 2.53,
+          "t": 92.78,
+          "w": 68.2,
+          "h": 1.26,
+          "text": "* SSL/TLS: your PPT (slide 38) draws it as a security layer between Application and Transport. Many textbooks place it at the OSI Presentation layer, as drawn here."
+        },
+        {
+          "l": 2.58,
+          "t": 94.73,
+          "w": 49.48,
+          "h": 1.26,
+          "text": "Physical layer items are standards and media, not protocols. Protocol placement can differ slightly between textbooks."
+        }
+      ]
+    }
+  ]
+}

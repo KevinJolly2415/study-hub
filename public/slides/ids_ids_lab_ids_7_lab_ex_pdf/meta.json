@@ -1,0 +1,51 @@
+{
+  "mtime": 1791317581.7476256,
+  "aspectRatio": 0.71,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/thumb_001.webp",
+      "text": "",
+      "width": 1191,
+      "height": 1684,
+      "rects": []
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/thumb_002.webp",
+      "text": "",
+      "width": 1191,
+      "height": 1684,
+      "rects": []
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/thumb_003.webp",
+      "text": "",
+      "width": 1191,
+      "height": 1684,
+      "rects": []
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/thumb_004.webp",
+      "text": "",
+      "width": 1191,
+      "height": 1684,
+      "rects": []
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_lab_ids_7_lab_ex_pdf/thumb_005.webp",
+      "text": "",
+      "width": 1191,
+      "height": 1684,
+      "rects": []
+    }
+  ]
+}

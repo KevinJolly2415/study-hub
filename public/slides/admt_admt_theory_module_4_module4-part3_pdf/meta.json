@@ -1,0 +1,6332 @@
+{
+  "mtime": 1793934616.7665713,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_001.webp",
+      "text": "Module 4: Distributed Databases\r\nBy MS. ALVINA LOPES\r\nPART 3\r\nSpatial and Mobile Databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 17.97,
+          "t": 23.53,
+          "w": 64.21,
+          "h": 7.24,
+          "text": "Module 4: Distributed Databases"
+        },
+        {
+          "l": 33.56,
+          "t": 58.58,
+          "w": 33.0,
+          "h": 5.78,
+          "text": "By MS. ALVINA LOPES"
+        },
+        {
+          "l": 42.24,
+          "t": 35.52,
+          "w": 13.57,
+          "h": 5.51,
+          "text": "PART 3"
+        },
+        {
+          "l": 19.0,
+          "t": 45.66,
+          "w": 60.9,
+          "h": 7.48,
+          "text": "Spatial and Mobile Databases"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_002.webp",
+      "text": "Contents\r\nSpatial Databases\r\n\u2756 Introduction\r\n\u2756 Characteristics of Spatial Database\r\n\u2756 Different kinds of spatial analyses\r\n\u2756 Types of spatial data\r\n\u2756 Operations on spatial data\r\n\u2756 Types of spatial queries\r\n\u2756 Spatial data indexing\r\n\u2756 Spatial data mining\r\n\u2756 Applications of spatial databases\r\nMobile Databases\r\n\u2756 Mobile Computing\r\n\u2756 Mobile Computing Architecture\r\n\u2756 Mobile Databases\r\n\u2756 Characteristics of Mobile Environments\r\n\u2756 Data Management Issues\r\n\u2756 Types of Mobile Databases\r\n\u2756 Popular Mobile DBMSs \r\n\u2756 Applications\r\n\u2756 Challenges & Future Trends",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 13.87,
+          "h": 5.9,
+          "text": "Contents"
+        },
+        {
+          "l": 4.49,
+          "t": 27.22,
+          "w": 22.68,
+          "h": 4.98,
+          "text": "Spatial Databases"
+        },
+        {
+          "l": 5.15,
+          "t": 33.92,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.54,
+          "t": 33.75,
+          "w": 10.89,
+          "h": 2.7,
+          "text": "Introduction"
+        },
+        {
+          "l": 5.15,
+          "t": 38.69,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.46,
+          "t": 38.5,
+          "w": 31.07,
+          "h": 3.51,
+          "text": "Characteristics of Spatial Database"
+        },
+        {
+          "l": 5.15,
+          "t": 43.46,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.54,
+          "t": 43.28,
+          "w": 30.14,
+          "h": 3.51,
+          "text": "Different kinds of spatial analyses"
+        },
+        {
+          "l": 5.15,
+          "t": 48.23,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.36,
+          "t": 48.05,
+          "w": 18.39,
+          "h": 3.51,
+          "text": "Types of spatial data"
+        },
+        {
+          "l": 5.15,
+          "t": 53.0,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.46,
+          "t": 52.83,
+          "w": 23.71,
+          "h": 3.49,
+          "text": "Operations on spatial data"
+        },
+        {
+          "l": 5.15,
+          "t": 57.77,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.36,
+          "t": 57.59,
+          "w": 21.19,
+          "h": 3.51,
+          "text": "Types of spatial queries"
+        },
+        {
+          "l": 5.15,
+          "t": 62.54,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.45,
+          "t": 62.37,
+          "w": 18.71,
+          "h": 3.49,
+          "text": "Spatial data indexing"
+        },
+        {
+          "l": 5.15,
+          "t": 67.31,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.45,
+          "t": 67.14,
+          "w": 17.21,
+          "h": 3.49,
+          "text": "Spatial data mining"
+        },
+        {
+          "l": 5.15,
+          "t": 72.08,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 9.35,
+          "t": 71.9,
+          "w": 29.5,
+          "h": 3.51,
+          "text": "Applications of spatial databases"
+        },
+        {
+          "l": 54.06,
+          "t": 27.22,
+          "w": 22.68,
+          "h": 3.85,
+          "text": "Mobile Databases"
+        },
+        {
+          "l": 54.59,
+          "t": 33.92,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.98,
+          "t": 33.75,
+          "w": 16.45,
+          "h": 3.49,
+          "text": "Mobile Computing"
+        },
+        {
+          "l": 54.59,
+          "t": 38.69,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.98,
+          "t": 38.52,
+          "w": 28.01,
+          "h": 3.49,
+          "text": "Mobile Computing Architecture"
+        },
+        {
+          "l": 54.59,
+          "t": 43.46,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.98,
+          "t": 43.29,
+          "w": 15.87,
+          "h": 2.7,
+          "text": "Mobile Databases"
+        },
+        {
+          "l": 54.59,
+          "t": 48.23,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.9,
+          "t": 48.05,
+          "w": 35.22,
+          "h": 2.71,
+          "text": "Characteristics of Mobile Environments"
+        },
+        {
+          "l": 54.59,
+          "t": 53.0,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.98,
+          "t": 52.99,
+          "w": 22.61,
+          "h": 3.33,
+          "text": "Data Management Issues"
+        },
+        {
+          "l": 54.59,
+          "t": 57.77,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.8,
+          "t": 57.59,
+          "w": 24.12,
+          "h": 3.51,
+          "text": "Types of Mobile Databases"
+        },
+        {
+          "l": 54.59,
+          "t": 62.54,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.98,
+          "t": 62.37,
+          "w": 20.98,
+          "h": 3.49,
+          "text": "Popular Mobile DBMSs "
+        },
+        {
+          "l": 54.59,
+          "t": 67.31,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.79,
+          "t": 67.14,
+          "w": 10.98,
+          "h": 3.49,
+          "text": "Applications"
+        },
+        {
+          "l": 54.59,
+          "t": 72.08,
+          "w": 1.37,
+          "h": 2.47,
+          "text": "\u2756 "
+        },
+        {
+          "l": 58.9,
+          "t": 71.91,
+          "w": 24.77,
+          "h": 3.49,
+          "text": "Challenges & Future Trends"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_003.webp",
+      "text": "Advanced Database models\r\n\u25cf As the use of database systems has grown, users have demanded \r\nadditional functionality from these software packages; \r\n\u25cf Increased functionality would make it easier to implement more advanced \r\nand complex user applications.\r\n\u25cf The need for additional features in such applications led to the \r\ndevelopment of advanced database models.\r\n\u25cf So there are active databases, deductive databases, multimedia \r\ndatabases, embedded databases, mobile databases, temporal databases \r\nand spatial databases and many others.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.23,
+          "w": 43.51,
+          "h": 5.86,
+          "text": "Advanced Database models"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.0,
+          "w": 76.94,
+          "h": 4.52,
+          "text": "As the use of database systems has grown, users have demanded "
+        },
+        {
+          "l": 9.46,
+          "t": 30.13,
+          "w": 63.54,
+          "h": 4.52,
+          "text": "additional functionality from these software packages; "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 86.61,
+          "h": 4.52,
+          "text": "Increased functionality would make it easier to implement more advanced "
+        },
+        {
+          "l": 9.46,
+          "t": 42.42,
+          "w": 35.81,
+          "h": 4.48,
+          "text": "and complex user applications."
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 48.53,
+          "w": 73.37,
+          "h": 4.51,
+          "text": "The need for additional features in such applications led to the "
+        },
+        {
+          "l": 9.49,
+          "t": 54.67,
+          "w": 51.12,
+          "h": 4.51,
+          "text": "development of advanced database models."
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 60.82,
+          "w": 74.42,
+          "h": 4.0,
+          "text": "So there are active databases, deductive databases, multimedia "
+        },
+        {
+          "l": 9.49,
+          "t": 66.96,
+          "w": 85.2,
+          "h": 4.48,
+          "text": "databases, embedded databases, mobile databases, temporal databases "
+        },
+        {
+          "l": 9.46,
+          "t": 73.09,
+          "w": 46.87,
+          "h": 4.49,
+          "text": "and spatial databases and many others. "
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_004.webp",
+      "text": "",
+      "width": 1440,
+      "height": 810,
+      "rects": []
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_005.webp",
+      "text": "Spatial Databases-Introduction\r\n\u25cf Spatial databases incorporate functionality that provides support for \r\ndatabases that keep track of objects in a multidimensional space. \r\n\u25cf For example, cartographic databases that store maps include \r\ntwo-dimensional spatial descriptions of their objects\u2014\r\n\u25cf from countries and states to rivers, cities, roads, seas, and so on. \r\n\u25cf The systems that manage geographic data and related applications are \r\nknown as geographic information systems (GISs). \r\n\u25cf GIS are used in areas such as environmental applications, transportation \r\nsystems, emergency response systems, and battle management. \r\n\u25cf Other databases, such as meteorological databases for weather \r\ninformation, are three-dimensional.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 49.14,
+          "h": 7.39,
+          "text": "Spatial Databases-Introduction"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 24.0,
+          "w": 80.12,
+          "h": 4.52,
+          "text": "Spatial databases incorporate functionality that provides support for "
+        },
+        {
+          "l": 9.49,
+          "t": 29.6,
+          "w": 76.24,
+          "h": 4.51,
+          "text": "databases that keep track of objects in a multidimensional space. "
+        },
+        {
+          "l": 5.55,
+          "t": 36.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 35.22,
+          "w": 71.48,
+          "h": 4.49,
+          "text": "For example, cartographic databases that store maps include "
+        },
+        {
+          "l": 9.39,
+          "t": 40.8,
+          "w": 63.04,
+          "h": 4.51,
+          "text": "two-dimensional spatial descriptions of their objects\u2014"
+        },
+        {
+          "l": 5.55,
+          "t": 47.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 46.4,
+          "w": 75.75,
+          "h": 4.02,
+          "text": "from countries and states to rivers, cities, roads, seas, and so on. "
+        },
+        {
+          "l": 5.55,
+          "t": 53.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 52.02,
+          "w": 82.92,
+          "h": 4.49,
+          "text": "The systems that manage geographic data and related applications are "
+        },
+        {
+          "l": 9.56,
+          "t": 57.6,
+          "w": 57.38,
+          "h": 4.52,
+          "text": "known as geographic information systems (GISs). "
+        },
+        {
+          "l": 5.55,
+          "t": 64.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 63.22,
+          "w": 84.85,
+          "h": 4.48,
+          "text": "GIS are used in areas such as environmental applications, transportation "
+        },
+        {
+          "l": 9.47,
+          "t": 68.82,
+          "w": 75.54,
+          "h": 4.49,
+          "text": "systems, emergency response systems, and battle management. "
+        },
+        {
+          "l": 5.55,
+          "t": 75.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 74.4,
+          "w": 74.57,
+          "h": 4.51,
+          "text": "Other databases, such as meteorological databases for weather "
+        },
+        {
+          "l": 9.54,
+          "t": 80.0,
+          "w": 41.97,
+          "h": 4.02,
+          "text": "information, are three-dimensional. "
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_006.webp",
+      "text": "Spatial Databases-Introduction\r\n\u25cf A spatial database stores objects that have spatial characteristics that \r\ndescribe them and that have spatial relationships among them. \r\n\u25cf A spatial database is optimized to store and query data related to objects \r\nin space, including points, lines and polygons. \r\n\u25cf Satellite images are a prominent example of spatial data. \r\n\u25cf Spatial databases incorporate functionality that provides support \r\nfor databases that keep track of objects in a multidimensional space.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 49.14,
+          "h": 7.39,
+          "text": "Spatial Databases-Introduction"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.02,
+          "w": 81.31,
+          "h": 4.49,
+          "text": "A spatial database stores objects that have spatial characteristics that "
+        },
+        {
+          "l": 9.49,
+          "t": 30.16,
+          "w": 74.03,
+          "h": 4.49,
+          "text": "describe them and that have spatial relationships among them. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 36.29,
+          "w": 85.52,
+          "h": 4.49,
+          "text": "A spatial database is optimized to store and query data related to objects "
+        },
+        {
+          "l": 9.54,
+          "t": 42.42,
+          "w": 21.83,
+          "h": 4.49,
+          "text": "in space, including "
+        },
+        {
+          "l": 31.61,
+          "t": 42.53,
+          "w": 6.95,
+          "h": 4.37,
+          "text": "points"
+        },
+        {
+          "l": 38.78,
+          "t": 45.33,
+          "w": 1.19,
+          "h": 1.09,
+          "text": ", "
+        },
+        {
+          "l": 40.18,
+          "t": 42.42,
+          "w": 5.06,
+          "h": 3.47,
+          "text": "lines "
+        },
+        {
+          "l": 45.36,
+          "t": 42.42,
+          "w": 5.74,
+          "h": 3.47,
+          "text": " and "
+        },
+        {
+          "l": 51.33,
+          "t": 42.42,
+          "w": 10.17,
+          "h": 4.49,
+          "text": "polygons"
+        },
+        {
+          "l": 61.8,
+          "t": 45.34,
+          "w": 1.12,
+          "h": 0.57,
+          "text": ". "
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 48.53,
+          "w": 66.56,
+          "h": 4.51,
+          "text": "Satellite images are a prominent example of spatial data. "
+        },
+        {
+          "l": 5.7,
+          "t": 56.13,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 54.67,
+          "w": 83.88,
+          "h": 4.52,
+          "text": "Spatial databases incorporate functionality that provides support "
+        },
+        {
+          "l": 9.38,
+          "t": 60.8,
+          "w": 80.35,
+          "h": 4.51,
+          "text": "for databases that keep track of objects in a multidimensional space. "
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_007.webp",
+      "text": "Spatial Databases-Introduction\r\n\u25cf Queries posed on these spatial data, where predicates for selection deal \r\nwith spatial parameters, are called spatial queries. \r\n\u25cf Example 1: \u201cWhat are the names of all bookstores within five miles of the College of \r\nComputing building at Georgia Tech?\u201d\r\n\u25cf Example 2: \u201cList all the customers located within twenty miles of company \r\nheadquarters\u201d",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 49.14,
+          "h": 7.39,
+          "text": "Spatial Databases-Introduction"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.0,
+          "w": 84.33,
+          "h": 4.51,
+          "text": "Queries posed on these spatial data, where predicates for selection deal "
+        },
+        {
+          "l": 9.38,
+          "t": 30.16,
+          "w": 40.61,
+          "h": 4.48,
+          "text": "with spatial parameters, are called "
+        },
+        {
+          "l": 50.16,
+          "t": 30.16,
+          "w": 16.76,
+          "h": 4.48,
+          "text": "spatial queries"
+        },
+        {
+          "l": 67.24,
+          "t": 33.07,
+          "w": 1.12,
+          "h": 0.57,
+          "text": ". "
+        },
+        {
+          "l": 5.7,
+          "t": 37.25,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 36.18,
+          "w": 86.28,
+          "h": 4.01,
+          "text": "Example 1: \u201cWhat are the names of all bookstores within five miles of the College of "
+        },
+        {
+          "l": 9.48,
+          "t": 41.65,
+          "w": 38.64,
+          "h": 3.99,
+          "text": "Computing building at Georgia Tech?\u201d"
+        },
+        {
+          "l": 5.7,
+          "t": 48.15,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 47.08,
+          "w": 76.41,
+          "h": 4.01,
+          "text": "Example 2: \u201cList all the customers located within twenty miles of company "
+        },
+        {
+          "l": 9.54,
+          "t": 52.55,
+          "w": 14.62,
+          "h": 3.99,
+          "text": "headquarters\u201d"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_008.webp",
+      "text": "Spatial Database-Example\r\n\u25cf A road map is a visualization of geographic information. \r\n\u25cf A road map is a 2-dimensional object \r\n\u25cb which contains points, lines, and polygons \r\n\u25cb that can represent cities, roads, and political boundaries such as states or provinces.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 41.72,
+          "h": 7.39,
+          "text": "Spatial Database-Example"
+        },
+        {
+          "l": 5.7,
+          "t": 25.46,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.0,
+          "w": 65.33,
+          "h": 4.51,
+          "text": "A road map is a visualization of geographic information. "
+        },
+        {
+          "l": 5.7,
+          "t": 31.59,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 30.16,
+          "w": 43.64,
+          "h": 4.49,
+          "text": "A road map is a 2-dimensional object "
+        },
+        {
+          "l": 10.7,
+          "t": 37.25,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.37,
+          "t": 36.58,
+          "w": 38.45,
+          "h": 3.49,
+          "text": "which contains points, lines, and polygons "
+        },
+        {
+          "l": 10.7,
+          "t": 42.7,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.38,
+          "t": 42.03,
+          "w": 76.02,
+          "h": 3.49,
+          "text": "that can represent cities, roads, and political boundaries such as states or provinces."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_009.webp",
+      "text": "Characteristics of Spatial Database\r\n\u25cf It is a database system\r\n\u25cf It offers spatial data types (SDTs) in its data model and query language.\r\n\u25cf It supports spatial data types in its implementation, providing at least \r\nspatial indexing and efficient algorithms for spatial join.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 54.85,
+          "h": 7.39,
+          "text": "Characteristics of Spatial Database"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 25.87,
+          "h": 4.49,
+          "text": "It is a database system"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.13,
+          "w": 81.89,
+          "h": 4.52,
+          "text": "It offers spatial data types (SDTs) in its data model and query language."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 80.79,
+          "h": 4.49,
+          "text": "It supports spatial data types in its implementation, providing at least "
+        },
+        {
+          "l": 9.47,
+          "t": 42.4,
+          "w": 64.0,
+          "h": 4.51,
+          "text": "spatial indexing and efficient algorithms for spatial join."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_010.webp",
+      "text": "Different kinds of spatial analyses\r\n\u25cf Table 26.1 shows the common analytical operations involved in processing \r\ngeographic or spatial data. \r\n\u25cf Measurement operations are used to measure some global properties of single \r\nobjects and to measure the relative position of different objects in terms of \r\ndistance and direction.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 53.77,
+          "h": 7.4,
+          "text": "Different kinds of spatial analyses"
+        },
+        {
+          "l": 5.7,
+          "t": 24.98,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 23.93,
+          "w": 77.5,
+          "h": 3.99,
+          "text": "Table 26.1 shows the common analytical operations involved in processing "
+        },
+        {
+          "l": 9.38,
+          "t": 29.38,
+          "w": 27.98,
+          "h": 3.99,
+          "text": "geographic or spatial data. "
+        },
+        {
+          "l": 5.7,
+          "t": 35.89,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 34.81,
+          "w": 82.24,
+          "h": 4.01,
+          "text": "Measurement operations are used to measure some global properties of single "
+        },
+        {
+          "l": 9.47,
+          "t": 40.27,
+          "w": 77.9,
+          "h": 4.01,
+          "text": "objects and to measure the relative position of different objects in terms of "
+        },
+        {
+          "l": 9.47,
+          "t": 45.74,
+          "w": 23.26,
+          "h": 3.1,
+          "text": "distance and direction."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_011.webp",
+      "text": "Different kinds of spatial analyses\r\n\u25cf Spatial analysis operations, which often use statistical techniques, are used to \r\nuncover spatial relationships within and among mapped data layers.\r\n\u25cf Flow analysis operations help in determining the shortest path between two points \r\nand also the connectivity among nodes or regions in a graph. \r\n\u25cf Location analysis aims to find if the given set of points and lines lie within a given \r\npolygon (location).\r\n\u25cf Digital terrain analysis is used to build three-dimensional models, where the \r\ntopography of a geographical location can be represented with an x, y, z data \r\nmodel known as Digital Terrain (or Elevation) Model (DTM/DEM).\r\n\u25cf Spatial search allows a user to search for objects within a particular spatial region.\r\n\u25cf There are also topological relationships among spatial objects.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 53.77,
+          "h": 7.4,
+          "text": "Different kinds of spatial analyses"
+        },
+        {
+          "l": 5.7,
+          "t": 24.98,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 23.93,
+          "w": 15.49,
+          "h": 3.99,
+          "text": "Spatial analysis "
+        },
+        {
+          "l": 25.07,
+          "t": 23.91,
+          "w": 64.96,
+          "h": 4.01,
+          "text": " operations, which often use statistical techniques, are used to "
+        },
+        {
+          "l": 9.52,
+          "t": 29.38,
+          "w": 70.26,
+          "h": 3.99,
+          "text": "uncover spatial relationships within and among mapped data layers."
+        },
+        {
+          "l": 5.7,
+          "t": 35.89,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 34.83,
+          "w": 13.2,
+          "h": 3.99,
+          "text": "Flow analysis "
+        },
+        {
+          "l": 22.87,
+          "t": 34.83,
+          "w": 72.6,
+          "h": 3.99,
+          "text": " operations help in determining the shortest path between two points "
+        },
+        {
+          "l": 9.45,
+          "t": 40.29,
+          "w": 63.4,
+          "h": 3.99,
+          "text": "and also the connectivity among nodes or regions in a graph. "
+        },
+        {
+          "l": 5.7,
+          "t": 46.79,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 45.74,
+          "w": 17.28,
+          "h": 3.99,
+          "text": "Location analysis "
+        },
+        {
+          "l": 26.95,
+          "t": 45.72,
+          "w": 66.28,
+          "h": 4.01,
+          "text": " aims to find if the given set of points and lines lie within a given "
+        },
+        {
+          "l": 9.54,
+          "t": 51.19,
+          "w": 18.62,
+          "h": 3.99,
+          "text": "polygon (location)."
+        },
+        {
+          "l": 5.7,
+          "t": 57.7,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 56.64,
+          "w": 22.54,
+          "h": 3.99,
+          "text": "Digital terrain analysis "
+        },
+        {
+          "l": 32.22,
+          "t": 56.64,
+          "w": 56.17,
+          "h": 3.55,
+          "text": " is used to build three-dimensional models, where the "
+        },
+        {
+          "l": 9.38,
+          "t": 62.07,
+          "w": 79.94,
+          "h": 4.01,
+          "text": "topography of a geographical location can be represented with an x, y, z data "
+        },
+        {
+          "l": 9.54,
+          "t": 67.54,
+          "w": 65.86,
+          "h": 3.99,
+          "text": "model known as Digital Terrain (or Elevation) Model (DTM/DEM)."
+        },
+        {
+          "l": 5.7,
+          "t": 74.05,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.46,
+          "t": 73.0,
+          "w": 14.11,
+          "h": 3.99,
+          "text": "Spatial search "
+        },
+        {
+          "l": 23.76,
+          "t": 72.98,
+          "w": 69.97,
+          "h": 4.01,
+          "text": " allows a user to search for objects within a particular spatial region."
+        },
+        {
+          "l": 5.7,
+          "t": 79.5,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 78.45,
+          "w": 64.11,
+          "h": 3.99,
+          "text": "There are also topological relationships among spatial objects."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_012.webp",
+      "text": "Spatial Data Types\r\n\u25cf Map data includes various geographic or spatial features of objects in a map, such as \r\nan object\u2019s shape and the location of the object within the map.\r\n\u25cf The three basic types of features are points, lines, and polygons (or areas).\r\n\u25cf Points are used to represent spatial characteristics of objects whose locations \r\ncorrespond to a single 2-D coordinate (x, y, or longitude/latitude) in the scale of a \r\nparticular application. \r\n\u25cf Some examples of point objects could be buildings, cellular towers, or stationary \r\nvehicles.\r\n\u25cf Moving vehicles and other moving objects can be represented by a sequence of point \r\nlocations that change over time. \r\n\u25cf Lines represent objects having length, such as roads or rivers, whose spatial \r\ncharacteristics can be approximated by a sequence of connected lines. \r\n\u25cf Polygons are used to represent spatial characteristics of objects that have a boundary, \r\nsuch as countries, states, lakes, or cities.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 29.07,
+          "h": 7.43,
+          "text": "Spatial Data Types"
+        },
+        {
+          "l": 5.75,
+          "t": 24.72,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.54,
+          "t": 23.72,
+          "w": 9.66,
+          "h": 3.82,
+          "text": "Map data "
+        },
+        {
+          "l": 19.36,
+          "t": 23.7,
+          "w": 74.88,
+          "h": 3.83,
+          "text": " includes various geographic or spatial features of objects in a map, such as "
+        },
+        {
+          "l": 9.44,
+          "t": 28.0,
+          "w": 62.28,
+          "h": 3.83,
+          "text": "an object\u2019s shape and the location of the object within the map."
+        },
+        {
+          "l": 5.75,
+          "t": 33.34,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 32.31,
+          "w": 36.62,
+          "h": 3.84,
+          "text": "The three basic types of features are "
+        },
+        {
+          "l": 46.19,
+          "t": 32.42,
+          "w": 5.91,
+          "h": 3.72,
+          "text": "points"
+        },
+        {
+          "l": 52.28,
+          "t": 34.8,
+          "w": 1.01,
+          "h": 0.93,
+          "text": ", "
+        },
+        {
+          "l": 53.48,
+          "t": 32.33,
+          "w": 4.3,
+          "h": 2.95,
+          "text": "lines"
+        },
+        {
+          "l": 57.97,
+          "t": 32.33,
+          "w": 5.34,
+          "h": 3.4,
+          "text": ", and "
+        },
+        {
+          "l": 63.49,
+          "t": 32.33,
+          "w": 8.64,
+          "h": 3.82,
+          "text": "polygons "
+        },
+        {
+          "l": 72.24,
+          "t": 32.5,
+          "w": 10.33,
+          "h": 3.33,
+          "text": " (or areas)."
+        },
+        {
+          "l": 5.75,
+          "t": 37.64,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 36.62,
+          "w": 76.91,
+          "h": 3.83,
+          "text": "Points are used to represent spatial characteristics of objects whose locations "
+        },
+        {
+          "l": 9.47,
+          "t": 40.92,
+          "w": 80.17,
+          "h": 3.84,
+          "text": "correspond to a single 2-D coordinate (x, y, or longitude/latitude) in the scale of a "
+        },
+        {
+          "l": 9.53,
+          "t": 45.25,
+          "w": 21.93,
+          "h": 3.81,
+          "text": "particular application. "
+        },
+        {
+          "l": 5.75,
+          "t": 50.56,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.45,
+          "t": 49.54,
+          "w": 79.81,
+          "h": 3.84,
+          "text": "Some examples of point objects could be buildings, cellular towers, or stationary "
+        },
+        {
+          "l": 9.35,
+          "t": 53.86,
+          "w": 8.25,
+          "h": 2.96,
+          "text": "vehicles."
+        },
+        {
+          "l": 5.75,
+          "t": 59.18,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 58.15,
+          "w": 84.51,
+          "h": 3.84,
+          "text": "Moving vehicles and other moving objects can be represented by a sequence of point "
+        },
+        {
+          "l": 9.53,
+          "t": 62.48,
+          "w": 32.01,
+          "h": 3.82,
+          "text": "locations that change over time. "
+        },
+        {
+          "l": 5.75,
+          "t": 67.79,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 66.78,
+          "w": 75.24,
+          "h": 3.82,
+          "text": "Lines represent objects having length, such as roads or rivers, whose spatial "
+        },
+        {
+          "l": 9.47,
+          "t": 71.07,
+          "w": 70.11,
+          "h": 3.84,
+          "text": "characteristics can be approximated by a sequence of connected lines. "
+        },
+        {
+          "l": 5.75,
+          "t": 76.4,
+          "w": 0.91,
+          "h": 1.65,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 75.38,
+          "w": 85.47,
+          "h": 3.84,
+          "text": "Polygons are used to represent spatial characteristics of objects that have a boundary, "
+        },
+        {
+          "l": 9.45,
+          "t": 79.7,
+          "w": 39.47,
+          "h": 3.4,
+          "text": "such as countries, states, lakes, or cities."
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_013.webp",
+      "text": "Spatial Data Types",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 29.07,
+          "h": 7.43,
+          "text": "Spatial Data Types"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_014.webp",
+      "text": "Spatial Data Types\r\n\u25cf Attribute data is the descriptive data that GIS systems associate with \r\nmap features. \r\n\u25cf For example, suppose that a map contains features that represent \r\ncounties within a U.S. state (such as Texas or Oregon). \r\n\u25cf Attributes for each county feature (object) could include population, \r\nlargest city/town, area in square miles, and so on.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 29.07,
+          "h": 7.43,
+          "text": "Spatial Data Types"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.02,
+          "w": 17.72,
+          "h": 3.47,
+          "text": "Attribute data "
+        },
+        {
+          "l": 27.26,
+          "t": 24.02,
+          "w": 63.75,
+          "h": 4.49,
+          "text": " is the descriptive data that GIS systems associate with "
+        },
+        {
+          "l": 9.56,
+          "t": 30.13,
+          "w": 16.63,
+          "h": 4.51,
+          "text": "map features. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 77.46,
+          "h": 4.51,
+          "text": "For example, suppose that a map contains features that represent "
+        },
+        {
+          "l": 9.49,
+          "t": 42.42,
+          "w": 63.11,
+          "h": 4.49,
+          "text": "counties within a U.S. state (such as Texas or Oregon). "
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 48.53,
+          "w": 79.41,
+          "h": 4.52,
+          "text": "Attributes for each county feature (object) could include population, "
+        },
+        {
+          "l": 9.56,
+          "t": 54.69,
+          "w": 57.11,
+          "h": 4.49,
+          "text": "largest city/town, area in square miles, and so on."
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_015.webp",
+      "text": "Spatial Data Types\r\n\u25cf Image data includes data such as satellite images and aerial \r\nphotographs, which are typically created by cameras. \r\n\u25cf Objects of interest, such as buildings and roads, can be identified and \r\noverlaid on these images.\r\n\u25cf Aerial and satellite images are typical examples of raster data.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 29.07,
+          "h": 7.43,
+          "text": "Spatial Data Types"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 24.02,
+          "w": 13.6,
+          "h": 4.49,
+          "text": "Image data "
+        },
+        {
+          "l": 23.36,
+          "t": 24.02,
+          "w": 56.93,
+          "h": 4.49,
+          "text": " includes data such as satellite images and aerial "
+        },
+        {
+          "l": 9.56,
+          "t": 30.16,
+          "w": 62.12,
+          "h": 4.49,
+          "text": "photographs, which are typically created by cameras. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 36.27,
+          "w": 81.15,
+          "h": 4.51,
+          "text": "Objects of interest, such as buildings and roads, can be identified and "
+        },
+        {
+          "l": 9.49,
+          "t": 42.42,
+          "w": 29.35,
+          "h": 4.49,
+          "text": "overlaid on these images."
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 48.53,
+          "w": 58.43,
+          "h": 4.52,
+          "text": "Aerial and satellite images are typical examples of "
+        },
+        {
+          "l": 68.05,
+          "t": 48.56,
+          "w": 13.53,
+          "h": 3.47,
+          "text": "raster data"
+        },
+        {
+          "l": 81.96,
+          "t": 51.47,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_016.webp",
+      "text": "Spatial Data Types\r\n\u25cf Image data includes data such as satellite images and aerial \r\nphotographs, which are typically created by cameras. \r\n\u25cf Objects of interest, such as buildings and roads, can be identified and \r\noverlaid on these images.\r\n\u25cf Aerial and satellite images are typical examples of raster data.\r\n\u25cf In general, spatial data can be of two types \u2212\r\n\u25cb Vector data: This data is represented as discrete points, lines and polygons\r\n\u25cb Rastor data: This data is represented as a matrix of square cells.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 29.07,
+          "h": 7.43,
+          "text": "Spatial Data Types"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 24.02,
+          "w": 13.6,
+          "h": 4.49,
+          "text": "Image data "
+        },
+        {
+          "l": 23.36,
+          "t": 24.02,
+          "w": 56.93,
+          "h": 4.49,
+          "text": " includes data such as satellite images and aerial "
+        },
+        {
+          "l": 9.56,
+          "t": 30.16,
+          "w": 62.12,
+          "h": 4.49,
+          "text": "photographs, which are typically created by cameras. "
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 36.27,
+          "w": 81.15,
+          "h": 4.51,
+          "text": "Objects of interest, such as buildings and roads, can be identified and "
+        },
+        {
+          "l": 9.49,
+          "t": 42.42,
+          "w": 29.35,
+          "h": 4.49,
+          "text": "overlaid on these images."
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 48.53,
+          "w": 58.43,
+          "h": 4.52,
+          "text": "Aerial and satellite images are typical examples of "
+        },
+        {
+          "l": 68.05,
+          "t": 48.56,
+          "w": 13.53,
+          "h": 3.47,
+          "text": "raster data"
+        },
+        {
+          "l": 81.96,
+          "t": 51.47,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.67,
+          "w": 51.3,
+          "h": 4.52,
+          "text": "In general, spatial data can be of two types \u2212"
+        },
+        {
+          "l": 10.7,
+          "t": 61.78,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 60.73,
+          "w": 76.89,
+          "h": 3.99,
+          "text": "Vector data: This data is represented as discrete points, lines and polygons"
+        },
+        {
+          "l": 10.7,
+          "t": 67.24,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 66.16,
+          "w": 65.56,
+          "h": 4.01,
+          "text": "Rastor data: This data is represented as a matrix of square cells."
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_017.webp",
+      "text": "Models of spatial information\r\n\u25cf Models of spatial information are sometimes grouped into two broad \r\ncategories: field and object.\r\n\u25cf A spatial application is modeled using either a field- or an object-based \r\nmodel, depending on the requirements and the traditional choice of \r\nmodel for the application.\r\n\u25cf Field models are often used to model spatial data that is continuous in \r\nnature \r\n\u25cb such as terrain elevation, temperature data, and soil variation characteristics \r\n\u25cf Object models have traditionally been used for applications \r\n\u25cb such as transportation networks, land parcels, buildings",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 46.6,
+          "h": 7.36,
+          "text": "Models of spatial information"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 80.85,
+          "h": 4.51,
+          "text": "Models of spatial information are sometimes grouped into two broad "
+        },
+        {
+          "l": 9.49,
+          "t": 30.13,
+          "w": 31.54,
+          "h": 4.51,
+          "text": "categories: field and object."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 36.27,
+          "w": 82.73,
+          "h": 4.51,
+          "text": "A spatial application is modeled using either a field- or an object-based "
+        },
+        {
+          "l": 9.56,
+          "t": 42.4,
+          "w": 79.55,
+          "h": 4.51,
+          "text": "model, depending on the requirements and the traditional choice of "
+        },
+        {
+          "l": 9.56,
+          "t": 48.53,
+          "w": 29.61,
+          "h": 4.51,
+          "text": "model for the application."
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.69,
+          "w": 14.34,
+          "h": 3.47,
+          "text": "Field models "
+        },
+        {
+          "l": 24.06,
+          "t": 54.67,
+          "w": 67.73,
+          "h": 4.51,
+          "text": " are often used to model spatial data that is continuous in "
+        },
+        {
+          "l": 9.56,
+          "t": 61.28,
+          "w": 8.2,
+          "h": 3.01,
+          "text": "nature "
+        },
+        {
+          "l": 10.84,
+          "t": 67.69,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.44,
+          "t": 66.77,
+          "w": 69.65,
+          "h": 3.49,
+          "text": "such as terrain elevation, temperature data, and soil variation characteristics "
+        },
+        {
+          "l": 5.55,
+          "t": 72.91,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 71.73,
+          "w": 16.54,
+          "h": 4.49,
+          "text": "Object models "
+        },
+        {
+          "l": 26.17,
+          "t": 71.7,
+          "w": 52.92,
+          "h": 4.52,
+          "text": " have traditionally been used for applications "
+        },
+        {
+          "l": 10.84,
+          "t": 78.6,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.44,
+          "t": 77.67,
+          "w": 50.28,
+          "h": 3.49,
+          "text": "such as transportation networks, land parcels, buildings"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_018.webp",
+      "text": "Spatial Operators\r\n\u25cf Spatial operators are used to capture\r\n\u25cb all the relevant geometric properties of objects embedded in the physical space \r\n\u25cb and the relations between them, \r\n\u25cb as well as to perform spatial analysis. \r\n\u25cf Operators are classified into three broad categories:\r\n\u25cb Topological operators\r\n\u25cb Projective operators\r\n\u25cb Metric operators",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 27.62,
+          "h": 7.39,
+          "text": "Spatial Operators"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 24.02,
+          "w": 47.59,
+          "h": 4.48,
+          "text": "Spatial operators are used to capture"
+        },
+        {
+          "l": 10.84,
+          "t": 30.89,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.44,
+          "t": 29.95,
+          "w": 77.23,
+          "h": 3.51,
+          "text": "all the relevant geometric properties of objects embedded in the physical space "
+        },
+        {
+          "l": 10.84,
+          "t": 35.66,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.44,
+          "t": 34.74,
+          "w": 29.91,
+          "h": 3.11,
+          "text": "and the relations between them, "
+        },
+        {
+          "l": 10.84,
+          "t": 40.43,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.44,
+          "t": 39.49,
+          "w": 33.98,
+          "h": 3.51,
+          "text": "as well as to perform spatial analysis. "
+        },
+        {
+          "l": 5.55,
+          "t": 45.65,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 44.45,
+          "w": 60.27,
+          "h": 4.51,
+          "text": "Operators are classified into three broad categories:"
+        },
+        {
+          "l": 10.84,
+          "t": 51.34,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 50.41,
+          "w": 19.6,
+          "h": 3.49,
+          "text": "Topological operators"
+        },
+        {
+          "l": 10.84,
+          "t": 56.11,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 55.27,
+          "w": 18.01,
+          "h": 3.4,
+          "text": "Projective operators"
+        },
+        {
+          "l": 10.84,
+          "t": 60.88,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 60.04,
+          "w": 14.87,
+          "h": 3.4,
+          "text": "Metric operators"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_019.webp",
+      "text": "Spatial Operators\r\nTopological operators\r\n\u25cf Topological properties are invariant when topological transformations are \r\napplied. \r\n\u25cf These properties do not change after transformations like rotation, \r\ntranslation, or scaling. \r\n\u25cf Topological operators are hierarchically structured in several levels.\r\n\u25cf Examples: open (region), close (region), and inside (point, loop).",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 27.62,
+          "h": 7.39,
+          "text": "Spatial Operators"
+        },
+        {
+          "l": 4.4,
+          "t": 24.02,
+          "w": 26.92,
+          "h": 4.49,
+          "text": "Topological operators"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 29.33,
+          "w": 86.37,
+          "h": 4.51,
+          "text": "Topological properties are invariant when topological transformations are "
+        },
+        {
+          "l": 9.46,
+          "t": 35.49,
+          "w": 9.82,
+          "h": 4.48,
+          "text": "applied. "
+        },
+        {
+          "l": 5.55,
+          "t": 42.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 41.6,
+          "w": 79.82,
+          "h": 4.51,
+          "text": "These properties do not change after transformations like rotation, "
+        },
+        {
+          "l": 9.39,
+          "t": 47.76,
+          "w": 28.83,
+          "h": 4.49,
+          "text": "translation, or scaling. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.08,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 53.89,
+          "w": 81.95,
+          "h": 4.49,
+          "text": "Topological operators are hierarchically structured in several levels."
+        },
+        {
+          "l": 5.55,
+          "t": 61.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.02,
+          "w": 72.93,
+          "h": 4.49,
+          "text": "Examples: open (region), close (region), and inside (point, loop)."
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_020.webp",
+      "text": "Spatial Operators\r\nProjective operators\r\n\u25cf Projective operators, such as convex hull, are used to express predicates \r\nabout the concavity/convexity of objects as well as other spatial relations.\r\n\u25cf Example: being inside the concavity of a given object.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 27.62,
+          "h": 7.39,
+          "text": "Spatial Operators"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 25.1,
+          "h": 4.49,
+          "text": "Projective operators"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.36,
+          "w": 84.65,
+          "h": 4.49,
+          "text": "Projective operators, such as convex hull, are used to express predicates "
+        },
+        {
+          "l": 9.46,
+          "t": 35.47,
+          "w": 84.82,
+          "h": 4.52,
+          "text": "about the concavity/convexity of objects as well as other spatial relations."
+        },
+        {
+          "l": 5.55,
+          "t": 42.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 41.6,
+          "w": 61.09,
+          "h": 4.52,
+          "text": "Example: being inside the concavity of a given object."
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_021.webp",
+      "text": "Spatial Operators\r\nMetric operators\r\n\u25cf provide a more specific description of the object\u2019s geometry. \r\n\u25cf used to measure some global properties of single objects \r\n\u25cb such as area, relative size of an object\u2019s parts, compactness, symmetry\r\n\u25cf Example: length (arc) and distance (point, point).",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 27.62,
+          "h": 7.39,
+          "text": "Spatial Operators"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 20.68,
+          "h": 4.49,
+          "text": "Metric operators"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.56,
+          "t": 29.33,
+          "w": 71.13,
+          "h": 4.52,
+          "text": "provide a more specific description of the object\u2019s geometry. "
+        },
+        {
+          "l": 5.55,
+          "t": 36.68,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 35.47,
+          "w": 72.72,
+          "h": 4.51,
+          "text": "used to measure some global properties of single objects "
+        },
+        {
+          "l": 10.84,
+          "t": 43.31,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 15.76,
+          "t": 42.0,
+          "w": 9.33,
+          "h": 3.08,
+          "text": "such as "
+        },
+        {
+          "l": 25.62,
+          "t": 42.37,
+          "w": 63.71,
+          "h": 3.51,
+          "text": "area, relative size of an object\u2019s parts, compactness, symmetry"
+        },
+        {
+          "l": 5.55,
+          "t": 48.94,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 47.76,
+          "w": 56.27,
+          "h": 4.49,
+          "text": "Example: length (arc) and distance (point, point)."
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_022.webp",
+      "text": "Spatial Operators\r\nDynamic Spatial Operators\r\n\u25cf Dynamic operations alter the objects upon which the operations act. \r\n\u25cf The three fundamental dynamic operations are create, destroy, and \r\nupdate. \r\n\u25cf A representative example of dynamic operations would be updating a \r\nspatial object that can be subdivided into translate (shift position), rotate \r\n(change orientation), scale up or down, reflect (produce a mirror image), \r\nand shear (deform).",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 27.62,
+          "h": 7.39,
+          "text": "Spatial Operators"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 33.18,
+          "h": 4.49,
+          "text": "Dynamic Spatial Operators"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.36,
+          "w": 79.89,
+          "h": 4.49,
+          "text": "Dynamic operations alter the objects upon which the operations act. "
+        },
+        {
+          "l": 5.55,
+          "t": 36.68,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 35.47,
+          "w": 79.39,
+          "h": 4.52,
+          "text": "The three fundamental dynamic operations are create, destroy, and "
+        },
+        {
+          "l": 9.55,
+          "t": 41.62,
+          "w": 9.37,
+          "h": 4.48,
+          "text": "update. "
+        },
+        {
+          "l": 5.55,
+          "t": 48.94,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 47.73,
+          "w": 82.21,
+          "h": 4.52,
+          "text": "A representative example of dynamic operations would be updating a "
+        },
+        {
+          "l": 9.47,
+          "t": 53.87,
+          "w": 84.86,
+          "h": 4.51,
+          "text": "spatial object that can be subdivided into translate (shift position), rotate "
+        },
+        {
+          "l": 9.45,
+          "t": 60.0,
+          "w": 84.18,
+          "h": 4.51,
+          "text": "(change orientation), scale up or down, reflect (produce a mirror image), "
+        },
+        {
+          "l": 9.46,
+          "t": 66.13,
+          "w": 22.71,
+          "h": 4.15,
+          "text": "and shear (deform)."
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_023.webp",
+      "text": "Spatial Queries\r\n\u25cf Spatial queries are requests for spatial data that require the \r\nuse of spatial operations.\r\n\u25cf Three types:\r\n\u25cb Range queries\r\n\u25cb Nearest neighbor queries\r\n\u25cb Spatial joins or overlays",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 24.07,
+          "h": 7.46,
+          "text": "Spatial Queries"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 24.0,
+          "w": 81.75,
+          "h": 4.51,
+          "text": "Spatial queries are requests for spatial data that require the "
+        },
+        {
+          "l": 9.55,
+          "t": 30.13,
+          "w": 31.5,
+          "h": 4.51,
+          "text": "use of spatial operations."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 36.29,
+          "w": 14.09,
+          "h": 4.49,
+          "text": "Three types:"
+        },
+        {
+          "l": 10.84,
+          "t": 43.16,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 42.32,
+          "w": 12.61,
+          "h": 3.4,
+          "text": "Range queries"
+        },
+        {
+          "l": 10.84,
+          "t": 47.93,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 47.01,
+          "w": 22.8,
+          "h": 3.49,
+          "text": "Nearest neighbor queries"
+        },
+        {
+          "l": 10.84,
+          "t": 52.7,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.45,
+          "t": 51.78,
+          "w": 21.13,
+          "h": 3.49,
+          "text": "Spatial joins or overlays"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_024.webp",
+      "text": "Spatial Queries\r\nRange queries\r\n\u25cf Find all objects of a particular type that are within a given spatial area \r\n\u25cf Example: Find all ambulances within a five mile radius of an \r\naccident location.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 24.07,
+          "h": 7.46,
+          "text": "Spatial Queries"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 17.33,
+          "h": 4.49,
+          "text": "Range queries"
+        },
+        {
+          "l": 5.55,
+          "t": 34.31,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 33.1,
+          "w": 50.08,
+          "h": 4.52,
+          "text": "Find all objects of a particular type that are "
+        },
+        {
+          "l": 59.77,
+          "t": 33.12,
+          "w": 6.92,
+          "h": 3.47,
+          "text": "within "
+        },
+        {
+          "l": 66.9,
+          "t": 33.12,
+          "w": 17.79,
+          "h": 4.49,
+          "text": " a given spatial "
+        },
+        {
+          "l": 84.83,
+          "t": 34.09,
+          "w": 4.88,
+          "h": 2.5,
+          "text": "area "
+        },
+        {
+          "l": 5.55,
+          "t": 40.44,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 39.23,
+          "w": 80.41,
+          "h": 4.51,
+          "text": "Example: Find all ambulances within a five mile radius of an "
+        },
+        {
+          "l": 9.46,
+          "t": 45.39,
+          "w": 20.04,
+          "h": 3.48,
+          "text": "accident location."
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_025.webp",
+      "text": "Spatial Queries\r\nNearest neighbor queries\r\n\u25cf Finds an object of a particular type that is closest to a given location.\r\n\u25cf Example: Find the police car that is closest to the location of a crime.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 24.07,
+          "h": 7.46,
+          "text": "Spatial Queries"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 31.43,
+          "h": 4.49,
+          "text": "Nearest neighbor queries"
+        },
+        {
+          "l": 5.55,
+          "t": 34.31,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 33.1,
+          "w": 48.37,
+          "h": 4.52,
+          "text": "Finds an object of a particular type that is "
+        },
+        {
+          "l": 58.16,
+          "t": 33.12,
+          "w": 10.77,
+          "h": 3.47,
+          "text": "closest to "
+        },
+        {
+          "l": 69.07,
+          "t": 33.23,
+          "w": 9.5,
+          "h": 4.38,
+          "text": " a given "
+        },
+        {
+          "l": 78.8,
+          "t": 33.12,
+          "w": 8.86,
+          "h": 3.47,
+          "text": "location"
+        },
+        {
+          "l": 88.05,
+          "t": 36.03,
+          "w": 0.29,
+          "h": 0.57,
+          "text": "."
+        },
+        {
+          "l": 5.55,
+          "t": 40.44,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 39.23,
+          "w": 78.86,
+          "h": 4.51,
+          "text": "Example: Find the police car that is closest to the location of a crime."
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_026.webp",
+      "text": "Spatial Queries\r\nSpatial joins or overlays\r\n\u25cf Typically joins the objects of two types based on some spatial condition, \r\nsuch as the objects intersecting or overlapping spatially or being within a \r\ncertain distance of one another.\r\n\u25cf Example: Finds all hotels that are within 5 kilometres of a railway station. \r\nIt spatially joins \u2018railway station\u2019 objects and \u2018hotels\u2019 objects.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 24.07,
+          "h": 7.46,
+          "text": "Spatial Queries"
+        },
+        {
+          "l": 4.46,
+          "t": 24.02,
+          "w": 29.47,
+          "h": 4.49,
+          "text": "Spatial joins or overlays"
+        },
+        {
+          "l": 5.55,
+          "t": 34.31,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 33.12,
+          "w": 10.5,
+          "h": 4.49,
+          "text": "Typically j"
+        },
+        {
+          "l": 19.75,
+          "t": 33.1,
+          "w": 33.84,
+          "h": 4.52,
+          "text": " joins the objects of two types "
+        },
+        {
+          "l": 53.75,
+          "t": 33.12,
+          "w": 19.07,
+          "h": 3.47,
+          "text": " based on some "
+        },
+        {
+          "l": 72.96,
+          "t": 33.12,
+          "w": 18.91,
+          "h": 4.48,
+          "text": "spatial condition"
+        },
+        {
+          "l": 92.2,
+          "t": 36.03,
+          "w": 1.19,
+          "h": 1.09,
+          "text": ", "
+        },
+        {
+          "l": 9.47,
+          "t": 39.25,
+          "w": 84.83,
+          "h": 4.49,
+          "text": "such as the objects intersecting or overlapping spatially or being within a "
+        },
+        {
+          "l": 9.49,
+          "t": 45.36,
+          "w": 36.79,
+          "h": 3.51,
+          "text": "certain distance of one another."
+        },
+        {
+          "l": 5.55,
+          "t": 52.71,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 51.5,
+          "w": 84.78,
+          "h": 4.52,
+          "text": "Example: Finds all hotels that are within 5 kilometres of a railway station. "
+        },
+        {
+          "l": 9.59,
+          "t": 57.65,
+          "w": 68.23,
+          "h": 4.49,
+          "text": "It spatially joins \u2018railway station\u2019 objects and \u2018hotels\u2019 objects."
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_027.webp",
+      "text": "Spatial Data Indexing\r\n\u25cf A spatial database system needs an index mechanism that will help it \r\nretrieve data items quickly according to their spatial locations.\r\n\u25cf Traditional indexing methods are not well suited to data objects of \r\nnon-zero size located in multidimensional spaces.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.02,
+          "w": 80.94,
+          "h": 4.49,
+          "text": "A spatial database system needs an index mechanism that will help it "
+        },
+        {
+          "l": 9.56,
+          "t": 30.16,
+          "w": 71.48,
+          "h": 4.49,
+          "text": "retrieve data items quickly according to their spatial locations."
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 36.27,
+          "w": 77.66,
+          "h": 4.51,
+          "text": "Traditional indexing methods are not well suited to data objects of "
+        },
+        {
+          "l": 9.56,
+          "t": 42.42,
+          "w": 57.22,
+          "h": 4.48,
+          "text": "non-zero size located in multidimensional spaces."
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_028.webp",
+      "text": "Spatial Data Indexing\r\n\u25cf A spatial index is used to organize objects into a set of buckets.\r\n\u25cf The buckets correspond to pages of secondary memory), so that objects \r\nin a particular spatial region can be easily located. \r\n\u25cf Each bucket has a bucket region, a part of space containing all objects \r\nstored in the bucket. \r\n\u25cf The bucket regions are usually rectangles.\r\n\u25cf For point data structures, these regions are disjoint and they partition the \r\nspace so that each point belongs to precisely one bucket. \r\n\u25cf There are essentially two:",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.0,
+          "w": 72.89,
+          "h": 4.51,
+          "text": "A spatial index is used to organize objects into a set of buckets."
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 30.13,
+          "w": 84.41,
+          "h": 4.52,
+          "text": "The buckets correspond to pages of secondary memory), so that objects "
+        },
+        {
+          "l": 9.54,
+          "t": 36.29,
+          "w": 58.22,
+          "h": 4.49,
+          "text": "in a particular spatial region can be easily located. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.4,
+          "w": 81.42,
+          "h": 4.51,
+          "text": "Each bucket has a bucket region, a part of space containing all objects "
+        },
+        {
+          "l": 9.47,
+          "t": 48.56,
+          "w": 24.5,
+          "h": 3.48,
+          "text": "stored in the bucket. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 54.69,
+          "w": 48.46,
+          "h": 4.49,
+          "text": "The bucket regions are usually rectangles."
+        },
+        {
+          "l": 5.55,
+          "t": 62.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.82,
+          "w": 85.87,
+          "h": 4.49,
+          "text": "For point data structures, these regions are disjoint and they partition the "
+        },
+        {
+          "l": 9.47,
+          "t": 66.96,
+          "w": 66.79,
+          "h": 4.49,
+          "text": "space so that each point belongs to precisely one bucket. "
+        },
+        {
+          "l": 5.55,
+          "t": 74.28,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 73.09,
+          "w": 30.23,
+          "h": 4.49,
+          "text": "There are essentially two: "
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_029.webp",
+      "text": "Spatial Data Indexing\r\n1. Specialized indexing structures that allow efficient search for data objects \r\nbased on spatial search operations are included in the database system. \r\n\u25cb Similar to B+-tree indexes in traditional database systems.\r\n\u25cb Examples of these indexing structures are grid files and R-trees. \r\n\u25cb Spatial join indexes, can be used to speed up spatial join operations.\r\n2. The two-dimensional (2-D) spatial data is converted to single-dimensional \r\n(1-D) data.\r\n\u25cb so that traditional indexing techniques (B+-tree) can be used. \r\n\u25cb The algorithms for converting from 2-D to 1-D are known as space filling curves.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.99,
+          "t": 24.23,
+          "w": 1.68,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 9.47,
+          "t": 24.0,
+          "w": 85.78,
+          "h": 4.51,
+          "text": "Specialized indexing structures that allow efficient search for data objects "
+        },
+        {
+          "l": 9.56,
+          "t": 30.16,
+          "w": 84.31,
+          "h": 4.49,
+          "text": "based on spatial search operations are included in the database system. "
+        },
+        {
+          "l": 10.84,
+          "t": 37.03,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.45,
+          "t": 36.1,
+          "w": 52.2,
+          "h": 3.49,
+          "text": "Similar to B+-tree indexes in traditional database systems."
+        },
+        {
+          "l": 10.84,
+          "t": 41.8,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 40.86,
+          "w": 38.22,
+          "h": 3.51,
+          "text": "Examples of these indexing structures are "
+        },
+        {
+          "l": 52.81,
+          "t": 40.86,
+          "w": 7.56,
+          "h": 3.51,
+          "text": "grid files "
+        },
+        {
+          "l": 60.47,
+          "t": 40.87,
+          "w": 4.47,
+          "h": 2.7,
+          "text": " and "
+        },
+        {
+          "l": 65.13,
+          "t": 41.03,
+          "w": 6.14,
+          "h": 2.54,
+          "text": "R-trees"
+        },
+        {
+          "l": 71.5,
+          "t": 43.14,
+          "w": 0.87,
+          "h": 0.44,
+          "text": ". "
+        },
+        {
+          "l": 10.84,
+          "t": 46.57,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.45,
+          "t": 45.64,
+          "w": 61.4,
+          "h": 3.49,
+          "text": "Spatial join indexes, can be used to speed up spatial join operations."
+        },
+        {
+          "l": 4.88,
+          "t": 50.76,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 9.37,
+          "t": 50.6,
+          "w": 85.63,
+          "h": 4.49,
+          "text": "The two-dimensional (2-D) spatial data is converted to single-dimensional "
+        },
+        {
+          "l": 9.45,
+          "t": 56.73,
+          "w": 11.72,
+          "h": 4.12,
+          "text": "(1-D) data."
+        },
+        {
+          "l": 10.84,
+          "t": 63.6,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.44,
+          "t": 62.68,
+          "w": 55.42,
+          "h": 3.49,
+          "text": "so that traditional indexing techniques (B+-tree) can be used. "
+        },
+        {
+          "l": 10.84,
+          "t": 68.37,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 67.43,
+          "w": 71.71,
+          "h": 3.51,
+          "text": "The algorithms for converting from 2-D to 1-D are known as space filling curves."
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_030.webp",
+      "text": "Spatial Data Indexing",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_031.webp",
+      "text": "Spatial Data Indexing\r\nGrid Files\r\n\u25cf A grid file is a multi-dimensional data structure used to handle indexing \r\nand efficient querying across two or more search keys simultaneously.\r\n\u25cf It acts as a symmetric multi-key indexing scheme.\r\n\u25cf Records are visualized as points in an n-dimensional space. \r\n\u25cb where each dimension represents the domain of a specific attribute.\r\n\u25cb e.g., latitude, longitude, or age and salary.\r\n\u25cf The search space is split into a grid using linear scales along each axis.\r\n\u25cf The actual data records are grouped and stored in data buckets on the \r\ndisk. \r\n\u25cf Multiple grid cells (regions of the multi-dimensional space) can point to \r\nthe same bucket if they share space or if data density is low.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 23.6,
+          "w": 11.31,
+          "h": 3.47,
+          "text": "Grid Files"
+        },
+        {
+          "l": 5.55,
+          "t": 30.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 28.8,
+          "w": 83.51,
+          "h": 4.51,
+          "text": "A grid file is a multi-dimensional data structure used to handle indexing "
+        },
+        {
+          "l": 9.46,
+          "t": 34.4,
+          "w": 81.32,
+          "h": 4.52,
+          "text": "and efficient querying across two or more search keys simultaneously."
+        },
+        {
+          "l": 5.55,
+          "t": 41.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 40.02,
+          "w": 56.9,
+          "h": 4.49,
+          "text": "It acts as a symmetric multi-key indexing scheme."
+        },
+        {
+          "l": 5.55,
+          "t": 46.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 45.62,
+          "w": 69.03,
+          "h": 4.48,
+          "text": "Records are visualized as points in an n-dimensional space. "
+        },
+        {
+          "l": 10.84,
+          "t": 51.96,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.37,
+          "t": 51.02,
+          "w": 61.56,
+          "h": 3.51,
+          "text": "where each dimension represents the domain of a specific attribute."
+        },
+        {
+          "l": 10.84,
+          "t": 56.31,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 55.39,
+          "w": 37.41,
+          "h": 3.49,
+          "text": "e.g., latitude, longitude, or age and salary."
+        },
+        {
+          "l": 5.55,
+          "t": 61.12,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 59.93,
+          "w": 81.06,
+          "h": 4.49,
+          "text": "The search space is split into a grid using linear scales along each axis."
+        },
+        {
+          "l": 5.55,
+          "t": 66.72,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 65.53,
+          "w": 82.71,
+          "h": 4.49,
+          "text": "The actual data records are grouped and stored in data buckets on the "
+        },
+        {
+          "l": 9.49,
+          "t": 71.13,
+          "w": 5.82,
+          "h": 3.48,
+          "text": "disk. "
+        },
+        {
+          "l": 5.55,
+          "t": 77.92,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 76.71,
+          "w": 82.59,
+          "h": 4.51,
+          "text": "Multiple grid cells (regions of the multi-dimensional space) can point to "
+        },
+        {
+          "l": 9.39,
+          "t": 82.31,
+          "w": 69.46,
+          "h": 4.52,
+          "text": "the same bucket if they share space or if data density is low."
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_032.webp",
+      "text": "Spatial Data Indexing\r\nGrid Files\r\n\u25cf They can also be used for indexing n-dimensional spatial data. \r\n\u25cf The fixed-grid method divides an n-dimensional hyperspace into equal \r\nsize buckets. \r\n\u25cf The data structure that implements the fixed grid is an n-dimensional \r\narray. \r\n\u25cf The objects whose spatial locations lie within a cell (totally or partially) can \r\nbe stored in a dynamic structure to handle overflows.\r\n\u25cf Useful for uniformly distributed data like satellite imagery.\r\n\u25cf The fixed-grid structure is rigid, and its directory can be sparse and large.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 24.02,
+          "w": 11.31,
+          "h": 3.47,
+          "text": "Grid Files"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 29.33,
+          "w": 72.81,
+          "h": 4.52,
+          "text": "They can also be used for indexing n-dimensional spatial data. "
+        },
+        {
+          "l": 5.55,
+          "t": 36.68,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 35.47,
+          "w": 82.48,
+          "h": 4.52,
+          "text": "The fixed-grid method divides an n-dimensional hyperspace into equal "
+        },
+        {
+          "l": 9.47,
+          "t": 41.62,
+          "w": 15.27,
+          "h": 3.48,
+          "text": "size buckets. "
+        },
+        {
+          "l": 5.55,
+          "t": 48.94,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 47.73,
+          "w": 81.22,
+          "h": 4.51,
+          "text": "The data structure that implements the fixed grid is an n-dimensional "
+        },
+        {
+          "l": 9.46,
+          "t": 54.86,
+          "w": 7.25,
+          "h": 3.52,
+          "text": "array. "
+        },
+        {
+          "l": 5.55,
+          "t": 61.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 60.02,
+          "w": 86.42,
+          "h": 4.49,
+          "text": "The objects whose spatial locations lie within a cell (totally or partially) can "
+        },
+        {
+          "l": 9.56,
+          "t": 66.13,
+          "w": 61.64,
+          "h": 4.52,
+          "text": "be stored in a dynamic structure to handle overflows."
+        },
+        {
+          "l": 5.55,
+          "t": 73.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 72.27,
+          "w": 67.16,
+          "h": 4.52,
+          "text": "Useful for uniformly distributed data like satellite imagery."
+        },
+        {
+          "l": 5.55,
+          "t": 79.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 78.4,
+          "w": 84.48,
+          "h": 4.52,
+          "text": "The fixed-grid structure is rigid, and its directory can be sparse and large."
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_033.webp",
+      "text": "Spatial Data Indexing\r\nR-trees\r\n\u25cf A height-balanced tree.\r\n\u25cf An extension of the B+-tree for k-dimensions, where k > 1.\r\n\u25cf Designed for spatial data storage and multi-dimensional indexing.\r\n\u25cf spatial objects are approximated in the R-tree by their minimum \r\nbounding rectangle (MBR).\r\n\u25cf MBR is the smallest rectangle, with sides parallel to the coordinate system \r\n(x and y) axis, that contains the object.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.57,
+          "t": 24.23,
+          "w": 8.54,
+          "h": 3.26,
+          "text": "R-trees"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 29.36,
+          "w": 26.8,
+          "h": 4.49,
+          "text": "A height-balanced tree."
+        },
+        {
+          "l": 5.55,
+          "t": 36.68,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 35.47,
+          "w": 67.21,
+          "h": 4.02,
+          "text": "An extension of the B+-tree for k-dimensions, where k > 1."
+        },
+        {
+          "l": 5.55,
+          "t": 42.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 41.6,
+          "w": 76.0,
+          "h": 4.51,
+          "text": "Designed for spatial data storage and multi-dimensional indexing."
+        },
+        {
+          "l": 5.55,
+          "t": 48.94,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 47.76,
+          "w": 75.13,
+          "h": 4.49,
+          "text": "spatial objects are approximated in the R-tree by their minimum "
+        },
+        {
+          "l": 9.56,
+          "t": 53.89,
+          "w": 30.39,
+          "h": 4.49,
+          "text": "bounding rectangle (MBR)."
+        },
+        {
+          "l": 5.55,
+          "t": 61.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.02,
+          "w": 86.25,
+          "h": 4.49,
+          "text": "MBR is the smallest rectangle, with sides parallel to the coordinate system "
+        },
+        {
+          "l": 9.45,
+          "t": 66.16,
+          "w": 44.08,
+          "h": 4.49,
+          "text": "(x and y) axis, that contains the object."
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_034.webp",
+      "text": "Spatial Data Indexing\r\nR-trees: Properties\r\n\u25cf Consists of a single root, internals nodes, and leaf nodes.\r\n\u25cf The root contains the pointer to the largest region in the spatial domain.\r\n\u25cf Parent nodes contains pointers to their child nodes where the region of \r\nchild nodes completely overlaps the regions of parent nodes.\r\n\u25cf Leaf nodes contains data about the MBR to the current objects.\r\n\u25cf MBR-Minimum bounding region refers to the minimal bounding box \r\nparameter surrounding the region/object under consideration.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 22.91,
+          "h": 4.49,
+          "text": "R-trees: Properties"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 29.33,
+          "w": 65.75,
+          "h": 4.51,
+          "text": "Consists of a single root, internals nodes, and leaf nodes."
+        },
+        {
+          "l": 5.55,
+          "t": 36.68,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 35.49,
+          "w": 83.69,
+          "h": 4.49,
+          "text": "The root contains the pointer to the largest region in the spatial domain."
+        },
+        {
+          "l": 5.55,
+          "t": 42.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 41.6,
+          "w": 83.41,
+          "h": 4.51,
+          "text": "Parent nodes contains pointers to their child nodes where the region of "
+        },
+        {
+          "l": 9.49,
+          "t": 47.73,
+          "w": 70.55,
+          "h": 4.52,
+          "text": "child nodes completely overlaps the regions of parent nodes."
+        },
+        {
+          "l": 5.55,
+          "t": 55.08,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 53.87,
+          "w": 73.07,
+          "h": 4.51,
+          "text": "Leaf nodes contains data about the MBR to the current objects."
+        },
+        {
+          "l": 5.55,
+          "t": 61.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 60.0,
+          "w": 79.57,
+          "h": 4.51,
+          "text": "MBR-Minimum bounding region refers to the minimal bounding box "
+        },
+        {
+          "l": 9.56,
+          "t": 66.16,
+          "w": 72.51,
+          "h": 4.49,
+          "text": "parameter surrounding the region/object under consideration."
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_035.webp",
+      "text": "Spatial Data Indexing\r\nR-trees: Example",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 20.52,
+          "h": 4.49,
+          "text": "R-trees: Example"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_036.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees\r\n\u25cf A tree data structure.\r\n\u25cf used to partition a two-dimensional space into smaller regions.\r\n\u25cf each node in the tree has four children, corresponding to the four \r\nquadrants of the space.\r\n\u25cf useful for spatial indexing and searching.\r\n\u25cf It allows efficient insertion, deletion, and retrieval of objects based on \r\ntheir spatial location.\r\n\u25cf It can efficiently handle spatial queries such as range searches and \r\nnearest neighbor searches.\r\n\u25cf Applications: GIS, computer graphics, video games, image processing.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 23.6,
+          "w": 13.7,
+          "h": 4.18,
+          "text": "Quad-trees"
+        },
+        {
+          "l": 5.55,
+          "t": 30.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 28.82,
+          "w": 24.58,
+          "h": 3.48,
+          "text": "A tree data structure."
+        },
+        {
+          "l": 5.55,
+          "t": 35.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 34.42,
+          "w": 72.77,
+          "h": 4.49,
+          "text": "used to partition a two-dimensional space into smaller regions."
+        },
+        {
+          "l": 5.55,
+          "t": 41.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.49,
+          "t": 40.0,
+          "w": 76.99,
+          "h": 4.51,
+          "text": "each node in the tree has four children, corresponding to the four "
+        },
+        {
+          "l": 9.48,
+          "t": 45.6,
+          "w": 27.15,
+          "h": 4.51,
+          "text": "quadrants of the space."
+        },
+        {
+          "l": 5.55,
+          "t": 52.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.55,
+          "t": 51.2,
+          "w": 47.26,
+          "h": 4.51,
+          "text": "useful for spatial indexing and searching."
+        },
+        {
+          "l": 5.55,
+          "t": 58.01,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 56.8,
+          "w": 81.07,
+          "h": 4.51,
+          "text": "It allows efficient insertion, deletion, and retrieval of objects based on "
+        },
+        {
+          "l": 9.39,
+          "t": 62.42,
+          "w": 24.12,
+          "h": 4.48,
+          "text": "their spatial location."
+        },
+        {
+          "l": 5.55,
+          "t": 69.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 68.0,
+          "w": 77.68,
+          "h": 4.52,
+          "text": "It can efficiently handle spatial queries such as range searches and "
+        },
+        {
+          "l": 9.56,
+          "t": 73.62,
+          "w": 31.2,
+          "h": 4.49,
+          "text": "nearest neighbor searches."
+        },
+        {
+          "l": 5.55,
+          "t": 80.41,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 79.22,
+          "w": 80.52,
+          "h": 4.49,
+          "text": "Applications: GIS, computer graphics, video games, image processing."
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_037.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees\r\n\u25cf The quadtree starts with a root node that represents the entire space. \r\n\u25cf Each level of the tree divides the space into four equal-sized quadrants. \r\n\u25cf Each node of a Quad Tree has at most four children.\r\n\u25cf The leaf nodes of the tree represent smaller regions of the space.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 24.02,
+          "w": 13.7,
+          "h": 4.18,
+          "text": "Quad-trees"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 29.36,
+          "w": 81.91,
+          "h": 4.48,
+          "text": "The quadtree starts with a root node that represents the entire space. "
+        },
+        {
+          "l": 5.55,
+          "t": 36.68,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 35.47,
+          "w": 83.21,
+          "h": 4.51,
+          "text": "Each level of the tree divides the space into four equal-sized quadrants. "
+        },
+        {
+          "l": 5.55,
+          "t": 42.81,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 41.6,
+          "w": 60.14,
+          "h": 4.2,
+          "text": "Each node of a Quad Tree has at most four children."
+        },
+        {
+          "l": 5.55,
+          "t": 48.94,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 47.73,
+          "w": 75.64,
+          "h": 4.51,
+          "text": "The leaf nodes of the tree represent smaller regions of the space."
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_038.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees: Construction\r\n1. Divide the current two-dimensional space into four boxes.\r\n2. If a box contains one or more points in it, create a child object, storing in it \r\nthe two-dimensional space of the box.\r\n3. If a box does not contain any points, do not create a child for it.\r\n4. Recurse for each of the children.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 24.02,
+          "w": 31.17,
+          "h": 4.18,
+          "text": "Quad-trees: Construction"
+        },
+        {
+          "l": 4.99,
+          "t": 29.56,
+          "w": 1.68,
+          "h": 3.28,
+          "text": "1. "
+        },
+        {
+          "l": 9.59,
+          "t": 29.33,
+          "w": 66.92,
+          "h": 4.51,
+          "text": "Divide the current two-dimensional space into four boxes."
+        },
+        {
+          "l": 4.88,
+          "t": 35.65,
+          "w": 1.78,
+          "h": 3.32,
+          "text": "2. "
+        },
+        {
+          "l": 9.59,
+          "t": 35.47,
+          "w": 86.49,
+          "h": 4.51,
+          "text": "If a box contains one or more points in it, create a child object, storing in it "
+        },
+        {
+          "l": 9.39,
+          "t": 41.6,
+          "w": 44.11,
+          "h": 4.51,
+          "text": "the two-dimensional space of the box."
+        },
+        {
+          "l": 4.87,
+          "t": 47.92,
+          "w": 1.79,
+          "h": 3.32,
+          "text": "3. "
+        },
+        {
+          "l": 9.59,
+          "t": 47.73,
+          "w": 72.91,
+          "h": 4.52,
+          "text": "If a box does not contain any points, do not create a child for it."
+        },
+        {
+          "l": 4.81,
+          "t": 54.08,
+          "w": 1.85,
+          "h": 3.3,
+          "text": "4. "
+        },
+        {
+          "l": 9.59,
+          "t": 53.87,
+          "w": 37.28,
+          "h": 3.51,
+          "text": "Recurse for each of the children."
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_039.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 24.02,
+          "w": 13.7,
+          "h": 4.18,
+          "text": "Quad-trees"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_040.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 24.02,
+          "w": 13.7,
+          "h": 4.18,
+          "text": "Quad-trees"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_041.webp",
+      "text": "Spatial Data Indexing\r\nComparison: B-tree vs. R-tree vs. Quad-tree",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 34.08,
+          "h": 7.49,
+          "text": "Spatial Data Indexing"
+        },
+        {
+          "l": 4.49,
+          "t": 22.82,
+          "w": 53.43,
+          "h": 4.49,
+          "text": "Comparison: B-tree vs. R-tree vs. Quad-tree"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_042.webp",
+      "text": "Spatial Data Mining",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_043.webp",
+      "text": "Spatial Data Mining\r\nSpatial Classification\r\n\u25cf Definition: Estimate attribute values based on other attributes\r\n\u25cf Also called location prediction problem\r\n\u25cf Examples:\r\n\u25cb Predicting nest locations in wetlands (vegetation durability, water depth)\r\n\u25cb Identifying crime hotspots",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 4.46,
+          "t": 24.0,
+          "w": 25.6,
+          "h": 4.51,
+          "text": "Spatial Classification"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.33,
+          "w": 71.66,
+          "h": 3.51,
+          "text": "Definition: Estimate attribute values based on other attributes"
+        },
+        {
+          "l": 5.55,
+          "t": 35.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 34.69,
+          "w": 45.12,
+          "h": 4.48,
+          "text": "Also called location prediction problem"
+        },
+        {
+          "l": 5.55,
+          "t": 41.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 40.02,
+          "w": 11.37,
+          "h": 4.48,
+          "text": "Examples:"
+        },
+        {
+          "l": 10.7,
+          "t": 46.32,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 45.26,
+          "w": 74.27,
+          "h": 3.99,
+          "text": "Predicting nest locations in wetlands (vegetation durability, water depth)"
+        },
+        {
+          "l": 10.7,
+          "t": 51.06,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 49.98,
+          "w": 26.68,
+          "h": 4.01,
+          "text": "Identifying crime hotspots"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_044.webp",
+      "text": "Spatial Data Mining\r\nSpatial Classification",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 4.46,
+          "t": 24.0,
+          "w": 25.6,
+          "h": 4.51,
+          "text": "Spatial Classification"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_045.webp",
+      "text": "Spatial Data Mining\r\nSpatial Association\r\n\u25cf Definition: Rules based on spatial predicates\r\n\u25cf Rule format: \r\n\u25cf Example: is_a(x, country) \u2227 touches(x, Mediterranean) \u21d2 is_a(x, wine-exporter)\r\n\u25cf Key differences from non-spatial associations:\r\n\u25cb No clear \"transactions\" (continuous space)\r\n\u25cb Smaller item sets\r\n\u25cb Spatial items often discretized (e.g., income regions)",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 4.46,
+          "t": 24.02,
+          "w": 23.28,
+          "h": 4.49,
+          "text": "Spatial Association"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.33,
+          "w": 51.13,
+          "h": 4.51,
+          "text": "Definition: Rules based on spatial predicates"
+        },
+        {
+          "l": 5.55,
+          "t": 35.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 34.67,
+          "w": 14.76,
+          "h": 3.51,
+          "text": "Rule format: "
+        },
+        {
+          "l": 5.55,
+          "t": 41.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 40.02,
+          "w": 11.01,
+          "h": 4.48,
+          "text": "Example: "
+        },
+        {
+          "l": 20.79,
+          "t": 40.5,
+          "w": 15.78,
+          "h": 3.9,
+          "text": "is_a(x, country) "
+        },
+        {
+          "l": 36.91,
+          "t": 40.38,
+          "w": 1.6,
+          "h": 3.28,
+          "text": "\u2227 "
+        },
+        {
+          "l": 38.77,
+          "t": 40.4,
+          "w": 28.44,
+          "h": 3.67,
+          "text": " touches(x, Mediterranean) "
+        },
+        {
+          "l": 67.42,
+          "t": 40.95,
+          "w": 1.88,
+          "h": 2.1,
+          "text": "\u21d2 "
+        },
+        {
+          "l": 69.43,
+          "t": 40.5,
+          "w": 22.48,
+          "h": 3.89,
+          "text": " is_a(x, wine-exporter)"
+        },
+        {
+          "l": 5.55,
+          "t": 46.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 45.33,
+          "w": 52.9,
+          "h": 4.52,
+          "text": "Key differences from non-spatial associations:"
+        },
+        {
+          "l": 10.7,
+          "t": 51.65,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 50.6,
+          "w": 43.4,
+          "h": 3.99,
+          "text": "No clear \"transactions\" (continuous space)"
+        },
+        {
+          "l": 10.7,
+          "t": 56.39,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 55.34,
+          "w": 17.53,
+          "h": 3.08,
+          "text": "Smaller item sets"
+        },
+        {
+          "l": 10.7,
+          "t": 61.13,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 60.06,
+          "w": 53.38,
+          "h": 4.01,
+          "text": "Spatial items often discretized (e.g., income regions)"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_046.webp",
+      "text": "Spatial Data Mining\r\nSpatial Association",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 4.46,
+          "t": 24.02,
+          "w": 23.28,
+          "h": 4.49,
+          "text": "Spatial Association"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_047.webp",
+      "text": "Spatial Data Mining\r\nSpatial Colocation Rules\r\n\u25cf Generalize association rules to spatially indexed datasets\r\n\u25cf Useful for analyzing point collections (e.g., income regions, disease \r\nspread)",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 4.46,
+          "t": 24.02,
+          "w": 29.73,
+          "h": 4.49,
+          "text": "Spatial Colocation Rules"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 29.36,
+          "w": 65.94,
+          "h": 4.49,
+          "text": "Generalize association rules to spatially indexed datasets"
+        },
+        {
+          "l": 5.55,
+          "t": 35.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 34.67,
+          "w": 77.68,
+          "h": 4.52,
+          "text": "Useful for analyzing point collections (e.g., income regions, disease "
+        },
+        {
+          "l": 9.47,
+          "t": 40.02,
+          "w": 8.57,
+          "h": 4.48,
+          "text": "spread)"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_048.webp",
+      "text": "Spatial Data Mining\r\nSpatial Clustering\r\n\u25cf Definition: Group objects so similar ones cluster together\r\n\u25cf Application: Group seismic events \u2192 identify earthquake faults\r\n\u25cf Algorithms:\r\n\u25cb DBSCAN: Finds clusters based on density distribution\r\n\u25cb DENCLUE: Uses density functions to detect clusters",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 4.46,
+          "t": 24.02,
+          "w": 21.84,
+          "h": 4.49,
+          "text": "Spatial Clustering"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 29.33,
+          "w": 66.03,
+          "h": 4.51,
+          "text": "Definition: Group objects so similar ones cluster together"
+        },
+        {
+          "l": 5.55,
+          "t": 35.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 34.69,
+          "w": 39.9,
+          "h": 4.48,
+          "text": "Application: Group seismic events "
+        },
+        {
+          "l": 49.39,
+          "t": 36.19,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 51.79,
+          "t": 34.67,
+          "w": 30.4,
+          "h": 4.52,
+          "text": " identify earthquake faults"
+        },
+        {
+          "l": 5.55,
+          "t": 41.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 40.02,
+          "w": 13.12,
+          "h": 4.49,
+          "text": "Algorithms:"
+        },
+        {
+          "l": 10.7,
+          "t": 46.32,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 45.26,
+          "w": 54.34,
+          "h": 3.99,
+          "text": "DBSCAN: Finds clusters based on density distribution"
+        },
+        {
+          "l": 10.7,
+          "t": 51.06,
+          "w": 0.96,
+          "h": 1.73,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.56,
+          "t": 49.98,
+          "w": 52.43,
+          "h": 4.01,
+          "text": "DENCLUE: Uses density functions to detect clusters"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_049.webp",
+      "text": "Spatial Data Mining\r\nSpatial Clustering: DBSCAN",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 4.46,
+          "t": 24.02,
+          "w": 33.25,
+          "h": 4.49,
+          "text": "Spatial Clustering: DBSCAN"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_050.webp",
+      "text": "Spatial Data Mining\r\n\u25cf Spatial data mining reveals hidden patterns in correlated spatial data\r\n\u25cf Techniques:\r\n\u25cb Classification \u2192 Predict locations\r\n\u25cb Association \u2192 Discover spatial rules\r\n\u25cb Clustering \u2192 Identify dense regions\r\n\u25cf Applications: Ecology, crime analysis, geology, urban planning",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 31.17,
+          "h": 7.49,
+          "text": "Spatial Data Mining"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 24.02,
+          "w": 79.75,
+          "h": 4.49,
+          "text": "Spatial data mining reveals hidden patterns in correlated spatial data"
+        },
+        {
+          "l": 5.55,
+          "t": 30.54,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 29.36,
+          "w": 13.77,
+          "h": 4.48,
+          "text": "Techniques:"
+        },
+        {
+          "l": 10.55,
+          "t": 35.88,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.5,
+          "t": 34.67,
+          "w": 15.71,
+          "h": 3.49,
+          "text": "Classification "
+        },
+        {
+          "l": 30.32,
+          "t": 36.19,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 32.72,
+          "t": 34.69,
+          "w": 19.82,
+          "h": 3.47,
+          "text": " Predict locations"
+        },
+        {
+          "l": 10.55,
+          "t": 41.21,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 40.13,
+          "w": 13.88,
+          "h": 3.36,
+          "text": "Association "
+        },
+        {
+          "l": 28.34,
+          "t": 41.52,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 30.74,
+          "t": 40.02,
+          "w": 25.25,
+          "h": 4.48,
+          "text": " Discover spatial rules"
+        },
+        {
+          "l": 10.55,
+          "t": 46.54,
+          "w": 1.07,
+          "h": 1.94,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.5,
+          "t": 45.36,
+          "w": 12.25,
+          "h": 4.49,
+          "text": "Clustering "
+        },
+        {
+          "l": 26.86,
+          "t": 46.85,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 29.26,
+          "t": 45.33,
+          "w": 26.29,
+          "h": 4.52,
+          "text": " Identify dense regions"
+        },
+        {
+          "l": 5.55,
+          "t": 51.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 50.69,
+          "w": 71.36,
+          "h": 4.49,
+          "text": "Applications: Ecology, crime analysis, geology, urban planning"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_051.webp",
+      "text": "Applications of Spatial Data",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.2,
+          "w": 44.09,
+          "h": 7.39,
+          "text": "Applications of Spatial Data"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_052.webp",
+      "text": "",
+      "width": 1440,
+      "height": 810,
+      "rects": []
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_053.webp",
+      "text": "Introduction\r\n\u25cf Growth of mobile computing and smartphones\r\n\u25cf Need for data availability on the move\r\n\u25cf Examples: WhatsApp, Uber, Mobile Banking, E-commerce apps\r\n\u25cf Challenges: limited resources, connectivity issues, security",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.6,
+          "t": 12.23,
+          "w": 19.22,
+          "h": 5.86,
+          "text": "Introduction"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.0,
+          "w": 54.44,
+          "h": 4.51,
+          "text": "Growth of mobile computing and smartphones"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.13,
+          "w": 43.83,
+          "h": 4.52,
+          "text": "Need for data availability on the move"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 72.45,
+          "h": 4.49,
+          "text": "Examples: WhatsApp, Uber, Mobile Banking, E-commerce apps"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 42.42,
+          "w": 67.3,
+          "h": 4.49,
+          "text": "Challenges: limited resources, connectivity issues, security"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_054.webp",
+      "text": "Mobile Computing Environment\r\n\u25cf Definition: \u201cA computing environment where users access data, \r\napplications, and services through mobile devices over wireless \r\nnetworks.\u201d\r\n\u25cf Components:\r\n\u25cb Mobile devices (smartphones, tablets, wearables)\r\n\u25cb Wireless networks (Wi-Fi, 4G/5G, Bluetooth)\r\n\u25cb Cloud services & backend servers\r\n\u25cf Characteristics:\r\n\u25cb Ubiquity (anytime, anywhere access)\r\n\u25cb Resource constraints (battery, storage, bandwidth)\r\n\u25cb Dynamic connectivity (handoffs, roaming)",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 50.19,
+          "h": 7.49,
+          "text": "Mobile Computing Environment"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.0,
+          "w": 73.96,
+          "h": 4.51,
+          "text": "Definition: \u201cA computing environment where users access data, "
+        },
+        {
+          "l": 9.46,
+          "t": 30.16,
+          "w": 74.01,
+          "h": 4.49,
+          "text": "applications, and services through mobile devices over wireless "
+        },
+        {
+          "l": 9.56,
+          "t": 36.29,
+          "w": 12.07,
+          "h": 3.48,
+          "text": "networks.\u201d"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 42.58,
+          "w": 15.28,
+          "h": 4.32,
+          "text": "Components:"
+        },
+        {
+          "l": 10.84,
+          "t": 49.29,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 48.37,
+          "w": 44.2,
+          "h": 3.49,
+          "text": "Mobile devices (smartphones, tablets, wearables)"
+        },
+        {
+          "l": 10.84,
+          "t": 54.06,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.38,
+          "t": 53.14,
+          "w": 39.15,
+          "h": 3.21,
+          "text": "Wireless networks (Wi-Fi, 4G/5G, Bluetooth)"
+        },
+        {
+          "l": 10.84,
+          "t": 58.83,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 57.91,
+          "w": 29.99,
+          "h": 2.7,
+          "text": "Cloud services & backend servers"
+        },
+        {
+          "l": 5.55,
+          "t": 64.05,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 62.87,
+          "w": 17.46,
+          "h": 3.48,
+          "text": "Characteristics:"
+        },
+        {
+          "l": 10.84,
+          "t": 69.74,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.52,
+          "t": 68.81,
+          "w": 32.65,
+          "h": 3.49,
+          "text": "Ubiquity (anytime, anywhere access)"
+        },
+        {
+          "l": 10.84,
+          "t": 74.51,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 73.58,
+          "w": 45.39,
+          "h": 3.49,
+          "text": "Resource constraints (battery, storage, bandwidth)"
+        },
+        {
+          "l": 10.84,
+          "t": 79.28,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 78.34,
+          "w": 37.2,
+          "h": 3.51,
+          "text": "Dynamic connectivity (handoffs, roaming)"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_055.webp",
+      "text": "Mobile Computing Architecture\r\n\u25cf A distributed architecture where a number of computers, generally \r\nreferred to as Fixed Hosts and Base Stations, are interconnected through \r\na high-speed wired network. \r\n\u25cf Fixed hosts are general purpose computers that are not typically \r\nequipped to manage mobile units but can be configured to do so. \r\n\u25cf Base stations function as gateways to the fixed network for the Mobile \r\nUnits. \r\n\u25cf They are equipped with wireless interfaces and offer network access \r\nservices of which mobile units are clients.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 49.13,
+          "h": 7.49,
+          "text": "Mobile Computing Architecture"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 24.0,
+          "w": 78.46,
+          "h": 4.52,
+          "text": "A distributed architecture where a number of computers, generally "
+        },
+        {
+          "l": 9.56,
+          "t": 30.13,
+          "w": 85.2,
+          "h": 4.51,
+          "text": "referred to as Fixed Hosts and Base Stations, are interconnected through "
+        },
+        {
+          "l": 9.46,
+          "t": 36.29,
+          "w": 33.53,
+          "h": 4.49,
+          "text": "a high-speed wired network. "
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 75.34,
+          "h": 4.49,
+          "text": "Fixed hosts are general purpose computers that are not typically "
+        },
+        {
+          "l": 9.49,
+          "t": 48.53,
+          "w": 76.57,
+          "h": 4.51,
+          "text": "equipped to manage mobile units but can be configured to do so. "
+        },
+        {
+          "l": 5.55,
+          "t": 55.88,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.67,
+          "w": 82.01,
+          "h": 4.52,
+          "text": "Base stations function as gateways to the fixed network for the Mobile "
+        },
+        {
+          "l": 9.57,
+          "t": 60.93,
+          "w": 7.14,
+          "h": 3.37,
+          "text": "Units. "
+        },
+        {
+          "l": 5.55,
+          "t": 68.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 66.93,
+          "w": 79.99,
+          "h": 4.52,
+          "text": "They are equipped with wireless interfaces and offer network access "
+        },
+        {
+          "l": 9.47,
+          "t": 73.07,
+          "w": 47.75,
+          "h": 3.51,
+          "text": "services of which mobile units are clients."
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_056.webp",
+      "text": "Mobile Computing Architecture",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 49.13,
+          "h": 7.49,
+          "text": "Mobile Computing Architecture"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_057.webp",
+      "text": "Mobile Computing Architecture\r\nLayers of Architecture:\r\n1. Mobile Device Layer \u2013 hardware, OS, local DB (e.g., SQLite)\r\n2. Network Layer \u2013 wireless communication, protocols (TCP/IP, HTTP, \r\nMQTT)\r\n3. Middleware Layer \u2013 synchronization, caching, security services\r\n4. Server/Cloud Layer \u2013 enterprise DBMS, application servers, APIs\r\nExample: WhatsApp message flow (device \u2192 internet \u2192 server \u2192 recipient)",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 49.13,
+          "h": 7.49,
+          "text": "Mobile Computing Architecture"
+        },
+        {
+          "l": 4.57,
+          "t": 24.0,
+          "w": 27.4,
+          "h": 4.51,
+          "text": "Layers of Architecture"
+        },
+        {
+          "l": 32.28,
+          "t": 24.98,
+          "w": 0.29,
+          "h": 2.53,
+          "text": ":"
+        },
+        {
+          "l": 5.03,
+          "t": 30.34,
+          "w": 1.59,
+          "h": 3.24,
+          "text": "1. "
+        },
+        {
+          "l": 9.57,
+          "t": 30.16,
+          "w": 24.72,
+          "h": 4.49,
+          "text": "Mobile Device Layer "
+        },
+        {
+          "l": 34.37,
+          "t": 30.16,
+          "w": 43.99,
+          "h": 4.49,
+          "text": " \u2013 hardware, OS, local DB (e.g., SQLite)"
+        },
+        {
+          "l": 4.83,
+          "t": 36.47,
+          "w": 1.79,
+          "h": 3.24,
+          "text": "2. "
+        },
+        {
+          "l": 9.57,
+          "t": 36.29,
+          "w": 18.28,
+          "h": 4.49,
+          "text": "Network Layer "
+        },
+        {
+          "l": 27.92,
+          "t": 36.29,
+          "w": 60.64,
+          "h": 4.48,
+          "text": " \u2013 wireless communication, protocols (TCP/IP, HTTP, "
+        },
+        {
+          "l": 9.59,
+          "t": 42.58,
+          "w": 7.33,
+          "h": 4.02,
+          "text": "MQTT)"
+        },
+        {
+          "l": 4.87,
+          "t": 48.74,
+          "w": 1.76,
+          "h": 3.3,
+          "text": "3. "
+        },
+        {
+          "l": 9.57,
+          "t": 48.56,
+          "w": 22.09,
+          "h": 4.49,
+          "text": "Middleware Layer "
+        },
+        {
+          "l": 31.74,
+          "t": 48.56,
+          "w": 51.39,
+          "h": 4.49,
+          "text": " \u2013 synchronization, caching, security services"
+        },
+        {
+          "l": 4.79,
+          "t": 54.89,
+          "w": 1.83,
+          "h": 3.23,
+          "text": "4. "
+        },
+        {
+          "l": 9.46,
+          "t": 54.69,
+          "w": 23.6,
+          "h": 4.49,
+          "text": "Server/Cloud Layer "
+        },
+        {
+          "l": 33.14,
+          "t": 54.69,
+          "w": 51.66,
+          "h": 4.48,
+          "text": " \u2013 enterprise DBMS, application servers, APIs"
+        },
+        {
+          "l": 4.59,
+          "t": 66.93,
+          "w": 48.84,
+          "h": 4.51,
+          "text": "Example: WhatsApp message flow (device "
+        },
+        {
+          "l": 53.58,
+          "t": 68.45,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 55.99,
+          "t": 67.07,
+          "w": 10.59,
+          "h": 3.36,
+          "text": " internet "
+        },
+        {
+          "l": 66.69,
+          "t": 68.45,
+          "w": 2.31,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 69.09,
+          "t": 67.93,
+          "w": 8.58,
+          "h": 2.5,
+          "text": " server "
+        },
+        {
+          "l": 77.78,
+          "t": 68.45,
+          "w": 2.3,
+          "h": 1.59,
+          "text": "\u2192 "
+        },
+        {
+          "l": 80.18,
+          "t": 67.07,
+          "w": 11.52,
+          "h": 4.37,
+          "text": " recipient)"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_058.webp",
+      "text": "Mobile Computing Architecture",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 49.13,
+          "h": 7.49,
+          "text": "Mobile Computing Architecture"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_059.webp",
+      "text": "Mobile Databases\r\n\u25cf Mobile Database is a database that is transportable, portable, and \r\nphysically separate or detached from the corporate database server but \r\nhas the capability to communicate with those servers from remote sites \r\nallowing the sharing of various kinds of data.\r\n\u25cf Mobile databases are databases designed to operate on mobile devices \r\nor in mobile environments, enabling data access, synchronization, and \r\nmanagement anytime, anywhere. \r\n\u25cf With mobile databases, users have access to corporate data on their \r\nlaptop, PDA, or other Internet access device that is required for \r\napplications at remote sites.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 28.01,
+          "h": 5.86,
+          "text": "Mobile Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 77.12,
+          "h": 4.48,
+          "text": "Mobile Database is a database that is transportable, portable, and "
+        },
+        {
+          "l": 9.56,
+          "t": 30.13,
+          "w": 83.97,
+          "h": 4.52,
+          "text": "physically separate or detached from the corporate database server but "
+        },
+        {
+          "l": 9.56,
+          "t": 36.27,
+          "w": 83.68,
+          "h": 4.52,
+          "text": "has the capability to communicate with those servers from remote sites "
+        },
+        {
+          "l": 9.46,
+          "t": 42.4,
+          "w": 51.55,
+          "h": 4.51,
+          "text": "allowing the sharing of various kinds of data."
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.56,
+          "w": 83.49,
+          "h": 4.49,
+          "text": "Mobile databases are databases designed to operate on mobile devices "
+        },
+        {
+          "l": 9.49,
+          "t": 54.69,
+          "w": 82.21,
+          "h": 4.49,
+          "text": "or in mobile environments, enabling data access, synchronization, and "
+        },
+        {
+          "l": 9.56,
+          "t": 60.82,
+          "w": 39.41,
+          "h": 4.49,
+          "text": "management anytime, anywhere. "
+        },
+        {
+          "l": 5.55,
+          "t": 68.14,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 66.96,
+          "w": 80.0,
+          "h": 4.48,
+          "text": "With mobile databases, users have access to corporate data on their "
+        },
+        {
+          "l": 9.56,
+          "t": 73.07,
+          "w": 73.71,
+          "h": 4.51,
+          "text": "laptop, PDA, or other Internet access device that is required for "
+        },
+        {
+          "l": 9.46,
+          "t": 79.22,
+          "w": 32.44,
+          "h": 4.48,
+          "text": "applications at remote sites."
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_060.webp",
+      "text": "Mobile Databases\r\nMobile Database typically involves three parties:\r\nFixed Hosts - \r\nIt performs the transactions and data management functions with the help of \r\ndatabase servers.\r\nMobiles Units - \r\nThese are portable computers that move around a geographical region that \r\nincludes the cellular network that these units use to communicate to base \r\nstations.\r\nBase Stations - \r\nThese are two-way radios installation in fixed locations, that pass \r\ncommunication with the mobile units to and from the fixed hosts.",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 28.01,
+          "h": 5.86,
+          "text": "Mobile Databases"
+        },
+        {
+          "l": 4.57,
+          "t": 24.02,
+          "w": 60.29,
+          "h": 4.49,
+          "text": "Mobile Database typically involves three parties:"
+        },
+        {
+          "l": 4.57,
+          "t": 29.62,
+          "w": 15.46,
+          "h": 3.47,
+          "text": "Fixed Hosts - "
+        },
+        {
+          "l": 4.59,
+          "t": 35.2,
+          "w": 90.35,
+          "h": 4.51,
+          "text": "It performs the transactions and data management functions with the help of "
+        },
+        {
+          "l": 4.49,
+          "t": 40.82,
+          "w": 20.15,
+          "h": 3.48,
+          "text": "database servers."
+        },
+        {
+          "l": 4.57,
+          "t": 46.42,
+          "w": 18.15,
+          "h": 3.47,
+          "text": "Mobiles Units - "
+        },
+        {
+          "l": 4.37,
+          "t": 52.02,
+          "w": 88.4,
+          "h": 4.49,
+          "text": "These are portable computers that move around a geographical region that "
+        },
+        {
+          "l": 4.54,
+          "t": 57.62,
+          "w": 86.28,
+          "h": 3.47,
+          "text": "includes the cellular network that these units use to communicate to base "
+        },
+        {
+          "l": 4.47,
+          "t": 63.33,
+          "w": 9.56,
+          "h": 3.37,
+          "text": "stations."
+        },
+        {
+          "l": 4.57,
+          "t": 68.82,
+          "w": 17.95,
+          "h": 3.47,
+          "text": "Base Stations - "
+        },
+        {
+          "l": 4.37,
+          "t": 74.4,
+          "w": 75.93,
+          "h": 4.52,
+          "text": "These are two-way radios installation in fixed locations, that pass "
+        },
+        {
+          "l": 4.49,
+          "t": 80.0,
+          "w": 75.91,
+          "h": 3.51,
+          "text": "communication with the mobile units to and from the fixed hosts."
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_061.webp",
+      "text": "Characteristics of Mobile Environments\r\n\u25cf Portability\r\n\u25cf Lower bandwidth\r\n\u25cf Range, interference\r\n\u25cf Locality of access \r\n\u25cf Support for packet switching\r\n\u25cf High communication latency\r\n\u25cf Limited storage & processing power\r\n\u25cf Frequent disconnections\r\n\u25cf Synchronization with central servers\r\n\u25cf Security & privacy concerns",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 61.94,
+          "h": 5.9,
+          "text": "Characteristics of Mobile Environments"
+        },
+        {
+          "l": 5.55,
+          "t": 25.0,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 23.81,
+          "w": 11.62,
+          "h": 4.49,
+          "text": "Portability"
+        },
+        {
+          "l": 5.55,
+          "t": 30.06,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 28.88,
+          "w": 19.85,
+          "h": 3.47,
+          "text": "Lower bandwidth"
+        },
+        {
+          "l": 5.55,
+          "t": 35.13,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 33.92,
+          "w": 22.41,
+          "h": 4.51,
+          "text": "Range, interference"
+        },
+        {
+          "l": 5.55,
+          "t": 40.2,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 38.99,
+          "w": 20.4,
+          "h": 4.52,
+          "text": "Locality of access "
+        },
+        {
+          "l": 5.55,
+          "t": 45.26,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 44.05,
+          "w": 33.11,
+          "h": 4.51,
+          "text": "Support for packet switching"
+        },
+        {
+          "l": 5.55,
+          "t": 50.33,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 49.14,
+          "w": 32.86,
+          "h": 4.49,
+          "text": "High communication latency"
+        },
+        {
+          "l": 5.55,
+          "t": 55.4,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 54.21,
+          "w": 41.51,
+          "h": 4.49,
+          "text": "Limited storage & processing power"
+        },
+        {
+          "l": 5.55,
+          "t": 60.46,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 59.28,
+          "w": 28.35,
+          "h": 4.48,
+          "text": "Frequent disconnections"
+        },
+        {
+          "l": 5.55,
+          "t": 65.53,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 64.34,
+          "w": 41.91,
+          "h": 4.49,
+          "text": "Synchronization with central servers"
+        },
+        {
+          "l": 5.55,
+          "t": 70.6,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 69.52,
+          "w": 31.65,
+          "h": 4.38,
+          "text": "Security & privacy concerns"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_062.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_062.webp",
+      "text": "Data Management Issues\r\n\u25cf Connectivity Issues\r\n\u25cb Frequent disconnections, variable bandwidth\r\n\u25cf Consistency & Synchronization\r\n\u25cb Conflict resolution in replicated data\r\n\u25cf Resource Constraints\r\n\u25cb Limited CPU, memory, battery\r\n\u25cf Security & Privacy\r\n\u25cb Protecting sensitive data on mobile devices\r\n\u25cf Scalability\r\n\u25cb Handling millions of concurrent mobile users\r\n\u25cf Data Distribution\r\n\u25cb Managing data across heterogeneous devices and networks",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.23,
+          "w": 39.6,
+          "h": 7.46,
+          "text": "Data Management Issues"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.13,
+          "w": 21.87,
+          "h": 4.38,
+          "text": "Connectivity Issues"
+        },
+        {
+          "l": 10.84,
+          "t": 30.36,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 29.44,
+          "w": 40.38,
+          "h": 3.49,
+          "text": "Frequent disconnections, variable bandwidth"
+        },
+        {
+          "l": 5.55,
+          "t": 35.17,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 33.98,
+          "w": 35.33,
+          "h": 4.49,
+          "text": "Consistency & Synchronization"
+        },
+        {
+          "l": 10.84,
+          "t": 40.31,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 39.37,
+          "w": 32.54,
+          "h": 3.51,
+          "text": "Conflict resolution in replicated data"
+        },
+        {
+          "l": 5.55,
+          "t": 45.12,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 44.05,
+          "w": 24.42,
+          "h": 3.36,
+          "text": "Resource Constraints"
+        },
+        {
+          "l": 10.84,
+          "t": 50.27,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 49.35,
+          "w": 27.03,
+          "h": 3.49,
+          "text": "Limited CPU, memory, battery"
+        },
+        {
+          "l": 5.55,
+          "t": 55.08,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 54.0,
+          "w": 20.52,
+          "h": 4.38,
+          "text": "Security & Privacy"
+        },
+        {
+          "l": 10.84,
+          "t": 60.23,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 59.3,
+          "w": 38.69,
+          "h": 3.49,
+          "text": "Protecting sensitive data on mobile devices"
+        },
+        {
+          "l": 5.55,
+          "t": 65.03,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 63.85,
+          "w": 11.4,
+          "h": 4.49,
+          "text": "Scalability"
+        },
+        {
+          "l": 10.84,
+          "t": 70.18,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 69.24,
+          "w": 40.36,
+          "h": 3.51,
+          "text": "Handling millions of concurrent mobile users"
+        },
+        {
+          "l": 5.55,
+          "t": 74.99,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 73.8,
+          "w": 19.47,
+          "h": 3.47,
+          "text": "Data Distribution"
+        },
+        {
+          "l": 10.84,
+          "t": 80.14,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 79.21,
+          "w": 53.77,
+          "h": 3.49,
+          "text": "Managing data across heterogeneous devices and networks"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_063.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_063.webp",
+      "text": "Data Synchronization\r\n\u25cf Why synchronization is needed?\r\n\u25cf Techniques:\r\n\u25cb Two-way sync\r\n\u25cb Conflict detection & resolution\r\n\u25cb Replication strategies\r\n\u25cf Example: Google Drive offline sync",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 33.64,
+          "h": 7.43,
+          "text": "Data Synchronization"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.38,
+          "t": 24.02,
+          "w": 37.12,
+          "h": 4.49,
+          "text": "Why synchronization is needed?"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 30.16,
+          "w": 13.77,
+          "h": 4.48,
+          "text": "Techniques:"
+        },
+        {
+          "l": 10.84,
+          "t": 37.03,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.36,
+          "t": 36.26,
+          "w": 12.37,
+          "h": 3.34,
+          "text": "Two-way sync"
+        },
+        {
+          "l": 10.84,
+          "t": 41.8,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.46,
+          "t": 40.86,
+          "w": 27.23,
+          "h": 2.71,
+          "text": "Conflict detection & resolution"
+        },
+        {
+          "l": 10.84,
+          "t": 46.57,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 45.64,
+          "w": 19.07,
+          "h": 3.49,
+          "text": "Replication strategies"
+        },
+        {
+          "l": 5.55,
+          "t": 51.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 50.58,
+          "w": 39.74,
+          "h": 4.52,
+          "text": "Example: Google Drive offline sync"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_064.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_064.webp",
+      "text": "Data Synchronization",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 33.64,
+          "h": 7.43,
+          "text": "Data Synchronization"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_065.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_065.webp",
+      "text": "Query Processing in Mobile Databases\r\n\u25cf Constraints: low bandwidth, limited CPU\r\n\u25cf Query optimization for mobile\r\n\u25cf Use of caching and indexing\r\n\u25cf Example: location-based queries in ride-hailing apps",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 60.27,
+          "h": 7.49,
+          "text": "Query Processing in Mobile Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 24.02,
+          "w": 46.33,
+          "h": 4.0,
+          "text": "Constraints: low bandwidth, limited CPU"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 30.13,
+          "w": 34.78,
+          "h": 4.52,
+          "text": "Query optimization for mobile"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.57,
+          "t": 36.27,
+          "w": 32.27,
+          "h": 4.51,
+          "text": "Use of caching and indexing"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 60.18,
+          "h": 4.49,
+          "text": "Example: location-based queries in ride-hailing apps"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_066.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_066.webp",
+      "text": "Security in Mobile Databases\r\n\u25cf Threats: unauthorized access, data leakage\r\n\u25cf Techniques:\r\n\u25cb Authentication & authorization\r\n\u25cb Encryption (at rest & in transit)\r\n\u25cb Secure APIs\r\n\u25cf Example: Mobile banking apps",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.43,
+          "t": 12.2,
+          "w": 45.7,
+          "h": 7.43,
+          "text": "Security in Mobile Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 24.02,
+          "w": 49.83,
+          "h": 4.49,
+          "text": "Threats: unauthorized access, data leakage"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 30.16,
+          "w": 13.77,
+          "h": 4.48,
+          "text": "Techniques:"
+        },
+        {
+          "l": 10.84,
+          "t": 37.03,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.35,
+          "t": 36.1,
+          "w": 27.73,
+          "h": 2.7,
+          "text": "Authentication & authorization"
+        },
+        {
+          "l": 10.84,
+          "t": 41.8,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.54,
+          "t": 40.96,
+          "w": 27.33,
+          "h": 3.41,
+          "text": "Encryption (at rest & in transit)"
+        },
+        {
+          "l": 10.84,
+          "t": 46.57,
+          "w": 0.84,
+          "h": 1.51,
+          "text": "\u25cb "
+        },
+        {
+          "l": 14.45,
+          "t": 45.77,
+          "w": 10.35,
+          "h": 2.57,
+          "text": "Secure APIs"
+        },
+        {
+          "l": 5.55,
+          "t": 51.79,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 50.6,
+          "w": 35.05,
+          "h": 4.49,
+          "text": "Example: Mobile banking apps"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_067.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_067.webp",
+      "text": "Types of Mobile Databases\r\n\u25cf Local Databases (SQLite, Realm)\r\n\u25cf Remote Databases (Firebase, AWS DynamoDB)\r\n\u25cf Hybrid Approaches (offline-first with sync)\r\n\u25cf Examples in real-world apps",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.38,
+          "t": 12.23,
+          "w": 42.16,
+          "h": 7.4,
+          "text": "Types of Mobile Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 36.72,
+          "h": 4.18,
+          "text": "Local Databases (SQLite, Realm)"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.16,
+          "w": 53.92,
+          "h": 4.49,
+          "text": "Remote Databases (Firebase, AWS DynamoDB)"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.27,
+          "w": 48.29,
+          "h": 4.52,
+          "text": "Hybrid Approaches (offline-first with sync)"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 32.39,
+          "h": 4.48,
+          "text": "Examples in real-world apps"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_068.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_068.webp",
+      "text": "Popular Mobile Database Systems\r\n\u25cf SQLite \u2013 lightweight, embedded\r\n\u25cf Realm \u2013 object-oriented, offline-first\r\n\u25cf Firebase Realtime Database \u2013 cloud-hosted, sync across clients\r\n\u25cf Couchbase Mobile \u2013 NoSQL, sync with Couchbase Server",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.55,
+          "t": 12.2,
+          "w": 53.73,
+          "h": 7.43,
+          "text": "Popular Mobile Database Systems"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 24.02,
+          "w": 36.45,
+          "h": 4.49,
+          "text": "SQLite \u2013 lightweight, embedded"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.13,
+          "w": 41.42,
+          "h": 4.51,
+          "text": "Realm \u2013 object-oriented, offline-first"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 72.47,
+          "h": 4.49,
+          "text": "Firebase Realtime Database \u2013 cloud-hosted, sync across clients"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.5,
+          "t": 42.42,
+          "w": 65.49,
+          "h": 4.49,
+          "text": "Couchbase Mobile \u2013 NoSQL, sync with Couchbase Server"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_069.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_069.webp",
+      "text": "Applications of Mobile Databases\r\n\u25cf Social media apps\r\n\u25cf Mobile commerce\r\n\u25cf Healthcare apps (patient records)\r\n\u25cf IoT & sensor data collection\r\n\u25cf Travel & navigation apps",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.34,
+          "t": 12.23,
+          "w": 52.96,
+          "h": 7.36,
+          "text": "Applications of Mobile Databases"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.47,
+          "t": 24.02,
+          "w": 20.67,
+          "h": 4.48,
+          "text": "Social media apps"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.16,
+          "w": 20.56,
+          "h": 3.47,
+          "text": "Mobile commerce"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 38.52,
+          "h": 4.48,
+          "text": "Healthcare apps (patient records)"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 42.42,
+          "w": 31.68,
+          "h": 3.47,
+          "text": "IoT & sensor data collection"
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.37,
+          "t": 48.56,
+          "w": 28.42,
+          "h": 4.49,
+          "text": "Travel & navigation apps"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pdf/slide_070.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pdf/thumb_070.webp",
+      "text": "Challenges and Future Trends\r\n\u25cf Handling big data on mobile\r\n\u25cf Energy-efficient query processing\r\n\u25cf Edge computing integration\r\n\u25cf AI-driven mobile data management\r\n\u25cf Blockchain-based mobile databases",
+      "width": 1440,
+      "height": 810,
+      "rects": [
+        {
+          "l": 4.48,
+          "t": 12.2,
+          "w": 46.9,
+          "h": 7.49,
+          "text": "Challenges and Future Trends"
+        },
+        {
+          "l": 5.55,
+          "t": 25.21,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 24.02,
+          "w": 32.4,
+          "h": 4.49,
+          "text": "Handling big data on mobile"
+        },
+        {
+          "l": 5.55,
+          "t": 31.34,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 30.13,
+          "w": 38.4,
+          "h": 4.52,
+          "text": "Energy-efficient query processing"
+        },
+        {
+          "l": 5.55,
+          "t": 37.48,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 36.29,
+          "w": 31.77,
+          "h": 4.49,
+          "text": "Edge computing integration"
+        },
+        {
+          "l": 5.55,
+          "t": 43.61,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.35,
+          "t": 42.42,
+          "w": 41.04,
+          "h": 4.49,
+          "text": "AI-driven mobile data management"
+        },
+        {
+          "l": 5.55,
+          "t": 49.74,
+          "w": 1.08,
+          "h": 1.94,
+          "text": "\u25cf "
+        },
+        {
+          "l": 9.59,
+          "t": 48.56,
+          "w": 41.21,
+          "h": 3.47,
+          "text": "Blockchain-based mobile databases"
+        }
+      ]
+    }
+  ]
+}

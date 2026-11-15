@@ -1,0 +1,154 @@
+{
+  "mtime": 1791986377.78202,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_001.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_001.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 2,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_002.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_002.webp",
+      "text": "\ufeff In ICUs and Power Grids, Seconds Dictate the Line between Recovery and Catastrophe The Human Element The AI Engine",
+      "width": 3911,
+      "height": 2200,
+      "rects": [
+        {
+          "l": 5.98,
+          "t": 95.16,
+          "w": 88.66,
+          "h": 3.81,
+          "text": "In ICUs and Power Grids, Seconds Dictate the Line between Recovery and Catastrophe"
+        },
+        {
+          "l": 14.02,
+          "t": 70.78,
+          "w": 28.87,
+          "h": 4.22,
+          "text": "The Human Element "
+        },
+        {
+          "l": 62.35,
+          "t": 69.66,
+          "w": 19.26,
+          "h": 5.24,
+          "text": "The AI Engine"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_003.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_003.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 4,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_004.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_004.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 5,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_005.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_005.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 6,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_006.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_006.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 7,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_007.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_007.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 8,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_008.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_008.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 9,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_009.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_009.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 10,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_010.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_010.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 11,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_011.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_011.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 12,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_012.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_012.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 13,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_013.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_013.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    },
+    {
+      "index": 14,
+      "image": "/slides/iot_iot_iot_ppt_pptx/slide_014.webp",
+      "thumb": "/slides/iot_iot_iot_ppt_pptx/thumb_014.webp",
+      "text": "\ufeff",
+      "width": 3911,
+      "height": 2200,
+      "rects": []
+    }
+  ]
+}
