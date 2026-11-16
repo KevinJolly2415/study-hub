@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { 
   X, 
   Folder, 
@@ -6,24 +6,110 @@ import {
   ChevronDown, 
   FileText, 
   Search,
-  HardDrive
+  HardDrive,
+  FoldVertical,
+  UnfoldVertical
 } from 'lucide-react';
 
 export default function EdgeSidebar({
   isOpen,
   onClose,
-  subjects,
+  subjects = [],
   activeDeckId,
   onSelectDeck
 }) {
   const [searchFilter, setSearchFilter] = useState('');
-  const [expandedCategories, setExpandedCategories] = useState({});
+  const scrollContainerRef = useRef(null);
 
+  // Restore folder expanded states from sessionStorage (isolated per browser tab)
+  const [expandedCategories, setExpandedCategories] = useState(() => {
+    try {
+      const saved = sessionStorage.getItem('study_menu_expanded_folders');
+      if (saved) {
+        return JSON.parse(saved);
+      }
+    } catch (e) {
+      console.error('Error parsing stored folder states', e);
+    }
+    return {};
+  });
+
+  // Restore sidebar scroll position on mount
+  useEffect(() => {
+    try {
+      const savedScroll = sessionStorage.getItem('study_sidebar_scroll_top');
+      if (savedScroll && scrollContainerRef.current) {
+        scrollContainerRef.current.scrollTop = parseInt(savedScroll, 10);
+      }
+    } catch (e) {}
+  }, []);
+
+  const handleSidebarScroll = (e) => {
+    try {
+      sessionStorage.setItem('study_sidebar_scroll_top', String(e.currentTarget.scrollTop));
+    } catch (err) {}
+  };
+
+  const saveExpandedState = (state) => {
+    try {
+      sessionStorage.setItem('study_menu_expanded_folders', JSON.stringify(state));
+    } catch (e) {
+      console.error('Error saving folder states', e);
+    }
+  };
+
+  // Instant single-click toggle
   const toggleCategory = (catKey) => {
-    setExpandedCategories(prev => ({
-      ...prev,
-      [catKey]: !prev[catKey]
-    }));
+    setExpandedCategories(prev => {
+      const isCurrentlyOpen = prev[catKey] ?? true;
+      const next = {
+        ...prev,
+        [catKey]: !isCurrentlyOpen
+      };
+      saveExpandedState(next);
+      return next;
+    });
+  };
+
+  // Collect all category keys across all subjects
+  const allCategoryKeys = useMemo(() => {
+    const keys = [];
+    (subjects || []).forEach(s => {
+      (s.decks || []).forEach(d => {
+        const cat = d.category || 'General';
+        const key = `${s.code}_${cat}`;
+        if (!keys.includes(key)) {
+          keys.push(key);
+        }
+      });
+    });
+    return keys;
+  }, [subjects]);
+
+  // Check if all categories are collapsed
+  const areAllCollapsed = useMemo(() => {
+    if (allCategoryKeys.length === 0) return false;
+    return allCategoryKeys.every(k => expandedCategories[k] === false);
+  }, [allCategoryKeys, expandedCategories]);
+
+  // Collapse all folders at once
+  const handleCollapseAll = () => {
+    const next = {};
+    allCategoryKeys.forEach(k => {
+      next[k] = false;
+    });
+    setExpandedCategories(next);
+    saveExpandedState(next);
+  };
+
+  // Expand all folders at once
+  const handleExpandAll = () => {
+    const next = {};
+    allCategoryKeys.forEach(k => {
+      next[k] = true;
+    });
+    setExpandedCategories(next);
+    saveExpandedState(next);
   };
 
   // Filter decks by query if typed
@@ -76,13 +162,33 @@ export default function EdgeSidebar({
               </span>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-1.5 rounded text-slate-400 hover:text-white hover:bg-[#3e3e3e] transition-colors"
-            title="Collapse menu (Esc)"
-          >
-            <X className="w-4 h-4" />
-          </button>
+          <div className="flex items-center space-x-1">
+            <button
+              type="button"
+              onClick={handleCollapseAll}
+              className="p-1.5 rounded text-slate-400 hover:text-amber-400 hover:bg-[#3e3e3e] transition-colors"
+              title="Collapse all folders"
+            >
+              <FoldVertical className="w-4 h-4" />
+            </button>
+            <button
+              type="button"
+              onClick={handleExpandAll}
+              className="p-1.5 rounded text-slate-400 hover:text-sky-400 hover:bg-[#3e3e3e] transition-colors"
+              title="Expand all folders"
+            >
+              <UnfoldVertical className="w-4 h-4" />
+            </button>
+            <div className="h-4 w-px bg-[#444] mx-0.5" />
+            <button
+              type="button"
+              onClick={onClose}
+              className="p-1.5 rounded text-slate-400 hover:text-white hover:bg-[#3e3e3e] transition-colors"
+              title="Close menu (Esc)"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
         </div>
 
         {/* Quick Search in Files */}
@@ -98,6 +204,7 @@ export default function EdgeSidebar({
             />
             {searchFilter && (
               <button
+                type="button"
                 onClick={() => setSearchFilter('')}
                 className="absolute right-2 text-slate-400 hover:text-white text-xs p-0.5"
                 title="Clear search"
@@ -108,8 +215,40 @@ export default function EdgeSidebar({
           </div>
         </div>
 
+        {/* Quick Expand / Collapse Folders Bar */}
+        <div className="px-3 py-1.5 border-b border-[#333] bg-[#222] flex items-center justify-between text-[11px] text-slate-400 shrink-0 select-none">
+          <span className="font-medium text-slate-400 text-[10px] uppercase tracking-wider">
+            Folders ({allCategoryKeys.length})
+          </span>
+          <div className="flex items-center space-x-2">
+            <button
+              type="button"
+              onClick={handleExpandAll}
+              className="hover:text-sky-400 transition-colors flex items-center space-x-1 cursor-pointer"
+              title="Expand all folders"
+            >
+              <UnfoldVertical className="w-3 h-3 text-sky-400" />
+              <span>Expand All</span>
+            </button>
+            <span className="text-slate-600">|</span>
+            <button
+              type="button"
+              onClick={handleCollapseAll}
+              className="hover:text-amber-400 transition-colors flex items-center space-x-1 cursor-pointer"
+              title="Collapse all folders"
+            >
+              <FoldVertical className="w-3 h-3 text-amber-400" />
+              <span>Collapse All</span>
+            </button>
+          </div>
+        </div>
+
         {/* File Navigation Tree */}
-        <div className="flex-1 overflow-y-auto p-2 space-y-3">
+        <div 
+          ref={scrollContainerRef}
+          onScroll={handleSidebarScroll}
+          className="flex-1 overflow-y-auto p-2 space-y-3"
+        >
           {filteredSubjects.map(subject => {
             // Group decks by category
             const categories = subject.decks.reduce((acc, deck) => {
@@ -134,23 +273,32 @@ export default function EdgeSidebar({
                 <div className="space-y-1 pl-2">
                   {Object.entries(categories).map(([categoryName, decks]) => {
                     const catKey = `${subject.code}_${categoryName}`;
-                    const isExpanded = expandedCategories[catKey] !== false; // default open
+                    const isExpanded = searchFilter.trim()
+                      ? true 
+                      : (expandedCategories[catKey] ?? true);
 
                     return (
                       <div key={categoryName} className="space-y-0.5">
                         <button
+                          type="button"
                           onClick={() => toggleCategory(catKey)}
-                          className="w-full flex items-center justify-between px-2 py-1 text-[11px] font-medium text-slate-400 hover:text-white hover:bg-[#333] rounded group"
+                          className="w-full flex items-center justify-between px-2 py-1.5 text-[11px] font-medium text-slate-400 hover:text-white hover:bg-[#333] rounded group cursor-pointer transition-colors"
+                          title={`${categoryName} (${decks.length} files) - Click to ${isExpanded ? 'collapse' : 'expand'}`}
                         >
                           <div className="flex items-center space-x-1.5 truncate">
-                            <Folder className="w-3.5 h-3.5 text-slate-500 group-hover:text-sky-400 shrink-0" />
+                            <Folder className="w-3.5 h-3.5 text-slate-500 group-hover:text-sky-400 shrink-0 transition-colors" />
                             <span className="truncate">{categoryName}</span>
                           </div>
-                          {isExpanded ? (
-                            <ChevronDown className="w-3 h-3 text-slate-500 shrink-0" />
-                          ) : (
-                            <ChevronRight className="w-3 h-3 text-slate-500 shrink-0" />
-                          )}
+                          <div className="flex items-center space-x-1.5 shrink-0">
+                            <span className="text-[10px] text-slate-500 font-mono">
+                              {decks.length}
+                            </span>
+                            {isExpanded ? (
+                              <ChevronDown className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 transition-transform" />
+                            ) : (
+                              <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 transition-transform" />
+                            )}
+                          </div>
                         </button>
 
                         {/* File Items */}
@@ -163,11 +311,12 @@ export default function EdgeSidebar({
                               return (
                                 <button
                                   key={deck.id}
+                                  type="button"
                                   onClick={() => {
                                     onSelectDeck(deck.id);
                                     onClose();
                                   }}
-                                  className={`w-full text-left px-2 py-1.5 rounded text-xs transition-colors flex items-center justify-between group ${
+                                  className={`w-full text-left px-2 py-1.5 rounded text-xs transition-colors flex items-center justify-between group cursor-pointer ${
                                     isActive
                                       ? 'bg-sky-600/30 text-white font-medium border border-sky-500/50'
                                       : 'text-slate-300 hover:text-white hover:bg-[#333]'

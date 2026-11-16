@@ -10,35 +10,42 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Active document / deck
+  // Active document / deck (isolated per tab via sessionStorage, permanent fallback via localStorage)
   const [activeDeckId, setActiveDeckId] = useState(() => {
-    return localStorage.getItem('study_last_deck_id') || null;
+    return sessionStorage.getItem('study_last_deck_id') || localStorage.getItem('study_last_deck_id') || null;
   });
 
-  // Current page number (restored per document)
+  // Current page number (restored per document and per tab)
   const [currentPage, setCurrentPage] = useState(() => {
-    const savedDeckId = localStorage.getItem('study_last_deck_id');
+    const savedDeckId = sessionStorage.getItem('study_last_deck_id') || localStorage.getItem('study_last_deck_id');
     if (savedDeckId) {
-      const perDeck = localStorage.getItem(`study_deck_pos_${savedDeckId}`);
+      const perDeck = sessionStorage.getItem(`study_deck_pos_${savedDeckId}`) || localStorage.getItem(`study_deck_pos_${savedDeckId}`);
       if (perDeck) return parseInt(perDeck, 10);
     }
     return 1;
   });
 
-  // Zoom level (default 100%)
+  // Zoom level (default 100%, isolated per tab)
   const [zoom, setZoom] = useState(() => {
-    const saved = localStorage.getItem('study_edge_zoom');
+    const saved = sessionStorage.getItem('study_edge_zoom') || localStorage.getItem('study_edge_zoom');
     return saved ? parseInt(saved, 10) : 100;
   });
 
   // Rotation (0, 90, 180, 270)
   const [rotation, setRotation] = useState(() => {
-    const saved = localStorage.getItem('study_edge_rotation');
+    const saved = sessionStorage.getItem('study_edge_rotation') || localStorage.getItem('study_edge_rotation');
     return saved ? parseInt(saved, 10) : 0;
   });
 
-  // Expandable left sidebar
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // Expandable left sidebar (saved per tab in sessionStorage)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(() => {
+    try {
+      const saved = sessionStorage.getItem('study_sidebar_open');
+      return saved !== null ? saved === 'true' : false;
+    } catch (e) {
+      return false;
+    }
+  });
 
   // Topbar pinned state (like MS Edge PDF viewer)
   const [isPinned, setIsPinned] = useState(() => {
@@ -130,23 +137,39 @@ export default function App() {
     loadManifest();
   }, [loadManifest]);
 
-  // Persist State
+  // Persist State (sessionStorage for tab isolation, localStorage for permanence)
   useEffect(() => {
     if (activeDeckId) {
+      try {
+        sessionStorage.setItem('study_last_deck_id', activeDeckId);
+        sessionStorage.setItem(`study_deck_pos_${activeDeckId}`, currentPage.toString());
+      } catch (e) {}
       localStorage.setItem('study_last_deck_id', activeDeckId);
       localStorage.setItem(`study_deck_pos_${activeDeckId}`, currentPage.toString());
     }
   }, [activeDeckId, currentPage]);
 
   useEffect(() => {
+    try {
+      sessionStorage.setItem('study_edge_zoom', zoom.toString());
+    } catch (e) {}
     localStorage.setItem('study_edge_zoom', zoom.toString());
   }, [zoom]);
+
+  useEffect(() => {
+    try {
+      sessionStorage.setItem('study_sidebar_open', String(isSidebarOpen));
+    } catch (e) {}
+  }, [isSidebarOpen]);
 
   useEffect(() => {
     localStorage.setItem('study_edge_pinned', isPinned.toString());
   }, [isPinned]);
 
   useEffect(() => {
+    try {
+      sessionStorage.setItem('study_edge_rotation', rotation.toString());
+    } catch (e) {}
     localStorage.setItem('study_edge_rotation', rotation.toString());
   }, [rotation]);
 
@@ -166,7 +189,7 @@ export default function App() {
   // Switch to another file from the expandable menu
   const handleSelectDeck = (deckId) => {
     setActiveDeckId(deckId);
-    const saved = localStorage.getItem(`study_deck_pos_${deckId}`);
+    const saved = sessionStorage.getItem(`study_deck_pos_${deckId}`) || localStorage.getItem(`study_deck_pos_${deckId}`);
     setCurrentPage(saved ? parseInt(saved, 10) : 1);
   };
 
