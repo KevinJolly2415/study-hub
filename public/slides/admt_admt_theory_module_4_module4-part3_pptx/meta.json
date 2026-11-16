@@ -1,0 +1,566 @@
+{
+  "mtime": 1794794821.1279745,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_001.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_001.webp",
+      "text": "\ufeff Module 4: Distributed Databases PART 3\nSpatial and Mobile Databases\nBy MS. ALVINA LOPES",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_002.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_002.webp",
+      "text": "\ufeff Contents Spatial Databases\nIntroduction\nCharacteristics of Spatial Database\nDifferent kinds of spatial analyses\nTypes of spatial data\nOperations on spatial data\nTypes of spatial queries\nSpatial data indexing\nSpatial data mining\nApplications of spatial databases Mobile Databases\nMobile Computing\nMobile Computing Architecture\nMobile Databases\nCharacteristics of Mobile Environments\nData Management Issues\nTypes of Mobile Databases\nPopular Mobile DBMSs\nApplications\nChallenges & Future Trends",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_003.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_003.webp",
+      "text": "\ufeff Advanced Database models As the use of database systems has grown, users have demanded additional functionality from these software packages;\nIncreased functionality would make it easier to implement more advanced and complex user applications.\nThe need for additional features in such applications led to the development of advanced database models.\nSo there are active databases, deductive databases, multimedia databases, embedded databases, mobile databases, temporal databases and spatial databases and many others.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_004.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_004.webp",
+      "text": "\ufeff",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_005.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_005.webp",
+      "text": "\ufeff Spatial Databases-Introduction Spatial databases incorporate functionality that provides support for databases that keep track of objects in a multidimensional space.\nFor example, cartographic databases that store maps include\ntwo-dimensional spatial descriptions of their objects\u2014\nfrom countries and states to rivers, cities, roads, seas, and so on.\nThe systems that manage geographic data and related applications are known as geographic information systems (GISs).\nGIS are used in areas such as environmental applications, transportation systems, emergency response systems, and battle management.\nOther databases, such as meteorological databases for weather information, are three-dimensional.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_006.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_006.webp",
+      "text": "\ufeff Spatial Databases-Introduction A spatial database stores objects that have spatial characteristics that describe them and that have spatial relationships among them.\nA spatial database is optimized to store and query data related to objects in space, including points, lines and polygons.\nSatellite images are a prominent example of spatial data.\nSpatial\tdatabases\tincorporate\tfunctionality\tthat\tprovides\tsupport for databases that keep track of objects in a multidimensional space.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_007.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_007.webp",
+      "text": "\ufeff Spatial Databases-Introduction Queries posed on these spatial data, where predicates for selection deal with spatial parameters, are called spatial queries.\nExample 1: \u201cWhat are the names of all bookstores within five miles of the College of Computing building at Georgia Tech?\u201d\nExample 2: \u201cList all the customers located within twenty miles of company headquarters\u201d",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_008.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_008.webp",
+      "text": "\ufeff Spatial Database-Example A road map is a visualization of geographic information.\nA road map is a 2-dimensional object\nwhich contains points, lines, and polygons\nthat can represent cities, roads, and political boundaries such as states or provinces.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_009.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_009.webp",
+      "text": "\ufeff Characteristics of Spatial Database It is a database system\nIt offers spatial data types (SDTs) in its data model and query language.\nIt supports spatial data types in its implementation, providing at least spatial indexing and efficient algorithms for spatial join.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_010.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_010.webp",
+      "text": "\ufeff Different kinds of spatial analyses Table 26.1 shows the common analytical operations involved in processing geographic or spatial data.\nMeasurement operations are used to measure some global properties of single objects and to measure the relative position of different objects in terms of distance and direction.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_011.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_011.webp",
+      "text": "\ufeff Different kinds of spatial analyses Spatial analysis operations, which often use statistical techniques, are used to uncover spatial relationships within and among mapped data layers.\nFlow analysis operations help in determining the shortest path between two points and also the connectivity among nodes or regions in a graph.\nLocation analysis aims to find if the given set of points and lines lie within a given polygon (location).\nDigital terrain analysis is used to build three-dimensional models, where the topography of a geographical location can be represented with an x, y, z data model known as Digital Terrain (or Elevation) Model (DTM/DEM).\nSpatial search allows a user to search for objects within a particular spatial region.\nThere are also topological relationships among spatial objects.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_012.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_012.webp",
+      "text": "\ufeff Spatial Data Types Map data includes various geographic or spatial features of objects in a map, such as an object\u2019s shape and the location of the object within the map.\nThe three basic types of features are points, lines, and polygons (or areas).\nPoints are used to represent spatial characteristics of objects whose locations correspond to a single 2-D coordinate (x, y, or longitude/latitude) in the scale of a particular application.\nSome examples of point objects could be buildings, cellular towers, or stationary vehicles.\nMoving vehicles and other moving objects can be represented by a sequence of point locations that change over time.\nLines represent objects having length, such as roads or rivers, whose spatial characteristics can be approximated by a sequence of connected lines.\nPolygons are used to represent spatial characteristics of objects that have a boundary, such as countries, states, lakes, or cities.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_013.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_013.webp",
+      "text": "\ufeff Spatial Data Types",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_014.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_014.webp",
+      "text": "\ufeff Spatial Data Types Spatial Data Types \u2014 Attribute Data\nWhat it is: Descriptive, non-geometric facts attached to map features. \n\nExample: If a polygon represents a county or district on a map, its attribute data includes text and numbers like population, largest city, and area in square miles.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_015.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_015.webp",
+      "text": "\ufeff Spatial Data Types Spatial Data Types \u2014 Image Data (Raster)\nWhat it is: Overhead visual captures like satellite images and aerial photographs taken by cameras. \n\nHow it is used: Real-world features (such as roads and buildings) are detected and drawn on top of these images. These photographic grids are classic examples of raster data.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_016.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_016.webp",
+      "text": "\ufeff Spatial Data Types Spatial Data Types \u2014 Vector vs. Raster\nTo represent the physical world inside a database, spatial data is divided into two fundamentally different formats: \n\nVector Data (Drawing with Math): Represents distinct objects using exact geometric shapes\u2014Points (a coffee shop), Lines (a highway), and Polygons (a city boundary). Because it uses mathematical coordinates, zooming in keeps the lines sharp. \n\nRaster Data (Coloring a Grid): Represents continuous surfaces using a matrix of tiny square cells (pixels). Satellite photos and aerial images are classic examples\u2014zooming in far enough reveals the individual square pixels.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_017.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_017.webp",
+      "text": "\ufeff Models of spatial information Depending on what real-world thing you are tracking, you pick one of two data modeling approaches:",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_018.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_018.webp",
+      "text": "\ufeff Spatial Operators Spatial Operators (How We Manipulate Shapes)\nStandard SQL uses simple math operators (=, <, >). Spatial databases need geometric operators divided into four categories: \n\nOverview: Spatial operators capture geometric properties of objects in physical space and the relationships between them. They fall into three static categories (Topological, Projective, Metric) plus Dynamic operators. \nOperators are classified into three broad categories:\nTopological operators\nProjective operators\nMetric operators",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_019.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_019.webp",
+      "text": "\ufeff Spatial Operators Topological Operators (Relationships That Survive Stretching):\nThe Rule: Properties that stay true even if you rotate, move, or stretch the map like a rubber sheet. \n\nExamples: open (region), close (region), inside (point, loop). If a pin is inside a circle on a balloon, stretching the balloon doesn't change the fact that the pin is still inside.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_020.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_020.webp",
+      "text": "\ufeff Spatial Operators Projective operators\nShape Geometry & Angles:\nThe Rule: Evaluates concavity (caves/indents) and convexity (bulges) of shapes. \n\nExample: Convex Hull\u2014imagine stretching a rubber band around a cluster of pins on a corkboard. The rubber band forms the tightest outer boundary around them.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_021.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_021.webp",
+      "text": "\ufeff Spatial Operators Metric operators\nExact Measurements:\nThe Rule: Measures concrete, global physical dimensions of single objects or pairs. \n\nExamples: length (arc), distance (point, point), area, compactness, and symmetry.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_022.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_022.webp",
+      "text": "\ufeff Spatial Operators Dynamic Spatial Operators\nEditing & Moving Objects:\nThe Rule: Operations that actually alter, move, or destroy spatial objects. \n\nBasic CRUD: create, destroy, update. \n\nGeometric Updates: translate (shift position), rotate (spin), scale (resize up/down), reflect (mirror image), and shear (slant/deform).",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_023.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_023.webp",
+      "text": "\ufeff Spatial \u01eaueries Overview: Spatial queries are requests for spatial data that rely on spatial operations, grouped into three types.\n\nThree types:\nRange queries\nNearest neighbor queries\nSpatial joins or overlays",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_024.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_024.webp",
+      "text": "\ufeff Spatial \u01eaueries Range queries\nSearch Inside a Bubble): Finds all objects of a specific type inside a given boundary or radius. \n\nExample: \"Find all ambulances within a five-mile radius of an accident location.\"",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_025.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_025.webp",
+      "text": "\ufeff Spatial \u01eaueries Nearest neighbor queries\nFind the Closest One): Finds the single object of a specific type closest to a given location. \n\nExample: \"Find the police car that is closest to the location of a crime.\"",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_026.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_026.webp",
+      "text": "\ufeff Spatial \u01eaueries Spatial joins or overlays\nMatching Two Map Layers): Joins two different object types based on a spatial condition like intersecting, overlapping, or distance. \n\nExample: Joining railway station objects and hotel objects to find all hotels within 5 kilometers of a railway station.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_027.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_027.webp",
+      "text": "\ufeff Spatial Data Indexing A spatial database system needs an index mechanism that will help it retrieve data items quickly according to their spatial locations.\nTraditional indexing methods are not well suited to data objects of non-zero size located in multidimensional spaces.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_028.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_028.webp",
+      "text": "\ufeff Spatial Data Indexing A spatial index is used to organize objects into a set of buckets.\nThe buckets correspond to pages of secondary memory), so that objects in a particular spatial region can be easily located.\nEach bucket has a bucket region, a part of space containing all objects stored in the bucket.\nThe bucket regions are usually rectangles.\nFor point data structures, these regions are disjoint and they partition the space so that each point belongs to precisely one bucket.\nThere are essentially two:",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_029.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_029.webp",
+      "text": "\ufeff Spatial Data Indexing Specialized indexing structures that allow efficient search for data objects based on spatial search operations are included in the database system.\nSimilar to B+-tree indexes in traditional database systems.\nExamples of these indexing structures are grid files and R-trees.\nSpatial join indexes, can be used to speed up spatial join operations.\nThe two-dimensional (2-D) spatial data is converted to single-dimensional (1-D) data.\nso that traditional indexing techniques (B+-tree) can be used.\nThe algorithms for converting from 2-D to 1-D are known as space filling curves.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_030.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_030.webp",
+      "text": "\ufeff Spatial Data Indexing",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_031.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_031.webp",
+      "text": "\ufeff Spatial Data Indexing Grid Files\nA grid file is a multi-dimensional data structure used to handle indexing\nand efficient querying across two or more search keys simultaneously.\nIt acts as a symmetric multi-key indexing scheme.\nRecords are visualized as points in an n-dimensional space.\nwhere each dimension represents the domain of a specific attribute.\ne.g., latitude, longitude, or age and salary.\nThe search space is split into a grid using linear scales along each axis.\nThe actual data records are grouped and stored in data buckets on the disk.\nMultiple grid cells (regions of the multi-dimensional space) can point to the same bucket if they share space or if data density is low.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_032.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_032.webp",
+      "text": "\ufeff Spatial Data Indexing Grid Files\nThey can also be used for indexing n-dimensional spatial data.\nThe fixed-grid method divides an n-dimensional hyperspace into equal size buckets.\nThe data structure that implements the fixed grid is an n-dimensional array.\nThe objects whose spatial locations lie within a cell (totally or partially) can be stored in a dynamic structure to handle overflows.\nUseful for uniformly distributed data like satellite imagery.\nThe fixed-grid structure is rigid, and its directory can be sparse and large.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_033.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_033.webp",
+      "text": "\ufeff Spatial Data Indexing R-trees\nA height-balanced tree.\nAn extension of the B+-tree for k-dimensions, where k > 1.\nDesigned for spatial data storage and multi-dimensional indexing.\nspatial objects are approximated in the R-tree by their minimum bounding rectangle (MBR).\nMBR is the smallest rectangle, with sides parallel to the coordinate system (x and y) axis, that contains the object.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_034.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_034.webp",
+      "text": "\ufeff Spatial Data Indexing R-trees: Properties\nConsists of a single root, internals nodes, and leaf nodes.\nThe root contains the pointer to the largest region in the spatial domain.\nParent nodes contains pointers to their child nodes where the region of child nodes completely overlaps the regions of parent nodes.\nLeaf nodes contains data about the MBR to the current objects.\nMBR-Minimum bounding region refers to the minimal bounding box parameter surrounding the region/object under consideration.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_035.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_035.webp",
+      "text": "\ufeff Spatial Data Indexing R-trees: Example",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_036.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_036.webp",
+      "text": "\ufeff Spatial Data Indexing Quad-trees\nA tree data structure.\nused to partition a two-dimensional space into smaller regions.\neach node in the tree has four children, corresponding to the four quadrants of the space.\nuseful for spatial indexing and searching.\nIt allows efficient insertion, deletion, and retrieval of objects based on their spatial location.\nIt can efficiently handle spatial queries such as range searches and nearest neighbor searches.\nApplications: GIS, computer graphics, video games, image processing.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_037.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_037.webp",
+      "text": "\ufeff Spatial Data Indexing Quad-trees\nThe quadtree starts with a root node that represents the entire space.\nEach level of the tree divides the space into four equal-sized quadrants.\nEach node of a Quad Tree has at most four children.\nThe leaf nodes of the tree represent smaller regions of the space.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_038.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_038.webp",
+      "text": "\ufeff Spatial Data Indexing Quad-trees: Construction\nDivide the current two-dimensional space into four boxes.\nIf a box contains one or more points in it, create a child object, storing in it the two-dimensional space of the box.\nIf a box does not contain any points, do not create a child for it.\nRecurse for each of the children.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_039.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_039.webp",
+      "text": "\ufeff Spatial Data Indexing Quad-trees",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_040.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_040.webp",
+      "text": "\ufeff Spatial Data Indexing Quad-trees",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_041.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_041.webp",
+      "text": "\ufeff Spatial Data Indexing Comparison: B-tree vs. R-tree vs. Quad-tree",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_042.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_042.webp",
+      "text": "\ufeff Spatial Data Mining",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_043.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_043.webp",
+      "text": "\ufeff Spatial Data Mining Spatial Classification\nDefinition: Estimate attribute values based on other attributes\nAlso called location prediction problem\nExamples:\nPredicting nest locations in wetlands (vegetation durability, water depth)\nIdentifying crime hotspots",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_044.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_044.webp",
+      "text": "\ufeff Spatial Data Mining Spatial Classification",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_045.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_045.webp",
+      "text": "\ufeff Spatial Data Mining Spatial Association\nDefinition: Rules based on spatial predicates\nRule format:\nExample: is_a(x, country) \u2227 touches(x, Mediterranean) \u21d2 is_a(x, wine-exporter)\nKey differences from non-spatial associations:\nNo clear \"transactions\" (continuous space)\nSmaller item sets\nSpatial items often discretized (e.g., income regions)",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_046.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_046.webp",
+      "text": "\ufeff Spatial Data Mining Spatial Association",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_047.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_047.webp",
+      "text": "\ufeff Spatial Data Mining Spatial Colocation Rules\nGeneralize association rules to spatially indexed datasets\nUseful for analyzing point collections (e.g., income regions, disease spread)",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_048.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_048.webp",
+      "text": "\ufeff Spatial Data Mining Spatial Clustering\nDefinition: Group objects so similar ones cluster together\nApplication: Group seismic events \u2192 identify earthquake faults\nAlgorithms:\nDBSCAN: Finds clusters based on density distribution\nDENCLUE: Uses density functions to detect clusters",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_049.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_049.webp",
+      "text": "\ufeff Spatial Data Mining Spatial Clustering: DBSCAN",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_050.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_050.webp",
+      "text": "\ufeff Spatial Data Mining Spatial data mining reveals hidden patterns in correlated spatial data\nTechniques:\nClassification \u2192 Predict locations\nAssociation \u2192 Discover spatial rules\nClustering \u2192 Identify dense regions\nApplications: Ecology, crime analysis, geology, urban planning",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_051.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_051.webp",
+      "text": "\ufeff Applications of Spatial Data",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_052.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_052.webp",
+      "text": "\ufeff",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_053.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_053.webp",
+      "text": "\ufeff Introduction Growth of mobile computing and smartphones\nNeed for data availability on the move\nExamples: WhatsApp, Uber, Mobile Banking, E-commerce apps\nChallenges: limited resources, connectivity issues, security",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_054.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_054.webp",
+      "text": "\ufeff Mobile Computing Environment Definition: \u201cA computing environment where users access data, \tapplications, and services through mobile devices over wireless \tnetworks.\u201d\nComponents:\nMobile devices (smartphones, tablets, wearables)\nWireless networks (Wi-Fi, 4G/5G, Bluetooth)\nCloud services & backend servers\nCharacteristics:\nUbiquity (anytime, anywhere access)\nResource constraints (battery, storage, bandwidth)\nDynamic connectivity (handoffs, roaming)",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_055.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_055.webp",
+      "text": "\ufeff Mobile Computing Architecture A distributed architecture where a number of computers, generally referred to as Fixed Hosts and Base Stations, are interconnected through a high-speed wired network.\nFixed hosts are general purpose computers that are not typically equipped to manage mobile units but can be configured to do so.\nBase stations function as gateways to the fixed network for the Mobile Units.\nThey are equipped with wireless interfaces and offer network access services of which mobile units are clients.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_056.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_056.webp",
+      "text": "\ufeff Mobile Computing Architecture",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_057.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_057.webp",
+      "text": "\ufeff Mobile Computing Architecture Layers of Architecture:\nMobile Device Layer \u2013 hardware, OS, local DB (e.g., SQLite)\nNetwork Layer \u2013 wireless communication, protocols (TCP/IP, HTTP, MQTT)\nMiddleware Layer \u2013 synchronization, caching, security services\nServer/Cloud Layer \u2013 enterprise DBMS, application servers, APIs\n\nExample: WhatsApp message flow (device \u2192 internet \u2192 server \u2192 recipient)",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_058.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_058.webp",
+      "text": "\ufeff Mobile Computing Architecture",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_059.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_059.webp",
+      "text": "\ufeff Mobile Databases Mobile Database is a database that is transportable, portable, and physically separate or detached from the corporate database server but has the capability to communicate with those servers from remote sites allowing the sharing of various kinds of data.\nMobile databases are databases designed to operate on mobile devices or in mobile environments, enabling data access, synchronization, and management anytime, anywhere.\nWith mobile databases, users have access to corporate data on their laptop, PDA, or other Internet access device that is required for applications at remote sites.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_060.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_060.webp",
+      "text": "\ufeff Mobile Databases Mobile Database typically involves three parties:\nFixed Hosts -\nIt performs the transactions and data management functions with the help of database servers.\nMobiles Units -\nThese are portable computers that move around a geographical region that includes the cellular network that these units use to communicate to base stations.\nBase Stations -\nThese are two-way radios installation in fixed locations, that pass communication with the mobile units to and from the fixed hosts.",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_061.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_061.webp",
+      "text": "\ufeff Characteristics of Mobile Environments Portability\nLower bandwidth\nRange, interference\nLocality of access\nSupport for packet switching\nHigh communication latency\nLimited storage & processing power\nFrequent disconnections\nSynchronization with central servers\nSecurity & privacy concerns",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_062.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_062.webp",
+      "text": "\ufeff Data Management Issues Connectivity Issues\nFrequent disconnections, variable bandwidth\nConsistency & Synchronization\nConflict resolution in replicated data\nResource Constraints\nLimited CPU, memory, battery\nSecurity & Privacy\nProtecting sensitive data on mobile devices\nScalability\nHandling millions of concurrent mobile users\nData Distribution\nManaging data across heterogeneous devices and networks",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_063.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_063.webp",
+      "text": "\ufeff Data Synchronization Why synchronization is needed?\nTechniques:\nTwo-way sync\nConflict detection & resolution\nReplication strategies\nExample: Google Drive o\ufb04ine sync",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_064.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_064.webp",
+      "text": "\ufeff Data Synchronization",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_065.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_065.webp",
+      "text": "\ufeff \u01eauery Processing in Mobile Databases Constraints: low bandwidth, limited CPU\nQuery optimization for mobile\nUse of caching and indexing\nExample: location-based queries in ride-hailing apps",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 66,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_066.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_066.webp",
+      "text": "\ufeff Security in Mobile Databases Threats: unauthorized access, data leakage\nTechniques:\nAuthentication & authorization\nEncryption (at rest & in transit)\nSecure APIs\nExample: Mobile banking apps",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 67,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_067.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_067.webp",
+      "text": "\ufeff Types of Mobile Databases Local Databases (SQLite, Realm)\nRemote Databases (Firebase, AWS DynamoDB)\nHybrid Approaches (o\ufb04ine-first with sync)\nExamples in real-world apps",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 68,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_068.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_068.webp",
+      "text": "\ufeff Popular Mobile Database Systems SQLite \u2013 lightweight, embedded\nRealm \u2013 object-oriented, o\ufb04ine-first\nFirebase Realtime Database \u2013 cloud-hosted, sync across clients\nCouchbase Mobile \u2013 NoSQL, sync with Couchbase Server",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 69,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_069.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_069.webp",
+      "text": "\ufeff Applications of Mobile Databases Social media apps\nMobile commerce\nHealthcare apps (patient records)\nIoT & sensor data collection\nTravel & navigation apps",
+      "width": 2200,
+      "height": 1238
+    },
+    {
+      "index": 70,
+      "image": "/slides/admt_admt_theory_module_4_module4-part3_pptx/slide_070.webp",
+      "thumb": "/slides/admt_admt_theory_module_4_module4-part3_pptx/thumb_070.webp",
+      "text": "\ufeff Challenges and Future Trends Handling big data on mobile\nEnergy-efficient query processing\nEdge computing integration\nAI-driven mobile data management\nBlockchain-based mobile databases",
+      "width": 2200,
+      "height": 1238
+    }
+  ]
+}
