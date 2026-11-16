@@ -164,7 +164,7 @@ export default function EdgeDocumentViewer({
                 src={s.image}
                 alt={`Page ${s.index}`}
                 className="w-full h-full object-contain pointer-events-none select-none block"
-                loading="lazy"
+                decoding="async"
               />
 
               {/* Exact Transparent Text Selection Layer */}
