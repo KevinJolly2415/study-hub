@@ -1,0 +1,110 @@
+{
+  "mtime": 1794848821.6899588,
+  "aspectRatio": 1.33,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_001.webp",
+      "text": "Covariance\r\nCovariance tells us the direction of the relationship\r\nbetween two variables.\r\nIf \ud835\udc4bincreases:\r\n\u2022 If \ud835\udc4cgenerally increases \u2192 positive covariance\r\n\u2022 If \ud835\udc4cgenerally decreases \u2192 negative covariance\r\n\u2022 If there is no consistent linear movement \u2192 covariance is \r\nclose to 0\r\nFormula\r\nFor sample data:\r\nCov \ud835\udc4b \ud835\udc4c =\r\n\u0dcc( \ud835\udc4b \u2212 \ud835\udc4b\u0d24\u123b \ud835\udc4c \u2212 \ud835\udc4c\u0d24\r\n\ud835\udc5b \u2212 1\r\nwhere:\r\n\u2022 \ud835\udc4b, \ud835\udc4c= observations \r\n\u2022 \ud835\udc4b\u0d24, \ud835\udc4c\u0d24= sample means \r\n\u2022 \ud835\udc5b= number of observations",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_002.webp",
+      "text": "\u25a0 Suppose the study hours and marks of 4 students \r\nare:\r\n2\r\nStudent Study Hours \ud835\udc4b Marks \ud835\udc4c\r\nA 1 40\r\nB 2 50\r\nC 3 60\r\nD 4 70",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_003.webp",
+      "text": "\u25a0 Step 1: Calculate the means \r\n\ud835\udc4b\u0d24 =\r\n1 + 2 + 3 + 4\r\n4\r\n= 2.5\r\n\ud835\udc4c\u0d24 = (40+50+60+70) / 4 \u200b= 55\r\n3\r\nCov \ud835\udc4b \ud835\udc4c =\r\n\u0dcc( \ud835\udc4b \u2212 \ud835\udc4b\u0d24\u123b \ud835\udc4c \u2212 \ud835\udc4c\u0d24\r\n\ud835\udc5b \u2212 1",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_004.webp",
+      "text": "\u25a0 Step 2: Calculate deviations\r\n4\r\nX Y \ud835\udc4b \u2212 \ud835\udc4b\u0d24 \ud835\udc4c \u2212 \ud835\udc4c\u0d24 \ud835\udc4b \u2212 \ud835\udc4b\u0d24 \ud835\udc4c \u2212 \ud835\udc4c\u0d24\r\n1 40\r\n2 50\r\n3 60\r\n4 70",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_005.webp",
+      "text": "\u25a0 Step 2: Calculate deviations\r\n5\r\nX Y \ud835\udc4b \u2212 \ud835\udc4b\u0d24 \ud835\udc4c \u2212 \ud835\udc4c\u0d24 \ud835\udc4b \u2212 \ud835\udc4b\u0d24 \ud835\udc4c \u2212 \ud835\udc4c\u0d24\r\n1 40 1-2.5 = -1.5 40-55 = -15 22.5\r\n2 50 2-2.5 = -0.5 50-55 = -5 2.5\r\n3 60 3-2.5 = 0.5 60-55 = 5 2.5\r\n4 70 4-2.5 = 1.5 70-55 = 15 22.5\r\nTherefore:\r\n\u0dcc( \ud835\udc4b \u2212 \ud835\udc4b\u0d24\u123b \ud835\udc4c \u2212 \ud835\udc4c\u0d24 = 22.5 + 2.5 + 2.5 + 22.5 =50",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_006.webp",
+      "text": "6\r\nStep 3: Calculate covariance\r\nSince this is sample data:\r\nCov \ud835\udc4b \ud835\udc4c =\r\n50\r\n4 \u2212 1\r\nCov \ud835\udc4b \ud835\udc4c = 16.67\r\nSince covariance is positive, study hours and marks have a \r\npositive relationship.",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_007.webp",
+      "text": "Correlation\r\n7\r\nCorrelation measures both the direction and strength \r\nof the linear relationship between two variables.\r\nThe correlation coefficient is represented by:\r\n\ud835\udc5f\r\nIts value always lies between:\r\n\u22121\u2264r\u2264+1\u200b\r\nCorrelation \ud835\udc2b Interpretation\r\n+1 Perfect positive correlation\r\nClose to +1 Strong positive relationship\r\n0 No linear correlation\r\nClose to \u22121 Strong negative relationship\r\n\u22121 Perfect negative correlation",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_008.webp",
+      "text": "8\r\nCorrelation Formula\r\nPearson's correlation coefficient is:\r\n\ud835\udc5f =\r\n\u0dcc( \ud835\udc4b \u2212 \ud835\udc4b\u0d24\u123b \ud835\udc4c \u2212 \ud835\udc4c\u0d24\r\n\u0dcc( \ud835\udc4b \u2212 \ud835\udc4b\u0d24)\r\n2 \u0dcc( \ud835\udc4c \u2212 \ud835\udc4c\u0d24)\r\n2\r\nThere is also a useful relationship between covariance \r\nand correlation:\r\n\ud835\udc5f =\r\nCov \ud835\udc4b \ud835\udc4c\r\n\ud835\udc60\ud835\udc4b\ud835\udc60\ud835\udc4c\r\nwhere \ud835\udc60\ud835\udc4band \ud835\udc60\ud835\udc4care the sample standard deviations.",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_009.webp",
+      "text": "Numerical\r\n\u25a0 We can use the same data:\r\n9\r\nStud\r\nent Study Hours \ud835\udc4b Marks \ud835\udc4c\r\nA 1 40\r\nB 2 50\r\nC 3 60\r\nD 4 70\r\nWe already calculated:\r\n\ud835\udc4b\u0d24 = 2.5\r\n\ud835\udc4c\u0d24 = 55",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_010.webp",
+      "text": "\u25a0 Now calculate the additional columns:\r\n10\r\nX Y \ud835\udc4b \u2212 \ud835\udc4b\u0d24 \ud835\udc4c \u2212 \ud835\udc4c\u0d24 \ud835\udc4b \u2212 \ud835\udc4b\u0d24 2 \ud835\udc4c \u2212 \ud835\udc4c\u0d24 2 Product\r\n1 40 -1.5 -15 2.25 225 22.5\r\n2 50 -0.5 -5 0.25 25 2.5\r\n3 60 0.5 5 0.25 25 2.5\r\n4 70 1.5 15 2.25 225 22.5\r\nTotal 5 500 50\r\n\ud835\udc5f =\r\n\u0dcc( \ud835\udc4b \u2212 \ud835\udc4b\u0d24\u123b \ud835\udc4c \u2212 \ud835\udc4c\u0d24\r\n\u0dcc( \ud835\udc4b \u2212 \ud835\udc4b\u0d24)\r\n2 \u0dcc( \ud835\udc4c \u2212 \ud835\udc4c\u0d24)\r\n2",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_011.webp",
+      "text": "11\r\nTherefore:\r\n\ud835\udc5f =\r\n50\r\n5\u00d7500\r\n\ud835\udc5f =\r\n50\r\n2500\r\n\ud835\udc5f =\r\n50\r\n50\r\n\ud835\udc5f = 1\r\nInterpretation\r\n\ud835\udc5f = 1\r\nmeans there is a perfect positive linear correlation between study hours \r\nand marks in this example.\r\nAs study hours increase, marks increase in exactly the same linear pattern.",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_012.webp",
+      "text": "Covariance vs Correlation\r\n12\r\nCovariance Correlation\r\nMeasures direction of relationship Measures direction and strength\r\nCan range from \u2212\u221eto +\u221e Always between \u22121and +1\r\nDepends on units Unit-free\r\nDifficult to compare across \r\ndatasets Easy to interpret and compare\r\nPositive \u2192 variables move \r\ntogether Positive \u2192 positive relationship\r\nNegative \u2192 variables move \r\noppositely Negative \u2192 negative relationship\r\nFormula uses deviations Standardized form of covariance",
+      "width": 1440,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_covariance_correlation_pdf/thumb_013.webp",
+      "text": "\u25a0 Consider Table 3.2, which presents a simplified example of \r\nstock prices observed at five time points for AllElectronics and \r\nHighTech, a high-tech company. If the stocks are affected by \r\nthe same industry trends, will their prices rise or fall together?\r\n13",
+      "width": 1440,
+      "height": 1080
+    }
+  ]
+}

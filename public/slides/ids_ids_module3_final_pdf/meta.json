@@ -1,0 +1,1182 @@
+{
+  "mtime": 1794840900.608044,
+  "aspectRatio": 1.29,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_001.webp",
+      "text": "MODULE 3\r\nSEARCH ALGORITHMS AND \r\nPROBLEM SOLVING",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_002.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_003.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_004.webp",
+      "text": "Why Search?",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_005.webp",
+      "text": "Problem Solving Agents\r\n\u201cA problem-solving agent is an intelligent agent that finds a sequence of actions to achieve a goal \u201c.\r\n\u2022 Search techniques are universal problem-solving methods.\r\n\u2022 Rational agents or Problem-solving agents in AI mostly used these search strategies or algorithms\r\nto solve a specific problem and provide the best result.\r\n\u2022 Problem-solving agents are the goal-based agents and use atomic representation.\r\nFour Phase Solving Process :\r\n1) Goal formulation\r\n2) Problem formulation : States, Actions\r\n3) Search\r\n4) Execution",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_006.webp",
+      "text": "Problem Solving Agents\r\nSearch: Searching is a step by step procedure to solve a search-problem in a given search\r\nspace. A search problem can have three main factors:\r\n\u2022 Search Space: Search space represents a set of possible solutions, which a system may\r\nhave.\r\n\u2022 Start State: It is a state from where agent begins the search. \u2022 Goal test: It is a function which observe the current state and returns whether the goal\r\nstate is achieved or not.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_007.webp",
+      "text": "Problem Solving Agents\r\n\u2022 Search tree: A tree representation of search problem is called Search tree. The root\r\nof the search tree is the root node which is corresponding to the initial state.\r\n\u2022 Actions: It gives the description of all the available actions to the agent.\r\n\u2022 Transition model: A description of what each action do, can be represented as a\r\ntransition model.\r\n\u2022 Path Cost: It is a function which assigns a numeric cost to each path.\r\n\u2022 Solution: It is an action sequence which leads from the start node to the goal node.\r\n\u2022 Optimal Solution: If a solution has the lowest cost among all solutions.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_008.webp",
+      "text": "Example: Romania",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_009.webp",
+      "text": "Example: Romania \r\n\u2022 On holiday in Romania; currently in Arad. \u2022 Flight leaves tomorrow from Bucharest\r\n\u2022 Formulate goal : be in Bucharest\r\n\u2022 Formulate problem : states: various cities\r\nactions: drive between cities\r\n\u2022 Find solution : sequence of cities, e.g., Arad, Sibiu, Fagaras, Bucharest",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_010.webp",
+      "text": "Example: Romania \r\nCase 1: Everything is Perfect \r\n(Open-Loop System)\r\nThe map is correct. \r\nRoads are open. \r\nNo accidents. \r\nNo traffic. \r\nNo wrong turns.\r\nAgent does not need to check the \r\nenvironment again. Fully observable, deterministic, and known\r\nArad -> Sibiu -> Fagaras -> Bucharest\r\nCase 2: Environment Changes\r\n(Closed-Loop System)\r\nSomething unexpected happens.\r\nArad -> Sibiu x Road Closed\r\nAgent will find other route .\r\nThe agent continuously\r\n\u2022 observes \r\n\u2022 updates \r\n\u2022 changes decisions\r\nUncertain, partially observable, or dynamic",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_011.webp",
+      "text": "Example: Romania \r\nDeterministic, Fully Observable \u2192 Single-state problem\r\nAgent knows exactly which state it will be in; solution is a sequence.\r\nNon-observable \u2192 Sensorless problem (Conformant problem)\r\nAgent may have no idea where it is; solution is a sequence\r\nNondeterministic and/or partially observable \u2192 contingency problem\r\npercepts provide new information about current state often interleave search,\r\nexecution\r\nUnknown state space \u2192 exploration problem",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_012.webp",
+      "text": "Example: vacuum world",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_013.webp",
+      "text": "Example: vacuum world",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_014.webp",
+      "text": "Example: vacuum world\r\nSensorless, start in {1,2,3,4,5,6,7,8} e.g.,\r\nRight goes to {2,4,6,8}\r\nSolution? [Right, Suck, Left, Suck]\r\nContingency Nondeterministic: Suck may dirty\r\na clean carpet\r\nPartially observable: location, dirt at current\r\nlocation.\r\nPercept: [L, Clean], i.e., start in #5 or #7\r\nSolution? [Right, if dirt then Suck]",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_015.webp",
+      "text": "Single-state problem formulation\r\n\u2022 A problem is defined by four items:\r\n\u2022 initial state e.g., \"at Arad\"\r\n\u2022 actions or successor function S(x) = set of action\u2013state pairs \r\n\u2022 goal test, can be\r\n\u2022 e.g., x = \"at Bucharest\"\r\n\u2022 path cost (additive) \r\n\u2022 e.g., sum of distances, number of actions executed, etc.\r\n\u2022 c(x,a,y) is the step cost, assumed to be \u2265 0\r\n\u2022 A solution is a sequence of actions leading from the initial state to a goal state",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 16,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_016.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_016.webp",
+      "text": "Example : 8 Puzzle problem \r\nStates? locations of tiles \r\nActions? move blank left, right, up, down \r\nGoal test? = goal state (given)\r\nPath cost? 1 per move",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 17,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_017.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_017.webp",
+      "text": "Example : Vaccum World State Space Graph\r\nstates? integer dirt and robot location \r\nactions? Left, Right, Suck\r\ngoal test? no dirt at all locations\r\npath cost? 1 per action",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 18,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_018.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_018.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 19,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_019.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_019.webp",
+      "text": "States vs Nodes\r\n\uf0a7 A state describes only the current situation.\r\n\uf0a7 A node stores the state plus information about how we reached it. State = C\r\nPaths=>\r\nState tells us where we are. A node tells us where we \r\nare and how we reached there.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 20,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_020.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_020.webp",
+      "text": "Tree Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 21,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_021.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_021.webp",
+      "text": "Tree Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 22,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_022.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_022.webp",
+      "text": "Tree Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 23,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_023.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_023.webp",
+      "text": "Frontier / Fringe\r\nFrontier (or fringe) = generated nodes that are waiting to be expanded.\r\n\u2022 BFS: frontier is a FIFO queue.\r\n\u2022 DFS / DLS: frontier behaves like a LIFO stack.\r\n\u2022 UCS: frontier is ordered by cumulative path cost g(n).",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 24,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_024.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_024.webp",
+      "text": "How Do We Evaluate a Search Algorithm?\r\nCOMPLETE?\r\nWill it find a \r\nsolution?\r\nWhen a solution exists\r\nOPTIMAL?\r\nBest solution?\r\nLowest path cost / \r\nshallowest under equal \r\ncosts\r\nTIME\r\nHow many \r\nnodes?\r\nHow much work is \r\nrequired?\r\nSPACE\r\nHow much \r\nmemory?\r\nHow many nodes must \r\nbe stored?",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 25,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_025.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_025.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 26,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_026.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_026.webp",
+      "text": "Uninformed Search Algorithms \r\n\u2022 Does not contain any domain knowledge such as closeness, the location of the goal.\r\n\u2022 It operates in a brute-force way as it only includes information about how to traverse the\r\ntree and how to identify leaf and goal nodes.\r\n\u2022 Uninformed search applies a way in which search tree is searched without any information\r\nabout the search space like initial state operators and test for the goal, so it is also called\r\nblind search.\r\n\u2022 It examines each node of the tree until it achieves the goal node.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 27,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_027.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_027.webp",
+      "text": "\uf0a7 Uninformed search strategies use only the information available in the problem\r\ndefinition.\r\n\uf0a7 Breadth-first search\r\n\uf0a7 Uniform-cost search\r\n\uf0a7 Depth-first search\r\n\uf0a7 Depth-limited search\r\n\uf0a7 Iterative deepening search\r\nUninformed Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 28,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_028.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_028.webp",
+      "text": "\uf0a7 Uninformed search strategies use only the information available in the problem\r\ndefinition.\r\n\uf0a7 Breadth-first search\r\n\uf0a7 Uniform-cost search\r\n\uf0a7 Depth-first search\r\n\uf0a7 Depth-limited search\r\n\uf0a7 Iterative deepening search\r\nUninformed Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 29,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_029.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_029.webp",
+      "text": "Breadth-first search\r\n\uf0a7 The most common search strategy for traversing a tree or graph. \uf0a7 Searches breadthwise in a tree or graph, so it is called breadth-first search. \uf0a7 Starts searching from the root node of the tree and expands all successor\r\nnode at the current level before moving to nodes of next level.\r\n\uf0a7 Implemented using FIFO queue data structure.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 30,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_030.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_030.webp",
+      "text": "Breadth-first search\r\nIn the below tree structure, we have shown the traversing of the tree using BFS algorithm\r\nfrom the root node S to goal node K. BFS search algorithm traverse in layers, so it will follow\r\nthe path which is shown by the dotted arrow, and the traversed path will be:\r\nS \u2192 A \u2192 B \u2192 C \u2192 D \u2192 G \u2192 H \u2192 E \u2192 F \u2192 I \u2192 K",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 31,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_031.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_031.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 32,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_032.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_032.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 33,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_033.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_033.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 34,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_034.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_034.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 35,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_035.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_035.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 36,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_036.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_036.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 37,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_037.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_037.webp",
+      "text": "Numericals",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 38,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_038.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_038.webp",
+      "text": "Example 1 - Using BFS, find the traversal order and \r\nthe path from start node A to goal node G.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 39,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_039.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_039.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 40,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_040.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_040.webp",
+      "text": "Solution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 41,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_041.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_041.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 42,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_042.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_042.webp",
+      "text": "BFS Fringe / Queue Steps\r\n1. Fringe: A (Initially, A is in the fringe. )\r\n2. Fringe: BC (Expand A; nodes B and C are placed at the back.) \r\n3. Fringe: CDE (Expand B; nodes D and E are placed at the back.) \r\n4. Fringe: DEDG (Expand C; nodes D and G are placed at the back.) \r\n5. Fringe: EDGCF (Expand D; nodes C and F are placed at the back.) \r\n6. Fringe: DGCF (Node E is removed from the fringe.) \r\n7. Fringe: GCFBF (Expand D; nodes B and F are placed at the back.) \r\n8. G is selected for expansion, and G is the goal node. Final Result\r\nGoal node: G\r\nSolution path: A \u2192 C \u2192 G\r\nSolution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 43,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_043.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_043.webp",
+      "text": "Example 2 \u2013 A=Start Node, F-Goal Node\r\nSolution = A-B-D-F",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 44,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_044.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_044.webp",
+      "text": "Example 2 - Using BFS, find the traversal order and the path \r\nfrom start node S to goal node G.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 45,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_045.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_045.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 46,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_046.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_046.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 47,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_047.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_047.webp",
+      "text": "Example 3 - Using BFS, find the traversal order and the path \r\nfrom start node S to goal node G.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 48,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_048.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_048.webp",
+      "text": "Example 3 - Solution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 49,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_049.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_049.webp",
+      "text": "Example 3 Solution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 50,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_050.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_050.webp",
+      "text": "Properties of breadth-first search\r\n\uf0a7 Complete? Yes (if b is finite)\u2022\r\n\uf0a7 Time? 1+b+b2+b3+\u2026 +bd + b(bd-1) = O(bd+1)\u2022\r\n\uf0a7 Space? O(bd+1) (keeps every node in memory)\u2022\r\n\uf0a7 Optimal? Yes (if cost = 1 per step)\r\n\uf0a7 Space is the bigger problem (more than time) - memory grows very quickly.\r\n\uf0a7 BFS is a strong choice when the desired solution is shallow and step costs are equal.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 51,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_051.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_051.webp",
+      "text": "Breadth-first search\r\nAdvantages:\r\n\uf0a7 BFS will provide a solution if any solution exists.\r\n\uf0a7 If there are more than one solutions for a given problem, then BFS will provide the\r\nminimal solution which requires the least number of steps.\r\nDisadvantages:\r\n\uf0a7 It requires lots of memory since each level of the tree must be saved into memory to\r\nexpand the next level.\r\n\uf0a7 BFS needs lots of time if the solution is far away from the root node.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 52,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_052.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_052.webp",
+      "text": "\uf0a7 Uninformed search strategies use only the information available in the problem definition.\r\n\uf0a7 Breadth-first search\r\n\uf0a7 Uniform-cost search\r\n\uf0a7 Depth-first search\r\n\uf0a7 Depth-limited search\r\n\uf0a7 Iterative deepening search\r\nUninformed Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 53,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_053.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_053.webp",
+      "text": "Depth-first search\r\n\uf0a7 Is a recursive algorithm for traversing a tree or graph data structure.\r\n\uf0a7 It starts from the root node and follows each path to its greatest depth node before moving\r\nto the next path.\r\n\uf0a7 Uses a stack data structure for its implementation.\r\n\uf0a7 The process of the DFS algorithm is similar to the BFS algorithm.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 54,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_054.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_054.webp",
+      "text": "\uf0a7 In the below search tree, the flow of depth-first search:\r\nRoot node ---> Left node ----> right node.\r\n\uf0a7 It will start searching from root node S, and traverse A, then B, then D and E, after\r\ntraversing E, it will backtrack the tree as E has no other successor and still goal node is not\r\nfound. After backtracking it will traverse node C and then G, and here it will terminate as it\r\nfound goal node.\r\nDepth-first search",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 55,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_055.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_055.webp",
+      "text": "Example 1\r\nFor the given state-space graph, perform DFS from start \r\nnode S. Write the node expansion order and identify the \r\nsolution path to G.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 56,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_056.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_056.webp",
+      "text": "Solution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 57,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_057.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_057.webp",
+      "text": "Example 1 - Solution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 58,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_058.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_058.webp",
+      "text": "Example - Using BFS, find the traversal order and the path from start \r\nnode A to goal node F.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 59,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_059.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_059.webp",
+      "text": "Solution",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 60,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_060.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_060.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 61,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_061.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_061.webp",
+      "text": "Example 2\r\nSolution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 62,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_062.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_062.webp",
+      "text": "Depth-first search\r\nAdvantage:\r\n\uf0a7 DFS requires very less memory as it only needs to store a stack of the nodes on the path \r\nfrom root node to the current node. \r\n\uf0a7 It takes less time to reach to the goal node than BFS algorithm (if it traverses in the right \r\npath). \r\nDisadvantage:\r\n\uf0a7 There is the possibility that many states keep re-occurring, and there is no guarantee of \r\nfinding the solution. \r\n\uf0a7 DFS algorithm goes for deep down searching and sometime it may go to the infinite loop.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 63,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_063.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_063.webp",
+      "text": "\uf0a7 Uninformed search strategies use only the information available in the problem\r\ndefinition.\r\n\uf0a7 Breadth-first search\r\n\uf0a7 Uniform-cost search\r\n\uf0a7 Depth-first search\r\n\uf0a7 Depth-limited search\r\n\uf0a7 Iterative deepening search\r\nUninformed Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 64,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_064.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_064.webp",
+      "text": "Uniform-cost search\r\n\u2022 Used for traversing a weighted tree or graph.\r\n\u2022 Algorithm comes into play when a different cost is available for each edge.\r\n\u2022 Primary goal : to find a path to the goal node which has the lowest cumulative cost.\r\n\u2022 Expands nodes according to their path costs form the root node.\r\n\u2022 Can be used to solve any graph/tree where the optimal cost is in demand.\r\n\u2022 Is implemented by the priority queue. It gives maximum priority to the lowest cumulative\r\ncost.\r\n\u2022 Uniform cost search is equivalent to BFS algorithm if the path cost of all edges is the\r\nsame.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 65,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_065.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_065.webp",
+      "text": "Uniform-cost search\r\n\uf0a7 Advantages:\r\nUniform cost search is optimal because at every state the path with the least cost is chosen.\r\n\uf0a7 Disadvantages:\r\nIt does not care about the number of steps involve in searching and only concerned about\r\npath cost. Due to which this algorithm may be stuck in an infinite loop.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 66,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_066.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_066.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 67,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_067.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_067.webp",
+      "text": "Example - Using Uniform Cost Search, find the optimal \r\npath from S to G and calculate the total path cost.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 68,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_068.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_068.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 69,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_069.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_069.webp",
+      "text": "Example\r\nThe edge costs are:\r\n\u2022 S\u2192A=1 \r\n\u2022 S\u2192B=5 \r\n\u2022 S\u2192C=8 \r\n\u2022 A\u2192D=3 \r\n\u2022 A\u2192E=7 \r\n\u2022 A\u2192G=9 \r\n\u2022 B\u2192G=4 \r\n\u2022 C\u2192G=5\r\nSolution =>",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 70,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_070.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_070.webp",
+      "text": "Step 1: Start at S\r\nFrom S:\r\n\u2022 A = 1\r\n\u2022 B = 5\r\n\u2022 C = 8\r\nChoose the smallest \u2192 A(1)\r\nFringe: A(1), B(5), C(8)\r\nStep 2: Expand A\r\nFrom A:\r\n\u2022 D = 1 + 3 = 4\r\n\u2022 E = 1 + 7 = 8\r\n\u2022 G = 1 + 9 = 10\r\nNow fringe:\r\nD(4), B(5), C(8), E(8), G(10)\r\nChoose smallest \u2192 D(4)\r\nStep 3: Expand D\r\nD has no new node.\r\nFringe:\r\nB(5), C(8), E(8), G(10)\r\nChoose smallest \u2192 B(5)\r\nStep 4: Expand B\r\nFrom B to G:\r\nCost = 5 + 4 = 9\r\nWe already had G(10), but now we \r\nfound cheaper G(9). So replace:\r\nG(10) \u2192 G(9)\r\nFringe:\r\nC(8), E(8), G(9)\r\nSolution",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 71,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_071.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_071.webp",
+      "text": "Step 5: Expand C / E\r\nC and E both have cost 8.\r\nIf we expand C:\r\nC \u2192 G:\r\n8 + 5 = 13\r\nBut we already have G(9). So ignore G(13). After C and E:\r\nFringe: G(9)\r\nStep 6: Select G\r\nNow G has the smallest cost.\r\nGoal reached\r\nFinal answer\r\nOptimal Path: S \u2192 B \u2192 G\r\nTotal Cost:\r\n5 + 4 = 9",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 72,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_072.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_072.webp",
+      "text": "\uf0a7 Uninformed search strategies use only the information available in the problem\r\ndefinition.\r\n\uf0a7 Breadth-first search\r\n\uf0a7 Uniform-cost search\r\n\uf0a7 Depth-first search\r\n\uf0a7 Depth-limited search\r\n\uf0a7 Iterative deepening search\r\nUninformed Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 73,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_073.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_073.webp",
+      "text": "Depth-limited search\r\n\uf0a7 Depth-Limited Search is a variation of Depth-First Search (DFS). \uf0a7 It explores nodes in a depth-first manner but only up to a specified depth limit (L). \uf0a7 When the depth limit is reached, the search does not expand further and backtracks.\r\n\uf0a7 It prevents DFS from going too deep into an infinite or very deep path. \uf0a7 If the goal is found within the specified limit, the solution is returned.\r\n\uf0a7 If the goal lies beyond the depth limit, the search returns a cutoff/failure. \uf0a7 It generally uses a LIFO stack or recursion, similar to DFS.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 74,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_074.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_074.webp",
+      "text": "Depth-limited search\r\nDepth levels:\r\n\u2022 Depth 0: A \r\n\u2022 Depth 1: B, C, D \r\n\u2022 Depth 2: E, F, G, H, I, J \r\n\u2022 Depth 3: K, L \r\nSince depth limit = 2, nodes K and L will not \r\nbe explored. If the traversal goes from left to right, then the search order will be:\r\nA \u2192 B \u2192 E \u2192 F \u2192 C \u2192 G \u2192 H \u2192 D \u2192 I \u2192 J",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 75,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_075.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_075.webp",
+      "text": "\uf0a7 Uninformed search strategies use only the information available in the problem\r\ndefinition.\r\n\uf0a7 Breadth-first search\r\n\uf0a7 Uniform-cost search\r\n\uf0a7 Depth-first search\r\n\uf0a7 Depth-limited search\r\n\uf0a7 Iterative deepening search\r\nUninformed Search Algorithms",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 76,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_076.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_076.webp",
+      "text": "Iterative deepening search\r\nIterative Deepening Search combines the advantages of Depth-First Search (DFS) and \r\nBreadth-First Search (BFS). \u2022 IDS repeatedly performs Depth-Limited Search (DLS). \u2022 It starts with a small depth limit and gradually increases it. \r\n\u2022 First, it searches with Limit = 0, then Limit = 1, then Limit = 2, and so on. \r\n\u2022 Each iteration starts again from the root node. \u2022 The process continues until the goal node is found. \u2022 Like DFS, it requires relatively low memory. \u2022 Like BFS, it can find the shallowest solution when all step costs are equal.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 77,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_077.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_077.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 78,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_078.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_078.webp",
+      "text": "Iterative deepening search working",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 79,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_079.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_079.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 80,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_080.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_080.webp",
+      "text": "Summary",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 81,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_081.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_081.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 82,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_082.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_082.webp",
+      "text": "Informed Search Techniques \r\n\u2022 Informed search algorithms use domain knowledge. \u2022 Problem information is available which can guide the search.\r\n\u2022 Informed search strategies can find a solution more efficiently than an uninformed search\r\nstrategy.\r\n\u2022 Informed search is also called a Heuristic search. \u2022 A heuristic is a way which might not always be guaranteed for best solutions but guaranteed\r\nto find a good solution in reasonable time.\r\n\u2022 Informed search can solve much complex problem which could not be solved in another\r\nway.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 83,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_083.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_083.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques - A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 84,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_084.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_084.webp",
+      "text": "A* Search Algorithm\r\n\u2022 Finds the best or shortest path from a start node to a goal node.\r\n\u2022 It uses heuristic function h(n), and cost to reach the node n from the start state g(n).\r\n\u2022 Expands less search tree and provides optimal result faster.\r\n\u2022 A* algorithm is similar to UCS except that it uses g(n)+h(n) instead of g(n).",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 85,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_085.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_085.webp",
+      "text": "\uf0a7 A* searches a graph by selecting the node with the lowest estimated total\r\ncost.\r\n\uf0a7 Used in path-finding and graph traversal problems.\r\n\uf0a7 Common examples: game navigation, route planning, puzzle solving.\r\nA* Search Algorithm",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 86,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_086.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_086.webp",
+      "text": "\uf0a7 Evaluation Function\r\nA* Search Algorithm",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 87,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_087.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_087.webp",
+      "text": "A* Search Algorithm\r\n\u2022 Open List and Closed List",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 88,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_088.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_088.webp",
+      "text": "A* Search Algorithm\r\nOperational sequence used in both examples\r\n1. Put start node S in OPEN. 2. If OPEN is empty, stop with failure. \r\n3. Pick node n with smallest f(n); move it to CLOSED. 4. If n is the goal, trace the path and stop. \r\n5. Expand n and calculate f for each successor. \r\n6. Add unseen successors to OPEN and repeat.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 89,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_089.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_089.webp",
+      "text": "Consider the given weighted graph, where A is the start node and G is the goal \r\nnode. The heuristic values h(n) for each node are provided in the table. Apply the \r\nA Search Algorithm using A*\r\nf(n)=g(n)+h(n) \r\nto find the optimal path from A to G. Show the OPEN and CLOSED lists at each \r\nstep and calculate the total cost of the final path.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 90,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_090.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_090.webp",
+      "text": "f(n)=g(n)+h(n)",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 91,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_091.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_091.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 92,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_092.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_092.webp",
+      "text": "Example",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 93,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_093.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_093.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 94,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_094.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_094.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 95,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_095.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_095.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 96,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_096.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_096.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 97,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_097.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_097.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 98,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_098.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_098.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 99,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_099.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_099.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 100,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_100.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_100.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 101,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_101.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_101.webp",
+      "text": "A* Search Algorithm\r\nAdvantages:\r\n\u2022 A* search algorithm is better than many other search algorithms.\r\n\u2022 A* search algorithm is optimal and complete. \u2022 This algorithm can solve very complex problems.\r\nDisadvantages:\r\n\u2022 It may not always produce the shortest path if the heuristic is not appropriate.\r\n\u2022 A* search algorithm has some complexity issues.\r\n\u2022 The main drawback of A* is its high memory requirement, because it stores generated\r\nnodes in memory, so it may not be practical for large-scale problems.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 102,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_102.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_102.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 103,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_103.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_103.webp",
+      "text": "Hill Climbing\r\nHill Climbing is a local search algorithm that starts from one solution and\r\ncontinuously moves to a better neighbouring solution until no further\r\nimprovement is possible.\r\nG(10)\r\n/\r\nD(8)\r\n/\r\nB(6)\r\n/\r\nA(3)",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 104,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_104.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_104.webp",
+      "text": "10\r\n4\r\nIntroduction to Hill Climbing\r\n\u2022 Is a heuristic search used for mathematical optimization problems in the field of Artificial\r\nIntelligence.\r\n\u2022 Given a large set of inputs and a good heuristic function, it tries to find a sufficiently good\r\nsolution to the problem.\r\n\u2022 This solution may not be the global optimal maximum.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 105,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_105.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_105.webp",
+      "text": "10\r\n5\r\nIntroduction to Hill Climbing\r\n\u2022 Mathematical optimization problems implies that hill-climbing solves the problems where\r\nwe need to maximize or minimize a given real function by choosing values from the given\r\ninputs.\r\n\u2022 Example- Travelling salesman problem where we need to minimize the distance traveled by\r\nthe salesman.\r\n\u2022 \u2018Heuristic search\u2019 - Search algorithm may not find the optimal solution to the problem.\r\nHowever, it will give a good solution in reasonable time.\r\n\u2022 A heuristic function - is a function that will rank all the possible alternatives at any\r\nbranching step in search algorithm based on the available information. It helps the algorithm\r\nto select the best route out of possible routes.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 106,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_106.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_106.webp",
+      "text": "Features of Hill Climbing\r\n1) Variant of Generate and Test Algorithm:\r\nIt is a variant of generate and test algorithm. The generate and test algorithm is as follows:\r\n\uf0a7 Generate possible solutions. \r\n\uf0a7 Test to see if this is the expected solution. \r\n\uf0a7 If the solution has been found, quit; else go to Step 1. \r\n\uf0a7 Hence, we call Hill Climbing a variant of generate and test algorithm as it takes the\r\nfeedback from the test procedure. Then this feedback is utilized by the generator in deciding\r\nthe next move in the search space.\r\n2. Uses the Greedy Approach:\r\nAt any point in the state space, the search moves only in that direction which optimizes the \r\ncost function with the hope of finding the optimal solution at the end.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 107,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_107.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_107.webp",
+      "text": "Types of Hill Climbing\r\n1) Simple Hill Climbing\r\n2) Steepest-Ascent Hill Climbing\r\n3) Stochastic Hill Climbing",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 108,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_108.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_108.webp",
+      "text": "Simple Hill Climbing\r\n\uf0a7 Only evaluates the neighbour node state at a time and selects the first one which\r\noptimizes current cost and set it as a current state.\r\n\uf0a7 It only checks it\u2019s one successor state, and if it finds better than the current state, then\r\nmove else be in the same state.\r\n\uf0a7 This algorithm has the following features:\r\n\u2022 Less time consuming\r\n\u2022 Less optimal solution and the solution is not guaranteed",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 109,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_109.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_109.webp",
+      "text": "Simple Hill Climbing - Algorithm\r\nStep 1: Evaluate the initial state. If it is a goal state, then stop and return success.\r\nOtherwise, make the initial state the current state.\r\nStep 2: Loop until the solution state is found or there are no new operators present which\r\ncan be applied to the current state.\r\na) Select a state that has not yet been applied to the current state and apply it to produce a\r\nnew state.\r\nb)Perform these to evaluate the new state:\r\ni. If the current state is a goal state, then stop and return success.\r\nii. If it is better than the current state, then make it the current state and proceed further.\r\niii. If it is not better than the current state, then continue in the loop until a solution is \r\nfound.\r\nStep 3: Exit.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 110,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_110.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_110.webp",
+      "text": "Steepest-Ascent Hill Climbing\r\n\u2022 The steepest-Ascent algorithm is a variation of simple hill climbing algorithm.\r\n\u2022 This algorithm examines all the neighboring nodes of the current state and selects one\r\nneighbor node which is closest to the goal state.\r\n\u2022 This algorithm consumes more time as it searches for multiple neighbors.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 111,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_111.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_111.webp",
+      "text": "Steepest-Ascent Hill Climbing - Algorithm\r\nStep 1 : Evaluate the initial state. If it is a goal state then stop and return success. Otherwise,\r\nmake the initial state as the current state.\r\nStep 2: Repeat these steps until a solution is found or the current state does not change\r\n1. Select a state that has not been yet applied to the current state.\r\n2. Initialize a new \u2018best state\u2019 equal to the current state and apply it to produce a new\r\nstate.\r\n3. Perform these to evaluate the new state\r\n(i)If the current state is a goal state, then stop and return success\r\n. (ii)If it is better than the best state, then make it the best state else\r\ncontinue the loop with another new state.\r\n4. Make the best state as the current state and go to Step 2 of the second point.\r\nStep 3: Exit from the function.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 112,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_112.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_112.webp",
+      "text": "Stochastic Hill Climbing\r\n\uf0a7 It does not examine all the neighbouring nodes before deciding which node to select.\r\n\uf0a7 It just selects a neighbouring node at random and decides, based on the amount of\r\nimprovement in that neighbour, whether to move to that neighbour or examine another.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 113,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_113.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_113.webp",
+      "text": "Stochastic Hill Climbing - Algorithm\r\nStep 1: Evaluate the initial state. If it is a goal state, then stop and return success. Otherwise,\r\nmake the initial state the current state.\r\nStep 2: Repeat these steps until a solution is found or the current state does not change:\r\n\uf0a7 Select a state that has not yet been applied to the current state.\r\n\uf0a7 Apply the successor function to the current state and generate all the neighbour states.\r\n\uf0a7 Among the generated neighbour states which are better than the current state, choose a\r\nstate randomly (or based on some probability function).\r\n\uf0a7 If the chosen state is the goal state, then return success; otherwise, make it the current\r\nstate and repeat Step 2.\r\nStep 3: Exit from the function.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 114,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_114.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_114.webp",
+      "text": "State Space Diagram for Hill Climbing\r\n\uf0a7 The state-space diagram is a graphical representation of the set of states our search\r\nalgorithm can reach vs. the value of our objective function (the function which we wish to\r\nmaximize).\r\n\uf0a7 X-axis: denotes the state space, i.e., states or configurations our algorithm may reach.\r\n\uf0a7 Y-axis: denotes the values of the objective function corresponding to a particular state.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 115,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_115.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_115.webp",
+      "text": "State Space Diagram for Hill Climbing",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 116,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_116.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_116.webp",
+      "text": "Different Regions in the State Space Diagram\r\n\u2022 Local maximum: It is a state which is better than its neighbouring states; however, there\r\nexists another state which is better than it (global maximum). The value of the objective\r\nfunction at this state is higher than its neighbours.\r\n\u2022 Global maximum: It is the best possible state in the state space diagram because the\r\nobjective function has the highest value at this point.\r\n\u2022 Plateau / Flat local maximum: It is a flat region of the state space where neighbouring\r\nstates have the same value.\r\n\u2022 Ridge: It is a region that is higher than its neighbours but itself has a slope. It is a special\r\nkind of local maximum.\r\n\u2022 Current state: The region of the state space diagram where we are currently present\r\nduring the search.\r\n\u2022 Shoulder: It is a plateau that has an uphill edge.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 117,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_117.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_117.webp",
+      "text": "Problems in Different Regions in Hill Climbing\r\nHill climbing cannot reach the optimal/best state (global maximum) if it enters any of the\r\nfollowing regions:\r\nLocal Maximum: At a local maximum, all neighbouring states have values which are worse\r\nthan the current state. Since hill climbing uses a greedy approach, it will not move to the\r\nworse state and terminates itself. The process may end even though a better solution exists.\r\nTo overcome local maximum problem: Utilize backtracking technique. Maintain a list of\r\nvisited states. If the search reaches an undesirable state, it can backtrack to the previous\r\nconfiguration and explore a new path.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 118,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_118.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_118.webp",
+      "text": "Problems in Different Regions in Hill Climbing\r\nPlateau: On a plateau, all neighbours have the same value. Hence, it is not possible to select \r\nthe best direction.\r\nTo overcome plateaus: Make a big jump. Randomly select a state far away from the current \r\nstate. Chances are that we will land in a non-plateau region.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 119,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_119.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_119.webp",
+      "text": "Problems in Different Regions in Hill Climbing\r\nRidge: Any point on a ridge can look like a peak because movement in all possible directions\r\nis downward. Hence, the algorithm stops when it reaches this state.\r\nTo overcome Ridge: Consider multiple possible moves or directions together instead of\r\nchecking only one move at a time.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 120,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_120.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_120.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 121,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_121.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_121.webp",
+      "text": "Simulated Annealing\r\nHill Climbing says:\r\n\u201cThe next move is downward, so I will not move.\u201d\r\nBut Simulated Annealing says:\r\n\u201cI may temporarily move downward, because that may allow me to reach a better hill \r\nlater.\u201d",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 122,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_122.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_122.webp",
+      "text": "Simulated Annealing\r\n\u2022 A hill-climbing algorithm which never makes a move towards a lower value guaranteed\r\nto be incomplete because it can get stuck on a local maximum.\r\n\u2022 And if algorithm applies a random walk, by moving a successor, then it may complete but \r\nnot efficient.\r\n\u2022 Simulated Annealing is an algorithm which yields both efficiency and completeness.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 123,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_123.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_123.webp",
+      "text": "Simulated Annealing\r\n\u2022 In metallurgy, annealing is a process in which a material is heated to a high temperature and\r\nthen cooled gradually. This allows the material to settle into a stable, low-energy state.\r\n\u2022 Simulated Annealing follows a similar idea. Instead of always selecting the best\r\nneighbouring state, the algorithm selects a neighbouring state randomly. \u2022 If the new state is better, it is accepted. If the new state is worse, it may still be accepted \r\nwith a certain probability. \r\n\u2022 At a high temperature, the probability of accepting a worse state is higher, which helps the \r\nalgorithm explore different solutions. \r\n\u2022 As the temperature decreases, worse states are accepted less frequently, and the algorithm \r\ngradually settles toward a good solution.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 124,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_124.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_124.webp",
+      "text": "Syllabus\r\n\uf0a7 State Space Representation\r\n\uf0a7 Uninformed Search Algorithms \r\n- BFS, DFS, DLS, UCS, IDS\r\n\uf0a7 Informed Search Techniques \r\n- A*, Hill Climbing, Simulated Annealing\r\n\uf0a7 Heuristics Techniques",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 125,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_125.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_125.webp",
+      "text": "Heuristic/Informed Search Techniques:\r\n1.Generate & Test\r\n2.Hill Climbing \r\n3.A* algorithm\r\n4.Best First Search",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 126,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_126.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_126.webp",
+      "text": "Heuristic/Informed Search Techniques:\r\n1.Generate & Test\r\n2.Hill Climbing \r\n3.A* algorithm\r\n4.Best First Search",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 127,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_127.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_127.webp",
+      "text": "Heuristic Search Techniques: Generate-and-Test\r\nThe generate-and-test strategy is the simplest of all the approaches. It consists of the\r\nfollowing steps:\r\nAlgorithm: Generate-and-Test\r\n1. Generate a possible solution. For some problems. this means generating a particular point\r\nin the problem space. For others, it means generating a path from a start state.\r\n2. Test to see if this is actually a solution by comparing the chosen point or the endpoint of\r\nthe chosen path to the set of acceptable goal states.\r\n3. If a solution has been found, quit. Otherwise, return to step 1.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 128,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_128.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_128.webp",
+      "text": "128",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 129,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_129.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_129.webp",
+      "text": "\u2022 Generate-and-test, like depth-first search, requires that complete solutions be\r\ngenerated for testing.\r\n\u2022 In its most systematic form, it is only an exhaustive search of the problem space.\r\n\u2022 Solutions can also be generated randomly but the solution is not guaranteed.\r\n\u2022 This approach is what is known as the British Museum algorithm: finding an object\r\nin the British Museum by wandering randomly.\r\nHeuristic Search Techniques: Generate-and-Test",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 130,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_130.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_130.webp",
+      "text": "Systematic Generate and Test\r\n\u2022 While generating complete solutions and generating random solutions are\r\nthe two extremes there exists another approach that lies in between .\r\n\u2022 The approach is that the search process proceeds systematically but some\r\npaths that unlikely to lead the solution are not considered.\r\n\u2022 This evaluation is performed by a heuristic function\r\n\u2022 Depth-first search tree with backtracking can be used to implement\r\nsystematic generate-and test procedure\r\n\u2022 As per this procedure, if some intermediate states are likely to appear\r\noften in the tree, it would be better to modify that procedure to traverse a\r\ngraph rather than a tree",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 131,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_131.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_131.webp",
+      "text": "\uf0a7 First, the planning process uses constraint satisfaction techniques and creates\r\nlists of recommended substructures.\r\n\uf0a7 Then the generate-and-test procedure uses the lists generated and required to\r\nexplore only a limited set of structures.\r\n\uf0a7 Constrained in this way, generate-and-test proved highly effective\r\nSystematic Generate and Test",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 132,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_132.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_132.webp",
+      "text": "A salesman has a list of cities, each of which he must visit exactly once. There\r\nare direct roads between each pair of cities on the list. Find the route the\r\nsalesman should follow for the shortest possible round trip that both starts\r\nand finishes at any one of the cities.\r\n\u2022 Traveler needs to visit n cities.\r\n\u2022 Know the distance between each pair of cities.\r\n\u2022 Want to know the shortest route that visits all the cities once.\r\nExample \u2013 Traveling Salesman Problem (TSP)",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 133,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_133.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_133.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 134,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_134.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_134.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 135,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_135.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_135.webp",
+      "text": "Length of \r\nPath Search for Path\r\n1 ABCD 19\r\n2 ABDC 18\r\n3 ACBD 12\r\n4 ACDB 13\r\n5 ADBC 16\r\nFinally, select the path whose length is less.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 136,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_136.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_136.webp",
+      "text": "Heuristic/Informed Search Techniques:\r\n1.Generate & Test\r\n2.Hill Climbing \r\n3.A* algorithm\r\n4.Best First Search",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 137,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_137.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_137.webp",
+      "text": "Best-first Search Algorithm (Greedy Search)\r\nStep 1: Place the starting node into the OPEN list.\r\nStep 2: If the OPEN list is empty, Stop and return failure.\r\nStep 3: Remove the node n, from the OPEN list which has the lowest value of h(n), and\r\nplaces it in the CLOSED list.\r\nStep 4: Expand the node n, and generate the successors of node n.\r\nStep 5: Check each successor of node n, and find whether any node is a goal node or not. If\r\nany successor node is goal node, then return success and terminate the search, else proceed\r\nto Step 6.\r\nStep 6: For each successor node, algorithm checks for evaluation function f(n), and then\r\ncheck if the node has been in either OPEN or CLOSED list. If the node has not been in both\r\nlist, then add it to the OPEN list.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 138,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_138.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_138.webp",
+      "text": "Advantages:\r\n\u2022 Best first search can switch between BFS and DFS by gaining the advantages\r\nof both the algorithms.\r\n\u2022 This algorithm is more efficient than BFS and DFS algorithms.\r\nDisadvantages:\r\n\u2022 It can behave as an unguided depth-first search in the worst case scenario.\r\n\u2022 It can get stuck in a loop as DFS.\r\n\u2022 This algorithm is not optimal.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 139,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_139.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_139.webp",
+      "text": "Heuristic \r\nValue \u210e \ud835\udc5b\r\nNode A 40 B 32 C 25 D 35 E 19 F 17 G 0 H 10\r\nStart Node - A\r\nGoal Node - G",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 140,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_140.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_140.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 141,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_141.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_141.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 142,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_142.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_142.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 143,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_143.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_143.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 144,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_144.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_144.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 145,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_145.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_145.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 146,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_146.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_146.webp",
+      "text": "Questions\r\n\uf0a7 What is a problem-solving agent? Explain the four phases of the problem-solving process.\r\n\uf0a7 Define search space, start state, and goal test in a search problem.\r\n\uf0a7 Explain the four criteria used to evaluate a search algorithm: completeness, optimality, time,\r\nand space.\r\n\uf0a7 What is an uninformed search algorithm? What is an informed search algorithm?\r\n\uf0a7 Numericals on BFS, DFS, A*, UCS algorithm\r\n\uf0a7 Explain Simple, Steepest-Ascent, and Stochastic Hill Climbing with suitable examples.\r\n\uf0a7 Define hill climbing and different problems in hill climbing.\r\n\uf0a7 Explain different types of hill climbing and its problems with the help of state space diagram.\r\n\uf0a7 Describe any four uninformed search algorithms. Compare them in terms of time complexity,\r\nspace complexity, optimality and completeness.",
+      "width": 1584,
+      "height": 1224
+    },
+    {
+      "index": 147,
+      "image": "/slides/ids_ids_module3_final_pdf/slide_147.webp",
+      "thumb": "/slides/ids_ids_module3_final_pdf/thumb_147.webp",
+      "text": "\uf0a7 Explain the following regions of a Hill Climbing state-space diagram: Local Maximum, Global Maximum, Plateau, Ridge, Shoulder, and Current State.\r\n\uf0a7 State A* algorithm and explain with an example how A* search algorithm helps in finding the goal with an\r\noptimal path.\r\n\uf0a7 Describe any four uninformed search algorithms.\r\n\uf0a7 Describe any two informed search algorithms.\r\n\uf0a7 Write a short note on State Space Representation.\r\n\uf0a7 Explain depth-limited search and Iterative deepening search.\r\n\uf0a7 Explain Simulated Annealing.\r\n\uf0a7 Numericals on Best First Search.\r\n\uf0a7 Short note on Heuristic Techniques\r\n\uf0a7 Numericals on uniform Cost search Algorithm",
+      "width": 1584,
+      "height": 1224
+    }
+  ]
+}

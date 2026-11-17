@@ -1,0 +1,262 @@
+{
+  "mtime": 1793934635.578241,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_001.webp",
+      "text": "Module 5: Big Data\r\nBy MS. ALVINA LOPES\r\nPART 1",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Introduction\r\n\u2756 Characteristics of Big Data \r\n\u2756 Introduction to Big Data Analytics\r\n\u2756 Sources of Big Data\r\n\u2756 Traditional Data vs Big Data\r\n\u2756 Applications of Big Data",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_003.webp",
+      "text": "Introduction\r\n\u25cf Everyday we use YouTube, Instagram, Amazon, Netflix and Google Maps.\r\n\u25cf Question\r\n\u25cb How does YouTube recommend videos?\r\n\u25cb How does Amazon suggest products?\r\n\u25cb How does Google Maps show traffic?\r\n\u25cf Answer: Because they use Big Data Analytics.\r\n\u25cf Big Data means huge amount of data.\r\n\u25cf Analytics means analyzing data to make better decisions.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_004.webp",
+      "text": "Introduction\r\n\u25cf Everyday we use YouTube, Instagram, Amazon, Netflix and Google Maps.\r\n\u25cf Question\r\n\u25cb How does YouTube recommend videos?\r\n\u25cb How does Amazon suggest products?\r\n\u25cb How does Google Maps show traffic?\r\n\u25cf Answer: Because they use Big Data Analytics.\r\n\u25cf Big Data means huge amount of data.\r\n\u25cf Analytics means analyzing data to make better decisions.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_005.webp",
+      "text": "Introduction\r\nWhat is Big Data?\r\n\u25cf Big data is data that exceeds the processing capacity of conventional \r\ndatabase systems.\r\n\u25cf The data is too big, moves too fast, or doesn\u2019t fit the structures of your \r\ndatabase architectures.\r\n\u25cf To gain value from this data, you must choose an alternative way to \r\nprocess it.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_006.webp",
+      "text": "Introduction\r\nBig Data Definition- By Gartner\r\n\u25cf \u201cBig data\u201d is\r\n\u25cf high-volume, -velocity and -variety information assets\r\n\u25cf that demand cost-effective, innovative forms of information processing\r\n\u25cf for enhanced insight and decision making.\r\nBig Data = large, fast, diverse datasets",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_007.webp",
+      "text": "Introduction\r\nEveryday Examples of Big Data:\r\n\u25cf Transportation: Millions of trip start and end locations logged by Uber or\r\nreal-time GPS coordinates from city buses.\r\n\u25cf Social Media: Billions of daily interactions and multimedia uploads forming\r\nan unstructured dataset.\r\n\u25cf IoT Devices: A smart factory capturing sensor readings from hundreds of\r\nmachines every second.\r\n\u25cf Weather Monitoring Systems: High-resolution atmospheric data used for\r\nforecasting and climate modeling.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_008.webp",
+      "text": "Characteristics of Big Data\r\n\u25cf Big Data is characterized by the 5 V\u2019s.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_009.webp",
+      "text": "Characteristics of Big Data\r\n\u25cf Volume \u2013 massive amounts of data\r\n\u25cf Velocity \u2013 speed of data generation & processing\r\n\u25cf Variety \u2013 structured, semi-structured, unstructured data\r\n\u25cf Veracity \u2013 data quality, accuracy, trustworthiness\r\n\u25cf Value \u2013 extracting meaningful insights",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_010.webp",
+      "text": "Characteristics of Big Data\r\nVolume\r\n\u25cf Definition: Scale of data (TBs, PBs, ZBs)\r\n\u25cf Example: Facebook generates ~4PB/day\r\n\u25cf The main challenges of managing huge data include storage limitations, \r\nprocessing power requirements, and bandwidth capabilities.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_011.webp",
+      "text": "Characteristics of Big Data\r\nVelocity\r\n\u25cf Definition: Speed of data generation & processing\r\n\u25cf Real-time analytics allows companies to respond instantly to changing \r\nconditions.\r\n\u25cf Example: Stock market tick data, IoT sensors",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_012.webp",
+      "text": "Characteristics of Big Data\r\nVariety\r\n\u25cf Definition: Structured, semi-structured, unstructured\r\n\u25cf Examples: Tables, JSON/XML, images, videos, tweets\r\n\u25cf Challenges: Too many data sources and the data is not properly organized \r\nand managed.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_013.webp",
+      "text": "Characteristics of Big Data\r\nVeracity\r\n\u25cf Veracity: Accuracy, trustworthiness\r\n\u25cf Poor data quality or inaccuracies can lead to incorrect conclusions.\r\n\u25cf Challenge: Data quality and Data quality management is an issue.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_014.webp",
+      "text": "Characteristics of Big Data\r\nValue\r\n\u25cf Value: Extracting insights for decision-making.\r\n\u25cf It is not just the amount of data that we store or process. \r\n\u25cf It is actually the amount of valuable, reliable and trustworthy data that \r\nneeds to be stored, processed, analyzed to find insights.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_015.webp",
+      "text": "Types of Big Data",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_016.webp",
+      "text": "Types of Big Data\r\nStructured Data\r\n\u25cf highly organized and resides in fixed fields.\r\n\u25cf straightforward to store, retrieve, and analyze.\r\n\u25cf fits neatly into relational databases or spreadsheets.\r\n\u25cf ideal for traditional data analysis techniques.\r\n\u25cf is easy to manage but often represents only a fraction of the total data \r\navailable.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_017.webp",
+      "text": "Types of Big Data\r\nStructured Data\r\nExamples:\r\n\u25cf Financial Transactions: Records of purchases, payments, and credits\r\nstored in databases.\r\n\u25cf Inventory Databases: Data on stock levels, sales, and supply chain\r\nmovements.\r\n\u25cf CRM Systems: Customer names, phone numbers, and purchase histories.\r\nApplications:\r\n\u25cf Banking, retail.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_018.webp",
+      "text": "Types of Big Data\r\nUnstructured Data\r\n\u25cf Does not follow any organized format.\r\n\u25cf needs a predefined model or framework. \r\n\u25cf more challenging to process and analyze.\r\n\u25cf makes up the bulk of big data.\r\n\u25cf requires advanced technologies like AI and machine learning for \r\nmeaningful insights.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_019.webp",
+      "text": "Types of Big Data\r\nUnstructured Data\r\nExamples:\r\n\u25cf Text Documents: Emails, blogs, and legal documents.\r\n\u25cf Multimedia Content: Images, videos, and audio files uploaded to\r\nplatforms like YouTube and Spotify.\r\n\u25cf Social Media Comments: Tweets, reviews, and comments that convey\r\nuser opinions and emotions.\r\nApplications:\r\n\u25cf Market Research(AI-powered sentiment analysis)\r\n\u25cf healthcare(analyzing X-rays or MRI scans)",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_020.webp",
+      "text": "Types of Big Data\r\nSemi structured Data\r\n\u25cf combines elements of both structured and unstructured data. \r\n\u25cf It has an organizational framework, such as tags or markers. \r\n\u25cf but lacks the rigid format of relational databases.\r\n\u25cf bridges the gap between the flexibility of unstructured data and the \r\norganization of structured data.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_021.webp",
+      "text": "Types of Big Data\r\nSemi structured Data\r\nExamples:\r\n\u25cf XML Files: These are used in data exchange between systems with\r\nstructured tags defining elements.\r\n\u25cf JSON Documents: These are commonly used to transmit data between\r\nweb applications and servers.\r\n\u25cf E-commerce Product Catalogs: Products are described using structured\r\nattributes (like price and stock) alongside unstructured descriptions.\r\nApplications:\r\n\u25cf APIs, Cloud Storage.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_022.webp",
+      "text": "Sources of Big Data\r\n\u25cf Social media platforms (Facebook, Twitter, Instagram)\r\n\u25cf IoT devices & sensors (smart homes, wearables)\r\n\u25cf Business transactions (e-commerce, banking)\r\n\u25cf Healthcare systems (patient records, medical imaging)\r\n\u25cf Scientific research (genomics, astronomy)\r\n\u25cf Government & public data (census, traffic monitoring)",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_023.webp",
+      "text": "Traditional Data vs Big Data\r\nAspect Traditional Data Big Data\r\nSize MBs to GBs TBs to PBs\r\nType of data Mostly structured Structured, \r\nsemi-structured, \r\nunstructured\r\nData integration Easy Difficult\r\nProcessing tools RDBMS, SQL Hadoop, Spark, NoSQL\r\nStorage Single server Distributed systems\r\nAnalysis Batch processing Real-time + batch",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_024.webp",
+      "text": "Applications of Big Data\r\n\u25cf Business & Marketing \u2013 customer behavior analysis, targeted ads\r\n\u25cf Healthcare \u2013 predictive diagnosis, drug discovery\r\n\u25cf Finance \u2013 fraud detection, risk management\r\n\u25cf Transportation \u2013 traffic prediction, route optimization\r\n\u25cf Retail \u2013 inventory management, recommendation systems\r\n\u25cf Government \u2013 smart cities, crime prediction\r\n\u25cf Science & Research \u2013 climate modeling, space exploration",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_025.webp",
+      "text": "Applications of Big Data\r\n\u25cf Business & Marketing \r\n\u25cb Analyzes customer behavior and preferences.\r\n\u25cb Helps businesses create targeted advertisements.\r\n\u25cb Improves customer satisfaction and sales. \r\n\u25cf Healthcare\r\n\u25cb Supports predictive diagnosis and early disease detection.\r\n\u25cb Helps in drug discovery and medical research.\r\n\u25cb Enables personalized treatment plans.\r\n\u25cf Finance\r\n\u25cb Detects fraudulent transactions.\r\n\u25cb Helps assess financial risks.\r\n\u25cb Supports credit scoring and investment decisions.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_026.webp",
+      "text": "Applications of Big Data\r\n\u25cf Transportation\r\n\u25cb Predicts traffic congestion.\r\n\u25cb Optimizes routes and travel time.\r\n\u25cb Improves public transportation planning.\r\n\u25cf Retail\r\n\u25cb Manages inventory and stock levels.\r\n\u25cb Recommends products based on customer preferences.\r\n\u25cb Forecasts product demand and sales.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_027.webp",
+      "text": "Applications of Big Data\r\n\u25cf Government\r\n\u25cb Supports smart city development.\r\n\u25cb Helps analyze crime patterns.\r\n\u25cb Improves public services and resource allocation.\r\n\u25cf Science & Research\r\n\u25cb Supports climate modeling and weather forecasting.\r\n\u25cb Helps analyze astronomical and space exploration data.\r\n\u25cb Accelerates scientific discoveries through large-scale data analysis.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_028.webp",
+      "text": "Introduction to Big Data Analytics\r\nWhat is Data Analytics?\r\n\u25cf Data analytics is a discipline focused on extracting insights from data.\r\n\u25cf It comprises the processes, tools and techniques of data analysis and \r\nmanagement, including the collection, organization, and storage of data.\r\n\u25cf The chief aim of data analytics is to apply statistical analysis and \r\ntechnologies on data to find trends and solve problems.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_029.webp",
+      "text": "Introduction to Big Data Analytics\r\nWhat is Data Analytics?\r\n\u25cf Data analytics has become increasingly important in the enterprise as a \r\nmeans for analyzing and shaping business processes and improving \r\ndecision-making and business results.\r\n\u25cf Data analytics draws from a range of disciplines \u2014 including computer \r\nprogramming, mathematics, and statistics \u2014 to perform analysis on data \r\nin an effort to describe, predict, and improve performance.\r\n\u25cf To ensure robust analysis, data analytics teams leverage a range of data \r\nmanagement techniques, including data mining, data cleansing, data \r\ntransformation, data modeling, and more.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_030.webp",
+      "text": "Introduction to Big Data Analytics\r\nData Analytics vs Data Analysis\r\n\u25cf Data analysis is a subset of data analytics concerned with examining, \r\ncleansing, transforming, and modeling data to derive conclusions.\r\n\u25cf Data analytics includes the tools and techniques used to perform data \r\nanalysis.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_031.webp",
+      "text": "Introduction to Big Data Analytics\r\nTypes of Data Analytics",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5__big-data_part1_pdf/thumb_032.webp",
+      "text": "Introduction to Big Data Analytics\r\nWhat is Big Data Analytics?\r\n\u25cf Big data analytics refers to collecting, processing, cleaning, and analyzing \r\nlarge datasets to help organizations operationalize their big data.\r\n\u25cf Big data analytics describes the process of uncovering trends, patterns, \r\nand correlations in large amounts of raw data to help make \r\ndata-informed decisions.\r\n\u25cf Big data analytics is the use of advanced analytic techniques against very \r\nlarge, diverse data sets that include structured, semi-structured and \r\nunstructured data, from different sources, and in different sizes from \r\nterabytes to zettabytes.",
+      "width": 1440,
+      "height": 810
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "mtime": 1793870526.0840561,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_001.webp",
+      "text": "MODULE 1: \r\nTransactions Management, \r\nConcurrency and Recovery\r\nPART 3- RECOVERY SYSTEM\r\nMS. ALVINA LOPES",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756Failure Classification\r\n\u2756Storage Structure\r\n\u2756Recovery and Atomicity\r\n\u2756Log based Recovery\r\n\u2756Shadow Paging\r\n\u2756Checkpoints\r\n\u2756ARIES\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_003.webp",
+      "text": "Recovery System: Recovery Concepts\r\n\u2022 A computer system, like any other device, is subject to failure.\r\n\u2022 Therefore, the database system must take actions in advance to ensure that the atomicity and \r\ndurability properties of transactions are preserved.\r\n\u2022 A recovery system ensures that the database remains consistent and correct even after failures \r\nlike:\r\n\u2022 System crash \r\n\u2022 Power failure \r\n\u2022 Transaction errors \r\n\u2022 The recovery scheme must also support high availability. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 3",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_004.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 4\r\n1. Transaction\r\n\u2022A sequence of operations \r\n(Read/Write) \r\n\u2022Must follow ACID properties\r\n2. Commit\r\n\u2022Transaction successfully completed\r\nChanges are permanently saved\r\n3. Abort (Rollback)\r\n\u2022Transaction fails\r\nAll changes are undone\r\n4. Failure Types\r\n\u2022Transaction failure \u2192 logical error \r\n\u2022System crash \u2192 power/OS failure \r\n\u2022Disk failure \u2192 hardware issue \r\n5. Stable Storage\r\n\u2022Storage that never loses data (ideal \r\nconcept)\r\n\u2022Used to store logs safely \r\nBasic Recovery Concepts",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_005.webp",
+      "text": "Failure Classification\r\n\u2022Transaction failure :\r\n\u2022 Logical errors: transaction cannot complete due to some internal error condition\r\n\u2022 System errors: the database system must terminate an active transaction due to an \r\nerror condition (e.g., deadlock)\r\n\u2022System crash: a power failure or other hardware or software failure causes the system to \r\ncrash.\r\n\u2022 Fail-stop assumption: non-volatile storage contents are assumed to not be \r\ncorrupted by system crash\r\n\u2022 Database systems have numerous integrity checks to prevent corruption of disk data\r\n\u2022Disk failure: a head crash or similar disk failure destroys all or part of disk storage\r\n\u2022 Destruction is assumed to be detectable: disk drives use checksums to detect \r\nfailures\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 5",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_006.webp",
+      "text": "Failure Classification\r\nRecovery Algorithms\r\n\u2022 Recovery algorithms are techniques to ensure database consistency and \r\ntransaction atomicity and durability despite failures\r\n\u2022 Recovery algorithms have two parts\r\n1. Actions taken during normal transaction processing to ensure enough \r\ninformation exists to recover from failures\r\n2. Actions taken after a failure to recover the database contents to a state that \r\nensures atomicity, consistency and durability\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 6",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_007.webp",
+      "text": "Storage Structure\r\n\u2022Volatile storage:\r\n\u2022 does not survive system crashes\r\n\u2022 examples: main memory, cache memory\r\n\u2022Nonvolatile storage:\r\n\u2022 survives system crashes\r\n\u2022 examples: disk, tape, flash memory, non-volatile (battery backed up) RAM\r\n\u2022Stable storage:\r\n\u2022 a mythical form of storage that survives all failures\r\n\u2022 approximated by maintaining multiple copies on distinct nonvolatile media\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 7",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_008.webp",
+      "text": "Stable Storage Implementation\r\n\u2022 To implement stable storage, we need to \r\n1. replicate the needed information in several non-volatile storage media (usually disk) \r\nwith independent failure modes and \r\n2. update the information in a controlled manner \r\nto ensure that failure during data transfer does not damage the needed information.\r\n\u2022 Maintain multiple copies of each block on separate disks\r\n\u2022 copies can be at remote sites to protect against disasters such as fire or flooding.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 8",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_009.webp",
+      "text": "Stable Storage Implementation\r\n\u2022Failure during data transfer can still result in inconsistent copies: Block transfer can \r\nresult in\r\n\u2022 Successful completion\r\n\u2022 Partial failure: destination block has incorrect information\r\n\u2022 Total failure: destination block was never updated\r\n\u2022Protecting storage media from failure during data transfer (one solution):\r\n\u2022 Execute output operation as follows (assuming two copies of each block):\r\n1. Write the information onto the first physical block.\r\n2. When the first write successfully completes, write the same information onto the second physical \r\nblock.\r\n3. The output is completed only after the second write successfully completes.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 9",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_010.webp",
+      "text": "Stable Storage Implementation\r\n\u2022Protecting storage media from failure during data transfer:\r\n\u2022Copies of a block may differ due to failure during output operation. To recover from failure:\r\n\u20221. First find inconsistent blocks:\r\n1. Expensive solution: Compare the two copies of every disk block.\r\n2. Better solution:\r\nRecord in-progress disk writes on non-volatile storage (Nonvolatile RAM or special area of disk).\r\nUse this information during recovery to find blocks that may be inconsistent, and only compare \r\ncopies of these.\r\nUsed in hardware RAID systems\r\n\u20222. If either copy of an inconsistent block is detected to have an error (bad checksum), \r\noverwrite it by the other copy. If both have no error, but are different, overwrite the second \r\nblock by the first block. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 10",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_011.webp",
+      "text": "Data Access\r\n\u2022Physical blocks are those blocks residing on the disk.\r\n\u2022Buffer blocks are the blocks residing temporarily in main memory.\r\n\u2022Block movements between disk and main memory are initiated through the \r\nfollowing two operations:\r\n\u2022 input(B) transfers the physical block B to main memory.\r\n\u2022 output(B) transfers the buffer block B to the disk, and replaces the appropriate \r\nphysical block there.\r\n\u2022We assume, for simplicity, that each data item fits in, and is stored inside, a single \r\nblock.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 11",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_012.webp",
+      "text": "Data Access\r\n\u2022 Each transaction Ti has its private work-area in which local copies of all data items accessed \r\nand updated by it are kept.\r\n\u2022 Ti 's local copy of a data item X is called xi.\r\n\u2022Transferring data items between system buffer blocks and its private work-area done by:\r\n\u2022 read(X) assigns the value of data item X to the local variable xi.\r\n\u2022 write(X) assigns the value of local variable xi to data item {X} in the buffer block.\r\n\u2022 Note: output(BX) need not immediately follow write(X). System can perform the output operation \r\nwhen it deems fit.\r\n\u2022Transactions\r\n\u2022 Must perform read(X) before accessing X for the first time (subsequent reads can be from local copy).\r\n\u2022 write(X) can be executed at any time before the transaction commits.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 12",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_013.webp",
+      "text": "Data Access\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 13\r\nFigure 1. Block storage operations.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_014.webp",
+      "text": "Recovery and Atomicity\r\n\u2022 To ensure atomicity despite failures, we first output information describing the \r\nmodifications to stable storage without modifying the database itself.\r\n\u2022 2 techniques:\r\n1. Log-based recovery\r\n2. Shadow-paging \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 14",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_015.webp",
+      "text": "Recovery Techniques\r\n1. Log-Based Recovery\r\nUses logs to Undo/Redo operations\r\nTwo types: \r\n\u25e6 Deferred Update (Redo only) \r\n\u25e6 Immediate Update (Undo + Redo) \r\n2. Shadow Paging\r\nMaintains old and new page copies\r\nNo need for logs \r\nRecovery by switching page tables\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 15",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_016.webp",
+      "text": "Shadow Paging\r\n\u2022Shadow Paging is alternative to log-based recovery.\r\n\u2022This scheme is useful if transactions execute serially. \r\n\u2022It ensures ACID properties (atomicity and durability) without using logs\r\n\u2022It maintains two page tables.\r\n1. Shadow Page Table (original, stable state) \r\n2. Current Page Table (for active updates). \r\n\u2022Updates are made on a new copy, not on the original.\r\n\u2022It enables fast, instantaneous recovery by discarding the current table upon \r\nfailure and switching tables upon commit.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 16",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_017.webp",
+      "text": "Shadow Paging\r\n\u2022Store the shadow page table in nonvolatile storage, such that state of the database \r\nprior to transaction execution may be recovered.\r\n\u2022 Shadow page table is never modified during execution.\r\n\u2022To start with, both the page tables are identical. \r\n\u2022Only current page table is used for data item accesses during execution of the \r\ntransaction. \r\n\u2022Whenever any page is about to be written for the first time\r\n\u2022 A copy of this page is made onto an unused page.\r\n\u2022 The current page table is then made to point to the copy\r\n\u2022 The update is performed on the copy\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 17",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_018.webp",
+      "text": "Shadow Paging\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 18",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_019.webp",
+      "text": "Shadow Paging\r\nKey Components and Working:\r\n\u2022Two Tables: When a transaction starts, the current page table is a copy of the \r\nshadow page table. Both point to the same pages on the disk.\r\n\u2022Out-of-Place Updates: When a page is modified, a new block is allocated on the \r\ndisk, and the modification is written there. The current page table points to this \r\nnew block, while the shadow page table still points to the old, unmodified block.\r\n\u2022Commit: To commit, the current page table becomes the new shadow page table, \r\nand the old disk blocks are freed.\r\n\u2022Abort/Recovery: If the transaction fails, the current page table is discarded, and \r\nthe shadow table remains, effectively reversing changes without undo operations.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 19",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_020.webp",
+      "text": "Shadow Paging\r\nAdvantages:\r\nFast Recovery: No UNDO or REDO operations are required.\r\nNo Overhead: Eliminates the need for writing log records to the disk continuously. \r\nDisadvantages:\r\nData Fragmentation: Pages become scattered on the disk over time, reducing \r\nperformance.\r\nHigh Commit Cost: Committing requires updating the entire page table and clearing old \r\npages, which is inefficient.\r\nConcurrency Issues: Difficult to manage multiple concurrent transactions compared to \r\nlog-based techniques\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 20",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_021.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 21\r\n2. Current Directory \r\nThis is the working copy\r\nIt points to: \r\nSome old pages\r\nSome new updated pages\r\nExample:\r\nPage 2 \u2192 now points to Page 2 (new)\r\nPage 5 \u2192 now points to Page 5 (new)\r\n3. Middle Section (Pages)\r\nwe can see:\r\n\u2022Page 2 (old) and Page 2 (new) \r\n\u2022Page 5 (old) and Page 5 (new) \r\n\u2022Old pages are unchanged\r\n\u2022New pages are modified copies",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_022.webp",
+      "text": "Shadow Paging\r\nWorking of Shadow Paging \r\nInitial State\r\nSystem maintains a page table called Shadow Directory\r\nA Current Directory is created as a copy of shadow directory \r\nBoth directories point to same data pages initially\r\nWhen Transaction Starts\r\nA new Current Directory is used for updates \r\nShadow Directory remains unchanged (safe backup)\r\nBoth directories still point to same pages at start\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 22",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_023.webp",
+      "text": "Shadow Paging\r\nWhen a Page is Updated\r\nSystem does NOT modify original page\r\nA new copy of the page is created\r\nExample from diagram: \r\n\u25e6 Page 2 (old) \u2192 Page 2 (new) \r\n\u25e6 Page 5 (old) \u2192 Page 5 (new) \r\nUpdating the Current Directory\r\nCurrent directory pointers are updated to new pages\r\nUnchanged pages still point to old pages\r\nSo current directory has mix of old + new pages\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 23",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_024.webp",
+      "text": "Shadow Paging\r\nShadow Directory Behavior\r\nShadow directory remains unchanged\r\nIt continues to point to only old pages\r\nActs as a backup version of database\r\nDuring Execution\r\nTwo versions exist: \r\n\u25e6 Shadow version \u2192 old data\r\n\u25e6 Current version \u2192 updated data\r\nAll operations use current directory\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 24",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_025.webp",
+      "text": "Shadow Paging\r\nCommit Operation\r\nWhen transaction is successful: \r\n\u25e6 Current directory becomes the new main directory\r\n\u25e6 Shadow directory is replaced\r\nNew pages become permanent\r\nAbort / System Failure\r\nIf failure occurs before commit: \r\n\u25e6 Current directory is discarded\r\n\u25e6 Shadow directory is used \r\nDatabase returns to previous consistent state\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 25",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_026.webp",
+      "text": "Log-Based Recovery\r\n\u2022 Log is the most widely used structure for recording database modifications.\r\n\u2022A log is a sequence of log records.\r\n\u2022It records all the update activities in the database. \r\n\u2022It is used to recover the database after a crash or failure. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 26",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_027.webp",
+      "text": "Log-Based Recovery\r\nUpdate Log Record (Structure)\r\nEach log entry for a write operation contains:\r\n\u2022Transaction ID (Ti) \u2192 Which transaction performed the operation \r\n\u2022Data Item (Xj) \u2192 Which data item was modified \r\n\u2022Old Value (V1) \u2192 Value before the update \r\n\u2022New Value (V2) \u2192 Value after the update \r\nExample:\r\n<T1, X, 100, 150>\r\nTransaction T1 changed X from 100 \u2192 150\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 27",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_028.webp",
+      "text": "Log-Based Recovery\r\nTypes of Log Records\r\nStart Record\r\n\u25e6 <Ti start> \u2192 Transaction Ti has started \r\nWrite Record\r\n\u25e6 <Ti, Xj, V1, V2> \r\n\u25e6 Shows update from old value to new value \r\nCommit Record\r\n\u25e6 <Ti commit> \u2192 Transaction completed successfully \r\nAbort Record\r\n\u25e6 <Ti abort> \u2192 Transaction failed and was rolled back\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 28",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_029.webp",
+      "text": "Log-Based Recovery\r\n\u2022 When transaction Ti starts, it registers itself by writing a <Ti start> log record\r\n\u2022 Before Ti executes write(X), a log record <Ti, X, V1, V2> is written.\r\n\u2022 When Ti finishes it last statement, the log record <Ti commit> is written. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 29",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_030.webp",
+      "text": "Log-Based Recovery\r\nTwo Log-Based Recovery Techniques\r\n1. Deferred Database Modification (Lazy Update)\r\nChanges are not applied immediately to the database \r\nUpdates are stored in log first \r\nApplied only at commit\r\nRecovery:\r\n\u2022Redo only committed transactions . No need to undo anything \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 30",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_031.webp",
+      "text": "Log-Based Recovery\r\nTwo Log-Based Recovery Techniques\r\n2. Immediate Database Modification (Eager Update)\r\nAllows updates of an uncommitted transaction to be made to the buffer, or the disk itself,\r\nbefore the transaction commits\r\nChanges are applied immediately to database\r\nLog is written before actual update (Write-Ahead Logging)\r\nOrder in which blocks are output can be different from the order in which they are written.\r\nRecovery:\r\n\u2022Undo uncommitted transactions . Redo committed transactions\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 31",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_032.webp",
+      "text": "Transaction Commit\r\n\u2022 A transaction is said to have committed when its commit log record is output to \r\nstable storage\r\n\u2022 All previous log records of the transaction must have been output already.\r\n\u2022 Writes performed by a transaction may still be in the buffer when the transaction \r\ncommits, and may be output later.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 32",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_033.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 33\r\nImmediate Database Modification Example",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_034.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 34\r\n\u2022All updates are recorded in the log first\r\n\u2022Actual database write is delayed until the transaction \r\ncommits \r\n\u2022That\u2019s why it\u2019s called \u201cdeferred\u201d (postponed)\r\nFirst log \u2192 then commit \u2192 then update database\r\nStep-by-Step Working\r\n1. Transaction Starts\r\n\u2022Log entry:\r\n\u2022<Ti start>\r\n2. Write Operation Occurs\r\n\u2022When write(X) happens:\r\n\u2022<Ti, X, V>\r\n\u2022Only new value (V) is stored\r\nOld value is NOT needed\r\nDeferred Database Modification (Lazy Update) 3. No Immediate Database Update\r\n\u2022The actual database is NOT changed yet\r\n\u2022Changes are just sitting in the log\r\n4. Commit Happens\r\n\u2022Log entry:\r\n\u2022<Ti commit>\r\n5. Apply Changes to Database\r\n\u2022After commit: \r\n\u2022 System reads log \r\n\u2022 Applies all recorded updates to database\r\nRecovery Mechanism\r\nIf system crashes:\r\n\u2022 Only REDO is needed\r\n\u2022 Redo all transactions that have <commit> \r\n\u2022 Ignore incomplete transactions \r\n\u2022 No UNDO required",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_035.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 35\r\nExample (Very Important)\r\nLog:\r\n<T1 start>\r\n<T1, A, 500>\r\n<T1, B, 300>\r\n<T1 commit>\r\nAfter crash:\r\nApply:\r\n\u2022A = 500 \r\n\u2022B = 300 \r\nAdvantages\r\n\u2022Simple recovery \r\n\u2022No undo operation needed \r\n\u2022Less complexity \r\nDisadvantages\r\n\u2022Updates delayed \u2192 slower response \r\n\u2022Not suitable for real-time systems",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_036.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 36\r\n\u2022Database is updated immediately, even before the transaction \r\ncommits \r\n\u2022Unlike deferred, changes are directly written to database \r\nwhile transaction is active\r\n\u2022\u201cUpdate now, commit later\u201d\r\nKey Rule \r\nLog must be written BEFORE database update\r\nThis is called: Write-Ahead Logging (WAL)\r\n\u2022First \u2192 write log to stable storage \r\n\u2022Then \u2192 update database \r\nEnsures recovery is always possible\r\n\u2022 Updates can be written: Before commit OR after commit\r\n\u2022 Order of writing: May be different from execution order\r\n\u2022 Logs are stored in stable storage\r\nImmediate Database Modification Recovery Mechanism\r\nAfter crash:\r\n\u2022 If transaction is COMMITTED: REDO \r\nrequired\r\nReapply changes using new values \r\n\u2022 If transaction is NOT committed: UNDO \r\nrequired\r\nRollback using old values \r\nUSE BOTH UNDO and REDO\r\nBecause:\r\n\u2022 Some updates may already be written before \r\ncrash \r\n\u2022 Some may not be written \r\nSo system must:\r\n\u2022 Undo incomplete work \r\n\u2022 Redo completed work",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_037.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 37\r\nWorking Steps\r\n1. Transaction Starts\r\n<Ti start>\r\n2. Write Operation\r\n<Ti, X, old value, new value>\r\nBoth values are stored:\r\n\u2022Old value \u2192 for UNDO \r\n\u2022New value \u2192 for REDO \r\n3. Immediate Update\r\n\u2022Database is updated right away\r\n\u2022Even if transaction is not committed yet \r\n4. Commit\r\n<Ti commit>\r\nExample\r\nLog:\r\n<T1 start>\r\n<T1, A, 100, 150>\r\n<T1, B, 200, 250>\r\nCrash happens (no commit)\r\nRecovery:\r\n\u2022UNDO T1: \r\n\u2022 A \u2192 100 \r\n\u2022 B \u2192 200 \r\nAdvantages\r\n\u2022Faster updates (no delay) \r\n\u2022Suitable for real-time systems \r\nDisadvantages\r\n\u2022Complex recovery (UNDO + REDO needed) \r\n\u2022Needs careful logging (WAL)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_038.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 38\r\nFeature Deferred Immediate\r\nUpdate Time After commit Before commit\r\nLog Stores New value only Old + New values\r\nRecovery REDO only UNDO + REDO\r\nDeferred Database Modification and Immediate Database Modification",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_039.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 39\r\nGiven Log (Before Crash)\r\nAssume the system log is:\r\n<T1 start>\r\n<T1, A, 100, 150>\r\n<T2 start>\r\n<T2, B, 200, 250>\r\n<T1, C, 300, 350>\r\n<T1 commit>\r\n<T2, D, 400, 450>\r\nCRASH\r\nStep 1: Identify Transaction States\r\nTransaction Status\r\nT1 Committed\r\nT2 Not committed\r\nRule: Committed \u2192 REDO\r\nUncommitted \u2192 UNDO\r\nStep 2: REDO Phase (Forward Direction ) \r\nApply all changes of committed transactions (T1)\r\nOperations of \r\nT1:<T1, A, 100, 150> \u2192 A = 150\r\n<T1, C, 300, 350> \u2192 C = 350\r\nAfter REDO: A = 150 and C = 350\r\nStep 3: UNDO Phase (Backward Direction )\r\nUndo all changes of uncommitted transactions (T2)\r\nGo backwards in log Operations of \r\nT2:<T2, D, 400, 450> \u2192 D = 400 (undo)\r\n<T2, B, 200, 250> \u2192 B = 200 (undo)\r\nAfter UNDO: B = 200 and D = 400\r\n\u2022 T1 changes are preserved (because committed)\r\n\u2022 T2 changes are rolled back (because no commit)\r\nData Item Final Value\r\nA 150\r\nB 200\r\nC 350\r\nD 400\r\nImmediate Database Modification.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_040.webp",
+      "text": "Undo and Redo Operations\r\n\u2022 undo(Ti) -- restores the value of all data items updated by Ti to their old values, \r\ngoing backwards from the last log record for Ti\r\n\u2022 Each time a data item X is restored to its old value V a special log record <Ti , \r\nX, V> is written out\r\n\u2022 When undo of a transaction is complete, a log record <Ti abort> is written out.\r\n\u2022 redo(Ti) -- sets the value of all data items updated by Ti to the new values, going \r\nforward from the first log record for Ti\r\n\u2022 No logging is done in this case.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 40",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_041.webp",
+      "text": "Recovering from Failure\r\n\u2022 When recovering after failure:\r\n\u2022 Transaction Ti needs to be undone if the log\r\n\u2022 Contains the record <Ti start>,\r\n\u2022 But does not contain either the record <Ti commit> or <Ti abort>.\r\n\u2022 Transaction Ti needs to be redone if the log\r\n\u2022 Contains the records <Ti start>\r\n\u2022 And contains the record <Ti commit> or <Ti abort>\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 41",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_042.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 42\r\nImmediate DB Modification Recovery Example",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_043.webp",
+      "text": "Checkpoints\r\n\u2022 Redoing/undoing all transactions recorded in the log can be very slow\r\n\u2022 Processing the entire log is time-consuming if the system has run for a long time\r\n\u2022 We might unnecessarily redo transactions which have already output their updates to \r\nthe database.\r\n\u2022 Streamline recovery procedure by periodically performing checkpointing\r\n\u20221. Output all log records currently residing in main memory onto stable storage.\r\n\u20222. Output all modified buffer blocks to the disk.\r\n\u20223. Write a log record < checkpoint L> onto stable storage where L is a list of all \r\ntransactions active at the time of checkpoint.\r\n\u20224. All updates are stopped while doing checkpointing\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 43",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_044.webp",
+      "text": "Checkpoints\r\n\u2022During recovery we need to consider only the most recent transaction Ti that started before \r\nthe checkpoint, and transactions that started after Ti.\r\n\u2022 Scan backwards from end of log to find the most recent <checkpoint L> record\r\n\u2022 Only transactions that are in L or started after the checkpoint need to be redone or undone\r\n\u2022 Transactions that committed or aborted before the checkpoint already have all their updates \r\noutput to stable storage.\r\n\u2022 Some earlier part of the log may be needed for undo operations\r\n\u2022 Continue scanning backwards till a record <Ti start> is found for every transaction Ti in L.\r\n\u2022 Parts of log prior to earliest <Ti start> record above are not needed for recovery, and can be \r\nerased whenever desired.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 44",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_045.webp",
+      "text": "Checkpoints\r\n\u2022T1 can be ignored \r\n(updates already output to disk \r\ndue to checkpoint)\r\n\u2022 T2 and T3 redone.\r\n\u2022 T4 undone\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 45",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_046.webp",
+      "text": "Recovery Algorithm\r\n\u2022Logging (during normal operation):\r\n\u2022 <Ti start> at transaction start\r\n\u2022 <Ti, Xj, V1, V2> for each update, and\r\n\u2022 <Ti commit> at transaction end\r\n\u2022 Transaction rollback (during normal operation)\r\n\u2022 Let Ti be the transaction to be rolled back\r\n\u2022 Scan log backwards from the end, and for each log record of Ti of the form <Ti, Xj, V1, V2>\r\n\u2022 Perform the undo by writing V1 to Xj,\r\n\u2022 Write a log record <Ti , Xj, V1>\r\n\u2022 such log records are called compensation log records\r\n\u2022 Once the record <Ti start> is found stop the scan and write the log record <Ti abort> \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 46",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_047.webp",
+      "text": "Fuzzy Checkpointing\r\n\u2022 To avoid long interruption of normal processing during checkpointing, allow updates to \r\nhappen during checkpointing\r\n\u2022 Fuzzy checkpointing is done as follows:\r\n1. Temporarily stop all updates by transactions\r\n2. Write a <checkpoint L> log record and force log to stable storage\r\n3. Note list M of modified buffer blocks\r\n4. Now permit transactions to proceed with their actions\r\n5. Output to disk all modified buffer blocks in list M\r\noblocks should not be updated while being output\r\noFollow WAL: all log records pertaining to a block must be output before the block is output\r\n6. Store a pointer to the checkpoint record in a fixed position last_checkpoint on disk\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 47",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_048.webp",
+      "text": "Fuzzy Checkpointing\r\n\u2022 When recovering using a fuzzy checkpoint, start scan from the checkpoint record pointed to \r\nby last_checkpoint\r\n\u2022 Log records before last_checkpoint have their updates reflected in database on disk, and \r\nneed not be redone.\r\n\u2022 Incomplete checkpoints, where system had crashed while performing checkpoint, are \r\nhandled safely\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 48",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_049.webp",
+      "text": "ARIES\r\n\u2022 ARIES- Algorithm for Recovery and Isolation Exploiting Semantics \r\n\u2022ARIES is the most widely used database recovery algorithm in modern Database \r\nManagement Systems (DBMS). \r\n\u2022 It was developed by IBM and is used in systems such as IBM Db2 and has influenced \r\nrecovery mechanisms in many other database systems.\r\n\u2022 Its purpose is to recover the database after a system crash while ensuring the ACID \r\nproperties, especially Atomicity and Durability.\r\n\u2022 It incorporates numerous optimizations to reduce overheads during normal processing and to \r\nspeed up recovery.\r\n\u2022 It is designed to improve concurrency, reduce logging overhead and reduce recovery time.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 49",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_050.webp",
+      "text": "ARIES\r\nARIES:\r\n1. Uses log sequence number (LSN) to identify log records.\r\no Stores LSNs in pages to identify what updates have already been applied to a database page\r\n2. Supports Physiological redo.\r\n3. Uses Dirty page table to avoid unnecessary redos during recovery.\r\n4. Uses Fuzzy checkpointing that only records information about dirty pages, and does not \r\nrequire dirty pages to be written out at checkpoint time.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 50",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_051.webp",
+      "text": "ARIES Optimizations\r\nPhysiological redo\r\n\u2022 Affected page is physically identified, action within page can be logical\r\n\u2022 Used to reduce logging overheads\r\n\u2022 e.g. when a record is deleted and all other records have to be moved to fill hole\r\n\u2022 Physiological redo can log just the record deletion\r\n\u2022 Physical redo would require logging of old and new values for much of the page\r\n\u2022 Requires page to be output to disk atomically\r\n\u2022 Easy to achieve with hardware RAID, also supported by some disk systems\r\n\u2022 Incomplete page output can be detected by checksum techniques\r\n\u2022 But extra actions are required for recovery.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 51",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_052.webp",
+      "text": "ARIES Data Structures\r\n1. Log sequence number (LSN)\r\n2. Page LSN\r\n3. Log records\r\n4. Dirty page table\r\n5. Checkpoint log record\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 52",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_053.webp",
+      "text": "ARIES Data Structures\r\nLog sequence number (LSN)\r\n\u2022 It uniquely identifies each log record.\r\n\u2022 Must be sequentially increasing.\r\n\u2022 Generated such that it can also locate the log record on disk.\r\n\u2022 ARIES splits a log into multiple log files, each of which has a file number.\r\n\u2022 The LSN then consists of a file number and an offset within the file.\r\n\u2022 This allows fast access.\r\n\u2022 Easily extended to handle multiple log files.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 53",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_054.webp",
+      "text": "ARIES Data Structures\r\nPage LSN\r\n\u2022 Each page maintains an identifier called the PageLSN.\r\n\u2022 PageLSN is the LSN of the last log record whose effects are reflected on the page.\r\n\u2022 To update a page:\r\n\u2022 X-latch the page, and write the log record\r\n\u2022 Update the page\r\n\u2022 Record the LSN of the log record in PageLSN\r\n\u2022 Unlock page\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 54",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_055.webp",
+      "text": "ARIES Data Structures\r\nPage LSN\r\n\u2022 To flush page to disk, must first S-latch page\r\n\u2022 Thus, page state on disk is operation consistent\r\n\u2022 Required to support physiological redo\r\n\u2022 PageLSN is used during recovery to prevent repeated redo\r\n\u2022 Thus, ensuring idempotence\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 55",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_056.webp",
+      "text": "ARIES Data Structures\r\nLog records\r\n\u2022 Each log record contains LSN of previous log record of the same transaction\r\n\u2022 LSN in log record may be implicit\r\n\u2022 Special redo-only log record called compensation log record (CLR)\r\n\u2022 used to log actions taken during recovery that never need to be undone\r\n\u2022 Serves the role of operation-abort log records used in earlier recovery algorithm\r\n\u2022 Has a field UndoNextLSN to note next (earlier) record to be undone\r\n\u2022 Records in between would have already been undone\r\n\u2022 Required to avoid repeated undo of already undone actions\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 56",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_057.webp",
+      "text": "ARIES Data Structures\r\nLog records\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 57",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_058.webp",
+      "text": "ARIES Data Structures\r\nDirtyPageTable\r\n\u2022 List of pages in the buffer that have been updated\r\n\u2022 Contains, for each such page\r\n\u2022 PageLSN of the page\r\n\u2022 RecLSN is an LSN such that log records before this LSN have already been applied to the \r\npage version on disk\r\n\u2022 Set to current end of log when a page is inserted into dirty page table (just before being updated)\r\n\u2022 Recorded in checkpoints, helps to minimize redo work\r\n\u2022 Whenever the page is flushed to disk, the page is removed from the DirtyPageTable.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 58",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_059.webp",
+      "text": "ARIES Data Structures\r\nCheckpoint log record\r\n\u2022 Contains:\r\n\u2022 DirtyPageTable and list of active transactions\r\n\u2022 For each active transaction, LastLSN, the LSN of the last log record written by the \r\ntransaction\r\n\u2022 Fixed position on disk notes LSN of last completed checkpoint log record\r\n\u2022 Dirty pages are not written out at checkpoint time. Instead, they are flushed out \r\ncontinuously, in the background\r\n\u2022 Checkpoint is thus very low overhead, can be done frequently\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 59",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_060.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 60\r\nARIES Data Structures",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_061.webp",
+      "text": "ARIES Recovery Algorithm\r\n\u2022 ARIES recovery involves three passes:\r\n1. Analysis pass\r\n2. Redo pass\r\n3. Undo pass\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 61",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_062.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_062.webp",
+      "text": "ARIES Recovery Algorithm\r\nAnalysis pass: determines\r\n\u2022 Which transactions to undo\r\n\u2022 Which pages were dirty (disk version not up to date) at time of crash\r\n\u2022 RedoLSN: LSN from which redo should start\r\nRedo pass\r\n\u2022 Repeats history, redoing all actions from RedoLSN\r\n\u2022 RecLSN and PageLSNs are used to avoid redoing actions already reflected on page \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 62",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_063.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_063.webp",
+      "text": "ARIES Recovery Algorithm\r\nUndo pass\r\n\u2022 Rolls back all incomplete transactions\r\n\u2022 Transactions whose abort was complete earlier are not undone\r\n\u2022 Key idea: no need to undo these transactions: earlier undo actions were logged, and are \r\nredone as required\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 63",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_064.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_064.webp",
+      "text": "ARIES Recovery Algorithm\r\n\u2022 Analysis, redo and undo passes\r\n\u2022 Analysis determines where redo should start\r\n\u2022 Undo has to go back till start of earliest incomplete transaction\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 64",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_065.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_065.webp",
+      "text": "ARIES Algorithm\r\nAnalysis pass\r\n\u2022 Starts from last complete checkpoint log record\r\n\u2022 Reads DirtyPageTable from log record\r\n\u2022 Sets RedoLSN = min of RecLSNs of all pages in DirtyPageTable\r\n\u2022 In case no pages are dirty, RedoLSN = checkpoint record\u2019s LSN\r\n\u2022 Sets undo-list = list of transactions in checkpoint log record\r\n\u2022 Reads LSN of last log record for each transaction in undo-list from checkpoint log record\r\n\u2022 Scans forward from checkpoint\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 65",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 66,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_066.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_066.webp",
+      "text": "ARIES Algorithm\r\nAnalysis pass\r\n\u2022 Scans forward from checkpoint\r\n\u2022 If any log record found for transaction not in undo-list, adds transaction to undo-list\r\n\u2022 Whenever an update log record is found\r\n\u2022 If page is not in DirtyPageTable, it is added with RecLSN set to LSN of the update log \r\nrecord\r\n\u2022 If transaction end log record found, delete transaction from undo-list\r\n\u2022 Keeps track of last log record for each transaction in undo-list\r\n\u2022 May be needed for later undo\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 66",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 67,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_067.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_067.webp",
+      "text": "ARIES Algorithm\r\nAnalysis pass\r\n\u2022 At end of analysis pass:\r\n\u2022 RedoLSN determines where to start redo pass\r\n\u2022 RecLSN for each page in DirtyPageTable used to minimize redo work\r\n\u2022 All transactions in undo-list need to be rolled back\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 67",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 68,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_068.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_068.webp",
+      "text": "ARIES Algorithm\r\nRedo pass: Repeats history by replaying every action not already reflected in the page on \r\ndisk, as follows:\r\n\u2022 Scans forward from RedoLSN. Whenever an update log record is found:\r\n1. If the page is not in DirtyPageTable or the LSN of the log record is less than the \r\nRecLSN of the page in DirtyPageTable, then skip the log record.\r\n2. Otherwise fetch the page from disk. If the PageLSN of the page fetched from disk is less \r\nthan the LSN of the log record, redo the log record\r\nNOTE: if either test is negative the effects of the log record have already appeared on the \r\npage. First test avoids even fetching the page from disk!\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 68",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 69,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_069.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_069.webp",
+      "text": "ARIES Algorithm\r\nUndo actions\r\n\u2022When an undo is performed for an update log record\r\n\u2022 Generate a CLR containing the undo action performed (actions performed during undo are \r\nlogged physicaly or physiologically).\r\n\u2022 CLR for record n noted as n\u2019 in figure below\r\n\u2022 Set UndoNextLSN of the CLR to the PrevLSN value of the update log record\r\n\u2022 Arrows indicate UndoNextLSN value\r\n\u2022ARIES supports partial rollback\r\n\u2022 Used e.g. to handle deadlocks by rolling back just enough to release reqd. locks\r\n\u2022 Figure indicates forward actions after partial rollbacks\r\n\u2022 records 3 and 4 initially, later 5 and 6, then full rollback\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 69",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 70,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_070.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_070.webp",
+      "text": "ARIES Algorithm\r\nUndo actions\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 70",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 71,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_071.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_071.webp",
+      "text": "ARIES Algorithm\r\nUndo pass\r\n\u2022 Performs backward scan on log undoing all transaction in undo-list\r\n\u2022 Backward scan optimized by skipping unneeded log records as follows:\r\n\u2022 Next LSN to be undone for each transaction set to LSN of last log record for transaction \r\nfound by analysis pass.\r\n\u2022 At each step pick largest of these LSNs to undo, skip back to it and undo it\r\n\u2022 After undoing a log record\r\n\u2022 For ordinary log records, set next LSN to be undone for transaction to PrevLSN noted in \r\nthe log record\r\n\u2022 For compensation log records (CLRs) set next LSN to be undo to UndoNextLSN noted in \r\nthe log record\r\n\u2022 All intervening records are skipped since they would have been undone already\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 71",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 72,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_072.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_072.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 72\r\nRecovery Actions in ARIES",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 73,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_073.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_073.webp",
+      "text": "Other ARIES Features\r\n\u2022Recovery Independence\r\n\u2022 Pages can be recovered independently of others\r\n\u2022 E.g. if some disk pages fail they can be recovered from a backup while other pages are \r\nbeing used\r\n\u2022 Savepoints:\r\n\u2022 Transactions can record savepoints and roll back to a savepoint\r\n\u2022 Useful for complex transactions\r\n\u2022 Also used to rollback just enough to release locks on deadlock\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 73",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 74,
+      "image": "/slides/admt_admt_module_1_module1-part3_pdf/slide_074.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part3_pdf/thumb_074.webp",
+      "text": "Other ARIES Features\r\n\u2022Fine-grained locking:\r\n\u2022 Index concurrency algorithms that permit tuple level locking on indices can be used\r\n\u2022 These require logical undo, rather than physical undo, as in earlier recovery algorithm\r\n\u2022 Recovery optimizations: For example:\r\n\u2022 Dirty page table can be used to prefetch pages during redo\r\n\u2022 Out of order redo is possible:\r\n\u2022 redo can be postponed on a page being fetched from disk, and performed when page is \r\nfetched.\r\n\u2022 Meanwhile other log records can continue to be processed\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 74",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "mtime": 1790142874.9930327,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_001.webp",
+      "text": "MODULE 1: \r\nTransactions Management, \r\nConcurrency and Recovery\r\nPART 1- TRANSACTIONS\r\nMS. ALVINA LOPES",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Transaction Concept \r\n\u2756 Transaction State \r\n\u2756 Implementation of Atomicity and Durability \r\n\u2756 Concurrent Executions \r\n\u2756 Serializability \r\n\u2756 Recoverability \r\n\u2756 Implementation of Isolation\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_003.webp",
+      "text": "Transaction Concept\r\n\u2756 Transaction is a collection of operation that form a single logical unit.\r\n\u2756 Transaction is a unit of program execution that access and possibly \r\nupdate various data items.\r\n\u2756 Transaction is an event that occurs in the database.\r\n\u2756 Transaction reads a value from the database or write a values to the \r\ndatabase.\r\n\u2756 Transaction also performs group of task.\r\n\u2756 Eg., A bank employee transfers $5000 from B\u2019s Account to X\u2019s Account.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 3",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_004.webp",
+      "text": "Transaction Concept\r\n\u2756 A transaction must see a consistent database.\r\n\u2756 During transaction execution the database may be inconsistent.\r\n\u2756 When the transaction is committed, the database must be \r\nconsistent.\r\n\u2756 Two main issues to deal with:\r\n\u2756 Failures of various kinds, such as hardware failures and system \r\ncrashes\r\n\u2756 Concurrent execution of multiple transactions.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 4",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_005.webp",
+      "text": "Transaction Concept \r\nKey Points:\r\n\u2022 Consistency: Consistency means database remains in a valid state before and \r\nafter a transaction. \r\n\u2022 Integrity: Integrity means the accuracy and correctness of data stored in the \r\ndatabase. It ensures that all data follows defined rules and constraints such as \r\nprimary key, foreign key, and domain constraints. \r\n\u2022 Reliability: Reliability means the ability of the database system to function \r\ncorrectly even in the presence of failures such as system crashes, power \r\nfailures, or errors.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 5",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_006.webp",
+      "text": "Basic Database Access Operations \r\n1. Read / Access Data (R)\r\nIt is the operation of reading data from \r\nthe database.\r\nData is fetched from disk (database \r\nstorage)\r\nStored temporarily in a memory \r\nvariable\r\nUsed when we want to view or use data\r\nExample:\r\nReading account balance from database\r\n2. Write / Change Data (W)\r\nIt is the operation of updating data in the \r\ndatabase.\r\nData is taken from memory variable\r\nWritten back to disk (database)\r\nUsed when we want to modify data\r\nExample:\r\nUpdating balance after deposit\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 6",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_007.webp",
+      "text": "Basic Database Access Operations \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 7\r\n4. Rollback\r\nRollback is a Transaction Control \r\nLanguage (TCL) command.\r\nIt undoes all changes made in a \r\ntransaction\r\nRestores the database to the previous \r\nstate\r\nUsed when an error occurs or \r\ntransaction fails\r\nMarks unsuccessful completion of \r\ntransaction\r\n3. Commit\r\nCommit is a Transaction Control \r\nLanguage (TCL) command.\r\nIt permanently saves all changes\r\nmade in a transaction \r\nAfter commit, changes cannot be \r\nundone\r\nMarks successful completion of \r\ntransaction",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_008.webp",
+      "text": "Transaction Concept Contd\r\nExample (Bank Transaction)\r\nA bank employee transfers \u20b950 from Account B to Account X\r\nThis transaction includes:\r\nRead balance of B \r\nDeduct \u20b950 from B \r\nRead balance of X \r\nAdd \u20b950 to X \r\nAll steps must happen together \u2014 otherwise it causes inconsistency.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 8",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_009.webp",
+      "text": "Example Contd\r\nTransfer of 50\u20b9 from Account A to Account B.\r\nInitially A= 500\u20b9, B= 800\u20b9. \r\nThis data is brought to RAM from Hard Disk.\r\n R(A) -- 500 // Accessed from RAM.\r\n A = A-50 // Deducting 50\u20b9 from A.\r\n W(A)--450 // Updated in RAM.\r\n R(B) -- 800 // Accessed from RAM.\r\n B=B+50 // 50\u20b9 is added to B's Account.\r\n W(B) --850 // Updated in RAM.\r\ncommit // The data in RAM is taken back to Hard Disk.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 9",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_010.webp",
+      "text": "Stages of Transaction\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 10",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_011.webp",
+      "text": "Transaction Concept (CONTD)\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 11\r\n\u2022 The database starts in a consistent \r\nstate before the transaction \r\nbegins.\r\n\u2022 During execution, it may become \r\ntemporarily inconsistent.\r\n\u2022 All operations are performed \r\nwithin the transaction.\r\n\u2022 After completion (COMMIT), the \r\ndatabase returns to a consistent \r\nstate.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_012.webp",
+      "text": "Transaction State Diagram\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 12\r\nSuccess path:\r\nActive \u2192 Partially Committed \u2192 Committed\r\nFailure path:\r\nActive \u2192 Failed \u2192 Aborted",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_013.webp",
+      "text": "Transaction State Diagram (CONTD)\r\nExample :\r\nTransfer \u20b95000 from Account A to Account B\r\n1. Active State\r\n\u2022 Transaction is currently executing\r\n\u2022 Performing operations like read/write\r\nExample:\r\nRead balance of A \r\nDeduct \u20b95000 \r\nAdd \u20b95000 to B \r\nTransaction is in progress\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 13",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_014.webp",
+      "text": "Transaction State Diagram (CONTD)\r\n2. Partially Committed State\r\n\u2022 All operations are executed\r\n\u2022 But changes are not yet permanently saved\r\nExample:\r\n\u20b95000 deducted from A \r\n\u20b95000 added to B \r\nWaiting to execute COMMIT\r\nAlmost complete, but not final\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 14",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_015.webp",
+      "text": "Transaction State Diagram (CONTD)\r\n3. Committed State\r\n\u2022 Changes are permanently saved in database\r\n\u2022 Transaction is successful\r\nExample:\r\nMoney successfully transferred \r\nData stored permanently \r\nCannot be undone now\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 15",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_016.webp",
+      "text": "Transaction State Diagram (CONTD)\r\n4. Failed State\r\n\u2022 Transaction cannot continue\r\n\u2022 Due to error, crash, or invalid operation\r\nExample:\r\nSystem crashes after deducting money from A \r\nNetwork failure occurs \r\nTransaction stops\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 16",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_017.webp",
+      "text": "Transaction State Diagram (CONTD)\r\n5. Aborted State\r\n\u2022 All changes are undone (ROLLBACK)\r\n\u2022 Database returns to its state prior to the start of the transaction.\r\n\u2022 Two options:\r\n\u2022 restart the transaction \u2013 only if no internal logical error\r\n\u2022 kill the transaction\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 17",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_018.webp",
+      "text": "Transaction State Diagram (CONTD)\r\n5. Aborted State\r\nExample:\r\n\u20b95000 deducted from A is restored \r\nNo money transferred \r\nNo partial update remains\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 18",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_019.webp",
+      "text": "Transaction Property\r\n\u2756To ensure integrity of data, the database system must ensure:\r\n1. Atomicity\r\n2. Consistency\r\n3. Isolation and\r\n4. Durability\r\n\u2756 Also, known as ACID Properties.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 19",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_020.webp",
+      "text": "1.Atomicity\r\n\u2022 A transaction should be atomic, meaning it is executed completely or not at all. \r\n\u2022 A transaction cannot be executed partially. \r\n\u2022 Either all operations of the transaction are properly reflected in the database or none are.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 20",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_021.webp",
+      "text": "2. Consistency\r\n\u2022 Consistency ensures that the database remains in a valid state before and \r\nafter a transaction. \r\n\u2022 A valid state follows all rules, constraints, and relationships (primary key, \r\nforeign key, etc.). \r\n\u2022 Execution of a transaction in isolation preserves the consistency of the \r\ndatabase.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 21",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_022.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 22\r\n\u2022 The diagram shows a transaction transferring \u20b9100 from account X to account Y.\r\n\u2022 X is reduced by 100 and Y is increased by 100.\r\n\u2022 The total balance (i.e 700) remains unchanged, maintaining consistency.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_023.webp",
+      "text": "3. Isolation\r\n\u2022 Isolation ensures that transactions execute independently without interfering with \r\neach other. \r\n\u2022 Changes made by one transaction are not visible to others until they are committed. \r\n\u2022 It ensures that concurrent transactions give the same result as serial execution. \r\nExample\r\nTwo users updating the same account:\r\nOne transaction should not see partial changes of another. Ensures correct and \r\nindependent execution\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 23",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_024.webp",
+      "text": "Durability\r\n\u2022 Durability ensures that once a transaction is committed, its changes are permanently \r\nstored in the database, even if a system crash or failure occurs.\r\n\u2022 After a transaction commits, the data is written to non-volatile storage (disk). \r\n\u2022 Even if the system crashes immediately after commit, the database can recover the \r\ncommitted data using logs or backups. \r\n\u2022 No committed data will be lost. \r\nExample:\r\nAfter transferring money from Account A to Account B:\r\nThe updated balances are saved on disk. \r\nEven if the system crashes right after commit, the transaction remains intact after \r\nrecovery.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 24",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_025.webp",
+      "text": "ACID Properties- Example of Fund Transfer\r\n\u2022 Transaction to transfer $50 from account A to account B: \r\n1. read(A) \r\n2. A := A \u2013 50 \r\n3. write(A) \r\n4. read(B) \r\n5. B := B + 50 \r\n6. write(B)\r\n\u2022 Consistency requirement \u2013 the sum of A and B is unchanged by the execution of the \r\ntransaction.\r\n\u2022 Atomicity requirement \u2014 if the transaction fails after step 3 and before step 6, the \r\nsystem should ensure that its updates are not reflected in the database, else an \r\ninconsistency will result.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 25",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_026.webp",
+      "text": "ACID Properties- Example of Fund Transfer\r\n\u2022 Durability requirement \u2014 once the user has been notified that the transaction has \r\ncompleted (i.e., the transfer of the $50 has taken place), the updates to the database \r\nby the transaction must persist despite failures.\r\n\u2022 Isolation requirement \u2014 if between steps 3 and 6, another transaction is allowed to \r\naccess the partially updated database, it will see an inconsistent database (the sum A + \r\nB will be less than it should be).\r\n\u2022 Can be ensured trivially by running transactions serially, that is one after the other. \r\n\u2022 However, executing multiple transactions concurrently has significant benefits, as we will see.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 26",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_027.webp",
+      "text": "Implementation of Atomicity and \r\nDurability\r\n\u2756The recovery-management component of a database system implements the \r\nsupport for atomicity and durability.\r\n\u2756The shadow-database scheme:\r\n\u27a2assume that only one transaction is active at a time.\r\n\u27a2a pointer called db_pointer always points to the current consistent copy of \r\nthe database.\r\n\u27a2all updates are made on a shadow copy of the database, and db_pointer is \r\nmade to point to the updated shadow copy only after the transaction \r\nreaches partial commit and all updated pages have been flushed to disk.\r\n\u27a2in case transaction fails, old consistent copy pointed to by db_pointer can \r\nbe used, and the shadow copy can be deleted.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 27",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_028.webp",
+      "text": "Implementation of Atomicity and \r\nDurability\r\nThe shadow-database scheme:\r\n\u2022 Assumes disks to not fail.\r\n\u2022 Useful for text editors, but extremely inefficient for large databases: executing \r\na single transaction requires copying the entire database.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 28",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_029.webp",
+      "text": "Concurrent Executions\r\n\u2756 Multiple transactions are allowed to run concurrently in the system.\r\n\u2756 Advantages are:\r\n\u2756improved throughput and increased processor and disk utilization, leading \r\nto better transaction throughput: one transaction can be using the CPU \r\nwhile another is reading from or writing to the disk \r\n\u2756Reduced waiting time and reduced average response time for transactions: \r\nshort transactions need not wait behind long ones.\r\n\u2756 Concurrency control schemes \u2013 mechanisms to achieve isolation, i.e., to \r\ncontrol the interaction among the concurrent transactions in order to prevent \r\nthem from destroying the consistency of the database.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 29",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_030.webp",
+      "text": "Schedule\r\nA schedule is an ordered sequence of operations (read, write, commit, etc.) from \r\none or more transactions, representing how the transactions are executed in the \r\ndatabase system.\r\nKey Points\r\nA schedule determines the execution order of operations from multiple \r\ntransactions \r\nIt can include: \r\n\u25e6 Operations of a single transaction, or \r\n\u25e6 Interleaved operations of multiple transactions \r\nIt preserves the order of operations within each transaction\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 30",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_031.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 31",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_032.webp",
+      "text": "Serial Schedules in DBMS\r\n\u2756A serial schedule is a schedule in which transactions are executed one after \r\nanother, without any interleaving of operations.\r\n\u2756Only one transaction executes at a time\r\n\u2756The next transaction starts only after the previous one finishes\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 32",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_033.webp",
+      "text": "Serial Schedules in DBMS\r\nKey Characteristics\r\nSerial schedules are always:\r\nConsistent\r\n\u2192 Database remains correct because there is no interference between \r\ntransactions \r\nRecoverable\r\n\u2192 A transaction commits only after the transactions it depends on have \r\ncommitted \r\nCascadeless\r\n\u2192 No transaction reads uncommitted data, so no cascading rollback\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 33",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_034.webp",
+      "text": "Serial Schedules in DBMS\r\nProblems with Serial Scheduling\r\nAlthough serial schedules are safe and simple, they have several performance \r\ndrawbacks:\r\n1. More Waiting Time\r\n2. Less Resource Utilization\r\n3. Less Throughput\r\n4. Late Response Time\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 34",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_035.webp",
+      "text": "Examples of Serial Schedules\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 35",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_036.webp",
+      "text": "Non-Serial Schedule \r\nA non-serial schedule is a schedule in which multiple transactions execute \r\nconcurrently, and their operations are interleaved (mixed) with each other.\r\nKey Characteristics\r\nNon-serial schedules are NOT always: Consistent, Recoverable, Cascadeless.\r\nAdvantages\r\nReduced Waiting Time: Transactions do not wait for others to complete \r\nIncreased Resource Utilization: CPU, memory, and I/O are used efficiently \r\nDecreased Response Time: Faster execution for individual transactions \r\nHigher Throughput: More transactions completed per unit time \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 36",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_037.webp",
+      "text": "Examples of Non-Serial Schedules\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 37",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_038.webp",
+      "text": "Concurrent Executions\r\n\u2022Concurrent execution means that multiple transactions are executed \r\nsimultaneously in an interleaved(one after other) manner, rather than one \r\ntransaction completing before another begins.\r\n\u2022When multiple transactions execute concurrently without proper control, it \r\nmay lead to problems affecting data integrity and consistency. Such issues are \r\ncalled Concurrency Problems (or Anomalies)\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 38",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_039.webp",
+      "text": "Concurrency Problems\r\n1. Lost Update (Write\u2013Write Conflict)\r\n2. Uncommitted Data / Dirty Read (Write\u2013Read Conflict)\r\n3. Inconsistent Retrieval / Unrepeatable Read (Read\u2013Write Conflict)\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 39",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_040.webp",
+      "text": "Concurrent Executions\r\nSolution\r\nTo ensure correctness, DBMS enforces:\r\nSerializability\r\nConcurrent schedule must produce the same result as some serial schedule\r\nConcurrency Control Techniques\r\n\u2022Locking (2PL \u2013 Two Phase Locking) \r\n\u2022Timestamp Ordering \r\n\u2022Validation-based protocols\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 40",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_041.webp",
+      "text": "Serializability\r\n\u2022Serializability is a concept in DBMS that ensures that even when transactions are \r\nexecuted concurrently (non-serially), the final result is equivalent to some serial \r\n(one-by-one) execution, thus maintaining a consistent database.\r\nThere are two ways to check whether any non-serial schedule is serializable.\r\n1. Conflict Serializability\r\n2. View Serializability\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 41",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_042.webp",
+      "text": "Types of Serializability\r\n1. Conflict Serializability\r\nA schedule is said to be conflict serializable if it can be converted into a serial \r\nschedule by swapping only non-conflicting operations, without changing the \r\neffect of the schedule.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 42",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_043.webp",
+      "text": "Types of Serializability\r\nConflict Serializability\r\nTwo operations conflict if:\r\n\u2022 They belong to different transactions, and \r\n\u2022 They operate on the same data item, and \r\n\u2022 At least one of them is a write (W) operation.\r\nTypes of Conflicts\r\n\u2022Read\u2013Write (R\u2013W)\r\n\u2022Write\u2013Read (W\u2013R)\r\n\u2022Write\u2013Write (W\u2013W)\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 43",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_044.webp",
+      "text": "Precedence Graph (Serialization Graph)\r\nA precedence graph is a directed graph used to determine whether a schedule is \r\nconflict serializable.\r\nSteps to Check Conflict Serializability\r\nCreate Nodes\r\n\u25e6 For each transaction \ud835\udc47\ud835\udc56\r\n ,create a node (vertex) in the graph \r\nAdd Edges\r\n\u25e6 For every conflicting operation pair, draw a directed edge \ud835\udc47\ud835\udc56 \u2192 \ud835\udc47\ud835\udc57\r\nif an operation of \ud835\udc47\ud835\udc56 occurs before a conflicting operation of \ud835\udc47\ud835\udc57\r\nCheck for Cycles\r\n\u25e6 No Cycle \u2192 Schedule is Conflict Serializable\r\n\u25e6 Cycle Present \u2192 Schedule is Not Conflict Serializable\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 44",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_045.webp",
+      "text": "Precedence Graph (CONTD)\r\nImportant Rules for Edges (Very Important )\r\nDraw edge Ti \u2192 Tj if:\r\nRead\u2013Write (R\u2013W)\r\nTj writes after Ti reads \r\nWrite\u2013Read (W\u2013R)\r\nTj reads after Ti writes \r\nWrite\u2013Write (W\u2013W)\r\nTj writes after Ti writes \r\nThese rules come directly from conflict conditions\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 45",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_046.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 46\r\nT1 T2\r\nR(A)\r\nW(A)\r\nT2 T1",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_047.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 47\r\nAnalyze whether or not the following concurrent transactions can be safely \r\nexecuted.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_048.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 48\r\nStep 1: Find Conflicts\r\nOn x \u2022T3: R(x) \u2192 T1: W(x) \r\nEdge: T3 \u2192 T1\r\nOn y \u2022T2: R(y) \u2192 T3: W(y) \r\nEdge: T2 \u2192 T3\r\nOn z \u2022T2: R(z) \u2192 T1: W(z) \r\nEdge: T2 \u2192 T1 \u2022T2: W(z) \u2192 T1: R(z) \r\nEdge: T2 \u2192 T1 \u2022T2: W(z) \u2192 T1: W(z) \r\nEdge: T2 \u2192 T1",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_049.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 49\r\nStep 1: Find Conflicts\r\nOn x\r\n\u2022T3: R(x) \u2192 T1: W(x) \r\nEdge: T3 \u2192 T1\r\nOn y\r\n\u2022T2: R(y) \u2192 T3: W(y) \r\nEdge: T2 \u2192 T3\r\nOn z\r\n\u2022T2: R(z) \u2192 T1: W(z) \r\nEdge: T2 \u2192 T1\r\n\u2022T2: W(z) \u2192 T1: R(z) \r\nEdge: T2 \u2192 T1\r\n\u2022T2: W(z) \u2192 T1: W(z) \r\nEdge: T2 \u2192 T1\r\nThe diagram shows that despite \r\ninterleaving, the transactions can be \r\narranged in a safe order without \r\nconflict. From graph:\r\nT2 \u2192 T3 \u2192 T1 \r\nThis is a valid execution order",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_050.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 50\r\nConflicts on A\r\nR(A) T1 \u2192 W(A) T2 \u21d2 T1 \u2192 T2\r\nR(A) T2 \u2192 W(A) T1 \u21d2 T2 \u2192 T1\r\nW(A) T2 \u2192 W(A) T1 \u21d2 T2 \u2192 T1\r\nConflicts on B\r\nR(B) T2 \u2192 W(B) T1 \u21d2 T2 \u2192 T1\r\nR(B) T1 \u2192 W(B) T2 \u21d2 T1 \u2192 T2\r\nW(B) T1 \u2192 W(B) T2 \u21d2 T1 \u2192 T2\r\nStep 3: Precedence Graph\r\nStep 4: Final Result\r\nSince the precedence graph has a cycle:\r\nThe schedule is NOT conflict serializable\r\nThere is no possible serial order that \r\ncan satisfy all dependencies",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_051.webp",
+      "text": "51\r\nCheck whether the schedule has conflict or not. \r\nSchedule S1\r\nT1 T2\r\nR(A)\r\nW(A)\r\nR(A)\r\nW(A)\r\nR(B)\r\nW(B)\r\nR(B)\r\nW(B)\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_052.webp",
+      "text": "52\r\nT1 T2\r\nR(A)\r\nW(A)\r\nR(B)\r\nW(B)\r\nR(B)\r\nR(A)\r\nCheck whether the schedule has conflict or not.\r\nSchedule S1\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_053.webp",
+      "text": "53\r\nT1 T2\r\nR(A)\r\nR(A)\r\nW(B)\r\nR(A)\r\nW(A)\r\nR(A)\r\nW(B)\r\nCheck whether the schedule has conflict or not \r\nSchedule S1\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_054.webp",
+      "text": "View Serializability\r\nA schedule is said to be view serializable if it is view equivalent to some serial \r\nschedule.\r\nView Equivalent Schedules\r\nTwo schedules (one serial and one non-serial) are said to be view equivalent if \r\nthey satisfy the following conditions:\r\n1. Initial Read: If a transaction reads the initial value of a data item in one \r\nschedule,\r\nit must read the initial value in the other schedule also. \r\n2. Read-From Relationship: If a transaction reads a value written by another \r\ntransaction, it must read from the same transaction in both schedules. \r\n3. Final Write: The last write operation on each data item must be done by the \r\nsame transaction in both schedules.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 54",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_055.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 55\r\nTwo schedules S1 and S2 are view equivalent if:\r\n1. Initial Read Condition\r\nIf a transaction reads the initial value of a data item in S1,\r\nit must read the initial value in S2 also. \r\n2. Read-From Condition (Very Important )\r\nIf a transaction Ti reads a value written by Tj in S1,\r\nthen in S2 also, Ti must read from Tj\r\n3. Final Write Condition\r\nThe last write on each data item must be done by the same transaction in both \r\nschedules. \r\nSchedules S1 and S2 are said to be view equivalent if they have the same initial reads, the \r\nsame read-from relationships, and the same final write operations on all data items.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_056.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 56\r\nINITIAL READ\r\n\u2022In schedule S, transaction T1 performs R(A) before any write operation on A, so \r\nit reads the initial value of A. \r\n\u2022However, in schedule S\u2032, transaction T2 performs W(A) before T1 reads A, so T1 \r\nreads the value written by T2 instead of the initial value. \r\n\u2022This violates the initial read condition of view equivalence, which requires that \r\na transaction must read the same initial value in both schedules. \r\n\u2022Therefore, schedules S and S\u2032 are not view equivalent.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_057.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 57\r\nUpdated Read:\r\n\u2022In schedule S, transaction T2 writes the value of B, and then transaction T3 reads B, so T3 reads \r\nthe value written by T2. \r\n\u2022However, in schedule S\u2032, the order of operations changes, but T3 still reads B after T2 writes it, \r\nmeaning T3 reads the value written by T2 in both schedules. \r\n\u2022Since the read-from relationship (i.e., which transaction writes and which transaction reads) is \r\npreserved in both schedules, the read-from condition is satisfied.\r\n\u2022Therefore, with respect to updated read (read-from condition), schedules S and S\u2032 are view \r\nequivalent.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_058.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 58\r\nFinal Write / Final Update\r\n\u2022In schedule S, transaction T1 first writes A, followed by T2 reading A, and finally transaction T3 \r\nperforms the last write on A. \r\n\u2022In schedule S\u2032, although the order of operations is different, the final write on data item A is still \r\nperformed by transaction T3. \r\n\u2022Since the final write on A is carried out by the same transaction (T3) in both schedules, the final \r\nwrite condition is satisfied. \r\n\u2022Therefore, schedules S and S\u2032 are view equivalent with respect to the final update condition.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_059.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 59",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_060.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 60\r\nOriginal Schedule (S)\r\nThis is interleaved (mixed)\r\nStep1: Identify Read-From Relations\r\nCheck who reads from whom:\r\n\u2022T2 reads A after T1 writes A \u2192 T2 depends on T1 \r\n\u2022T2 reads B after T1 writes B \u2192 T2 depends on T1\r\nStep2: Check Final Writes\r\n\u2022Final write on A \u2192 T2\r\n\u2022Final write on B \u2192 T2\r\nSo T2 must come after T1\r\nStep 3: Decide Serial Order\r\nFrom dependency, Correct order is:\r\nT1 \u2192 T2\r\nStep 4: Rearrange Operations (Make S\u2032)\r\nNow group all T1 operations first, then T2:",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_061.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 61\r\nStep 5: Verify View Equivalence\r\nSame initial read \u2192 T1 reads first\r\nSame read-from \u2192 T2 reads values written by T1\r\nSame final write \u2192 T2 writes last\r\nSo, S \u2261 S\u2032 (View Equivalent)\r\nS\u2032 (Serial Schedule)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_062.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_062.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 62\r\nTransaction T1 Transaction T2\r\nR(A)\r\nW(A)\r\nW(A)\r\nR(A)\r\nW(B)\r\nW(B)\r\nSchedule S\r\nT1 T2\r\nR(A)\r\nW(A)\r\nW(B)\r\nW(A)\r\nR(A)\r\nW(B)\r\nCase 1: Serial Order \u2192 T1 \u2192 T2\r\nProblem:\r\n\u2022In Serial order T1 \u2192 T2 Final write on A is by T2\r\n\u2022But in original schedule \u2192 final write on A is by T1\r\nwhich is not Not matching\r\n\u2022Violates final write condition",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_063.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_063.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 63\r\nT1 T2\r\nW(A)\r\nR(A)\r\nW(B)\r\nR(A)\r\nW(A)\r\nW(B)\r\nCase 2: Serial Order \u2192 T2 \u2192 T1\r\nT1 reads A at Step 4\r\nBut A is already written by T2\r\nSo T1 does NOT read initial value\r\nViolates initial read condition\r\nShortcut Trick\r\nStep 1: Check Final Write FIRST \r\nLook at last write on each data item\r\n\u2022If final writes force T1 \u2192 T2 \u2192 note it \r\n\u2022If they force T2 \u2192 T1 \u2192 note it \r\nThis gives you the expected serial order\r\nStep 2: Check Read-From Relation\r\nAsk:Who is reading from whom? \r\nExample:\r\n\u2022If T2 reads value written by T1\r\nMust be: T1 \u2192 T2 \r\nStep 3: Check Initial Read\r\nWho reads first?\r\n\u2022If T1 reads initial value \u2192 T1 must come first \r\n\u2022If violated \u2192 reject that order \r\nFinal Decision Rule\r\nIf ALL 3 agree \u2192 Serializable\r\nIf ANY conflict \u2192 NOT Serializable",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_064.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_064.webp",
+      "text": "Testing for View Serializability\r\nChecking Whether a Schedule is View Serializable Or Not\r\nMethod-01: Check whether the given schedule is conflict serializable or not.\r\nMethod-02: Check if there exists any blind write operation.\r\nMethod-03: Try finding a view equivalent serial schedule.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 64",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_065.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_065.webp",
+      "text": "Testing for View Serializability\r\nMethod-01: Check whether the given schedule is conflict \r\nserializable or not.\r\n\u2756If the given schedule is conflict serializable, then it is surely view \r\nserializable. Stop and report your answer.\r\n\u2756If the given schedule is not conflict serializable, then it may or may not be \r\nview serializable. Go and check using other methods.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 65",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 66,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_066.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_066.webp",
+      "text": "Testing for View Serializability\r\nMethod-02: Check if there exists any blind write operation.\r\n\u2756Writing without reading is called as a blind write.\r\n\u2756If there does not exist any blind write, then the schedule is surely not view \r\nserializable. Stop and report your answer.\r\n\u2756If there exists any blind write, then the schedule may or may not be view \r\nserializable. Go and check using other methods.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 66",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 67,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_067.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_067.webp",
+      "text": "Testing for View Serializability\r\nMethod-03: Try finding a view equivalent serial schedule.\r\n3 conditions for view serializability: initial read, read from, final write.\r\n\u2756By using the above three conditions, write all the dependencies.\r\n\u2756Then, draw a graph using those dependencies.\r\n\u2756If there exists no cycle in the graph, then the schedule is view serializable \r\notherwise not.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 67",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 68,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_068.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_068.webp",
+      "text": "Serializability\r\n\u2756A conflict serializable schedule is always view serializable . \r\n\u2756A view serializable schedule is not always conflict serializable . \r\n\u2756Conflict serializability is stricter, view serializability is more general.\r\n\u2756Every view serializable schedule that is not conflict serializable has blind \r\nwrites.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 68",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 69,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_069.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_069.webp",
+      "text": "Serializability\r\nAdvantages of Serializability\r\n1. Predictable Execution \r\n2. Easier Debugging \r\n3. Lower Costs \r\n4. Better Performance \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 69",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 70,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_070.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_070.webp",
+      "text": "Recoverability\r\n\u2756Need to address the effect of transaction failures on concurrently running transactions.\r\nRecoverable schedule\r\n\u2756If a transaction Tj reads a data items previously written by a transaction Ti , the commit \r\noperation of Ti appears before the commit operation of Tj. \r\n\u2756The following schedule is not recoverable if T9 commits immediately after the read.\r\n\u2756If T8 should abort, T9 would have read (and possibly shown to the user) an inconsistent \r\ndatabase state. Hence database must ensure that schedules are recoverable.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 70",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 71,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_071.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_071.webp",
+      "text": "Recoverability\r\nCascading rollback\r\n\u2756A single transaction failure leads to a series of transaction rollbacks. \r\n\u2756Consider the following schedule where none of the transactions has yet committed (so \r\nthe schedule is recoverable).\r\n\u2756If T10 fails, T11 and T12 must also be rolled back.\r\n\u2756Can lead to the undoing of a significant amount of work.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 71",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 72,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_072.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_072.webp",
+      "text": "Recoverability\r\nCascadeless schedules\r\n\u2756Cascading rollbacks cannot occur.\r\n\u2756For each pair of transactions Ti and Tj such that Tj reads a data item previously written \r\nby Ti, the commit operation of Ti appears before the read operation of Tj.\r\n\u2756Every cascadeless schedule is also recoverable.\r\n\u2756It is desirable to restrict the schedules to those that are cascadeless.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 72",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 73,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_073.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_073.webp",
+      "text": "Implementation of Isolation\r\n\u2756Schedules must be conflict or view serializable, and recoverable, for the \r\nsake of database consistency, and preferably cascadeless. \r\n\u2756A policy in which only one transaction can execute at a time generates \r\nserial schedules, but provides a poor degree of concurrency. \r\n\u2756Concurrency-control schemes tradeoff between the amount of concurrency \r\nthey allow and the amount of overhead that they incur.\r\n\u2756Some schemes allow only conflict-serializable schedules to be generated.\r\n\u2756Others allow view-serializable schedules that are not conflict-serializable.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 73",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 74,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_074.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_074.webp",
+      "text": "Transaction management\r\nTransaction management is the process of managing transactions in a \r\ndatabase so that they are executed correctly, safely, and reliably.\r\nBenefits:\r\n\u2022 Concurrency Control\r\n\u2022 Maintains ACID Properties\r\n\u2022 Handles Read/Write Conflicts\r\n\u2022 Ensures Recoverability\r\n\u2022 Provides Serializability\r\n\u2022 Controls Cascading Effects\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 74",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 75,
+      "image": "/slides/admt_admt_module_1_module1-part1_pdf/slide_075.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part1_pdf/thumb_075.webp",
+      "text": "TCL (Transaction Control Language)\r\nTCL (Transaction Control Language) is a set of SQL commands used to control and \r\nmanage transactions in a database.\r\nTCL helps you:\r\n\u2022 Save changes\r\n\u2022 Undo changes\r\n\u2022 Control how transactions behave\r\nMain TCL Commands\r\n1. COMMIT\r\n2. ROLLBACK\r\n3. SAVEPOINT\r\n4. SET TRANSACTION\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 75",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

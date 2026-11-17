@@ -1,0 +1,838 @@
+{
+  "mtime": 1793934639.263693,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_001.webp",
+      "text": "MODULE 5-PART 2:\r\nBy MS. ALVINA LOPES\r\nBig Data Technologies and Hadoop",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Overview of Big Data Technologies\r\n\u2756 Hadoop\r\n\u2756 Hadoop Ecosystem\r\n\u2756 Hadoop Distributed File System (HDFS)\r\n\u2756 MapReduce Framework\r\n\u2756 YARN architecture\r\n\u2756 Role of YARN in resource management\r\n\u2756 Big Data Processing Frameworks\r\n\u2756 Apache Spark",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_003.webp",
+      "text": "Overview of Big Data Technologies\r\n\u25cf Big data refers to vast amounts of structured and unstructured data that \r\nare too large or complex for traditional data-processing software to \r\nmanage efficiently.\r\n\u25cf Big data can be harnessed with the use of technologies.\r\n\u25cf Big data analytics technologies are tools that transform data into insights \r\nusing algorithms, models, and predictive analytics.\r\n\u25cf Big data technologies are software tools that store, process, and analyze \r\nlarge, diverse data sets to generate actionable business insights.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_004.webp",
+      "text": "Big Data Technologies\r\nTypes of Big Data Technologies\r\nIn general, Big Data Technology can be divided into two categories:\r\n\u25cf Operational Big Data Technologies\r\n\u25cf Analytical Big Data Technologies",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_005.webp",
+      "text": "Big Data Technologies\r\nOperational Big Data Technologies\r\n\u25cf refers to all the data we generate from day-to-day activities\r\n\u25cf such as internet transactions, social media platforms, or any information \r\nfrom a particular company.\r\n\u25cf This data serves as raw data to be analyzed.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_006.webp",
+      "text": "Big Data Technologies\r\nOperational Big Data Technologies: Examples\r\n\u25cf Online ticket booking system, such as for trains, flights, buses, \r\nmovies, etc.\r\n\u25cf Online trading or shopping on e-commerce websites such as \r\nFlipkart, Amazon, Myntra, etc.\r\n\u25cf Online data from social networking sites such as Instagram, \r\nFacebook, Messenger, Whatsapp, etc.\r\n\u25cf Employee data or executive details in multinational companies.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_007.webp",
+      "text": "Big Data Technologies\r\nAnalytical Big Data Technologies\r\n\u25cf typically employed when performance metrics are involved \r\n\u25cf and when critical business decisions need to be taken on the basis of \r\nreports generated through operational big data analysis.\r\n\u25cf pertains to analyzing big data relevant to business decisions.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_008.webp",
+      "text": "Big Data Technologies\r\nAnalytical Big Data Technologies: Examples\r\n\u25cf Stock marketing data.\r\n\u25cf Weather forecasting data.\r\n\u25cf Medical records allow doctors to monitor the health \r\nstatus of a patient.\r\n\u25cf Maintaining space mission databases in which every \r\ndetail about a mission is important.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_009.webp",
+      "text": "Top Big Data Technologies\r\nFour types of Big Data Technologies\r\n\u25cf Data storage\r\n\u25cf Data mining\r\n\u25cf Big data analytics\r\n\u25cf Data visualization",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_010.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data storage\r\n\u25cf includes infrastructure that allows data to be fetched, stored, and \r\nmanaged \r\n\u25cf designed to handle massive amounts of data. \r\n\u25cf Various software programs are able to access, use, and process the \r\ncollected data easily and quickly. \r\n\u25cf Among the most widely used big data technologies for this purpose are:",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_011.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data storage\r\n1. Apache Hadoop\r\n\u25cb an open-source, Java-based framework for storing and processing big data.\r\n\u25cb developed by the Apache Software Foundation.\r\n\u25cb provides a distributed storage platform and processes big data \r\n\u25cb using the MapReduce programming model. \r\n\u25cb The Hadoop framework is designed to automatically handle hardware failures \r\nsince they are common occurrences. \r\n\u25cb Hadoop framework consists of five modules, namely Hadoop Distributed File \r\nSystem (HDFS), Hadoop YARN (Yet Another Resource Negotiator), Hadoop \r\nMapReduce, Hadoop Common, and Hadoop Ozone.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_012.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data storage\r\n1. Apache Hadoop\r\n\u25cb Companies using Hadoop: LinkedIn, Intel, IBM, MapR, Facebook, Microsoft, \r\nHortonworks, Cloudera, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_013.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data storage\r\n1. Apache Hadoop- Key features:\r\n\u25cb A distributed file system, called HDFS (Hadoop Distributed File System), \r\nenables fast data transfer between nodes.\r\n\u25cb HDFS is a fundamentally resilient file system. In Hadoop, data that is stored on \r\none node is also replicated on other nodes of the cluster to prevent data loss \r\nin case of hardware or software failure. \r\n\u25cb Hadoop is an inexpensive, fault-tolerant, and extremely flexible framework \r\ncapable of storing and processing data in any format (structured, \r\nsemi-structured, or unstructured). \r\n\u25cb MapReduce is a built-in batch processing engine in Hadoop that splits large \r\ncomputations across multiple nodes to ensure optimum performance and \r\nload balancing.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_014.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data storage\r\n1. MongoDB\r\n\u25cb an open-source, cross-platform, document-oriented database \r\n\u25cb designed to store and handle large amounts of data \r\n\u25cb while providing high availability, performance, and scalability. \r\n\u25cb It is considered a NoSQL database.\r\n\u25cb MongoDB is very popular due to its document-oriented NoSQL features, \r\ndistributed key-value store, and Map Reduce calculation capabilities.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_015.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data storage\r\n1. MongoDB\r\n\u25cb Companies using MongoDB: MySQL, Facebook, eBay, MetLife, Google, \r\nShutterfly, Aadhar, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_016.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data storage\r\n1. MongoDB- Key features:\r\n\u25cb It seamlessly integrates with languages like Ruby, Python, and JavaScript ; this \r\nseamless integration facilitates high coding velocity.\r\n\u25cb A MongoDB database stores data in JSON documents, which provide a rich \r\ndata model that maps effortlessly to native programming languages.\r\n\u25cb MongoDB has several features that are unavailable in a traditional RDBMS, \r\nsuch as dynamic queries, secondary indexes, rich updates, sorting, and easy \r\naggregation.\r\n\u25cb In document-based database systems, related data is stored in a single \r\ndocument, making it possible to run queries faster than with a traditional \r\nrelational database where related data is stored in multiple tables and later \r\njoined using joins.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_017.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data mining\r\n\u25cf Data mining is the process of extracting useful information from raw data \r\nand analyzing it. \r\n\u25cf In many cases, raw data is very large, highly variable, and constantly \r\nstreaming at speeds \r\n\u25cf that make data extraction nearly impossible without a special technique.\r\n\u25cf Among the most widely used big data technologies for data mining are:",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_018.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data mining\r\n1. Presto\r\n\u25cb Developed by Facebook \r\n\u25cb Presto is an open-source SQL query engine \r\n\u25cb that enables interactive query analyses on massive amounts of data. \r\n\u25cb supports fast analytics queries on data sources of various sizes, from GB to PB.\r\n\u25cb With this technology, it is possible to query data right where it lives, without moving \r\nthe data into separate analytics systems. \r\n\u25cb It is possible even to query data from multiple sources within a single query. \r\n\u25cb It supports both relational data sources (such as PostgreSQL, MySQL, Microsoft SQL \r\nServer, Amazon Redshift, Teradata, etc.) and non-relational data sources (such as \r\nHDFS (Hadoop Distributed File System), MongoDB, Cassandra, HBase, Amazon S3, \r\netc.).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_019.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data mining\r\n1. Presto\r\n\u25cb Companies using Presto: Repro, Netflix, Facebook, Airbnb, GrubHub, \r\nNordstrom, Nasdaq, Atlassian, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_020.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data mining\r\n1. Presto- Key features:\r\n\u25cb With Presto, you can query data wherever it resides, whether it is in Cassandra, Hive, \r\nRelational databases, or even proprietary data stores. \r\n\u25cb With Presto, multiple data sources can be queried at once. This allows you to \r\nreference data from multiple databases in one query. \r\n\u25cb It does not rely on MapReduce techniques and is capable of retrieving data very \r\nquickly within seconds to minutes. Query responses are typically returned within a \r\nfew seconds.\r\n\u25cb Presto supports standard ANSI SQL, making it easy to use. The ability to query your \r\ndata without learning a dedicated language is always a big plus, whether you\u2019re a \r\ndeveloper or a data analyst. Additionally, it connects easily to the most common BI \r\n(Business Intelligence) tools with JDBC (Java Database Connectivity) connectors.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_021.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data mining\r\n1. RapidMiner\r\n\u25cb an advanced open-source data mining tool for predictive analytics. \r\n\u25cb It\u2019s a powerful data science platform that lets data scientists and big data \r\nanalysts analyze their data quickly. \r\n\u25cb In addition to data mining, it enables model deployment and model operation.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_022.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data mining\r\n1. RapidMiner\r\n\u25cb Companies using RapidMiner: Domino\u2019s Pizza, McKinley Marketing Partners, \r\nWindstream Communications, George Mason University, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_023.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data mining\r\n1. RapidMiner- Key features:\r\n\u25cb There is an integrated platform for processing data, building machine learning \r\nmodels, and deploying them.\r\n\u25cb Further, it integrates the Hadoop framework with its inbuilt RapidMiner \r\nRadoop.\r\n\u25cb RapidMiner Studio provides access, loading, and analysis of any type of data, \r\nwhether it is structured data or unstructured data such as text, images, and \r\nmedia. \r\n\u25cb Automated predictive modeling is available in RapidMiner.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_024.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data analytics\r\n\u25cf Big data analytics involves cleaning, transforming, and modeling data in \r\norder to extract essential information that will aid in the decision-making \r\nprocess. \r\n\u25cf You can extract valuable insights from raw data by using data analytic \r\ntechniques. \r\n\u25cf Among the information that big data analytics tools can provide are \r\nhidden patterns, correlations, customer preferences, and statistical \r\ninformation about the market.\r\n\u25cf A few types of data analytics technologies are:",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_025.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data analytics\r\n1. Kafka\r\n\u25cb open-source event store and streaming platform \r\n\u25cb developed by the Apache Software Foundation in Java and Scala. \r\n\u25cb The platform is used by thousands of organizations for streaming analytics, \r\nhigh-performance data pipelines, data integration, and mission-critical \r\napplications. \r\n\u25cb It is a fault-tolerant messaging system based on a publish-subscriber model \r\nthat can handle massive data volumes. \r\n\u25cb For real-time streaming data analysis, Apache Kafka can be integrated \r\nseamlessly with Apache Storm and Apache Spark. \r\n\u25cb Basically, Kafka is a system for collecting, storing, reading, and analyzing \r\nstreaming data at scale.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_026.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data analytics\r\n1. Kafka\r\n\u25cb Companies using Kafka: Netflix, Goldman Sachs, Shopify, Target, Cisco, \r\nSpotify, Intuit, Uber, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_027.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data analytics\r\n1. Kafka- Key features:\r\n\u25cb With Apache Kafka, scalability can be achieved in four dimensions: event \r\nprocessors, event producers, event consumers, and event connectors. This \r\nmeans that Kafka scales effortlessly without any downtime.\r\n\u25cb Kafka is very reliable due to its distributed architecture, partitioning, \r\nreplicating, and fault-tolerance.\r\n\u25cb You can publish and subscribe to messages at high throughput.\r\n\u25cb The system guarantees zero downtime and no data loss.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_028.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data analytics\r\n1. Splunk\r\n\u25cb a scalable, advanced software platform that searches, analyzes, and visualizes \r\nmachine-generated data from websites, applications, sensors, devices, etc., \r\n\u25cb in order to provide metrics, diagnose problems, and gain insight into business \r\noperations. \r\n\u25cb In Splunk, real-time data is captured, indexed, and correlated into a \r\nsearchable repository, \r\n\u25cb which can be used to generate Reports, Alerts, Graphs, Dashboards, and \r\nVisualizations. \r\n\u25cb In addition to application management, security, and compliance, Splunk also \r\nprovides web analytics and business intelligence.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_029.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data analytics\r\n1. Splunk\r\n\u25cb Companies using Splunk: JPMorgan Chase, Lenovo, Wells Fargo, Verizon, \r\nBookMyShow, John Lewis, Domino\u2019s, Porsche, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_030.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data analytics\r\n1. Splunk- Key features:\r\n\u25cb Improve the performance of your business with automated operations, \r\nadvanced analytics, and end-to-end integrations.\r\n\u25cb In addition to structured data formats like JSON and XML, Splunk can ingest \r\nunstructured machine data like web and application logs.\r\n\u25cb Splunk indexes the ingested data to enable faster search and querying based \r\non different conditions.\r\n\u25cb Splunk provides analytical reports including interactive graphs, charts, and \r\ntables, as well as allows sharing them with other people.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_031.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data visualization\r\n\u25cf Data visualization is a way of visualizing data through a graphic \r\nrepresentation. \r\n\u25cf Data visualization techniques utilize visual elements such as graphs, \r\ncharts, and maps to provide an easy way of viewing and interpreting \r\ntrends, patterns, and outliers in data. \r\n\u25cf Data is processed to create graphic illustrations that enable people to \r\ngrasp large amounts of information in seconds. \r\n\u25cf Below are a few top technologies for data visualization.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_032.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data visualization\r\n1. Tableau\r\n\u25cb Tableau is the fastest growing tool for Data Visualization. \r\n\u25cb It makes it easy for users to create graphs, charts, maps, and dashboards, for \r\nvisualizing and analyzing data, \r\n\u25cb thus aiding them in driving the business forward. \r\n\u25cb Using this platform, data is rapidly analyzed, resulting in interactive \r\ndashboards and worksheets that display the results. \r\n\u25cb With Tableau, users are able to work on live datasets, obtaining valuable \r\ninsights and enhancing decision-making. \r\n\u25cb You don\u2019t need any programming knowledge to get started",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_033.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data visualization\r\n1. Tableau\r\n\u25cb Companies using Tableau: Accenture, Myntra, Nike, Skype, Coca-Cola, Wells \r\nFargo, Citigroup, Qlik, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_034.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data visualization\r\n1. Tableau- Key features:\r\n\u25cb In Tableau, a user can easily create visualizations in the form of Bar charts, Pie \r\ncharts, Histograms, Treemaps, Box plots, Gantt charts, Bullet charts, and other \r\ntools.\r\n\u25cb Tableau supports a wide array of data sources, including on-premise files, CSV, \r\nText files, Excel, spreadsheets, relational and non-relational databases, cloud \r\ndata, and big data.\r\n\u25cb Some of Tableau\u2019s significant features include data blending and real-time \r\nanalytics.\r\n\u25cb It allows real-time sharing of data in the form of dashboards, sheets, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_035.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data visualization\r\n1. Plotly\r\n\u25cb Plotly is a Python library that facilitates interactive visualizations of big data. \r\n\u25cb This tool makes it possible to create superior graphs more quickly and \r\nefficiently. \r\n\u25cb Plotly has many advantages, including user-friendliness, scalability, reduced \r\ncosts, cutting-edge analytics, and flexibility. \r\n\u25cb It offers a much richer set of libraries and APIs, including Python, R, MATLAB, \r\nArduino, Julia, etc. \r\n\u25cb It can be used interactively within Jupyter notebooks and Pycharm in order to \r\ncreate interactive graphs. \r\n\u25cb With Plotly, we can include interactive features such as buttons, sliders, and \r\ndropdowns to display different perspectives on a graph.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_036.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data visualization\r\n1. Plotly\r\n\u25cb Companies using Plotly: Paladins, Bitbank, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_037.webp",
+      "text": "Big Data Technologies\r\nBig Data Technologies: Data visualization\r\n1. Plotly- Key features:\r\n\u25cb A unique feature of Plotly is its interactivity. Users can interact with graphs on \r\ndisplay, providing an enhanced storytelling experience.\r\n\u25cb It\u2019s like drawing on paper, you can draw anything you want. When compared \r\nwith other visualization tools like Tableau, Plotly enables full control over what \r\nis being plotted.\r\n\u25cb Additionally to Seaborn and Matplotlib charts, Plotly also offers a wide range \r\nof graphs, and charts, such as Statistical Charts, Scientific Charts, Financial \r\nCharts, geographical maps, and so forth. \r\n\u25cb Furthermore, Plotly offers a broad range of AI and ML charts, which allow you \r\nto step up your machine learning game.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_038.webp",
+      "text": "Hadoop\r\n\u25cf The Apache\u00ae Hadoop\u00ae project develops open-source software for \r\nreliable, scalable, distributed computing.\r\n\u25cf The Apache Hadoop software library is a framework that allows for the \r\ndistributed processing of large data sets across clusters of computers \r\nusing simple programming models. \r\n\u25cf It is designed to scale up from single servers to thousands of machines, \r\neach offering local computation and storage. \r\n\u25cf Rather than rely on hardware to deliver high-availability, the library itself \r\nis designed to detect and handle failures at the application layer.\r\n\u25cf So delivering a highly-available service on top of a cluster of computers, \r\neach of which may be prone to failures.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_039.webp",
+      "text": "Hadoop\r\nHadoop Modules\r\n\u25cf The project includes these modules:\r\n\u25cf Hadoop Common: The common utilities that support the other Hadoop modules.\r\n\u25cf Hadoop Distributed File System (HDFS\u2122): A distributed file system that provides \r\nhigh-throughput access to application data. It is the storage unit of Hadoop.\r\n\u25cf Hadoop YARN: A framework for job scheduling and cluster resource management. \r\nIt processes and runs data for batch, stream, interactive, and graph processing - all \r\nof which are stored in HDFS.\r\n\u25cf Hadoop MapReduce: A YARN-based system for parallel processing of large data \r\nsets. It is the processing unit of Hadoop. This software framework is used to write \r\napplications to process vast amounts of data.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_040.webp",
+      "text": "Hadoop Ecosystem\r\n\u25cf Hadoop Ecosystem is a platform or framework or a a suite.\r\n\u25cf It encompasses a number of services (ingesting, storing, analyzing and \r\nmaintaining) inside it.\r\n\u25cf Below are the Hadoop components, that together form a Hadoop ecosystem.\r\n\u25cb HDFS -> Hadoop Distributed File System\r\n\u25cb YARN -> Yet Another Resource Negotiator\r\n\u25cb MapReduce -> Data processing using programming\r\n\u25cb Spark -> In-memory Data Processing\r\n\u25cb PIG, HIVE-> Data Processing Services using Query (SQL-like)\r\n\u25cb HBase -> NoSQL Database\r\n\u25cb Mahout, Spark MLlib -> Machine Learning\r\n\u25cb Apache Drill -> SQL on Hadoop\r\n\u25cb Zookeeper -> Managing Cluster\r\n\u25cb Oozie -> Job Scheduling\r\n\u25cb Flume, Sqoop -> Data Ingesting Services\r\n\u25cb Solr & Lucene -> Searching & Indexing \r\n\u25cb Ambari -> Provision, Monitor and Maintain cluster",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_041.webp",
+      "text": "Hadoop Ecosystem",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_042.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: HDFS\r\n\u25cf Hadoop Distributed File System is the core component or you can say, the \r\nbackbone of Hadoop Ecosystem.\r\n\u25cf HDFS is the one, which makes it possible to store different types of large \r\ndata sets (i.e. structured, unstructured and semi structured data).\r\n\u25cf HDFS creates a level of abstraction over the resources, from where we \r\ncan see the whole HDFS as a single unit.\r\n\u25cf It helps us in storing our data across various nodes and maintaining the \r\nlog file about the stored data (metadata).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_043.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: HDFS\r\n\u25cf HDFS has two core components, i.e. NameNode and DataNode. \r\n\u25cb The NameNode is the main node and it doesn\u2019t store the actual data. It contains \r\nmetadata, just like a log file or you can say as a table of content. Therefore, it requires less \r\nstorage and high computational resources.\r\n\u25cb On the other hand, all your data is stored on the DataNodes and hence it requires more \r\nstorage resources. These DataNodes are commodity hardware (like your laptops and \r\ndesktops) in the distributed environment. That\u2019s the reason, why Hadoop solutions are \r\nvery cost effective.\r\n\u25cb You always communicate to the NameNode while writing the data. Then, it internally \r\nsends a request to the client to store and replicate data on various DataNodes.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_044.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: HDFS",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_045.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: YARN\r\n\u25cf Consider YARN as the brain of your Hadoop Ecosystem. It performs all the \r\nprocessing activities by allocating resources and scheduling tasks.\r\n\u25cf It has two major components, i.e. ResourceManager and NodeManager.\r\n\u25cf ResourceManager is again a main node in the processing department.\r\n\u25cf It receives the processing requests, and then passes the parts of requests to \r\ncorresponding NodeManagers accordingly, where the actual processing takes \r\nplace.\r\n\u25cf NodeManagers are installed on every DataNode. It is responsible for execution of \r\ntask on every single DataNode.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_046.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: YARN\r\n\u25cf Schedulers: Based on your application resource requirements, Schedulers perform \r\nscheduling algorithms and allocates the resources.\r\n\u25cf ApplicationsManager: While ApplicationsManager accepts the job submission, \r\nnegotiates to containers (i.e. the Data node environment where process executes) \r\nfor executing the application specific ApplicationMaster and monitoring the \r\nprogress. \r\n\u25cf ApplicationMasters are the deamons which reside on DataNode and \r\ncommunicates to containers for execution of tasks on each DataNode.\r\n\u25cf ResourceManager has two components, i.e. Schedulers and ApplicationsManager.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_047.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: MAPREDUCE\r\n\u25cf It is the core component of processing in a Hadoop Ecosystem.\r\n\u25cf It provides the logic of processing. \r\n\u25cf MapReduce is a software framework which helps in writing applications \r\nthat processes large data sets using distributed and parallel algorithms \r\ninside Hadoop environment.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_048.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: MAPREDUCE\r\n\u25cf In a MapReduce program, Map() and Reduce() are two functions.\r\n\u25cf The Map function performs actions like filtering, grouping and sorting.\r\n\u25cf While Reduce function aggregates and summarizes the result produced by map \r\nfunction.\r\n\u25cf The result generated by the Map function is a key value pair (K, V) which acts as the \r\ninput for Reduce function.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_049.webp",
+      "text": "Hadoop Ecosystem\r\nMAPREDUCE Example:\r\n\u25cf Consider the following table and calculate the number of students in each \r\ndepartment.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_050.webp",
+      "text": "Hadoop Ecosystem\r\nMAPREDUCE Example:\r\n\u25cf Initially, Map program will execute and calculate the students appearing in each \r\ndepartment, producing the key value pair as mentioned above. \r\n\u25cf This key value pair is the input to the Reduce function. \r\n\u25cf The Reduce function will then aggregate each department and calculate the total \r\nnumber of students in each department and produce the given result.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_051.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE PIG\r\n\u25cf PIG was initially developed by Yahoo.\r\n\u25cf It gives you a platform for building data flow for ETL (Extract, Transform and Load), \r\nprocessing and analyzing huge data sets.\r\n\u25cf PIG has two parts: Pig Latin, the language and the pig runtime, for the execution \r\nenvironment.\r\n\u25cf It supports pig latin language, which has SQL like command structure.\r\n\u25cf 10 line of pig latin = approx. 200 lines of Map-Reduce Java code.\r\n\u25cf At the back end of Pig job, a map-reduce job executes.\r\n\u25cf The compiler internally converts pig latin to MapReduce. \r\n\u25cf It produces a sequential set of MapReduce jobs, and that\u2019s an \r\nabstraction (which works like black box).\r\n\u25cf",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_052.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: PIG\r\nHow Pig works?\r\n\u25cf In PIG, first the load command, loads the data. \r\n\u25cf Then we perform various functions on it like grouping, filtering, joining, \r\nsorting, etc. \r\n\u25cf At last, either you can dump the data on the screen or you can store the \r\nresult back in HDFS.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_053.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE HIVE\r\n\u25cf Facebook created HIVE for people who are fluent with SQL. Thus, HIVE \r\nmakes them feel at home while working in a Hadoop Ecosystem.\r\n\u25cf Basically, HIVE is a data warehousing component which performs reading, \r\nwriting and managing large data sets in a distributed environment using \r\nSQL-like interface.\r\n\u25cf HIVE + SQL = HQL\r\n\u25cf The query language of Hive is called Hive Query Language(HQL), which is \r\nvery similar like SQL.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_054.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE HIVE\r\n\u25cf HQL has 2 basic components: Hive Command Line and JDBC/ODBC driver.\r\n\u25cf The Hive Command line interface is used to execute HQL commands.\r\n\u25cf While, Java Database Connectivity (JDBC) and Object Database Connectivity (ODBC) \r\nis used to establish connection from data storage.\r\n\u25cf Secondly, Hive is highly scalable. As, it can serve both the purposes, i.e. large data \r\nset processing (i.e. Batch query processing) and real time processing (i.e. Interactive \r\nquery processing).\r\n\u25cf It supports all primitive data types of SQL.\r\n\u25cf You can use predefined functions, or write tailored user defined functions (UDF) \r\nalso to accomplish your specific needs.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_055.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE MAHOUT\r\n\u25cf Mahout provides an environment for creating machine learning applications which \r\nare scalable.\r\n\u25cf It performs collaborative filtering, clustering and classification. Some people also \r\nconsider frequent item set missing as Mahout\u2019s function.\r\n\u25cf Mahout provides a command line to invoke various algorithms. It has a predefined \r\nset of library which already contains different inbuilt algorithms for different use \r\ncases.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_056.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE SPARK\r\n\u25cf Apache Spark is a framework for real time data analytics in a distributed computing \r\nenvironment.\r\n\u25cf The Spark is written in Scala and was originally developed at the University of \r\nCalifornia, Berkeley.\r\n\u25cf It executes in-memory computations to increase speed of data processing over \r\nMap-Reduce.\r\n\u25cf It is 100x faster than Hadoop for large scale data processing by exploiting \r\nin-memory computations and other optimizations. Therefore, it requires high \r\nprocessing power than Map-Reduce.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_057.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE HBASE\r\n\u25cf HBase is an open source, non-relational distributed database. In other words, it is a \r\nNoSQL database.\r\n\u25cf It supports all types of data and that is why, it\u2019s capable of handling anything and \r\neverything inside a Hadoop ecosystem.\r\n\u25cf It is modelled after Google\u2019s BigTable, which is a distributed storage system \r\ndesigned to cope up with large data sets.\r\n\u25cf The HBase was designed to run on top of HDFS and provides BigTable like \r\ncapabilities.\r\n\u25cf It gives us a fault tolerant way of storing sparse data, which is common in most Big \r\nData use cases.\r\n\u25cf The HBase is written in Java, whereas HBase applications can be written in REST, \r\nAvro and Thrift APIs.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_058.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE DRILL\r\n\u25cf Apache Drill is used to drill into any kind of data. It\u2019s an open source application \r\nwhich works with distributed environment to analyze large data sets.\r\n\u25cf It is a replica of Google Dremel.\r\n\u25cf It supports different kinds NoSQL databases and file systems, which is a powerful \r\nfeature of Drill. For example: Azure Blob Storage, Google Cloud Storage, HBase, \r\nMongoDB, MapR-DB HDFS, MapR-FS, Amazon S3, Swift, NAS and local files.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_059.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE DRILL\r\n\u25cf The main aim behind Apache Drill is to provide scalability so that we can process \r\npetabytes and exabytes of data efficiently (or you can say in minutes).\r\n\u25cf The main power of Apache Drill lies in combining a variety of data stores just by \r\nusing a single query.\r\n\u25cf Apache Drill basically follows the ANSI SQL.\r\n\u25cf It has a powerful scalability factor in supporting millions of users and serve their \r\nquery requests over large scale data.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_060.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE ZOOKEEPER\r\n\u25cf Apache Zookeeper is the coordinator of any Hadoop job which includes a \r\ncombination of various services in a Hadoop Ecosystem.\r\n\u25cf Apache Zookeeper coordinates with various services in a distributed environment.\r\n\u25cf It saves a lot of time by performing synchronization, configuration maintenance, \r\ngrouping and naming.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_061.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE OOZIE\r\n\u25cf Consider Apache Oozie as a clock and alarm service inside Hadoop Ecosystem. \r\n\u25cf For Apache jobs, Oozie has been just like a scheduler. \r\n\u25cf It schedules Hadoop jobs and binds them together as one logical work.\r\n\u25cf There are two kinds of Oozie jobs:\r\n\u25cf Oozie workflow: These are sequential set of actions to be executed. You can \r\nassume it as a relay race. Where each athlete waits for the last one to complete his \r\npart.\r\n\u25cf Oozie Coordinator: These are the Oozie jobs which are triggered when the data is \r\nmade available to it. Think of this as the response-stimuli system in our body. In the \r\nsame manner as we respond to an external stimulus, an Oozie coordinator \r\nresponds to the availability of data and it rests otherwise.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_062.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_062.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE FLUME\r\n\u25cf Ingesting data is an important part of our Hadoop Ecosystem.\r\n\u25cf The Flume is a service which helps in ingesting unstructured and semi-structured \r\ndata into HDFS.\r\n\u25cf It gives us a solution which is reliable and distributed and helps us in collecting, \r\naggregating and moving large amount of data sets.\r\n\u25cf It helps us to ingest online streaming data from various sources like network traffic, \r\nsocial media, email messages, log files etc. in HDFS.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_063.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_063.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE SQOOP\r\n\u25cf another data ingesting service.\r\n\u25cf The major difference between Flume and Sqoop is that:\r\n\u25cb Flume only ingests unstructured data or semi-structured data into HDFS.\r\n\u25cb While Sqoop can import as well as export structured data from RDBMS or \r\nEnterprise data warehouses to HDFS or vice versa.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_064.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_064.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE SOLR & LUCENE\r\n\u25cf Apache Solr and Apache Lucene are the two services which are used for searching \r\nand indexing in Hadoop Ecosystem.\r\n\u25cf Apache Lucene is based on Java, which also helps in spell checking.\r\n\u25cf Solr is a complete application built around Lucene.\r\n\u25cf It uses the Lucene Java search library as a core for search and full indexing.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_065.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_065.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE AMBARI\r\n\u25cf Ambari is an Apache Software Foundation Project which aims at making Hadoop \r\necosystem more manageable.\r\n\u25cf It includes software for provisioning, managing and monitoring Apache Hadoop \r\nclusters.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 66,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_066.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_066.webp",
+      "text": "Hadoop Ecosystem\r\nComponents of Hadoop ecosystem: APACHE AMBARI\r\n\u25cf The Ambari provides:\r\n1. Hadoop cluster provisioning:\r\n\u25cf It gives us step by step process for installing Hadoop services across a number of \r\nhosts.\r\n\u25cf It also handles configuration of Hadoop services over a cluster.\r\n2. Hadoop cluster management:\r\n\u25cf It provides a central management service for starting, stopping and re-configuring \r\nHadoop services across the cluster. \r\n3. Hadoop cluster monitoring:\r\n\u25cf For monitoring health and status, Ambari provides us a dashboard.\r\n\u25cf The Amber Alert framework is an alerting service which notifies the user, whenever \r\nthe attention is needed. For example, if a node goes down or low disk space on a \r\nnode, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 67,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_067.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_067.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\n\u25cf A distributed storage splitting files into replicated blocks across cluster \r\nnodes, providing fault tolerance, scalable capacity, and high-throughput \r\naccess.\r\n\u25cf HDFS (Hadoop Distributed File System) is the primary storage system \r\nused by Hadoop applications. \r\n\u25cf This open source framework works by rapidly transferring data between \r\nnodes. \r\n\u25cf It's often used by companies who need to handle and store big data. \r\n\u25cf HDFS is a key component of many Hadoop systems, as it provides a \r\nmeans for managing big data, as well as supporting big data analytics.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 68,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_068.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_068.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\n\u25cf HDFS is fault-tolerant and designed to be deployed on low-cost, \r\ncommodity hardware. \r\n\u25cf HDFS provides high throughput data access to application data.\r\n\u25cf It is suitable for applications that have large data sets and enables \r\nstreaming access to file system data in Apache Hadoop.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 69,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_069.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_069.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nPurpose of HDFS:\r\n\u25cf Manage large datasets - Organizing and storing huge datasets. To do this, \r\nHDFS should have hundreds of nodes per cluster.\r\n\u25cf Detecting faults - HDFS should scan and detect faults quickly and \r\neffectively as it includes a large number of commodity hardware. Failure \r\nof components is a common issue.\r\n\u25cf Hardware efficiency - When large datasets are involved it can reduce the \r\nnetwork traffic and increase the processing speed.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 70,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_070.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_070.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nHadoop architecture:",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 71,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_071.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_071.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nHadoop architecture:\r\n\u25cf HDFS has a master/slave architecture. \r\n\u25cf An HDFS cluster consists of a single NameNode, a master server that \r\nmanages the file system namespace and regulates access to files by \r\nclients. \r\n\u25cf In addition, there are a number of DataNodes, usually one per node in the \r\ncluster, which manage storage attached to the nodes that they run on. \r\n\u25cf HDFS exposes a file system namespace and allows user data to be stored \r\nin files.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 72,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_072.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_072.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nHadoop architecture:\r\n\u25cf Internally, a file is split into one or more blocks and these blocks are \r\nstored in a set of DataNodes. \r\n\u25cf The NameNode executes file system namespace operations like opening, \r\nclosing, and renaming files and directories. \r\n\u25cf It also determines the mapping of blocks to DataNodes. \r\n\u25cf The DataNodes are responsible for serving read and write requests from \r\nthe file system\u2019s clients. \r\n\u25cf The DataNodes also perform block creation, deletion, and replication \r\nupon instruction from the NameNode.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 73,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_073.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_073.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nHadoop architecture:\r\n\u25cf The NameNode and DataNode are pieces of software designed to run on \r\ncommodity machines. \r\n\u25cf These machines typically run a GNU/Linux operating system (OS). \r\n\u25cf HDFS is built using the Java language; any machine that supports Java can run \r\nthe NameNode or the DataNode software.\r\n\u25cf Therefore, HDFS can be deployed on a wide range of machines.\r\n\u25cf A typical deployment has a dedicated machine that runs only the NameNode \r\nsoftware. Each of the other machines in the cluster runs one instance of the \r\nDataNode software.\r\n\u25cf The existence of a single NameNode in a cluster greatly simplifies the \r\narchitecture of the system. The NameNode is the arbitrator and repository for \r\nall HDFS metadata. The system is designed in such a way that user data never \r\nflows through the NameNode.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 74,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_074.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_074.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nNameNode:\r\n\u25cf It is the hardware that contains the operating system(GNU/Linux) and the \r\nNameNode software. It is responsible for serving the client\u2019s read/write \r\nrequests.\r\n\u25cf It Stores metadata such as number of blocks, their location, permission, \r\nreplicas and other details on the local disk in the form of two files:\r\n\u25cf FSImage(File System Image): It contains the complete namespace of the \r\nHadoop file system since the NameNode creation.\r\n\u25cf Edit log: It contains all the recent changes performed to the file system \r\nnamespace to the most recent FSImage.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 75,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_075.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_075.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nNameNode:\r\n\u25cf NameNode maintains and manages the slave nodes, and assigns tasks to \r\nthem. \r\n\u25cf It also keeps the status of data node and make sure that it is alive.\r\n\u25cf It can manage the files, control a client\u2019s access to files, and overseas file \r\noperating processes such as renaming, opening, and closing files.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 76,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_076.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_076.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nDataNode:\r\n\u25cf For every node in the HDFS cluster we locate a DataNode which is \r\nhardware consisting operating system(GNU/Linux) and a DataNode \r\nsoftware which help to control the data storage of their system as they \r\ncan perform operations on the file systems if the client requests.\r\n\u25cf It can also create, replicate, and block files when the NameNode instructs.\r\n\u25cf Sends heartbeat and block report to the NameNode to report its health \r\nand the list of block it contains respectively.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 77,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_077.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_077.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nBlocks:\r\n\u25cf Internally HDFS split the file into multiple blocks with the default value of \r\n128MB called block.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 78,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_078.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_078.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nRack:\r\n\u25cf Rack is the collection of around 40\u201350 machines (DataNodes) connected \r\nusing the same network switch. \r\n\u25cf If the network goes down, the whole rack will be unavailable.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 79,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_079.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_079.webp",
+      "text": "Hadoop Distributed File System (HDFS)\r\nAdvantages of HDFS:\r\n1. Fault tolerance - ensuring continuity and reliability.\r\n2. Speed (upto 2GB/s), because of its cluster architecture\r\n3. Access to more types of data, specifically Streaming data.\r\n4. Compatibility and portability - made possible with the particular way HDFS \r\nhandles data.\r\n5. Scalable - includes vertical and horizontal scalability mechanisms.\r\n6. Data locality- leads to decreased network congestion.\r\n7. Cost effective- data is stored inexpensively, no licensing fee.\r\n8. Stores large amounts of data- both structured and unstructured.\r\n9. Flexible- no need to process the data collected before storing it.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 80,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_080.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_080.webp",
+      "text": "MapReduce Framework\r\n\u25cf Programming model for processing large datasets in parallel via map and \r\nreduce phases, foundational to the Hadoop ecosystem for batch \r\nworkloads.\r\n\u25cf MapReduce is a Java-based, distributed execution framework within the \r\nApache Hadoop Ecosystem. \r\n\u25cf It takes away the complexity of distributed programming by exposing two \r\nprocessing steps that developers implement: 1) Map and 2) Reduce.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 81,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_081.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_081.webp",
+      "text": "MapReduce Framework\r\n\u25cf In the Mapping step, data is split between parallel processing tasks. \r\nTransformation logic can be applied to each chunk of data. \r\n\u25cf Once completed, the Reduce phase takes over to handle aggregating data \r\nfrom the Map set. \r\n\u25cf In general, MapReduce uses Hadoop Distributed File System (HDFS) for \r\nboth input and output. \r\n\u25cf However, some technologies built on top of it, such as Sqoop, allow \r\naccess to relational systems.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 82,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_082.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_082.webp",
+      "text": "MapReduce Framework\r\nHow does MapReduce work?\r\nA MapReduce system is usually composed of three steps (even though it's \r\ngeneralized as the combination of Map and Reduce operations/functions). The \r\nMapReduce operations are:\r\n\u25cf Map: The input data is first split into smaller blocks. The Hadoop \r\nframework then decides how many mappers to use, based on the size of \r\nthe data to be processed and the memory block available on each \r\nmapper server. Each block is then assigned to a mapper for processing. \r\nEach \u2018worker\u2019 node applies the map function to the local data, and writes \r\nthe output to temporary storage. The primary (master) node ensures that \r\nonly a single copy of the redundant input data is processed.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 83,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_083.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_083.webp",
+      "text": "MapReduce Framework\r\nHow does MapReduce work?\r\n\u25cf Shuffle, combine and partition: worker nodes redistribute data based \r\non the output keys (produced by the map function), such that all data \r\nbelonging to one key is located on the same worker node. As an optional \r\nprocess the combiner (a reducer) can run individually on each mapper \r\nserver to reduce the data on each mapper even further making reducing \r\nthe data footprint and shuffling and sorting easier. Partition (not optional) \r\nis the process that decides how the data has to be presented to the \r\nreducer and also assigns it to a particular reducer.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 84,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_084.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_084.webp",
+      "text": "MapReduce Framework\r\nHow does MapReduce work?\r\n\u25cf Reduce: A reducer cannot start while a mapper is still in progress. Worker \r\nnodes process each group of <key,value> pairs output data, in parallel to \r\nproduce <key,value> pairs as output. All the map output values that have \r\nthe same key are assigned to a single reducer, which then aggregates the \r\nvalues for that key. Unlike the map function which is mandatory to filter \r\nand sort the initial data, the reduce function is optional.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 85,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_085.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_085.webp",
+      "text": "MapReduce Framework\r\nAdvantages of MapReduce:\r\n1. Scalability\r\n2. Flexibility\r\n3. Security and authentication\r\n4. Faster processing of data\r\n5. Very simple programming model\r\n6. Availability and resilient nature",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 86,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_086.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_086.webp",
+      "text": "YARN\r\n\u25cf YARN stands for \u201cYet Another Resource Negotiator\u201d. \r\n\u25cf It is a resource management layer introduced in Hadoop 2.x and \r\nenhanced in Hadoop 3.x. \r\n\u25cf It allows various data processing engines, such as interactive processing, \r\ngraph processing, batch processing, and stream processing, to run and \r\nprocess data stored in HDFS (Hadoop Distributed File System). \r\n\u25cf With Hadoop 3.x, YARN introduced several improvements like \r\nopportunistic containers for better resource utilisation, timeline service v2 \r\nfor enhanced scalability, and support for container orchestration in cloud \r\nenvironments.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 87,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_087.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_087.webp",
+      "text": "YARN\r\n \r\n Hadoop v1 vs Hadoop v2",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 88,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_088.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_088.webp",
+      "text": "YARN\r\n\u25cf YARN enabled the users to perform operations as per requirement by \r\nusing a variety of tools like Spark for real-time processing, Hive for SQL, \r\nHBase for NoSQL and others. \r\n\u25cf Apart from Resource Management, YARN also performs Job Scheduling. \r\n\u25cf YARN performs all your processing activities by allocating resources and \r\nscheduling tasks.\r\n\u25cf The fundamental idea of YARN is to split up the functionalities of resource \r\nmanagement and job scheduling/monitoring into separate daemons. \r\n\u25cf The idea is to have a global ResourceManager (RM) and per-application \r\nApplicationMaster (AM). \r\n\u25cf An application is either a single job or a DAG of jobs.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 89,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_089.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_089.webp",
+      "text": "YARN\r\nFeatures of Hadoop YARN\r\n\u25cf High-degree compatibility: Applications created use the MapReduce \r\nframework that can be run easily on YARN.\r\n\u25cf Better cluster utilization: YARN allocates all cluster resources efficiently \r\nand dynamically, which leads to better utilization of Hadoop as compared \r\nto the previous version of it.\r\n\u25cf Utmost scalability: Whenever there is an increase in the number of nodes \r\nin the Hadoop cluster, the YARN Resource Manager assures that it meets \r\nthe user requirements.\r\n\u25cf Multi-tenancy: Various engines that access data on the Hadoop cluster \r\ncan efficiently work together all because of YARN as it is a highly versatile \r\ntechnology.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 90,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_090.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_090.webp",
+      "text": "YARN architecture\r\nApache Hadoop YARN Architecture consists of the following main components :\r\n1. Resource Manager: Runs on a master daemon and manages the resource \r\nallocation in the cluster.\r\n2. Node Manager: They run on the slave daemons and are responsible for the \r\nexecution of a task on every single Data Node.\r\n3. Application Master: Manages the user job lifecycle and resource needs of \r\nindividual applications. It works along with the Node Manager and monitors the \r\nexecution of tasks.\r\n4. Container: Package of resources including RAM, CPU, Network, HDD etc on a \r\nsingle node.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 91,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_091.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_091.webp",
+      "text": "YARN architecture",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 92,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_092.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_092.webp",
+      "text": "YARN architecture\r\nThe first component of YARN Architecture is,\r\nResource Manager\r\n\u25cf It is the master daemon (ultimate authority) in resource allocation. \r\n\u25cf On receiving the processing requests, it passes parts of requests to corresponding \r\nnode managers accordingly, where the actual processing takes place.\r\n\u25cf It is the arbitrator of the cluster resources and decides the allocation of the available \r\nresources for competing applications.\r\n\u25cf Optimizes the cluster utilization like keeping all resources in use all the time against \r\nvarious constraints such as capacity guarantees, fairness, and SLAs.\r\n\u25cf It has two major components: a) Scheduler b) Application Manager",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 93,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_093.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_093.webp",
+      "text": "YARN architecture\r\na) Scheduler\r\n\u25cf The scheduler is responsible for allocating resources to the various running \r\napplications subject to constraints of capacities, queues etc.\r\n\u25cf It is called a pure scheduler in ResourceManager, which means that it does not \r\nperform any monitoring or tracking of status for the applications.\r\n\u25cf If there is an application failure or hardware failure, the Scheduler does not \r\nguarantee to restart the failed tasks.\r\n\u25cf Performs scheduling based on the resource requirements of the applications.\r\n\u25cf It has a pluggable policy plug-in, which is responsible for partitioning the cluster \r\nresources among the various applications. \r\n\u25cf There are two such plug-ins: Capacity Scheduler and Fair Scheduler, which are \r\ncurrently used as Schedulers in ResourceManager.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 94,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_094.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_094.webp",
+      "text": "YARN architecture\r\nb) Application Manager\r\n\u25cf It is responsible for accepting job submissions.\r\n\u25cf Negotiates the first container from the Resource Manager for executing the \r\napplication specific Application Master.\r\n\u25cf Manages running the Application Masters in a cluster and provides service for \r\nrestarting the Application Master container on failure.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 95,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_095.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_095.webp",
+      "text": "YARN architecture\r\nThe second component is :\r\nNode Manager\r\n\u25cf Node Manager is the slave daemon of YARN.\r\n\u25cf It takes care of individual nodes in a Hadoop cluster and manages user jobs and workflow \r\non the given node.\r\n\u25cf It registers with the Resource Manager and sends heartbeats with the health status of the \r\nnode.\r\n\u25cf Its primary goal is to manage application containers assigned to it by the resource \r\nmanager.\r\n\u25cf It keeps up-to-date with the Resource Manager.\r\n\u25cf Application Master requests the assigned container from the Node Manager by sending it \r\na Container Launch Context(CLC) which includes everything the application needs in order \r\nto run. The Node Manager creates the requested container process and starts it.\r\n\u25cf Monitors resource usage (memory, CPU) of individual containers.\r\n\u25cf Performs Log management.\r\n\u25cf It also kills the container as directed by the Resource Manager.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 96,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_096.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_096.webp",
+      "text": "YARN architecture\r\nThe third component of Apache Hadoop YARN is,\r\nApplication Master\r\n\u25cf An application is a single job submitted to the framework. Each such application has a \r\nunique Application Master associated with it which is a framework specific entity.\r\n\u25cf It is the process that coordinates an application\u2019s execution in the cluster and also \r\nmanages faults.\r\n\u25cf Its task is to negotiate resources from the Resource Manager and work with the Node \r\nManager to execute and monitor the component tasks.\r\n\u25cf It is responsible for negotiating appropriate resource containers from the \r\nResourceManager, tracking their status and monitoring progress.\r\n\u25cf Once started, it periodically sends heartbeats to the Resource Manager to affirm its health \r\nand to update the record of its resource demands.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 97,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_097.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_097.webp",
+      "text": "YARN architecture\r\nThe fourth component is:\r\nContainer\r\n\u25cf It is a collection of physical resources such as RAM, CPU cores, and disks on a single \r\nnode.\r\n\u25cf YARN containers are managed by a container launch context which is container \r\nlife-cycle(CLC). This record contains a map of environment variables, dependencies \r\nstored in a remotely accessible storage, security tokens, payload for Node Manager \r\nservices and the command necessary to create the process.\r\n\u25cf It grants rights to an application to use a specific amount of resources (memory, \r\nCPU etc.) on a specific host.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 98,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_098.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_098.webp",
+      "text": "Application Submission in YARN\r\n1) Submit the job\r\n2) Get Application ID\r\n3) Application Submission Context\r\n4 a) Start Container Launch\r\n b) Launch Application Master\r\n5) Allocate Resources\r\n6 a) Container\r\n b) Launch\r\n7) Execute",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 99,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_099.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_099.webp",
+      "text": "Application Submission in YARN",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 100,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_100.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_100.webp",
+      "text": "Application Workflow in Hadoop YARN\r\n1. Client submits an application\r\n2. Resource Manager allocates a container to start Application Manager\r\n3. Application Manager registers with Resource Manager\r\n4. Application Manager asks containers from Resource Manager\r\n5. Application Manager notifies Node Manager to launch containers\r\n6. Application code is executed in the container\r\n7. Client contacts Resource Manager/Application Manager to monitor \r\napplication\u2019s status\r\n8. Application Manager unregisters with Resource Manager",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 101,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_101.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_101.webp",
+      "text": "Application Workflow in Hadoop YARN",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 102,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_102.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_102.webp",
+      "text": "Role of YARN in resource management\r\n\u25cf YARN (Yet Another Resource Negotiator) is the resource management and job \r\nscheduling layer of Apache Hadoop. \r\n\u25cf It manages cluster resources such as CPU and memory and allocates them to \r\napplications running in a Hadoop cluster.\r\nKey roles of YARN\r\n1. Resource Management: Tracks available CPU, memory, and other resources across \r\ncluster nodes.\r\n2. Job Scheduling: Decides when and where applications should run based on resource \r\navailability and scheduling policies.\r\n3. Resource Allocation: Allocates resources to applications using containers, which \r\nprovide the resources needed to execute tasks.\r\n4. Application Management: Manages the application execution lifecycle, from \r\nsubmission to completion.\r\n5. Load Distribution: Distributes workloads across multiple nodes to use cluster resources \r\nefficiently.\r\n6. Fault Tolerance: Helps detect failed application components and supports restarting or \r\nrescheduling tasks when necessary.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 103,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_103.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_103.webp",
+      "text": "YARN\r\nAdvantages of YARN\r\n\u25cf Improves cluster resource utilization.\r\n\u25cf Supports multiple applications running simultaneously.\r\n\u25cf Separates resource management from data processing.\r\n\u25cf Supports different processing frameworks, such as MapReduce and \r\nSpark.\r\n\u25cf Improves scalability and workload management.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 104,
+      "image": "/slides/admt_admt_module_5_module_5-part2_pdf/slide_104.webp",
+      "thumb": "/slides/admt_admt_module_5_module_5-part2_pdf/thumb_104.webp",
+      "text": "YARN vs MapReduce\r\nCriteria YARN MapReduce\r\nType of Processing Real-time, batch, and interactive \r\nprocessing using multiple engines\r\nBatch processing using a \r\nsingle engine\r\nCluster Resource \r\nOptimization\r\nHigh \u2014 central resource \r\nmanagement improves efficiency\r\nLimited \u2014 relies on fixed \r\nMap and Reduce task slots\r\nSuitable For Both MapReduce and other \r\nprocessing frameworks (e.g., \r\nSpark, Tez)\r\nOnly MapReduce \r\napplications\r\nCluster Resource \r\nManager\r\nYARN ResourceManager and \r\nNodeManager\r\nJobTracker and \r\nTaskTracker\r\nNamespace Support Supports multiple namespaces \r\n(via Federation in HDFS)\r\nSupports only a single \r\nHDFS namespace",
+      "width": 1440,
+      "height": 810
+    }
+  ]
+}

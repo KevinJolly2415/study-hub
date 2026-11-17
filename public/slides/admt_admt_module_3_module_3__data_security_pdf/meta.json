@@ -1,0 +1,678 @@
+{
+  "mtime": 1793934621.748042,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_001.webp",
+      "text": "Module 3: Data Security\r\nBy MS. ALVINA LOPES",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Database Security\r\n\u2756 Authorization\r\n\u2756 Discretionary Access Control\r\n\u2756 Mandatory Access Control\r\n\u2756 Multilevel Security\r\n\u2756 Role-Based Access Control\r\n\u2756 Remote Database Access Protocol\r\n\u2756 SQL Injection\r\n\u2756 Statistical Database Security\r\n\u2756 Flow Control",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_003.webp",
+      "text": "Database Security\r\n\u25cf The data stored in a DBMS is often vital to the business interests of the \r\norganization and is regarded as a corporate asset. \r\n\u25cf In addition to protecting the intrinsic value of the data, corporations must \r\nconsider ways to ensure privacy and controlled access to data.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_004.webp",
+      "text": "Database Security",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_005.webp",
+      "text": "Database Security Issues\r\nTypes of Security\r\n\u25cf Legal and ethical issues- regarding the right to access certain information\r\n\u25cf Policy issues eg: credit ratings and personal medical records\r\n\u25cf System-related issues eg: security function at hardware, OS level or DBMS \r\nlevel\r\n\u25cf The need to identify multiple security levels eg: top secret, secret, \r\nconfidential",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_006.webp",
+      "text": "Database Security Issues\r\nThreats to databases\r\n\u25cf Loss of integrity\r\n\u25cb Integrity is lost if unauthorized changes are made to the \r\ndata by either intentional or accidental acts.\r\n\u25cb could result in inaccuracy, fraud, or erroneous decisions.\r\n\u25cf Loss of availability\r\n\u25cb Loss of availability occurs when the user or program cannot \r\naccess the data objects.\r\n\u25cf Loss of confidentiality\r\n\u25cb Unauthorized, unanticipated, or unintentional disclosure \r\ncould result in loss of public confidence, embarrassment, or \r\nlegal action against the organization.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_007.webp",
+      "text": "Database Security Issues\r\nDatabase Security: Not an Isolated Concern\r\n\u25cf DBMS alone cannot be responsible for maintaining the confidentiality, \r\nintegrity, and availability of the data.\r\n\u25cf Rather, the database works as part of a network of services, including \r\napplications, Web servers, firewalls, SSL terminators, and security \r\nmonitoring systems.\r\n\u25cf So, a database may be compromised even if it would have been perfectly \r\nsecure on its own merits.\r\n\u25cf Four control measures to protect databases against the threats: access \r\ncontrol, inference control, flow control, and encryption.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_008.webp",
+      "text": "Database Security Issues\r\nDatabase Security: Not an Isolated Concern\r\n\u25cf A DBMS typically includes a database security and authorization \r\nsubsystem that is responsible for ensuring the security portions of a \r\ndatabase against unauthorized access.\r\n\u25cf Two types of database security mechanisms:\r\na. Discretionary security mechanisms\r\nb. Mandatory security mechanisms",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_009.webp",
+      "text": "Database Security Issues\r\nDatabase Security: Not an Isolated Concern\r\n\u25cf Four control measures to protect databases against the threats:\r\n\u25cb Access control\r\n\u25cb Inference control\r\n\u25cb Flow control\r\n\u25cb Encryption",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_010.webp",
+      "text": "Database Security Issues\r\nDatabase Security: Not an Isolated Concern\r\nAccess Control\r\n\u25cf The security mechanism of a DBMS must include provisions for restricting \r\naccess to the database as a whole\r\n\u25cf This function is called access control and is handled by creating user \r\naccounts and passwords to control login process by the DBMS.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_011.webp",
+      "text": "Database Security Issues\r\nDatabase Security: Not an Isolated Concern\r\nInference Control\r\n\u25cf The security problem associated with databases is that of controlling the \r\naccess to a statistical database, which is used to provide statistical \r\ninformation or summaries of values based on various criteria.\r\n\u25cf The countermeasures to statistical database security problem is called \r\ninference control measures.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_012.webp",
+      "text": "Database Security Issues\r\nDatabase Security: Not an Isolated Concern\r\nFlow Control\r\n\u25cf Another security is that of flow control, which prevents information from \r\nflowing in such a way that it reaches unauthorized users.\r\n\u25cf Channels that are pathways for information to flow implicitly in ways that \r\nviolate the security policy of an organization are called covert channels.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_013.webp",
+      "text": "Database Security Issues\r\nDatabase Security: Not an Isolated Concern\r\nEncryption\r\n\u25cf A final security issue is data encryption, which is used to protect \r\nsensitive data (such as credit card numbers) that is being transmitted via \r\nsome type communication network.\r\n\u25cf The data is encoded using some encoding algorithm.\r\n\u25cf An unauthorized user who access encoded data will have difficulty \r\ndeciphering it, but authorized users are given decoding or decrypting \r\nalgorithms (or keys) to decipher data.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_014.webp",
+      "text": "Database Security Issues\r\nFour control measures",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_015.webp",
+      "text": "Database Security and the DBA\r\n\u25cf The database administrator (DBA) is the central authority for managing a \r\ndatabase system.\r\n\u25cf The DBA\u2019s responsibilities include:\r\n\u25cb granting privileges to users who need to use the system\r\n\u25cb classifying users and data in accordance with the policy of the organization\r\n\u25cf The DBA is responsible for the overall security of the database system",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_016.webp",
+      "text": "Database Security and the DBA",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_017.webp",
+      "text": "Database Security and the DBA\r\n\u25cf The DBA has a DBA account in the DBMS.\r\n\u25cf Sometimes it is called a system or a superuser account.\r\n\u25cf This account provides powerful capabilities such as:\r\n1. Account creation\r\n2. Privilege granting\r\n3. Privilege revocation\r\n4. Security level assignment\r\n\u25cf Action 1 is access control, whereas 2 and 3 are discretionary and 4 is \r\nused to control mandatory authorization",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_018.webp",
+      "text": "Authorization\r\nAccess Protection, User Accounts, and Database Audits\r\n\u25cf Whenever a person or group of persons need to access a database \r\nsystem, the individual or group must first apply for a user account.\r\n\u25cf The DBA will then create a new account id and password for the user if \r\nhe/she deems there is a legitimate need to access the database\r\n\u25cf The user must log in to the DBMS by entering account id and password \r\nwhenever database access is needed.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_019.webp",
+      "text": "Authorization\r\nAccess Protection, User Accounts, and Database Audits\r\n\u25cf The database system must also keep track of all operations on the \r\ndatabase that are applied by a certain user throughout each login session.\r\n\u25cf To keep a record of all updates applied to the database and of the \r\nparticular user who applied each update, we can modify system log, \r\nwhich includes an entry for each operation applied to the database that \r\nmay be required for recovery from a transaction failure or system crash.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_020.webp",
+      "text": "Authorization\r\nAccess Protection, User Accounts, and Database Audits\r\n\u25cf If any tampering with the database is suspected, a database audit is \r\nperformed\r\n\u25cf A database audit consists of reviewing the log to examine all accesses and \r\noperations applied to the database during a certain time period.\r\n\u25cf A database log that is used mainly for security purposes is sometimes \r\ncalled an audit trail.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_021.webp",
+      "text": "Authorization\r\nSensitive Data and Types of Disclosures\r\nSensitivity of data is a measure of the importance assigned to the data by its owner for the \r\npurpose of denoting its need for protection.\r\nSeveral factors can cause data to be classified as sensitive:\r\n1. Inherently sensitive: The value of the data itself may be so revealing or confidential \r\nthat it becomes sensitive\u2014for example, a person\u2019s salary or whether a patient has \r\nHIV/AIDS.\r\n2. From a sensitive source: The source of the data may indicate a need for secrecy\u2014for \r\nexample, an informer whose identity must be kept secret.\r\n3. Declared sensitive: The owner of the data may have explicitly declared it as sensitive.\r\n4. A sensitive attribute or sensitive record: The particular attribute or record may have \r\nbeen declared sensitive\u2014for example, the salary attribute of an employee or the salary \r\nhistory record in a personnel database.\r\n5. Sensitive in relation to previously disclosed data: Some data may not be sensitive \r\nby itself but will become sensitive in the presence of some other data\u2014for example, \r\nthe exact latitude and longitude information for a location where some previously \r\nrecorded event happened that was later deemed sensitive.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_022.webp",
+      "text": "Authorization\r\nSensitive Data and Types of Disclosures\r\nSeveral factors must be considered before deciding whether it is safe to reveal \r\nthe data. \r\nThe three most important factors are data availability, access acceptability, \r\nand authenticity assurance.\r\n1. Data availability: If a user is updating a field, then this field becomes \r\ninaccessible and other users should not be able to view this data \r\n(temporarily-concurrency control).\r\n2. Access acceptability: Data should only be revealed to authorized users.\r\n3. Authenticity assurance: Before granting access, certain external \r\ncharacteristics about the user may also be considered. For example, a \r\nuser may only be permitted access during working hours.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_023.webp",
+      "text": "Authorization\r\nSecurity versus Precision\r\n\u25cf Security: Means of ensuring that data is kept safe from corruption and \r\nthat access to it is suitably controlled. To provide security means to \r\ndisclose only nonsensitive data and to reject any query that references a \r\nsensitive field.\r\n\u25cf Precision: To protect all sensitive data while disclosing or making \r\navailable as much nonsensitive data as possible.\r\nThe ideal combination is to maintain perfect security with maximum precision.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_024.webp",
+      "text": "Authorization\r\nRelationship between Information Security and Information Privacy\r\n\u25cf Security: Security in information technology refers to many aspects of \r\nprotecting a system from unauthorized use, including authentication of \r\nusers, information encryption, access control, firewall policies, and \r\nintrusion detection.\r\n\u25cf Privacy: privacy is the ability of individuals to control the terms under \r\nwhich their personal information is acquired and used.\r\nSecurity involves technology to ensure that information is appropriately \r\nprotected. Security is a required building block for privacy.\r\nPrivacy involves mechanisms to support compliance with some basic \r\nprinciples and other explicitly stated policies.\r\nTrust, relates to both security and privacy and is seen as increasing when it is \r\nperceived that both security and privacy are provided for.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_025.webp",
+      "text": "Discretionary Access Control\r\nDiscretionary security mechanisms:\r\n\u25cf These are used to grant privileges to users.\r\n\u25cf The privileges include the capability to access specific data files, records, \r\nor fields in a specified mode. \r\n\u25cf The mode may be either read, insert, delete, or update.\r\nThe typical method of enforcing discretionary access control in a database \r\nsystem is based on the granting and revoking privileges.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_026.webp",
+      "text": "Discretionary Access Control\r\nTypes of Discretionary Privileges\r\n\u25cf The account level:\r\n\u25cb At this level, the DBA specifies the particular privileges that each account holds \r\nindependently of the relations in the database.\r\n\u25cf The relation level (or table level):\r\n\u25cb At this level, the DBA can control the privilege to access each individual \r\nrelation or view in the database.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_027.webp",
+      "text": "Discretionary Access Control\r\nTypes of Discretionary Privileges\r\n\u25cf The privileges at the account level apply to the capabilities provided to \r\nthe account itself and can include:\r\n\u25cb the CREATE SCHEMA or CREATE TABLE privilege, to create a schema or \r\nbase relation;\r\n\u25cb the CREATE VIEW privilege;\r\n\u25cb the ALTER privilege, to apply schema changes such adding or removing \r\nattributes from relations;\r\n\u25cb the DROP privilege, to delete relations or views;\r\n\u25cb the MODIFY privilege, to insert, delete, or update tuples;\r\n\u25cb and the SELECT privilege, to retrieve information from the database by \r\nusing a SELECT query.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_028.webp",
+      "text": "Discretionary Access Control\r\nTypes of Discretionary Privileges\r\n\u25cf The second level of privileges applies to the relation level.\r\n\u25cb This includes base relations and virtual (view) relations.\r\n\u25cf The granting and revoking of privileges generally follow an authorization \r\nmodel for discretionary privileges known as the access matrix model \r\nwhere \r\n\u25cb The rows of a matrix M represents subjects (users, accounts, programs)\r\n\u25cb The columns represent objects (relations, records, columns, views, \r\noperations).\r\n\u25cb Each position M(i,j) in the matrix represents the types of privileges (read, \r\nwrite, update) that subject i holds on object j.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_029.webp",
+      "text": "Discretionary Access Control\r\nTypes of Discretionary Privileges\r\n\u25cf The mechanism of views is an important discretionary authorization \r\nmechanism in its own right. For example,\r\n\u25cf If the owner A of a relation R wants another account B to be able to \r\nretrieve only some fields of R, then A can create a view V of R that \r\nincludes only those attributes and then grant SELECT on V to B.\r\n\u25cf The same applies to limiting B to retrieving only certain tuples of R; a view \r\nV\u2019 can be created by defining the view by means of a query that selects \r\nonly those tuples from R that A wants to allow B to access.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_030.webp",
+      "text": "Discretionary Access Control\r\nRevoking Privileges\r\n\u25cf In some cases, it is desirable to grant a privilege to a user temporarily. \r\n\u25cf For example, \r\n\u25cf The owner of a relation may want to grant the SELECT privilege to a user \r\nfor a specific task and then revoke that privilege once the task is \r\ncompleted.\r\n\u25cf Hence, a mechanism for revoking privileges is needed. \r\n\u25cf In SQL, a REVOKE command is included for the purpose of canceling \r\nprivileges.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_031.webp",
+      "text": "Discretionary Access Control\r\nPropagation of Privileges using the GRANT OPTION\r\n\u25cf Whenever the owner A of a relation R grants a privilege on R to another \r\naccount B, privilege can be given to B with or without the GRANT OPTION.\r\n\u25cf If the GRANT OPTION is given, this means that B can also grant that \r\nprivilege on R to other accounts. \r\n\u25cf Suppose that B is given the GRANT OPTION by A and that B then grants \r\nthe privilege on R to a third account C, also with GRANT OPTION. \r\n\u25cf In this way, privileges on R can propagate to other accounts without the \r\nknowledge of the owner of R.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_032.webp",
+      "text": "Discretionary Access Control\r\nPropagation of Privileges using the GRANT OPTION\r\n\u25cf If the owner account A now revokes the privilege granted to B, all the \r\nprivileges that B propagated based on that privilege should \r\nautomatically be revoked by the system.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_033.webp",
+      "text": "Discretionary Access Control\r\nExample- Grant and Revoke\r\n\u25cf Suppose that the DBA creates four accounts\r\n\u25cb A1, A2, A3, A4\r\n\u25cf and wants only A1 to be able to create base relations. Then the DBA must \r\nissue the following GRANT command in SQL\r\nGRANT CREATETAB TO A1;\r\n\u25cf In SQL2 the same effect can be accomplished by having the DBA issue a \r\nCREATE SCHEMA command as follows:\r\nCREATE SCHEMA EXAMPLE AUTHORIZATION A1;",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_034.webp",
+      "text": "Discretionary Access Control\r\nExample- Grant and Revoke\r\n\u25cf User account A1 can create tables under the schema called EXAMPLE.\r\n\u25cf Suppose that A1 creates the two base relations EMPLOYEE and \r\nDEPARTMENT\r\n\u25cf A1 is then owner of these two relations and hence all the relation \r\nprivileges on each of them.\r\n\u25cf Suppose that A1 wants to grant A2 the privilege to insert and delete \r\ntuples in both of these relations, but A1 does not want A2 to be able to \r\npropagate these privileges to additional accounts:\r\nGRANT INSERT, DELETE ON\r\nEMPLOYEE, DEPARTMENT TO A2;",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_035.webp",
+      "text": "Discretionary Access Control\r\nExample- Grant and Revoke\r\n\u25cf Schemas for the two relations- EMPLOYEE and DEPARTMENT",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_036.webp",
+      "text": "Discretionary Access Control\r\nExample- Grant and Revoke\r\n\u25cf Suppose that A1 wants to allow A3 to retrieve information from either of the \r\ntwo tables and also to be able to propagate the SELECT privilege to other \r\naccounts.\r\n\u25cf A1 can issue the command:\r\nGRANT SELECT ON EMPLOYEE, DEPARTMENT \r\nTO A3 WITH GRANT OPTION;\r\n\u25cf A3 can grant the SELECT privilege on the EMPLOYEE relation to A4 by issuing:\r\nGRANT SELECT ON EMPLOYEE TO A4;\r\n\u25cf Notice that A4 can\u2019t propagate the SELECT privilege because GRANT OPTION \r\nwas not given to A4.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_037.webp",
+      "text": "Discretionary Access Control\r\nExample- Grant and Revoke\r\n\u25cf Suppose that A1 decides to revoke the SELECT privilege on the EMPLOYEE \r\nrelation from A3; A1 can issue:\r\nREVOKE SELECT ON EMPLOYEE FROM A3;\r\n\u25cf The DBMS must now automatically revoke the SELECT privilege on \r\nEMPLOYEE from A4, too, because A3 granted that privilege to A4 and A3 \r\ndoes not have the privilege any more.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_038.webp",
+      "text": "Discretionary Access Control\r\nSpecifying Limits on Propagation of Privileges\r\n\u25cf Techniques to limit the propagation of privileges have been developed, \r\nalthough they have not yet been implemented in most DBMSs and are not \r\na part of SQL.\r\n\u25cf Limiting horizontal propagation to an integer number i means that an \r\naccount B given the GRANT OPTION can grant the privilege to at most i \r\nother accounts.\r\n\u25cf Vertical propagation is more complicated; it limits the depth of the \r\ngranting of privileges.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_039.webp",
+      "text": "Discretionary Access Control\r\nExample- Specifying Limits on Propagation of Privileges\r\nA1 grants SELECT to A2 on EMPLOYEE relation with:\r\nHorizontal propagation (HP) = 1\r\nVertical propagation (VP) = 2",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_040.webp",
+      "text": "Mandatory Access Control\r\n\u25cf The discretionary access control techniques of granting and revoking \r\nprivileges on relations has traditionally been the main security \r\nmechanism for relational database systems.\r\n\u25cf This is an all-or-nothing method:\r\n\u25cb A user either has or does not have a certain privilege.\r\n\u25cf In many applications, and additional security policy is needed that \r\nclassifies data and users based on security classes. \r\n\u25cf This approach as mandatory access control, would typically be \r\ncombined with the discretionary access control mechanisms.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_041.webp",
+      "text": "Mandatory Access Control\r\n\u25cf Mandatory Access Control (MAC): \u25e6 MAC applies to large amounts of \r\ninformation requiring strong protect in environments where both the \r\nsystem data and users can be classified clearly.\r\n\u25cf MAC is a mechanism for enforcing multiple levels of security.\r\n\u25cf The commonly used model for multilevel security, is known as the \r\nBell-LaPadula model.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_042.webp",
+      "text": "Mandatory Access Control\r\nBell-LaPadula model: Security classes\r\n\u25cf Classifies subjects and objects based on security classes. \r\n\u25cf Security class: \r\n\u25cb Classification level \r\n\u25cb Clearance\r\n\u25cf A subject classification reflects the degree of trust and the application \r\narea.\r\n\u25cf An object classification reflects the sensitivity of the data. \r\n\u25cf Typical security classes are top secret (TS), secret (S), confidential (C), and \r\nunclassified (U), \r\n\u25cf where TS is the highest level and U the lowest: TS \u2265 S \u2265 C \u2265 U",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_043.webp",
+      "text": "Mandatory Access Control\r\nBell-LaPadula model\r\n\u25cf Classifies each subject (user, account, program) and object (relation, \r\ntuple, column, view, operation) into one of the security classifications, TS, \r\nS, C, or U:\r\n\u25cf Clearance (classification) of a subject S as class(S) and to the \r\nclassification of an object O as class(O).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_044.webp",
+      "text": "Mandatory Access Control\r\nBell-LaPadula model\r\n\u25cf Two restrictions are enforced on data access based on the subject/object \r\nclassifications:\r\n\u25cf Simple security property: A subject S is not allowed read access to an \r\nobject O unless class(S) \u2265 class(O).\r\n\u25cf A subject S is not allowed to write an object O unless class(S) \u2264 class(O). \r\nThis known as the star property (or * property).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_045.webp",
+      "text": "Mandatory Access Control\r\nBell-LaPadula model",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_046.webp",
+      "text": "Mandatory Access Control\r\nBell-LaPadula model",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_047.webp",
+      "text": "Discretionary Access Control vs Mandatory Access Control\r\n\u25cf Discretionary Access Control (DAC) policies are characterized by a high \r\ndegree of flexibility, which makes them suitable for a large variety of \r\napplication domains.\r\n\u25cf The main drawback of DAC models is their vulnerability to malicious \r\nattacks, such as Trojan horses embedded in application programs.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_048.webp",
+      "text": "Discretionary Access Control vs Mandatory Access Control\r\n\u25cf By contrast, mandatory policies ensure a high degree of protection in a \r\nway, they prevent any illegal flow of information.\r\n\u25cf Mandatory policies have the drawback of being too rigid and they are only \r\napplicable in limited environments.\r\n\u25cf In many practical situations, discretionary policies are preferred because \r\nthey offer a better trade-off between security and applicability.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_049.webp",
+      "text": "Discretionary Access Control vs Mandatory Access Control\r\nSr. \r\nNo Characteristic MAC DAC\r\n1 Who enforces access \r\ncontrol\r\nAdministrators and the operating system Administrators and users\r\n2 Form of access control Confidentiality levels and clearances Access-control lists with user identities\r\n3 Flexibility No Yes\r\n4 Scalability No Yes\r\n5 Simplicity, ease of use No Yes\r\n6 Maintenance High Low\r\n7 Implementation cost High Low\r\n8 Useful for Government, military, law enforcements Small and medium-sized companies",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_050.webp",
+      "text": "Role-Based Access Control\r\n\u25cf Role-based access control (RBAC) emerged rapidly in the 1990s as a \r\nproven technology for managing and enforcing security in large-scale \r\nenterprise wide systems.\r\n\u25cf Its basic notion is that permissions are associated with roles, and users \r\nare assigned to appropriate roles.\r\n\u25cf Roles can be created using the CREATE ROLE and DESTROY ROLE\r\ncommands. \r\n\u25cf The GRANT and REVOKE commands discussed under DAC can then be \r\nused to assign and revoke privileges from roles.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_051.webp",
+      "text": "Role-Based Access Control\r\n\u25cf RBAC appears to be a viable alternative to traditional discretionary and \r\nmandatory access controls; it ensures that only authorized users are \r\ngiven access to certain data or resources.\r\n\u25cf Many DBMSs have allowed the concept of roles, where privileges can be \r\nassigned to roles.\r\n\u25cf Role hierarchy in RBAC is a natural way of organizing roles to reflect the \r\norganization\u2019s lines of authority and responsibility.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_052.webp",
+      "text": "Remote Database Access Protocol\r\n\u25cf Remote Database Access (RDA) is a specialized technology that enables \r\nusers to securely connect to and interact with databases located on \r\nremote servers from any location with internet connectivity. \r\n\u25cf This allows users to access and manipulate data from anywhere with an \r\ninternet connection.\r\n\u25cf This essential functionality allows organizations to maintain centralized \r\ndata management while providing distributed access to authorized users.\r\n\u25cf A remote database access protocol is a set of rules that lets a client \r\nprogram talk to a database server over a network.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_053.webp",
+      "text": "Remote Database Access Protocol\r\nRemote Database Access- Steps\r\n1. The client sends a request for data to the server using a network \r\nconnection (such as the internet).\r\n2. The server receives the request and retrieves the requested data from its \r\nstorage.\r\n3. The server sends the data back to the client over the network connection.\r\n4. The client receives the data and can then display or process it as needed.\r\nThis client-server communication happens over the internet, and the data is \r\ntransmitted securely to protect it from unauthorized access.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_054.webp",
+      "text": "Remote Database Access Protocol\r\n\u25cf Remote database access (RDA) is a protocol standard for database access.\r\n\u25cf RDA was published in 1993, as a combined standard of ANSI, ISO and IEC. \r\nThe standards definition comprises two parts:\r\n\u25cb ANSI/ISO/IEC 9579-1:1993\r\n\u25cb ANSI/ISO/IEC 9579-2:1993\r\n\u25cf The standard has now been replaced by ISO/IEC 9579:2000 Information \r\ntechnology -- Remote database access for SQL with security \r\nenhancement.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_055.webp",
+      "text": "Remote Database Access Protocol\r\n\u25cf RDA describes the connection of a database client to a database server. It \r\nincludes features for\r\n\u25cb communicating database operations and parameters from the client to the \r\nserver,\r\n\u25cb in return, transporting result data from the server to the client,\r\n\u25cb database transaction management.\r\n\u25cb exchange of information.\r\n\u25cf RDA is an application-level protocol\r\n\u25cf It builds on an existing network connection between client and server.\r\n\u25cf In the case of TCP/IP connections, RFC 1066 is used for implementing \r\nRDA.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_056.webp",
+      "text": "Remote Database Access Protocol\r\n\u25cf Remote database access enable businesses to implement efficient data \r\nmanagement strategies while maintaining strict security protocols. \r\n\u25cf Organizations can establish secure connections to their database systems \r\nwithout compromising on performance or security.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_057.webp",
+      "text": "Remote Database Access Protocol\r\nKey Features and Benefits\r\n\u25cf Real-time data access and manipulation from remote locations\r\n\u25cf Centralized database management and administration\r\n\u25cf Reduced infrastructure costs through consolidated resources\r\n\u25cf Enhanced data security through encrypted connections\r\n\u25cf Improved collaboration among distributed teams\r\n\u25cf Scalable architecture supporting multiple concurrent users",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_058.webp",
+      "text": "Remote Database Access Protocol\r\nSecurity Considerations\r\n\u25cf End-to-end encryption for data transmission\r\n\u25cf Multi-factor authentication support\r\n\u25cf Role-based access control\r\n\u25cf Audit logging and monitoring capabilities\r\n\u25cf Compliance with data protection regulations",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_059.webp",
+      "text": "Remote Database Access Protocol\r\n\u25cf Professional implementation of remote database access requires careful \r\nconsideration of security protocols and performance optimization.\r\n\u25cf Remote Database Access requires SSL encryption, firewall configuration, \r\nVPN connectivity, strong authentication protocols, and regular security \r\naudits to maintain data protection standards.\r\n\u25cf Common issues include slow connection speeds, firewall blocking, \r\nincorrect port configuration, authentication failures, and SSL certificate \r\nproblems.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_060.webp",
+      "text": "SQL Injection\r\n\u25cf SQL injection (SQLi) - one of the most common threats to a database \r\nsystem.\r\nOther frequent attacks on databases:\r\n\u25cf Unauthorized privilege escalation\r\n\u25cf Privilege abuse\r\n\u25cf Denial of service\r\n\u25cf Weak authentication",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_061.webp",
+      "text": "SQL Injection\r\n\u25cf SQL injection (SQLi) is a web security vulnerability that allows an attacker \r\nto interfere with the queries that an application makes to its database.\r\n\u25cf This can allow an attacker to view data that they are not normally able to \r\nretrieve. \r\n\u25cf This might include data that belongs to other users, or any other data that \r\nthe application can access. \r\n\u25cf In many cases, an attacker can modify or delete this data, causing \r\npersistent changes to the application's content or behavior.\r\n\u25cf In some situations, an attacker can escalate a SQL injection attack to \r\ncompromise the underlying server or other back-end infrastructure. \r\n\u25cf It can also enable them to perform denial-of-service attacks.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_062.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_062.webp",
+      "text": "SQL Injection\r\n\u25cf In an sql injection attack, attacker injects string input through application, \r\nwhich changes or manipulates sql statement to attacker\u2019s advantage.\r\n\u25cf Harms database in various ways:\r\n\u25cb Unauthorized manipulation of database\r\n\u25cb Retrieval of sensitive data\r\n\u25cb Denial of service",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_063.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_063.webp",
+      "text": "SQL Injection\r\nReal world examples\r\n\u25cf Metabase (CVE-2026-72898): An unauthenticated SQL injection in the \r\npassword-reset flow (POST /api/session/reset_password) allows \r\nremote attackers to manipulate authentication data and obtain \r\nadministrator access without logging in.\r\n\u25cf PostgreSQL / BeyondTrust (CVE-2025-1094): A zero-day SQL injection flaw \r\nin PostgreSQL's interactive psql utility was chained to achieve remote \r\ncode execution during real-world attacks.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_064.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_064.webp",
+      "text": "SQL Injection\r\nHow it works?",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_065.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_065.webp",
+      "text": "SQL Injection\r\nHow it works?",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 66,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_066.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_066.webp",
+      "text": "SQL Injection",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 67,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_067.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_067.webp",
+      "text": "SQL Injection\r\nMethods",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 68,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_068.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_068.webp",
+      "text": "SQL Injection\r\nRisk associated with SQL injection\r\n\u25cf Database fingerprinting: determine type of db used in backend\r\n\u25cf Denial of service (DOS)\r\n\u25cf Bypassing authentication\r\n\u25cf Identifying injectable parameters\r\n\u25cf Executing remote commands\r\n\u25cf Performing privilege escalation",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 69,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_069.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_069.webp",
+      "text": "SQL Injection\r\nProtection Techniques against SQL Injection\r\n\u25cf Bind Variables (Using Parameterized Statements)\r\n\u25cf Filtering Input (Input Validation)- This technique can be used to remove \r\nescape characters from input strings by using the SQL Replace function.\r\n\u25cf Function Security- Database functions, both standard and custom, should \r\nbe restricted.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 70,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_070.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_070.webp",
+      "text": "SQL Injection\r\nProtection Techniques against SQL Injection",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 71,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_071.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_071.webp",
+      "text": "SQL Injection\r\nProtection Techniques against SQL Injection\r\nBind Variables (Using Parameterized Statements)\r\nConsider the following example using Java and JDBC:\r\nPreparedStatement stmt = conn.prepareStatement( \u201cSELECT * FROM\r\nEMPLOYEE WHERE EMPLOYEE_ID=? AND PASSWORD=?\u201d);\r\nstmt.setString(1, employee_id);\r\nstmt.setString(2, password);\r\nInstead of embedding the user input into the statement, the input should be \r\nbound to a parameter.\r\nHere, the input \u20181\u2019 is assigned (bound) to a bind variable \u2018employee_id\u2019 and \r\ninput \u20182\u2019 to the bind variable \u2018password\u2019 instead of directly passing string \r\nparameters.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 72,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_072.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_072.webp",
+      "text": "Statistical Database Security\r\n\u25cf Statistical databases are used mainly to produce statistics on various \r\npopulations.\r\n\u25cf The database may contain confidential data on individuals, which should \r\nbe protected from user access.\r\n\u25cf Users are permitted to retrieve statistical information on the \r\npopulations, such as averages, sums, counts, maximums, minimums, and \r\nstandard deviations.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 73,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_073.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_073.webp",
+      "text": "Statistical Database Security\r\n\u25cf A population is a set of tuples of a relation (table) that satisfy some \r\nselection condition. \r\n\u25cf Statistical queries involve applying statistical functions to a population of \r\ntuples.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 74,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_074.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_074.webp",
+      "text": "Statistical Database Security\r\n\u25cf For example, we may want to retrieve the number of individuals in a \r\npopulation or the average income in the population.\r\n\u25cf However, statistical users are not allowed to retrieve individual data, such \r\nas the income of a specific person.\r\n\u25cf Statistical database security techniques must prohibit the retrieval of \r\nindividual data.\r\n\u25cf This can be achieved by prohibiting queries that retrieve attribute values \r\nand by allowing only queries that involve statistical aggregate functions \r\nsuch as COUNT, SUM, MIN, MAX, AVERAGE, and STANDARD DEVIATION.\r\n\u25cf Such queries are sometimes called statistical queries.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 75,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_075.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_075.webp",
+      "text": "Statistical Database Security\r\n\u25cf It is DBMS\u2019s responsibility to ensure confidentiality of information about \r\nindividuals, while still providing useful statistical summaries of data about \r\nthose individuals to users. \r\n\u25cf Provision of privacy protection of users in a statistical database is \r\nparamount.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 76,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_076.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_076.webp",
+      "text": "Statistical Database Security\r\nStatistical Query examples\r\nQ1: SELECT COUNT (*)FROM PERSON\r\nWHERE <condition>;\r\nQ2: SELECT AVG (Income) FROM PERSON\r\nWHERE <condition>;\r\nNow suppose that we are interested in finding the Salary of Jane Smith, and we know \r\nthat she has a Ph.D. degree and that she lives in the city of Bellaire, Texas.\r\nWe issue the statistical query Q1 with the following condition:\r\n(Last_degree=\u2018Ph.D.\u2019 AND Sex=\u2018F\u2019 AND City=\u2018Bellaire\u2019 AND State=\u2018Texas\u2019)\r\nIf we get a result of 1 for this query, we can issue Q2 with the same condition and\r\nfind the Salary of Jane Smith.\r\nThis operation must not be permitted by DBMS.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 77,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_077.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_077.webp",
+      "text": "Flow Control\r\n\u25cf Flow control regulates the distribution or flow of information among \r\naccessible objects.\r\n\u25cf A flow between object X and object Y occurs when a program reads \r\nvalues from X and writes values into Y.\r\n\u25cf Flow controls check that information contained in some objects does not \r\nflow explicitly or implicitly into less protected objects.\r\n\u25cf Users should not obtain indirect access to information that they cannot \r\naccess directly.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 78,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_078.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_078.webp",
+      "text": "Flow Control\r\n\u25cf A flow policy specifies the channels along which information is allowed to \r\nmove.\r\n\u25cf The simplest flow policy specifies just two classes of information:\r\nconfidential (C) and nonconfidential (N)\r\n\u25cf and allows all flows except those from class C to class N.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 79,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_079.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_079.webp",
+      "text": "Flow Control\r\n\u25cf Access control mechanisms are responsible for checking users\u2019 \r\nauthorizations for resource access: Only granted operations are executed. \r\n\u25cf Flow controls can be enforced by an extended access control mechanism.\r\n\u25cf This involves assigning a security class (usually called the clearance) to \r\neach running program.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 80,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_080.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_080.webp",
+      "text": "Flow Control\r\nTypes of flows:\r\n1. Explicit flows: occur as a consequence of assignment instructions, such as \r\nY:= f(X1,Xn,)\r\n2. Implicit flows: generated by conditional instructions, such as if f(Xm+1, ... , \r\nXn) then Y:= f (X1,Xm).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 81,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_081.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_081.webp",
+      "text": "Flow Control\r\n\u25cf Flow control mechanisms must verify that only authorized flows, both \r\nexplicit and implicit, are executed.\r\n\u25cf A set of rules must be satisfied to ensure secure information flows. \r\n\u25cf Rules can be expressed using flow relations among classes and assigned \r\nto information, stating the authorized flows within a system.\r\n\u25cf In general, flow control mechanisms implement the controls by\r\n\u25cf assigning a label to each object and by specifying the security class of the \r\nobject.\r\n\u25cf Labels are then used to verify the flow relations defined in the model.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 82,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_082.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_082.webp",
+      "text": "Flow Control: Covert Channels\r\n\u25cf A covert channel allows a transfer of information that violates the security \r\nor the policy.\r\n\u25cf A covert channel allows information to pass from a higher classification \r\nlevel to a lower classification level through improper means.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 83,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_083.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_083.webp",
+      "text": "Flow Control: Covert Channels",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 84,
+      "image": "/slides/admt_admt_module_3_module_3__data_security_pdf/slide_084.webp",
+      "thumb": "/slides/admt_admt_module_3_module_3__data_security_pdf/thumb_084.webp",
+      "text": "Flow Control: Covert Channels\r\n\u25cf Covert channels can be classified into two broad categories:\r\n\u25cf Storage channels do not require any temporal synchronization, in that \r\ninformation is conveyed by accessing system information or what is \r\notherwise inaccessible to the user. A storage channel example uses \r\nshared storage, such as a temporary directory, to allow two subjects to \r\nsignal each other.\r\n\u25cf Timing channel allow the information to be conveyed by the timing of \r\nevents or processes. A covert timing channel relies on the system clock to \r\ninfer sensitive information.\r\n\u25cf Some security experts believe that one way to avoid covert channels is for \r\nprogrammers to not actually gain access to sensitive data that a program \r\nis supposed to process after the program has been put into operation.",
+      "width": 1440,
+      "height": 810
+    }
+  ]
+}

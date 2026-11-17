@@ -1,0 +1,494 @@
+{
+  "mtime": 1793870519.840988,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_001.webp",
+      "text": "MODULE 1: \r\nTransactions Management, \r\nConcurrency and Recovery\r\nPART 2- CONCURRENCY CONTROL\r\nMS. ALVINA LOPES",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Concurrent Executions \r\n\u2756 Concurrency Control \r\n\u2756 Concurrency Control Protocols \r\n\u2756 Lock-Based Protocols\r\n\u2756 Timestamp-Based Protocols\r\n\u2756 Validation-Based Protocols\r\n\u2756 Deadlock Handling\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_003.webp",
+      "text": "Concurrent Executions\r\n\u2022Concurrent execution means that multiple transactions are executed \r\nsimultaneously in an interleaved(mixed) manner.\r\n\u2022When multiple transactions execute concurrently without proper control, it \r\nmay lead to problems affecting data integrity and consistency. \r\n\u2022Such issues are called Concurrency Problems (or Anomalies).\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 3",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_004.webp",
+      "text": "Concurrency Problems\r\n1. Lost Update (Write\u2013Write Conflict)\r\n2. Uncommitted Data / Dirty Read (Write\u2013Read Conflict)\r\n3. Inconsistent Retrieval / Unrepeatable Read (Read\u2013Write Conflict)\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 4",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_005.webp",
+      "text": "Concurrent Executions\r\nSolution\r\nTo ensure correctness, DBMS enforces:\r\nSerializability\r\nConcurrent schedule must produce the same result as some serial schedule\r\nConcurrency Control Techniques\r\n\u2022Locking (2PL \u2013 Two Phase Locking) \r\n\u2022Timestamp Ordering \r\n\u2022Validation-based protocols\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 5",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_006.webp",
+      "text": "Concurrency Control\r\n\u2022 The system must control the interaction among the concurrent transactions.\r\n\u2022 This control is achieve through one of concurrency control schemes.\r\n\u2022 Concurrency control is a fundamental concept in database systems that ensures \r\ncorrect execution of simultaneous transactions without violating data integrity. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 6",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_007.webp",
+      "text": "Concurrency Control\r\nBelow are some characteristics of concurrency control:\r\n\u2022It enforces isolation among transactions. Transactions do not interfere with each \r\nother. Each transaction behaves as if it is executed alone\r\n\u2022It preserves database consistency through consistency preserving execution of \r\ntransactions. Ensures only valid data states are produced. Executes transactions in \r\na consistency-preserving manner\r\n\u2022It resolves read-write and write-read conflicts. Handles read\u2013write conflicts. \r\nHandles write\u2013read conflicts. Prevents issues like dirty reads, lost updates, etc.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 7",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_008.webp",
+      "text": "Concurrency Control protocols\r\nVarious concurrency control techniques are:\r\n\u27a2Lock-based Protocols \r\n\u27a2Time stamp-based Protocols\r\n\u27a2Validation-based Protocols\r\nLocking is one of the most widely used mechanisms.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 8",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_009.webp",
+      "text": "Lock-Based Protocols \r\n\u2022 To ensure isolation, it is required that data items should be accessed in mutual \r\nexclusive manner.\r\n\u2022 If one transaction is accessing a data item, no other transaction can modify that \r\ndata item. \r\n\u2022 A lock is a mechanism to control concurrent access to a data item\r\n\u2022 A transaction is allowed to access a data item only if it is currently holding a \r\nlock on that item.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 9",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_010.webp",
+      "text": "Lock-Based Protocols \r\nModes of lock:\r\n1. Shared Lock (S) \r\n\u2756If a transaction Ti has obtained a shared-mode lock (denoted by S) on item Q, \r\nthen Ti can read, but cannot write, Q.\r\n\u2756 S-lock is requested using lock-S instruction.\r\n2. Exclusive Lock (X) \r\n\u2756If a transaction Ti has obtained an exclusive-mode lock (denoted by X) on item \r\nQ, then Ti can both read and write Q.\r\n\u2756X-lock is requested using lock-X instruction.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 10",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_011.webp",
+      "text": "Lock-Based Protocols \r\n\u2022 We require that every transaction request a lock in an appropriate mode on data \r\nitem Q, depending on the types of operations that it will perform on Q.\r\n\u2022 The transaction makes the request to the concurrency-control manager.\r\n\u2022 The transaction can proceed with the operation only after the concurrency\ufffecontrol manager grants the lock to the transaction.\r\n\u2022 The use of these two lock modes allows multiple transactions to read a data item \r\nbut limits write access to just one transaction at a time.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 11",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_012.webp",
+      "text": "Lock-Based Protocols \r\nCompatibility Function:\r\n\u2022 Let A and B represent arbitrary lock modes. \r\n\u2022 Suppose that a transaction Ti requests a lock of mode A on item Q on which \r\ntransaction Tj (Ti = Tj ) currently holds a lock of mode B.\r\n\u2022 If transaction Ti can be granted a lock on Q immediately, in spite of the presence \r\nof the mode B lock, then we say mode A is compatible with mode B.\r\nLock Compatibility Matrix:\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 12",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_013.webp",
+      "text": "Lock-Based Protocols \r\n\u2022 A transaction may be granted a lock on an item if the requested lock is \r\ncompatible with locks already held on the item by other transactions.\r\n\u2022 Any number of transactions can hold shared locks on an item, \r\n\u2022 But if any transaction holds an exclusive on the item no other transaction may hold \r\nany lock on the item.\r\n\u2022 If a lock cannot be granted, the requesting transaction is made to wait till all \r\nincompatible locks held by other transactions have been released. The lock is \r\nthen granted.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 13",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_014.webp",
+      "text": "Lock-Based Protocols \r\n\u2022 Example of a transaction performing locking:\r\n\u2022 Locking as above is not sufficient to guarantee serializability \u2014 if A and B get updated \r\nin-between the read of A and B, the displayed sum would be wrong.\r\n\u2022 A locking protocol is a set of rules followed by all transactions while requesting and \r\nreleasing locks. Locking protocols restrict the set of possible schedules.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 14",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_015.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 15\r\nSchedule With Lock Grants\r\n\u2022 Grants omitted in rest of chapter.\r\n\u2022 Assume grant happens just before \r\nthe next instruction following lock \r\nrequest.\r\n\u2022 This schedule is not serializable.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_016.webp",
+      "text": "Two-Phase Locking (2PL) Protocol \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 16",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_017.webp",
+      "text": "Two-Phase Locking (2PL) Protocol \r\nLock Conversions\r\n\u2022 Two-phase locking protocol with lock conversions:\r\n \u2013 Growing Phase: \r\n\u25e6 can acquire a lock-S on item\r\n\u25e6 can acquire a lock-X on item\r\n\u25e6 can convert a lock-S to a lock-X (upgrade)\r\n \u2013 Shrinking Phase:\r\n\u25e6 can release a lock-S\r\n\u25e6 can release a lock-X\r\n\u25e6 can convert a lock-X to a lock-S (downgrade)\r\n\u2022 This protocol ensures serializability.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 17",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_018.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 18\r\nTime Transaction T\u2081 Transaction T\u2082 Phase Description\r\n1 Lock-X(A) T\u2081 Growing: Locks A\r\n2 Read(A) T\u2081 Growing\r\n3 Write(A) T\u2081 Growing\r\n4 Lock-X(B) T\u2082 Growing: Locks B\r\n5 Read(B) T\u2082 Growing\r\n6 Lock-X(B) (Wait) T\u2081 waits (B locked by T\u2082)\r\n7 Write(B) T\u2082 Growing\r\n8 Unlock(B) T\u2082 Shrinking: Releases B\r\n9 Lock-X(B) T\u2081 Growing: Acquires B (Lock Point)\r\n10 Unlock(A) T\u2081 Shrinking: Releases A\r\n11 Unlock(B) T\u2081 Shrinking: Releases B\r\nTwo-Phase Locking Example 1:\r\nConsider two transactions T1 and T2 accessing data items A and B.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_019.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 19\r\nTime Transaction T1 Transaction T2 Phase Description\r\n1 Lock-S(A) T1 Growing (S lock on A)\r\n2 Read(A) T1 Growing\r\n3 Lock-S(A) T2 Growing (S lock on A)\r\n4 Read(A) T2 Growing\r\n5 Unlock(A) T1 Shrinking\r\n6 Unlock(A) T2 Shrinking\r\n\u2022 As both the transactions request for a shared lock, both are granted the lock and there is no \r\nwaiting.\r\nTwo-Phase Locking Example 2:\r\nConsider two transactions T1 and T2 accessing data item A.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_020.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 20\r\nTime Transaction T1 Transaction T2 Phase Description\r\n1 Lock-S(A) T1 Growing (Shared lock)\r\n2 Read(A) T1 Growing\r\n3 Lock-X(A) (Wait) T2 waits (Shared lock exists)\r\n4 Unlock(A) T1 Shrinking\r\n5 Lock-X(A) T2 Growing (gets lock)\r\n6 Write(A) T2 Growing\r\n7 Unlock(A) T2 Shrinking\r\nAs T2 requests for an exclusive lock on A, it can\u2019t be granted as T1 is already accessing A.\r\nOnce T1 releases A,T2 gets X lock and writes\r\nThis preserves consistency of data.\r\nTwo-Phase Locking Example 3:\r\nConsider two transactions T1 and T2 accessing data item A.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_021.webp",
+      "text": "Two-Phase Locking (2PL) Protocol \r\n\u2022 Two-phase locking does not ensure freedom from deadlocks.\r\n\u2022 In addition to deadlocks, there is a possibility of starvation.\r\n\u2022 Extensions to basic two-phase locking needed to ensure recoverability of freedom \r\nfrom cascading roll-back.\r\n\u2022 Strict two-phase locking: a transaction must hold all its exclusive locks till it \r\ncommits/aborts.\r\n\u2022 Ensures recoverability and avoids cascading roll-backs\r\n\u2022 Rigorous two-phase locking: a transaction must hold all locks till commit/abort. \r\n\u2022 Transactions can be serialized in the order in which they commit.\r\n\u2022 Most databases implement rigorous two-phase locking, but refer to it as simply \r\ntwo-phase locking.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 21",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_022.webp",
+      "text": "Two-Phase Locking (2PL) Protocol \r\nImplementation of Locking\r\n\u2022 A lock manager can be implemented as a separate process.\r\n\u2022Transactions can send lock and unlock requests as messages.\r\n\u2022The lock manager replies to a lock request by sending a lock grant messages (or a \r\nmessage asking the transaction to roll back, in case of a deadlock).\r\n\u2022The requesting transaction waits until its request is answered.\r\n\u2022The lock manager maintains an in-memory data-structure called a lock table to \r\nrecord granted locks and pending requests.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 22",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_023.webp",
+      "text": "Two-Phase Locking (2PL) Protocol \r\nThree Activities in 2PL\r\n\u2022Lock Acquisition :Transaction obtains required locks. \r\n\u2022Modification of Data: Performs read/write operations. \r\n\u2022Release Lock : Frees the locks after completion.\r\nKey Points\r\n\u2022Ensures conflict serializability. \r\n\u2022Maintains data consistency.\r\n\u2022May still lead to deadlocks and starvation.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 23",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_024.webp",
+      "text": "Deadlock\r\n\u2022 Consider the partial schedule:\r\n\u2022Neither T3 nor T4 can make progress \u2014\r\nexecuting lock-S(B) causes T4 to wait for T3 \r\nto release its lock on B, while executing lock\ufffeX(A) causes T3 to wait for T4 to release its \r\nlock on A. \r\n\u2022 Such a situation is called a deadlock.\r\n\u2022 To handle a deadlock one of T3 or T4 must be \r\nrolled back and its locks released. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 24",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_025.webp",
+      "text": "Timestamp-Based Protocols\r\n\u2022Timestamp-based protocols are concurrency control techniques that use timestamps instead \r\nof locks to ensure correct execution of transactions. Each transaction is assigned a unique \r\ntimestamp when it starts, which determines its order.\r\n\u2022In the Timestamp Ordering Protocol, all operations must follow the chronological order of \r\ntimestamps. If a transaction tries to read or write a data item in a way that violates this order, \r\nthe transaction is rolled back and restarted with a new timestamp.\r\n\u2022This protocol maintains two timestamps for each data item: read timestamp (RTS) and write \r\ntimestamp (WTS). These are used to decide whether an operation is allowed or should be \r\nrejected.\r\n\u2022The main advantage of timestamp-based protocols is that they are deadlock-free, since \r\ntransactions do not wait for locks. However, they may lead to frequent rollbacks, which can \r\nreduce performance in high-contention systems.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 25",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_026.webp",
+      "text": "Timestamp-Based Protocols\r\n\u2022 Each transaction is issued a timestamp when it enters the system. \r\n\u2022 If an old transaction Ti has time-stamp TS(Ti), a new transaction Tj is assigned time\ufffestamp TS(Tj) such that TS(Ti) <TS(Tj). \r\n\u2022 The protocol manages concurrent execution such that the time-stamps determine the \r\nserializability order.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 26",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_027.webp",
+      "text": "Timestamp-Based Protocols\r\n\u2022 In order to assure such behavior, the protocol maintains for each data Q two \r\ntimestamp values:\r\n\u2022 W-timestamp(Q) is the largest time-stamp of any transaction that executed write(Q) \r\nsuccessfully.\r\n\u2022 R-timestamp(Q) is the largest time-stamp of any transaction that executed read(Q) \r\nsuccessfully.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 27",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_028.webp",
+      "text": "Timestamp-Based Protocols\r\n\u2022 The timestamp ordering protocol ensures that any conflicting read and write \r\noperations are executed in timestamp order.\r\n\u2022 Suppose a transaction Ti issues a read(Q):\r\n1. If TS(Ti) < W-timestamp(Q), then Ti needs to read a value of Q that was already \r\noverwritten. Hence, the read operation is rejected, and Ti is rolled back.\r\n2. If TS(Ti) \uf0b3 W-timestamp(Q), then the read operation is executed, and R\ufffetimestamp(Q) is set to max(R-timestamp(Q), TS(Ti)).\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 28",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_029.webp",
+      "text": "Timestamp-Based Protocols\r\n\u2022Suppose a transaction Ti issues a write(Q):\r\n1. If TS(Ti) < R-timestamp(Q), then the value of Q that Ti is producing was needed \r\npreviously, and the system assumed that that value would never be produced. \r\nHence, the write operation is rejected, and Ti is rolled back.\r\n2. If TS(Ti) < W-timestamp(Q), then Ti is attempting to write an obsolete value of \r\nQ. Hence, this write operation is rejected, and Ti is rolled back.\r\n3. Otherwise, the write operation is executed, and W-timestamp(Q) is set to TS(Ti).\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 29",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_030.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 30\r\nImportant terms:\r\noSmaller TS \u2192 Older transaction\r\noLarger TS \u2192 Younger transaction\r\nAll operations must follow timestamp order\r\nIf order is violated \u2192 transaction is rolled back (aborted)\r\n\u25aa RTS (Read Timestamp): Latest time a data item was read \r\n\u25aaWTS (Write Timestamp): Latest time a data item was written \r\nUsed to decide whether an operation is allowed or not\r\nDeadlock Prevention using Timestamps\r\n1. Wait-Die Scheme (Non-Preemptive)\r\n2. Wound-Wait Scheme (Preemptive)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_031.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 31\r\nStep Operation RTS(A) WTS(A) Result\r\n1 T\u2081: Read(A) 5 0 Allowed\r\n2 T\u2082: Read(A) 10 0 Allowed\r\n3 T\u2082: Write(A) 10 10 Allowed\r\n4 T\u2081: Write(A) 10 10 Rejected\r\nStep 1: T\u2081 reads A\r\nT\u2081 (5) reads A\r\nNow A remembers:\r\nRTS(A) = 5\r\nStep 2: T\u2082 reads A\r\nT\u2082 (10) reads A\r\nNow A updates:\r\nRTS(A) = 10\r\nStep3: T\u2082 writes A\r\nNow A updates:\r\nWTS(A) = 10.\r\nStep 4: T\u2081 tries to write A\r\nT\u2081 (5) tries to write\r\nBut A : RTS(A) = 10; WTS(A) = 10.\r\nMeaning:\r\nOlder transaction trying to overwrite \r\nnewer data . T\u2081 is rejected (rolled back)\r\nWhen a transaction is rolled back in timestamp ordering, \r\nit is restarted with a new timestamp greater than all \r\nexisting timestamps, ensuring correct execution without \r\nviolating ordering rules. New TS(T\u2081) = 18\r\nStep Operation RTS(A) WTS(A) Result\r\n1 T\u2081: Read(A) 5 0 Allowed\r\n2 T\u2082: Read(A) 10 0 Allowed\r\n3 T\u2082: Write(A) 10 10 Allowed\r\n4 T\u2081: Write(A) 18 18 Allowed\r\nGiven:\r\n\u2022TS(T\u2081) = 5 \r\n\u2022TS(T\u2082) = 10 \r\nExample of Basic Timestamp Ordering (TO)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_032.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 32\r\nExample 2 (Write Updates Both)\r\nGiven:\r\n\u2022TS(T\u2081) = 8 \r\n\u2022TS(T\u2082) = 12\r\nStep Operation RTS(A) WTS(A) Result\r\n1 T\u2081: Read(A) 8 0 Allowed\r\n2 T\u2081: Write(A) 8 8 Allowed\r\n3 T\u2082: Write(A) 12 12 Allowed",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_033.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 33\r\nGiven:\r\nTS(T\u2081) = 6\r\nTS(T\u2082) = 12\r\nStep Operation RTS(A) WTS(A) Result\r\n1 T\u2081: Read(A) 6 0 Allowed\r\n2 T\u2082: Read(A) 6 0 Allowed\r\n3 T\u2082: Write(A) 12 12 Allowed\r\n4 T\u2081: Write(A) 6 6 Allowed",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_034.webp",
+      "text": "Example of Schedule Under TSO\r\nIs this schedule valid under TSO?\r\nAssume that initially:\r\n R-TS(A) = W-TS(A) = 0\r\n R-TS(B) = W-TS(B) = 0\r\nAssume TS(T25) = 25 and \r\n TS(T26) = 26\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 34",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_035.webp",
+      "text": "Example of Schedule Under TSO\r\nHow about this one,\r\nwhere initially\r\n R-TS(Q)=W-TS(Q)=0\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 35",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_036.webp",
+      "text": "Example of Schedule Under TSO\r\nA partial schedule for several data \r\nitems for transactions with timestamps \r\n1, 2, 3, 4, 5, \r\nwith all R-TS and W-TS = 0 initially.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 36",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_037.webp",
+      "text": "Correctness of Timestamp-Ordering Protocol\r\n\u2022 The timestamp-ordering protocol guarantees serializability since all the arcs in the \r\nprecedence graph are of the form:\r\n\u2022 Thus, there will be no cycles in the precedence graph\r\n\u2022 Timestamp protocol ensures freedom from deadlock as no transaction ever waits. \r\n\u2022 But the schedule may not be cascade-free, and may not even be recoverable.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 37",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_038.webp",
+      "text": "Timestamp-Ordering Protocol\r\nRecoverability and Cascade Freedom\r\nProblem with timestamp-ordering protocol:\r\n\u2022 Suppose Ti aborts, but Tj has read a data item written by Ti.\r\n\u2022 Then Tj must abort; if Tj had been allowed to commit earlier, the schedule is not \r\nrecoverable.\r\n\u2022 Further, any transaction that has read a data item written by Tj must abort.\r\n\u2022 This can lead to cascading rollback --- that is, a chain of rollbacks.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 38",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_039.webp",
+      "text": "Timestamp-Ordering Protocol\r\nRecoverability and Cascade Freedom\r\nSolution 1:\r\n\u2022 A transaction is structured such that its writes are all performed at the end of its \r\nprocessing.\r\n\u2022 All writes of a transaction form an atomic action; no transaction may execute while a \r\ntransaction is being written.\r\n\u2022 A transaction that aborts is restarted with a new timestamp.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 39",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_040.webp",
+      "text": "Timestamp-Ordering Protocol\r\nRecoverability and Cascade Freedom\r\nSolution 2:\r\n\u2022 Limited form of locking: wait for data to be committed before reading it.\r\nSolution 3:\r\n\u2022 Use commit dependencies to ensure recoverability.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 40",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_041.webp",
+      "text": "Thomas\u2019 Write Rule\r\n\u2022 Modified version of the timestamp-ordering protocol in which obsolete write\r\noperations may be ignored under certain circumstances.\r\n\u2022 When Ti attempts to write data item Q, if TS(Ti) < W-timestamp(Q), then Ti is \r\nattempting to write an obsolete value of {Q}. \r\n\u2022 Rather than rolling back Ti as the timestamp ordering protocol would have done, \r\nthis {write} operation can be ignored.\r\n\u2022 Otherwise, this protocol is the same as the timestamp ordering protocol.\r\n\u2022 Thomas' Write Rule allows greater potential concurrency. \r\n\u2022 allows some view-serializable schedules that are not conflict-serializable.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 41",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_042.webp",
+      "text": "Validation-Based Protocol\r\n\u2022 Execution of transaction Ti is done in three phases.\r\n1. Read and execution phase: Transaction Ti writes only to temporary local variables\r\n2. Validation phase: Transaction Ti performs a ''validation test'' to determine if local \r\nvariables can be written without violating serializability.\r\n3. Write phase: If Ti is validated, the updates are applied to the database; otherwise, Ti \r\nis rolled back.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 42",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_043.webp",
+      "text": "Validation-Based Protocol\r\n\u2022 The three phases of concurrently executing transactions can be interleaved, but each \r\ntransaction must go through the three phases in that order.\r\n\u2022 Assume for simplicity that the validation and write phase occur together, atomically \r\nand serially\r\n\u2022 i.e., only one transaction executes validation/write at a time. \r\n\u2022 Also called as optimistic concurrency control since transaction executes fully in the \r\nhope that all will go well during validation.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 43",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_044.webp",
+      "text": "Validation-Based Protocol\r\n\u2022 Each transaction Ti has 3 timestamps\r\n\u2022 Start(Ti) : the time when Ti started its execution\r\n\u2022 Validation(Ti): the time when Ti entered its validation phase\r\n\u2022 Finish(Ti) : the time when Ti finished its write phase\r\n\u2022 Serializability order is determined by timestamp given at validation time; this is done \r\nto increase concurrency. \r\n\u2022 Thus, TS(Ti) is given the value of Validation(Ti).\r\n\u2022This protocol is useful and gives greater degree of concurrency if probability of \r\nconflicts is low. \r\n\u2022 because the serializability order is not pre-decided, and\r\n\u2022 relatively few transactions will have to be rolled back.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 44",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_045.webp",
+      "text": "Validation Test for Transaction Tj\r\n\u2022 If for all Ti with TS (Ti) < TS (Tj) either one of the following condition holds:\r\n\u2022 finish(Ti) < start(Tj) \r\n\u2022 start(Tj) < finish(Ti) < validation(Tj) and the set of data items written by Ti does not \r\nintersect with the set of data items read by Tj. \r\n\u2022 then validation succeeds and Tj can be committed. Otherwise, validation fails and Tj\r\nis aborted.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 45",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_046.webp",
+      "text": "Validation Test for Transaction Tj\r\nJustification: \r\nEither the first condition is satisfied, and there is no overlapped execution, or the second \r\ncondition is satisfied and\r\n\u2022 the writes of Tj do not affect reads of Ti since they occur after Ti has finished its reads.\r\n\u2022 the writes of Ti do not affect reads of Tj since Tj does not read any item written by Ti.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 46",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_047.webp",
+      "text": "Schedule Produced by Validation\r\nExample of schedule produced using validation:\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 47",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_048.webp",
+      "text": "Deadlock\r\n\u2022 System is deadlocked if there is a set of transactions such that every transaction \r\nin the set is waiting for another transaction in the set.\r\n\u2022 Thus, the transactions are waiting indefinitely for each other to release locks, \r\nand none of them can proceed. \r\n\u2022 This commonly occurs in lock-based protocols when transactions hold some \r\nresources and wait for others.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 48",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_049.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 49\r\nStep Transaction T\u2081 Transaction T\u2082\r\n1 Lock-X(A)\r\n2 Lock-X(B)\r\n3 Lock-X(B) (Wait)\r\n4 Lock-X(A) (Wait)\r\nDeadlock Example\r\n\u2022T\u2081 holds A and wants B\r\n\u2022T\u2082 holds B and wants A\r\nBoth are waiting for each other\r\nDeadlock occurs\r\nCircular wait = Deadlock\r\nSolution\r\n\u2022Abort (rollback) one transaction \r\n\u2022Or use prevention (wait-die / wound-wait) \r\nSchedule S:",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_050.webp",
+      "text": "Necessary Conditions of Deadlock \r\nFor a deadlock to occur in a DBMS, all four conditions must be true simultaneously:\r\n1. Mutual Exclusion\r\nOnly one transaction can hold a resource (lock) at a time . Other transactions must wait if \r\nthe resource is already locked \r\n2. Hold and Wait\r\nA transaction is holding one resource .While waiting for another resource held by another \r\ntransaction \r\n3. No Preemption\r\nResources (locks) cannot be forcibly taken away .They are released only by the transaction \r\nitself\r\n4. Circular Wait\r\nA cycle of transactions exists . Each transaction is waiting for a resource held by the next\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 50",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_051.webp",
+      "text": "Deadlock Handling\r\nThere are three main approaches to handle deadlocks. \r\n\u2022The first is deadlock prevention, where the system ensures that deadlocks never occur by \r\nrestricting how locks are requested. Techniques like wait-die and wound-wait use timestamps to \r\ndecide which transaction should wait or be rolled back.\r\n\u2022The second approach is deadlock avoidance, where the system checks whether granting a lock \r\nrequest will lead to a deadlock. If there is a risk, the request is denied. This approach is less \r\ncommonly used due to its complexity.\r\n\u2022The third approach is deadlock detection and recovery. In this method, the system allows \r\ndeadlocks to occur but periodically checks for them using a wait-for graph. If a cycle is found, \r\none transaction is selected as a victim and rolled back to break the deadlock.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 51",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_052.webp",
+      "text": "Deadlock Prevention Techniques\r\nThey are:\r\n\u2022Wait-Die Protocol\r\n\u2022Wound-Wait Protocol\r\nBoth are timestamp-based deadlock prevention algorithms\r\nWhen multiple transactions run together, they may get into a deadlock (each waiting for the \r\nother forever).\r\n\u2022These protocols prevent deadlock before it happens\r\nThey decide: who should wait and who should be aborted\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 52",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_053.webp",
+      "text": "Wait-Die Scheme\r\nIn this protocol, if a transaction requests to lock a resource (data item), which is already held \r\nwith a conflicting lock by another transaction, then one of the two possibilities may occur \u2212 \r\n\u2022 If TS(Ti) < TS(Tj) \u2212 that is Ti, which is requesting a conflicting lock, is older than Tj \u2212 then Ti is \r\nallowed to wait until the data-item is available. \r\n\u2022 If TS(Ti) > TS(tj) \u2212 that is Ti is younger than Tj \u2212 then Ti dies. Ti is restarted later with a random \r\ndelay but with the same timestamp. \r\n\u2022This scheme allows the older transaction to wait but kills the younger one. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 53",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_054.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 54\r\nAssume two transactions:\r\nT1 with timestamp TS(T1) = 5 (older) \r\nT2 with timestamp TS(T2) = 10 (younger) \r\nSmaller timestamp = older transaction\r\nCase 1: Older transaction requests a lock \r\n(WAIT)\r\n\u2022T2 already holds a lock on data item X\r\n\u2022Now T1 requests a lock on X\r\nCheck condition:\r\n\u2022TS(T1) < TS(T2) \u2192 5 < 10 \r\n\u2022 (T1 is older) \r\nAccording to Wait-Die:\r\n\u2022T1 is allowed to WAIT\r\nResult:\r\n\u2022T1 waits until T2 releases the lock \r\n\u2022No transaction is killed\r\nCase 2: Younger transaction requests a lock \r\n(DIE)\r\n\u2022T1 already holds a lock on data item X\r\n\u2022Now T2 requests a lock on X\r\nCheck condition:\r\n\u2022TS(T2) > TS(T1) \u2192 10 > 5 \r\n\u2022(T2 is younger) \r\nAccording to Wait-Die:\r\n\u2022T2 will DIE (abort)\r\nResult:\r\n\u2022T2 is rolled back \r\n\u2022Later, T2 restarts with same timestamp (10)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_055.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 55",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_056.webp",
+      "text": "Wound-Wait Scheme\r\nIn this protocol, if a transaction requests to lock a resource (data item), which is already held \r\nwith conflicting lock by some another transaction, one of the two possibilities may occur \u2212\r\n\u2022 If TS(Ti) < TS(Tj), then Ti forces Tj to be rolled back \u2212 that is Ti wounds Tj. Tj is restarted later \r\nwith a random delay but with the same timestamp.\r\n\u2022 If TS(Ti) > TS(Tj), then Ti is forced to wait until the resource is available. \r\nThis protocol, allows the younger transaction to wait; but when an older transaction requests an \r\nitem held by a younger one, the older transaction forces the younger one to abort and release \r\nthe item.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 56",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_057.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 57\r\nAssume:\r\nT1 \u2192 TS = 5 (older)\r\nT2 \u2192 TS = 10 (younger)\r\nCase 1: Older transaction requests lock \u2192 \r\nWOUND\r\n\u2022T2 (younger) is holding lock on data item X\r\n\u2022T1 (older) requests lock on X\r\nCheck condition:\r\n\u2022TS(T1) < TS(T2) \u2192 5 < 10 \r\n\u2022(T1 is older) \r\nAccording to Wound-Wait:\r\n\u2022T1 wounds T2 , T2 is aborted\r\nResult:\r\n\u2022T2 is rolled back immediately \r\n\u2022Lock on X is released \r\n\u2022T1 gets the lock\r\nCase 2: Younger transaction requests lock \u2192 \r\nWAIT\r\n\u2022T1 (older) is holding lock on data item X\r\n\u2022T2 (younger) requests lock on X\r\nCheck condition:\r\n\u2022TS(T2) > TS(T1) \u2192 10 > 5 (T2 is younger) \r\nAccording to Wound-Wait:\r\n\u2022T2 is allowed to WAIT\r\nResult:\r\n\u2022T2 waits until T1 releases the lock \r\n\u2022No abort happens",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_058.webp",
+      "text": "ST. FRANCIS INSTITUTE OF TECHNOLOGY 58",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_059.webp",
+      "text": "Deadlock Detection\r\n\u2022 Deadlocks can be described as a wait-for graph, which consists of a pair G = \r\n(V,E),\r\n\u25e6 V is a set of vertices (all the transactions in the system)\r\n\u25e6 E is a set of edges; each element is an ordered pair Ti \u2192Tj\r\n.\r\n\u2022 If Ti \u2192 Tj is in E, then there is a directed edge from Ti to Tj, implying that Ti is \r\nwaiting for Tj to release a data item.\r\n\u2022 When Ti requests a data item currently being held by Tj, then the edge Ti \u2192 Tj is \r\ninserted in the wait-for graph. This edge is removed only when Tj is no longer \r\nholding a data item needed by Ti. \r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 59",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_060.webp",
+      "text": "Deadlock Detection\r\n\u2022 The system is in a deadlock state if and only if the wait-for graph has a cycle. \r\n\u2022 Must invoke a deadlock-detection algorithm periodically to look for cycles.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 60\r\nWait-for graph without a cycle Wait-for graph with a cycle",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_module_1_module1-part2_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_module_1_module1-part2_pdf/thumb_061.webp",
+      "text": "Deadlock Recovery\r\n\u2022 When deadlock is detected:\r\n\u2022 Some transaction will have to rolled back (made a victim) to break deadlock. Select \r\nthat transaction as victim that will incur minimum cost.\r\n\u2022 Rollback -- determine how far to roll back transaction.\r\n\u2022 Total rollback: Abort the transaction and then restart it.\r\n\u2022 More effective to roll back transaction only as far as necessary to break deadlock.\r\n\u2022 Starvation happens if same transaction is always chosen as victim. Include the \r\nnumber of rollbacks in the cost factor to avoid starvation.\r\nST. FRANCIS INSTITUTE OF TECHNOLOGY 61",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

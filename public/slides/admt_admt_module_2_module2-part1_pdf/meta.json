@@ -1,0 +1,526 @@
+{
+  "mtime": 1793870401.1265304,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_001.webp",
+      "text": "Module 2 Part 1\r\nFiles, Indexing, Hashing\r\nMs. Alvina Lopes",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_002.webp",
+      "text": "Contents\r\n\uf0b4 Files\r\n\uf0b4 Operations on Files\r\n\uf0b4 Hashing Techniques \r\n\uf0b4 Indexing\r\n\uf0b4 Single-Level Ordered Indices\r\n\uf0b4 Multilevel Indices\r\n\uf0b4 Dynamic Multilevel Indices\r\n\uf0b4 B-Trees \r\n\uf0b4 B+Trees\r\n\uf0b4 Indices on Multiple Keys",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_003.webp",
+      "text": "Files\r\n\uf0b4 The database is stored as a collection of files. \r\n\uf0b4 Each file is a sequence of records. \r\n\uf0b4 A record is a sequence of fields.\r\n\uf0b4 Record is a basic unit of information for computer and file.\r\n\uf0b4 For e.g., Student_name, Address, Phone_no are fields of STUDENT record.\r\n\uf0b4 A set of logically related records form a file.\r\n\uf0b4 File system: The structure and logical rules used to manage the groups of \r\ninformation and their names.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_004.webp",
+      "text": "Files\r\nOne approach\r\n\uf0b4 Assume record size is fixed\r\n\uf0b4 Each file has records of one particular type only\r\n\uf0b4 Different files are used for different relations.\r\n\uf0b4 We assume that records are smaller than a disk block",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_005.webp",
+      "text": "Files",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_006.webp",
+      "text": "Files",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_007.webp",
+      "text": "Operations on Files\r\n\uf0b4 In DBMS, two fundamental types of operations are performed on files:\r\n\uf0b4 1. Retrieval (finding and reading records)\r\n\uf0b4 2. Updation (inserting, deleting or modifying records)\r\n\uf0b4 Operations can be record-at-a-time (process one record) or set-at-a-time \r\n(find all matching records at once).",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_008.webp",
+      "text": "Operations on Files\r\nSystem Control Operations\r\n\uf0b4 These operations handle the setup, closing, and background optimization of \r\nfiles.\r\n\uf0b4 Open: Allocates buffer memory and prepares the file for read or write \r\nmodes.\r\n\uf0b4 Close: Releases the allocated memory buffer, saves remaining changes, \r\nand revokes access to the file.\r\n\uf0b4 Reset: Re-positions the active file pointer back to the very first record.\r\n\uf0b4 Reorganize: Re-arranges the internal layout of records. This reclaims wasted \r\nstorage space left behind by deleted entries and improves performance.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_009.webp",
+      "text": "Operations on Files\r\nRetrieval Operations\r\n\uf0b4 These operations read records from the file based on a specific selection \r\ncondition.\r\n\uf0b4 Find (or Locate): Searches for the first record in the file that satisfies a specific \r\nselection condition. It sets the file pointer to that record.\r\n\uf0b4 FindNext: Finds the next consecutive record in the file matching the criteria. \r\nIt advances the pointer forward.\r\n\uf0b4 Read (or Get): Copies the current record from the main memory block buffer \r\ninto the program's variables.\r\n\uf0b4 FindAll: Retrieves all data records that match a given condition \r\nsimultaneously.\r\n\uf0b4 FindOrdered: Fetches matching data records sorted by a specified key or \r\nfield.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_010.webp",
+      "text": "Operations on Files\r\nUpdate Operations\r\n\uf0b4 These operations change the data values or the physical structure of the file \r\non disk.\r\n\uf0b4 Insert: Adds a new record to the file. The system locates the appropriate \r\nstorage block, loads it into the buffer, writes the record, and saves it back to \r\ndisk.\r\n\uf0b4 Delete: Marks or removes a specific record from the file. It updates the \r\nphysical storage to reflect that the data space is now vacant.\r\n\uf0b4 Modify (or Update): Changes the specific field values of an existing record. \r\nThe block is updated in the memory buffer before being written back to disk.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_011.webp",
+      "text": "Organization of Records in Files\r\n1. Heap \u2013 record can be placed anywhere in the file where there is space.\r\n2. Sequential \u2013 store records in sequential order, based on the value of the \r\nsearch key of each record.\r\n3. Multitable clustering \u2013 records of several different relations can be stored in \r\nthe same file.\r\n\u2022 Motivation: store related records on the same block to minimize I/O\r\n4. B+-tree file organization\r\n\u2022 Ordered storage even with inserts/deletes\r\n5. Hashing \u2013 a hash function computed on search key; the result specifies in \r\nwhich block of the file the record should be placed.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_012.webp",
+      "text": "Hashing\r\n\uf0b4 Hashing is a technique in DBMS that is used to search for records in \r\ndatabases.\r\n\uf0b4 Particularly useful in very large databases where indexing technique \r\nbecomes inefficient.\r\n\uf0b4 Hashing is an efficient technique to directly search the location of desired \r\ndata on the disk without using an index structure. \r\n\uf0b4 Data is stored in the data blocks whose address is generated by using a \r\nhash function.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_013.webp",
+      "text": "Hashing",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_014.webp",
+      "text": "Hashing\r\nComponents of Hashing\r\n1.Key: Input data to be stored or retrieved.\r\n2.Hash Function: Converts the key into a unique index.\r\n3.Hash Table: Array storing data at unique indices for efficient lookup.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_015.webp",
+      "text": "Hashing",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_016.webp",
+      "text": "Hashing\r\nTerminologies used:\r\n1. Hash Table\r\n\uf0b4 The total number of data records in the database determines the size of a \r\nhash table, which is an array or data structure. \r\n\uf0b4 The precise location of a data record stored in each memory location in a \r\nhash table is referred to as a \u201cbucket\u201d or hash index and is accessible via a \r\nhash function.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_017.webp",
+      "text": "Hashing\r\nTerminologies used:\r\n2. Bucket\r\n\uf0b4 A bucket is a unit of storage containing one or more entries (a bucket is \r\ntypically a disk block).\r\n\uf0b4 In the hash table where the data record is stored, a bucket is a memory \r\nindex.\r\n\uf0b4 Entries with different search-key values may be mapped to the same \r\nbucket; thus, the entire bucket has to be searched sequentially to locate an \r\nentry. \r\n\uf0b4 In a hash index, buckets store entries with pointers to records.\r\n\uf0b4 In a hash file-organization buckets store records.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_018.webp",
+      "text": "Hashing\r\nTerminologies used:\r\n3. Hash Function\r\n\uf0b4 we obtain the bucket of an entry from its search-key value using a hash \r\nfunction\r\n\uf0b4 A hash function is an algorithm or mathematical equation that computes \r\nthe hash index as the output after receiving the main key of one data \r\nrecord as input. \r\n\uf0b4 The hash function is a mapping function that maps all the sets of search keys \r\nto the actual record address OR Hash function h is a function from the set of \r\nall search-key values K to the set of all bucket addresses B.. \r\n\uf0b4 Generally, the hash function uses the primary key to generate the hash \r\nindex.\r\n\uf0b4 Hash function is used to locate entries for access, insertion as well as \r\ndeletion.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_019.webp",
+      "text": "Hashing\r\nTerminologies used:\r\n3. Hash Function\r\n\uf0b4 we obtain the bucket of an entry from its search-key value using a hash \r\nfunction\r\n\uf0b4 A hash function is an algorithm or mathematical equation that computes \r\nthe hash index as the output after receiving the main key of one data \r\nrecord as input. \r\n\uf0b4 The hash function is a mapping function that maps all the sets of search keys \r\nto the actual record address OR Hash function h is a function from the set of \r\nall search-key values K to the set of all bucket addresses B.. \r\n\uf0b4 Generally, the hash function uses the primary key to generate the hash \r\nindex.\r\n\uf0b4 Hash function is used to locate entries for access, insertion as well as \r\ndeletion.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_020.webp",
+      "text": "Hashing\r\nTerminologies used:\r\n3. Hash Function\r\n\uf0b4 An ideal hash function is uniform, i.e., each bucket is assigned the same \r\nnumber of search-key values from the set of all possible values.\r\n\uf0b4 An ideal hash function is random, so each bucket will have the same \r\nnumber of records assigned to it irrespective of the actual distribution of \r\nsearch-key values in the file.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_021.webp",
+      "text": "Hashing\r\nTypes of Hashing:",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_022.webp",
+      "text": "Hashing\r\nStatic Hashing:\r\n\uf0b4 maps search keys to a fixed number of addressable buckets\r\n\uf0b4 uses a consistent hash function, ensures the database size remains constant.\r\n\uf0b4 when a search-key value is provided, the hash function always computes \r\nthe same address.\r\n\uf0b4 For example, if we want to generate an address for STUDENT_ID = 104 using \r\na mod (5) hash function, it always results in the same bucket address 4. \r\nThere will not be any changes to the bucket address here. \r\n\uf0b4 Hence, the number of data buckets in the memory for this static hashing \r\nremain constant throughout.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_023.webp",
+      "text": "Hashing\r\nStatic Hashing:",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_024.webp",
+      "text": "Hashing\r\nStatic Hashing:\r\nBucket overflow or Collision\r\n\uf0b4 Suppose that we want to insert some new records into the file, but the data \r\nbucket address generated by the hash function is not empty or the data \r\nalready exists in that address. \r\n\uf0b4 This situation in static hashing is called bucket overflow or collision.\r\n\uf0b4 Bucket overflow can occur because of:\r\n\uf0b4 Insufficient buckets\r\n\uf0b4 Skew in distribution of records. This can occur due to two reasons:\r\n\uf0b4 multiple records have same search-key value\r\n\uf0b4 chosen hash function produces non-uniform distribution of key values",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_025.webp",
+      "text": "Hashing\r\nStatic Hashing:\r\nNote: Only closed addressing \r\n(open hashing) technique is \r\nused in database systems to \r\nhandle bucket overflows.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_026.webp",
+      "text": "Hashing\r\nOpen Hashing:\r\n\uf0b4 Also called as closed addressing.\r\n\uf0b4 Collision is resolved by using \r\noverflow buckets.\r\n\uf0b4 The overflow buckets of a given \r\nbucket are chained together in \r\na linked list.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_027.webp",
+      "text": "Hashing\r\nDynamic Hashing:\r\n\uf0b4 Data buckets grow or shrink as the records increase or decrease & also \r\nknown as extended hashing. \r\n\uf0b4 Here, the hash function is made to produce a large number of values.\r\n\uf0b4 Example: there are three data records D1, D2 and D3.\r\n\uf0b4 The hash function generates three addresses 1001, 0101 and 1010 \r\nrespectively. \r\n\uf0b4 This method of storing considers only part of this address - especially only the \r\nfirst bit to store the data. \r\n\uf0b4 So, it tries to load three of them at addresses 0 and 1.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_028.webp",
+      "text": "Hashing\r\nDynamic Hashing:",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_029.webp",
+      "text": "Hashing\r\nDynamic Hashing:\r\n\uf0b4 But the problem is that No bucket address is remaining for D3.\r\n\uf0b4 The bucket has to grow dynamically to accommodate D3.\r\n\uf0b4 So, it changes the address to have 2 bits rather than 1 bit and then it \r\nupdates the existing data to have a 2-bit address.\r\n\uf0b4 Then it tries to accommodate D3.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_030.webp",
+      "text": "Hashing\r\nDynamic Hashing:",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_031.webp",
+      "text": "Hashing\r\nAdvantages:\r\n\uf0b4 Allows efficient data retrieval\r\n\uf0b4 Verifies data integrity\r\n\uf0b4 Removal of data deduplication\r\n\uf0b4 Provides data security\r\nDisadvantages:\r\n\uf0b4 Collision risk\r\n\uf0b4 Non reversible\r\n\uf0b4 Deterministic\r\n\uf0b4 Computationally intensive",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_032.webp",
+      "text": "Indexing\r\n\uf0b4 Database Management Systems (DBMS) handle large volumes of data that \r\nneed to be accessed quickly and efficiently.\r\n\uf0b4 Indexing is a technique used in DBMS to speed up the search for specific \r\nrecords within the database. \r\n\uf0b4 It plays a crucial role in enhancing query performance and alleviating \r\nsystem load.\r\n\uf0b4 Indexing in DBMS is a data structure technique used to speed up the \r\nretrieval of records from a table. \r\n\uf0b4 It creates a separate, smaller structure (an \u201cindex\u201d) that stores key attributes \r\nfrom a table, allowing the database to locate rows without scanning the \r\nentire dataset.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_033.webp",
+      "text": "Indexing",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_034.webp",
+      "text": "Indexing\r\nAdvantages of Indexing in DBMS\r\n1.Faster Data Retrieval: Indices allow quick access to records without\r\nscanning the entire table.\r\n2.Improved Query Performance: Enhances the efficiency of SELECT queries,\r\nJOINs, ORDER BY, and GROUP BY operations.\r\n3.Support for Uniqueness: Enforces unique constraints on columns like primary\r\nkeys to maintain data integrity.\r\n4.Reduced I/O Operations: Minimizes disk access by providing direct pointers\r\nto data locations.\r\n5.Efficient Sorting: Maintains data in sorted order, speeding up ORDER BY and\r\nrange queries.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_035.webp",
+      "text": "Indexing\r\nDisadvantages of Indexing in DBMS\r\n1.Slower Write Operations: INSERT, UPDATE, and DELETE become slightly slower\r\nbecause indices must be updated.\r\n2.Additional Storage Required: Indices consume extra disk space depending\r\non their type and size.\r\n3.Maintenance Overhead: Indices need periodic updates, which adds\r\nmanagement complexity.\r\n4.Over-Indexing Risk: Too many indices can degrade performance instead of\r\nimproving it.\r\n5.Not Always Suitable: For small tables or rarely queried columns, indices may\r\noffer minimal benefit.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_036.webp",
+      "text": "Indexing",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_037.webp",
+      "text": "Single-level Indices\r\n\uf0b4 A single-level index is an auxiliary file that makes it more efficient to search \r\nfor a record in the data file.\r\n\uf0b4 The index is usually specified on one field of the file (although it could be \r\nspecified on several fields)\r\n\uf0b4 One form of an index is a file of entries <field value, pointer to record>, \r\nwhich is ordered by field value\r\n\uf0b4 The index is called an access path on the field.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_038.webp",
+      "text": "Single-level Indices\r\n\uf0b4 The index file usually occupies considerably less disk blocks than the data \r\nfile because its entries are much smaller\r\n\uf0b4 A binary search on the index yields a pointer to the file record\r\n\uf0b4 Indices can also be characterized as dense or sparse\r\n\uf0b4 A dense index has an index entry for every search key value (and hence \r\nevery record) in the data file.\r\n\uf0b4 A sparse (or nondense) index, on the other hand, has index entries for only \r\nsome of the search values.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_039.webp",
+      "text": "Single-level Indices\r\nDense Index Files\r\n\uf0b4 Dense index \u2014 Index record appears for every search-key value in the file.\r\n\uf0b4 E.g. index on ID attribute of instructor relation",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_040.webp",
+      "text": "Single-level Indices\r\nDense Index Files\r\n\uf0b4 Dense index on dept_name, with instructor file sorted on dept_name",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_041.webp",
+      "text": "Single-level Indices\r\nSparse Index Files\r\n\uf0b4 Sparse Index: contains index records for only some search-key values.\r\n\uf0b4 Applicable when records are sequentially ordered on search-key\r\n\uf0b4 To locate a record with search-key value K we:\r\n\uf0b4 \u2022 Find index record with largest search-key value < K\r\n\uf0b4 \u2022 Search file sequentially starting at the record to which the index record points\r\n\uf0b4 Compared to dense indices:\r\n\uf0b4 \u2022 Less space and less maintenance overhead for insertions and deletions.\r\n\uf0b4 \u2022 Generally slower than dense index for locating records.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_042.webp",
+      "text": "Single-level Indices\r\nSparse Index Files",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_043.webp",
+      "text": "Single-level Indices",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_044.webp",
+      "text": "Types of Single-level Indices\r\n1. Primary Index\r\n2. Clustering Index\r\n3. Secondary Index",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_045.webp",
+      "text": "Types of Single-level Indices\r\nPrimary Index\r\n\uf0b4 Defined on an ordered data file\r\n\uf0b4 The data file is ordered on a key field\r\n\uf0b4 Includes one index entry for each block in the data file; the index entry has \r\nthe key field value for the first record in the block, which is called the block \r\nanchor\r\n\uf0b4 A similar scheme can use the last record in a block.\r\n\uf0b4 A primary index is a nondense (sparse) index, since it includes an entry for \r\neach disk block of the data file and the keys of its anchor record rather \r\nthan for every search value.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_046.webp",
+      "text": "Types of Single-level Indices\r\nPrimary Index",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_047.webp",
+      "text": "Types of Single-level Indices\r\nClustering Index\r\n\uf0b4 Defined on an ordered data file\r\n\uf0b4 The data file is ordered on a non-key field unlike primary index, which \r\nrequires that the ordering field of the data file have a distinct value for \r\neach record.\r\n\uf0b4 Includes one index entry for each distinct value of the field; the index entry \r\npoints to the first data block that contains records with that field value.\r\n\uf0b4 It is another example of nondense index where Insertion and Deletion is \r\nrelatively straightforward with a clustering index.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_048.webp",
+      "text": "Types of Single-level Indices\r\nClustering Index\r\nFigure: A clustering \r\nindex on the\r\nDEPTNUMBER \r\nordering non-key \r\nfield of an\r\nEMPLOYEE file.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_049.webp",
+      "text": "Types of Single-level Indices\r\nSecondary Index\r\n\uf0b4 A secondary index provides a secondary means of accessing a file for which \r\nsome primary access already exists.\r\n\uf0b4 The secondary index may be on a field which is a candidate key and has a \r\nunique value in every record, or a non-key with duplicate values.\r\n\uf0b4 The index is an ordered file with two fields.\r\n\uf0b4 The first field is of the same data type as some non-ordering field of the data file \r\nthat is an indexing field.\r\n\uf0b4 The second field is either a block pointer or a record pointer.\r\n\uf0b4 There can be many secondary indices (and hence, indexing fields) for the \r\nsame file.\r\n\uf0b4 Includes one entry for each record in the data file; hence, it is a dense index",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_050.webp",
+      "text": "Types of Single-level Indices\r\nSecondary Index",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_051.webp",
+      "text": "Types of Single-level Indices\r\nProperties of Index Types",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_052.webp",
+      "text": "Hash Indices\r\n\uf0b4 Hashing can be used not only for file organization, but also for index\ufffestructure creation. \r\n\uf0b4 A hash index organizes the search keys, with their associated record \r\npointers, into a hash file structure.\r\n\uf0b4 Strictly speaking, hash indices are always secondary indices\r\n\uf0b4 If the file itself is organized using hashing, a separate primary hash index on \r\nit using the same search-key is unnecessary.\r\n\uf0b4 However, we use the term hash index to refer to both secondary index \r\nstructures and hash organized files.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_053.webp",
+      "text": "Multi-level Indices\r\nProblem with Single-level indexing\r\n\uf0b4 Single-level indexing consists of a single list of key-pointer pairs. \r\n\uf0b4 It performs well with small datasets, allowing quick lookups. \r\n\uf0b4 However, as the data size increases, this simple index becomes less efficient \r\nbecause it must scan through more entries sequentially.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_054.webp",
+      "text": "Multi-level Indices\r\nSolution\r\n\uf0b4 Because a single-level index is an ordered file, we can create a primary \r\nindex to the index itself;\r\n\uf0b4 In this case, the original index file is called the first-level index and the index \r\nto the index is called the second-level index.\r\n\uf0b4 We can repeat the process, creating a third, fourth, ..., top level until all \r\nentries of the top-level fit in one disk block\r\n\uf0b4 A multi-level index can be created for any type of first level index (primary, \r\nsecondary, clustering) as long as the first-level index consists of more than \r\none disk block.\r\n\uf0b4 Thus, multi-level indexing arranges indices in a hierarchical structure. \r\n\uf0b4 This approach is highly effective for large datasets, as it minimizes disk \r\naccess and greatly improves lookup speed.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_055.webp",
+      "text": "Multi-level Indices",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_056.webp",
+      "text": "Multi-level Indices\r\n\uf0b4 Such a multi-level index is a form of search tree.\r\n\uf0b4 However, insertion and deletion of new index entries is a severe problem \r\nbecause every level of the index is an ordered file.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_057.webp",
+      "text": "Multi-level Indices\r\n\uf0b4 A Node in a Search Tree with Pointers to Subtrees below It",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_058.webp",
+      "text": "Multi-level Indices\r\nA search tree of order p = 3.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_059.webp",
+      "text": "Dynamic Multilevel Indices Using B-Trees \r\nand B+-Trees\r\n\uf0b4 Most multi-level indices use B-tree or B+-tree data structures because of the \r\ninsertion and deletion problem\r\n\uf0b4 This leaves space in each tree node (disk block) to allow for new index \r\nentries\r\n\uf0b4 These data structures are variations of search trees that allow efficient \r\ninsertion and deletion of new search values.\r\n\uf0b4 In B-Tree and B+-Tree data structures, each node corresponds to a disk \r\nblock\r\n\uf0b4 Each node is kept between half-full and completely full.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_060.webp",
+      "text": "Dynamic Multilevel Indices Using B-Trees \r\nand B+-Trees\r\n\uf0b4 An insertion into a node that is not full is quite efficient.\r\n\uf0b4 If a node is full the insertion causes a split into two nodes.\r\n\uf0b4 Splitting may propagate to other tree levels.\r\n\uf0b4 A deletion is quite efficient if a node does not become less than half full.\r\n\uf0b4 If a deletion causes a node to become less than half full, it must be merged \r\nwith neighboring nodes.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_061.webp",
+      "text": "Difference between B-tree and B+-tree\r\n\uf0b4 In a B-tree, pointers to data records exist at all levels of the tree.\r\n\uf0b4 In a B+-tree, all pointers to data records exists at the leaf-level nodes.\r\n\uf0b4 A B+-tree can have less levels (or higher capacity of search values) than \r\nthe corresponding B-tree.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_062.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_062.webp",
+      "text": "B-tree Structure",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_063.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_063.webp",
+      "text": "B+-tree Structure",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_064.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_064.webp",
+      "text": "Indices on Multiple Keys\r\n\uf0b4 An index on multiple keys is a database structure where a single index is \r\ncreated using two or more columns of a table. \r\n\uf0b4 This index is commonly known as a Composite Index, Concatenated Index, \r\nor Multi-attribute Index.\r\n\uf0b4 This approach optimizes query performance when search filters (WHERE \r\nclauses) involve a combination of multiple attributes.\r\n\uf0b4 The database engine sorts the index data hierarchically based on the order \r\nof the columns specified during the index creation.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_module_2_module2-part1_pdf/slide_065.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part1_pdf/thumb_065.webp",
+      "text": "Indices on Multiple Keys\r\nExample\r\n\uf0b4 Consider the following query: \u201cFind all instructors in the Finance department \r\nwith salary equal to $80,000.\u201d\r\nSQL query:\r\n\uf0b4 select ID\r\nfrom instructor\r\nwhere dept name = 'Finance' and salary = 80000;.\r\n\uf0b4 For this case, we create and use an index on a composite search key (dept \r\nname, salary).",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

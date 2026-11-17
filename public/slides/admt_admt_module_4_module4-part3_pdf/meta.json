@@ -1,0 +1,566 @@
+{
+  "mtime": 1793934616.7665713,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_001.webp",
+      "text": "Module 4: Distributed Databases\r\nBy MS. ALVINA LOPES\r\nPART 3\r\nSpatial and Mobile Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_002.webp",
+      "text": "Contents\r\nSpatial Databases\r\n\u2756 Introduction\r\n\u2756 Characteristics of Spatial Database\r\n\u2756 Different kinds of spatial analyses\r\n\u2756 Types of spatial data\r\n\u2756 Operations on spatial data\r\n\u2756 Types of spatial queries\r\n\u2756 Spatial data indexing\r\n\u2756 Spatial data mining\r\n\u2756 Applications of spatial databases\r\nMobile Databases\r\n\u2756 Mobile Computing\r\n\u2756 Mobile Computing Architecture\r\n\u2756 Mobile Databases\r\n\u2756 Characteristics of Mobile Environments\r\n\u2756 Data Management Issues\r\n\u2756 Types of Mobile Databases\r\n\u2756 Popular Mobile DBMSs \r\n\u2756 Applications\r\n\u2756 Challenges & Future Trends",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_003.webp",
+      "text": "Advanced Database models\r\n\u25cf As the use of database systems has grown, users have demanded \r\nadditional functionality from these software packages; \r\n\u25cf Increased functionality would make it easier to implement more advanced \r\nand complex user applications.\r\n\u25cf The need for additional features in such applications led to the \r\ndevelopment of advanced database models.\r\n\u25cf So there are active databases, deductive databases, multimedia \r\ndatabases, embedded databases, mobile databases, temporal databases \r\nand spatial databases and many others.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_004.webp",
+      "text": "",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_005.webp",
+      "text": "Spatial Databases-Introduction\r\n\u25cf Spatial databases incorporate functionality that provides support for \r\ndatabases that keep track of objects in a multidimensional space. \r\n\u25cf For example, cartographic databases that store maps include \r\ntwo-dimensional spatial descriptions of their objects\u2014\r\n\u25cf from countries and states to rivers, cities, roads, seas, and so on. \r\n\u25cf The systems that manage geographic data and related applications are \r\nknown as geographic information systems (GISs). \r\n\u25cf GIS are used in areas such as environmental applications, transportation \r\nsystems, emergency response systems, and battle management. \r\n\u25cf Other databases, such as meteorological databases for weather \r\ninformation, are three-dimensional.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_006.webp",
+      "text": "Spatial Databases-Introduction\r\n\u25cf A spatial database stores objects that have spatial characteristics that \r\ndescribe them and that have spatial relationships among them. \r\n\u25cf A spatial database is optimized to store and query data related to objects \r\nin space, including points, lines and polygons. \r\n\u25cf Satellite images are a prominent example of spatial data. \r\n\u25cf Spatial databases incorporate functionality that provides support \r\nfor databases that keep track of objects in a multidimensional space.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_007.webp",
+      "text": "Spatial Databases-Introduction\r\n\u25cf Queries posed on these spatial data, where predicates for selection deal \r\nwith spatial parameters, are called spatial queries. \r\n\u25cf Example 1: \u201cWhat are the names of all bookstores within five miles of the College of \r\nComputing building at Georgia Tech?\u201d\r\n\u25cf Example 2: \u201cList all the customers located within twenty miles of company \r\nheadquarters\u201d",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_008.webp",
+      "text": "Spatial Database-Example\r\n\u25cf A road map is a visualization of geographic information. \r\n\u25cf A road map is a 2-dimensional object \r\n\u25cb which contains points, lines, and polygons \r\n\u25cb that can represent cities, roads, and political boundaries such as states or provinces.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_009.webp",
+      "text": "Characteristics of Spatial Database\r\n\u25cf It is a database system\r\n\u25cf It offers spatial data types (SDTs) in its data model and query language.\r\n\u25cf It supports spatial data types in its implementation, providing at least \r\nspatial indexing and efficient algorithms for spatial join.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_010.webp",
+      "text": "Different kinds of spatial analyses\r\n\u25cf Table 26.1 shows the common analytical operations involved in processing \r\ngeographic or spatial data. \r\n\u25cf Measurement operations are used to measure some global properties of single \r\nobjects and to measure the relative position of different objects in terms of \r\ndistance and direction.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_011.webp",
+      "text": "Different kinds of spatial analyses\r\n\u25cf Spatial analysis operations, which often use statistical techniques, are used to \r\nuncover spatial relationships within and among mapped data layers.\r\n\u25cf Flow analysis operations help in determining the shortest path between two points \r\nand also the connectivity among nodes or regions in a graph. \r\n\u25cf Location analysis aims to find if the given set of points and lines lie within a given \r\npolygon (location).\r\n\u25cf Digital terrain analysis is used to build three-dimensional models, where the \r\ntopography of a geographical location can be represented with an x, y, z data \r\nmodel known as Digital Terrain (or Elevation) Model (DTM/DEM).\r\n\u25cf Spatial search allows a user to search for objects within a particular spatial region.\r\n\u25cf There are also topological relationships among spatial objects.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_012.webp",
+      "text": "Spatial Data Types\r\n\u25cf Map data includes various geographic or spatial features of objects in a map, such as \r\nan object\u2019s shape and the location of the object within the map.\r\n\u25cf The three basic types of features are points, lines, and polygons (or areas).\r\n\u25cf Points are used to represent spatial characteristics of objects whose locations \r\ncorrespond to a single 2-D coordinate (x, y, or longitude/latitude) in the scale of a \r\nparticular application. \r\n\u25cf Some examples of point objects could be buildings, cellular towers, or stationary \r\nvehicles.\r\n\u25cf Moving vehicles and other moving objects can be represented by a sequence of point \r\nlocations that change over time. \r\n\u25cf Lines represent objects having length, such as roads or rivers, whose spatial \r\ncharacteristics can be approximated by a sequence of connected lines. \r\n\u25cf Polygons are used to represent spatial characteristics of objects that have a boundary, \r\nsuch as countries, states, lakes, or cities.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_013.webp",
+      "text": "Spatial Data Types",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_014.webp",
+      "text": "Spatial Data Types\r\n\u25cf Attribute data is the descriptive data that GIS systems associate with \r\nmap features. \r\n\u25cf For example, suppose that a map contains features that represent \r\ncounties within a U.S. state (such as Texas or Oregon). \r\n\u25cf Attributes for each county feature (object) could include population, \r\nlargest city/town, area in square miles, and so on.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_015.webp",
+      "text": "Spatial Data Types\r\n\u25cf Image data includes data such as satellite images and aerial \r\nphotographs, which are typically created by cameras. \r\n\u25cf Objects of interest, such as buildings and roads, can be identified and \r\noverlaid on these images.\r\n\u25cf Aerial and satellite images are typical examples of raster data.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_016.webp",
+      "text": "Spatial Data Types\r\n\u25cf Image data includes data such as satellite images and aerial \r\nphotographs, which are typically created by cameras. \r\n\u25cf Objects of interest, such as buildings and roads, can be identified and \r\noverlaid on these images.\r\n\u25cf Aerial and satellite images are typical examples of raster data.\r\n\u25cf In general, spatial data can be of two types \u2212\r\n\u25cb Vector data: This data is represented as discrete points, lines and polygons\r\n\u25cb Rastor data: This data is represented as a matrix of square cells.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_017.webp",
+      "text": "Models of spatial information\r\n\u25cf Models of spatial information are sometimes grouped into two broad \r\ncategories: field and object.\r\n\u25cf A spatial application is modeled using either a field- or an object-based \r\nmodel, depending on the requirements and the traditional choice of \r\nmodel for the application.\r\n\u25cf Field models are often used to model spatial data that is continuous in \r\nnature \r\n\u25cb such as terrain elevation, temperature data, and soil variation characteristics \r\n\u25cf Object models have traditionally been used for applications \r\n\u25cb such as transportation networks, land parcels, buildings",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_018.webp",
+      "text": "Spatial Operators\r\n\u25cf Spatial operators are used to capture\r\n\u25cb all the relevant geometric properties of objects embedded in the physical space \r\n\u25cb and the relations between them, \r\n\u25cb as well as to perform spatial analysis. \r\n\u25cf Operators are classified into three broad categories:\r\n\u25cb Topological operators\r\n\u25cb Projective operators\r\n\u25cb Metric operators",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_019.webp",
+      "text": "Spatial Operators\r\nTopological operators\r\n\u25cf Topological properties are invariant when topological transformations are \r\napplied. \r\n\u25cf These properties do not change after transformations like rotation, \r\ntranslation, or scaling. \r\n\u25cf Topological operators are hierarchically structured in several levels.\r\n\u25cf Examples: open (region), close (region), and inside (point, loop).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_020.webp",
+      "text": "Spatial Operators\r\nProjective operators\r\n\u25cf Projective operators, such as convex hull, are used to express predicates \r\nabout the concavity/convexity of objects as well as other spatial relations.\r\n\u25cf Example: being inside the concavity of a given object.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_021.webp",
+      "text": "Spatial Operators\r\nMetric operators\r\n\u25cf provide a more specific description of the object\u2019s geometry. \r\n\u25cf used to measure some global properties of single objects \r\n\u25cb such as area, relative size of an object\u2019s parts, compactness, symmetry\r\n\u25cf Example: length (arc) and distance (point, point).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_022.webp",
+      "text": "Spatial Operators\r\nDynamic Spatial Operators\r\n\u25cf Dynamic operations alter the objects upon which the operations act. \r\n\u25cf The three fundamental dynamic operations are create, destroy, and \r\nupdate. \r\n\u25cf A representative example of dynamic operations would be updating a \r\nspatial object that can be subdivided into translate (shift position), rotate \r\n(change orientation), scale up or down, reflect (produce a mirror image), \r\nand shear (deform).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_023.webp",
+      "text": "Spatial Queries\r\n\u25cf Spatial queries are requests for spatial data that require the \r\nuse of spatial operations.\r\n\u25cf Three types:\r\n\u25cb Range queries\r\n\u25cb Nearest neighbor queries\r\n\u25cb Spatial joins or overlays",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_024.webp",
+      "text": "Spatial Queries\r\nRange queries\r\n\u25cf Find all objects of a particular type that are within a given spatial area \r\n\u25cf Example: Find all ambulances within a five mile radius of an \r\naccident location.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_025.webp",
+      "text": "Spatial Queries\r\nNearest neighbor queries\r\n\u25cf Finds an object of a particular type that is closest to a given location.\r\n\u25cf Example: Find the police car that is closest to the location of a crime.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_026.webp",
+      "text": "Spatial Queries\r\nSpatial joins or overlays\r\n\u25cf Typically joins the objects of two types based on some spatial condition, \r\nsuch as the objects intersecting or overlapping spatially or being within a \r\ncertain distance of one another.\r\n\u25cf Example: Finds all hotels that are within 5 kilometres of a railway station. \r\nIt spatially joins \u2018railway station\u2019 objects and \u2018hotels\u2019 objects.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_027.webp",
+      "text": "Spatial Data Indexing\r\n\u25cf A spatial database system needs an index mechanism that will help it \r\nretrieve data items quickly according to their spatial locations.\r\n\u25cf Traditional indexing methods are not well suited to data objects of \r\nnon-zero size located in multidimensional spaces.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_028.webp",
+      "text": "Spatial Data Indexing\r\n\u25cf A spatial index is used to organize objects into a set of buckets.\r\n\u25cf The buckets correspond to pages of secondary memory), so that objects \r\nin a particular spatial region can be easily located. \r\n\u25cf Each bucket has a bucket region, a part of space containing all objects \r\nstored in the bucket. \r\n\u25cf The bucket regions are usually rectangles.\r\n\u25cf For point data structures, these regions are disjoint and they partition the \r\nspace so that each point belongs to precisely one bucket. \r\n\u25cf There are essentially two:",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_029.webp",
+      "text": "Spatial Data Indexing\r\n1. Specialized indexing structures that allow efficient search for data objects \r\nbased on spatial search operations are included in the database system. \r\n\u25cb Similar to B+-tree indexes in traditional database systems.\r\n\u25cb Examples of these indexing structures are grid files and R-trees. \r\n\u25cb Spatial join indexes, can be used to speed up spatial join operations.\r\n2. The two-dimensional (2-D) spatial data is converted to single-dimensional \r\n(1-D) data.\r\n\u25cb so that traditional indexing techniques (B+-tree) can be used. \r\n\u25cb The algorithms for converting from 2-D to 1-D are known as space filling curves.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_030.webp",
+      "text": "Spatial Data Indexing",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_031.webp",
+      "text": "Spatial Data Indexing\r\nGrid Files\r\n\u25cf A grid file is a multi-dimensional data structure used to handle indexing \r\nand efficient querying across two or more search keys simultaneously.\r\n\u25cf It acts as a symmetric multi-key indexing scheme.\r\n\u25cf Records are visualized as points in an n-dimensional space. \r\n\u25cb where each dimension represents the domain of a specific attribute.\r\n\u25cb e.g., latitude, longitude, or age and salary.\r\n\u25cf The search space is split into a grid using linear scales along each axis.\r\n\u25cf The actual data records are grouped and stored in data buckets on the \r\ndisk. \r\n\u25cf Multiple grid cells (regions of the multi-dimensional space) can point to \r\nthe same bucket if they share space or if data density is low.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_032.webp",
+      "text": "Spatial Data Indexing\r\nGrid Files\r\n\u25cf They can also be used for indexing n-dimensional spatial data. \r\n\u25cf The fixed-grid method divides an n-dimensional hyperspace into equal \r\nsize buckets. \r\n\u25cf The data structure that implements the fixed grid is an n-dimensional \r\narray. \r\n\u25cf The objects whose spatial locations lie within a cell (totally or partially) can \r\nbe stored in a dynamic structure to handle overflows.\r\n\u25cf Useful for uniformly distributed data like satellite imagery.\r\n\u25cf The fixed-grid structure is rigid, and its directory can be sparse and large.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_033.webp",
+      "text": "Spatial Data Indexing\r\nR-trees\r\n\u25cf A height-balanced tree.\r\n\u25cf An extension of the B+-tree for k-dimensions, where k > 1.\r\n\u25cf Designed for spatial data storage and multi-dimensional indexing.\r\n\u25cf spatial objects are approximated in the R-tree by their minimum \r\nbounding rectangle (MBR).\r\n\u25cf MBR is the smallest rectangle, with sides parallel to the coordinate system \r\n(x and y) axis, that contains the object.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_034.webp",
+      "text": "Spatial Data Indexing\r\nR-trees: Properties\r\n\u25cf Consists of a single root, internals nodes, and leaf nodes.\r\n\u25cf The root contains the pointer to the largest region in the spatial domain.\r\n\u25cf Parent nodes contains pointers to their child nodes where the region of \r\nchild nodes completely overlaps the regions of parent nodes.\r\n\u25cf Leaf nodes contains data about the MBR to the current objects.\r\n\u25cf MBR-Minimum bounding region refers to the minimal bounding box \r\nparameter surrounding the region/object under consideration.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_035.webp",
+      "text": "Spatial Data Indexing\r\nR-trees: Example",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_036.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees\r\n\u25cf A tree data structure.\r\n\u25cf used to partition a two-dimensional space into smaller regions.\r\n\u25cf each node in the tree has four children, corresponding to the four \r\nquadrants of the space.\r\n\u25cf useful for spatial indexing and searching.\r\n\u25cf It allows efficient insertion, deletion, and retrieval of objects based on \r\ntheir spatial location.\r\n\u25cf It can efficiently handle spatial queries such as range searches and \r\nnearest neighbor searches.\r\n\u25cf Applications: GIS, computer graphics, video games, image processing.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_037.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees\r\n\u25cf The quadtree starts with a root node that represents the entire space. \r\n\u25cf Each level of the tree divides the space into four equal-sized quadrants. \r\n\u25cf Each node of a Quad Tree has at most four children.\r\n\u25cf The leaf nodes of the tree represent smaller regions of the space.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_038.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees: Construction\r\n1. Divide the current two-dimensional space into four boxes.\r\n2. If a box contains one or more points in it, create a child object, storing in it \r\nthe two-dimensional space of the box.\r\n3. If a box does not contain any points, do not create a child for it.\r\n4. Recurse for each of the children.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_039.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_040.webp",
+      "text": "Spatial Data Indexing\r\nQuad-trees",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_041.webp",
+      "text": "Spatial Data Indexing\r\nComparison: B-tree vs. R-tree vs. Quad-tree",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_042.webp",
+      "text": "Spatial Data Mining",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_043.webp",
+      "text": "Spatial Data Mining\r\nSpatial Classification\r\n\u25cf Definition: Estimate attribute values based on other attributes\r\n\u25cf Also called location prediction problem\r\n\u25cf Examples:\r\n\u25cb Predicting nest locations in wetlands (vegetation durability, water depth)\r\n\u25cb Identifying crime hotspots",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_044.webp",
+      "text": "Spatial Data Mining\r\nSpatial Classification",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_045.webp",
+      "text": "Spatial Data Mining\r\nSpatial Association\r\n\u25cf Definition: Rules based on spatial predicates\r\n\u25cf Rule format: \r\n\u25cf Example: is_a(x, country) \u2227 touches(x, Mediterranean) \u21d2 is_a(x, wine-exporter)\r\n\u25cf Key differences from non-spatial associations:\r\n\u25cb No clear \"transactions\" (continuous space)\r\n\u25cb Smaller item sets\r\n\u25cb Spatial items often discretized (e.g., income regions)",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_046.webp",
+      "text": "Spatial Data Mining\r\nSpatial Association",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_047.webp",
+      "text": "Spatial Data Mining\r\nSpatial Colocation Rules\r\n\u25cf Generalize association rules to spatially indexed datasets\r\n\u25cf Useful for analyzing point collections (e.g., income regions, disease \r\nspread)",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_048.webp",
+      "text": "Spatial Data Mining\r\nSpatial Clustering\r\n\u25cf Definition: Group objects so similar ones cluster together\r\n\u25cf Application: Group seismic events \u2192 identify earthquake faults\r\n\u25cf Algorithms:\r\n\u25cb DBSCAN: Finds clusters based on density distribution\r\n\u25cb DENCLUE: Uses density functions to detect clusters",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_049.webp",
+      "text": "Spatial Data Mining\r\nSpatial Clustering: DBSCAN",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_050.webp",
+      "text": "Spatial Data Mining\r\n\u25cf Spatial data mining reveals hidden patterns in correlated spatial data\r\n\u25cf Techniques:\r\n\u25cb Classification \u2192 Predict locations\r\n\u25cb Association \u2192 Discover spatial rules\r\n\u25cb Clustering \u2192 Identify dense regions\r\n\u25cf Applications: Ecology, crime analysis, geology, urban planning",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_051.webp",
+      "text": "Applications of Spatial Data",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_052.webp",
+      "text": "",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_053.webp",
+      "text": "Introduction\r\n\u25cf Growth of mobile computing and smartphones\r\n\u25cf Need for data availability on the move\r\n\u25cf Examples: WhatsApp, Uber, Mobile Banking, E-commerce apps\r\n\u25cf Challenges: limited resources, connectivity issues, security",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_054.webp",
+      "text": "Mobile Computing Environment\r\n\u25cf Definition: \u201cA computing environment where users access data, \r\napplications, and services through mobile devices over wireless \r\nnetworks.\u201d\r\n\u25cf Components:\r\n\u25cb Mobile devices (smartphones, tablets, wearables)\r\n\u25cb Wireless networks (Wi-Fi, 4G/5G, Bluetooth)\r\n\u25cb Cloud services & backend servers\r\n\u25cf Characteristics:\r\n\u25cb Ubiquity (anytime, anywhere access)\r\n\u25cb Resource constraints (battery, storage, bandwidth)\r\n\u25cb Dynamic connectivity (handoffs, roaming)",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_055.webp",
+      "text": "Mobile Computing Architecture\r\n\u25cf A distributed architecture where a number of computers, generally \r\nreferred to as Fixed Hosts and Base Stations, are interconnected through \r\na high-speed wired network. \r\n\u25cf Fixed hosts are general purpose computers that are not typically \r\nequipped to manage mobile units but can be configured to do so. \r\n\u25cf Base stations function as gateways to the fixed network for the Mobile \r\nUnits. \r\n\u25cf They are equipped with wireless interfaces and offer network access \r\nservices of which mobile units are clients.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_056.webp",
+      "text": "Mobile Computing Architecture",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_057.webp",
+      "text": "Mobile Computing Architecture\r\nLayers of Architecture:\r\n1. Mobile Device Layer \u2013 hardware, OS, local DB (e.g., SQLite)\r\n2. Network Layer \u2013 wireless communication, protocols (TCP/IP, HTTP, \r\nMQTT)\r\n3. Middleware Layer \u2013 synchronization, caching, security services\r\n4. Server/Cloud Layer \u2013 enterprise DBMS, application servers, APIs\r\nExample: WhatsApp message flow (device \u2192 internet \u2192 server \u2192 recipient)",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_058.webp",
+      "text": "Mobile Computing Architecture",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_059.webp",
+      "text": "Mobile Databases\r\n\u25cf Mobile Database is a database that is transportable, portable, and \r\nphysically separate or detached from the corporate database server but \r\nhas the capability to communicate with those servers from remote sites \r\nallowing the sharing of various kinds of data.\r\n\u25cf Mobile databases are databases designed to operate on mobile devices \r\nor in mobile environments, enabling data access, synchronization, and \r\nmanagement anytime, anywhere. \r\n\u25cf With mobile databases, users have access to corporate data on their \r\nlaptop, PDA, or other Internet access device that is required for \r\napplications at remote sites.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_060.webp",
+      "text": "Mobile Databases\r\nMobile Database typically involves three parties:\r\nFixed Hosts - \r\nIt performs the transactions and data management functions with the help of \r\ndatabase servers.\r\nMobiles Units - \r\nThese are portable computers that move around a geographical region that \r\nincludes the cellular network that these units use to communicate to base \r\nstations.\r\nBase Stations - \r\nThese are two-way radios installation in fixed locations, that pass \r\ncommunication with the mobile units to and from the fixed hosts.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 61,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_061.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_061.webp",
+      "text": "Characteristics of Mobile Environments\r\n\u25cf Portability\r\n\u25cf Lower bandwidth\r\n\u25cf Range, interference\r\n\u25cf Locality of access \r\n\u25cf Support for packet switching\r\n\u25cf High communication latency\r\n\u25cf Limited storage & processing power\r\n\u25cf Frequent disconnections\r\n\u25cf Synchronization with central servers\r\n\u25cf Security & privacy concerns",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 62,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_062.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_062.webp",
+      "text": "Data Management Issues\r\n\u25cf Connectivity Issues\r\n\u25cb Frequent disconnections, variable bandwidth\r\n\u25cf Consistency & Synchronization\r\n\u25cb Conflict resolution in replicated data\r\n\u25cf Resource Constraints\r\n\u25cb Limited CPU, memory, battery\r\n\u25cf Security & Privacy\r\n\u25cb Protecting sensitive data on mobile devices\r\n\u25cf Scalability\r\n\u25cb Handling millions of concurrent mobile users\r\n\u25cf Data Distribution\r\n\u25cb Managing data across heterogeneous devices and networks",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 63,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_063.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_063.webp",
+      "text": "Data Synchronization\r\n\u25cf Why synchronization is needed?\r\n\u25cf Techniques:\r\n\u25cb Two-way sync\r\n\u25cb Conflict detection & resolution\r\n\u25cb Replication strategies\r\n\u25cf Example: Google Drive offline sync",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 64,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_064.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_064.webp",
+      "text": "Data Synchronization",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 65,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_065.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_065.webp",
+      "text": "Query Processing in Mobile Databases\r\n\u25cf Constraints: low bandwidth, limited CPU\r\n\u25cf Query optimization for mobile\r\n\u25cf Use of caching and indexing\r\n\u25cf Example: location-based queries in ride-hailing apps",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 66,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_066.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_066.webp",
+      "text": "Security in Mobile Databases\r\n\u25cf Threats: unauthorized access, data leakage\r\n\u25cf Techniques:\r\n\u25cb Authentication & authorization\r\n\u25cb Encryption (at rest & in transit)\r\n\u25cb Secure APIs\r\n\u25cf Example: Mobile banking apps",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 67,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_067.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_067.webp",
+      "text": "Types of Mobile Databases\r\n\u25cf Local Databases (SQLite, Realm)\r\n\u25cf Remote Databases (Firebase, AWS DynamoDB)\r\n\u25cf Hybrid Approaches (offline-first with sync)\r\n\u25cf Examples in real-world apps",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 68,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_068.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_068.webp",
+      "text": "Popular Mobile Database Systems\r\n\u25cf SQLite \u2013 lightweight, embedded\r\n\u25cf Realm \u2013 object-oriented, offline-first\r\n\u25cf Firebase Realtime Database \u2013 cloud-hosted, sync across clients\r\n\u25cf Couchbase Mobile \u2013 NoSQL, sync with Couchbase Server",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 69,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_069.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_069.webp",
+      "text": "Applications of Mobile Databases\r\n\u25cf Social media apps\r\n\u25cf Mobile commerce\r\n\u25cf Healthcare apps (patient records)\r\n\u25cf IoT & sensor data collection\r\n\u25cf Travel & navigation apps",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 70,
+      "image": "/slides/admt_admt_module_4_module4-part3_pdf/slide_070.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part3_pdf/thumb_070.webp",
+      "text": "Challenges and Future Trends\r\n\u25cf Handling big data on mobile\r\n\u25cf Energy-efficient query processing\r\n\u25cf Edge computing integration\r\n\u25cf AI-driven mobile data management\r\n\u25cf Blockchain-based mobile databases",
+      "width": 1440,
+      "height": 810
+    }
+  ]
+}

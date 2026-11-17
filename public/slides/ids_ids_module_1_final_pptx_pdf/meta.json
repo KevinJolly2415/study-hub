@@ -1,0 +1,526 @@
+{
+  "mtime": 1794848771.8844492,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_001.webp",
+      "text": "Chapter 1\r\nIntroduction to Artificial Intelligence, \r\nMachine Learning and Data Science",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_002.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation, \r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSyllabus",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_003.webp",
+      "text": "WHAT IS INTELLIGENCE?",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_004.webp",
+      "text": "WHAT IS INTELLIGENCE?\r\n\u2022 Intelligence is not just about having knowledge. \r\n\u2022 It is the ability to learn from:\r\n\u2714 Experience\r\n\u2714 Understand situations\r\n\u2714 Think logically\r\n\u2714 Solve problems\r\n\u2714 Make decisions\r\n\u2714 Adapt to new environments.\r\nCan machine perform \r\nthese task?\r\nArtificial \r\nIntelligence\r\nYes",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_005.webp",
+      "text": "ARTIFICIAL \r\nINTELLIGENCE\r\n\u201cArtificial Intelligence (AI) \r\nis the branch of computer \r\nscience that enables \r\nmachines to perform \r\ntasks that normally \r\nrequire human \r\nintelligence, such as \r\nlearning, reasoning, \r\nproblem solving, decision \r\nmaking, perception, and \r\nlanguage understanding\u201d.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_006.webp",
+      "text": "ARTIFICIAL INTELLIGENCE - VIEWS\r\nThink like human Think Rationally\r\nAct like human Act Rationally\r\nLike human - Tries to imitate humans, May make human-like mistakes\r\nRationally - Makes decisions based on logic and goals, Tries to achieve the best outcome",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_007.webp",
+      "text": "\u2022 The definitions of AI gives four possible goals to pursue :\r\n1. Systems that think like humans\r\n2. Systems that think rationally\r\n3. Systems that act like humans\r\n4. Systems that act rationally\r\nGOALS OF AI\r\n7",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_008.webp",
+      "text": "\u2022 Explore and evaluate theories of how the mind works through the use of computational \r\nmodels.\r\n\u2022 Not what is done but how it is done\r\n\u2022 Intelligent behavior is not enough, the program must operate in an intelligent \r\nmanner.\r\n\u2022 Example : Traditional Chess Program - IBM's Deep Blue Intelligent \r\nIntelligent Tutoring System : Duolingo\r\nCOGNITIVE SCIENCE : THINK LIKE HUMAN\r\n8\r\nThe material in this presentation belongs to St. Francis Institute of Technology and is solely for educational purposes. Distribution and modifications of the content is prohibited.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_009.webp",
+      "text": "The study of the computations that make it possible to perceive, reason, and act.\r\n\u2022 Inference mechanisms - probably correct and guarantee an optimal solution.\r\n\u2022 Develop systems of representation to allow inferences \u2013\r\n \u201cSocrates is a man. All men are mortal. Therefore Socrates is \r\nmortal.\u201d\r\n\u2022 Formalize the reasoning process as a system of logical rules and procedures for inference.\r\n\u2022 Examples - Medical Expert System\r\n\u2022 Issue - not all problems can be solved just by reasoning and inferences.\r\nLAWS OF THOUGHT : THINK RATIONALLY\r\n9\r\nIF fever = Yes AND cough = Yes AND sore throat = Yes \r\nTHEN \r\nDisease = Flu",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_010.webp",
+      "text": "TURING TEST : ACT HUMAN-LIKE\r\nMore Example : Chatgpt, Customer Service Chatbot",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_011.webp",
+      "text": "\u2022 Tries to make computers behave intelligently using algorithms and computations.\r\n\u2022 Takes action that has the highest chance of achieving its goal\r\n\u2022 Focus is on systems that act sufficiently if not optimally in all situations\r\n\u2022 Goal is to develop systems that are rational and sufficient.\r\n\u2022 Example : \r\n\u2022 Google map - Change in route \r\n\u2022 Self Driving Cars \u2013 Apply break\r\nRATIONAL AGENT : ACT RATIONALLY",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_012.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation, \r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSyllabus",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_013.webp",
+      "text": "EVOLUTION OF AI",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_014.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation, \r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSYLLABUS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_015.webp",
+      "text": "AGENTS\r\n\u2022 An agent is anything that can be viewed as perceiving its environment through sensors \r\nand acting upon that environment through actuators.\r\n\u2022 Human agent: Eyes, ears, and other organs for sensors\r\n Hands, legs, mouth, and other body parts for actuators\r\n\u2022 Robotic agent: Cameras and infrared range finders for sensors\r\n Various motors for actuators\r\n Examples :\r\nAI System Sensors Actuators\r\nSelf-driving car Camera, LiDAR, \r\nGPS\r\nSteering wheel, brakes, accelerator\r\nChatbot User's text input Text response on screen\r\nPerception\r\nDecision\r\nAction",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_016.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_016.webp",
+      "text": "AGENT AND ENVIRONMENT\r\n\u2022 The agent receives percepts (P)\r\nfrom the environment and \r\ndecides the most appropriate \r\naction (A):\r\n [f: P* \ud83e\udc7a A]\r\nf - Agent Function\r\nAgent Function - converts input \r\n(percepts) into an appropriate \r\naction.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_017.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_017.webp",
+      "text": "EXAMPLE : VACUUM-CLEANER WORLD\r\nA, B - Rooms\r\nRobot vacuum cleaner - Intelligent agent\r\nGoal \u2013 Keep the room clean\r\nPercepts - location and contents\r\nLocation - A, B\r\nContent - Dust\r\nActions - Left, Right, Suck (Clean the dirt), NoOp\r\nCurrent Room Status Action\r\nA Dirty Suck\r\nA Clean Move Right\r\nB Dirty Suck\r\nB Clean Move Left\r\nAgent Function\r\nIF room is dirty \r\nSuck \r\nELSE \r\nMove to the other room\r\nAgent Program\r\nEnvironment",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_018.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_018.webp",
+      "text": "RATIONAL AGENTS\r\n\u2022 Always tries to choose the best possible action to achieve its goal.\r\n\u201cFor each possible percept sequence, a rational agent should select an action that is expected to \r\nmaximize its performance measure, given the evidence provided by the percept sequence and \r\nwhatever built-in knowledge the agent has\u201d.\r\n\u2022 Performance Measure : Criterion used to evaluate how successfully an agent achieves its goal.\r\nAgent Goal Performance Measure\r\nVacuum Cleaner Clean the room Number of clean rooms\r\nSelf-driving Car Safe driving Reach destination safely with minimum accidents\r\nGoogle Maps Fast navigation Minimum travel time\r\nChess AI Win the game Winning the match",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_019.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_019.webp",
+      "text": "PEAS\r\n\u201cHow do we design such an agent?\"\r\nPEAS\r\n P-Performance measure, E- Environment, A- Actuators, S-Sensors\r\n\u2022 How do we know it is successful? - P\r\n\u2022 What is its environment? - E\r\n\u2022 What sensors does it have? - S\r\n\u2022 What actions can it perform? - A",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_020.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_020.webp",
+      "text": "PEAS - EXAMPLES\r\nVacuum Cleaner Self-Driving Car Medical Diagnosis System\r\nChatbot / Virtual Assistant Drone",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_021.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_021.webp",
+      "text": "PEAS - EXAMPLES\r\nAgent Performance Measure \r\n(P) Environment (E) Actuators (A) Sensors (S)\r\nVacuum Cleaner\r\nKeep rooms clean, \r\nminimum time and \r\nenergy\r\nRooms, dirt Move Left, Move \r\nRight, Suck\r\nDirt sensor, Location \r\nsensor\r\nSelf-Driving Car Safe, fast, and \r\ncomfortable journey\r\nRoads, traffic, \r\npedestrians, weather\r\nSteering, Brake, \r\nAccelerator\r\nCamera, LiDAR, \r\nRadar, GPS\r\nMedical Diagnosis \r\nSystem\r\nCorrect diagnosis and \r\neffective treatment\r\nPatients, medical \r\nrecords, hospital\r\nDisplay diagnosis, \r\nrecommend treatment\r\nPatient symptoms, test \r\nreports, medical history\r\nChatbot / \r\nVirtual Assistant\r\nCorrect and helpful \r\nresponses\r\nUser conversation Display text, speech \r\noutput User text, voice input\r\nDrone\r\nReach destination \r\nsafely and complete the \r\nmission\r\nAirspace, obstacles, \r\nweather\r\nPropellers, camera \r\ncontrol\r\nGPS, camera, altitude \r\nsensor",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_022.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_022.webp",
+      "text": "AGENT TYPES\r\nFour basic types in order of increasing generality:\r\n\u2022 Simple reflex agents\r\n\u2022 Model-based reflex agents\r\n\u2022 Goal-based agents\r\n\u2022 Utility-based agents\r\n\u2022 Learning Agent",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_023.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_023.webp",
+      "text": "SIMPLE REFLEX AGENTS\r\n\u201cA Simple Reflex Agent selects an action \r\nbased only on the current percept (current \r\nsituation) using predefined condition\u2013action \r\nrules.\u201d\r\n\u2022 It does not remember the past and does not \r\nthink about the future.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_024.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_024.webp",
+      "text": "MODEL-BASED REFLEX AGENTS\r\n\u201cModel-Based Reflex Agent maintains an \r\ninternal state (memory) of the environment \r\nand uses both the current percept and past\r\ninformation to decide the next action\u201d.\r\nState - stores what the agent already knows.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_025.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_025.webp",
+      "text": "GOAL-BASED AGENTS\r\nModel-Based Reflex Agent: \"What should I do \r\nnow?\"\r\nGoal-Based Agent: \"Which action will help me reach \r\nmy goal?\u201c\r\n\u201cA Goal-Based Agent selects actions that help it \r\nachieve a predefined goal by considering the future \r\nconsequences of its actions\u201d.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_026.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_026.webp",
+      "text": "UTILITY-BASED AGENTS\r\nA Goal-Based Agent asks, \"Will I reach the goal?\"\r\nA Utility-Based Agent asks, \"Which option is the\r\nBEST among all the options?\u201c\r\n\u201cA Utility-Based Agent selects the action that maximizes \r\nits utility (or happiness/value) among all possible \r\nactions.\u201d\r\n\u2022 Selects the action that maximizes utility\r\n\u2022 Evaluates all possible outcomes\r\n\u2022 Uses a utility function to assign a value (score) to \r\neach possible state\r\n\u2022 Chooses the action with the highest utility",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_027.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_027.webp",
+      "text": "LEARNING AGENTS\r\n\u2022 Most advanced type of intelligent \r\nagent\r\n\"A Learning Agent not only performs \r\nactions but also learns from its mistakes \r\nand continuously improves its future \r\ndecisions.\u201c\r\n\u2022 Learns from experience and \r\nfeedback. Improves its performance \r\nover time.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_028.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_028.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_029.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_029.webp",
+      "text": "MCQs",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_030.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_030.webp",
+      "text": "AN INTELLIGENT AGENT INTERACTS WITH ITS ENVIRONMENT \r\nUSING:\r\nA) Keyboard and Monitor\r\nB) Sensors and Actuators\r\nC) CPU and RAM\r\nD) Mouse and Printer\r\nAns: B",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_031.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_031.webp",
+      "text": "A RATIONAL AGENT SELECTS AN ACTION THAT:\r\nA) Is chosen randomly\r\nB) Has the highest chance of achieving the goal\r\nC) Is always the fastest\r\nD) Uses the least memory\r\nAns: B",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_032.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_032.webp",
+      "text": "WHICH OF THE FOLLOWING IS AN EXAMPLE OF A RATIONAL \r\nAGENT?\r\nA) Google Maps\r\nB) Calculator\r\nC) Keyboard\r\nD) Scanner\r\nAnswer: A",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_033.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_033.webp",
+      "text": "IBM DEEP BLUE IS AN EXAMPLE OF WHICH AI APPROACH?\r\nA) Think Humanly\r\nB) Act Humanly\r\nC) Think Rationally\r\nD) Act Rationally\r\nAns: D",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_034.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_034.webp",
+      "text": "WHICH AGENT USES ONLY THE CURRENT PERCEPT TO MAKE \r\nDECISIONS?\r\nA) Learning Agent\r\nB) Goal-Based Agent\r\nC) Simple Reflex Agent\r\nD)Utility-Based Agent\r\nAnswer: C",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 35,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_035.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_035.webp",
+      "text": "WHICH AGENT MAINTAINS AN INTERNAL MEMORY OF THE \r\nENVIRONMENT?\r\nA) Goal-Based Agent\r\nB) Learning Agent\r\nC) Model-Based Reflex Agent\r\nD) Utility-Based Agent\r\nAnswer: C",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 36,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_036.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_036.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation\r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSYLLABUS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 37,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_037.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_037.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation\r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSYLLABUS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 38,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_038.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_038.webp",
+      "text": "ENVIRONMENT TYPES\r\n\u2022 Fully Observable Vs Partially Observable\r\n\u2022 Deterministic Vs Stochastic\r\n\u2022 Episodic Vs Sequential\r\n\u2022 Static Vs Dynamic\r\n\u2022 Discrete Vs Continuous\r\n\u2022 Single Agent Vs Multiagent",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 39,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_039.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_039.webp",
+      "text": "PARTIALLY OBSERVABLE\r\nThe agent can observe the complete \r\nstate of the environment at every point in \r\ntime.\r\nFULLY OBSERVABLE\r\nExample: Chess\r\n\u2022 All pieces are visible. \r\n\u2022 Nothing is hidden from the agent. \r\n\u2022 Complete information available\r\nThe agent has limited information\r\nabout the environment; some parts are \r\nhidden or unknown.\r\nExample: Self-driving Car\r\n\u2022 Objects behind buildings, vehicles, or \r\ncorners are not visible to the agent. \r\n\u2022 Incomplete information available",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 40,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_040.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_040.webp",
+      "text": "Stochastic\r\nThe same action always produces the \r\nsame result.\r\nDeterministic\r\nExample: Vacuum Cleaner Robot\r\n\u2022 The robot moves right. \r\n\u2022 It always reaches the right room. \r\n\u2022 The outcome is predictable. \r\n\u2022 Predictable outcome\r\nThe same action may produce \r\ndifferent results due to uncertainty.\r\nExample: Self-driving Car / Taxi Driver\r\no The car turns left. \r\no A pedestrian may appear. \r\no Traffic may increase. \r\no Another vehicle may suddenly enter. \r\no Uncertain outcome",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 41,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_041.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_041.webp",
+      "text": "Sequential\r\nEach decision is independent of previous \r\ndecisions.\r\nEpisodic\r\nExample: Defective Part Inspection\r\n\u2022 The camera inspects one product. \r\n\u2022 It decides Good or Defective. \r\n\u2022 The next product is inspected \r\nindependently. \r\n\u2022 Independent decisions\r\nEach decision affects future decisions.\r\nExample: Chess\r\n\u2022 Every move changes the board. \r\n\u2022 The next move depends on the previous \r\nmove. \r\n\u2022 Wrong decisions affect future outcomes.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 42,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_042.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_042.webp",
+      "text": "Dynamic\r\nThe environment does not change while \r\nthe agent is making a decision.\r\nStatic\r\nExample: Crossword Puzzle\r\n\u2022 The puzzle remains the same while you \r\nthink. \r\n\u2022 Nothing changes automatically. \r\n\u2022 You have enough time to decide.\r\nEnvironment remains unchanged\r\nThe environment can change while the \r\nagent is making a decision.\r\nExample: Self-driving Car / Taxi Driver\r\n\u2022 Traffic keeps moving. \r\n\u2022 Pedestrians may suddenly cross. \r\n\u2022 Traffic lights change. \r\n\u2022 The agent must react continuously. \r\nEnvironment changes continuously",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 43,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_043.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_043.webp",
+      "text": "Continuous\r\nFinite or countable number of states \r\nand actions.\r\nDiscrete\r\nExample: Chess\r\n\u2022 Limited number of pieces. \r\n\u2022 Fixed squares (64). \r\n\u2022 A move is from one square to \r\nanother. \r\n\u2022 Countable states and actions\r\ncontinuously changing states, actions, or \r\ntime.\r\nExample: Self-driving Car\r\n\u2022 Speed can be 25.1, 25.2, 25.25 km/h...\r\n\u2022 Steering angle changes continuously. \r\n\u2022 Position changes every second. \r\n\u2022 Time flows continuously. \r\n\u2022 Infinite possible values",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 44,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_044.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_044.webp",
+      "text": "Multiagent\r\nOnly one intelligent agent is involved in \r\nmaking decisions.\r\nExample: Sudoku\r\n\u2022 Only one player solves the puzzle. \r\n\u2022 No opponent exists. \r\n\u2022 The environment does not compete \r\nwith the agent. \r\n Only one decision-maker\r\nTwo or more intelligent agents interact, \r\ncooperate, or compete with each other.\r\nExample: Chess\r\n\u2022 Two players make decisions. \r\n\u2022 One player's move affects the other.\r\n\u2022 Both agents try to achieve their own \r\ngoal. \r\n Multiple decision-makers\r\nSingle Agent",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 45,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_045.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_045.webp",
+      "text": "ENVIRONMENT TYPES - SUMMARY",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 46,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_046.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_046.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation\r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSYLLABUS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 47,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_047.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_047.webp",
+      "text": "PROBLEM SOLVING\r\n\u201cA problem-solving agent has a goal, and instead of acting randomly, it plans a sequence of \r\nactions to achieve that goal.\"\r\nGoal Formulation\r\n\u2193\r\nProblem Formulation\r\n\u2193\r\nSearch\r\n\u2193\r\nExecution",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 48,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_048.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_048.webp",
+      "text": "\u201cProblem formulation is the process of defining a problem in terms of states, actions, \r\ngoals, and costs so that an AI agent can find a solution.\u201d\r\nProblem Formulation\r\nBefore solving any problem, an AI agent must \r\nfirst understand:\r\n\u2022 Where am I? \r\n\u2022 Where do I want to go? \r\n\u2022 What actions can I perform? \r\n\u2022 Which solution is the best?\u201c\r\n\u2751 Abstraction\r\nInitial State\r\n \u2502\r\n \u25bc\r\nPossible Actions\r\n \u2502\r\n \u25bc\r\nState Space\r\n \u2502\r\n \u25bc\r\nGoal State\r\n \u2502\r\n \u25bc\r\nMinimum Path Cost",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 49,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_049.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_049.webp",
+      "text": "Components of Problem Formulation\r\nComponent Description Google Maps Example\r\nInitial State Where the agent starts Borivali Station\r\nState Space All possible states All roads and junctions\r\nActions Possible operations Left, Right, Straight\r\nGoal State (Goal Test) Desired destination SFIT College\r\nPath Cost Cost of each path Time or Distance",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 50,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_050.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_050.webp",
+      "text": "Example \u2013 Finding Best Route (Google Map)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 51,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_051.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_051.webp",
+      "text": "EXAMPLE : 8 PUZZLE PROBLEM \r\nStates? locations of tiles \r\nActions? move blank left, right, up, down \r\nGoal test? = goal state (given)\r\nPath cost? 1 per move",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 52,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_052.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_052.webp",
+      "text": "EXAMPLE : VACCUM WORLD STATE SPACE GRAPH\r\nstates? integer dirt and robot location \r\nactions? Left, Right, Suck\r\ngoal test? no dirt at all locations\r\npath cost? 1 per action",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 53,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_053.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_053.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation\r\n\u2022 AI Techniques and AI Famous Problems\r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSYLLABUS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 54,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_054.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_054.webp",
+      "text": "Neural Networks\r\nAI TECHNIQUES\r\nGenetic Algorithms Reinforcement learning\r\n\u2022 Inspired by the structure \r\nand functioning of the \r\nhuman brain. \r\n\u2022 Consist of interconnected \r\nneurons (nodes) organized \r\ninto multiple layers. \r\n\u2022 Learn patterns from data \r\nto make predictions and \r\ndecisions.\r\n\u2022 Inspired by the principles of natural \r\nselection and genetics. \r\n\u2022 Generate better solutions through \r\nselection, crossover, and mutation. \r\n\u2022 Well suited for solving complex \r\noptimization problems.\r\n\u2022 An agent learns by interacting \r\nwith its environment. \r\n\u2022 Receives rewards for \r\ndesirable actions and \r\npenalties for undesirable \r\nactions. \r\n\u2022 Learns the optimal strategy \r\nto maximize long-term \r\ncumulative reward.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 55,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_055.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_055.webp",
+      "text": "AI FAMOUS PROBLEMS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 56,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_056.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_056.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation\r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSYLLABUS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 57,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_057.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_057.webp",
+      "text": "Machine Learning \r\n\u201cMachine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn \r\npatterns from data and improve their performance without being explicitly programmed.\u201d\r\n\u2022 Learns from data and experience. \r\n\u2022 Identifies hidden patterns. \r\n\u2022 Makes predictions or decisions. \r\n\u2022 Improves performance over time. \r\nReal-Life Examples\r\n 3 Types:\r\n\u2022 Supervised\r\n\u2022 Unsupervised\r\n\u2022 Reinforcement",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 58,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_058.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_058.webp",
+      "text": "Data Science\r\nData Science is an interdisciplinary field that combines statistics, machine learning, \r\nprogramming, and domain knowledge to extract meaningful insights from data and \r\nsupport better decision-making.\r\n\u2022 Collects data from various sources\r\n\u2022 Cleans and preprocesses data\r\n\u2022 Analyzes data to discover patterns\r\n\u2022 Builds predictive models using Machine \r\nLearning\r\n\u2022 Visualizes results for informed \r\ndecision-making",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 59,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_059.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_059.webp",
+      "text": "AI VS. MACHINE LEARNING VS. DATA SCIENCE",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 60,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_060.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_060.webp",
+      "text": "AI VS. MACHINE LEARNING VS. DATA SCIENCE",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 61,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_061.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_061.webp",
+      "text": "\u2022 Evolution and history of Artificial Intelligence \r\n\u2022 Environment Types\r\n\u2022 Agent Types \r\n\u2022 Problem Formulation\r\n\u2022 AI Vs. Machine Learning Vs. Data Science \r\n\u2022 Applications of AI and Data Science in various domains \r\nSYLLABUS",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 62,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_062.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_062.webp",
+      "text": "Domain Artificial Intelligence Data Science\r\nHealthcare Disease Diagnosis Patient Data Analysis\r\nBanking Fraud Detection Risk Analysis\r\nRetail Chatbots Customer Purchase Analysis\r\nTransportation Self-driving Cars Traffic Prediction\r\nEducation Intelligent Tutoring Systems Student Performance Analysis\r\nEntertainment Voice Assistants Movie Recommendation Analysis\r\nApplications of AI and Data Science in various domains",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 63,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_063.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_063.webp",
+      "text": "THANK \r\nYOU\u2026..",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 64,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_064.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_064.webp",
+      "text": "QUESTIONS\r\n\u2022 State PEAS of automated taxi driver.\r\n\u2022 Formulate the problem for 8 queens.\r\n\u2022 Explain different types of agents.\r\n\u2022 Explain different types of environments.\r\n\u2022 Explain the four approaches to Artificial Intelligence: Thinking Humanly, Thinking Rationally, \r\nActing Humanly, and Acting Rationally.\r\n\u2022 Explain the concept of an intelligent agent and describe how an agent interacts with its \r\nenvironment using sensors and actuators.\r\n\u2022 Explain the PEAS framework and describe its components with a suitable example.\r\n\u2022 Explain how a Learning Agent improves its performance using experience and feedback.\r\n\u2022 Explain the working of a problem-solving agent and describe the stages: Goal Formulation, \r\nProblem Formulation, Search, and Execution.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 65,
+      "image": "/slides/ids_ids_module_1_final_pptx_pdf/slide_065.webp",
+      "thumb": "/slides/ids_ids_module_1_final_pptx_pdf/thumb_065.webp",
+      "text": "\u2022 Define problem formulation in Artificial Intelligence and explain its components: Initial \r\nState, State Space, Actions, Goal State, and Path Cost. \r\n\u2022 Explain the problem formulation of the 8-Puzzle problem in terms of states, actions, goal \r\ntest, and path cost. \r\n\u2022 Explain the problem formulation of the Vacuum World problem in terms of states, \r\nactions, goal test, and path cost. \r\n\u2022 Differentiate between Artificial Intelligence, Machine Learning, and Data Science. \r\n\u2022 Explain the relationship between Artificial Intelligence, Machine Learning, and Data \r\nScience. \r\n\u2022 Explain the applications of Artificial Intelligence and Data Science.\r\n\u2022 What is rational agent? Explain with diagram",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

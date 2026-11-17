@@ -1,0 +1,374 @@
+{
+  "mtime": 1793934615.440405,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_001.webp",
+      "text": "Module 4: Distributed Databases\r\nBy MS. ALVINA LOPES\r\nPART 2",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Concurrency Control in Distributed Databases\r\n\u2756 Recovery in Distributed Databases\r\n\u2756 Transaction Management in Distributed Databases\r\n\u2756 Query Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_003.webp",
+      "text": "Overview of Concurrency Control\r\n\u25cf Concurrency control is the procedure in DBMS for managing \r\nsimultaneous operations without conflicting with each other.\r\n\u25cf Concurrent access is quite easy if all the users are just reading the data. \r\nThere is no way they can interfere with one another.\r\n\u25cf However, any practical database would have a mix of read and write \r\noperations and hence concurrency is a challenge.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_004.webp",
+      "text": "Overview of Concurrency Control\r\nWhy use Concurrency method?\r\n\u25cf To apply isolation through mutual exclusion between conflicting \r\ntransactions.\r\n\u25cf To resolve read-write and write-write conflicts.\r\n\u25cf To preserve database consistency.\r\n\u25cf Concurrency Control helps to ensure serializability.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_005.webp",
+      "text": "Recovery in Distributed Databases\r\n\u25cf As with local recovery, distributed database recovery aims to maintain the \r\natomicity and durability of distributed transactions.\r\n\u25cf A database must guarantee that all statements in a transaction, \r\ndistributed or non-distributed, either commit or roll back as a unit.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_006.webp",
+      "text": "Overview of Concurrency Control and Recovery\r\n\u25cf For concurrency control and recovery purposes, numerous problems \r\narise in a distributed DBMS environment that are not encountered in a \r\ncentralized DBMS environment. \r\n\u25cf These include the following:\r\n\u25cb Dealing with multiple copies of the data items\r\n\u25cb Failure of individual sites\r\n\u25cb Failure of communication links\r\n\u25cb Distributed commit\r\n\u25cb Distributed deadlock",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_007.webp",
+      "text": "Overview of Concurrency Control and Recovery\r\n\u25cf Dealing with multiple copies of the data items\r\n\u25cb The concurrency control method is responsible for maintaining consistency among \r\nthese copies. \r\n\u25cb The recovery method is responsible for making a copy consistent with other copies if \r\nthe site on which the copy is stored fails and recovers later.\r\n\u25cf Failure of individual sites\r\n\u25cb The DDBMS should continue to operate with its running sites, if possible, when one \r\nor more individual sites fail. \r\n\u25cb When a site recovers, its local database must be brought up-to-date with the rest of \r\nthe sites before it rejoins the system.\r\n\u25cf Failure of communication links\r\n\u25cb The system must be able to deal with the failure of one or more of the \r\ncommunication links that connect the sites.\r\n\u25cb network partitioning.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_008.webp",
+      "text": "Overview of Concurrency Control and Recovery\r\n\u25cf Distributed commit\r\n\u25cb Problems can arise with committing a transaction that is accessing databases \r\nstored on multiple sites if some sites fail during the commit process.\r\n\u25cb Two-phase commit protocol is often used.\r\n\u25cf Distributed deadlock\r\n\u25cb Deadlock may occur among several sites, so techniques for dealing with \r\ndeadlocks must be extended to take this into account.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_009.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Concurrency Control Based on a Distinguished Copy \r\nof a Data Item\r\n\u25cf Particular copy of each data item designated as distinguished copy\r\n\u25cf Locks are associated with the distinguished copy\r\n\u25cf Primary site technique\r\n\u25cb All distinguished copies kept at the same site\r\n\u25cf Primary site with backup site\r\n\u25cb Locking information maintained at both sites\r\n\u25cf Primary copy method\r\n\u25cb Distributes the load of lock coordination among various sites",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_010.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Concurrency Control Based on a Distinguished Copy \r\nof a Data Item\r\n\u25cf A site that includes a distinguished copy of a data item basically acts as \r\nthe coordinator site for concurrency control on that item.\r\n\u25cf Whenever a coordinator site fails in any of the preceding techniques, the \r\nsites that are still running must choose a new coordinator.\r\n\u25cf If no backup site existed, or if both the primary and the backup sites are \r\ndown, a process called election can be used to choose the new \r\ncoordinator site.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_011.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Concurrency Control Based on Voting\r\n\u25cf No distinguished copy\r\n\u25cf Lock requests sent to all sites that contain a copy\r\n\u25cf Each copy maintains its own lock\r\n\u25cf If transaction that requests a lock is granted that lock by a majority of the \r\ncopies, it holds the lock on all copies\r\n\u25cf Time-out period applies\r\n\u25cf Results in higher message traffic among sites",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_012.webp",
+      "text": "Concurrency Control in Distributed Databases\r\nDistributed Recovery\r\n\u25cf Difficult to determine whether a site is down without exchanging \r\nnumerous messages with other sites\r\n\u25cf Distributed commit\r\n\u25cb When a transaction is updating data at several sites, it cannot commit until \r\ncertain its effect on every site cannot be lost\r\n\u25cb Two-phase commit protocol often used to ensure correctness",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_013.webp",
+      "text": "Transaction Management in Distributed Databases\r\n\u25cf The global and local transaction management software modules, along \r\nwith the concurrency control and recovery manager of a DDBMS, \r\ncollectively guarantee the ACID properties of transactions.\r\n\u25cf An additional component called the global transaction manager is used.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_014.webp",
+      "text": "Transaction Management in Distributed Databases\r\nGlobal transaction manager\r\n\u25cf Supports distributed transactions\r\n\u25cf Role temporarily assumed by site at which transaction originated\r\n\u25cb Coordinates execution with transaction managers at multiple sites\r\n\u25cf Passes database operations and associated information to the \r\nconcurrency controller\r\n\u25cb Controller responsible for acquisition and release of locks",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_015.webp",
+      "text": "Transaction Management in Distributed Databases\r\n\u25cf Transaction managers export their functionality as an interface to the \r\napplication programs. \r\n\u25cf The operations exported by this interface are BEGIN_TRANSACTION, READ or \r\nWRITE, END_TRANSACTION, COMMIT_TRANSACTION, and ROLLBACK (or \r\nABORT). \r\n\u25cf The manager stores book keeping information related to each transaction, such \r\nas a unique identifier, originating site, name, and so on. \r\n\u25cf For READ operations, it returns a local copy if valid and available. \r\n\u25cf For WRITE operations, it ensures that updates are visible across all sites\r\n\u25cf containing copies (replicas) of the data item. \r\n\u25cf For ABORT operations, the manager ensures that no effects of the transaction \r\nare reflected in any site of the distributed database. \r\n\u25cf For COMMIT operations, it ensures that the effects of a write are persistently\r\n\u25cf recorded on all databases containing copies of the data item. \r\n\u25cf Atomic termination (COMMIT/ ABORT) of distributed transactions is commonly \r\nimplemented using the two-phase commit protocol.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_016.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols\r\n\u25cf Two-Phase Commit Protocol\r\n\u25cb global recovery manager, or coordinator, maintains information needed for \r\nrecovery \r\n\u25cb in addition to the local recovery managers and the information they maintain \r\n(log, tables).\r\n\u25cf Three-Phase Commit Protocol\r\n\u25cb Divides second commit phase into two subphases\r\n\u25cb Prepare-to-commit phase communicates result of the vote phase\r\n\u25cb Commit subphase same as two-phase commit counterpart",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_017.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols-Two-Phase Commit Protocol\r\n\u25cf The Two-Phase Commit Protocol (2PC) is a widely used approach to ensure atomic \r\ntransactions in distributed systems.\r\n\u25cf It is a distributed transaction protocol used for ensuring data consistency and \r\nintegrity across multiple nodes in a distributed system. \r\n\u25cf In 2PC, a coordinator oversees multiple participants and ensures that either all \r\nparticipants agree to commit the transaction, or if any participant fails to commit, \r\nall participants rollback.\r\n\u25cf Thus, it provides atomicity and durability properties.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_018.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Two-Phase Commit Protocol Working",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_019.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols-Two-Phase Commit Protocol Working\r\n\u25cf 2PC operates in two phases: the Prepare Phase and the Commit Phase.\r\n\u25cf 1. Prepare Phase:\r\n\u25cb The coordinator sends a Prepare request to all participants.\r\n\u25cb Each participant checks if it can complete the transaction and responds with \r\neither a Yes (prepared) or No (abort).\r\n\u25cf 2. Commit Phase:\r\n\u25cb If all participants respond with Yes, the coordinator sends a Commit \r\ncommand, and all participants commit the transaction.\r\n\u25cb If any participant responds with No, the coordinator sends an Abort command \r\nto rollback the transaction across all participants.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_020.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols-Two-Phase Commit Protocol\r\nAdvantages:\r\n\u25cf Ensures data consistency and integrity across distributed systems.\r\n\u25cf Provides atomicity and durability properties in transactions.\r\n\u25cf Suitable for various applications, including databases, distributed applications, and \r\nblockchain.\r\nChallenges and limitations\r\n\u25cf Performance issues as it requires multiple message exchanges between nodes.\r\n\u25cf Blocking problems during failures, leading to resource unavailability.\r\n\u25cf Scalability issues in large-scale distributed systems.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_021.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol\r\n\u25cf A distributed transaction protocol designed to maintain data consistency across \r\nmultiple systems in a failure-prone environment.\r\n\u25cf An extension of the Two-Phase Commit (2PC) protocol, with an additional phase to \r\nimprove fault tolerance.\r\n\u25cf It is a distributed algorithm that ensures all nodes in a system agree to commit or \r\nabort a transaction.\r\n\u25cf By ensuring atomicity and durability, 3PC helps businesses manage and process \r\ndata efficiently, especially in distributed databases or applications.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_022.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol\r\nHow it works?",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_023.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol Working\r\n\u25cf 3PC operates in three phases: Prepare Phase, Pre-Commit Phase, and \r\nCommit Phase.\r\n\u25cf 1. Prepare Phase (Can-commit/ Voting phase):\r\n\u25cb Similar to 2PC, the coordinator sends a Prepare request to participants, asking \r\nif they can commit the transaction.\r\n\u25cb Each participant responds with Yes or No.\r\n\u25cf 2. Pre-Commit Phase(Prepare to commit/ Dissemination phase):\r\n\u25cb If all participants respond Yes, the coordinator sends a Pre-Commit message, \r\nindicating the transaction is likely to be committed.\r\n\u25cb Participants acknowledge the Pre-Commit, preparing to commit the \r\ntransaction but not yet completing it.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_024.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol Working\r\n\u25cf 3. Commit/ Abort Phase (Decision phase):\r\n\u25cb If all participants acknowledge the Pre-Commit, the coordinator sends the \r\nCommit command.\r\n\u25cb If any participant fails to acknowledge the Pre-Commit, the transaction is \r\nAborted.\r\n\u25cf 3PC mitigates blocking issues by adding a timeout mechanism, allowing \r\nparticipants to autonomously decide to commit or abort if they don\u2019t \r\nreceive further messages from the coordinator.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_025.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols- Three-Phase Commit Protocol Working\r\nAdvantages:\r\n\u25cf Improved fault tolerance\r\n\u25cf Data consistency\r\n\u25cf Reduced global deadlock risk\r\nChallenges and limitations\r\n\u25cf Increased message overhead\r\n\u25cf Blocking nature\r\n\u25cf Complexity",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_026.webp",
+      "text": "Transaction Management in Distributed Databases\r\nCommit Protocols",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_027.webp",
+      "text": "Transaction Management in Distributed Databases\r\nOperating System Support for Transaction Management\r\nThe following are the main benefits of operating system (OS)-supported \r\ntransaction management:\r\n1. Typically, DBMSs use their own semaphores to guarantee mutually \r\nexclusive access to shared resources. OS-level knowledge of semaphores \r\ncan help eliminate performance degradation.\r\n2. Specialized hardware support for locking can be exploited to reduce \r\nassociated costs.\r\n3. Providing a set of common transaction support operations though the \r\nkernel allows application developers to focus on adding new features to \r\ntheir products as opposed to reimplementing the common functionality \r\nfor each application.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_028.webp",
+      "text": "Query Processing and Optimization in Distributed Databases\r\nDistributed Query Processing\r\nA distributed database query is processed in stages as follows:\r\n1. Query Mapping\r\n2. Localization\r\n3. Global Query Optimization\r\n4. Local Query Optimization\r\nThe first three stages are performed at a central control site, whereas the last \r\nstage is performed locally.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_029.webp",
+      "text": "Distributed Query Processing\r\nA distributed database query is processed in stages as follows:\r\n1. Query Mapping\r\n2. Localization\r\n3. Global Query Optimization\r\n4. Local Query Optimization\r\nThe first three stages are performed at a central control site, whereas the last \r\nstage is performed locally.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_030.webp",
+      "text": "Distributed Query Processing\r\n1. Query Mapping\r\n\u25cf The input query on distributed data is specified formally using a query \r\nlanguage.\r\n\u25cf It is first normalized, analyzed for semantic errors,\r\n\u25cf simplified, and finally restructured into an algebraic query on global relations.\r\n\u25cf This translation is largely identical to the one performed in a centralized DBMS.\r\n2. Localization\r\n\u25cf This stage maps the distributed query on the global schema to separate queries \r\non individual fragments using data distribution and replication information.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_031.webp",
+      "text": "Distributed Query Processing\r\n3. Global Query Optimization\r\n\u25cf Optimization consists of selecting a strategy from a list of candidates that \r\nis closest to optimal. \r\n\u25cf A list of candidate queries can be obtained by permuting the ordering of \r\noperations within a fragment query generated by the previous stage. \r\n\u25cf Time is the preferred unit for measuring cost. \r\n\u25cf The total cost is a weighted combination of costs such as CPU cost, I/O \r\ncosts, and communication costs.\r\n\u25cf The communication costs are the most significant.\r\n4. Local Query Optimization\r\n\u25cf This stage is common to all sites in the DDB.\r\n\u25cf The techniques are similar to those used in centralized systems.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_032.webp",
+      "text": "Distributed Query Processing\r\n3. Global Query Optimization\r\n\u25cf Optimization consists of selecting a strategy from a list of candidates that \r\nis closest to optimal. \r\n\u25cf A list of candidate queries can be obtained by permuting the ordering of \r\noperations within a fragment query generated by the previous stage. \r\n\u25cf Time is the preferred unit for measuring cost. \r\n\u25cf The total cost is a weighted combination of costs such as CPU cost, I/O \r\ncosts, and communication costs.\r\n\u25cf The communication costs are the most significant.\r\n4. Local Query Optimization\r\n\u25cf This stage is common to all sites in the DDB.\r\n\u25cf The techniques are similar to those used in centralized systems.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_033.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\n\u25cf One issue in processing and optimizing a query in a distributed system is \r\nthe cost of transferring data over the network.\r\n\u25cf This data includes intermediate files that are transferred to other sites for \r\nfurther processing, as well as the final result files that may have to be \r\ntransferred to the site where the query result is needed.\r\n\u25cf DDBMS query optimization algorithms consider the goal of reducing the \r\namount of data transfer as an optimization criterion in choosing a \r\ndistributed query execution strategy.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_034.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query\r\n\u25cf Consider the Employee and Department relations distributed at two sites as shown \r\nin the figure.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_035.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query\r\n\u25cf Assumption: Neither relation is fragmented.\r\n\u25cf \u2234, the size of the EMPLOYEE relation is 100 * 10,000 = 106\r\n bytes, and\r\n\u25cf the size of the DEPARTMENT relation is 35 * 100 = 3,500 bytes. \r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_036.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 1\r\n\u25cf Consider the query Q:\r\n\u25cf For each employee, retrieve the employee name and the name of the department \r\nfor which the employee works. \r\n\u25cf This can be stated as follows in the relational algebra:\r\nQ: \u03c0Fname,Lname,Dname(EMPLOYEE \u2a1dDno=Dnumber DEPARTMENT)\r\n\u25cf The result of this query will include 10,000 records, assuming that every employee \r\nis related to a department. \r\n\u25cf Suppose that each record in the query result is 40 bytes long. \r\n\u25cf The query is submitted at a distinct site 3, which is called the result site because the \r\nquery result is needed there. \r\n\u25cf Neither the EMPLOYEE nor the DEPARTMENT relations reside at site 3.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_037.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 1\r\n\u25cf There are three simple strategies for executing this distributed query:\r\n1. Transfer both the EMPLOYEE and the DEPARTMENT relations to the result site, and \r\nperform the join at site 3. In this case, a total of 1,000,000 + 3,500 = 1,003,500 bytes \r\nmust be transferred.\r\n2. Transfer the EMPLOYEE relation to site 2, execute the join at site 2, and send the \r\nresult to site 3. The size of the query result is 40 * 10,000 = 400,000 bytes, so \r\n400,000 + 1,000,000 = 1,400,000 bytes must be transferred.\r\n3. Transfer the DEPARTMENT relation to site 1, execute the join at site 1, and send the \r\nresult to site 3. In this case, 400,000 + 3,500 = 403,500 bytes must be transferred.\r\n\u25cf If minimizing the amount of data transfer is our optimization criterion, we should \r\nchoose strategy 3.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_038.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 2\r\n\u25cf Now consider another query Q\u2032: \r\n\u25cf For each department, retrieve the department name and the name of the \r\ndepartment manager. \r\n\u25cf This can be stated as follows in the relational algebra:\r\nQ\u2032: \u03c0Fname,Lname,Dname(DEPARTMENT \u2a1dMgr_ssn=Ssn EMPLOYEE)\r\n\u25cf Again, suppose that the query is submitted at site 3. \r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_039.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 2\r\n\u25cf The same three strategies for executing query Q apply to Q\u2032, except that the result \r\nof Q\u2032 includes only 100 records, assuming that each department has a manager:\r\n1. Transfer both the EMPLOYEE and the DEPARTMENT relations to the result site, and \r\nperform the join at site 3. In this case, a total of 1,000,000 + 3,500 = 1,003,500 bytes \r\nmust be transferred.\r\n2. Transfer the EMPLOYEE relation to site 2, execute the join at site 2, and send the \r\nresult to site 3. The size of the query result is 40 * 100 = 4,000 bytes, so 4,000 + \r\n1,000,000 = 1,004,000 bytes must be transferred.\r\n3. Transfer the DEPARTMENT relation to site 1, execute the join at site 1, and send the \r\nresult to site 3. In this case, 4,000 + 3,500 = 7,500 bytes must be transferred.\r\n\u25cf Again, we would choose strategy 3\u2014this time by an overwhelming margin over \r\nstrategies 1 and 2.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_040.webp",
+      "text": "Data Transfer Costs of Distributed Query Processing\r\nSample query 2\r\n\u25cf The preceding three strategies are the most obvious ones for the case where the \r\nresult site (site 3) is different from all the sites that contain files involved in the \r\nquery (sites 1 and 2). However, suppose that the result site is site 2;\r\n\u25cf then we have two simple strategies:\r\n1. Transfer the EMPLOYEE relation to site 2, execute the query, and present the result \r\nto the user at site 2. Here, the same number of bytes\u20141,000,000\u2014must be \r\ntransferred for both Q and Q\u2032.\r\n2. Transfer the DEPARTMENT relation to site 1, execute the query at site 1, and send \r\nthe result back to site 2. In this case 400,000 + 3,500 = 403,500 bytes must be \r\ntransferred for Q and 4,000 + 3,500 = 7,500 bytes for Q\u2032.\r\n\u25cf A more complex strategy, which sometimes works better than these simple \r\nstrategies, uses an operation called semijoin.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_041.webp",
+      "text": "Semijoin operator\r\n\u25cf A semi join is a relational algebra operation that returns rows from the \r\nleft table only if a matching record exists in the right table, without adding \r\nany columns from the right table.\r\n\u25cf Left semi-join is denoted by (R \u22c9 S).\r\n\u25cf Key Characteristics\r\n\u25cb Columns Returned: Only includes columns from the left (first) table.\r\n\u25cb Existence Check: Acts as a filter based on whether data exists in the related \r\ntable, ensuring each left-table row is returned at most once (unlike regular \r\njoins which can duplicate rows if there are multiple matches).\r\n\u25cf Highly effective for query optimization in distributed databases, as it \r\nminimizes network data transfer by sending only matching keys or \r\nprojected column lists between database sites instead of full tables.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_042.webp",
+      "text": "Distributed Query Processing Using Semijoin\r\n\u25cf The semijoin operation reduces the number of tuples in a relation before \r\ntransferring it to another site.\r\n\u25cf Intuitively, the idea is to send the joining column of one relation R to the \r\nsite where the other relation S is located; \r\n\u25cf this column is then joined with S. \r\n\u25cf Following that, the join attributes, along with the attributes required in \r\nthe result, are projected out and shipped back to the original site and \r\njoined with R.\r\n\u25cf Hence, only the joining column of R is transferred in one direction, and a \r\nsubset of S with no extraneous tuples or attributes is transferred in the \r\nother direction. If only a small fraction of the tuples in S participate in the \r\njoin, this can be an efficient solution to minimizing data transfer.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_043.webp",
+      "text": "Distributed Query Processing Using Semijoin\r\n\u25cf To illustrate this, consider the following strategy for executing Q or Q\u2032:\r\n1. Project the join attributes of DEPARTMENT at site 2, and transfer them to site 1. For \r\nQ, we transfer F = \u03c0Dnumber(DEPARTMENT), whose size is 4 * 100 = 400 bytes, \r\nwhereas for Q\u2032, we transfer F\u2032 = \u03c0Mgr_ssn(DEPARTMENT), whose size is 9 * 100 = 900 \r\nbytes.\r\n2. Join the transferred file with the EMPLOYEE relation at site 1, and transfer the \r\nrequired attributes from the resulting file to site 2. For Q, we transfer R = \u03c0Dno, Fname, \r\nLname(F \u22c9Dnumber=Dno EMPLOYEE), whose size is 34 * 10,000 = 340,000 bytes, whereas \r\nfor Q\u2032, we transfer R\u2032 = \u03c0Mgr_ssn, Fname, Lname (F\u2032 \u22c9\r\nMgr_ssn=Ssn EMPLOYEE), whose size is 39 \r\n* 100 = 3,900 bytes.\r\n3. Execute the query by joining the transferred file R or R\u2032 with DEPARTMENT, and \r\npresent the result to the user at site 2.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_044.webp",
+      "text": "Distributed Query Processing Using Semijoin\r\n\u25cf Using this strategy, we transfer 340,400 bytes for Q and 4,800 bytes for Q\u2032. \r\n\u25cf We limited the EMPLOYEE attributes and tuples transmitted to site 2 in step 2 to \r\nonly those that will actually be joined with a DEPARTMENT tuple in step 3. \r\n\u25cf For query Q, this turned out to include all EMPLOYEE tuples, so little improvement \r\nwas achieved.\r\n\u25cf However, for Q\u2032 only 100 out of the 10,000 EMPLOYEE tuples were needed.\r\n\u25cf A semijoin operation R \u22c9\r\nA=B S, where A and B are domain-compatible attributes of R \r\nand S, respectively, produces the same result as the relational algebra expression \r\n\u03c0R(R \u22c9\r\nA=B S). \r\n\u25cf In a distributed environment where R and S reside at different sites, the semijoin is \r\ntypically implemented by first transferring F = \u03c0B\r\n(S) to the site where R resides and \r\nthen joining F with R, thus leading to the strategy discussed here.\r\n\u25cf The semijoin operation is not commutative; that is,\r\nR \u22c9 S \u2260S \u22c9 R\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_045.webp",
+      "text": "Query and Update Decomposition\r\n\u25cf A DDBMS that supports full distribution, fragmentation, and replication \r\ntransparency allows the user to specify a query or update request just as \r\nthough the DBMS were centralized. \r\n\u25cf For updates, the DDBMS is responsible for maintaining consistency \r\namong replicated items by using one of the distributed concurrency \r\ncontrol algorithms. \r\n\u25cf For queries, a query decomposition module must break up or decompose \r\na query into subqueries that can be executed at the individual sites.\r\n\u25cf Additionally, a strategy for combining the results of the subqueries to \r\nform the query result must be generated. \r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_4_module4-part2_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_4_module4-part2_pdf/thumb_046.webp",
+      "text": "Query and Update Decomposition\r\n\u25cf Whenever the DDBMS determines that an item referenced in the query is \r\nreplicated, it must choose or materialize a particular replica during query \r\nexecution.\r\n\u25cf To determine which replicas include the data items referenced in a query, the\r\n\u25cf DDBMS refers to the fragmentation, replication, and distribution information\r\n\u25cf stored in the DDBMS catalog. \r\n\u25cf For vertical fragmentation, the attribute list for each fragment is kept in the \r\ncatalog. \r\n\u25cf For horizontal fragmentation, a condition, sometimes called a guard, is kept \r\nfor each fragment. \r\n\u25cb This is basically a selection condition that specifies which tuples exist in the \r\nfragment; it is called a guard because only tuples that satisfy this condition are \r\npermitted to be stored in the fragment.\r\n\u25cf For mixed fragments, both the attribute list and the guard condition are kept \r\nin the catalog.\r\nQuery Processing and Optimization in Distributed Databases",
+      "width": 1440,
+      "height": 810
+    }
+  ]
+}

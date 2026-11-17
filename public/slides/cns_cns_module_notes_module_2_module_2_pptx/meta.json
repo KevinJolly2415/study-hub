@@ -1,0 +1,1942 @@
+{
+  "mtime": 1794459843.611764,
+  "aspectRatio": 1.33,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_001.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_001.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 8",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 2,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_002.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_002.webp",
+      "text": "\ufeff Detailed Syllabus Module 2:  Cryptography: Key management, \n                         distribution and user authentication\nBlock cipher modes of operation\nData Encryption Standard\nAdvanced Encryption Standard (AES). \nRC5 algorithm.\nPublic key cryptography: RSA algorithm.\nHashing Techniques: SHA256, SHA-512, HMAC and CMAC\nDigital Signature Schemes \u2013 RSA, DSS\nRemote user Authentication Protocols\nKerberos \nDigital Certificate:X.509,\nPKI Symmetric Key Cryptography Asymmetric Key Cryptography Key Distribution & Authentication protocols",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 3,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_003.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_003.webp",
+      "text": "\ufeff Modern Ciphers Traditional Ciphers are all character oriented\nModern Ciphers demands bit or byte-oriented ciphers\nInformation can be any form - text, numbers, graphics, audio or video\nThus each character needs to be converted into bit stream\nProvides increased security \u2013 mixing large number of symbols (bits) increases security Ref: Cryptography and Network Security by Behrouz Forouzan Stream cipher Block cipher",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 4,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_004.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_004.webp",
+      "text": "\ufeff A modern Symmetric Key Block Cipher Encrypts an n-bit block of plaintext or decrypts an n-bit block of ciphertext.\nThe encryption or decryption algorithm uses a k-bit key.  Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 5,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_005.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_005.webp",
+      "text": "\ufeff Principles of Block Cipher To provide more security, modern block ciphers use certain principles\nClaude Shannon used two properties:\nDiffusion: to hide the relationship between the cipher text and plaintext\nConfusion: to hide the relationship between the cipher text and the key\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 6,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_006.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_006.webp",
+      "text": "\ufeff Components of Modern Block Ciphers Confusion and diffusion can be achieved using following components iteratively(in rounds)\nComponents:\nP-Boxes / D-Boxes (Permutation/ diffusion boxes)\nS-Boxes (substitution box)\nCircular shift box\nSwap box\nSplit and combine box\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 7,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_007.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_007.webp",
+      "text": "\ufeff P-Boxes or D-Boxes A P/D-box (Permutation/ Diffusion box) parallels the traditional transposition cipher for characters. \nIt transposes bits. \nThree types of P/D-boxes: \n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 8,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_008.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_008.webp",
+      "text": "\ufeff P/D-Boxes Examples The possible mappings of a 3 \u00d7 3 P-box\n\n\n\n\nExample of a permutation table for a straight P-box\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 9,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_009.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_009.webp",
+      "text": "\ufeff S-Boxes An S-box (substitution box) can be thought of as a miniature substitution cipher\nExample: \nIn an S-box with three inputs and two outputs, we have\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 10,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_010.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_010.webp",
+      "text": "\ufeff S-Boxes Examples Based on the table, \nAn input of 010 yields the output 01. \nAn input of 101 yields the output of 00. \n Ref: Cryptography and Network Security by Behrouz Forouzan  \ud835\udc66 1 =  \ud835\udc65 1  \ud835\udc65 2               \ud835\udc66 2 = \ud835\udc65 1 + \ud835\udc65 2  \ud835\udc65 3",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 11,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_011.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_011.webp",
+      "text": "\ufeff Circular Shift Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 12,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_012.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_012.webp",
+      "text": "\ufeff Swap Boxes & Split Boxes Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 13,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_013.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_013.webp",
+      "text": "\ufeff Components of Modern Block Ciphers Exclusive OR\nThe five properties of the exclusive or operation makes this component very interesting component for use in a block cipher.\nClosure\nAssociativity\nCommutativity\nExistence of Identity\nExistence of Inverse\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 14,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_014.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_014.webp",
+      "text": "\ufeff Components of Modern Block Ciphers Closure: This property guarantees that the result of exclusive-oring two n-bit words is another n-bit word.\nAssociativity: This property allows us to use more than one exclusive-or operator in any order.\n\n\nCommutativity: This property allows us to swap the inputs without affecting the output.\n Ref: Cryptography and Network Security by Behrouz Forouzan x \u2295 (y \u2295 z) \u2194 (x \u2295 y) \u2295 z x \u2295 y \u2194 y \u2295 x",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 15,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_015.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_015.webp",
+      "text": "\ufeff Components of Modern Block Ciphers Existence of identity: This implies that exclusive-oring of a word with the identity element does not change that word.\n\n\nExistence of inverse: This implies that exclusive-oring of a word with itself yields the identity element. Ref: Cryptography and Network Security by Behrouz Forouzan x \u2295 (00\u20260) = x x \u2295 x = (00\u20260)",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 16,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_016.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_016.webp",
+      "text": "\ufeff Types of Modern Block Ciphers \n Product Cipher\nFeistel Cipher\nDES Cipher\nAES Cipher\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 17,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_017.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_017.webp",
+      "text": "\ufeff Product Cipher Shannon introduced the concept of a product cipher.\n A product cipher is a complex cipher combining substitution, permutation, and other components.\nRounds \nDiffusion and confusion can be achieved using iterated product ciphers where each iteration is a combination of S-boxes, P-boxes, and other components.\n Each iteration is referred to as a round.\n The block cipher uses a key schedule or key generator that creates different keys for each round from the cipher key. \nIn an N-round cipher, the plaintext is encrypted N times to create the ciphertext; the ciphertext is decrypted N times to create the plaintext.\nThe text created at the intermediate levels (between two rounds) as the middle text. 17",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 18,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_018.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_018.webp",
+      "text": "\ufeff Product cipher made of two rounds 18 The 8-bit text is mixed with the key to whiten the text (hide the bits using the key). This is normally done by exclusive-oring the 8-bit word with the 8-bit key.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 19,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_019.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_019.webp",
+      "text": "\ufeff Diffusion and confusion in a block cipher 19",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 20,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_020.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_020.webp",
+      "text": "\ufeff Two Classes of Product Ciphers \u000b Modern block ciphers are all product ciphers, but they are divided into two classes. \nThe ciphers in the first class use both invertible and noninvertible components. \nThe ciphers in this class are normally referred to as Feistel ciphers.\n The block cipher DES is a good example of a Feistel cipher.\n The ciphers in the second class use only invertible components. ciphers in this class as non-Feistel ciphers .\nThe block cipher AES is a good example of a non-Feistel cipher. 20",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 21,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_021.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_021.webp",
+      "text": "\ufeff Feistel Ciphers Named after block cipher pioneer \u2018Horst Feistel\u2019\nUses  \nMixer (combination of key function and XOR)\nSplit and combine\nSwap components\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 22,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_022.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_022.webp",
+      "text": "\ufeff Design of Feistel Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 23,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_023.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_023.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 9\n 2nd  & 5th Aug 2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 24,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_024.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_024.webp",
+      "text": "\ufeff Data Encryption Standard (DES) \u201cData Encryption Standard\u201d is a first encryption standard adopted by NIST (National Institute of Standards and Technology)\nWith a long history & criticism  it became the first de facto standard in 1975\nKey features:\nA Feistel cipher with16 rounds\n64-bit block length\n56 bit key\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 25,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_025.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_025.webp",
+      "text": "\ufeff DES Design Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 26,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_026.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_026.webp",
+      "text": "\ufeff DES Structure (Encrypter) Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 27,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_027.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_027.webp",
+      "text": "\ufeff Initial & Final Permutations Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 28,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_028.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_028.webp",
+      "text": "\ufeff Initial and final permutation tables Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 29,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_029.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_029.webp",
+      "text": "\ufeff DES Structure (Encrypter) Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 30,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_030.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_030.webp",
+      "text": "\ufeff DES Rounds Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 31,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_031.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_031.webp",
+      "text": "\ufeff DES function Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 32,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_032.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_032.webp",
+      "text": "\ufeff Expansion permutation of DES function Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 33,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_033.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_033.webp",
+      "text": "\ufeff S-Boxes of DES function Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 34,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_034.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_034.webp",
+      "text": "\ufeff S-Boxes of DES function Permutation table for S box1 Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 35,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_035.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_035.webp",
+      "text": "\ufeff More S-boxes of DES function                    b2b3b4b5\nb1b6      0 1 2 3 4 5 6 7 8 9 A B C D E F\n          0  F 1 8 E 6 B 3 4 9 7 2 D C 0 5 A\n          1  3 D 4 7 F 2 8 E C 0 1 A 6 9 B 5\n          2  0 E 7 B A 4 D 1 5 8 C 6 9 3 2 F\n          3  D 8 A 1 3 F 4 2 B 6 7 C 0 5 E 9\n                        DES S-box 2\n\n                   b2b3b4b5\nb1b6        0 1 2 3 4 5 6 7 8 9 A B C D E F\n            0  A 0 9 E 6 3 F 5 1 D C 7 B 4 2 8\n            1  D 7 0 9 3 4 6 A 2 8 5 E C B F 1\n            2  D 6 4 9 8 F 3 0 B 1 2 C 5 A E 7\n            3  1 A D 0 6 9 8 7 4 F E 3 B 5 2 C\n                         DES S-box 3 Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 36,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_036.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_036.webp",
+      "text": "\ufeff Straight P-Box of DES function Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 37,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_037.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_037.webp",
+      "text": "\ufeff DES Structure (Encrypter) Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 38,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_038.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_038.webp",
+      "text": "\ufeff Key generator\u000bof DES function Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 39,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_039.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_039.webp",
+      "text": "\ufeff Key Generation Parity bit drop table\n\n\n\n\n\nShift left Operation Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 40,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_040.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_040.webp",
+      "text": "\ufeff Key Generation Compression P-box\n\n\n\n\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 41,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_041.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_041.webp",
+      "text": "\ufeff DES Analysis Critics have used a strong magnifier to analyze DES. \nTests have been done to measure the strength of some desired properties in a block cipher. \nProperties: \nAvalanche Effect: small change in plaintext creates a significant change in ciphertext. \nCompleteness effect: each bit of the ciphertext needs to depend on many bits in plaintext\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 42,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_042.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_042.webp",
+      "text": "\ufeff DES Analysis Avalanche Effect\n\n\n\n               DES produces strong  Avalanche effect.\nCompleteness effect\nThe D/P and S boxes used in DES show a very strong completeness effect.\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 43,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_043.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_043.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 10\n 6th Aug 2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 44,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_044.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_044.webp",
+      "text": "\ufeff Advanced Encryption Standard (AES) A symmetric-key block cipher published by the National Institute of Standards and Technology (NIST) in December 2001\nThe hunt for AES started in 1997\nNIST called for proposals with definite specifications this time\nBlock size of 128 bits and key size of 128, 192 & 256 bits\nAn open algorithm Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 45,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_045.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_045.webp",
+      "text": "\ufeff Advanced Encryption Standard (AES) Other Specifications:\nSecurity\nCost\nImplementation Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 46,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_046.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_046.webp",
+      "text": "\ufeff Advanced Encryption Standard (AES) A non Feistel cipher with block size of 128 bits and key size of 128, 192 and 256 bits\nAES Versions: AES128, AES192, AES256\nNumber of cipher rounds varies from 10,12 or 14\nRound key size is always 128 bits\n Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 47,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_047.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_047.webp",
+      "text": "\ufeff AES - General Design Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 48,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_048.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_048.webp",
+      "text": "\ufeff AES Structure 48",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 49,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_049.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_049.webp",
+      "text": "\ufeff AES data units Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 50,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_050.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_050.webp",
+      "text": "\ufeff AES data units Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 51,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_051.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_051.webp",
+      "text": "\ufeff Changing plaintext to state Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 52,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_052.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_052.webp",
+      "text": "\ufeff Structure of Each Round in AES Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 53,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_053.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_053.webp",
+      "text": "\ufeff AES Transformations To provide security, AES uses four types of transformations\nSubstitution: SubBytes\nPermutation: ShiftRows\nMixing: MixColumns\nKey Adding: AddRoundKey\n Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 54,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_054.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_054.webp",
+      "text": "\ufeff AES: SubBytes Transformation \u2018SubBytes\u2019 function interpret the byte as two hexadecimal digits\nTwo approaches:\nLookup table\nSubroutine with GF(Galois Field) polynomial\n Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 55,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_055.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_055.webp",
+      "text": "\ufeff SubBytes - Lookup table Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 56,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_056.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_056.webp",
+      "text": "\ufeff Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES SubBytes - Lookup table",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 57,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_057.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_057.webp",
+      "text": "\ufeff \u2018SubByte\u2019 Transformation Exercise Apply \u2018SubByte\u2019 transformation to following plaintext \n\u201cAES uses a matrix\u201d Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 58,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_058.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_058.webp",
+      "text": "\ufeff Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES SubBytes - Lookup table",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 59,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_059.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_059.webp",
+      "text": "\ufeff InvSubBytes - Lookup table",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 60,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_060.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_060.webp",
+      "text": "\ufeff AES: \u2018ShiftRows\u2019 Transformation Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 61,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_061.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_061.webp",
+      "text": "\ufeff Structure of Each Round in AES Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 62,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_062.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_062.webp",
+      "text": "\ufeff AES: \u2018MixColumns\u2019 Transformation  The \u2018MixColumns\u2019 transformation operates at the column level\nIt transforms each column of the state to a new column.\n Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 63,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_063.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_063.webp",
+      "text": "\ufeff AES: \u2018AddRoundKey\u2019 Transformation  \u2018AddRoundKey\u2019 proceeds one column at a time\n\u2018AddRoundKey\u2019 adds a round key word with each state column matrix\nThe operation in \u2018AddRoundKey\u2019 is matrix addition\n Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 64,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_064.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_064.webp",
+      "text": "\ufeff AES Key Expansion Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES Words for each round",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 65,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_065.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_065.webp",
+      "text": "\ufeff AES Key Expansion Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 66,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_066.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_066.webp",
+      "text": "\ufeff AES - General Design Ref: Cryptography and Network Security by Behrouz Forouzan, Ch 7 AES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 67,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_067.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_067.webp",
+      "text": "\ufeff AES Security Analysis AES was designed after DES. Most of the known attacks on DES were already tested on AES.\nBrute-Force Attack\nAES is more secure than DES due to the larger and flexible key size. \nStatistical Attacks\nNumerous tests have failed to do statistical analysis of the ciphertext\nDifferential and Linear Attacks\nThere are no differential and linear attacks on AES as yet Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 68,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_068.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_068.webp",
+      "text": "\ufeff AES is strongest & most used Cipher Advantages\nAES can be implemented in software, hardware, and firmware. \nThe implementation can use table lookup process or routines that use a well-defined algebraic structure. \nThe algorithms used in AES are so simple that they can be easily implemented using cheap processors and a minimum amount of memory.\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 69,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_069.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_069.webp",
+      "text": "\ufeff Block Cipher Mode of Operation Electronic Codebook (ECB) Mode\nCipher Block Chaining (CBC) Mode\nCipher Feedback (CFB) Mode\nOutput Feedback (OFB) Mode\nCounter (CTR) Mode Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 70,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_070.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_070.webp",
+      "text": "\ufeff Electronic Codebook (ECB) Mode The simplest mode of operation Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 71,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_071.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_071.webp",
+      "text": "\ufeff Cipher Block Chaining (CBC) Mode In CBC mode, each plaintext block is XORed with the previous ciphertext block before being encrypted. \n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 72,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_072.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_072.webp",
+      "text": "\ufeff Cipher Feedback (CFB) Mode In some situations, we need to use DES or AES as secure ciphers, but the plaintext or ciphertext block sizes are to be smaller. \n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 73,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_073.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_073.webp",
+      "text": "\ufeff Output Feedback (OFB) Mode In this mode each bit in the ciphertext is independent of the previous bit or bits. This avoids error propagation.\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 74,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_074.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_074.webp",
+      "text": "\ufeff Counter (CTR) Mode In the counter (CTR) mode, there is no feedback. The pseudo randomness in the key stream is achieved using a counter. \n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 75,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_075.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_075.webp",
+      "text": "\ufeff Comparison of Different Modes Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 76,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_076.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_076.webp",
+      "text": "\ufeff Comparison of Different Modes",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 77,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_077.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_077.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 11\n 8th Aug 2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 78,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_078.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_078.webp",
+      "text": "\ufeff PUBLIC KEY CRYPTOGRAPHY Asymmetric cryptography \nTwo key cryptography\nNon-secret key cryptography Ref: Cryptography and Network Security by Behrouz Forouzan Everything about the two keys",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 79,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_079.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_079.webp",
+      "text": "\ufeff Cryptographic Techniques Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 80,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_080.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_080.webp",
+      "text": "\ufeff Symmetric v/s Asymmetric Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 81,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_081.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_081.webp",
+      "text": "\ufeff Change in notations Plaintext and ciphertext are compulsorily treated as integers \nThe plaintext is referred as \u201cmessage(M)\u201d or  \u201cP\u201d as in symmetric cryptography\nFortunately, C still means ciphertext\nIt is receivers' responsibility to keep the key secure\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 82,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_082.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_082.webp",
+      "text": "\ufeff Popular Cryptos RSA  \nRon Rivest, Adi Shamir, Leonard  Adleman\nThese are the inventors of  RSA Algorithm\n\nDiffie Hellman\nNamed after Whitfield Diffie and Martin Hellman Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 83,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_083.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_083.webp",
+      "text": "\ufeff RSA- by Rivest, Shamir, Adleman Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 84,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_084.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_084.webp",
+      "text": "\ufeff RSA- by Rivest, Shamir, Adleman",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 85,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_085.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_085.webp",
+      "text": "\ufeff Size of the keys for RSA To be secure, the recommended size for each prime p and q should be very large at least 512 bits (around 154 decimal digits)\nThis makes the size of n, the modulus, 1024 bits (309 digits)\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 86,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_086.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_086.webp",
+      "text": "\ufeff Exercise Bob chooses 7 and 11 as p and q and he chooses two exponents, e and d, from  \ud835\udc4d 60 \u2217 (set of multiplicative inverses). If he chooses e to be 13 find d. Alice wants to send the plaintext 5 to Bob. Show what is her ciphertext and how Bob will decrypt the data. Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 87,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_087.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_087.webp",
+      "text": "\ufeff Exercise Solution \ud835\udc5d=7, \ud835\udc5e=11, \n\ud835\udc39\ud835\udc56\ud835\udc5b\ud835\udc51 \ud835\udc8f=\ud835\udc91\u00d7\ud835\udc92=77 \n\ud835\udc39\ud835\udc56\ud835\udc5b\ud835\udc51 \u2205 \ud835\udc8f = \ud835\udc91\u2212\ud835\udfcf  \ud835\udc92\u2212\ud835\udfcf =6\u00d710=60\n\ud835\udc3a\ud835\udc56\ud835\udc63\ud835\udc52\ud835\udc5b \ud835\udc52=13\n\ud835\udc39\ud835\udc56\ud835\udc5b\ud835\udc51 \ud835\udc51, \ud835\udc60\ud835\udc62\ud835\udc50\u210e \ud835\udc61\u210e\ud835\udc4e\ud835\udc61  \ud835\udc86\u00d7\ud835\udc85 \ud835\udc8e\ud835\udc90\ud835\udc85 \u2205 \ud835\udc8f =\ud835\udfcf\nThis condition indicates that \ud835\udc1e and \ud835\udc1d are \nmultiplicative inverse of each other in \n \ud835\udc19 \u2205(\ud835\udc27)  (i.e.   Z 60  set in this example) \n\ud835\udc48\ud835\udc60\ud835\udc52 \ud835\udc6c\ud835\udc99\ud835\udc95\ud835\udc86\ud835\udc8f\ud835\udc85\ud835\udc86\ud835\udc85 \ud835\udc6c\ud835\udc96\ud835\udc84\ud835\udc8d\ud835\udc8a\ud835\udc85\ud835\udc86\ud835\udc82\ud835\udc8f \ud835\udc68\ud835\udc8d\ud835\udc88\ud835\udc90\ud835\udc93\ud835\udc8a\ud835\udc95\ud835\udc89\ud835\udc8e \ud835\udc61\ud835\udc5c \ud835\udc53\ud835\udc56\ud835\udc5b\ud835\udc51 \n\ud835\udc5a\ud835\udc62\ud835\udc59\ud835\udc61\ud835\udc56\ud835\udc5d\ud835\udc59\ud835\udc56\ud835\udc50\ud835\udc4e\ud835\udc61\ud835\udc56\ud835\udc63\ud835\udc52 \ud835\udc56\ud835\udc5b\ud835\udc63\ud835\udc52\ud835\udc5f\ud835\udc60\ud835\udc52 \ud835\udc56\ud835\udc5b  \ud835\udc4d \u2205(\ud835\udc5b) \n\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 88,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_088.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_088.webp",
+      "text": "\ufeff Extended Euclidean Algorithm Used for GCD calculations Ref: Cryptography and Network Security by Behrouz Forouzan Extension table for multiplicative inverse calculations",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 89,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_089.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_089.webp",
+      "text": "\ufeff Extended Euclidean Algorithm for RSA  Rules:\nContinue filling the rows till \u2018 \ud835\udc5f 2 \u2019 becomes zero.\nValue of \u2018 \ud835\udc61 1 \u2019 in final row is the multiplicative inverse.\nIf  \ud835\udc61 1  is negative, Multiplicative inverse= \u2205 \ud835\udc5b + \ud835\udc61 1 \n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 90,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_090.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_090.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 12\n 9th & 12th Aug 2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 91,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_091.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_091.webp",
+      "text": "\ufeff Properties of Modular Arithmetic Used extensively for simplifying exponent calculations in Cryptography. Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 92,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_092.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_092.webp",
+      "text": "\ufeff Exercise Solution continued\u2026 Encryption\n\ud835\udc34\ud835\udc59\ud835\udc56\ud835\udc50\ud835\udc52 \ud835\udc64\ud835\udc4e\ud835\udc5b\ud835\udc61\ud835\udc60 \ud835\udc61\ud835\udc5c \ud835\udc60\ud835\udc52\ud835\udc5b\ud835\udc51 \u20325\u2032 \n\u2234\ud835\udc43\ud835\udc59\ud835\udc4e\ud835\udc56\ud835\udc5b\ud835\udc61\ud835\udc52\ud835\udc65\ud835\udc61=\ud835\udc5d=5 \n\ud835\udc36\ud835\udc56\ud835\udc5d\u210e\ud835\udc52\ud835\udc5f\ud835\udc61\ud835\udc52\ud835\udc65\ud835\udc61=\ud835\udc36= \ud835\udc5d \ud835\udc52 \ud835\udc5a\ud835\udc5c\ud835\udc51 \ud835\udc5b \n\ud835\udc36= 5 13 \ud835\udc5a\ud835\udc5c\ud835\udc51 77   \n\ud835\udc36= (5 1 \ud835\udc5a\ud835\udc5c\ud835\udc51 77\u00d7 5 4 \ud835\udc5a\ud835\udc5c\ud835\udc51 77\u00d7 5 4 \ud835\udc5a\ud835\udc5c\ud835\udc51 77\u00d7 5 4 \ud835\udc5a\ud835\udc5c\ud835\udc51 77)\ud835\udc5a\ud835\udc5c\ud835\udc51 77 \n\ud835\udc36= 5\u00d79\u00d79\u00d79 \ud835\udc5a\ud835\udc5c\ud835\udc51 77    \n\ud835\udc36=3645 \ud835\udc5a\ud835\udc5c\ud835\udc51 77    \n\ud835\udc36=26\n\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 93,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_093.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_093.webp",
+      "text": "\ufeff Exercise Solution continued\u2026 Decryption\n\ud835\udc35\ud835\udc5c\ud835\udc4f \ud835\udc64\ud835\udc4e\ud835\udc5b\ud835\udc61\ud835\udc60 \ud835\udc61\ud835\udc5c \ud835\udc51\ud835\udc52\ud835\udc50\ud835\udc5f\ud835\udc66\ud835\udc5d\ud835\udc61 \u203226\u2032 \n\u2234\ud835\udc36\ud835\udc56\ud835\udc5d\u210e\ud835\udc52\ud835\udc5f\ud835\udc61\ud835\udc52\ud835\udc65\ud835\udc61=\ud835\udc36=26 \n\ud835\udc43\ud835\udc59\ud835\udc4e\ud835\udc56\ud835\udc5b\ud835\udc61\ud835\udc52\ud835\udc65\ud835\udc61 =\ud835\udc5d= \ud835\udc36 \ud835\udc51 \ud835\udc5a\ud835\udc5c\ud835\udc51 \ud835\udc5b \n\ud835\udc5d= 26 37 \ud835\udc5a\ud835\udc5c\ud835\udc51 77   \n\ud835\udc5d= (26 2 \ud835\udc5a\ud835\udc5c\ud835\udc51 77\u00d7 26 5 \ud835\udc5a\ud835\udc5c\ud835\udc51 77\u00d7 26 10 \ud835\udc5a\ud835\udc5c\ud835\udc51 77\u00d7 26 20 \ud835\udc5a\ud835\udc5c\ud835\udc51 77)\ud835\udc5a\ud835\udc5c\ud835\udc51 77 \n\ud835\udc36= 60\u00d745\u00d723\u00d767 \ud835\udc5a\ud835\udc5c\ud835\udc51 77    \n\ud835\udc36=4,160,700 \ud835\udc5a\ud835\udc5c\ud835\udc51 77    \n\ud835\udc36=5 \n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 94,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_094.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_094.webp",
+      "text": "\ufeff Excercise Bob chooses 7 and 11 as p and q and he chooses two exponents, e and d, from  \ud835\udc4d 60 \u2217 (set of multiplicative inverses). If he chooses e to be 13 find d. Alice wants to send the plaintext 5 to Bob. Show what is her ciphertext and how Bob will decrypt the data. Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 95,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_095.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_095.webp",
+      "text": "\ufeff RSA Exercises Find public and private key with p=17, q=11 and e=7 using RSA. Also Encrypt and decrypt the message M=4.\nGiven modulus n=221 and public key, e=7, Find the values of p, q, phi(n) and d using RSA. Encrypt M=5.\nIn an RSA system, given N=91 e=5 Calculate \u03a6(n),p, q and private key d. What is the ciphertext when you encrypt message m=25 using the public key. Also perform decryption.\nExplain steps of RSA algorithm with an example and list real time applications where RSA can be used.\n Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 96,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_096.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_096.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 13\n  13th Aug 2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 97,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_097.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_097.webp",
+      "text": "\ufeff RSA Exercises A and B wish to use RSA to communicate securely. A chooses public key as (7,119) and B chooses public key as (13, 221)\nCalculate private key of A.\nCalculate private key of B.\nWith what key B will encrypt the message M=6 if B wants to send it to A. Find the ciphertext for the same.\nIf A and B wish to use RSA to communicate securely. A chooses public key (e, n) as (7, 247) and B chooses public key (e, n) as (5, 221)\nCalculate A\u2019s Private key. \nCalculate B\u2019s Private Key. \nWhat will be the cipher text sent by A to B, if A wishes to send M=5 to B Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 98,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_098.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_098.webp",
+      "text": "\ufeff Comparison Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 99,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_099.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_099.webp",
+      "text": "\ufeff Real world Cryptosystems Public key crypto\u2019s are nonrealistic for   encryption and decryption\nPrivate key crypto\u2019s are very insecure\nIn real world public key cryptos are used for encryption and decryption and private key cryptos are used for secure key generation and distribution\nBut demands for security are very dynamic",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 100,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_100.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_100.webp",
+      "text": "\ufeff Some more Uses of Public Key Crypto Private key crypto concentrates only on confidentiality\nIn many real-world scenarios, Integrity is more important than confidentiality\nPrivate key crypto needs MAC (message authentication code) to provide an Integrity\nMAC function: a keyed cipher that produces authentication code, to be send with a message.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 101,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_101.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_101.webp",
+      "text": "\ufeff Some more Uses of Public Key Crypto Public key crypto can be used to provide the functionality of MAC\nIt provides Integrity as well as non- repudiation\n How PKC provides Integrity? \nBy Digital Signatures \nWhat is a Digital Signature (????????????)\nAns: a reverse Public Key operation.\n Bob can sign his message with his private key and any one can verify his sign by using his public key",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 102,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_102.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_102.webp",
+      "text": "\ufeff Digital Signature Let's workout an exercise\u2026\u2026..\n\t\n\tAlice has a private key (37,77) and public key (13,77). \n\tShe needs to authenticate any message from her using a signature (of course digital). \n\tAlice choose her secret sign as \u20185\u2019. \n\tFind what will be her Digital sign?\n\tHow will Bob find that the message is authenticate?",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 103,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_103.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_103.webp",
+      "text": "\ufeff Solution Alice will use her private key (37,77) for signing\n   sign = secret signprivate key mod 77\n   sign = 537 mod 77 \n           = [(513 mod 77)\u00d7 (513 mod 77) \u00d7 (511 mod 77)]    \n               mod 77             \n   sign = 47\nNow Bob will check this sign for authentication using Alice\u2019s public key\n    message= signpublic key mod 77 = 4713 mod 77= 5",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 104,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_104.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_104.webp",
+      "text": "\ufeff RSA digital signature scheme Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 105,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_105.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_105.webp",
+      "text": "\ufeff RSA digital signature scheme Signing \nAlice creates a signature out of the message using her private exponent\n\ud835\udc7a= \ud835\udc74 \ud835\udc85 \ud835\udc8e\ud835\udc90\ud835\udc85 \ud835\udc8f\nand sends the message and the signature to Bob.\nVerifying \nBob receives Message and Signature. \nBob applies Alice\u2019s public exponent to the signature to create a copy of the message \n \ud835\udc74 \u2032 = \ud835\udc7a \ud835\udc86 \ud835\udc8e\ud835\udc90\ud835\udc85 \ud835\udc8f \nBob compares the value of M\u2032 with the value of M. \nIf the two values are congruent, Bob accepts the message. Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 106,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_106.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_106.webp",
+      "text": "\ufeff HASHING Guaranteeing Integrity  \u000b  Many scenarios in real time, needs only Integrity where confidentiality is secondary\nDocument and Fingerprint\nOne way to preserve the integrity of a document is using a fingerprint. If Alice needs to be sure that the contents of her document will not be changed, she can put her fingerprint at the bottom of the document. \nThe electronic equivalent of the document and fingerprint pair is \u201cmessage and message digest\u201d pair",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 107,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_107.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_107.webp",
+      "text": "\ufeff Message and Message Digest Hash is a cryptographic function\nIt creates compressed image of the message (message digest) which can be used as a fingerprint",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 108,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_108.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_108.webp",
+      "text": "\ufeff Difference  The document and fingerprint are physically linked together. \nThe message and message digest can be unlinked (or sent) separately",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 109,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_109.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_109.webp",
+      "text": "\ufeff Using HASH/message digest/digest Bob Alice       1. Send the digest\n      2. Send the message",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 110,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_110.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_110.webp",
+      "text": "\ufeff HASH Function Example Assume a Random Oracle Model with a table and a fair coin. The table has two columns. \n\n\n\n\nCase1:  The message AB1234CD8765BDAD is given for digest calculation. The oracle checks its table. This message is not in the table. So oracle flips its coin 16 times. Let the result be HHTHHHTTHTHHTTTH, corresponding to value DCB1",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 111,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_111.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_111.webp",
+      "text": "\ufeff HASH Function Example Case2: The message 4523AB1352CDEF45126 is given for digest calculation. The oracle checks its table and finds that there is a digest for this message in the table (first row). The oracle simply gives the corresponding digest (13AB).",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 112,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_112.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_112.webp",
+      "text": "\ufeff Requirements for A Hash Function A Hash is described as \n                           h = H(m) where\nh \u2013 hash value, H \u2013 Hash Function, m - message\nGeneral Properties: \nCompression: \nH can be applied to a block of data of any size\nH produces a fixed-length output\nEfficiency: \nH(m) must be relatively easy to compute for any m, making both hardware and software design practical",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 113,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_113.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_113.webp",
+      "text": "\ufeff Requirements for A Hash Function One-way Property: For any given value h, it should be infeasible to find m such that H(m) = h\nWeak Collision Resistance: for any given m1 and its hash H(m1), it should be infeasible to find m2 such that                   \n                               H(m1) = H(m2)\nStrong Collision Resistance: It should be infeasible to find any pair (m1,m2) such that H(m1) = H(m2)",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 114,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_114.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_114.webp",
+      "text": "\ufeff Popular HASH functions MD(Message Digest)1,2,3,4,5 Hash\nDesigned by cryptologist \u2018Ron Rivest\u2019 from RSA\nVaries in specifications such as input bit length, block length, key length etc.\nSHA Hash (Secure hash Algorithm)\nDeveloped by National Institute of Standards and Technology (NIST)\nMany times, referred as secure hash standard (SHS)\nVersions available SHA-1, SHA-224, SHA-256, SHA-384, SHA-512\nTiger Hash",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 115,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_115.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_115.webp",
+      "text": "\ufeff Uses of Hash Surprisingly, \u2018Hash\u2019 have many applications in security\nAuthentication\nMessage integrity\nMessage fingerprinting\nData corruption detection\nDigital signature efficiency\nOnline bidding\nSpam reduction Ref: Cryptography and Network Security by Behrouz Forouzan",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 116,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_116.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_116.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 14\n 16th  Aug  2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 117,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_117.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_117.webp",
+      "text": "\ufeff Hash Functions Computational functions that determine a hash (digest, hash digest) h from a given message M.\nSize of h is very small than M\nAlso referred as one-way functions.\nImplement many to one mapping\nNot possible to retrieve M from h (irreversible)\nCryptographic hash functions are functions with some desirable properties.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 118,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_118.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_118.webp",
+      "text": "\ufeff Hash Functions   h = H(m)",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 119,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_119.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_119.webp",
+      "text": "\ufeff Secure Hash Algorithm (SHA) Family",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 120,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_120.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_120.webp",
+      "text": "\ufeff Secure Hash Algorithm (SHA-2) Family",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 121,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_121.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_121.webp",
+      "text": "\ufeff Secure Hash Algorithm (SHA-2) Family The SHA-2 family includes six hash functions named SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, and SHA-512/256.\nThey are actually the same algorithm but with different word lengths, constant parameters and initialization values.\nSHA-256 is known as representative of the SHA-2 family and is currently applied to secure data in many applications such as decentralized blockchain, DSA and HMAC.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 122,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_122.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_122.webp",
+      "text": "\ufeff SHA-256 Block Diagram",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 123,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_123.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_123.webp",
+      "text": "\ufeff SHA-256 Operation Take the message you are hashing, break it up into blocks that are 512 bits in size, pad the blocks if it is not a multiple of 512 \nStart with the 256 bit value called \u2018Initializing vector (IV)\u2019 specified in the standard\u2019s document and the first block. This 768 bit string goes through a special function C (compression function) that outputs a 256 bit string.\nThen the compression is applied to the concatenation of the first output and the second block. \nthe  process is repeated until the end of the blocks, the hash is the final 256 bits output    Ref: DOI 10.1109/ACCESS.2021.3063485, IEEE Access",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 124,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_124.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_124.webp",
+      "text": "\ufeff SHA-256 Operation Figure illustrates the operation of  SHA-256 compression function. \nIt includes two processes named the message expander (ME) and message compressor (MC). \nThe ME process expands the 512-bit input message into 64 chunks of 32-bit data.\nIn the first 16 rounds, the ME parses the 512-bit message into 16, 32-bit data chunks Ref: DOI 10.1109/ACCESS.2021.3063485, IEEE Access",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 125,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_125.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_125.webp",
+      "text": "\ufeff SHA-256 Operation Contd\u2026..\nIn the final 48 rounds, the ME calculates 48 chunks of 32-bit data  \ud835\udc4a \ud835\udc57  (16\u2264\ud835\udc57\u226463) following eq.(1)\nThree 32-bit adders and two logical functions  \ud835\udf0e 0  \ud835\udc65  \ud835\udc4e\ud835\udc5b\ud835\udc51  \ud835\udf0e 1  \ud835\udc65  are needed to compute  \ud835\udc4a \ud835\udc57  (16\u2264\ud835\udc57\u226463).  \ud835\udf0e 0  \ud835\udc65  \ud835\udc4e\ud835\udc5b\ud835\udc51  \ud835\udf0e 1  \ud835\udc65  are computed as eq. (2) and eq. (3)\nNote that  \ud835\udc46 \ud835\udc5b (\ud835\udc65) and  \ud835\udc45 \ud835\udc5b  \ud835\udc65  denote the right rotation and the right shift of data \ud835\udc65 by \ud835\udc5b bits. Ref: DOI 10.1109/ACCESS.2021.3063485, IEEE Access",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 126,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_126.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_126.webp",
+      "text": "\ufeff SHA-256 Operation The MC process computes the 256-bit hash value from the outputs of the ME process.\nThe process involves two main steps: loops and hash updates.\nIn the loop step, eight loop hash values (denoted A; B;  C; D; E; F; G; H) are initialized by the initial hash values  \ud835\udc3b 0 , \ud835\udc3b 1 ,\u22ef ,\ud835\udc3b 7 . Ref: DOI 10.1109/ACCESS.2021.3063485, IEEE Access",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 127,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_127.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_127.webp",
+      "text": "\ufeff SHA-256 Operation The loop hash values A; B;  C; D; E; F; G; H are then computed and updated through 64 loops.\nIn each loop eqs. (4) to (8) are applied. Ref: DOI 10.1109/ACCESS.2021.3063485, IEEE Access",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 128,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_128.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_128.webp",
+      "text": "\ufeff SHA-256 Operation The logical functions such as  0   \ud835\udc65 , 1   \ud835\udc65 , \ud835\udc36\u210e \ud835\udc65,\ud835\udc66,\ud835\udc67 \ud835\udc4e\ud835\udc5b\ud835\udc51 \ud835\udc40\ud835\udc4e\ud835\udc57(\ud835\udc65,\ud835\udc66,\ud835\udc67)  are computed using following equations.\n\n\n\n\n\n\nIn the hash update step, the final 256-bit hash value, which is divided into 8 chunks of 32-bit data  \ud835\udc3b\ud835\udc42 0  , \ud835\udc3b\ud835\udc42 1 ,\u22ef, \ud835\udc3b\ud835\udc42 7 ,is computed by adding the initial hashes  \ud835\udc3b 0 , \ud835\udc3b 1 ,\u22ef ,\ud835\udc3b 7  to the loop hashes A; B;  C; D; E; F; G; H, as illustrated in eq. (13). Ref: DOI 10.1109/ACCESS.2021.3063485, IEEE Access",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 129,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_129.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_129.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 15\n 19th  & 20th  Aug  2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 130,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_130.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_130.webp",
+      "text": "\ufeff SHA-512 The algorithm takes message input with a maximum length of less than 2128 bits and produces as output a 512-bit message digest/hash. \nThe input is processed in 1024-bit blocks. \nThe overall processing of a message to produce a digest consists of the following steps:\nAppend padding bits: The message is padded so that its length is congruent to 896 modulo 1024 . The padding consists of a single 1 bit followed by the necessary number of 0 bits.\nAppend length: A block of 128 bits is appended to the message. This block is treated as an unsigned 128-bit integer and contains the length of the original message (before the padding).",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 131,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_131.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_131.webp",
+      "text": "\ufeff SHA-512",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 132,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_132.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_132.webp",
+      "text": "\ufeff SHA-512 Initialize hash buffer: A 512-bit buffer is used to hold intermediate and final results of the hash function. The buffer can be represented as eight 64-bit registers (a, b, c, d, e, f, g, h). These registers are initialized to the following 64-bit integers (hexadecimal values):\n   a = 6A09E667F3BCC908 \te = 510E527FADE682D1\n     b = BB67AE8584CAA73B \tf = 9B05688C2B3E6C1F\n     c = 3C6EF372FE94F82B \tg = 1F83D9ABFB41BD6B\n     d = A54FF53A5F1D36F1 \th = 5BE0CD19137E2179",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 133,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_133.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_133.webp",
+      "text": "\ufeff SHA-512 Process message in 1024-bit blocks: The heart of the algorithm is a module that consists of 80 rounds; this module is labelled \u2018F\u2019. Each round takes as input the 512-bit buffer value, abcdefgh, and updates the contents of the buffer.\nOutput: After all N 1024-bit blocks have been processed, the output from the Nth stage is the 512-bit message digest.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 134,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_134.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_134.webp",
+      "text": "\ufeff SHA-512",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 135,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_135.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_135.webp",
+      "text": "\ufeff SHA-512 Function",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 136,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_136.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_136.webp",
+      "text": "\ufeff SHA-512 Round Function",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 137,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_137.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_137.webp",
+      "text": "\ufeff SHA-512 Round Function Equations",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 138,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_138.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_138.webp",
+      "text": "\ufeff SHA-512 Round Function Equations",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 139,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_139.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_139.webp",
+      "text": "\ufeff Creation of 80-word input sequence",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 140,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_140.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_140.webp",
+      "text": "\ufeff Creation of 80-word input sequence",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 141,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_141.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_141.webp",
+      "text": "\ufeff Applications of Cryptographic Hash Functions Cryptographic hash functions are the most used algorithms in variety of security applications and Internet protocols.\nImportant Applications:\nMessage Authentication\nDigital Signatures",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 142,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_142.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_142.webp",
+      "text": "\ufeff Use of Hash function for Message Authentication  Message authentication is a mechanism or service used to verify the integrity of a message.\nWhen a hash function is used to provide message authentication, the hash function value is often referred to as a \u2018message digest\u2019",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 143,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_143.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_143.webp",
+      "text": "\ufeff Attack against Hash function Authentication",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 144,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_144.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_144.webp",
+      "text": "\ufeff Use of Hash function for Message Authentication",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 145,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_145.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_145.webp",
+      "text": "\ufeff Use of Hash function for Message Authentication",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 146,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_146.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_146.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 16\n 20th  & 22nd  Aug  2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 147,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_147.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_147.webp",
+      "text": "\ufeff Use of Hash function for Digital Signatures Operation is similar to that of the MAC\nThe hash value of a message is encrypted with a user\u2019s private key\nAnyone who knows the user\u2019s public key can verify the integrity of the message\nAn attacker who wishes to alter the message would need to know the user\u2019s private key",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 148,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_148.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_148.webp",
+      "text": "\ufeff Use of Hash function for Digital Signatures",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 149,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_149.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_149.webp",
+      "text": "\ufeff Other Hash Function Uses",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 150,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_150.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_150.webp",
+      "text": "\ufeff Message Authentication Code (MAC) Also known as a keyed hash function\nTypically used between two parties that share a secret key to authenticate information exchanged between those parties",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 151,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_151.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_151.webp",
+      "text": "\ufeff HMAC Design Objectives  To use, available hash functions without modifications. In particular, to use hash functions that perform well in software and for which code is freely and widely available.\nTo allow for easy replaceability of the embedded hash function in case faster or more secure hash functions are found or required. \nTo preserve the original performance of the hash function without incurring a significant degradation. \nTo use and handle keys in a simple way. \nTo have a well understood cryptographic analysis of the strength of the authentication mechanism based on reasonable assumptions about the embedded hash function.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 152,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_152.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_152.webp",
+      "text": "\ufeff Hash based Message Authentication Code (HMAC) HMAC Structure",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 153,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_153.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_153.webp",
+      "text": "\ufeff HMAC Structure \ud835\udc3b = \ud835\udc52\ud835\udc5a\ud835\udc4f\ud835\udc52\ud835\udc51\ud835\udc51\ud835\udc52\ud835\udc51 \u210e\ud835\udc4e\ud835\udc60\u210e \ud835\udc53\ud835\udc62\ud835\udc5b\ud835\udc50\ud835\udc61\ud835\udc56\ud835\udc5c\ud835\udc5b \n \ud835\udc52.\ud835\udc54., \ud835\udc40\ud835\udc375, \ud835\udc46\ud835\udc3b\ud835\udc34\u22121, \ud835\udc45\ud835\udc3c\ud835\udc43\ud835\udc38\ud835\udc40\ud835\udc37\u2212160 \n\n\ud835\udc3c\ud835\udc49 = \ud835\udc56\ud835\udc5b\ud835\udc56\ud835\udc61\ud835\udc56\ud835\udc4e\ud835\udc59 \ud835\udc63\ud835\udc4e\ud835\udc59\ud835\udc62\ud835\udc52 \ud835\udc56\ud835\udc5b\ud835\udc5d\ud835\udc62\ud835\udc61 \ud835\udc61\ud835\udc5c \u210e\ud835\udc4e\ud835\udc60\u210e \ud835\udc53\ud835\udc62\ud835\udc5b\ud835\udc50\ud835\udc61\ud835\udc56\ud835\udc5c\ud835\udc5b\n\n\ud835\udc40 = \ud835\udc5a\ud835\udc52\ud835\udc60\ud835\udc60\ud835\udc4e\ud835\udc54\ud835\udc52 \ud835\udc56\ud835\udc5b\ud835\udc5d\ud835\udc62\ud835\udc61 \ud835\udc61\ud835\udc5c \ud835\udc3b\ud835\udc40\ud835\udc34\ud835\udc36 \n \ud835\udc56\ud835\udc5b\ud835\udc50\ud835\udc59\ud835\udc62\ud835\udc51\ud835\udc56\ud835\udc5b\ud835\udc54 \ud835\udc61\u210e\ud835\udc52 \ud835\udc5d\ud835\udc4e\ud835\udc51\ud835\udc51\ud835\udc56\ud835\udc5b\ud835\udc54 \ud835\udc60\ud835\udc5d\ud835\udc52\ud835\udc50\ud835\udc56\ud835\udc53\ud835\udc56\ud835\udc52\ud835\udc51 \ud835\udc56\ud835\udc5b \ud835\udc61\u210e\ud835\udc52 \ud835\udc52\ud835\udc5a\ud835\udc4f\ud835\udc52\ud835\udc51\ud835\udc51\ud835\udc52\ud835\udc51 \u210e\ud835\udc4e\ud835\udc60\u210e \ud835\udc53\ud835\udc62\ud835\udc5b\ud835\udc50\ud835\udc61\ud835\udc56\ud835\udc5c\ud835\udc5b \n\n \ud835\udc4c \ud835\udc56  =  \ud835\udc56 \ud835\udc61\u210e  \ud835\udc4f\ud835\udc59\ud835\udc5c\ud835\udc50\ud835\udc58 \ud835\udc5c\ud835\udc53 \ud835\udc40, 0 \u2264  \ud835\udc56  \u2264  \ud835\udc3f \u2212 1 \n\n\ud835\udc3f = \ud835\udc5b\ud835\udc62\ud835\udc5a\ud835\udc4f\ud835\udc52\ud835\udc5f \ud835\udc5c\ud835\udc53 \ud835\udc4f\ud835\udc59\ud835\udc5c\ud835\udc50\ud835\udc58\ud835\udc60 \ud835\udc56\ud835\udc5b \ud835\udc40\n\n\ud835\udc4f = \ud835\udc5b\ud835\udc62\ud835\udc5a\ud835\udc4f\ud835\udc52\ud835\udc5f \ud835\udc5c\ud835\udc53 \ud835\udc4f\ud835\udc56\ud835\udc61\ud835\udc60 \ud835\udc56\ud835\udc5b \ud835\udc4e \ud835\udc4f\ud835\udc59\ud835\udc5c\ud835\udc50\ud835\udc58\n\n\ud835\udc5b = \ud835\udc59\ud835\udc52\ud835\udc5b\ud835\udc54\ud835\udc61\u210e \ud835\udc5c\ud835\udc53 \u210e\ud835\udc4e\ud835\udc60\u210e \ud835\udc50\ud835\udc5c\ud835\udc51\ud835\udc52 \ud835\udc5d\ud835\udc5f\ud835\udc5c\ud835\udc51\ud835\udc62\ud835\udc50\ud835\udc52\ud835\udc51 \ud835\udc4f\ud835\udc66 \ud835\udc52\ud835\udc5a\ud835\udc4f\ud835\udc52\ud835\udc51\ud835\udc51\ud835\udc52\ud835\udc51 \u210e\ud835\udc4e\ud835\udc60\u210e \ud835\udc53\ud835\udc62\ud835\udc5b\ud835\udc50\ud835\udc61\ud835\udc56\ud835\udc5c\ud835\udc5b\n\n\ud835\udc3e = \ud835\udc60\ud835\udc52\ud835\udc50\ud835\udc5f\ud835\udc52\ud835\udc61 \ud835\udc58\ud835\udc52\ud835\udc66; \ud835\udc5f\ud835\udc52\ud835\udc50\ud835\udc5c\ud835\udc5a\ud835\udc5a\ud835\udc52\ud835\udc5b\ud835\udc51\ud835\udc52\ud835\udc51 \ud835\udc59\ud835\udc52\ud835\udc5b\ud835\udc54\ud835\udc61\u210e \ud835\udc56\ud835\udc60  \u2265 \ud835\udc5b\n\n \ud835\udc3e +  = \ud835\udc3e \ud835\udc5d\ud835\udc4e\ud835\udc51\ud835\udc51\ud835\udc52\ud835\udc51 \ud835\udc64\ud835\udc56\ud835\udc61\u210e \ud835\udc67\ud835\udc52\ud835\udc5f\ud835\udc5c\ud835\udc60 \ud835\udc5c\ud835\udc5b \ud835\udc61\u210e\ud835\udc52 \ud835\udc59\ud835\udc52\ud835\udc53\ud835\udc61 \ud835\udc60\ud835\udc5c \ud835\udc61\u210e\ud835\udc4e\ud835\udc61 \ud835\udc61\u210e\ud835\udc52 \ud835\udc5f\ud835\udc52\ud835\udc60\ud835\udc62\ud835\udc59\ud835\udc61 \ud835\udc56\ud835\udc60 \ud835\udc4f \ud835\udc4f\ud835\udc56\ud835\udc61\ud835\udc60 \ud835\udc56\ud835\udc5b \ud835\udc59\ud835\udc52\ud835\udc5b\ud835\udc54\ud835\udc61\u210e",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 154,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_154.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_154.webp",
+      "text": "\ufeff HMAC Structure \ud835\udc56\ud835\udc5d\ud835\udc4e\ud835\udc51 = 00110110  36 \ud835\udc56\ud835\udc5b \u210e\ud835\udc52\ud835\udc65\ud835\udc4e\ud835\udc51\ud835\udc52\ud835\udc50\ud835\udc56\ud835\udc5a\ud835\udc4e\ud835\udc59 \ud835\udc5f\ud835\udc52\ud835\udc5d\ud835\udc52\ud835\udc4e\ud835\udc61\ud835\udc52\ud835\udc51 \ud835\udc4f 8 \ud835\udc61\ud835\udc56\ud835\udc5a\ud835\udc52\ud835\udc60\n\n\ud835\udc5c\ud835\udc5d\ud835\udc4e\ud835\udc51 = 01011100  5\ud835\udc36 \ud835\udc56\ud835\udc5b \u210e\ud835\udc52\ud835\udc65\ud835\udc4e\ud835\udc51\ud835\udc52\ud835\udc50\ud835\udc56\ud835\udc5a\ud835\udc4e\ud835\udc59 \ud835\udc5f\ud835\udc52\ud835\udc5d\ud835\udc52\ud835\udc4e\ud835\udc61\ud835\udc52\ud835\udc51 \ud835\udc4f 8 \ud835\udc61\ud835\udc56\ud835\udc5a\ud835\udc52\ud835\udc60\n\nThe purpose of ipad and opad is to ensure that the MAC calculation is resistant to certain types of attacks. By XORing the message and the key with these padding values, it becomes more difficult for an attacker to manipulate the MAC without knowing the secret key.\n\n\ud835\udc47\u210e\ud835\udc52\ud835\udc5b \ud835\udc3b\ud835\udc40\ud835\udc34\ud835\udc36 \ud835\udc50\ud835\udc4e\ud835\udc5b \ud835\udc4f\ud835\udc52 \ud835\udc52\ud835\udc65\ud835\udc5d\ud835\udc5f\ud835\udc52\ud835\udc60\ud835\udc60\ud835\udc52\ud835\udc51 \ud835\udc4e\ud835\udc60,\n\n\ud835\udc3b\ud835\udc40\ud835\udc34\ud835\udc36(\ud835\udc3e, \ud835\udc40) = \ud835\udc3b[(\ud835\udc3e+ \ud835\udc5c\ud835\udc5d\ud835\udc4e\ud835\udc51) { \ud835\udc3b[(\ud835\udc3e+ \ud835\udc56\ud835\udc5d\ud835\udc4e\ud835\udc51) } \ud835\udc40]]",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 155,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_155.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_155.webp",
+      "text": "\ufeff HMAC Algorithm  The algorithm is described as follows:\n\nAppend zeros to the left end of K to create a b\u2212bit string  \ud835\udc3e + .\n XOR (bitwise exclusive\u2212OR)  \ud835\udc3e + with ipad to produce the b\u2212bit block  \ud835\udc46 \ud835\udc56 \nAppend M to  \ud835\udc46 \ud835\udc56 \nApply H to the stream generated in step 3.\nXOR  \ud835\udc3e +  with opad to produce the b\u2212bit block  \ud835\udc46 0 .\nAppend the hash result from step 4 to  \ud835\udc46 0 .\nApply H to the stream generated in step 6 and output the result.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 156,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_156.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_156.webp",
+      "text": "\ufeff Cipher (Block cipher) based MAC [CMAC] HMAC is based on use of hash functions; similarly CMAC is based on use of block cipher mode of cryptographic operations.\nDAA (Data Authentication Algorithm) was the first  design, which is now obsolete.\nCMAC was adapted by NIST to overcome the security weakness of DAA.\nCMAC is compatible with AES and triple DES",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 157,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_157.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_157.webp",
+      "text": "\ufeff Cipher based MAC (CMAC) Block Diagram",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 158,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_158.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_158.webp",
+      "text": "\ufeff CMAC Operation First, let us define the operation of CMAC when the message is an integer multiple \ud835\udc5b of the cipher block length \ud835\udc4f.\n For AES, \ud835\udc4f=128, and for triple DES, \ud835\udc4f=64. \nThe message is divided into \ud835\udc5b blocks  ( \ud835\udc40 1 , \ud835\udc40 2 ,\u22ef, \ud835\udc40 \ud835\udc5b ).\nThe algorithm makes use of a \ud835\udc58\u2212 bit encryption key \ud835\udc3e and a \ud835\udc4f\u2212bit constant,  \ud835\udc3e 1 . \nFor AES, the key size \ud835\udc58 is 128, 192, or 256 bits\nFor triple DES, the key size is 112 or 168 bits.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 159,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_159.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_159.webp",
+      "text": "\ufeff CMAC Operation",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 160,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_160.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_160.webp",
+      "text": "\ufeff CMAC Operation If the message is not an integer multiple of the cipher block length, then the final block is padded to the right (least significant bits) with a 1 and as many 0s as necessary so that the final block is also of length \ud835\udc4f. \nThe CMAC operation then proceeds as before, except that a different \ud835\udc4f-bit key  \ud835\udc3e 2  is used instead of  \ud835\udc3e 1 .\nThe two \ud835\udc4f-bit keys are derived from the \ud835\udc58-bit encryption key as follows.\n\n\n\nTo generate  \ud835\udc3e 1  and  \ud835\udc3e 2  , the block cipher is applied to the block that consists entirely of 0 bits. \nThe first subkey is derived from the resulting ciphertext by a left shift of one bit and, conditionally, by XORing a constant that depends on the block size. The second subkey is derived in the same manner from the first subkey.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 161,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_161.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_161.webp",
+      "text": "\ufeff Hash Functions vs. MAC Functions: A Comparison Both hash functions and message authentication codes (MACs) are cryptographic tools used to ensure data integrity and authenticity. However, they serve different purposes and have distinct characteristics.\nHash Functions\nPurpose: Primarily used to create a fixed-size digest (or hash) from an input data.\nKey: Does not involve a secret key.\nOutput: The output is deterministic, meaning the same input will always produce the same hash.\nApplications:\nFile integrity checking\nPassword storage\nBlockchain technology\nDigital signatures (as part of the signing process)\n\nMAC Functions\nPurpose: Used to create a message authentication code that is both a hash and a signature.\nKey: Requires a shared secret key between the sender and receiver.\nOutput: The output is non-deterministic, meaning the same input will produce different MACs if different keys are used.\nApplications:\nSecure communication protocols\nData integrity and authenticity verification\nElectronic signatures",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 162,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_162.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_162.webp",
+      "text": "\ufeff HMAC vs. CMAC: A Comparison Both HMAC (Hash-based Message Authentication Code) and CMAC (Cipher-based Message Authentication Code) are cryptographic algorithms used to ensure data integrity and authenticity. However, they differ in their underlying mechanisms and use cases.\n HMAC\nMechanism: Uses a cryptographic hash function (e.g., SHA-256) and a secret key.\nProcess:\n  1. XORs the message with a padded key.\n  2. Hashes the resulting value.\n  3. XORs the hash with another padded key.\n  4. Hashes the result again.\nKey: Requires a shared secret key between the sender and receiver.\nUse Cases:\n  General-purpose message authentication.\n  Secure communication protocols.\n  Data integrity and authenticity verification.\n CMAC\nMechanism:** Uses a block cipher (e.g., AES) and a secret key.\nProcess:\n  1. Encrypts a fixed-length block using the block cipher.\n  2. XORs the encrypted block with the message.\n  3. Encrypts the resulting value.\nKey: Requires a shared secret key between the sender and receiver.\nUse Cases:\n Message authentication for fixed-length messages.\n  Specific applications that require the use of block ciphers (e.g., IPsec).",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 163,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_163.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_163.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 17\n 23rd Aug  2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 164,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_164.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_164.webp",
+      "text": "\ufeff SYMMETRIC-KEY DISTRIBUTION Symmetric-key cryptography is more efficient than asymmetric-key cryptography for encrypting large messages.\nSymmetric-key cryptography, however, needs a shared secret key between two parties.\nWhat if Alice need to communicate with N people?\nN keys are needed\u2026\nWhat if N people need to communicate with N people?\nN(N-1)/2 keys are needed\u2026\nThe distribution of keys is an N2 -problem.\nKey-Distribution Center: KDC is a solution to this issue.  Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 165,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_165.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_165.webp",
+      "text": "\ufeff Key-Distribution Center: KDC Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 166,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_166.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_166.webp",
+      "text": "\ufeff Flat Multiple KDCs Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 167,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_167.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_167.webp",
+      "text": "\ufeff Hierarchical Multiple KDCs Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 168,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_168.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_168.webp",
+      "text": "\ufeff A KDC creates a secret key for each member. \nThis secret key can be used only between the member and the KDC, not between two members.  A session symmetric key between two parties is used only once. Concept of Session keys Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 169,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_169.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_169.webp",
+      "text": "\ufeff A Simple Protocol Using a KDC Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 170,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_170.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_170.webp",
+      "text": "\ufeff KERBEROS Kerberos is a very popular authentication protocol, and at the same time a KDC. \nSeveral systems, including Windows 2000, use Kerberos. \nOriginally designed at MIT, it has gone through several versions. \nIt is named after the three-headed dog in Greek mythology that guards the gates of Hades. Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 171,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_171.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_171.webp",
+      "text": "\ufeff Kerberos Servers  Authentication Server (AS)\nThe authentication server (AS) is the KDC in the Kerberos protocol.  Ticket-Granting Server (TGS)\nThe ticket-granting server (TGS) issues a ticket for the real server (Bob).  Real Server\nThe real server (Bob) provides services for the user (Alice).  Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 172,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_172.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_172.webp",
+      "text": "\ufeff Kerberos example Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 173,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_173.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_173.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 18\n  26th  Aug 2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 174,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_174.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_174.webp",
+      "text": "\ufeff ASYMMETRIC (PUBLIC) KEY DISTRIBUTION In asymmetric-key cryptography, people do not need to know a symmetric shared key.\nIf Alice wants to send a message to Bob, she only needs to know Bob\u2019s public key, which is open to the public and available to everyone. \nIf Bob needs to send a message to Alice, he only needs to know Alice\u2019s public key, which is also known to everyone. \nIn public-key cryptography, everyone shields a private key and advertises a public key. Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 175,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_175.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_175.webp",
+      "text": "\ufeff ASYMMETRIC (PUBLIC) KEY DISTRIBUTION Public Announcement:\nAnnounce on website, common platforms\nAsk for the key\nNot a secure approach\nEve can make public announcements\nEve can fool Alice to ask for key.\nIf Alice directly requests Bob\u2019s public key, Eve can intercept Bob\u2019s response and substitute her own forged public key for Bob\u2019s public key.\nSolution: \nUse Trusted Center/s Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 176,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_176.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_176.webp",
+      "text": "\ufeff Trusted Centers Trusted Centers can maintain a directory of public keys.\nDirectory can be dynamically updated.\nThe center requires that each user register in the center and prove his or her identity. \nThe directory can be publicly advertised by the trusted center. \nThe center can also respond to any inquiry about a public key. Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 177,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_177.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_177.webp",
+      "text": "\ufeff Certification Authority (CA) What if the number of requests are large?\nTrusted center will get heavy load.\nThe alternative is to create public-key certificates.\nBob wants two things;\nHe wants people to know his public key.\nHe wants no one to accept a forged public key as his. \nBob can go to a certification authority (CA), a federal or state organization that binds a public key to an entity and issues a certificate. \nThe CA has a well-known public key itself that cannot be forged. \nThe CA checks Bob\u2019s identification (using a picture ID along with other proof). It then asks for Bob\u2019s public key and writes it on the certificate.\nTo prevent the certificate itself from being forged, the CA signs the certificate with its private key. \nNow Bob can upload the signed certificate. Anyone who wants Bob\u2019s public key downloads the signed certificate and uses the center\u2019s public key to extract Bob\u2019s public key Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 178,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_178.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_178.webp",
+      "text": "\ufeff Use of Certificates Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 179,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_179.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_179.webp",
+      "text": "\ufeff X.509 - standard for Certificates Certificates may have a different format in different regions.\nAnything that needs to be used universally must have a universal format.\nX.509 is a way to describe the certificate in a structured way.\nITU has designed X.509, a recommendation that has been accepted by the Internet with some changes. \nIt uses a well-known protocol called ASN.1 (Abstract Syntax Notation 1) that defines fields familiar to C programmers. Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 180,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_180.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_180.webp",
+      "text": "\ufeff X.509 Certificate Ref: Cryptography and Network Security by Behrouz Forouzan, Chapter 15",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 181,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_181.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_181.webp",
+      "text": "\ufeff Important Questions Draw the DES Encryptor block diagram with all details. \nExplain mixer function of Feistel cipher with a neat diagram.\nInterpret the following straight p-box.  Identify the number of input and outputs from the following compression D- box.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 182,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_182.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_182.webp",
+      "text": "\ufeff Important Questions Define Avalanche and completeness Effect properties.\nCompare DES, 2DES and 3DES with respect to key size, security, cryptanalysis and operations.\nExplain general design of AES with neat diagram.\nList all the AES transformations.\nCompare AES and DES. (10 points)\nList the mode of operation of block ciphers.\nCompare different modes of block cipher with respect to their operation and application.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 183,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_183.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_183.webp",
+      "text": "\ufeff Important Questions Compare symmetric and asymmetric key cryptography. (5 points)\nExplain steps of RSA algorithm with an example and list real time applications where RSA can be used.\nFind public and private key with p=17, q=11 and e=7 using RSA. Also Encrypt and decrypt the message M=4.\nGiven modulus n=221 and public key, e=7, Find the values of p, q, phi(n) and d using RSA. Encrypt M=5.\nIn an RSA system, given N=91 e=5 Calculate \u03a6(n),p, q and private key d. What is the ciphertext when you encrypt message m=25 using the public key. Also perform decryption.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 184,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_184.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_184.webp",
+      "text": "\ufeff Important Questions A and B wish to use RSA to communicate securely. A chooses public key as (7,119) and B chooses public key as (13, 221)\nCalculate private key of A.\nCalculate private key of B.\nWith what key B will encrypt the message M=6 if B wants to send it to A. Find the ciphertext for the same.\nIf A and B wish to use RSA to communicate securely. A chooses public key (e, n) as (7, 247) and B chooses public key (e, n) as (5, 221)\nCalculate A\u2019s Private key. \nCalculate B\u2019s Private Key. \nWhat will be the cipher text sent by A to B, if A wishes to send M=5 to B\nExplain RSA digital signature scheme with neat diagram.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 185,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_185.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_185.webp",
+      "text": "\ufeff Important Questions Explain the concept of Digital Signature with an example.\nCompare HASH and MAC functions.\nExplain different applications of Hash functions.\nDiscuss in detail the properties of a strong Hash function.\nWith neat block diagrams, explain the working of SHA-256 and its compression function.\nExplain the working of SHA-512 with neat block diagram.\nWith neat block diagrams, explain the four methods to use hash functions for message authentication.\nWith neat block diagrams, explain use of hash functions for digital signatures.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 186,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_186.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_186.webp",
+      "text": "\ufeff Important Questions Draw and explain HMAC structure in detail.\nDraw and explain CMAC structure in detail.\nCompare HMAC and CMAC. (10 points)\nExplain Kerberos protocol with neat timing diagram.\nDiscuss the need of key distribution centers and digital certificates in detail. \nWith neat diagram explain the structure of X.509.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 187,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_187.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_187.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 34\n 18th Oct  2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 188,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_188.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_188.webp",
+      "text": "\ufeff RC5 Algorithm Designed by Ronald Rivest in 1994.\n\nSymmetric Key Block Cipher: The same key is used for both encryption and decryption.\n\nKnown for its simplicity, efficiency, and flexibility.\n\nUsed in software and hardware implementations.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 189,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_189.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_189.webp",
+      "text": "\ufeff Key Features Simplicity: \nUses basic operations like XOR, modular addition, and data-dependent rotations.\nFlexibility: \nAdjustable parameters for block size, key size, and number of rounds.\nSecurity: \nData-dependent rotations provide nonlinearity and resistance to cryptanalysis.\nEfficiency: \nDesigned to work efficiently on both software and hardware platforms.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 190,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_190.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_190.webp",
+      "text": "\ufeff Parameters of RC5 RC5 is basically denoted as RC5-w/r/b\nAdjustable Parameters:\nBlock Size (w): Can be 32, 64, or 128 bits.\nNumber of Rounds (r): Can vary from 0 to 255 rounds (typically 12 or 16).\nKey Size (b): Can range from 0 to 2040 bits (commonly 128-bit keys).",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 191,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_191.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_191.webp",
+      "text": "\ufeff Structure of RC5 Feistel-Like Structure:\nBlock: The input block is divided into two halves A and B.\nOperations per Round: Modular addition with subkeys.\nData-dependent rotations: XOR operations between the two halves.\nRepeat for r rounds to generate ciphertext.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 192,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_192.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_192.webp",
+      "text": "\ufeff Algorithm The are three components of RC5\nKey expansion algorithm\nEncryption algorithm\nDecryption algorithm",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 193,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_193.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_193.webp",
+      "text": "\ufeff Encryption Process Initial Key Addition: Add subkeys S[0]] and S[1] to A and B respectively.\nRounds (for each of the r rounds):\nRotate A by an amount determined by B\u2019s LSBs, then XOR with B.\nRotate B by an amount determined by modified A\u2019s LSBs, then XOR with modified A.\nFinal Output: After r rounds, combine A and B to form ciphertext.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 194,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_194.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_194.webp",
+      "text": "\ufeff Encryption Process",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 195,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_195.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_195.webp",
+      "text": "\ufeff Encryption  <<< B) + S[2*i];\nB = ((B \u2295\tA) <<< A) + S[2*i + 1]; A <<< B\nBits in A are rotated to left by the amount  specified by lower log2(w) bits in B",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 196,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_196.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_196.webp",
+      "text": "\ufeff Decryption",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 197,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_197.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_197.webp",
+      "text": "\ufeff Decryption A >>> B\nBits in A are rotated to right by the amount  specified by lower log2(w) bits in B",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 198,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_198.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_198.webp",
+      "text": "\ufeff Encryption and Decryption",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 199,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_199.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_199.webp",
+      "text": "\ufeff RC5 Key Schedule Key Expansion:\nConverts the original key into an array of 2(r+1) sub-keys.\nSub-key Generation:\nUses modular arithmetic to generate multiple sub-keys.\nSub-keys will be used sequentially (and only once each) during the encryption and decryption processes.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 200,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_200.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_200.webp",
+      "text": "\ufeff Key Expansion Algorithm",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 201,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_201.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_201.webp",
+      "text": "\ufeff Security of RC5 Data-Dependent Rotations: \nIntroduce nonlinearity, making the algorithm harder to break.\nAdjustable Rounds: \nMore rounds provide higher security.\nBlock and Key Sizes: \nLarger block and key sizes increase resistance to brute-force and cryptanalytic attacks.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 202,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_202.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_202.webp",
+      "text": "\ufeff Strengths of RC5 Highly Flexible: \nAdjustable parameters suit different security and performance needs.\nEfficient: \nUses simple operations (XOR, addition, rotation) that are fast and easy to implement.\nMinimal Memory Usage: \nSuitable for environments with limited resources, like embedded systems.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 203,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_203.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_203.webp",
+      "text": "\ufeff Weaknesses of RC5 Vulnerable to Timing Attacks: \nThe data-dependent rotations can be exploited in specific implementations.\nNot as widely adopted: \nAlthough flexible, RC5 is not as popular as modern algorithms like AES.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 204,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_204.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_204.webp",
+      "text": "\ufeff Applications of RC5 OpenSSL: \nA widely used cryptographic library that includes RC5 as one of its supported algorithms.\nSSH (Secure Shell): \nCan use RC5 for encrypting data transmitted over a network.IPSec (Internet Protocol Security): Can employ RC5 for encrypting and authenticating IP packets.\nDatabase Encryption: \nRC5 can be used to encrypt data within databases to protect against unauthorized access.\nDigital SIgnatures: \nRC5 can be used in conjunction with RSA for digital signatures to ensure data integrity and authenticity.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 205,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_205.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_205.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 35\n  22nd Oct  2024",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 206,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_206.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_206.webp",
+      "text": "\ufeff Public-Key Infrastructures (PKI) A model for creating, distributing, and revoking certificates based on the X.509. \nThe Internet Engineering Task Force has created the Public-Key Infrastructure X.509 known as  PKIX.  pg 484",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 207,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_207.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_207.webp",
+      "text": "\ufeff Duties of a PKI",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 208,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_208.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_208.webp",
+      "text": "\ufeff Some important duties of PKI Certificates\u2019 issuing, renewal, and revocation\nAs PKIX is X.509 dependent, the standard defines all certificate related duties.\nKeys\u2019 storage and update\nPKI should provide key storage to members\nKey updating facility on member\u2019s demand\nProviding services to other protocols\nInternet security protocols, such as IPSec and TLS rely on the services by a PKI.\nProviding access control\nprovide different levels of access to the information stored in its database\nEg: an organization PKI may provide access to the whole database for the top management, but limited access for employees.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 209,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_209.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_209.webp",
+      "text": "\ufeff Trust Model of PKI It is not possible to have just one CA issuing all certificates for all users in the world.\nThere should be many CAs, each responsible for creating, storing, issuing, and revoking a limited number of certificates. \nPKI therefore establishes a framework called as Trust Model for building trust and security in digital communications.\nThe trust model defines rules that specify how a user can verify a certificate received from a CA.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 210,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_210.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_210.webp",
+      "text": "\ufeff PKI Hierarchical Model In this model, there is a tree-type structure with a root CA. \nThe root CA has a self-signed, self-issued certificate; it needs to be trusted by other CAs and users for the system to work. \nThe number of levels can be more than three in a real.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 211,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_211.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_211.webp",
+      "text": "\ufeff PKI Hierarchical Model",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 212,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_212.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_212.webp",
+      "text": "\ufeff PKI Hierarchical Model The CA (the root) has signed certificates for CA1, CA2, and CA3.\nCA1 has signed certificates for User1, User2, and User3; and so on. \nPKI uses the following notation to mean the certificate issued by authority X for entity Y. \ud835\udc7f\u226a\ud835\udc80\u226b",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 213,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_213.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_213.webp",
+      "text": "\ufeff Chrome Browser Certificate List",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 214,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_214.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_214.webp",
+      "text": "\ufeff Mesh Model The hierarchical model may work for an organization or a small community.\nA larger community may need several hierarchical structures connected together. \nOne method is to use a mesh model to connect the roots together. \nIn this model, each root is connected to every other root.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 215,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_215.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_215.webp",
+      "text": "\ufeff Mesh Model",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 216,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_216.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_216.webp",
+      "text": "\ufeff Mesh Model The mesh structure connects only roots together\nEach root has its own hierarchical structure, shown by a triangle. \nThe certifications between the roots are cross-certificates; \nEach root certifies all other roots, which means there are N (N \u2212 1) certificates.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 217,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_217.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_217.webp",
+      "text": "\ufeff Web of Trust (WoT) Model WoT is a decentralized trust model used in Public Key Infrastructure (PKI) \nIndividuals and organizations can issue certificates to each other, creating a network of trust relationships. \nThis differs from the traditional hierarchical trust model where a single Certificate Authority (CA) is responsible for issuing and managing all certificates.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 218,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_218.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_218.webp",
+      "text": "\ufeff How the Web of Trust works Certificate Issuance: An individual or organization can issue a certificate to another entity, signing it with their private key.\nCertificate Validation: When one entity wants to verify the authenticity of another entity's digital signature, they check the certificate associated with the signature. The certificate is validated by following the trust path through the web of trust.\nReputation Systems: Users can rate the trustworthiness of other users based on their interactions and experiences. This information can be used to assess the credibility of certificates issued by different entities.\nRevocation: If a certificate is compromised or no longer valid, the issuing entity can publish revocation information. Other users can then update their trust databases accordingly.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 219,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_219.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_219.webp",
+      "text": "\ufeff Advantages of the Web of Trust model Resilience: The decentralized nature of the WoT makes it more resilient to attacks on a single CA.\nFlexibility: It allows for more flexible trust relationships and can accommodate a wider range of use cases.\nPrivacy: The WoT can provide a higher level of privacy compared to the hierarchical trust model, as there is no central authority collecting and storing user data.\nCommunity-Driven: The WoT is often driven by communities of users who collaborate to maintain and improve the system.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 220,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_220.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_220.webp",
+      "text": "\ufeff Disadvantages of the Web of Trust model Complexity: The WoT can be more complex to manage and understand compared to the hierarchical trust model.\nScalability: It may be more difficult to scale the WoT to handle large numbers of users and certificates.\nSecurity: The security of the WoT depends on the trustworthiness of individual users and the effectiveness of reputation systems.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 221,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_221.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_221.webp",
+      "text": "\ufeff Applications Email encryption: The WoT can be used to encrypt and decrypt emails, ensuring privacy and confidentiality.\nFile sharing: It can be used to securely share files between individuals and organizations.\nDigital signatures: The WoT can be used to verify the authenticity and integrity of digital documents.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 222,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_222.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_222.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 36\n  22nd Oct  2024 pg 441",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 223,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_223.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_223.webp",
+      "text": "\ufeff Remote User Authentication Protocols User authentication also known as entity authentication is a technique designed to let one party prove the identity of another party. \nAn entity can be a person, a process, a client, or a server.\nThe entity whose identity needs to be proved is called the claimant.\nThe party that tries to prove the identity of the claimant is called the verifier.\nCommonly used techniques,\nSomething known\nSomething possessed\nSomething inherent",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 224,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_224.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_224.webp",
+      "text": "\ufeff Remote User Authentication Protocols Something known\n This is a secret known only by the claimant that can be checked by the verifier. \nExamples are a password, a PIN, a secret key, and a private key.\nSomething possessed\n This is something that can prove the claimant\u2019s identity.\nExamples are a passport, a driver\u2019s license, an identification card, a credit card, and a smart card.\nSomething inherent\nThis is an inherent characteristic of the claimant. \nExamples are conventional signatures, fingerprints, voice, facial characteristics, retinal pattern, and handwriting.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 225,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_225.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_225.webp",
+      "text": "\ufeff PASSWORDS The simplest and oldest method of entity authentication is the password-based authentication\nthe password is something that the claimant knows.\nA password is used when a user needs to access a system to use the system\u2019s resources (login). \nEach user has a user identification that is public, and a password that is private. \nWe can divide these authentication schemes into two groups,\nThe fixed password \nThe one-time password",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 226,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_226.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_226.webp",
+      "text": "\ufeff The Fixed Password A password that is used over and over again for every access.\nFirst Approach: User ID and password file\nSecond Approach: Hashing the password\nThird Approach: Salting the password\nFourth Approach: Combination",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 227,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_227.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_227.webp",
+      "text": "\ufeff First Approach: User ID and password file The system keeps a table (a file) that is sorted by user identification. \nTo access the system resources, the user sends her user identification and password, in plaintext, to the system.\nThe system uses the identification to find the password in the table. If the password sent by the user matches the password in the table, access is granted; otherwise, it is denied.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 228,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_228.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_228.webp",
+      "text": "\ufeff Attacks on the First Approach Eavesdropping: Eve can watch Alice when she types her password. Most systems, as a security measure, do not show the characters a user types. Eavesdropping can take a more sophisticated form. Eve can use key loggers.\nStealing a password: Eve tries to physically steal Alice\u2019s password. This can be prevented if Alice does not write down the password and instead she just commits it to memory. For this reason the password should be very simple or else related to something familiar to Alice. But this makes the password vulnerable to other types of attacks.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 229,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_229.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_229.webp",
+      "text": "\ufeff Attacks on the First Approach Accessing a password file: \nEve can hack into the system and get access to the ID/ password file. Eve can read the file and find Alice\u2019s password or even change it. To prevent this type of attack, the file can be read/write protected. However, most systems need this type of file to be readable by the public. The second approach can protect the file from this type of attack.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 230,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_230.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_230.webp",
+      "text": "\ufeff Attacks on the First Approach Guessing: \nUsing a guessing attack, Eve can log into the system and try to guess Alice\u2019s password by trying different combinations of characters. \nThe password is particularly vulnerable if the user is allowed to choose a short password (a few characters). \nIt is also vulnerable if Alice has chosen something trivial, such as her birthday, her child\u2019s name, or the name of her favourite actor. \nTo prevent guessing, a long random password is recommended, something that is not very obvious. \nHowever, the use of such a random password may also create a problem. \nBecause she could easily forget such a password, Alice might store a copy of it somewhere, which makes the password subject to stealing.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 231,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_231.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_231.webp",
+      "text": "\ufeff Second Approach: Hashing the password A more secure approach is to store the hash of the password (instead of the plaintext password) in the password file. \nAny user can read the contents of the file, but, because the hash function is a one-way function, it is almost impossible to guess the value of the password.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 232,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_232.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_232.webp",
+      "text": "\ufeff Second Approach: Hashing the password When the user sends the ID and the password, the system creates a hash of the password and then compares the hash value with the one stored in the file. \nIf there is a match, the user is granted access; otherwise, access is denied. \nIn this case, the file does not need to be read protected.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 233,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_233.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_233.webp",
+      "text": "\ufeff Attack on the Second Approach Dictionary Attack \nIn this attack, Eve is interested in finding one password, regardless of the user ID. \nFor example, if the password is 6 digits, Eve can create a list of 6-digit numbers (000000 to 999999), and then apply the hash function to every number; the result is a list of one million hashes.\nShe can then get the password file and search the second-column entries to find a match. \nThis could be programmed and run offline on Eve\u2019s private computer.\nAfter a match is found, Eve can go online and use the password to access the system. \nThe third approach shows how to make this attack more difficult.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 234,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_234.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_234.webp",
+      "text": "\ufeff Third Approach: Salting the password When the password string is created, a random string, called the salt, is concatenated to the password. \nThe salted password is then hashed. \nThe ID, the salt, and the hash are then stored in the file. \nNow, when a user asks for access, the system extracts the salt, concatenates it with the received password, makes a hash out of the result, and compares it with the hash stored in the file. \nIf there is a match, access is granted; otherwise, it is denied",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 235,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_235.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_235.webp",
+      "text": "\ufeff Third Approach: Salting the password",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 236,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_236.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_236.webp",
+      "text": "\ufeff Third Approach: Salting the password Salting makes the dictionary attack more difficult. \nIf the original password is 6 digits and the salt is 4 digits, then hashing is done over a 10-digit value. \nThis means that Eve now needs to make a list of 10 million items and create a hash for each of them.\nThe list of hashes has 10 million entries, and the comparison takes much longer. \nSalting is very effective if the salt is a very long random number. \nThe UNIX operating system uses a variation of this method.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 237,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_237.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_237.webp",
+      "text": "\ufeff Fourth Approach: Combination Two identification techniques are combined. \nExample: use of an ATM card with a PIN (personal identification number)\nThe card belongs to the category \u201csomething possessed \u201d and the PIN belongs to the category \u201csomething known\u201d. \nThe PIN is a password that enhances the security of the card. \nIf the card is stolen, it cannot be used unless the PIN is known. \nThe PIN number, however, is traditionally very short so it is easily remembered by the owner.\nThis makes it vulnerable to the guessing type of attack.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 238,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_238.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_238.webp",
+      "text": "\ufeff The one-time password A password that is used only once. \nThis kind of password makes eavesdropping and salting useless.\nThe user and the system agree upon a list of passwords. \nEach password on the list can be used only once. \nDrawbacks: \nThe system and the user must keep a long list of passwords. \nIf the user does not use the passwords in sequence, the system needs to perform a long search to find the match.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 239,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_239.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_239.webp",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 2\nCryptography: Key management, distribution and user authentication\nLecture 37\n  28th Oct  2024 pg 441",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 240,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_240.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_240.webp",
+      "text": "\ufeff CHALLENGE-RESPONSE In password authentication, the claimant proves his/her identity by demonstrating that he/she knows a secret, the password.\nIn challenge-response authentication, the claimant proves that he/she knows a secret without sending it. \nIn other words, the claimant does not send the secret to the verifier; the verifier either has it or finds it.\nThe technique needs Challenge and Response.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 241,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_241.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_241.webp",
+      "text": "\ufeff CHALLENGE-RESPONSE The challenge is a time-varying value such as a random number or a timestamp that is sent by the verifier.\nThe claimant applies a function to the challenge and sends the result, called a response, to the verifier. \nThe response shows that the claimant knows the secret.",
+      "width": 1650,
+      "height": 1238
+    },
+    {
+      "index": 242,
+      "image": "/slides/cns_cns_module_notes_module_2_module_2_pptx/slide_242.webp",
+      "thumb": "/slides/cns_cns_module_notes_module_2_module_2_pptx/thumb_242.webp",
+      "text": "\ufeff CHALLENGE-RESPONSE Rest part is left as Self study. \nReference: Behrouz A. Forouzan: Cryptography and Network Security",
+      "width": 1650,
+      "height": 1238
+    }
+  ]
+}

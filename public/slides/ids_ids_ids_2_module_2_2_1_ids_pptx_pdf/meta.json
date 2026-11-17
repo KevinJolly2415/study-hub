@@ -1,0 +1,942 @@
+{
+  "mtime": 1794848820.9907131,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_001.webp",
+      "text": "Module 2\r\nData Science Foundations",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_002.webp",
+      "text": "Topics to be covered\r\n\u2022 Data Science lifecycle \r\n\u2022 Data Collection and Data sources \r\n\u2022 Data Preprocessing and Data Cleaning \r\n\u2022 Handling Missing Values and Data Transformation \r\n\u2022 Exploratory Data Analysis (EDA)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_003.webp",
+      "text": "Topics to be covered\r\n\u2022 Data Science lifecycle \r\n\u2022 Data Collection and Data sources \r\n\u2022 Data Preprocessing and Data Cleaning \r\n\u2022 Handling Missing Values and Data Transformation \r\n\u2022 Exploratory Data Analysis (EDA)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_004.webp",
+      "text": "What is Data Science?\r\n\u2022 Definition: Data Science is the process of using data, statistics, programming, \r\nand analytical techniques to discover useful information and support \r\ndecision-making.\r\n\u2022 Example: An online shopping website analyzes customer data to understand \r\ncustomer preferences, recommend products, and predict future purchases.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_005.webp",
+      "text": "What is Data?\r\n\u2022 Definition: Data is a collection of facts, observations, measurements, \r\nor information that can be used for analysis.\r\n\u2022 Examples: Student marks, student name, temperature, photograph, \r\nvideo, customer review, transaction record.\r\n\u2022 Student Data \u2013 Name, Attendance, and Marks.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_006.webp",
+      "text": "Types of Data\r\nData can be broadly classified into:\r\n1. Structured Data \u2013 Organized in a fixed format.\r\n2. Semi-Structured Data \u2013 Has some organizational structure but does \r\nnot follow a strict table format.\r\n3. Unstructured Data \u2013 Does not have a predefined structure.\r\n\u2022 Examples: \r\n\u2022 Structured \u2192 Database tables; \r\n\u2022 Semi-structured \u2192 JSON, XML; \r\n\u2022 Unstructured \u2192 Images, Videos, Audio.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_007.webp",
+      "text": "Structured Data\r\n\u2022 Meaning: Structured data is data organized in a fixed format, usually \r\nin rows and columns.\r\n\u2022 Examples: Student database, employee records, bank transactions, \r\nsales records.\r\n\u2022 Example fields: Student ID, Name, Marks.\r\n\u2022 Common Storage: MySQL, Oracle, PostgreSQL, Excel.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_008.webp",
+      "text": "Semi-Structured Data\r\n\u2022 Meaning: Semi-structured data does not follow a strict table structure \r\nbut contains tags, keys, or labels that organize the information.\r\n\u2022 Examples: JSON, XML, HTML, Emails.\r\n\u2022 It is more flexible than structured data.\r\n{ \r\n\"StudentID\": 101, \r\n\"Name\": \"Priya\", \r\n\"Age\": 21, \r\n\"Marks\": 90 \r\n}\r\n<Student> \r\n<StudentID>\r\n101\r\n</StudentID> \r\n</Student>\r\nFrom: teacher@sfit.edu \r\nTo: student@sfit.edu \r\nSubject: Assignment Submission\r\nHi \r\nRegards, Faculty\r\nJSON XML Emails",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_009.webp",
+      "text": "Unstructured Data\r\n\u2022 Meaning: Unstructured data does not follow a predefined format or \r\nstructure.\r\n\u2022 Examples: Images, videos, audio files, text documents, social media \r\nposts, emails, online reviews.\r\n\u2022 Example: A YouTube video contains video, audio, text, and comments. \r\nAll these can become sources of data for analysis.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_010.webp",
+      "text": "Data Sources\r\n\u2022 What is a Data Source? A data source is a place or system from which \r\ndata is collected.\r\n\u2022 Major Data Sources: Databases; APIs; Websites and Web; Sensors \r\nand IoT devices; Social Media; Surveys and Forms; Government/Open \r\nData; Cloud Platforms.\r\n\u2022 Data Flow: Data Source \u2192 Data Collection \u2192 Data Storage \u2192 Data \r\nAnalysis \u2192 Insights.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_011.webp",
+      "text": "Databases\r\n\u2022 What is a Database? A database is an organized collection of data that \r\nallows users to store, manage, and retrieve information.\r\n\u2022 Examples: MySQL, Oracle, PostgreSQL, Microsoft SQL Server, \r\nMongoDB.\r\n\u2022 Example: A college database may store student details, attendance, \r\nexamination marks, course information, and faculty information.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_012.webp",
+      "text": "APIs\r\n\u2022 What is an API? API = Application Programming Interface.\r\n\u2022 An API allows one software application to communicate with another \r\napplication or service.\r\n\u2022 Examples: Weather API, Google Maps API, Payment APIs, Social \r\nMedia APIs.\r\n\u2022 Example Flow: Application \u2192 API Request \u2192 Data Server \u2192 API \r\nResponse \u2192 Application.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_013.webp",
+      "text": "Websites and Web Data\r\n\u2022 Websites contain large amounts of publicly available information.\r\n\u2022 Examples: News websites, E-commerce websites, Educational \r\nwebsites, Job portals, Product review websites.\r\n\u2022 Data Collection Methods: Web forms, APIs, Web scraping.\r\n\u2022 Example: An e-commerce company can analyze product reviews to \r\nunderstand customer opinions.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_014.webp",
+      "text": "Sensors and IoT\r\n\u2022 IoT = Internet of Things.\r\n\u2022 IoT devices collect data from the physical environment using sensors.\r\n\u2022 Examples: Smart watches, fitness trackers, smart homes, traffic sensors, \r\nweather stations, industrial machines.\r\n\u2022 Example: A fitness tracker collects steps, heart rate, sleep, and activity \r\ndata.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_015.webp",
+      "text": "Social Media\r\n\u2022 Social media platforms generate huge amounts of data.\r\n\u2022 Examples of Data: Posts, comments, likes, shares, images, videos, user \r\nprofiles.\r\n\u2022 Applications: Customer sentiment analysis, trend analysis, marketing, \r\nbrand monitoring.\r\n\u2022 Example: A company analyzes customer comments to understand \r\nwhether customers are satisfied with a product.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_016.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_016.webp",
+      "text": "Surveys and Forms\r\n\u2022 Organizations often collect data directly from people using surveys, \r\nquestionnaires, feedback forms, online forms, and interviews.\r\n\u2022 Examples: Student satisfaction surveys, teaching feedback, course feedback, \r\ncustomer satisfaction, product feedback, market research.\r\n\u2022 Popular Tools: Google Forms, Microsoft Forms, Survey platforms.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_017.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_017.webp",
+      "text": "Government and Open Data\r\n\u2022 Governments and public organizations provide datasets for public use.\r\n\u2022 Examples: Population data, census data, weather data, economic data, \r\neducation statistics, healthcare statistics, transportation data.\r\n\u2022 Benefits: Research, policy analysis, public services, academic projects, \r\ndata-driven decision-making.\r\n\u2022 Example: Researchers can use government education data to study \r\nliteracy trends.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_018.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_018.webp",
+      "text": "Cloud Platforms\r\n\u2022 Cloud platforms provide online infrastructure for storing and processing large \r\namounts of data.\r\n\u2022 Examples: Amazon Web Services (AWS), Microsoft Azure, Google Cloud.\r\n\u2022 Cloud Data Sources: Cloud databases, cloud storage, application logs, \r\nbusiness applications.\r\n\u2022 Advantages: Scalable, accessible from anywhere, large storage capacity, \r\nsupports large-scale data processing.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_019.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_019.webp",
+      "text": "Examples of Data Sources\r\n\u2022 Education \u2192 College Database \u2192 Marks, attendance\r\n\u2022 Healthcare \u2192 Hospital System \u2192 Patient records\r\n\u2022 Banking \u2192 Transaction Database \u2192 Transactions\r\n\u2022 E-commerce \u2192 Website \u2192 Products, orders\r\n\u2022 Social Media \u2192 Social Platforms \u2192 Posts, comments\r\n\u2022 IoT \u2192 Sensors \u2192 Temperature\r\n\u2022 Government \u2192 Open Data \u2192 Census data\r\n\u2022 Transport \u2192 GPS/IoT \u2192 Vehicle location\r\n\u2022 Key Idea: Different problems require different data sources.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_020.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_020.webp",
+      "text": "Primary vs. Secondary Data\r\n\u2022 Primary Data: Collected directly by the researcher; original data; surveys and \r\ninterviews; experiments; questionnaires; more specific to the research \r\nproblem.\r\n\u2022 Secondary Data: Collected by someone else; existing data; government \r\nreports; research papers; public datasets; may already be available.\r\n\u2022 Example: Primary Data \u2013 You conduct a survey of 500 students.\r\n\u2022 Example: Secondary Data \u2013 You use an existing government education \r\ndataset.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_021.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_021.webp",
+      "text": "Data Science Life Cycle\r\n\u2022 The Data Science Life Cycle is a series of steps followed to solve a problem using data.\r\n\u2022 Main Stages:\r\n1. Business/Problem Understanding\r\n2. Data Collection\r\n3. Data Preparation\r\n4. Exploratory Data Analysis\r\n5. Feature Engineering\r\n6. Model Building\r\n7. Model Evaluation\r\n8. Deployment\r\n9. Monitoring and Maintenance\r\n\u2022 Important: The process is iterative, meaning we may return to an earlier step when \r\nrequired.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_022.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_022.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_023.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_023.webp",
+      "text": "Business/Problem Understanding\r\n\u2022 Goal: Clearly understand the problem that needs to be solved.\r\n\u2022 Activities: Define the problem; understand the objectives; identify users or \r\nstakeholders; define success criteria.\r\n\u2022 Example Problem: Can we identify students who may need academic \r\nsupport?\r\n\u2022 Goal: Predict students who may be at risk of poor academic performance.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_024.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_024.webp",
+      "text": "Data Collection and Data Preparation\r\n\u2022 Step 1: Data Collection \u2013 Collect relevant data from databases, APIs, surveys, \r\nwebsites, sensors, and open datasets.\r\n\u2022 Step 2: Data Preparation \u2013 Remove duplicate records, handle missing values, \r\ncorrect errors, and convert data into suitable formats.\r\n\u2022 Simple Flow: Raw Data \u2192 Cleaning \u2192 Transformation \u2192 Prepared Data.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_025.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_025.webp",
+      "text": "Exploratory Data Analysis and Feature \r\nEngineering\r\n\u2022 Exploratory Data Analysis (EDA) helps us understand the data.\r\n\u2022 EDA Activities: Calculate summary statistics, create graphs and charts, \r\nidentify patterns, find relationships, detect unusual values.\r\n\u2022 Feature Engineering: Features are useful attributes used for analysis or model \r\nbuilding.\r\n\u2022 Example: From Internal Marks, Semester Marks, and Attendance, we can \r\ncreate Average Marks and Attendance Percentage.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_026.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_026.webp",
+      "text": "Model Building and Evaluation\r\n\u2022 Model Building: Select an appropriate method and train a model using prepared \r\ndata.\r\n\u2022 Examples: Linear Regression, Decision Tree, K-Nearest Neighbors, Naive Bayes, \r\nRandom Forest.\r\n\u2022 Model Evaluation: Check how well the model performs.\r\n\u2022 Common Metrics: Accuracy, Precision, Recall, F1-score, Mean Squared Error.\r\n\u2022 Goal: Select a model that performs well on unseen data.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_027.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_027.webp",
+      "text": "Deployment, Monitoring and Maintenance\r\n\u2022 Deployment: Make the model available for actual use.\r\n\u2022 Example: A college application predicts whether a student may need academic \r\nsupport.\r\n\u2022 Monitoring: Continuously check model performance, data quality, and changes in \r\ndata patterns.\r\n\u2022 Maintenance: Update the model, retrain with new data, fix problems, and improve \r\nperformance.\r\n\u2022 Key Idea: Deployment is not the end of the Data Science Life Cycle.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_028.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_028.webp",
+      "text": "Topics to be covered\r\n\u2022 Data Science lifecycle \r\n\u2022 Data Collection and Data sources \r\n\u2022 Data Preprocessing and Data Cleaning \r\n\u2022 Handling Missing Values and Data Transformation \r\n\u2022 Exploratory Data Analysis (EDA)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_029.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_029.webp",
+      "text": "Data Preprocessing and Data Cleaning \r\nHandling Missing Values \u2013 Mean, Mode, Median\r\nRemoving Duplicate Values\r\nHandling Noisy Data \u2013 Binning",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_030.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_030.webp",
+      "text": "Data Cleaning\r\n\u2022 Data cleaning is the process of identifying and correcting inaccurate, \r\nincomplete, duplicate, or inconsistent data.\r\n\u2022 Common Problems:\r\n\u2022 Missing Value \u2013 Age = ?\r\n\u2022 Duplicate \u2013 Same student entered twice\r\n\u2022 Incorrect Value \u2013 Age = 250\r\n\u2022 Inconsistent Format \u2013 Mumbai / MUMBAI / mumbai\r\n\u2022 Outlier \u2013 Salary = $10,000,000\r\n\u2022 Goal: Improve the quality and reliability of data.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_031.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_031.webp",
+      "text": "Handling Missing Values\r\nA missing value occurs when\r\n information is not available.\r\nExample:\r\nPossible techniques:\r\n1. Delete the record\r\n2. Replace with Mean\r\n3. Replace with Median\r\n4. Replace with Mode\r\n5. Forward/Backward Fill\r\n6. Predict the missing value\r\nStudent Age Marks\r\nA 20 75\r\nB ? (Missing) 80\r\nC 21 85\r\nD ? (Missing) 70",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_032.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_032.webp",
+      "text": "Numerical: Mean Imputation\r\nSuppose the ages are: 20, 21, 22, ?, 24\r\nCalculate the mean of available values:\r\nMean = (20 + 21 + 22 + 24) / 4\r\nMean = 87 / 4 = 21.75\r\nTherefore, the missing value is replaced with 21.75.\r\nFinal Data: 20, 21, 22, 21.75, 24\r\nWhen to Use? \r\nMean imputation is useful when data is approximately symmetric and \r\ndoes not contain extreme outliers.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_033.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_033.webp",
+      "text": "Numerical: Median Imputation\r\n\u2022 Consider: 10, 12, 14, ?, 100\r\n\u2022 Sorted available values: 10, 12, 14, 100\r\n\u2022 Median = (12 + 14) / 2 = 13\r\n\u2022 Replace missing value with 13.\r\n\u2022 Why Median? \r\n\u2022 The value 100 is an extreme value and can significantly increase the \r\nmean.\r\n\u2022 Therefore, median is often preferred when data contains outliers or \r\nskewness.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_034.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_034.webp",
+      "text": "Mode Imputation\r\n\u2022 Mode is the value that occurs most frequently.\r\n\u2022 Example: Red, Blue, Red, Green, Red, ?\r\nFrequency:\r\n\u2022 Red = 3\r\n\u2022 Blue = 1\r\n\u2022 Green = 1\r\nTherefore, Mode = Red.\r\nReplace the missing value with Red.\r\nCommonly Used For: Categorical data, Gender, City, Product category, \r\nEducation level.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 35,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_035.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_035.webp",
+      "text": "Mean and Median Imputation\r\nMarks of 7 students: \r\n40, 50, 50, 60, ?, 80, 100\r\nMode\r\nStudent Favorite \r\nFruit\r\nA Apple\r\nB Mango\r\nC Apple\r\nD Banana\r\nE Apple\r\nF ?",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 36,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_036.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_036.webp",
+      "text": "Removing Duplicate Records\r\nSuppose a dataset contains:\r\nID | Name | Marks\r\n101 | Amit | 80\r\n102 | Neha | 75\r\n101 | Amit | 80\r\n103 | Ravi | 90\r\nTotal records = 4\r\nDuplicate records = 1\r\nAfter removing duplicates: Clean records = 4 \u2212 1 = 3\r\nFinal dataset contains: 101 Amit, 102 Neha, 103 Ravi",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 37,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_037.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_037.webp",
+      "text": "Noisy Data\r\n\u2022 Noise: random error or variance in a measured variable\r\n\u2022 Incorrect attribute values may be due to\r\n\u2022 Faulty data collection instruments\r\n\u2022 Data entry problems\r\n\u2022 Data transmission problems\r\n\u2022 Technology limitation\r\n\u2022 Inconsistency in naming convention\u00a0\r\n\u2022 Other data problems which require data cleaning\r\n\u2022 Duplicate records\r\n\u2022 Incomplete data\r\n\u2022 Inconsistent data",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 38,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_038.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_038.webp",
+      "text": "How to Handle Noisy Data?\r\n\u2022 Binning\r\n\u2022 First sort data and partition into (equal-frequency) bins\r\n\u2022 Then one can smooth by bin means, smooth by bin median, smooth by bin \r\nboundaries, etc.\r\n\u2022 Regression\r\n\u2022 Smooth by fitting the data into regression functions\r\n\u2022 Clustering\r\n\u2022 Detect and remove outliers\r\n\u2022 Combined Computer and Human Inspection\r\n\u2022 Detect suspicious values and check by human (e.g., deal with possible outliers)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 39,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_039.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_039.webp",
+      "text": "Simple Discretization: Binning\r\n\u2022 Equal-width (distance) partitioning\r\n\u2022 Divides the range into N intervals of equal size: uniform grid\r\n\u2022 if A and B are the lowest and highest values of the attribute, the width of \r\nintervals will be: W = (B \u2013A)/N.\r\n\u2022 The most straightforward, but outliers may dominate presentation\r\n\u2022 Skewed data is not handled well\r\n\u2022 Equal-depth (frequency) partitioning\r\n\u2022 Divides the range into N intervals, each containing approximately same number \r\nof samples\r\n\u2022 Good data scaling",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 40,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_040.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_040.webp",
+      "text": "Binning Methods for Data Smoothing\r\nSorted data for price (in dollars): 4, 8, 9, 15, 21, 21, 24, 25, 26, 28, 29, \r\n34 , N=3 ( N is number of bins)\r\n\u00a0 \r\nSmoothing by bin boundaries:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 1: 4, 4, 4, 15\u00a0\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 21, 21, 25, 25\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 26, 26, 26, 34\r\nSmoothing by bin median\r\n - Bin 1: 9,9,9,9\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 23,23,23,23\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 29,29,29,29\r\n* Partition into equal-frequency (equi-depth) \r\nbins:\r\n - Bin 1: 4, 8, 9, 15\r\n - Bin 2: 21, 21, 24, 25\r\n - Bin 3: 26, 28, 29, 34\r\nSmoothing by bin means:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 1: 9, 9, 9, 9\u00a0 i.e. (4+8+9+15)/4\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 23, 23, 23, 23\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 29, 29, 29, 29",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 41,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_041.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_041.webp",
+      "text": "Binning Methods for Data Smoothing\r\nSorted data for price (in dollars): 4, 8, 9, 15, 21, 21, 24, 25, 26, 28, 29, \r\n34 , N=3 ( N is number of bins) \u2013 N/3=12/3=4\r\n\u00a0 \r\nSmoothing by bin median\r\n \r\n* Partition into equal-frequency (equi-depth) \r\nbins:\r\n - Bin 1: 4, 8, 9, 15\r\n - Bin 2: 21, 21, 24, 25\r\n - Bin 3: 26, 28, 29, 34\r\nSmoothing by bin means:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 1: 9, 9, 9, 9\u00a0 i.e. (4+8+9+15)/4\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 23, 23, 23, 23\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 29, 29, 29, 29",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 42,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_042.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_042.webp",
+      "text": "Binning Methods for Data Smoothing\r\nSorted data for price (in dollars): 4, 8, 9, 15, 21, 21, 24, 25, 26, 28, 29, \r\n34 , N=3 ( N is number of bins)\r\n\u00a0 \r\nSmoothing by bin median:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 1: 9,9,9,9\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 23,23,23,23\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 29,29,29,29\r\n* Partition into equal-frequency (equi-depth) \r\nbins:\r\n - Bin 1: 4, 8, 9, 15\r\n - Bin 2: 21, 21, 24, 25\r\n - Bin 3: 26, 28, 29, 34\r\nSmoothing by bin means:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 1: 9, 9, 9, 9\u00a0 i.e. (4+8+9+15)/4\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 23, 23, 23, 23\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 29, 29, 29, 29",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 43,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_043.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_043.webp",
+      "text": "Binning Methods for Data Smoothing\r\nSorted data for price (in dollars): 4, 8, 9, 15, 21, 21, 24, 25, 26, 28, 29, \r\n34 , N=3 ( N is number of bins)\r\n\u00a0 \r\nSmoothing by bin median:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0 - Bin 1: 9,9,9,9\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 23,23,23,23\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 29,29,29,29\r\nSmoothing by bin boundaries:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 1: 4, 4, 4, 15\u00a0\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 21, 21, 25, 25\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 26, 26, 26, 34\r\n* Partition into equal-frequency (equi-depth) \r\nbins:\r\n - Bin 1: 4, 8, 9, 15\r\n - Bin 2: 21, 21, 24, 25\r\n - Bin 3: 26, 28, 29, 34\r\nSmoothing by bin means:\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 1: 9, 9, 9, 9\u00a0 i.e. (4+8+9+15)/4\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 2: 23, 23, 23, 23\r\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0- Bin 3: 29, 29, 29, 29",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 44,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_044.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_044.webp",
+      "text": "Topics to be covered\r\n\u2022 Data Science lifecycle \r\n\u2022 Data Collection and Data sources \r\n\u2022 Data Preprocessing and Data Cleaning \r\n\u2022 Handling Missing Values and Data Transformation \r\n\u2022 Exploratory Data Analysis (EDA)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 45,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_045.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_045.webp",
+      "text": "Data Transformation\r\nData Transformation \u2013 \r\nNormalization -Min-Max, Z-score\r\n Data Encoding",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 46,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_046.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_046.webp",
+      "text": "Data Transformation\r\nData transformation converts data from one format or scale into another \r\nformat suitable for analysis.\r\nCommon Techniques:\r\n\u2022 Normalization\r\n\u2022 Standardization\r\n\u2022 Encoding\r\n\u2022 Aggregation\r\n\u2022 Log Transformation\r\nExample: Original values 10, 20, 30, 40 can be transformed using normalization \r\nto values between 0 and 1",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 47,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_047.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_047.webp",
+      "text": "Data Transformation \r\n\u2022 A function that maps the entire set of values of a given attribute to a \r\nnew set of replacement values s.t. each old value can be identified \r\nwith one of the new values\r\n\u2022 Normalization: Scaled to fall within a smaller, specified range\r\n\u2022 Min-Max normalization\r\n\u2022 Z-Score normalization\r\n\u2022 Normalization by decimal scaling",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 48,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_048.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_048.webp",
+      "text": "Min-Max Normalization\r\nMin-Max normalization converts values into a fixed range, usually 0 to 1.\r\nFormula: X' = (X \u2212 Xmin) / (Xmax\r\n \u2212 Xmin)\r\nNotation Meaning\r\nX Original value of the data point (before scaling).\r\nX' Normalized (scaled) value after applying Min-Max scaling.\r\nXmin Minimum value of the feature (column) in the dataset.\r\nX\r\nmax Maximum value of the feature (column) in the dataset.\r\n(Xmax\r\n \u2212 Xmin) Range of the feature (difference between maximum and \r\nminimum values).",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 49,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_049.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_049.webp",
+      "text": "Min-Max Normalization - Example\r\nMin-Max normalization converts values into a fixed range, usually 0 to 1.\r\nFormula: X' = (X \u2212 Xmin) / (Xmax\r\n \u2212 Xmin)\r\nExample: Data = 10, 20, 30, 40\r\nFor X = 30: Xmin = 10 and X\r\nmax \r\n=40\r\nX' = (30 \u2212 10) / (40 \u2212 10)\r\nX' = 20 / 30 = 0.667\r\nAnswer: Normalized value = 0.667\r\nEg: Let income range $12,000 to $98,000 normalized to [0.0, 1.0].\u00a0 Then \r\n$73,600 is mapped to\u00a0\u00a0\u2026\u2026\u2026\u2026.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 50,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_050.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_050.webp",
+      "text": "Z-score normalization\r\nFormula: Z = (X \u2212 \u03bc) / \u03c3\r\nWhere:\r\n\u2022 X = Individual value\r\n\u2022 \u03bc = Mean\r\n\u2022 \u03c3 = Standard deviation\r\nExample: X = 80, Mean = 70, Standard deviation = 10\r\nZ = (80 \u2212 70) / 10 = 1\r\nAnswer: Z-score = 1",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 51,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_051.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_051.webp",
+      "text": "Categorical data must often be converted into numerical form.\r\nExample: Gender = Male, Female\r\nLabel Encoding: Male = 0, Female = 1\r\nOne-Hot Encoding:\r\nMale | Female\r\n1 | 0\r\n0 | 1\r\nExample: City = Mumbai, Pune, Delhi\r\n[1,0,0] \u2192 Mumbai\r\n[0,1,0] \u2192 Pune\r\n[0,0,1] \u2192 Delhi\r\nData Encoding",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 52,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_052.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_052.webp",
+      "text": "Topics to be covered\r\n\u2022 Data Science lifecycle \r\n\u2022 Data Collection and Data sources \r\n\u2022 Data Preprocessing and Data Cleaning \r\n\u2022 Handling Missing Values and Data Transformation \r\n\u2022 Exploratory Data Analysis (EDA)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 53,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_053.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_053.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 54,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_054.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_054.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 55,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_055.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_055.webp",
+      "text": "Data Preprocessing Steps\r\nData Cleaning\r\nData Integration\r\nData Transformation\r\nData Reduction\r\nData Discretization",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 56,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_056.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_056.webp",
+      "text": "Data Preprocessing Steps\r\nData Cleaning\r\nData Integration\r\nData Transformation\r\nData Reduction\r\nData Discretization",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 57,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_057.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_057.webp",
+      "text": "Data Integration\r\n\u201cCombines data from multiple sources into a coherent store.\u201d\r\n\u2022 Schema integration: e.g., A.cust-id \u2261 B.cust#\r\n\u2022 Integrate metadata from different sources\r\n\u2022 Entity identification problem:\u00a0\r\n\u2022 Identify real world entities from multiple data sources, e.g., customer_id in one \r\ndatabase and cust_no in another database.\r\n\u2022 Detecting and resolving data value conflicts\r\n\u2022 For the same real world entity, attribute values from different sources are different\r\n\u2022 Possible reasons: different representations, different scales\r\n\u2022 \u00a0e.g., metric vs. British units",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 58,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_058.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_058.webp",
+      "text": "Data Preprocessing Steps\r\nData Cleaning\r\nData Integration\r\nData Transformation\r\nData Reduction\r\nData Discretization",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 59,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_059.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_059.webp",
+      "text": "Data reduction\r\nData Reduction is the process of reducing the size, volume, or complexity of a \r\ndataset while preserving useful information.\r\nWhy Data Reduction?\r\n\u2022 Reduces storage\r\n\u2022 Speeds analysis\r\n\u2022 Improves model performance\r\n\u2022 Removes redundant data\r\n\u2022 Reduces computation\r\n\u2022 Simplifies visualization",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 60,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_060.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_060.webp",
+      "text": "\u2022 Data Cube Aggregation \r\n\u2022 Dimensionality Reduction \r\n\u2022 Data Compression \r\n\u2022 Numerosity Reduction\r\n\u2022 Feature Selection \r\n\u2022 Principal Component Analysis (PCA)\r\nTechniques of Data Reduction",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 61,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_061.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_061.webp",
+      "text": "\u2022 Data Cube Aggregation summarizes detailed data into higher-level \r\ninformation.\r\nData Cube Aggregation",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 62,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_062.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_062.webp",
+      "text": "\u2022 Dimensionality reduction decreases the number of attributes \r\n(columns) in the dataset.\r\nDimensionality Reduction",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 63,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_063.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_063.webp",
+      "text": "Data Compression stores data in a smaller format.\r\nExample\r\nOriginal Image Size\r\n10 MB\r\n \u2193\r\nCompressed Image\r\n2 MB\r\nThe image appears almost the same while occupying much less storage.\r\nTypes\r\nLossless Compression \r\nLossy Compression \r\nData Compression",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 64,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_064.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_064.webp",
+      "text": "Instead of storing every record, numerosity reduction stores a \r\nsmaller representation of the dataset.\r\nMethods\r\n\u2022 Sampling \r\n\u2022 Regression \r\n\u2022 Histograms \r\n\u2022 Clustering\r\nNumerosity Reduction",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 65,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_065.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_065.webp",
+      "text": "Sampling\r\nObtaining a small sample s to represent the whole data set N\r\nTypes of Sampling\r\n\u2022 Simple random sampling\r\n\u2022 There is an equal probability of selecting any particular item\r\n\u2022 Sampling without replacement\r\n\u2022 Once an object is selected, it is removed from the population\r\n\u2022 Sampling with replacement\r\n\u2022 A selected object is not removed from the population(recorded and replaced)\r\n\u2022 Stratified sampling:\u00a0\r\n\u2022 Partition the data set, and draw samples from each partition (proportionally, \r\ni.e., approximately the same percentage of the data)\u00a0\r\n\u2022 Used in conjunction with skewed data",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 66,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_066.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_066.webp",
+      "text": "Sampling: With or without Replacement",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 67,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_067.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_067.webp",
+      "text": "Sampling: Cluster or Stratified Sampling",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 68,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_068.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_068.webp",
+      "text": "Sampling: Stratified Sampling",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 69,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_069.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_069.webp",
+      "text": "Histogram Analysis\r\n\u2022 Divide data into buckets and store average (sum) for each bucket\r\n\u2022 Partitioning rules:\r\n\u2022 Equal-width: equal bucket range\r\n\u2022 Equal-frequency (or equal-depth)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 70,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_070.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_070.webp",
+      "text": "Histogram Analysis\r\n\u2022 Equal-width: equal bucket range\r\nBin Actual Interval Values in \r\nBin Count\r\n0\u20134 0 \u2264 x < 4 2, 3 2\r\n4\u20138 4 \u2264 x < 8 4, 5, 7 3\r\n8\u201312 8 \u2264 x \u2264 12 8, 9, 10, 11 4\r\n2, 3, 4, 5, 7, 8, 9, 10, 11 Bins = 3",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 71,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_071.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_071.webp",
+      "text": "Clustering\r\n\u2022 Partition data set into clusters based on similarity, and store cluster \r\nrepresentation (e.g., centroid and diameter) only\r\n\u2022 Can be very effective if data is clustered but not if data is \u201csmeared\u201d \r\n(damaged).\r\n\u2022 Can have hierarchical clustering and be stored in multi-dimensional \r\nindex tree structures.\r\n70 72 74 76 78",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 72,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_072.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_072.webp",
+      "text": "\u2022 Feature Selection chooses only the most important attributes required \r\nfor analysis.\r\nExample - Original Features\r\n\u2022 Name \r\n\u2022 Roll Number \r\n\u2022 Age \r\n\u2022 Attendance\r\n\u2022 Study Hours \r\n\u2022 Blood Group \r\n\u2022 Marks \r\nSuppose the goal is to predict marks.\r\nSelected Features\r\n\u2022 Age \r\n\u2022 Attendance \r\n\u2022 Study Hours \r\nIgnored Features\r\n\u2022 Blood Group \r\n\u2022 Name\r\nFeature Selection",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 73,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_073.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_073.webp",
+      "text": "Principal Component Analysis (PCA)\r\nPrincipal Component Analysis (PCA) converts many correlated variables into a \r\nsmaller number of new variables called Principal Components.\r\nExample\r\nSuppose we have:\r\n\u2022 Height \r\n\u2022 Weight \r\n\u2022 Waist Size \r\n\u2022 BMI \r\nThese variables are highly related.\r\nPCA combines them into fewer components while preserving most of the \r\nimportant information.\r\nBuy Laptop\r\n\u2022 RAM \r\n\u2022 SSD \r\n\u2022 Processor \r\n\u2022 Graphics Card \r\n\u2022 Battery \r\n\u2022 Display \r\n\u2022 Price\r\nPerformance Score \r\nPortability Score",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 74,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_074.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_074.webp",
+      "text": "Data Transformation\r\nData Transformation \u2013 \r\nNormalization -Min-Max, Z-score\r\n Data Encoding\r\nData Integration\r\nData Reduction\r\nData Discretization",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 75,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_075.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_075.webp",
+      "text": "Data Preprocessing Steps\r\nData Cleaning\r\nData Integration\r\nData Transformation\r\nData Reduction\r\nData Discretization",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 76,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_076.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_076.webp",
+      "text": "Discretization\u00a0\r\n\u201cDivide the range of a continuous attribute into intervals\u201d\r\n\u2022 Interval labels can then be used to replace actual data values\u00a0\r\n\u2022 Reduce data size by discretization.\r\n\u2022 Supervised vs. unsupervised.\r\n\u2022 Split (top-down) vs. merge (bottom-up).\r\n\u2022 Discretization can be performed recursively on an attribute.\r\n\u2022 Prepare for further analysis, e.g., classification.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 77,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_077.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_077.webp",
+      "text": "Data Discretization Methods\r\n\u2022 Binning\u00a0\r\n\u2022 Top-down split, unsupervised\r\n\u2022 Histogram analysis\r\n\u2022 Top-down split, unsupervised\r\n\u2022 Clustering analysis (unsupervised, top-down split or \r\nbottom-up merge)\r\n\u2022 Decision-tree analysis (supervised, top-down split)\r\n\u2022 Correlation (e.g., \u03c72\r\n) analysis (unsupervised, bottom-up merge)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 78,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_078.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_078.webp",
+      "text": "Topics to be covered\r\n\u2022 Data Science lifecycle \r\n\u2022 Data Collection and Data sources \r\n\u2022 Data Preprocessing and Data Cleaning \r\n\u2022 Handling Missing Values and Data Transformation \r\n\u2022 Exploratory Data Analysis (EDA)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 79,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_079.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_079.webp",
+      "text": "Exploratory data ANALYSIS\r\nEDA is the process of examining and understanding data before applying \r\nstatistical or machine learning methods.\r\nObjectives\r\n\u2022 Understand data distribution \r\n\u2022 Find patterns \r\n\u2022 Identify relationships \r\n\u2022 Detect missing values \r\n\u2022 Detect outliers \r\n\u2022 Find correlations \r\nEDA Uses - Statistics + Visualization + Data Exploration",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 80,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_080.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_080.webp",
+      "text": "Descriptive Statistics\r\nDescriptive statistics summarize data.\r\nImportant Measures\r\n\u2022 Mean \r\n\u2022 Median \r\n\u2022 Mode \r\n\u2022 Range \r\n\u2022 Variance \r\n\u2022 Standard Deviation \r\n\u2022 Minimum \r\n\u2022 Maximum\r\n\u2022 Midrange",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 81,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_081.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_081.webp",
+      "text": "Descriptive Statistics\r\n\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 82,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_082.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_082.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 83,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_083.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_083.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 84,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_084.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_084.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 85,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_085.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_085.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 86,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_086.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_086.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 87,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_087.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_087.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 88,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_088.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_088.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 89,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_089.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_089.webp",
+      "text": "Step 2 => X\r\nx\u221258 (x\u221258)\u00b2\r\n30 \u221228 784\r\n36 \u221222 484\r\n47 \u221211 121\r\n50 \u22128 64\r\n52 \u22126 36\r\n52 \u22126 36\r\n56 \u22122\r\n4\r\n60\r\n2\r\n4\r\n63\r\n5 25\r\n70 12 144\r\n70 12 144\r\n110 52 2704",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 90,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_090.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_090.webp",
+      "text": "Step 4 - Variance",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 91,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_091.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_091.webp",
+      "text": "\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 92,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_092.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_092.webp",
+      "text": "SUMMARY\r\nMeasure Value\r\nMean 58\r\nMedian 54\r\nMode 52 and 70 (Bimodal)\r\nMinimum 30\r\nMaximum 110\r\nRange 80\r\nMidrange 70\r\nVariance (Population) 379.17\r\nStandard Deviation (Population) 19.47",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 93,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_093.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_093.webp",
+      "text": "Symmetric vs Asymmetric\r\n\u2022 In Symmetric data distribution mean, median, mode have same values\r\n\u2022 Asymmetric can be positively skewed or negatively skewed\u00a0\r\n\u2022 Positively skewed , mode < median\r\n\u2022 Negatively skewed , mode > median",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 94,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_094.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_094.webp",
+      "text": "Symmetric vs Asymmetric",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 95,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_095.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_095.webp",
+      "text": "Symmetric vs. Skewed Data\r\n\u2022 Median, mean and mode of symmetric, positively and negatively \r\nskewed data\r\npositively skewed symmetric negatively skewed",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 96,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_096.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_096.webp",
+      "text": "Measuring the Dispersion of Data\r\n\u2022 Quantiles :are points taken at regular intervals of a data distribution, dividing it into \r\nessentially equal size consecutive sets\r\n\u2022 The 2-quantile is the data point dividing the lower and upper halves of the data \r\ndistribution\r\n\u2022 The 4-quantiles are the three data points that split the data distribution into four \r\nequal parts; each part represents one-fourth of the data distribution.\u00a0\r\n\u2022 They are more commonly referred to as quartiles\r\n\u2022 The 100-quantiles are more commonly referred to as percentiles; they divide the \r\ndata distribution into 100 equal-sized consecutive sets\r\n\u2022 Quartiles: Q1\r\n (25th percentile), Q3\r\n (75th percentile)\r\n\u2022 Inter-quartile range: IQR = Q3 \u2013 Q1",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 97,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_097.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_097.webp",
+      "text": "Measuring the Dispersion of Data\r\n\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 98,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_098.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_098.webp",
+      "text": "Boxplot Analysis\r\n\u2022 Five-number summary of a distribution\r\n\u2022 Minimum, Q1, Median, Q3, Maximum\r\n\u2022 Boxplot\r\n\u2022 Data is represented with a box.\r\n\u2022 The ends of the box are at the first and third quartiles, i.e., the height of the \r\nbox is IQR\r\n\u2022 The median is marked by a line within the box\r\n\u2022 Whiskers: two lines outside the box extended to Minimum and Maximum\r\n\u2022 Outliers: points beyond a specified outlier threshold, plotted individually",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 99,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_099.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_099.webp",
+      "text": "Example : 30,36,47,50,52,52,56,60,63,70,70,110\r\nFind 5 number summary and box plot\r\n\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 100,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_100.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_100.webp",
+      "text": "Example : 30,36,47,50,52,52,56,60,63,70,70,110\r\nFind 5 number summary and box plot\r\n\u2022\r\nFive-number summary \r\nMinimum = 30\r\nQ1 = 47\r\nMedian = 54\r\nQ3 = 63\r\nMaximum = 110",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 101,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_101.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_101.webp",
+      "text": "\u2022\r\n\u2022",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 102,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_102.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_102.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 103,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_103.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_103.webp",
+      "text": "\u2022 Example : Suppose that the data for analysis includes the \r\nattribute age. The age values for the data tuples are (in \r\nincreasing order) 13, 15, 16, 16, 19, 20, 20, 21, 22, 22, 25, 25, \r\n25, 25, 30, 33, 33, 35, 35, 35, 35, 36, 40, 45, 46, 52, 70.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 104,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_104.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_104.webp",
+      "text": "Histogram Analysis\r\n\u2022 Histogram: Graph display of tabulated \r\nfrequencies, shown as bars\r\n\u2022 It shows what proportion of cases fall into \r\neach of several categories\r\n\u2022 Differs from a bar chart in that it is the area\r\nof the bar that denotes the value, not the \r\nheight as in bar charts, a crucial distinction \r\nwhen the categories are not of uniform \r\nwidth\r\n\u2022 The categories are usually specified as \r\nnon-overlapping intervals of some variable. \r\nThe categories (bars) must be adjacent",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 105,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_105.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_105.webp",
+      "text": "Quantile Plot\r\n\u2022 A quantile plot displays ordered data \r\nvalues against their percentile positions.\r\n\u2022 Plots quantile information\r\n\u2022 For a data xi\r\ndata sorted in increasing \r\norder, f\r\ni\r\nindicates that approximately 100 \r\n% f\r\ni\r\n of the data are below or equal to the \r\nvalue xi\r\nApplications\r\n\u2022 Determine the distribution of data \r\n\u2022 Compare datasets \r\n\u2022 Detect skewness",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 106,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_106.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_106.webp",
+      "text": "Quantile-Quantile (Q-Q) Plot\r\n\u2022 Graphs the quantiles of one \r\nunivariate distribution against the \r\ncorresponding quantiles of another\r\n\u2022 View: Is there is a shift in going \r\nfrom one distribution to another?\r\n\u2022 Example shows unit price of items \r\nsold at Branch 1 vs. Branch 2 for \r\neach quantile.\u00a0 Unit prices of items \r\nsold at Branch 1 tend to be lower \r\nthan those at Branch 2.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 107,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_107.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_107.webp",
+      "text": "Scatter plot\r\n\u2022 Provides a first look at \r\nbivariate data to see \r\nclusters of points, outliers, \r\netc\r\n\u2022 Each pair of values is \r\ntreated as a pair of \r\ncoordinates and plotted as \r\npoints in the plane",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 108,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_108.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_108.webp",
+      "text": "Positively and Negatively Correlated Data\r\nPositive Negative Uncorrelated",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 109,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_109.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_109.webp",
+      "text": "Approaches to Data visualization\r\n\u2022 Pixel-oriented techniques\r\n\u2022 Geometric projection techniques\r\n\u2022 Icon-based techniques\r\n\u2022 Hierarchical and graph-based techniques",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 110,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_110.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_110.webp",
+      "text": "Pixel-oriented techniques\r\nDefinition\r\nEach data value is represented by \r\na colored pixel. Similar values are \r\nassigned similar colors.\r\nApplications\r\n\u2022 Very large datasets \r\n\u2022 High-dimensional \r\nvisualization \r\n\u2022 Pattern recognition",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 111,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_111.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_111.webp",
+      "text": "Icon-Based Visualization\r\nEach data object is represented by an \r\nicon (glyph), and attribute values are \r\nmapped to visual features such as size, \r\nshape, orientation, or color.\r\nExample\r\n\u2022 Star plots \r\n\u2022 Chernoff faces \r\nApplications\r\n\u2022 Multidimensional data visualization \r\n\u2022 Pattern comparison",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 112,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_112.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_112.webp",
+      "text": "Geometric Projection Visualization\r\nHigh-dimensional data is projected \r\ninto two or three dimensions for \r\nvisualization while preserving \r\nimportant relationships.\r\nApplications\r\n\u2022 Cluster visualization \r\n\u2022 Dimension reduction \r\n\u2022 Pattern discovery",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 113,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_113.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_113.webp",
+      "text": "Hierarchical Visualization\r\nData is visualized using a \r\nhierarchical structure.\r\nExamples\r\n\u2022 Tree maps \r\n\u2022 Cone trees \r\nApplications\r\n\u2022 Hierarchical datasets \r\n\u2022 File systems \r\n\u2022 Organizational structures",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 114,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_114.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_114.webp",
+      "text": "Graph-Based Visualization\r\nDefinition\r\nObjects are represented as \r\nnodes, and relationships \r\nbetween objects are represented \r\nas edges.\r\nApplications\r\n\u2022 Social networks \r\n\u2022 Transportation networks \r\n\u2022 Web page links \r\n\u2022 Recommendation systems",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 115,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_115.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_115.webp",
+      "text": "Topics to be covered\r\n\u2022 Data Science lifecycle \r\n\u2022 Data Collection and Data sources \r\n\u2022 Data Preprocessing and Data Cleaning \r\n\u2022 Handling Missing Values and Data Transformation \r\n\u2022 Exploratory Data Analysis (EDA)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 116,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_116.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_116.webp",
+      "text": "QUESTIONS\r\n\u2022 Explain various stages in the Data Science Lifecycle. \r\n\u2022 Need for data preprocessing. Explain steps involved in it\r\n\u2022 Write a note on data reduction strategies\r\n\u2022 Explain types of sampling with help of an example\r\n\u2022 Describe data visualization techniques\r\n\u2022 Numerical on binning\r\n\u2022 Numerical on EDA(mean, median,mode, mid range, variance etc)\r\n\u2022 What is noisy data. Methods to handle noisy data\r\n\u2022 Explain data discretization techniques",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 117,
+      "image": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/slide_117.webp",
+      "thumb": "/slides/ids_ids_ids_2_module_2_2_1_ids_pptx_pdf/thumb_117.webp",
+      "text": "\u2022 Numerical on normalization\r\n\u2022 Compare barplot and histogram\r\n\u2022 Explain data cleaning as a step in data preprocessing\r\n\u2022 Explain different types of plot\r\n\u2022 Numerical on box plot and five number summary\r\n\u2022 Define the term data science and explain different types of data\r\n\u2022 Explain different sources of data used in data science",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

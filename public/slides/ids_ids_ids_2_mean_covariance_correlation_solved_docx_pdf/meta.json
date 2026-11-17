@@ -1,0 +1,22 @@
+{
+  "mtime": 1794848856.7612607,
+  "aspectRatio": 0.77,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_2_mean_covariance_correlation_solved_docx_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_2_mean_covariance_correlation_solved_docx_pdf/thumb_001.webp",
+      "text": "Mean, Covariance and Correlation Coefficient\r\nStep-by-Step Solved Numerical\r\nGiven Data\r\nStudent Social Media Hours (X) Sleep Hours (Y)\r\n1 1 7\r\n2 2 8\r\n3 3 6\r\n4 4 5\r\n5 5 6\r\n6 6 4\r\nNumber of observations: n = 6\r\n1. Calculate the Mean of X and Y\r\nMean of X:\r\nX\u0304= \u03a3X / n = (1 + 2 + 3 + 4 + 5 + 6) / 6 = 21 / 6 = 3.5\r\nMean of Y:\r\n\u0232 = \u03a3Y / n = (7 + 8 + 6 + 5 + 6 + 4) / 6 = 36 / 6 = 6\r\nTherefore, mean of X = 3.5 and mean of Y = 6.\r\n2. Calculate Covariance\r\nFormula (Population Covariance):\r\nCov(X,Y) = \u03a3[(X \u2212 X\u0304)(Y \u2212 \u0232)] / n\r\nUsing X\u0304= 3.5 and \u0232 = 6:\r\nX Y X \u2212 3.5 Y \u2212 6 (X \u2212 3.5)(Y \u2212 6)\r\n1 7 \u22122.5 1 \u22122.5\r\n2 8 \u22121.5 2 \u22123\r\n3 6 \u22120.5 0 0\r\n4 5 0.5 \u22121 \u22120.5\r\n5 6 1.5 0 0\r\n6 4 2.5 \u22122 \u22125\r\nTotal \u221211\r\nCov(X,Y) = \u221211 / 6 = \u22121.833 (approximately)\r\nInterpretation: Negative covariance indicates that the two variables generally move in opposite directions.\r\n3. Calculate the Correlation Coefficient\r\nFormula (Pearson\u2019s correlation coefficient):",
+      "width": 1224,
+      "height": 1584
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_ids_2_mean_covariance_correlation_solved_docx_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_ids_2_mean_covariance_correlation_solved_docx_pdf/thumb_002.webp",
+      "text": "r = Cov(X,Y) / (\u03c3X \u00d7 \u03c3Y)\r\nStep A: Standard deviation of X\r\n\u03c3X = \u221a[\u03a3(X \u2212 X\u0304)\u00b2 / n]\r\n\u03c3X = \u221a[(6.25 + 2.25 + 0.25 + 0.25 + 2.25 + 6.25) / 6]\r\n\u03c3X = \u221a(17.5 / 6) = 1.708 (approximately)\r\nStep B: Standard deviation of Y\r\n\u03c3Y = \u221a[\u03a3(Y \u2212 \u0232)\u00b2 / n]\r\n\u03c3Y = \u221a[(1 + 4 + 0 + 1 + 0 + 4) / 6]\r\n\u03c3Y = \u221a(10 / 6) = 1.291 (approximately)\r\nStep C: Substitute in the correlation formula\r\nr = \u22121.833 / (1.708 \u00d7 1.291)\r\nr = \u22121.833 / 2.205 = \u22120.832 (approximately)\r\n4. Interpretation of Direction and Strength\r\nDirection: Negative correlation.\r\nStrength: Strong negative correlation.\r\nMeaning: In this dataset, as social media hours increase, sleep hours generally decrease. The correlation is strong, but it\r\ndoes not prove that social media use causes reduced sleep.\r\nFinal Answers\r\nCalculation Answer\r\nMean of X 3.5\r\nMean of Y 6\r\nCovariance (population) \u22121.833\r\nCorrelation coefficient (r) \u22120.832\r\nDirection Negative\r\nStrength Strong negative\r\nNote: This solution uses population covariance and population standard deviations, so the denominator is n = 6.",
+      "width": 1224,
+      "height": 1584
+    }
+  ]
+}

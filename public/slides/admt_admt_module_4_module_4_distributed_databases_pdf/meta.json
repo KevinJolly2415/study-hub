@@ -1,0 +1,486 @@
+{
+  "mtime": 1793870609.507887,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_001.webp",
+      "text": "Module 4: Distributed Databases\r\nBy MS. ALVINA LOPES\r\nPART 1",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_002.webp",
+      "text": "Contents\r\n\u2756 Introduction\r\n\u2756 Distributed Database Concepts \r\n\u2756 Data Fragmentation \r\n\u2756 Replication & Allocation in distributed databases.\r\n\u2756 Design Issues in Distributed DBMS\r\n\u2756 Types of Distributed Database Systems\r\n\u2756 Distributed DBMS Architecture \r\n\u2756 Distributed Database Design",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_003.webp",
+      "text": "Introduction\r\n\u25cf Distributed databases bring the advantages of distributed computing to \r\nthe database domain.\r\n\u25cf A distributed computing system consists of a number of processing \r\nsites or nodes that are interconnected by a computer network and that \r\ncooperate in performing certain assigned tasks.\r\n\u25cf Distributed computing systems partition a big, unmanageable problem \r\ninto smaller pieces and solve it efficiently in a coordinated manner.\r\n\u25cf Thus, more computing power is harnessed to solve a complex task.\r\n\u25cf The autonomous processing nodes can be managed independently while \r\nthey cooperate to provide the needed functionalities to solve the \r\nproblem.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_004.webp",
+      "text": "Distributed Database Concepts\r\n\u25cf Distributed database (DDB) technology resulted from a merger of two \r\ntechnologies: database technology and distributed systems technology. \r\n\u25cf A distributed database (DDB) is a collection of multiple logically related \r\ndatabase distributed over a computer network, \r\n\u25cf A distributed database management system is a software system that \r\nmanages a distributed database while making the distribution \r\ntransparent to the user.\r\n\u25cf A transaction can be executed by multiple networked computers in a \r\nunified manner.\r\n\u25cf A distributed database (DDB) processes \u2018Unit of execution (a transaction)\u2019 \r\nin a distributed manner.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_005.webp",
+      "text": "Distributed Database system",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_006.webp",
+      "text": "Distributed Database Concepts\r\nWhat Constitutes a DDB?\r\nFor a database to be called distributed, the following minimum conditions \r\nshould be satisfied:\r\n\u25cf Connection of database nodes over a computer network: There are \r\nmultiple computers, called sites or nodes. These sites must be connected \r\nby an underlying network to transmit data and commands among sites.\r\n\u25cf Logical interrelation of the connected databases: It is essential that \r\nthe information in the various database nodes be logically related.\r\n\u25cf Possible absence of homogeneity among connected nodes: It is not \r\nnecessary that all nodes be identical in terms of data, hardware, and \r\nsoftware.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_007.webp",
+      "text": "Distributed Database Concepts\r\nWhat Constitutes a DDB?\r\nThe sites may all be located in physical proximity and connected via a local \r\narea network, \r\nor \r\nthey may be geographically distributed over large distances and connected via \r\na wide area network.\r\nNetworks may have different topologies that define the direct communication \r\npaths among sites.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_008.webp",
+      "text": "Distributed Database Concepts\r\nTransparency\r\n\u25cf The concept of transparency extends the general idea of hiding \r\nimplementation details from end users.\r\n\u25cf Transparency is a key concept and advantage of distributed system.\r\n\u25cf Management of distributed data with different levels of transparency: \r\n\u25cf This refers to the physical placement of data (files, relations, etc.) which is \r\nnot known to the user (distribution transparency).\r\n\u25cf A highly transparent system offers a lot of flexibility to the end \r\nuser/application developer since it requires little or no awareness of \r\nunderlying details on their part.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_009.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nExample Scenario: The EMPLOYEE, PROJECT, and WORKS_ON tables may be \r\nfragmented horizontally and stored with possible replication as shown below.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_010.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nData organization(or Distribution and Network transparency):\r\n\u25cf Users do not have to worry about operational details of the network.\r\n\u25cb There is Location transparency, which refers to freedom of issuing command \r\nfrom any location without affecting its working.\r\n\u25cb Then there is Naming transparency, which allows access to any names object \r\n(files, relations, etc.) from any location.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_011.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nReplication transparency:\r\n\u25cf It allows to store copies of a data at multiple sites as shown in the above \r\ndiagram. \r\n\u25cf This is done to minimize access time to the required data.\r\nFragmentation transparency:\r\n\u25cf Allows to fragment a relation horizontally (create a subset of tuples of a \r\nrelation) or vertically (create a subset of columns of a relation).",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_012.webp",
+      "text": "Distributed Database Concepts\r\nTypes of Transparency\r\nDesign transparency and Execution transparency:\r\n\u25cf Freedom from knowing how the distributed database is designed and \r\nwhere a transaction executes.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_013.webp",
+      "text": "Distributed Database Concepts\r\nAvailability and Reliability\r\n\u25cf Reliability is broadly defined as the probability that a system is running \r\n(not down) at a certain time point.\r\n\u25cf Availability is the probability that the system is continuously available \r\nduring a time interval.\r\n\u25cf Both directly related to faults, failures and errors.\r\n\u25cf Fault tolerant approaches. \r\n\u25cf A failure is a deviation of a system\u2019s behavior from that which is specified \r\nin order to ensure correct execution of operations. \r\n\u25cf Errors constitute that subset of system states that causes the failure. \r\n\u25cf Fault is the cause of an error.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_014.webp",
+      "text": "Distributed Database Concepts\r\nAvailability and Reliability\r\n\u25cf A reliable DDBMS tolerates failures of underlying components, and it \r\nprocesses user requests as long as database consistency is not violated. \r\n\u25cf A DDBMS recovery manager has to deal with failures arising from \r\ntransactions, hardware, and communication networks.\r\n\u25cf In DDB, the term availability is used generally as an umbrella term to \r\ncover both concepts.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_015.webp",
+      "text": "Distributed Database Concepts\r\nScalability and Partition Tolerance\r\n\u25cf Scalability determines the extent to which the system can expand its \r\ncapacity while continuing to operate without interruption. \r\n\u25cf Two types:\r\n\u25cb Horizontal scalability: expanding the number of nodes in the distributed \r\nsystem.\r\n\u25cb Vertical scalability: expanding the capacity of the individual nodes in the \r\nsystem, such as the storage capacity or the processing power of a node.\r\n\u25cf Partition tolerance states that the system should have the capacity to \r\ncontinue operating while the network is partitioned.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_016.webp",
+      "text": "Distributed Database Concepts\r\nAutonomy\r\n\u25cf Autonomy determines the extent to which individual nodes or DBs in a \r\nconnected DDB can operate independently. \r\n\u25cf A high degree of autonomy is desirable for increased flexibility and \r\ncustomized maintenance of an individual node. \r\n\u25cf Autonomy can be applied to design, communication, and execution. \r\n\u25cf Design autonomy refers to independence of data model usage and \r\ntransaction management techniques among nodes. \r\n\u25cf Communication autonomy determines the extent to which each node \r\ncan decide on sharing of information with other nodes. \r\n\u25cf Execution autonomy refers to independence of users to act as they \r\nplease.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_017.webp",
+      "text": "Distributed Database Concepts\r\nAdvantages of Distributed Databases\r\n1. Improved ease and flexibility of application development.\r\n2. Increased availability.\r\n\u25cb A distributed database system has multiple nodes (computers) and if one fails then \r\nothers are available to do the job.\r\n3. Improved performance.\r\n\u25cb A distributed DBMS fragments the database to keep data closer to where it is needed \r\nmost (Data localization). \r\n\u25cb This reduces data management (access and modification) time significantly.\r\n4. Easier expansion via scalability. \r\n\u25cb Allows new nodes (computers) to be added anytime without chaining the entire \r\nconfiguration.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_018.webp",
+      "text": "Distributed Database Concepts\r\nAdditional Functions of Distributed Databases\r\n1. Keeping track of data distribution: The ability to keep track of the data \r\ndistribution, fragmentation, and replication by expanding the DDBMS catalog.\r\n2. Distributed query processing: The ability to access remote sites and transmit \r\nqueries and data among the various sites via a communication network.\r\n3. Distributed transaction management: The ability to devise execution strategies \r\nfor queries and transactions that access data from more than one site and to \r\nsynchronize the access to distributed data and maintain the integrity of the overall \r\ndatabase.\r\n4. Replicated data management: The ability to decide which copy of a replicated \r\ndata item to access and to maintain the consistency of copies of a replicated data \r\nitem.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_019.webp",
+      "text": "Distributed Database Concepts\r\nAdditional Functions of Distributed Databases\r\n5. Distributed database recovery: The ability to recover from individual site crashes \r\nand from new types of failures, such as the failure of communication links.\r\n6. Security: Distributed transactions must be executed with the proper management \r\nof the security of the data and the authorization/access privileges of users.\r\n7. Distributed directory (catalog) management: A directory contains information \r\n(metadata) about data in the database. The directory may be global for the entire \r\nDDB, or local for each site. The placement and distribution of the directory are \r\ndesign and policy issues.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_020.webp",
+      "text": "Data Fragmentation, Replication and Allocation\r\nData Fragmentation\r\n\u25cf Break a database into logical units.\r\nData Replication\r\n\u25cf Storing certain data or fragments in more than one site.\r\n\u25cf Increases availability and reliability.\r\nData Allocation\r\n\u25cf Allocating fragments (or replicas of fragments) for storage at the various \r\nnodes.\r\nData Fragmentation, Replication and Allocation are techniques are used \r\nduring the process of distributed database design.\r\nThe information concerning these techniques is stored in a global directory\r\nthat is accessed by the DDBS applications as needed.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_021.webp",
+      "text": "Data Fragmentation\r\n\u25cf Split a relation into logically related and correct parts. \r\nWhy fragment? \r\n\u25cf Usage\r\n\u25cb Applications work with views rather than entire relations.\r\n\u25cf Efficiency\r\n\u25cb Data is stored close to where it is most frequently used.\r\n\u25cb Data that is not needed by local applications is not stored.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_022.webp",
+      "text": "Data Fragmentation\r\nWhy fragment? \r\n\u25cf Parallelism\r\n\u25cb With fragments as units of distribution, transaction can be divided as several \r\nsubqueries that operate on fragments.\r\n\u25cf Security\r\n\u25cb Data not required by applications need is not stored and so not available to \r\nunauthorized users.\r\nDisadvantages:\r\n\u25cf Performance\r\n\u25cf Integrity",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_023.webp",
+      "text": "Data Fragmentation\r\nThree correctness rules \r\n\u25cf Completeness\r\n\u25cf Reconstruction\r\n\u25cf Disjointness",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_024.webp",
+      "text": "Data Fragmentation\r\nTypes of fragmentation\r\n\u25cf Horizontal Fragmentation\r\n\u25cf Vertical Fragmentation\r\n\u25cf Mixed Fragmentation",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_025.webp",
+      "text": "Data Fragmentation\r\nHorizontal fragmentation (Sharding)\r\n\u25cf It is a horizontal subset of a relation which contain those of tuples \r\nwhich satisfy selection conditions.\r\n\u25cf Consider the Employee relation with selection condition (DNO = 5). \r\nAll tuples satisfy this condition will create a subset which will be a \r\nhorizontal fragment of Employee relation.\r\n\u25cf A selection condition may be composed of several conditions \r\nconnected by AND or OR.\r\n\u25cf Derived horizontal fragmentation: It is the partitioning of a primary \r\nrelation to other secondary relations which are related with Foreign \r\nkeys.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_026.webp",
+      "text": "Data Fragmentation\r\nHorizontal fragmentation (Sharding)",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_027.webp",
+      "text": "Data Fragmentation\r\nVertical fragmentation\r\n\u25cf It is a subset of a relation which is created by a subset of columns. \r\nThus a vertical fragment of a relation will contain values of selected \r\ncolumns. There is no selection condition used in vertical \r\nfragmentation.\r\n\u25cf Consider the Employee relation. A vertical fragment of can be created \r\nby keeping the values of Name, Bdate, Sex, and Address.\r\n\u25cf Because there is no condition for creating a vertical fragment, each \r\nfragment must include the primary key attribute of the parent \r\nrelation Employee. In this way all vertical fragments of a relation are \r\nconnected.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_028.webp",
+      "text": "Data Fragmentation\r\nVertical fragmentation",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_029.webp",
+      "text": "Data Fragmentation\r\nRepresentation: Horizontal fragmentation\r\n\u25cf Each horizontal fragment on a relation can be specified by a \u03c3Ci (R) \r\noperation in the relational algebra.\r\n\u25cf Complete horizontal fragmentation: A set of horizontal fragments whose \r\nconditions C1, C2, \u2026, Cn include all the tuples in R- that is, every tuple in R \r\nsatisfies (C1 OR C2 OR \u2026 OR Cn).\r\n\u25cf Disjoint complete horizontal fragmentation: No tuple in R satisfies (Ci \r\nAND Cj) where i \u2260 j. \r\n\u25cf To reconstruct R from horizontal fragments a UNION is applied.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_030.webp",
+      "text": "Data Fragmentation\r\nRepresentation: Vertical fragmentation\r\n\u25cf A vertical fragment on a relation can be specified by a \u03a0Li(R) operation in \r\nthe relational algebra.\r\n\u25cf Complete vertical fragmentation: A set of vertical fragments whose \r\nprojection lists L1, L2, \u2026, Ln include all the attributes in R but share only \r\nthe primary key of R. \r\n\u25cf In this case the projection lists satisfy the following two conditions:\r\n1. L1 \u222a L2 \u222a ... \u222a Ln = ATTRS (R) \r\n2. Li \u2229 Lj = PK(R) for any i j, where ATTRS (R) is the set of attributes of R and PK(R) is the \r\nprimary key of R.\r\n\u25cf To reconstruct R from complete vertical fragments a OUTER UNION or \r\nFULL OUTER JOIN is applied.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_031.webp",
+      "text": "Data Fragmentation\r\nRepresentation: Mixed (Hybrid) fragmentation\r\n\u25cf A combination of Vertical fragmentation and Horizontal fragmentation.\r\n\u25cf This is achieved by SELECT-PROJECT operations which is represented by \r\n\u03a0Li(\u03c3Ci (R)).\r\n\u25cf If C = True (Select all tuples) and L \u2260 ATTRS(R), we get a vertical fragment, \r\nand if C \u2260 True and L \u2260 ATTRS(R), we get a mixed fragment.\r\n\u25cf If C = True and L = ATTRS(R), then R can be considered a fragment.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_032.webp",
+      "text": "Data Fragmentation\r\nMixed (Hybrid) fragmentation",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_033.webp",
+      "text": "Data Fragmentation\r\nFragmentation schema\r\n\u25cf A definition of a set of fragments (horizontal or vertical or horizontal and \r\nvertical) that includes all attributes and tuples in the database that satisfies the \r\ncondition that the whole database can be reconstructed from the fragments by \r\napplying some sequence of UNION (or OUTER JOIN) and UNION operations.\r\nAllocation schema\r\n\u25cf It describes the distribution of fragments to sites of distributed databases. \r\n\u25cf It is a mapping that specifies for each fragment the site(s) at which it is stored. \r\n\u25cf If a fragment is stored at more than one site, it is said to be replicated.\r\n\u25cf It can be fully or partially replicated or can be partitioned.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_034.webp",
+      "text": "Data Replication and Allocation\r\n\u25cf Data Replication\r\n\u25cb Database is replicated to all sites.\r\n\u25cb In full replication the entire database is replicated and in partial \r\nreplication some selected part is replicated to some of the sites. \r\n\u25cb Data replication is achieved through a replication schema.\r\n\u25cf Data Distribution (Data Allocation)\r\n\u25cb This is relevant only in the case of partial replication or partition.\r\n\u25cb The selected portion of the database is distributed to the database \r\nsites.\r\n\u25cb Choices depend on performance and availability goals of the system.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 35,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_035.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_035.webp",
+      "text": "Data Replication and Allocation\r\n\u25cf Fully replicated distributed database\r\n\u25cb Replication of whole database at every site in distributed system.\r\n\u25cb Improves availability remarkably.\r\n\u25cb Update operations can be slow.\r\n\u25cf Nonredundant allocation (no replication)\r\n\u25cb Each fragment is stored at exactly one site.\r\n\u25cf Partial replication\r\n\u25cb Some fragments are replicated and others are not.\r\n\u25cb Defined by replication schema.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 36,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_036.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_036.webp",
+      "text": "Example of Fragmentation, Replication and Allocation\r\n\u25cf Company with three computer sites\r\n\u25cb One for each department\r\n\u25cb Expect frequent access by employees working in the department and \r\nprojects controlled by that department",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 37,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_037.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_037.webp",
+      "text": "Example of Fragmentation, Replication and Allocation",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 38,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_038.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_038.webp",
+      "text": "Example of Fragmentation, Replication and Allocation",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 39,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_039.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_039.webp",
+      "text": "Types of Distributed Database Systems\r\nHomogeneous DDBMSs\r\n\u25cf All sites of the database system \r\nhave identical setup, i.e., same \r\ndatabase system software.\r\n\u25cf The underlying operating system \r\nmay be different.\r\n\u25cb For example, all sites run Oracle \r\nor DB2, or Sybase or some other \r\ndatabase system.\r\n\u25cf The underlying operating \r\nsystems can be a mixture of \r\nLinux, Window, Unix, etc.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 40,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_040.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_040.webp",
+      "text": "Types of Distributed Database Systems\r\nHomogeneous DDBMSs\r\n\u25cf Much easier to design and manage.\r\n\u25cf Approach provides incremental growth and improved \r\nperformance.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 41,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_041.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_041.webp",
+      "text": "Types of Distributed Database Systems\r\nHeterogeneous DDBMSs\r\n\u25cf Federated: Each site may run different \r\ndatabase system but the data access is \r\nmanaged through a single conceptual \r\nschema. \r\n\u25cf This implies that the degree of local \r\nautonomy is minimum. Each site must \r\nadhere to a centralized access policy. \r\nThere may be a global schema.\r\n\u25cf Multidatabase: There is no one \r\nconceptual global schema. For data access \r\na schema is constructed dynamically as \r\nneeded by the application software.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 42,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_042.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_042.webp",
+      "text": "Types of Distributed Database Systems\r\nHeterogeneous DDBMSs\r\n\u25cf The sites may run different DBMS softwares, with possibly different data \r\nmodels.\r\n\u25cf Occurs when sites have implemented their own databases and integration \r\nis considered later.\r\n\u25cf Translations required to allow for:\r\n\u25cb Different hardware\r\n\u25cb Different DBMS softwares\r\n\u25cb Different hardware and different DBMS softwares\r\n\u25cf Typical solution is to use gateways.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 43,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_043.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_043.webp",
+      "text": "Types of Distributed Database Systems",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 44,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_044.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_044.webp",
+      "text": "Types of Distributed Database Systems\r\nFederated database management systems issues\r\n\u25cf Differences in data models\r\n\u25cf Differences in constraints\r\n\u25cf Differences in query languages\r\nSemantic heterogeneity\r\n\u25cf Differences in meaning, interpretation, and intended use of the \r\nsame or related data",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 45,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_045.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_045.webp",
+      "text": "Types of Distributed Database Systems\r\nFederated database management systems issues\r\n\u25cf Differences in data models\r\n\u25cb Relational, Objected oriented, hierarchical, network, etc.\r\n\u25cf Differences in constraints\r\n\u25cb Each site may have their own data accessing and processing constraints.\r\n\u25cf Differences in query languages\r\n\u25cb Some site may use SQL, some may use SQL-89, some may use SQL-92, and so \r\non.\r\nSemantic heterogeneity\r\n\u25cf Differences in meaning, interpretation, and intended use of the \r\nsame or related data",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 46,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_046.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_046.webp",
+      "text": "Types of Distributed Database Systems\r\nSemantic heterogeneity\r\nDesign autonomy allows definition of the following parameters\r\n\u25cf The universe of discourse from which the data is drawn\r\n\u25cf Representation and naming\r\n\u25cf Understanding, meaning, and subjective interpretation of data\r\n\u25cf Transaction and policy constraints\r\n\u25cf Derivation of summaries",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 47,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_047.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_047.webp",
+      "text": "Types of Distributed Database Systems\r\n\u25cf Communication autonomy\r\n\u25cb Decide whether to communicate with another component DBS\r\n\u25cf Execution autonomy\r\n\u25cb Execute local operations without interference from external \r\noperations by other component DBSs\r\n\u25cb Ability to decide order of execution\r\n\u25cf Association autonomy\r\n\u25cb Decide whether and how much to share its functionality and \r\nresources",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 48,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_048.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_048.webp",
+      "text": "Distributed Database Architectures\r\n\u25cf Parallel versus distributed architectures\r\n\u25cf Types of multiprocessor system architectures\r\na. Shared memory (tightly coupled)\r\nb. Shared disk (loosely coupled)\r\nc. Shared-nothing",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 49,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_049.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_049.webp",
+      "text": "Distributed Database Architectures\r\nParallel DBMS",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 50,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_050.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_050.webp",
+      "text": "Distributed Database Architectures",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 51,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_051.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_051.webp",
+      "text": "Distributed Database Architectures\r\nGeneral Architecture of Pure Distributed Databases\r\n\u25cf Global query compiler\r\n\u25cb References global conceptual schema from the global system catalog to \r\nverify and impose defined constraints\r\n\u25cf Global query optimizer\r\n\u25cb Generates optimized local queries from global queries\r\n\u25cf Global transaction manager\r\n\u25cb Coordinates the execution across multiple sites with the local transaction \r\nmanagers",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 52,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_052.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_052.webp",
+      "text": "Distributed Database Architectures\r\nSchema Architecture",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 53,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_053.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_053.webp",
+      "text": "Design Issues in Distributed DBMS\r\nThe challenges that are faced in designing a distributed database are its \r\ndesign issues. \r\n1. Distributed database design\r\n2. Distributed directory management\r\n3. Distributed query processing\r\n4. Distributed concurrency control\r\n5. Distributed deadlock management\r\n6. Reliability of DDBS\r\n7. Replication",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 54,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_054.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_054.webp",
+      "text": "Design Issues in Distributed DBMS\r\n1. Distributed database design\r\n\u25cf How the database and the applications that run against it should be placed \r\nacross the sites?\r\n\u25cf Two alternative designs\r\n\u25cb Partitioned database\r\n\u25cb Replicated database\r\n\u25cf Fundamental design issues\r\n\u25cb Locality of reference\r\n\u25cb Reliability and availability\r\n\u25cb Performance\r\n\u25cb Communication cost\r\n\u25cf Optimal design parameters (these costs are to be minimized)\r\n\u25cb Database storage\r\n\u25cb Processing transactions running on it\r\n\u25cb Message communication among sites",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 55,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_055.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_055.webp",
+      "text": "Design Issues in Distributed DBMS\r\n2. Distributed directory management\r\n\u25cf A directory contains information (such as descriptions and location) \r\nabout data items in the database.\r\n\u25cf Directory can be local to each site or global to the entire distributed \r\ndatabase.\r\n\u25cf Problems related to the directory management are similar in nature to \r\nthe database.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 56,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_056.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_056.webp",
+      "text": "Design Issues in Distributed DBMS\r\n3. Distributed query processing\r\n\u25cf Query processing deals with designing algorithms that analyze queries \r\nand convert them into a series of data manipulation operations.\r\n\u25cf Factors to be considered\r\n\u25cb Distribution of data\r\n\u25cb Lack of sufficiently available information\r\n\u25cf Cost involves both data transmission cost and local processing cost.\r\n\u25cf This cost must be minimized.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 57,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_057.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_057.webp",
+      "text": "Design Issues in Distributed DBMS\r\n4. Distributed concurrency control\r\n\u25cf Concurrency control involves synchronization of accesses to the \r\ndistributed database such that the integrity of the database is \r\nmaintained.\r\n\u25cf Integrity check must be done across all replicas.\r\n\u25cf All replicas must reflect the same value.\r\n\u25cf Two approaches: pessimistic and optimistic.\r\n\u25cf Fundamental primitives: \r\n\u25cb Locking\r\n\u25cb Timestamp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 58,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_058.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_058.webp",
+      "text": "Design Issues in Distributed DBMS\r\n5. Distributed deadlock management\r\n\u25cf Deadlock primitives\r\n\u25cb Detection\r\n\u25cb Prevention\r\n\u25cb Avoidance\r\n\u25cb recovery\r\n6. Reliability of DDBS\r\n\u25cf Main aim is to preserve the consistency of data.\r\n\u25cf In case of failures, the consistent state must be achieved.",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 59,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_059.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_059.webp",
+      "text": "Design Issues in Distributed DBMS\r\n7. Replication\r\n\u25cf Types of replication: partial and complete.\r\n\u25cf The protocols must follow two approaches:\r\n\u25cb Lazy\r\n\u25cb Eager",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "index": 60,
+      "image": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/slide_060.webp",
+      "thumb": "/slides/admt_admt_module_4_module_4_distributed_databases_pdf/thumb_060.webp",
+      "text": "Design Issues in Distributed DBMS\r\nRelationship among the design issues",
+      "width": 1440,
+      "height": 810
+    }
+  ]
+}

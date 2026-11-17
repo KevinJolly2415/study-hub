@@ -1,0 +1,278 @@
+{
+  "mtime": 1793870484.1390972,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_001.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_001.webp",
+      "text": "Module 2 Part 3\r\nQuery Optimization\r\nMs. Alvina Lopes",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_002.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_002.webp",
+      "text": "Contents\r\n\uf0b4 Query Optimization Overview\r\n\uf0b4 Transformation of Relational Expressions\r\n\uf0b4 Estimating Statistics of Expression Results\r\n\uf0b4 Choice of Evaluation Plans",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_003.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_003.webp",
+      "text": "Query Optimization\r\n\uf0b4 Query optimization is the process of selecting the most efficient query\ufffeevaluation plan from among the many strategies usually possible for \r\nprocessing a given query.\r\n\uf0b4 Query Optimization is all about finding the query plan that minimizes the \r\nnumber of I/Os it takes to execute the query.\r\n\uf0b4 Query optimization helps choose the most efficient plan by comparing \r\ndifferent execution methods to find the one with the lowest cost. \r\n\uf0b4 The goal of query optimization is to reduce the system resources required to \r\nfulfill a query, and ultimately provide the user with the correct result set \r\nfaster.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_004.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_004.webp",
+      "text": "Query Optimization\r\n\uf0b4 Alternative ways of evaluating a given query\r\n\uf0b4 Equivalent expressions\r\n\uf0b4 Different algorithms for each operation",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_005.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_005.webp",
+      "text": "Query Optimization\r\n\uf0b4 An evaluation plan defines exactly what algorithm is used for each operation, and \r\nhow the execution of the operations is coordinated.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_006.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_006.webp",
+      "text": "Query Optimization\r\n\uf0b4 Cost difference between evaluation plans for a query can be enormous\r\n\uf0b4 E.g., seconds vs. days in some cases\r\n\uf0b4 Steps in cost-based query optimization\r\n1. Generate logically equivalent expressions using equivalence rules\r\n2. Annotate resultant expressions to get alternative query plans\r\n3. Choose the cheapest plan based on estimated cost\r\n\uf0b4 Estimation of plan cost based on:\r\n\uf0b4 Statistical information about relations. Examples:\r\n\uf0b4 number of tuples, number of distinct values for an attribute\r\n\uf0b4 Statistics estimation for intermediate results\r\n\uf0b4 to compute cost of complex expressions\r\n\uf0b4 Cost formulae for algorithms, computed using statistics",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_007.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_007.webp",
+      "text": "Query Optimization\r\nViewing Query Evaluation Plans\r\n\uf0b4 Most database support explain <query>\r\n\uf0b4 Displays plan chosen by query optimizer, along with cost estimates\r\n\uf0b4 Some syntax variations between databases\r\n\uf0b4 Oracle: explain plan for <query> followed by select * from table (dbms_xplan.display)\r\n\uf0b4 SQL Server: set showplan_text on\r\n\uf0b4 Some databases (e.g. PostgreSQL) support explain analyse <query>\r\n\uf0b4 Shows actual runtime statistics found by running the query, in addition to showing the plan\r\n\uf0b4 Some databases (e.g. PostgreSQL) show cost as f..l\r\n\uf0b4 f is the cost of delivering first tuple and l is cost of delivering all results",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_008.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_008.webp",
+      "text": "Transformation of Relational Expressions\r\n\uf0b4 A query can be expressed in several different ways, with different costs of \r\nevaluation.\r\n\uf0b4 Two relational algebra expressions are said to be equivalent if the two \r\nexpressions generate the same set of tuples on every legal database \r\ninstance\r\n\uf0b4 Note: order of tuples is irrelevant\r\n\uf0b4 we don\u2019t care if they generate different results on databases that violate integrity \r\nconstraints\r\n\uf0b4 In SQL, inputs and outputs are multisets of tuples\r\n\uf0b4 Two expressions in the multiset version of the relational algebra are said to be \r\nequivalent if the two expressions generate the same multiset of tuples on every \r\nlegal database instance. \r\n\uf0b4 An equivalence rule says that expressions of two forms are equivalent\r\n\uf0b4 Can replace expression of first form by second, or vice versa",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_009.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_009.webp",
+      "text": "Transformation of Relational Expressions\r\nEquivalence Rules\r\n1. Conjunctive selection operations can be deconstructed into a sequence of \r\nindividual selections.\r\n\u03c3\uf0711 \uf0d9 \uf0712 (E) \u2261 \u03c3\uf0711\r\n(\u03c3\uf0712 (E))\r\n2. Selection operations are commutative.\r\n\u03c3\uf0711\r\n(\u03c3\uf0712\r\n(E)) \u2261 \u03c3\uf0712\r\n(\u03c3\uf0711\r\n(E))\r\n3. Only the last in a sequence of projection operations is needed, the others \r\ncan be omitted.\r\n\uf0d5 L1\r\n(\uf0d5 L2\r\n(\u2026(\uf0d5 Ln\r\n(E))\u2026)) \u2261 \uf0d5 L1\r\n(E)\r\nwhere L1 \u2286 L2 \u2026 \u2286 Ln\r\n4. Selections can be combined with Cartesian products and theta joins.\r\na. \u03c3\uf071\r\n(E1\r\nx E2\r\n) \u2261 E1 \u2a1d \uf071 E2\r\nb. \u03c3 \uf0711 (E1 \u2a1d\uf0712\r\nE2\r\n) \u2261 E1 \u2a1d \uf0711\r\n\u2227\uf0712\r\nE2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_010.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_010.webp",
+      "text": "Transformation of Relational Expressions\r\nEquivalence Rules\r\n5. Theta-join operations (and natural joins) are commutative.\r\nE1 \u2a1d E2 \u2261 E2 \u2a1d E1\r\n6. (a) Natural join operations are associative:\r\n(E1 \u2a1d E2\r\n) \u2a1d E3 \u2261 E1 \u2a1d (E2 \u2a1d E3\r\n)\r\n(b) Theta joins are associative in the following manner:\r\n(E1 \u2a1d \uf0711\r\nE2\r\n) \u2a1d \uf0712 \uf0d9 \uf0713 E3 \u2261 E1 \u2a1d\uf0711 \uf0d9 \uf0713\r\n(E2 \u2a1d \uf0712\r\nE3\r\n)\r\nwhere \uf0712\r\ninvolves attributes from only E2 and E3\r\n.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_011.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_011.webp",
+      "text": "Transformation of Relational Expressions\r\nPictorial depiction\r\nOf Equivalence \r\nRules",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_012.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_012.webp",
+      "text": "Transformation of Relational Expressions\r\nEquivalence Rules\r\n7. The selection operation distributes over the theta join operation under the \r\nfollowing two conditions:\r\n(a) When all the attributes in \uf0710 involve only the attributes of one \r\nof the expressions (E1\r\n) being joined.\r\n\uf073\uf0710 (E1 \u2a1d\uf071 E2\r\n) \u2261 (\uf073\uf0710\r\n(E1\r\n)) \u2a1d\uf071 E2\r\n(b) When \uf0711 involves only the attributes of E1 and \uf0712 involves \r\nonly the attributes of E2\r\n.\r\n\uf073\uf0711\r\n\uf0d9 \uf0712\r\n(E1 \u2a1d\uf071 E2\r\n) \u2261 (\uf073\uf0711\r\n(E1\r\n)) \u2a1d\uf071\r\n(\uf073\uf0712\r\n(E2\r\n))",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_013.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_013.webp",
+      "text": "Transformation of Relational Expressions\r\nEquivalence Rules\r\n8. The projection operation distributes over the theta join operation as follows:\r\n(a) if \uf071 involves only attributes from L1 \uf0c8 L2\r\n:\r\n\uf0d5 L1 \uf0c8 L2\r\n(E1 \u2a1d\uf071 E2\r\n) \u2261 \uf0d5 L1\r\n(E1\r\n) \u2a1d\uf071 \uf0d5 L2\r\n(E2\r\n)\r\n(b) In general, consider a join E1 \u2a1d\uf071 E2\r\n. \r\n\uf0b4 Let L1 and L2 be sets of attributes from E1 and E2\r\n, respectively. \r\n\uf0b4 Let L3 be attributes of E1\r\nthat are involved in join condition \uf071, but are not in L1 \uf0c8 L2\r\n, \r\nand\r\n\uf0b4 let L4 be attributes of E2 that are involved in join condition \uf071, but are not in L1 \uf0c8 L2\r\n.\r\n\uf0d5 L1 \uf0c8 L2\r\n(E1 \u2a1d\uf071 E2\r\n) \u2261 \uf0d5 L1 \uf0c8 L2\r\n(\uf0d5 L1 \uf0c8 L3\r\n(E1\r\n) \u2a1d\uf071 \uf0d5 L2 \uf0c8 L4\r\n(E2\r\n))\r\nSimilar equivalences hold for outer join operations: \u27d5, \u27d6, and \u27d7",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_014.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_014.webp",
+      "text": "Transformation of Relational Expressions\r\nEquivalence Rules\r\n9. The set operations union and intersection are commutative\r\nE1 \uf0c8 E2 \u2261 E2 \uf0c8 E1 E1 \uf0c7 E2 \u2261 E2 \uf0c7 E1\r\n(set difference is not commutative).\r\n10. Set union and intersection are associative.\r\n(E1 \uf0c8 E2 ) \uf0c8 E3 \u2261 E1 \uf0c8 (E2 \uf0c8 E3\r\n)\r\n(E1 \uf0c7 E2 ) \uf0c7 E3 \u2261 E1 \uf0c7 (E2 \uf0c7 E3\r\n)\r\n11. The selection operation distributes over \uf0c8, \uf0c7 and \u2013. \r\na. \uf073\uf071\r\n(E1 \uf0c8 E2\r\n) \u2261 \uf073\uf071\r\n(E1\r\n) \uf0c8 \uf073\uf071\r\n(E2\r\n)\r\nb. \uf073\uf071\r\n(E1 \uf0c7 E2\r\n) \u2261 \uf073\uf071\r\n(E1\r\n) \uf0c7 \uf073\uf071\r\n(E2\r\n)\r\nc. \uf073\uf071\r\n(E1 \u2013 E2\r\n) \u2261 \uf073\uf071\r\n(E1\r\n) \u2013 \uf073\uf071\r\n(E2\r\n)\r\nd. \uf073\uf071\r\n(E1 \uf0c7 E2\r\n) \u2261 \uf073\uf071\r\n(E1\r\n) \uf0c7 E2\r\ne. \uf073\uf071\r\n(E1 \u2013 E2\r\n) \u2261 \uf073\uf071\r\n(E1\r\n) \u2013 E2\r\npreceding equivalence does not hold for \uf0c8\r\n12. The projection operation distributes over union\r\n\uf050L\r\n(E1 \uf0c8 E2\r\n) \u2261 (\uf050L\r\n(E1\r\n)) \uf0c8 (\uf050L\r\n(E2\r\n))",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_015.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_015.webp",
+      "text": "Transformation of Relational Expressions\r\nEquivalence Rules\r\n13. Selection distributes over aggregation as below\r\n\uf073\uf071\r\n(G\ud835\udefeA(E)) \u2261 G\ud835\udefeA(\uf073\uf071\r\n(E)) \r\nprovided \uf071 only involves attributes in G\r\n14. a. Full outer join is commutative:\r\nE1 \u27d7 E2 \u2261 E2 \u27d7 E1 \r\nb. Left and right outer join are not commutative, but:\r\nE1 \u27d5 E2 \u2261 E2 \u27d6 E1\r\n15. Selection distributes over left and right outer joins as below, provided \uf0711\r\nonly involves attributes of E1\r\na. \uf073\uf0711\r\n(E1 \u27d5\uf071 E2\r\n) \u2261 (\uf073\uf0711\r\n(E1\r\n)) \u27d5\uf071 E2\r\nb. \uf073\uf0711\r\n(E1 \u27d6\uf071 E2\r\n) \u2261 E2 \u27d5\uf071\r\n(\uf073\uf0711\r\n(E1\r\n))\r\n16. Outer joins can be replaced by inner joins under some conditions\r\na. \uf073\uf0711\r\n(E1 \u27d5\uf071 E2\r\n) \u2261 \uf073\uf0711\r\n(E1 \u2a1d\uf071 E2\r\n)\r\nb. \uf073\uf0711\r\n(E1 \u27d6\uf071 E1\r\n) \u2261 \uf073\uf0711\r\n(E1 \u2a1d\uf071 E2\r\n)\r\nprovided \uf0711\r\nis null rejecting on E2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_016.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_016.webp",
+      "text": "Transformation of Relational Expressions\r\nEquivalence Rules\r\n\uf0b4 This is only a partial list of equivalences.\r\n\uf0b4 Note that several equivalences that hold for joins do not hold for outer joins.\r\n\uf0b4 For example, the selection operation does not distribute over outer join \r\nwhen the conditions specified in rule 15.a or rule 15.b do hold.\r\n\uf0b4 \uf073year=2017(instructor \u27d5 teaches) \u2262 \uf073year=2017(instructor \u2a1d teaches)\r\n\uf0b4 Outer joins are not associative\r\n(r \u27d5 s) \u27d5 t \u2262 r \u27d5 (s \u27d5 t)\r\n\uf0b4 e.g. with r(A,B) = {(1,1), s(B,C) = { (1,1)}, t(A,C) = { }",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_017.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_017.webp",
+      "text": "Transformation of Relational Expressions\r\nTransformation Example\r\nConsider the University database with the relation schemas:\r\ninstructor(ID, name, dept name, salary)\r\nteaches(ID, course id, sec id, semester, year)\r\ncourse(course id, title, dept name, credits)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_018.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_018.webp",
+      "text": "Transformation of Relational Expressions\r\nTransformation Example: Pushing Selections\r\n\uf0b4 Query: Find the names of all instructors in the Music department, along with \r\nthe titles of the courses that they teach\r\n\uf0b4 \uf050name, title(\uf073dept_name= \u2018Music\u2019\r\n(instructor \u2a1d (teaches \u2a1d \uf050course_id, title (course))))\r\n\uf0b4 Transformation using rule 7a.\r\n\uf0b4 \uf050name, title((\uf073dept_name= \u2018Music\u2019\r\n(instructor)) \u2a1d\r\n(teaches \u2a1d \uf050course_id, title (course)))\r\n\uf0b4 Performing the selection as early as possible reduces the size of the relation \r\nto be joined.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_019.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_019.webp",
+      "text": "Transformation of Relational Expressions\r\nTransformation Example",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_020.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_020.webp",
+      "text": "Transformation of Relational Expressions\r\nTransformation Example\r\nEvaluation plan with annotation",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_021.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_021.webp",
+      "text": "Transformation of Relational Expressions\r\nTransformation Example: Multiple Transformations\r\n\uf0b4 Query: Find the names of all instructors in the Music department who have \r\ntaught a course in 2017, along with the titles of the courses that they taught\r\n\uf0b4 \uf050name, title(\uf073dept_name= \"Music\u201d\uf0d9year = 2017\r\n (instructor \u2a1d (teaches \u2a1d \uf050course_id, title (course))))\r\n\uf0b4 Transformation using join associatively (Rule 6a):\r\n\uf0b4 \uf050name, title(\uf073dept_name= \u201cMusic\u201d\uf0d9year = 2017\r\n ((instructor \u2a1d teaches) \u2a1d \uf050course_id, title (course)))\r\n\uf0b4 Second form provides an opportunity to apply the \u201cperform selections early\u201d\r\nrule, resulting in the subexpression\r\n \uf073dept_name = \u201cMusic\u201d\r\n(instructor) \u2a1d \uf073 year = 2017 (teaches)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_022.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_022.webp",
+      "text": "Transformation of Relational Expressions\r\nTransformation Example: Multiple Transformations",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_023.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_023.webp",
+      "text": "Transformation of Relational Expressions\r\nTransformation Example: Pushing Projections\r\n\uf0b4 Consider: \uf050name, title(\uf073dept_name= \u201cMusic\u201d\r\n(instructor) \u2a1d teaches) \r\n \u2a1d \uf050course_id, title (course))))\r\n\uf0b4 When we compute\r\n(\uf073dept_name = \u201cMusic\u201d\r\n(instructor \u2a1d teaches)\r\nwe obtain a relation whose schema is:\r\n(ID, name, dept_name, salary, course_id, sec_id, semester, year)\r\n\uf0b4 Push projections using equivalence rules 8a and 8b; eliminate unneeded \r\nattributes from intermediate results to get:\r\n \uf050name, title(\uf050name, course_id (\r\n \uf073dept_name= \u201cMusic\u201d\r\n(instructor) \u2a1d teaches)) \r\n \u2a1d \uf050course_id, title (course))))\r\n\uf0b4 Performing the projection as early as possible reduces the size of the relation \r\nto be joined.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_024.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_024.webp",
+      "text": "Transformation of Relational Expressions\r\nJoin Ordering Example\r\n\uf0b4 For all relations r1, r2, and r3\r\n,\r\n(r1 \u2a1d r2\r\n) \u2a1d r3 = r1 \u2a1d (r2 \u2a1d r3 )\r\n(Join Associativity) \u2a1d\r\n\uf0b4 If r2 \u2a1d r3 is quite large and r1 \u2a1d r2\r\nis small, we choose\r\n(r1 \u2a1d r2\r\n) \u2a1d r3\r\nso that we compute and store a smaller temporary relation.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_025.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_025.webp",
+      "text": "Transformation of Relational Expressions\r\nJoin Ordering Example\r\n\uf0b4 Consider the expression\r\n\uf050name, title(\uf073dept_name= \u201cMusic\u201d\r\n(instructor) \u2a1d teaches) \r\n\u2a1d \uf050course_id, title (course))))\r\n\uf0b4 Could compute teaches \u2a1d \uf050course_id, title (course) first, and join result with \r\n\uf073dept_name= \u201cMusic\u201d\r\n(instructor)\r\nbut the result of the first join is likely to be a large relation.\r\n\uf0b4 Only a small fraction of the university\u2019s instructors are likely to be from the \r\nMusic department\r\n\uf0b4 it is better to compute\r\n\uf073dept_name= \u201cMusic\u201d\r\n(instructor) \u2a1d teaches \r\n first.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_026.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_026.webp",
+      "text": "Transformation of Relational Expressions\r\nEnumeration of Equivalent Expressions\r\n\uf0b4 Query optimizers use equivalence rules to systematically generate \r\nexpressions equivalent to the given expression\r\n\uf0b4 Can generate all equivalent expressions as follows: \r\n\uf0b4 Repeat\r\n\uf0b4apply all applicable equivalence rules on every subexpression of every \r\nequivalent expression found so far\r\n\uf0b4add newly generated expressions to the set of equivalent expressions \r\n\uf0b4 Until no new equivalent expressions are generated above\r\n\uf0b4 The above approach is very expensive in space and time\r\n\uf0b4 Two approaches\r\n\uf0b4 Optimized plan generation based on transformation rules\r\n\uf0b4 Special case approach for queries with only selections, projections and joins",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_027.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_027.webp",
+      "text": "Estimating Statistics of Expression Results\r\nCost Estimation\r\n\uf0b4 Cost of each operator computer as described in Module 2 Part 2\r\n\uf0b4 Need statistics of input relations\r\n\uf0b4E.g., number of tuples, sizes of tuples\r\n\uf0b4 Inputs can be results of sub-expressions\r\n\uf0b4 Need to estimate statistics of expression results\r\n\uf0b4 To do so, we require additional statistics\r\n\uf0b4E.g., number of distinct values for an attribute",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_028.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_028.webp",
+      "text": "Estimating Statistics of Expression Results\r\n\uf0b4 The database-system catalog stores the following statistical information \r\nabout database relations:\r\n\uf0b4 nr\r\n: number of tuples in a relation r.\r\n\uf0b4 br\r\n: number of blocks containing tuples of r.\r\n\uf0b4 l\r\nr\r\n: size of a tuple of r.\r\n\uf0b4 f\r\nr\r\n: blocking factor of r \u2014 i.e., the number of tuples of r that fit into one block.\r\n\uf0b4 V(A, r): number of distinct values that appear in r for attribute A; same as the \r\nsize of \uf0d5A(r).\r\n\uf0b4 If tuples of r are stored together physically in a file, then:\r\n\u00fa\r\n\u00fa\r\n\u00fa\r\n\u00fa\r\n\u00f9\r\n\u00ea\r\n\u00ea\r\n\u00ea\r\n\u00ea\r\n\u00e9\r\n=\r\nr\r\nf\r\nr\r\nn\r\nr\r\nb",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_029.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_029.webp",
+      "text": "Estimating Statistics of Expression Results\r\nHistograms\r\n\uf0b4 Histogram on attribute age of relation person\r\n\uf0b4 Equi-width histograms\r\n\uf0b4 Equi-depth histograms break up range such that each range has \r\n(approximately) the same number of tuples\r\n\uf0b4 E.g. (4, 8, 14, 19) \r\n\uf0b4 Many databases also store n most-frequent values and their counts\r\n\uf0b4 Histogram is built on remaining values only\r\nvalue\r\nfrequency\r\n50\r\n40\r\n30\r\n20\r\n10\r\n1\u20135 6\u201310 11\u201315 16\u201320 21\u201325",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_030.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_030.webp",
+      "text": "Estimating Statistics of Expression Results\r\nHistograms\r\n\uf0b4 Histograms and other statistics usually computed based on a random \r\nsample\r\n\uf0b4 Statistics may be out of date\r\n\uf0b4 Some database require a analyze command to be executed to update \r\nstatistics\r\n\uf0b4 Others automatically recompute statistics \r\n\uf0b4e.g., when number of tuples in a relation changes by some percentage",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_031.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_031.webp",
+      "text": "Choice of Evaluation Plans\r\n\uf0b4 Must consider the interaction of evaluation techniques when choosing \r\nevaluation plans\r\n\uf0b4 choosing the cheapest algorithm for each operation independently may not \r\nyield best overall algorithm. E.g.\r\n\uf0b4merge-join may be costlier than hash-join, but may provide a sorted output \r\nwhich reduces the cost for an outer level aggregation.\r\n\uf0b4nested-loop join may provide opportunity for pipelining\r\n\uf0b4 Practical query optimizers incorporate elements of the following two broad \r\napproaches:\r\n1. Search all the plans and choose the best plan in a cost-based fashion.\r\n2. Uses heuristics to choose a plan.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_032.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_032.webp",
+      "text": "Choice of Evaluation Plans\r\nCost-based optimization\r\n\uf0b4 A cost-based optimizer explores the space of all query-evaluation plans that \r\nare equivalent to the given query, and chooses the one with the least \r\nestimated cost.\r\n\uf0b4 Consider finding the best join-order for r1 \u2a1d r2 \u2a1d \r\n. . . \u2a1d rn\r\n.\r\n\uf0b4 There are (2(n \u2013 1))!/(n \u2013 1)! different join orders for above expression. With n\r\n= 7, the number is 665280, with n = 10, the number is greater than 176 billion!\r\n\uf0b4 No need to generate all the join orders. Using dynamic programming, the \r\nleast-cost join order for any subset of {r1\r\n, r2\r\n, . . . rn\r\n} is computed only once \r\nand stored for future use. \r\n\uf0b4 Even with dynamic programming, time complexity of optimization with \r\nbushy trees is very high. \r\n\uf0b4 Alternative: consider left-deep join trees.\r\n\uf0b4 Use heuristics to reduce cost further.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_033.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_033.webp",
+      "text": "Choice of Evaluation Plans\r\nLeft-deep join trees\r\n\uf0b4 In left-deep join trees, the right-hand-side input for each join is a relation, not \r\nthe result of an intermediate join.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/admt_admt_module_2_module2-part3_pdf/slide_034.webp",
+      "thumb": "/slides/admt_admt_module_2_module2-part3_pdf/thumb_034.webp",
+      "text": "Choice of Evaluation Plans\r\nHeuristic Optimization\r\n\uf0b4 Cost-based optimization is expensive, even with dynamic programming.\r\n\uf0b4 Systems may use heuristics to reduce the number of choices that must be \r\nmade in a cost-based fashion.\r\n\uf0b4 Heuristic optimization transforms the query-tree by using a set of rules that \r\ntypically (but not in all cases) improve execution performance:\r\n\uf0b4 Perform selection early (reduces the number of tuples)\r\n\uf0b4 Perform projection early (reduces the number of attributes)\r\n\uf0b4 Perform most restrictive selection and join operations (i.e., with smallest result \r\nsize) before other similar operations.\r\n\uf0b4 Some systems use only heuristics, others combine heuristics with partial cost\ufffebased optimization.",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

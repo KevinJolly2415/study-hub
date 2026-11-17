@@ -1,0 +1,726 @@
+{
+  "mtime": 1794850178.8985515,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_001.webp",
+      "text": "Unit 4\r\n\u2022 Hypothesis Testing \r\n\u2022 ANOVA \r\n\u2022 Bayes Theorem \r\n\u2022 Bayesian Networks \r\n\u2022 MDP",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_002.webp",
+      "text": "HYPOTHESIS TESTING\r\nUnderstand the terminology before learning Z-Test \r\nand T-Test",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_003.webp",
+      "text": "Why Do We Need Hypothesis Testing?\r\n\u2022 Usually, we cannot study every member of a population. We collect a\r\nsample and use it to make a conclusion about the population.\r\n\u2022 Sample results vary naturally from sample to sample. A difference observed\r\nin a sample may simply be due to random chance.\r\n\u2022 Hypothesis testing provides a systematic way to decide whether the\r\nobserved evidence is strong enough to support or reject a claim.\r\n\u2022 Example: A college claims that the average score is 70. If a sample mean is\r\n73, hypothesis testing tells us whether 73 is significantly different from 70.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_004.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_005.webp",
+      "text": "Necessity and Importance\r\n\u2022 Makes decisions using sample evidence rather than intuition alone.\r\n\u2022 Determines whether an observed difference is statistically significant.\r\n\u2022 Helps evaluate scientific and research claims.\r\n\u2022 Compares treatments, teaching methods, products, processes, or models.\r\n\u2022 Controls the probability of making a Type I error through the significance\r\nlevel \u03b1.\r\nKey idea: hypothesis testing helps distinguish a meaningful signal from\r\nordinary sampling variation.\r\n34",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_006.webp",
+      "text": "Applications of Hypothesis Testing 4.1\r\nMedicine\r\nDoes a new drug improve \r\nrecovery?\r\nEducation\r\nIs a new teaching method \r\nbetter?\r\nManufacturing\r\nHas product quality \r\nimproved?\r\nBusiness\r\nDid a campaign change sales?\r\nAI / Data Science\r\nIs a model improvement \r\nsignificant?\r\nResearch\r\nDoes evidence support a \r\nclaim?\r\n35",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_007.webp",
+      "text": "Example\r\nA university has 10,000 students. The university claims\r\nthat the average Mathematics score of all students is 70\r\nmarks. We randomly select 36 students and find that\r\ntheir average score is 73 marks. The population standard\r\ndeviation is 9 marks. We want to test the claim at a 5%\r\nsignificance level.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_008.webp",
+      "text": "No. Term Simple Meaning Student Population Example Symbol / \r\nValue\r\n1 Population The complete group we are interested in. All 10,000 students in the university. N = 10,000\r\n2 Sample A smaller group selected from the population. We randomly select 36 students. n = 36\r\n3 Population Mean Average value of the entire population.\r\nTrue average Mathematics score of \r\nall 10,000 students.\r\n\u03bc\r\n4 Sample Mean Average value calculated from the sample.\r\nThe 36 selected students have an \r\naverage score of 73.\r\nx\u0304= 73\r\n5\r\nPopulation Standard \r\nDeviation\r\nShows how much student scores vary in the \r\nwhole population.\r\nUniversity knows the population SD \r\nis 9 marks.\r\n\u03c3 = 9\r\n6\r\nSample Standard \r\nDeviation\r\nShows how much scores vary within our sample.\r\nSD calculated using the 36 selected \r\nstudents.\r\ns\r\n7 Sample Size Number of observations/students in the sample. We selected 36 students. n = 36\r\n8 Parameter\r\nA numerical value describing the whole \r\npopulation.\r\nTrue average and SD of all 10,000 \r\nstudents.\r\n\u03bc, \u03c3\r\n9 Statistic A numerical value calculated from the sample.\r\nAverage and SD calculated from 36 \r\nstudents.\r\nx\u0304, s",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_009.webp",
+      "text": "Null Hypothesis \u2014 H\u2080\r\nThe Null Hypothesis is our starting assumption.\r\nWe write:\r\n\ud835\udc3b0\r\nUsually it represents:\r\n\u2022 no difference \r\n\u2022 no change \r\n\u2022 no effect \r\n\u2022 a claimed value \r\nExample:\r\nCollege claims average marks = 70.\r\nTherefore:\r\nH\u2080 \u200b: \u03bc=70",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_010.webp",
+      "text": "The alternative hypothesis is what we want to investigate as an alternative to H\u2080.\r\nIt is written as:\r\n\ud835\udc3b1\r\nor\r\n\ud835\udc3b\ud835\udc4e\r\nFor example:\r\n\ud835\udc3b0: \ud835\udf07 = 70\r\nIf we want to know whether the average is different:\r\n\ud835\udc3b1: \ud835\udf07 \u2260 70\r\nIf we want to know whether it is greater:\r\n\ud835\udc3b1: \ud835\udf07 > 70\r\nIf we want to know whether it is less:\r\n H1\u200b:\u03bc<70\r\nAlternative hypothesis",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_011.webp",
+      "text": "One-Tailed and Two-Tailed Tests\r\nThis depends on H\u2081.\r\nTwo-tailed\r\nIf:\r\n\ud835\udc3b1: \ud835\udf07 \u2260 70\r\nWe are interested in both directions:\r\nLess than 70 70 Greater than 70\r\n \u2190\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2192\r\nSo:\r\n\u2260\u2192 Two\u2212tailed",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_012.webp",
+      "text": "One-Tailed and Two-Tailed Tests\r\nRight-tailed\r\nIf:\r\n\ud835\udc3b1: \ud835\udf07 > 70\r\nwe only care about values greater than 70.\r\n>\u2192 Right\u2212tailed\r\nLeft-tailed\r\nIf:\r\n\ud835\udc3b1: \ud835\udf07 < 70\r\nwe only care about values less than 70.\r\n <\u2192Left-tailed\u200b",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_013.webp",
+      "text": "Significance Level \u2014 \u03b1\r\nThis is one of the most important terms.\r\nWe usually choose:\r\n\ud835\udefc = 0.05\r\nor\r\n\ud835\udefc = 0.01\r\nIn simple language:\r\n\u03b1 tells us how much risk of a false alarm we are willing to tolerate.\r\nFor example:\r\n\ud835\udefc = 0.05\r\nmeans a 5% significance level.\r\nWe use this value to determine the critical region and make our decision.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_014.webp",
+      "text": "Type I Error\r\nImagine H\u2080 is actually true.\r\nBut our test says:\r\n\"Reject H\u2080.\"\r\nWe made a mistake.\r\nThis is called:\r\nType I Error\r\nThink:\r\nFalse alarm / False positive\r\nAnd:\r\nP(Type I Error)=\u03b1\r\nType II Error\r\nNow imagine H\u2080 is actually false.\r\nBut our test says:\r\n\"Fail to reject H\u2080.\"\r\nThat's a Type II Error.\r\nThink:\r\nMissed detection / False negative\r\nIts probability is usually represented \r\nby:\r\n \u03b2\u200b",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_015.webp",
+      "text": "Test Statistic\r\nThis is the number we calculate from the sample to see:\r\nHow unusual is our sample result compared with what H\u2080 says?\r\nFor Z-test:\r\n\ud835\udc4d =\r\n\ud835\udc65\u04a7\u2212 \ud835\udf070\r\n\ud835\udf0e/ \ud835\udc5b\r\nFor T-test:\r\n\ud835\udc61 =\r\n\ud835\udc65\u04a7\u2212 \ud835\udf070\r\n\ud835\udc60/ \ud835\udc5b\r\nYou can think of Z or t as:\r\nHow many standard errors away is our sample result from the value claimed \r\nby H\u2080?",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 16,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_016.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_016.webp",
+      "text": "Standard Error \u2014 SE\r\nThis is another very important concept.\r\nStandard error tells us:\r\nHow much sample averages normally fluctuate from sample to sample.\r\nFor a Z-test:\r\n\ud835\udc46\ud835\udc38 =\r\n\ud835\udf0e\r\n\ud835\udc5b\r\nFor a T-test:\r\nSE= \r\n\ud835\udc60\r\n\ud835\udc5b",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 17,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_017.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_017.webp",
+      "text": "Critical Value\r\nCritical value is the boundary for making our decision.\r\nThink of it as a cut-off point.\r\nFor example, for a two-tailed Z-test at:\r\n\ud835\udefc = 0.05\r\nwe get:\r\n\u22121.96, + 1.96\r\nSo:\r\nReject H\u2080 Don't Reject H\u2080 Reject H\u2080\r\n \u2502 \u2502 \u2502\r\n\u2500\u2500\u2500\u2500\u2500|\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500|\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500|\u2500\u2500\u2500\u2500\u2500\r\n -1.96 0 +1.96\r\nIf our calculated Z is:\r\n\ud835\udc4d = 2.5\r\nthen:\r\n2.5 > 1.96\r\nTherefore, reject H\u2080.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 18,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_018.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_018.webp",
+      "text": "Z-Table\r\nWhere did 1.96 come from?\r\nFrom the standard normal distribution / Z-table.\r\nFor a two-tailed test:\r\n\ud835\udefc = 0.05\r\nwe put:\r\n0.025\r\nin each tail.\r\nThe area to the left of +1.96 is:\r\n0.975\r\nThe Z-table gives:\r\n\ud835\udc4d = 1.96",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 19,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_019.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_019.webp",
+      "text": "p-value\r\nThe p-value tells us roughly:\r\nIf H\u2080 were true, how surprising would our observed result be?\r\nSmall p-value:\r\n\u2192 result is unusual under H\u2080\r\n\u2192 stronger evidence against H\u2080.\r\nLarge p-value:\r\n\u2192 result isn't especially unusual under H\u2080\r\n\u2192 insufficient evidence to reject H\u2080.\r\nDecision:\r\n\ud835\udc5d \u2264 \ud835\udefc \u21d2 \ud835\udc45\ud835\udc52\ud835\udc57\ud835\udc52\ud835\udc50\ud835\udc61 \ud835\udc3b0\r\n p>\u03b1\u21d2Fail to Reject H0\u200b",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 20,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_020.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_020.webp",
+      "text": "Critical Value and Rejection Region 4.1\r\nCritical value: a boundary that separates the rejection region from the non\uffferejection region.\r\nRejection region: values of the test statistic considered sufficiently unlikely if \r\nH\u2080 is true.\r\nFor a two-tailed Z-test at \u03b1 = 0.05, the critical values are approximately \r\n\u22121.96 and +1.96.\r\nIf the test statistic falls in the rejection region \u2192 reject H\u2080.\r\nOtherwise \u2192 fail to reject H\u2080.\r\n41",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 21,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_021.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_021.webp",
+      "text": "10 Hypothesis A claim that we want to test. \u201cThe university's average Mathematics score is 70.\u201d Claim: \u03bc = \r\n70\r\n11 Null Hypothesis The default assumption or original claim. Assume the university's claim is correct. H\u2080: \u03bc = 70\r\n12 Alternative Hypothesis The claim that challenges H\u2080.\r\nWe want to check whether the average is actually \r\ndifferent from 70.\r\nH\u2081: \u03bc \u2260 70\r\n13 One-Tailed Test\r\nLooks for a difference in only one \r\ndirection.\r\nExample: \u201cAre students scoring more than 70?\u201d \u03bc > 70\r\n14 Two-Tailed Test Looks for a difference in either direction. \u201cIs the average score different from 70?\u201d \u03bc \u2260 70\r\n15 Significance Level\r\nMaximum risk we accept of making a \r\nfalse alarm.\r\nWe allow a 5% risk of rejecting a true H\u2080. \u03b1 = 0.05\r\n16 Type I Error Rejecting H\u2080 when H\u2080 is actually true.\r\nWe conclude average \u2260 70, but the true average \r\nreally is 70.\r\nProbability = \r\n\u03b1\r\n17 Type II Error\r\nFailing to reject H\u2080 when H\u2080 is actually \r\nfalse.\r\nWe conclude there is not enough evidence against \r\n70, but the true average is actually different.\r\nProbability = \r\n\u03b2\r\n18 Power\r\nAbility of the test to detect a real \r\ndifference.\r\nAbility to correctly detect that the true average is \r\ndifferent from 70.\r\n1 \u2212 \u03b2\r\n19 Test Statistic\r\nMeasures how far our sample result is \r\nfrom the claimed value.\r\nSample mean 73 is compared with claimed mean 70. Z or t\r\n20 Standard Error\r\nMeasures the usual amount by which \r\nsample means vary.\r\nHow much the average of 36 students is expected to \r\nvary from sample to sample.\r\nSE = \u03c3/\u221an\r\nN\r\no.\r\nTerm Simple Meaning Student Population Example Symbol / \r\nValue",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 22,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_022.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_022.webp",
+      "text": "Hypothesis Testing \u2014 Complete Process 4.1\r\n1. Define \r\nProblem\r\n2. State H\u2080 \r\n& H\u2081\r\n3. Choose \r\n\u03b1\r\n4. Select \r\nTest\r\n5. Calculate \r\nStatistic\r\n6. p-value / \r\nCritical \r\nValue\r\n7. Decision\r\nReject H\u2080 / Fail to \r\nreject H\u2080\r\n8. Conclusion\r\nInterpret result in \r\ncontext\r\nData \u2192 Hypotheses \u2192 Test \u2192 Evidence \u2192 Decision \u2192 Interpretation\r\n47",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 23,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_023.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_023.webp",
+      "text": "Situation Test to use\r\nPopulation standard deviation (\u03c3) is \r\nknown Z-test\r\nPopulation standard deviation (\u03c3) is \r\nunknown T-test\r\n\u03c3 unknown and sample size is small \r\n(n < 30) T-test\r\n\u03c3 unknown and n is large\r\nUsually Z-test approximation can be \r\nused, but T-test is also valid and \r\ncommonly preferred\r\nHow do we decide: Z-test or T-test?",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 24,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_024.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_024.webp",
+      "text": "Hypothesis Testing \u2014 Formula Sheet\r\nZ = (x\u0304\u2212 \u03bc\u2080) / (\u03c3 / \u221an)\r\nt = (x\u0304\u2212 \u03bc\u2080) / (s / \u221an), df = n \u2212 1\r\nTwo-tailed Z-test at \u03b1 = 0.05 \u2192 critical values \u2248 \u00b11.96\r\nDecision: p \u2264 \u03b1 \u2192 Reject H\u2080; p > \u03b1 \u2192 Fail to reject H\u2080\r\nStandard Error: SE = \u03c3/\u221an (or approximately s/\u221an when \u03c3 is unknown)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 25,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_025.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_025.webp",
+      "text": "Hypothesis Testing \u2014 General Procedure\r\n1. State H\u2080 and H\u2081.\r\n2. Choose significance level \u03b1.\r\n3. Select the appropriate test statistic.\r\n4. Calculate the statistic from sample data.\r\n5. Find the critical value or p-value.\r\n6. Decision: reject H\u2080 if p \u2264 \u03b1 (or statistic falls in rejection region).\r\n7. State the conclusion in the context of the problem.\r\n5",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 26,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_026.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_026.webp",
+      "text": "Z-Test 4.1\r\nUsed mainly when population standard deviation \u03c3 is known, or for sufficiently \r\nlarge samples under standard assumptions.\r\nOne-sample Z statistic:\r\nz = (x\u0304\u2212 \u03bc\u2080) / (\u03c3 / \u221an)\r\nTwo-tailed test at \u03b1 = 0.05: critical values are approximately \u00b11.96.\r\nRight-tailed at \u03b1 = 0.05: critical value \u2248 1.645.\r\nLeft-tailed at \u03b1 = 0.05: critical value \u2248 \u22121.645.\r\n6",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 27,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_027.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_027.webp",
+      "text": "Numerical 1 \u2014 One-Sample Z-Test 4.1\r\n1) A manufacturer claims that the mean battery life is 50 hours.\r\nGiven: n = 36, x\u0304= 52 hours, \u03c3 = 6 hours, \u03b1 = 0.05.\r\nSolution:\r\nH\u2080: \u03bc = 50; \r\nH\u2081: \u03bc \u2260 50.\r\n\ud835\udc4d =\r\n\ud835\udc65\u04a7\u2212 \ud835\udf070\r\n\ud835\udf0e/ \ud835\udc5b\r\nZ = (52 \u2212 50) / (6/\u221a36) \r\nZ =2 / 1 = 2.00\r\nFrom the standard normal Z-table=> Zcritical = \u00b11.96\r\nSince |2.00| > 1.96, reject H\u2080.\r\nAt the 5% level, there is significant evidence that the mean battery life differs from 50 hours.\r\n7",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 28,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_028.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_028.webp",
+      "text": "The significance level is: \u03b1 = 0.05\r\nBecause this is a two-tailed test, we divide the significance level equally between the two tails:\r\n\u03b1/2 = 0.05/2 = 0.025\r\nTherefore, the area between the mean and the positive critical value is:\r\n1 \u2212 0.025 = 0.975\r\nFrom the standard normal Z-table, we look for an area of:\r\n0.9750\r\nThe corresponding Z-value is approximately:\r\nZ_critical = 1.96\r\nTherefore, the two critical values are:\r\n\u22121.96 and +1.96",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 29,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_029.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_029.webp",
+      "text": "Numerical 2 \u2014 Two-tailed Z-Test",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 30,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_030.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_030.webp",
+      "text": "Solution",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 31,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_031.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_031.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 32,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_032.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_032.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 33,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_033.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_033.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 34,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_034.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_034.webp",
+      "text": "Degrees of Freedom (df)\r\nDegrees of freedom represent the amount of independent information available for \r\nestimating variability.\r\ndf = Number of independent pieces of information available to estimate something.\r\nFor a one-sample T-test: \r\ndf = n \u2212 1.\r\nExample: n = 10 \u2192 df = 9.\r\nThe t-distribution depends on df and approaches the standard normal distribution as df\r\nbecomes large.\r\nIn one-way ANOVA: \r\ndf_between = k \u2212 1 \r\nand \r\ndf_within = N \u2212 k.\r\n46",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 35,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_035.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_035.webp",
+      "text": "T-Test 4.1\r\nUsed when the population standard deviation is unknown and is estimated\r\nusing the sample standard deviations.\r\nOne-sample T statistic:\r\nt = (x\u0304\u2212 \u03bc\u2080) / (s / \u221an)\r\nDegrees of freedom for one-sample test: df = n \u2212 1.\r\nCompared with Z-test, T-test uses the t-distribution, especially important for\r\nsmall samples.\r\nAssumptions: independent observations; approximately normal population\r\nfor small n.\r\n8",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 36,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_036.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_036.webp",
+      "text": "Numerical 2 \u2014 One-Sample T-Test 4.1\r\nA sample of 10 students has mean score 72 and sample SD 8. Test whether the \r\npopulation mean is 70 at \u03b1 = 0.05.\r\nSolution :\r\nn = 10, x\u0304= 72, s = 8, \u03bc\u2080 = 70.\r\nH\u2080: \u03bc = 70; \r\nH\u2081: \u03bc \u2260 70\r\nt = (x\u0304\u2212 \u03bc\u2080) / (s / \u221an), df = n \u2212 1\r\nt = (72 \u2212 70) / (8/\u221a10) \u2248 0.79. \r\ndf = 10-1 = 9\r\nTwo-tailed critical t at \u03b1 = 0.05 is about \u00b12.262.\r\nBecause |0.79| < 2.262, fail to reject H\u2080.\r\nConclusion: The sample does not provide sufficient evidence that the mean differs from 70.\r\n9",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 37,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_037.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_037.webp",
+      "text": "We have: \u03b1 = 0.05\r\nAnd the alternative hypothesis is: H\u2081: \u03bc \u2260 70\r\nBecause of \u2260, this is a two-tailed test.\r\nTherefore, we divide \u03b1 between the two tails:\r\n\u03b1/2 = 0.05/2 = 0.025\r\nSo each tail contains: 0.025\r\nWe now need the t-value such that the right-tail area is 0.025, with:\r\ndf = 9\r\nThis is written as:\r\nt\u2080.\u2080\u2082\u2085,\u2089\r\nFrom the t-distribution table:\r\nt\u2080.\u2080\u2082\u2085,\u2089 = 2.262\r\nTherefore, because this is a two-tailed test, the critical values are:\r\n\u22122.262 and +2.262",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 38,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_038.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_038.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 39,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_039.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_039.webp",
+      "text": "Example",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 40,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_040.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_040.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 41,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_041.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_041.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 42,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_042.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_042.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 43,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_043.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_043.webp",
+      "text": "ANOVA \u2014 Analysis of Variance 4.1\r\nANOVA tests whether the means of three or more groups are equal.\r\nH\u2080: \u03bc\u2081 = \u03bc\u2082 = \u2026 = \u03bck.\r\nH\u2081: At least one group mean differs.\r\nWhy 'variance' for a question about means? \r\nANOVA compares between-group variation with within-group variation.\r\nTest statistic: \r\nF = MS_between / MS_within.\r\nMS \u2013 Mean Square\r\n11",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 44,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_044.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_044.webp",
+      "text": "One-Way ANOVA \u2014 Components 4.1\r\nTotal Sum of Squares (SST): overall variability around the grand mean.\r\nBetween-group Sum of Squares (SSB): variability explained by differences among \r\ngroup means.\r\nWithin-group Sum of Squares (SSW): variability inside the groups.\r\nSST = SSB + SSW.\r\ndf_between = k \u2212 1; \r\ndf_within = N \u2212 k;\r\nMSB = SSB/(k\u22121); \r\nMSW = SSW/(N\u2212k); \r\nF = MSB/MSW.\r\n12",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 45,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_045.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_045.webp",
+      "text": "ANOVA \u2014 Visual Interpretation 4.1\r\nLarge F means between-group variation is large relative to within-group \r\nvariation.\r\nIf F is sufficiently large, reject H\u2080 and conclude that not all group means \r\nare equal.\r\n13",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 46,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_046.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_046.webp",
+      "text": "Symbol Full Form Meaning\r\nMSB Mean Square Between Groups Variation between the group \r\nmeans\r\nSSB Sum of Squares Between Groups Total variation due to differences \r\nbetween group means\r\nMSW Mean Square Within Groups Variation within each group\r\nSSW Sum of Squares Within Groups Total variation of observations \r\naround their own group mean\r\nk Number of Groups Total number of groups being \r\ncompared\r\nN Total Number of Observations Total observations across all \r\ngroups\r\nF F-statistic (F-ratio) Ratio of between-group variation \r\nto within-group variation",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 47,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_047.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_047.webp",
+      "text": "1. Mean Square Between Groups\r\n\ud835\udc40\ud835\udc46\ud835\udc35 =\r\n\ud835\udc46\ud835\udc46\ud835\udc35\r\n\ud835\udc58 \u2212 1\r\nHere, \ud835\udc58 \u2212 1 is the degrees of freedom between groups.\r\n2. Mean Square Within Groups\r\n\ud835\udc40\ud835\udc46\ud835\udc4a =\r\n\ud835\udc46\ud835\udc46\ud835\udc4a\r\n\ud835\udc41 \u2212 \ud835\udc58\r\nHere, \ud835\udc41 \u2212 \ud835\udc58is the degrees of freedom within groups.\r\n3. F-statistic\r\n\ud835\udc39 =\r\n\ud835\udc40\ud835\udc46\ud835\udc35\r\n\ud835\udc40\ud835\udc46\ud835\udc4a\r\nIn simple words:\r\nF = Variation between groups \u00f7 Variation within groups\r\nA large F-value means the group means are separated considerably relative to the variation within \r\nthe groups.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 48,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_048.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_048.webp",
+      "text": "One-Way ANOVA: Numerical Example\r\nObjective: Test whether the means of three groups are significantly different.\r\nThree groups, with 3 observations in each group.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 49,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_049.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_049.webp",
+      "text": "Given Data\r\nGroup A: 10, 12, 14\r\nGroup B: 20, 22, 24\r\nGroup C: 30, 32, 34\r\nNumber of groups (k) = 3\r\nTotal observations (N) = 9",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 50,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_050.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_050.webp",
+      "text": "Step 1: Calculate Group Means\r\nMean A = (10 + 12 + 14) / 3 = 12\r\nMean B = (20 + 22 + 24) / 3 = 22\r\nMean C = (30 + 32 + 34) / 3 = 32\r\nTherefore: X\u0304A = 12, X\u0304B = 22, X\u0304C = 32",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 51,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_051.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_051.webp",
+      "text": "Step 2: Calculate Grand Mean\r\nGrand Mean = Sum of all observations / N\r\n= (10 + 12 + 14 + 20 + 22 + 24 + 30 + 32 + 34) / 9\r\n= 198 / 9\r\nGrand Mean = 22",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 52,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_052.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_052.webp",
+      "text": "Step 3: Between-Group Sum of Squares (SSB)\r\nFormula: SSB = \u03a3 n\u1d62(X\u0304\u1d62 \u2212 X\u0304)\u00b2\r\nX\u0304\u1d62 - Group mean, X\u0304- Grand Mean, n = number of observations in group\r\n= 3(12 \u2212 22)\u00b2 + 3(22 \u2212 22)\u00b2 + 3(32 \u2212 22)\u00b2\r\n= 3(100) + 3(0) + 3(100)\r\nSSB = 600",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 53,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_053.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_053.webp",
+      "text": "Step 4: Within-Group Sum of Squares (SSW)\r\nMean A = 12, Mean B = 22, mean C =32 \r\nGroup A: (10\u221212)\u00b2 + (12\u221212)\u00b2 + (14\u221212)\u00b2 = 8\r\nGroup B: (20\u221222)\u00b2 + (22\u221222)\u00b2 + (24\u221222)\u00b2 = 8\r\nGroup C: (30\u221232)\u00b2 + (32\u221232)\u00b2 + (34\u221232)\u00b2 = 8\r\nSSW = 8 + 8 + 8 = 24",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 54,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_054.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_054.webp",
+      "text": "Step 5: Degrees of Freedom\r\nNumber of groups:\r\n\ud835\udc58 = 3\r\nTotal observations:\r\n\ud835\udc41 = 9\r\nBetween groups:\r\n\ud835\udc51\ud835\udc53\ud835\udc35 = \ud835\udc58 \u2212 1 = 3 \u2212 1 = 2\r\nWithin groups:\r\n dfW = N\u2212k = 9\u22123 = 6",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 55,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_055.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_055.webp",
+      "text": "Step 6: Mean Squares\r\n\ud835\udc40\ud835\udc46\ud835\udc35 =\r\n\ud835\udc46\ud835\udc46\ud835\udc35\r\n\ud835\udc51\ud835\udc53\ud835\udc35\r\n=\r\n600\r\n2\r\n= 300\r\n\ud835\udc40\ud835\udc46\ud835\udc4a =\r\n\ud835\udc46\ud835\udc46\ud835\udc4a\r\n\ud835\udc51\ud835\udc53\ud835\udc4a\r\n=\r\n24\r\n6\r\n= 4\r\nStep 7: F-value\r\n\ud835\udc39 =\r\n\ud835\udc40\ud835\udc46\ud835\udc35\r\n\ud835\udc40\ud835\udc46\ud835\udc4a\r\n\ud835\udc39 =\r\n300\r\n4\r\nF=75\u200b",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 56,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_056.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_056.webp",
+      "text": "Significance level: \u03b1 = 0.05 \r\nSince ANOVA uses the right tail of the F-distribution, \r\nwe use \u03b1 = 0.05 directly. \r\nFrom the F-distribution table, using: \u03b1 = 0.05 df\u2081 = 2 df\u2082 = 6\r\nwe get: F_critical = 5.143 \r\nTherefore: \r\nF_calculated = 75\r\nF_critical = 5.143 \r\nSince: 75 > 5.143 \r\nwe reject H\u2080. \r\nConclusion: At the 5% significance level, there is sufficient evidence to conclude that the \r\ngroup means are not all equal. In other words, at least one group mean differs significantly \r\nfrom the others.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 57,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_057.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_057.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 58,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_058.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_058.webp",
+      "text": "Numerical",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 59,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_059.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_059.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 60,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_060.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_060.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 61,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_061.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_061.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 62,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_062.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_062.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 63,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_063.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_063.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 64,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_064.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_064.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 65,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_065.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_065.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 66,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_066.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_066.webp",
+      "text": "Bayesian Classification: Why?\r\nA statistical classifier: performs probabilistic prediction, i.e.,\r\npredicts class membership probabilities\r\nFoundation: Based on Bayes\u2019 Theorem.\r\nPerformance: A simple Bayesian classifier, na\u00efve Bayesian\r\nclassifier, has comparable performance with decision tree and\r\nselected neural network classifiers\r\nIncremental: Each training example can incrementally\r\nincrease/decrease the probability that a hypothesis is correct \u2014\r\nprior knowledge can be combined with observed data",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 67,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_067.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_067.webp",
+      "text": "Bayesian Theorem: Basics\r\nLet X be a data sample (\u201cevidence\u201d): class label is unknown\r\nLet H be a hypothesis that X belongs to class C \r\nClassification is to determine P(H|X) - Probability of H given X - Posterior Probability\r\n P(Buy=Yes\u2223Age=31\u201340, Income=Medium)\r\nP(H) (prior probability), the initial probability - Probability of the class before considering the \r\nperson's specific information.\r\n P(Buy=Yes)=0.60\r\nP(X): probability that sample data is observed - Overall probability of observing the \r\nparticular evidence X.\r\nP(X|H) : Probability of X given H - P(Age=31\u201340, Medium Income\u2223Buy=Yes)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 68,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_068.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_068.webp",
+      "text": "Bayesian Theorem\r\nGiven training data X, posterior probability of a hypothesis H, P(H|X), follows the \r\nBayes theorem\r\nInformally, this can be written as \r\nposteriori = likelihood x prior/evidence\r\nPredicts X belongs to C2\r\nif the probability P(Ci\r\n|X) is the highest among all the P(Ck\r\n|X) \r\nfor all the k classes\r\nPractical difficulty: require initial knowledge of many probabilities, significant \r\ncomputational cost",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 69,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_069.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_069.webp",
+      "text": "Towards Na\u00efve Bayesian Classifier\r\n\u25fb Let D be a training set of tuples and their associated class labels, and each tuple is \r\nrepresented by an n-D attribute vector X = (x1\r\n, x2\r\n, \u2026, xn\r\n)\r\n\u25fb Suppose there are m classes C1\r\n, C2\r\n, \u2026, Cm.\r\n\u25fb Classification is to derive the maximum posteriori, i.e., the maximal P(Ci\r\n|X)\r\n\u25fb This can be derived from Bayes\u2019 theorem\r\n\u25fb Since P(X) is constant for all classes, only \r\nneeds to be maximized\r\nKey Na\u00efve Bayes assumption: features are conditionally independent given the class.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 70,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_070.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_070.webp",
+      "text": "Process is: \r\nInput features \r\n\u2193 \r\nCalculate prior probability \r\n\u2193 \r\nCalculate probability of each feature \r\n\u2193 \r\nMultiply the probabilities \r\n\u2193 \r\nCompare all classes \r\n\u2193 \r\nSelect class with highest probability",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 71,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_071.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_071.webp",
+      "text": "Na\u00efve Bayesian Classifier: Training Dataset\r\nClass = ???\r\nClass:\r\nC1:buys_computer = \u2018yes\u2019\r\nC2:buys_computer = \u2018no\u2019\r\nClass",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 72,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_072.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_072.webp",
+      "text": "Na\u00efve Bayesian Classifier: An Example\r\n\u25fb P(Ci\r\n): \r\n P(buys_computer = \u201cyes\u201d) \r\n = 9/14 \r\n = 0.643\r\n P(buys_computer = \u201cno\u201d) \r\n = 5/14\r\n = 0.357\r\nStep 1",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 73,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_073.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_073.webp",
+      "text": "Na\u00efve Bayesian Classifier: An Example\r\nCompute P(X|Ci\r\n) for each class\r\n P(age = \u201c<=30\u201d | buys_computer = \u201cyes\u201d) \r\n = 2/9 = 0.222\r\n P(age = \u201c<= 30\u201d | buys_computer = \u201cno\u201d) \r\n = 3/5 = 0.6\r\nStep 2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 74,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_074.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_074.webp",
+      "text": "Na\u00efve Bayesian Classifier: An Example\r\nCompute P(X|Ci\r\n) for each class\r\n P(age = \u201c<=30\u201d | buys_computer = \u201cyes\u201d) \r\n = 2/9 = 0.222\r\n P(age = \u201c<= 30\u201d | buys_computer = \u201cno\u201d) \r\n = 3/5 = 0.6\r\nP(income = \u201cmedium\u201d | buys_computer = \u201cyes\u201d) \r\n= 4/9 = 0.444\r\nP(income = \u201cmedium\u201d | buys_computer = \u201cno\u201d) \r\n= 2/5 = 0.4\r\nStep 2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 75,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_075.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_075.webp",
+      "text": "Na\u00efve Bayesian Classifier: An Example\r\nP(student = \u201cyes\u201d | buys_computer = \u201cyes) \r\n= 6/9 = 0.667\r\nP(student = \u201cyes\u201d | buys_computer = \u201cno\u201d) \r\n= 1/5 = 0.2\r\nP(credit_rating = \u201cfair\u201d | buys_computer = \u201cyes\u201d) \r\n= 6/9 = 0.667\r\nP(credit_rating = \u201cfair\u201d | buys_computer = \u201cno\u201d) \r\n= 2/5 = 0.4\r\nStep 2",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 76,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_076.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_076.webp",
+      "text": "X = (age <= 30 , income = medium, student = yes, credit_rating = fair)\r\nStep 3:\r\nP(X|Ci\r\n) : P(X|buys_computer = \u201cyes\u201d) = 0.222 x 0.444 x 0.667 x 0.667 = 0.044\r\nP(X|buys_computer = \u201cno\u201d) = 0.6 x 0.4 x 0.2 x 0.4 = 0.019\r\nStep 4:\r\nP(X|Ci\r\n)*P(Ci\r\n) : P(X|buys_computer = \u201cyes\u201d) * P(buys_computer = \u201cyes\u201d) = 0.028\r\nP(X|buys_computer = \u201cno\u201d) * P(buys_computer = \u201cno\u201d) = 0.007\r\nTherefore, X belongs to class (\u201cbuys_computer = yes\u201d)",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 77,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_077.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_077.webp",
+      "text": "Bayesian Network \u2013 Handling Uncertainty\r\nWhat is uncertainty?\r\n\u2022 In real life, we often do not have complete information.\r\n\u2022 For example:\r\n\u2022 Will it rain today? \u2192 We are not 100% sure. \r\n\u2022 Will a student pass an exam? \u2192 It depends on several factors. \r\n\u2022 Is a person sick? \u2192 We may have symptoms, but symptoms do not give \r\ncertainty. \r\nSo, instead of saying True/False, we use probabilities.\r\n\u2022 Probability helps us represent uncertainty.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 78,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_078.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_078.webp",
+      "text": "What is a Bayesian Network?\r\n\u2022 A Bayesian Network (BN) is a graphical model used to represent uncertain\r\nrelationships between different variables.\r\n\u2022 It consists of:\r\nNodes \u2192 represent variables.\r\nDirected arrows \u2192 represent relationships/dependencies.\r\nProbabilities \u2192 represent how likely an event is.\r\nSimple example\r\nConsider:\r\n\u2022 Rain \u2192 Wet Grass - If it rains, the grass is more likely to become wet.\r\n\u2022 We can represent this as:\r\n Rain\r\n |\r\n \u2193\r\n Wet Grass\r\nHere:\r\n\u2022 Rain = variable \r\n\u2022 Wet Grass = variable \r\n\u2022 Arrow Rain \u2192 Wet Grass = Rain influences the probability of Wet \r\nGrass.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 79,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_079.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_079.webp",
+      "text": "Why do we need Bayesian Networks?\r\nSuppose we observe:\r\n\u2022 The grass is wet.\r\nWe want to answer:\r\n\u2022 What is the probability that it rained?\r\n\u2022 We can use Bayes' theorem:\r\n\ud835\udc43 \ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b \u2223 \ud835\udc4a\ud835\udc52\ud835\udc61\ud835\udc3a\ud835\udc5f\ud835\udc4e\ud835\udc60\ud835\udc60 =\r\n\ud835\udc43 \ud835\udc4a\ud835\udc52\ud835\udc61\ud835\udc3a\ud835\udc5f\ud835\udc4e\ud835\udc60\ud835\udc60 \u2223 \ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b \ud835\udc43 \ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b\r\n\ud835\udc43 \ud835\udc4a\ud835\udc52\ud835\udc61\ud835\udc3a\ud835\udc5f\ud835\udc4e\ud835\udc60\ud835\udc60\r\n\u2022 So, Bayesian Networks allow us to reason about unknown events using \r\navailable evidence.\r\n\u2022 In simple words:\r\nBayesian Network = Using a graphical structure + probability to reason when \r\ninformation is uncertain.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 80,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_080.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_080.webp",
+      "text": "Basic Structure of a Bayesian Network\r\n\u2022 A Bayesian Network is usually represented as a Directed Acyclic Graph \r\n(DAG).\r\n\u2022 DAG means:\r\nDirected \u2192 arrows have a direction. \r\nAcyclic \u2192 we cannot follow arrows and come back to the same node. \r\n\u2022 Example:\r\n Rain\r\n / \\\r\n \u2193 \u2193\r\nSprinkler Wet Grass\r\n \\ \u2191\r\n \u2500\u2500\u2500\u2500\u2500\u2500\r\nA simpler network can be: \r\nRain \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2192 Wet Grass \r\n |\r\n\u2193 \r\nSprinkler \u2500\u2500\u2192 Wet Grass\r\nHere, both Rain and Sprinkler can affect Wet Grass.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 81,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_081.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_081.webp",
+      "text": "Nodes\r\n\u2022 A node represents a random variable.\r\nFor example:\r\n\u2022 Rain\r\ncan have two possible values:\r\n\u2013 Rain = Yes\r\n\u2013 Rain = No\r\n\u2022 Similarly:\r\n\u2013 Wet Grass = Yes\r\n\u2013 Wet Grass = No\r\nSo a node does not necessarily represent one fixed value. It represents a \r\nvariable whose value is uncertain.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 82,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_082.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_082.webp",
+      "text": "Edges / Arrows\r\n\u2022 An arrow shows a probabilistic dependency.\r\nFor example:\r\n\u2022 Rain \u2192 Wet Grass\r\nmeans:\r\n\u2022 The probability of Wet Grass depends on whether it is raining.\r\nAnother example:\r\n\u2022 Study Hours \u2192 Exam Result\r\nmeans that study hours can influence the probability of the exam result.\r\nImportant: An arrow represents a probabilistic relationship/dependency; it \r\nshould not automatically be interpreted as proving direct physical causation.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 83,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_083.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_083.webp",
+      "text": "Probability in a Bayesian Network\r\nEach variable has probabilities associated with it.\r\nFor example:\r\nProbability of Rain\r\nThis means:\r\n\u2022 Probability of rain = 30%\r\n\u2022 Probability of no rain = 70%\r\nThese probabilities are called prior probabilities when they are specified before \r\nconsidering new evidence.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 84,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_084.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_084.webp",
+      "text": "Conditional Probability\r\n\u2022 Sometimes the probability of one variable depends on another variable.\r\n\u2022 For example:\r\nWhat is the probability that the grass is wet if it is raining?\r\nWe write:\r\n\ud835\udc43 \ud835\udc4a\ud835\udc52\ud835\udc61\ud835\udc3a\ud835\udc5f\ud835\udc4e\ud835\udc60\ud835\udc60 \u2223 \ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b\r\n\u2022 Suppose:\r\n\ud835\udc43 \ud835\udc4a\ud835\udc52\ud835\udc61\ud835\udc3a\ud835\udc5f\ud835\udc4e\ud835\udc60\ud835\udc60 \u2223 \ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b = 0.90\r\n\u2022 This means:\r\nIf it is raining, there is a 90% probability that the grass is wet.\r\n\u2022 If there is no rain:\r\n\ud835\udc43 \ud835\udc4a\ud835\udc52\ud835\udc61\ud835\udc3a\ud835\udc5f\ud835\udc4e\ud835\udc60\ud835\udc60 \u2223 \u00ac\ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b = 0.20\r\n\u2022 This means:\r\nIf it is not raining, there is still a 20% probability that the grass is wet, perhaps because \r\nof a sprinkler.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 85,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_085.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_085.webp",
+      "text": "Conditional Probability Table (CPT)\r\nA Bayesian Network commonly stores probabilities in a Conditional Probability Table \r\n(CPT).\r\nFor example: \r\nThe CPT tells us:\r\nGiven the value of the parent variable, what is the probability of the child variable?\r\nIf there are multiple parent variables, the table contains probabilities for their different \r\ncombinations.\r\nRain P(Wet Grass = Yes | Rain)\r\nYes 0.90\r\nNo 0.20",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 86,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_086.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_086.webp",
+      "text": "Handling Uncertainty Using Evidence\r\n\u2022 Suppose initially:\r\n\ud835\udc43 \ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b = 0.30\r\nSo before seeing any evidence, we believe there is a 30% chance of rain.\r\nNow we observe:\r\nGrass is wet.\r\nWe can update our belief:\r\n\ud835\udc43 \ud835\udc45\ud835\udc4e\ud835\udc56\ud835\udc5b \u2223 \ud835\udc4a\ud835\udc52\ud835\udc61\ud835\udc3a\ud835\udc5f\ud835\udc4e\ud835\udc60\ud835\udc60\r\nThis is called posterior probability.\r\nSo:\r\n\u2022 Bayesian Networks allow us to update our belief about an uncertain \r\nevent when new evidence becomes available",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 87,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_087.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_087.webp",
+      "text": "Markov Decision Process\r\n1. Definition\r\nA Markov Decision Process (MDP) is a mathematical model used in Reinforcement Learning to help an agent make \r\ndecisions and choose the best action to achieve a goal.\r\nIt learns by interacting with the environment and receiving rewards or penalties.\r\nExample: A robot learns to reach a destination by choosing the correct direction and receiving rewards for \r\nsuccessful moves.\r\n2. Components of MDP\r\nMDP consists of five main components:\r\n1. Agent: The learner or decision-maker (e.g., robot).\r\n2. Environment: The surroundings in which the agent works.\r\n3. States (S): Different situations in which the agent can be (e.g., robot's current position).\r\n4. Actions (A): Choices available to the agent (e.g., move left, right, forward).\r\n5. Reward (R): Feedback received after performing an action (e.g., +10 for reaching the destination).",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 88,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_088.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_088.webp",
+      "text": ". Working of MDP\r\n1. The agent observes the current state.\r\n2. It selects an action.\r\n3. The environment changes to a new state.\r\n4. The agent receives a reward or penalty.\r\n5. The process repeats until the goal is achieved.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 89,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_089.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_089.webp",
+      "text": "5. Markov Property\r\nMDP follows the Markov Property, which means:\r\nThe next state depends only on the current state and action, not on the complete past history.\r\n6. Applications of MDP\r\n\u2022 Robotics and navigation.\r\n\u2022 Self-driving cars.\r\n\u2022 Game playing.\r\n\u2022 Traffic signal control.\r\n\u2022 Resource management.\r\n\u2022 Recommendation systems.\r\n7. Advantages\r\n\u2022 Helps in decision-making.\r\n\u2022 Handles situations where outcomes are uncertain.\r\n\u2022 Learns through rewards and penalties.\r\n\u2022 Useful for sequential decision-making.",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "index": 90,
+      "image": "/slides/ids_ids_unit_4_ml_material_final_pdf/slide_090.webp",
+      "thumb": "/slides/ids_ids_unit_4_ml_material_final_pdf/thumb_090.webp",
+      "text": "Questions\r\n\u2022 Numerical on Z-test, t-test, ANOVA, Naivebayes\r\n\u2022 Short note on Z-test, t-test, ANOVA, Hypothesis testing\r\n\u2022 Short note on bayes theorem\r\n\u2022 Explain Bayesian network with example.\r\n\u2022 Explain how bayesian network handles uncertainty\r\n\u2022 Steps in hypothesis testing.\r\n\u2022 Short on Markov decision process.\r\n\u2022 Difference between Type-I and Type-II error?\r\n\u2022 Z-test and t-test difference.",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}
