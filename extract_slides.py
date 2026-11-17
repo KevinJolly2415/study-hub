@@ -213,18 +213,26 @@ try {{
         if ps_file.exists():
             ps_file.unlink()
 
-    seen = set()
-    png_files = []
-    for p in temp_png_dir.glob("Slide*.*"):
-        if p.suffix.lower() == ".png" and p.name.lower() not in seen:
-            seen.add(p.name.lower())
-            png_files.append(p)
-
     def get_slide_num(p):
         m = re.search(r'Slide(\d+)', p.stem, re.IGNORECASE)
         return int(m.group(1)) if m else 0
 
-    png_files.sort(key=get_slide_num)
+    # Deduplicate strictly by slide number so duplicate files (e.g. Slide1.PNG and slide_1.png) never double slide counts
+    slide_dict = {}
+    for p in temp_png_dir.glob("Slide*.*"):
+        if p.suffix.lower() == ".png":
+            s_num = get_slide_num(p)
+            if s_num > 0 and s_num not in slide_dict:
+                slide_dict[s_num] = p
+
+    png_files = [slide_dict[k] for k in sorted(slide_dict.keys())]
+
+    # Clean up any previously extracted webp files in output_dir so no orphaned/duplicated slides remain
+    for old_webp in output_dir.glob("*.webp"):
+        try:
+            old_webp.unlink()
+        except Exception:
+            pass
 
     slides_info = []
     avg_aspect = 1.33

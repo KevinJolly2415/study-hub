@@ -6,7 +6,7 @@
       "index": 1,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_001.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_001.webp",
-      "text": "Slide 1 from Module 4",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 4\nIP Security, Transport level security and Email Security",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -37,7 +37,7 @@
       "index": 2,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_002.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_002.webp",
-      "text": "Slide 2 from Module 4",
+      "text": "\ufeff Detail Topics IP level Security: Introduction to IPSec,  IPSec Architecture, Protection Mechanism (AH and ESP)\nTransport level security: Web Security considerations, Secure Sockets Layer (SSL)Architecture, Transport Layer Security (TLS), HTTPS, Secure Shell (SSH) Protocol Stack. \nEmail Security: Secure Email S/MIME",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -383,7 +383,7 @@
       "index": 3,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_003.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_003.webp",
-      "text": "Slide 3 from Module 4",
+      "text": "\ufeff Web Security considerations The World Wide Web (WWW) is fundamentally a client/server application running over the Internet and TCP/IP intranets.\nIts popular for providing services, business transactions, corporate & product information. \nHence vulnerable to attacks\nApproaches for providing Web security : \n Ref: Cryptography and Network Security Principles and Practices, Fourth Edition By William Stallings, Ch. 17",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -722,7 +722,7 @@
       "index": 4,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_004.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_004.webp",
-      "text": "Slide 4 from Module 4",
+      "text": "\ufeff IP level Security Introduction to IPSec: \nIP Security (IPSec) is a collection of protocols designed by the Internet Engineering Task Force (IETF) to provide security for a packet at the network level.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -977,7 +977,7 @@
       "index": 5,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_005.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_005.webp",
-      "text": "Slide 5 from Module 4",
+      "text": "\ufeff Need of Security at IP Layer Security at the application & transport layers may not be enough in some cases. \nNot all client/server programs are protected at the application layer; for example, PGP and S/MIME protect only electronic mail. \nNot all client/server programs at the application layer use the service of TCP to be protected by SSL or TLS; some programs use the service of UDP. \nMany applications, such as routing protocols, directly use the service of IP; they need security services at the IP layer.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -1638,7 +1638,7 @@
       "index": 6,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_006.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_006.webp",
-      "text": "Slide 6 from Module 4",
+      "text": "\ufeff Applications of IPSec To enhance the security of those client/server programs, such as electronic mail, that use their own security protocols. \nTo enhance the security of those client/server programs, such as HTTP, that use the security services provided at the transport layer. \nIt can provide security for those client/server programs that do not use the security services provided at the transport layer. \nIt can provide security for node-to-node communication programs such as routing protocols.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -2243,7 +2243,7 @@
       "index": 7,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_007.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_007.webp",
-      "text": "Slide 7 from Module 4",
+      "text": "\ufeff Applications of IPSec IPsec provides the capability to secure communications across a LAN, across private and public WANs, and across the Internet. \n\nPractical Applications: \nSecure branch office connectivity over the Internet\nSecure remote access over the Internet\nEstablishing extranet and intranet connectivity with partners\nEnhancing electronic commerce security",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -2631,7 +2631,7 @@
       "index": 8,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_008.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_008.webp",
-      "text": "Slide 8 from Module 4",
+      "text": "\ufeff Modes of IPSec IPSec operates in two different modes:\nTransport mode \nTunnel mode",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -2704,7 +2704,7 @@
       "index": 9,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_009.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_009.webp",
-      "text": "Slide 9 from Module 4",
+      "text": "\ufeff IPSec in transport mode In transport mode, IPSec protects what is delivered from the transport layer to the network layer. \nIPSec in transport mode does not protect the IP header. It only protects the information coming from the transport layer.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3015,7 +3015,7 @@
       "index": 10,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_010.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_010.webp",
-      "text": "Slide 10 from Module 4",
+      "text": "\ufeff IPSec Transport mode in action",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3039,7 +3039,7 @@
       "index": 11,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_011.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_011.webp",
-      "text": "Slide 11 from Module 4",
+      "text": "\ufeff IPSec in Tunnel Mode In tunnel mode, IPSec protects the entire IP packet. \nIt takes an IP packet, including the header, applies IPSec security methods to the entire packet, and then adds a new IP header.\nIPSec in tunnel mode protects the original IP header.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3392,7 +3392,7 @@
       "index": 12,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_012.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_012.webp",
-      "text": "Slide 12 from Module 4",
+      "text": "\ufeff IPSec Tunnel mode in action",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3416,7 +3416,7 @@
       "index": 13,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_013.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_013.webp",
-      "text": "Slide 13 from Module 4",
+      "text": "\ufeff Transport mode versus Tunnel mode",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3433,7 +3433,7 @@
       "index": 14,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_014.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_014.webp",
-      "text": "Slide 14 from Module 4",
+      "text": "\ufeff Transport mode versus Tunnel mode Transport mode is used for end - to- end communication between two hosts .\n\n\n\n\nTunnel mode is used when one or both ends of a security association (SA) are a security gateway, such as a firewall or router that implements IPsec.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3765,7 +3765,7 @@
       "index": 15,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_015.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_015.webp",
-      "text": "Slide 15 from Module 4",
+      "text": "\ufeff IPSec Protocol Suit IPSec provides its services through two sub-protocols\nAuthentication Header (AH) Protocol\nSource authentication \nData integrity \nNo privacy\nEncapsulating Security Payload (ESP)\nSource authentication \nData integrity \nPrivacy",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3936,7 +3936,7 @@
       "index": 16,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_016.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_016.webp",
-      "text": "Slide 16 from Module 4",
+      "text": "\ufeff IPSec Protocol Suit Along with AH and ESP sub-protocols, IPSec is supported by two more Key Components, \nSecurity Association (SA): A logical connection between two endpoints that defines the security parameters for communication.\nInternet Key Exchange (IKE): A protocol used to negotiate, establish, and manage SAs.\nSA provides the framework for secure communication, while IKE is responsible for creating and managing these SAs. \nTogether, they form the core of IPSec, ensuring the confidentiality, integrity, and authenticity of data transmitted over IP networks.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -4555,7 +4555,7 @@
       "index": 17,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_017.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_017.webp",
-      "text": "Slide 17 from Module 4",
+      "text": "\ufeff Authentication Header (AH) protocol Figure shows the fields and the position of the authentication header in transport mode.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -4593,7 +4593,7 @@
       "index": 18,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_018.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_018.webp",
-      "text": "Slide 18 from Module 4",
+      "text": "\ufeff AH Protocol operation The Authentication Header (AH) Protocol is designed to authenticate the source host and to ensure the integrity of the payload carried in the IP packet. \nThe protocol uses a hash function and a symmetric key to create a message digest; the digest is inserted in the authentication header. \nThe AH is then placed in the appropriate location, based on the mode (transport or tunnel). \nWhen an IP datagram carries an authentication header, the original value in the protocol field of the IP header is replaced by the value 51.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -5310,7 +5310,7 @@
       "index": 19,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_019.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_019.webp",
-      "text": "Slide 19 from Module 4",
+      "text": "\ufeff AH Protocol operation The addition of an authentication header follows these steps:\nAn AH is added to the payload with authentication data field set to 0.\nPadding may be added for a particular hashing algorithm\nHashing is based on the total packet. However only those fields of the IP header that do not change during transmission are included in the calculation of the message digest i.e. authentication data.\nThe authentication data is inserted in the authentication header.\nThe IP header is added after changing the value of the protocol filed to 51.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -6048,7 +6048,7 @@
       "index": 20,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_020.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_020.webp",
-      "text": "Slide 20 from Module 4",
+      "text": "\ufeff Description of every field of AH protocol Next header: The 8 bit header field defines the type of payload carried by the IP datagrams (such as TCP , UDP, ICMP ). The process copies the value of the protocol field in the IP datagram to this field. The value of the protocol field in the new IP datagram is now set to 51 to show that the packet carried an AH.\nPayload length: It defines the length of the AH in 4 -byte multiples.\n\nSecurity Parameter index: The 32 bit SPI field plays the role of a virtual circuit identifier & is the same for all packets sent during a connection called Security Association (SA).\nSequence Number: A 32 bit sequence number provides ordering information for a sequence of datagrams. It prevents a playback. Sequence number is not repeated even if a packet is retransmitted.\nAuthentication data: This field is the result of applying a hash function to the entire IP datagram except for the fields that are changed during transit.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -7353,7 +7353,7 @@
       "index": 21,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_021.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_021.webp",
-      "text": "Slide 21 from Module 4",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 4\nIP Security, Transport level security and Email Security\nLecture 21\n 13th & 20th Sep  2024",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -7433,7 +7433,7 @@
       "index": 22,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_022.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_022.webp",
-      "text": "Slide 22 from Module 4",
+      "text": "\ufeff Encapsulating Security Payload (ESP) AH protocol do not provide privacy, only source authentication and data integrity.\nIPSec later defined ESP protocol.\nIt provides source authentication , integrity & privacy.\nIt adds a header & trailer.\nESP's authentication data are added at the end of the packet which makes its calculation easier.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -7849,7 +7849,7 @@
       "index": 23,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_023.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_023.webp",
-      "text": "Slide 23 from Module 4",
+      "text": "\ufeff Encapsulating Security Payload (ESP)",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -7866,7 +7866,7 @@
       "index": 24,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_024.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_024.webp",
-      "text": "Slide 24 from Module 4",
+      "text": "\ufeff ESP operation When an IP datagram carries an ESP header & trailer, the value of the protocol field in the IP header is 50.\nA field inside the ESP trailer (next header field) holds the original value of the protocol field (the type of payload being carried by the IP datagram such as TCP or UDP).\nESP procedure follows the following steps :\nAn ESP trailer is added to the payload.\nThe payload & the trailer are encrypted.\nThe ESP header is added.\nThe ESP header, payload & ESP trailer are used to create the authentication data.\nThe authentication data are added to the end of the ESP trailer.\nThe IP header is added after changing the protocol value of 50.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -8835,7 +8835,7 @@
       "index": 25,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_025.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_025.webp",
-      "text": "Slide 25 from Module 4",
+      "text": "\ufeff IPSec services",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -8859,7 +8859,7 @@
       "index": 26,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_026.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_026.webp",
-      "text": "Slide 26 from Module 4",
+      "text": "\ufeff Comparison Transport mode provides protection primarily for upper-layer protocols. That is, transport mode protection extends to the payload of an IP packet.\nExamples include a TCP or UDP segment or an ICMP packet, all of which operate directly above IP in a host protocol stack. \nTypically, ESP in transport mode encrypts and optionally authenticates the IP payload but not the IP header. AH in transport mode authenticates the IP payload and selected portions of the IP header. Tunnel mode provides protection to the entire IP packet. To achieve this, after the AH or ESP fields are added to the IP packet, the entire packet plus security fields is treated as the payload of new outer IP packet with a new outer IP header. \nThe entire original, inner, packet travels through a tunnel from one point of an IP network to another; no routers along the way are able to examine the inner IP header.\nThe unprotected packets generated by such hosts are tunneled through external networks by tunnel mode SAs set up by the IPSec software in the firewall or secure router at the boundary of the local network. \nESP in tunnel mode encrypts and optionally authenticates the entire inner IP packet, including the inner IP header. AH in tunnel mode authenticates the entire inner IP packet and selected portions of the outer IP header",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -9555,7 +9555,7 @@
       "index": 27,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_027.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_027.webp",
-      "text": "Slide 27 from Module 4",
+      "text": "\ufeff Comparison",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -10335,7 +10335,7 @@
       "index": 28,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_028.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_028.webp",
-      "text": "Slide 28 from Module 4",
+      "text": "\ufeff Comparison",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -10366,7 +10366,7 @@
       "index": 29,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_029.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_029.webp",
-      "text": "Slide 29 from Module 4",
+      "text": "\ufeff An IPSec Scenario",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -10754,7 +10754,7 @@
       "index": 30,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_030.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_030.webp",
-      "text": "Slide 30 from Module 4",
+      "text": "\ufeff Summary IPSec Security Architecture DOI (Domain of Interpretation):\u00a0DOI is the identifier that supports both AH and ESP protocols. It contains values needed for documentation related to each other.\u00a0\nKey Management:\u00a0Key Management contains the document that describes how the keys are exchanged between sender and receiver.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -12178,7 +12178,7 @@
       "index": 31,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_031.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_031.webp",
-      "text": "Slide 31 from Module 4",
+      "text": "\ufeff IPSec Architecture Notes IPSec (Internet Protocol Security) is a suite of protocols designed to secure IP network communications. \nIts architecture is centered around two primary protocols: \nEncapsulating Security Payload (ESP) and Authentication Header (AH).\nKey Components\nSecurity Association (SA): A logical connection between two endpoints that defines the security parameters for communication.\nInternet Key Exchange (IKE): A protocol used to negotiate, establish, and manage SAs.\nESP: Provides confidentiality, integrity, and optional authentication for IP packets. It encapsulates the original IP packet within a new IP header, encrypts the payload, and optionally adds an integrity check.\nAH: Provides data integrity and authentication. It adds an authentication header to the IP packet, ensuring that the packet hasn't been modified in transit and verifying the sender's identity.\nModes of Operation\nIPSec supports two modes of operation:\nTransport Mode: Only the IP payload is protected. This is suitable for applications that already encapsulate their data within IP packets.\nTunnel Mode: The entire IP packet (including the original IP header) is protected. This is useful for protecting traffic between network boundaries.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -13161,7 +13161,7 @@
       "index": 32,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_032.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_032.webp",
-      "text": "Slide 32 from Module 4",
+      "text": "\ufeff IPSec Architecture SA and IKE are two fundamental components of the Internet Protocol Security (IPSec) protocol suite, used to establish secure communication channels over IP networks.\nSecurity Association (SA)\nDefinition: An SA is a logical connection between two endpoints that specifies the security parameters used for communication.\nKey Elements:\nProtocols: The protocols used for data encryption, integrity checking, and key management.\nAlgorithms: The specific cryptographic algorithms employed for these functions.\nKeys: The secret keys used to encrypt and decrypt data.\nLifetime: The duration for which the SA remains active.\nPurpose: Provides a framework for secure communication between two parties. Defines the security services to be applied to data packets.Ensures confidentiality, integrity, and authenticity of data.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -14270,7 +14270,7 @@
       "index": 33,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_033.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_033.webp",
-      "text": "Slide 33 from Module 4",
+      "text": "\ufeff IPSec Architecture Internet Key Exchange (IKE)\nDefinition: IKE is a protocol used to negotiate, establish, and manage SAs.\nKey Functions:\nAuthentication: Verifies the identities of the communicating parties.\nKey Generation: Creates cryptographic keys for use in the SA.\nSA Establishment: Sets up the SA with the agreed-upon security parameters.\nSA Management: Updates or terminates SAs as needed.\nPhases:\nPhase 1: Establishes a secure channel between the two parties, typically using public key cryptography for authentication and key exchange.\nPhase 2: Negotiates the parameters for the SA, including encryption algorithms, authentication methods, and key lifetimes.\nIn summary, SA provides the framework for secure communication, while IKE is responsible for creating and managing these SAs. Together, they form the core of IPSec, ensuring the confidentiality, integrity, and authenticity of data transmitted over IP networks.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -14462,7 +14462,7 @@
       "index": 34,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_034.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_034.webp",
-      "text": "Slide 34 from Module 4",
+      "text": "\ufeff References Behrouz Forouzan, \u201cCryptography & Network Security\u201d, second edition, ch 18 (soft copy)\nhttps://intellipaat.com/blog/ipsec-internet-security-protocol/",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -14542,7 +14542,7 @@
       "index": 35,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_035.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_035.webp",
-      "text": "Slide 35 from Module 4",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 4\nIP Security, Transport level security and Email Security\nLecture 22\n  19th  & 23rd Sep 2024",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -14615,7 +14615,7 @@
       "index": 36,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_036.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_036.webp",
-      "text": "Slide 36 from Module 4",
+      "text": "\ufeff Transport level security Secure Sockets Layer (SSL)Architecture\nTransport Layer Security (TLS)\nHTTPS\nSecure Shell (SSH) Protocol Stack",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -15605,7 +15605,7 @@
       "index": 37,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_037.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_037.webp",
-      "text": "Slide 37 from Module 4",
+      "text": "\ufeff Need of Transport Level Security Transport layer security provides end-to-end security services for applications that use a reliable transport layer protocol such as TCP. \nThe idea is to provide security services for transactions on the Internet. \nFor example, when a customer shops online, following security services are desired:\nThe customer needs to be sure that the server belongs to the actual vendor, not an impostor. The customer does not want to give an impostor her credit card number (entity authentication).\nThe customer and the vendor need to be sure that the contents of the message are not modified during transmission (message integrity).\nThe customer and the vendor need to be sure that an impostor does not intercept sensitive information such as a credit card number (confidentiality).",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -15895,7 +15895,7 @@
       "index": 38,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_038.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_038.webp",
-      "text": "Slide 38 from Module 4",
+      "text": "\ufeff Transport level security Two protocols are dominant today for providing security at the transport layer: \nSecure Sockets Layer (SSL) Protocol \nTransport Layer Security (TLS) Protocol\nTLS is an IETF\u2019s version of the SSL.  Security Layer Transport Layer Network Layer",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16521,7 +16521,7 @@
       "index": 39,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_039.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_039.webp",
-      "text": "Slide 39 from Module 4",
+      "text": "\ufeff Example of Transport level Security Transport level Security provide server and client authentication, data confidentiality, and data integrity. \nApplication-layer client/server programs, such as Hypertext Transfer Protocol (HTTP), that use the services of TCP can encapsulate their data in SSL packets.\nIf the server and client are capable of running SSL (or TLS) programs then the client can use the URL https://\u2026 instead of http://\u2026 to allow HTTP messages to be encapsulated in SSL (or TLS) packets.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -17168,7 +17168,7 @@
       "index": 40,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_040.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_040.webp",
-      "text": "Slide 40 from Module 4",
+      "text": "\ufeff Secure Sockets Layer (SSL) Protocol SSL is designed to provide security & compression to data from the application layer. \nTypically, SSL can receive data from any application layer protocol, but usually the protocol is HTTP. \nThe data received from the application is compressed (optional), signed, and encrypted. \nThe data is then passed to a reliable transport layer protocol such as TCP. \nNetscape developed SSL in 1994. \nVersions 2 and 3 were released in 1995. \nwe discuss the latest SSLv3.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -17199,7 +17199,7 @@
       "index": 41,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_041.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_041.webp",
-      "text": "Slide 41 from Module 4",
+      "text": "\ufeff SSL Protocol Stack /Architecture SSL is not a single protocol but rather two layers of protocol",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -17839,7 +17839,7 @@
       "index": 42,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_042.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_042.webp",
-      "text": "Slide 42 from Module 4",
+      "text": "\ufeff SSL Protocol Architecture SSL connection and session\n\nConnection: A connection is a network transport that provides a suitable type of service, such connections are transient, peer-to-peer relationships, associated with one session\n\nSession: An SSL session is an association between a client and a server, created by the Handshake Protocol. \nSessions define a set of cryptographic security parameters, which can be shared among multiple connections. \nSessions are used to avoid the expensive negotiation of new security parameters for each connection.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -17884,7 +17884,7 @@
       "index": 43,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_043.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_043.webp",
-      "text": "Slide 43 from Module 4",
+      "text": "\ufeff SSL Protocol Architecture SSL connection and session\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn a session, one party has the role of a client and the other the role of a server.\u000bIn a connection, both parties have equal roles, they are peers.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18321,7 +18321,7 @@
       "index": 44,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_044.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_044.webp",
-      "text": "Slide 44 from Module 4",
+      "text": "\ufeff SSL Key Exchange Algorithms  To exchange an authenticated and confidential message, the client and the server each need six cryptographic secrets (four keys and two initialization vectors).\nHowever, to create these secrets, one pre-master secret must be established between the two parties. \nSSL defines six key-exchange methods to establish this premaster secret:",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18338,7 +18338,7 @@
       "index": 45,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_045.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_045.webp",
-      "text": "Slide 45 from Module 4",
+      "text": "\ufeff SSL Encryption/Decryption/Hash Algorithms",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18355,7 +18355,7 @@
       "index": 46,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_046.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_046.webp",
-      "text": "Slide 46 from Module 4",
+      "text": "\ufeff SSL Protocol Stack /Architecture",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18400,7 +18400,7 @@
       "index": 47,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_047.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_047.webp",
-      "text": "Slide 47 from Module 4",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 4\nIP Security, Transport level security and Email Security\nLecture 23",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18886,7 +18886,7 @@
       "index": 48,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_048.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_048.webp",
-      "text": "Slide 48 from Module 4",
+      "text": "\ufeff SSL Record Protocol Services SSL Record Protocol defines two services for SSL connections:\nMessage Integrity: The Handshake Protocol defines a shared secret key that is used to form a message authentication code (MAC), similar to HMAC\nConfidentiality: The Handshake Protocol defines a shared secret key that is used for conventional encryption of SSL payloads. The message is compressed before being concatenated with the MAC and encrypted, with a range of ciphers being supported",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18903,7 +18903,7 @@
       "index": 49,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_049.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_049.webp",
-      "text": "Slide 49 from Module 4",
+      "text": "\ufeff SSL Record Protocol Operation",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18920,7 +18920,7 @@
       "index": 50,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_050.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_050.webp",
-      "text": "Slide 50 from Module 4",
+      "text": "\ufeff Record Protocol Header",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20274,7 +20274,7 @@
       "index": 51,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_051.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_051.webp",
-      "text": "Slide 51 from Module 4",
+      "text": "\ufeff SSL Record Protocol Operation The first step is fragmentation. Each upper-layer message is fragmented into blocks of 2^14bytes (16384 bytes) or less. \nNext, compression is optionally applied. Compression must be lossless and may not increase the content length by more than 1024 bytes. \nThe next step in processing is to compute a message authentication code over the compressed data.\nNext, the compressed message plus the MAC are encrypted using symmetric encryption. \nThe final step of SSL Record Protocol processing is to prepare a header consisting of the following fields:\nContent Type (8 bits): The higher-layer protocol used to process the enclosed fragment.\nMajor Version (8 bits): Indicates major version of SSL in use. For SSLv3, the value is 3.\nMinor Version (8 bits): Indicates minor version in use. For SSLv3, the value is 0.\nCompressed Length (16 bits): The length in bytes of the plaintext fragment (or compressed fragment if compression is used).",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20599,7 +20599,7 @@
       "index": 52,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_052.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_052.webp",
-      "text": "Slide 52 from Module 4",
+      "text": "\ufeff SSL Handshake Protocol The Handshake Protocol uses messages to negotiate the cipher suite, to authenticate the server to the client and the client to the server if needed\nTo exchange information for building the cryptographic secrets. \nThe handshaking is done in four phases,",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20616,7 +20616,7 @@
       "index": 53,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_053.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_053.webp",
-      "text": "Slide 53 from Module 4",
+      "text": "\ufeff SSL Handshake Protocol",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20633,7 +20633,7 @@
       "index": 54,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_054.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_054.webp",
-      "text": "Slide 54 from Module 4",
+      "text": "\ufeff SSL Handshake Protocol",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21329,7 +21329,7 @@
       "index": 55,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_055.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_055.webp",
-      "text": "Slide 55 from Module 4",
+      "text": "\ufeff SSL Change Cipher Spec Protocol The negotiation of the cipher suite and the generation of cryptographic secrets are formed gradually during the Handshake Protocol.\nSSL mandates that the parties cannot use  these parameters or secrets until they have sent or received a special message, the ChangeCipherSpec message\nThe sender and the receiver need two states,\nThe pending state, keeps track of the parameters and secrets. \nThe active state, holds parameters and secrets used by the Record Protocol to sign/verify or encrypt/decrypt messages.\nThe ChangeCipherSpec Protocol defines the process of moving values between the pending and active states.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21584,7 +21584,7 @@
       "index": 56,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_056.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_056.webp",
-      "text": "Slide 56 from Module 4",
+      "text": "\ufeff SSL Alert Protocol SSL uses the Alert Protocol for reporting errors and abnormal conditions. \nIt has only one message type, the Alert message, that describes the problem and its level (warning or fatal).",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21601,7 +21601,7 @@
       "index": 57,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_057.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_057.webp",
-      "text": "Slide 57 from Module 4",
+      "text": "\ufeff SSL Alert Protocol",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -22388,7 +22388,7 @@
       "index": 58,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_058.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_058.webp",
-      "text": "Slide 58 from Module 4",
+      "text": "\ufeff University Exam Questions Explain the working of IPSec in its different modes.\nHow confidentiality and integrity are achieved using record protocol of SSL?\nWhat is the need of SSL? Explain all phases of SSL Handshake Protocol in detail.\nIn IPSec, __________ provides only authentication but not confidentiality.\nTransport mode\nTunnel mode\nESP\nAH\nIn SSL, a cipher suite consists of _____________ .\nMaster key, client random number and server random number.\nMaster key, premaster key and server random number\nKey exchange algorithm, hashing algorithm and encryption algorithm\nKey exchange algorithm, hashing algorithm and SSL certificate",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23210,7 +23210,7 @@
       "index": 59,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_059.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_059.webp",
-      "text": "Slide 59 from Module 4",
+      "text": "\ufeff University Exam Questions How is security achieved in the transport and tunnel modes of IPSEC? Describe the role of AH and ESP.\nWrite Short Notes on SSL protocol stack.\nHow does IPSec help to achieve authentication and confidentiality? Justify the need of AH and ESP.\nExplain transport and tunnel mode of IPSec and mention under which scenarios both modes can be used. (10m)\nList the different protocols of SSL and explain the working in detail. (10m)\nDescribe with appropriate diagrams how cryptographic secrets are generated in TLS?\nWrite Short Notes on Secure Email.\nExplain Secure Email protocol and S/MIME.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23290,7 +23290,7 @@
       "index": 60,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_060.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_060.webp",
-      "text": "Slide 60 from Module 4",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 4\nIP Security, Transport level security and Email Security\nLecture 24\n 24th & 26th Sep (online) 2024",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23755,7 +23755,7 @@
       "index": 61,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_061.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_061.webp",
-      "text": "Slide 61 from Module 4",
+      "text": "\ufeff Transport Layer Security (TLS) The Transport Layer Security (TLS) protocol is the IETF standard version of the SSL protocol. \nThe two are very similar, with slight differences. \nVersion: The current version of SSL is 3.0; the current version of TLS is 1.0. In other words, SSLv3.0 is compatible with TLSv1.0.\nFortezza Protocol Support: SSL support Fortezza. TLS does not support Fortezza for key exchange or for encryption/decryption.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23772,7 +23772,7 @@
       "index": 62,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_062.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_062.webp",
-      "text": "Slide 62 from Module 4",
+      "text": "\ufeff Cipher Suite for SSL",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23789,7 +23789,7 @@
       "index": 63,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_063.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_063.webp",
-      "text": "Slide 63 from Module 4",
+      "text": "\ufeff Cipher Suite for TLS",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23995,7 +23995,7 @@
       "index": 64,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_064.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_064.webp",
-      "text": "Slide 64 from Module 4",
+      "text": "\ufeff Revision The TLS cipher suit is defined as \u2018TLS_RSA_with_RC4_SHA\u2019. Identify the Encryption algorithm. \nRSA\nRC4\nSHA\nNo encryption",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -24124,7 +24124,7 @@
       "index": 65,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_065.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_065.webp",
-      "text": "Slide 65 from Module 4",
+      "text": "\ufeff Generation of Cryptographic Secrets in TLS The generation of cryptographic secrets (keys) is more complex in TLS than in SSL.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -24225,7 +24225,7 @@
       "index": 66,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_066.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_066.webp",
-      "text": "Slide 66 from Module 4",
+      "text": "\ufeff Generation of Cryptographic Secrets in TLS The generation of cryptographic secrets is more complex in TLS than in SSL. \nTLS first defines two functions: \nData-expansion function\nPseudorandom function",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -24998,7 +24998,7 @@
       "index": 67,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_067.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_067.webp",
-      "text": "Slide 67 from Module 4",
+      "text": "\ufeff Data-Expansion Function of TLS It uses a predefined HMAC (either MD5 or SHA-1) to expand a secret into a longer one. \nThis function can be considered a multiple section function, where each section creates one hash value. \nThe extended secret is the concatenation of the hash values. \nEach section uses two HMACs, a secret and a seed\nThe data-expansion function is the chaining of as many sections as required. \nHowever, to make the next section dependent on the previous, the second seed is actually the output of the first HMAC of the previous section",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -25029,7 +25029,7 @@
       "index": 68,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_068.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_068.webp",
-      "text": "Slide 68 from Module 4",
+      "text": "\ufeff Data-Expansion Function of TLS",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -25963,7 +25963,7 @@
       "index": 69,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_069.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_069.webp",
-      "text": "Slide 69 from Module 4",
+      "text": "\ufeff Pseudorandom Function (PRF) of TLS PRF is a combination of two data-expansion functions, one using MD5 and the other SHA-1. \nPRF takes three inputs, a secret, a label, and a seed. \nThe label and seed are concatenated and serve as the seed for each data expansion function. \nThe secret is divided into two halves; each half is used as the secret for each data-expansion function. \nThe output of two data-expansion functions is exclusive ORed together to create the final expanded secret. \nBecause the hashes created from MD5 and SHA-1 are of different sizes, extra sections of MD5-based functions must be created to make the two outputs the same size",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -25980,7 +25980,7 @@
       "index": 70,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_070.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_070.webp",
-      "text": "Slide 70 from Module 4",
+      "text": "\ufeff Pseudorandom Function (PRF) of TLS",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -26501,7 +26501,7 @@
       "index": 71,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_071.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_071.webp",
-      "text": "Slide 71 from Module 4",
+      "text": "\ufeff \u2018Pre-master Secret\u2019 Generation in SSL & TLS The generation of the pre-master secret in TLS is exactly the same as in SSL.\nSSL defines six key-exchange methods to establish this premaster secret: NULL, RSA, anonymous Diffie-Hellman, ephemeral Diffie-Hellman, fixed Diffie-Hellman, and Fortezza\nTLS supports five methods: NULL, RSA, anonymous Diffie-Hellman, ephemeral Diffie-Hellman, fixed Diffie-Hellman",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -27113,7 +27113,7 @@
       "index": 72,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_072.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_072.webp",
-      "text": "Slide 72 from Module 4",
+      "text": "\ufeff \u2018Master Secret\u2019 Generation in TLS TLS uses the PRF function to create the \u2018master secret\u2019 from the \u2018pre-master secret\u2019\nThis is achieved by using,\n\u2018\u2018pre-master secret\u2019\u2019 as the \u2018secret\u2019\n\u201cmaster secret\u201d as the \u2018label\u2019\nconcatenation of the \u2018client random number\u2019 and \u2018server random number\u2019 as the \u2018seed\u2019. \nNote that the label is actually the ASCII code of the string \u201cmaster secret\u201d. \nIn other words, the label defines the output we want to create, the master secret.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -27130,7 +27130,7 @@
       "index": 73,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_073.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_073.webp",
-      "text": "Slide 73 from Module 4",
+      "text": "\ufeff \u2018Master Secret\u2019 Generation in TLS",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -27511,7 +27511,7 @@
       "index": 74,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_074.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_074.webp",
-      "text": "Slide 74 from Module 4",
+      "text": "\ufeff \u2018Key Material\u2019 generation in TLS TLS uses PRF function to create the key material from the master secret. \nThis is achieved by using, \nthe secret as the master secret\nthe label is the string \u201ckey expansion\u201d\nthe seed is the concatenation of the server random number and the client random number",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -27577,7 +27577,7 @@
       "index": 75,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_075.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_075.webp",
-      "text": "Slide 75 from Module 4",
+      "text": "\ufeff Alert Protocol in TLS TLS supports all of the alerts defined in SSL except for \u2018NoCertificate\u2019 \nTLS also adds some new ones to the list.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -27601,7 +27601,7 @@
       "index": 76,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_076.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_076.webp",
-      "text": "Slide 76 from Module 4",
+      "text": "\ufeff Alert Protocol in TLS Alerts defined for TLS (continued)",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -27702,7 +27702,7 @@
       "index": 77,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_077.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_077.webp",
-      "text": "Slide 77 from Module 4",
+      "text": "\ufeff Handshake Protocol in TLS TLS has made following changes in the Handshake Protocol of SSL. \nthe details of the \u2018CertificateVerify\u2019 message\nthe \u2018Finished\u2019 message",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -28083,7 +28083,7 @@
       "index": 78,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_078.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_078.webp",
-      "text": "Slide 78 from Module 4",
+      "text": "\ufeff Handshake Protocol in TLS Hash for \u2018CertificateVerify\u2019 message in TLS: \nIn SSL, the hash used in the \u2018CertificateVerify\u2019 message is the two-step hash of the handshake messages plus a pad and the master secret.\nTLS has simplified the process. \nThe hash in the TLS is only over the handshake messages",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -28324,7 +28324,7 @@
       "index": 79,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_079.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_079.webp",
-      "text": "Slide 79 from Module 4",
+      "text": "\ufeff Handshake Protocol in TLS Hash for Finished message in TLS:\nThe calculation of the hash for the Finished message has also been changed.\nTLS uses the PRF to calculate two hashes used for the Finished message",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -28607,7 +28607,7 @@
       "index": 80,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_080.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_080.webp",
-      "text": "Slide 80 from Module 4",
+      "text": "\ufeff Use of HMAC in Record Layer for TLS TLS Record Protocol use HMAC for signing the message.\nTLS uses the MAC to create the HMAC.\nIt also adds the\n     protocol version \n(called Compressed version) to the text to be signed.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -28673,7 +28673,7 @@
       "index": 81,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_081.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_081.webp",
-      "text": "Slide 81 from Module 4",
+      "text": "\ufeff Computer Network Security(CNS)\nModule 4\nIP Security, Transport level security and Email Security\nLecture 25\n  27th Sep 2024",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -29530,7 +29530,7 @@
       "index": 82,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_082.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_082.webp",
-      "text": "Slide 82 from Module 4",
+      "text": "\ufeff HTTPS HTTPS refers to the combination of HTTP and SSL/TLS to implement secure communication between a web browser and web server.\nThe principal difference seen by a user of a web browser is that URL addresses begin with https:// rather than http://.\nA normal HTTP connection uses port 80. If HTTPS is specified, port 443 is used, which invokes SSL/TLS.\nWhen HTTPS is used , the following elements of the communication are encrypted:\nURL of the requested document\nContents of the document\nContents of browser forms\nCookies sent from browser to server and from server to browser.\nContents of HTTP header.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -30583,7 +30583,7 @@
       "index": 83,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_083.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_083.webp",
-      "text": "Slide 83 from Module 4",
+      "text": "\ufeff HTTPS Connection Initiation:\nThe client initiates a connection to the server on the appropriate port and then sends the TLS Client Hello to begin the TLS handshake.\nWhen the TLS handshake is finished, the client may then initiate the first HTTP request.\nAll HTTP data is to be sent as TLS application data.\nConnection Closure:\nAn HTTP client or server can indicate the closing of a connection by including the following line in an HTTP record: Connection: close.\nThe closure of an HTTPS connection requires that TLS close the connection with the peer TLS entity on the remote side, which will invoke closing the underlying TCP connection.\nAt the TLS level, the proper way to close a connection is for each side to use the TLS alert protocol to send a close_notify alert.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -30740,7 +30740,7 @@
       "index": 84,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_084.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_084.webp",
-      "text": "Slide 84 from Module 4",
+      "text": "\ufeff SECURE SHELL Secure Shell (SSH) is a protocol for secure network communications designed to be relatively simple and inexpensive to implement.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -30848,7 +30848,7 @@
       "index": 85,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_085.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_085.webp",
-      "text": "Slide 85 from Module 4",
+      "text": "\ufeff Email Security SECURE/MULTIPURPOSE INTERNET MAIL EXTENSION \n(S/MIME)",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -31537,7 +31537,7 @@
       "index": 86,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_086.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_086.webp",
-      "text": "Slide 86 from Module 4",
+      "text": "\ufeff SECURE/MULTIPURPOSE INTERNET MAIL EXTENSION (S/MIME) It\u2019s a security enhancement to the MIME Internet e-mail format standard based on technology from RSA Data Security. \nTo understand S/MIME, we need first to have a general understanding of the underlying e-mail format that it uses, namely MIME. \nBut to understand the significance of MIME, we need to go back to the traditional e-mail format standard, RFC 822(SMTP), which is still in common use. \nThe most recent version of this format specification is RFC 5322 (Internet Message Format).",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -32422,7 +32422,7 @@
       "index": 87,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_087.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_087.webp",
-      "text": "Slide 87 from Module 4",
+      "text": "\ufeff RFC 5322 RFC 5322 defines a format for text messages that are sent using electronic mail\nIn the RFC 5322 context, messages are viewed as having an envelope and contents. \nThe RFC 5322 standard applies only to the contents. \nA message consists of some number of header lines (the header) followed by unrestricted text (the body). \nThe header is separated from the body by a blank line.\nA header line usually consists of a keyword, followed by a colon, followed by the keyword\u2019s arguments; the format allows a long line to be broken up into several lines.\nThe most frequently used keywords are From, To, Subject, and Date etc",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -32439,7 +32439,7 @@
       "index": 88,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_088.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_088.webp",
-      "text": "Slide 88 from Module 4",
+      "text": "\ufeff RFC 5322 Email format",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -33373,7 +33373,7 @@
       "index": 89,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_089.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_089.webp",
-      "text": "Slide 89 from Module 4",
+      "text": "\ufeff MIME Multipurpose Internet Mail Extensions\nMIME is an extension to the RFC 5322 framework that is intended to address some of the problems and limitations of the use of Simple Mail Transfer Protocol (SMTP), defined in RFC 821, and RFC 5322 for electronic mail\nFollowing are limitations of the SMTP/5322 scheme. \nSMTP cannot transmit executable files & binary objects. \nSMTP do not support national language characters.\nSMTP servers has size restriction for email messages.\nSMTP gateways that translate between ASCII and the character code EBCDIC do not use a consistent set of mappings, resulting in translation problems.\nSMTP gateways to X.400 electronic mail networks cannot handle non textual data included in X.400 messages.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -33936,7 +33936,7 @@
       "index": 90,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_090.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_090.webp",
-      "text": "Slide 90 from Module 4",
+      "text": "\ufeff MIME Overview  The MIME specification includes the following elements.\nFive new message header fields are defined, which can be included in an RFC 5322 header. These fields provide information about the body of the message.\nSeveral content formats are defined, thus standardizing representations that support multimedia electronic mail.\nTransfer encodings are defined that enable the conversion of any content format into a form that is protected from alteration by the mail system.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -35073,7 +35073,7 @@
       "index": 91,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_091.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_091.webp",
-      "text": "Slide 91 from Module 4",
+      "text": "\ufeff MIME The five header fields defined in MIME are\nMIME-Version: Must have the parameter value 1.0. This field indicates that the message conforms to RFCs 2045 and 2046.\nContent-Type: Describes the data contained in the body with sufficient detail that the receiving user agent can pick an appropriate agent or mechanism to represent the data to the user or otherwise deal with the data in an appropriate manner.\nContent-Transfer-Encoding: Indicates the type of transformation that has been used to represent the body of the message in a way that is acceptable for mail transport.\nContent-ID: Used to identify MIME entities uniquely in multiple contexts.\nContent-Description: A text description of the object with the body; this is useful when the object is not readable (e.g., audio data).",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -35713,7 +35713,7 @@
       "index": 92,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_092.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_092.webp",
-      "text": "Slide 92 from Module 4",
+      "text": "\ufeff MIME The material in this presentation belongs to St. Francis Institute of Technology and is solely for educational purposes. Distribution and modifications of the content is prohibited. MIME Content Types\nThe bulk of the MIME specification is concerned with the definition of a variety of content types. \nThis reflects the need to provide standardized ways of dealing with a wide variety of information representations in a multimedia environment.\nThere are seven different major types of content and a total of 15 subtypes. \nIn general, a content type declares the general type of data, and the subtype specifies a particular format for that type of data",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -35730,7 +35730,7 @@
       "index": 93,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_093.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_093.webp",
-      "text": "Slide 93 from Module 4",
+      "text": "\ufeff MIME Content Types",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -35747,7 +35747,7 @@
       "index": 94,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_094.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_094.webp",
-      "text": "Slide 94 from Module 4",
+      "text": "\ufeff MIME Content Types continued..",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -36548,7 +36548,7 @@
       "index": 95,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_095.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_095.webp",
-      "text": "Slide 95 from Module 4",
+      "text": "\ufeff MIME Email Format For the multipart/alternative subtype, the various parts are different representations of the same information. The following is an example:\n\nFrom: Nathaniel Borenstein <nsb@bellcore.com>\nTo: Ned Freed <ned@innosoft.com>\nSubject: Formatted text mail\nMIME-Version: 1.0\nContent-Type: multipart/alternative;\nboundary = boundary42\n\u2014boundary42\nContent-Type: text/plain; charset = us-ascii\n. . . plain text version of message goes here . . ..\n\u2014boundary42\nContent-Type: text/enriched\n. . . RFC 1896 text/enriched version of same message\ngoes here . . .\n\u2014boundary42\u2014",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -37811,7 +37811,7 @@
       "index": 96,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_096.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_096.webp",
-      "text": "Slide 96 from Module 4",
+      "text": "\ufeff MIME MIME Transfer Encodings \nprovide reliable delivery across the largest range of environments.\nThis field can take on six values. However, three of these values (7bit, 8bit, and binary) indicate that no encoding has been done but provide some information about the nature of the data. \nFor SMTP transfer, it is safe to use the 7bit form. The 8bit and binary forms may be usable in other mail transport contexts. \nThe x-token, indicates that some other encoding scheme is used for which a name is to be supplied. This could be a vendor-specific or application-specific scheme. \nThe quoted-printable transfer encoding is useful when the data consists largely of octets that correspond to printable ASCII characters. \nThe base64 transfer encoding (known as radix-64 encoding) is a common one for encoding arbitrary binary data in such a way as to be invulnerable to the processing by mail-transport programs.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -37842,7 +37842,7 @@
       "index": 97,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_097.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_097.webp",
-      "text": "Slide 97 from Module 4",
+      "text": "\ufeff MIME Transfer Encodings",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -38468,7 +38468,7 @@
       "index": 98,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_098.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_098.webp",
-      "text": "Slide 98 from Module 4",
+      "text": "\ufeff MIME Native & Canonical Form Canonical Form \nAn important concept in MIME and S/MIME is that of canonical form.  \nCanonical form is a format, appropriate to the content type, that is standardized for use between systems. \nThis is in contrast to native form, which is a format that may be peculiar to a particular system.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -38513,7 +38513,7 @@
       "index": 99,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_099.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_099.webp",
-      "text": "Slide 99 from Module 4",
+      "text": "\ufeff MIME Native & Canonical Form",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -38558,7 +38558,7 @@
       "index": 100,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_100.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_100.webp",
-      "text": "Slide 100 from Module 4",
+      "text": "\ufeff Secure/MIME or S/MIME S/MIME adds some new content types to include security services to the MIME. \nAll of these new types include the parameter \u201capplication/pkcs7-mime\u201d in which \u201cpkcs\u201d defines \u201cPublic Key Cryptography Specification.\u201d\nCryptographic Message Syntax (CMS)\nTo define how security services, such as confidentiality or integrity, can be added to MIME content types, S/MIME has defined Cryptographic Message Syntax (CMS). \nThe syntax defines the exact encoding scheme for each content type.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -38596,7 +38596,7 @@
       "index": 101,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_101.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_101.webp",
-      "text": "Slide 101 from Module 4",
+      "text": "\ufeff S/MIME data content Types Signed-data content type",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -39313,7 +39313,7 @@
       "index": 102,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_102.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_102.webp",
-      "text": "Slide 102 from Module 4",
+      "text": "\ufeff S/MIME data content Types Enveloped-data content type",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -39358,7 +39358,7 @@
       "index": 103,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_103.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_103.webp",
-      "text": "Slide 103 from Module 4",
+      "text": "\ufeff S/MIME data content Types Digest-data content type",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -39473,7 +39473,7 @@
       "index": 104,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_104.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_104.webp",
-      "text": "Slide 104 from Module 4",
+      "text": "\ufeff S/MIME data content Types Encrypted-Data Content Type\n\nThis type is used to create an encrypted version of any content type. \nAlthough this looks like the enveloped-data content type, the encrypted-data content type has no recipient. \nIt can be used to store the encrypted data instead of transmitting it. \nThe process is very simple, the user employs any key (normally driven from the password) and any algorithm to encrypt the content. \nThe encrypted content is stored without including the key or the algorithm. \nThe object created is called encryptedData.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -40323,7 +40323,7 @@
       "index": 105,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_105.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_105.webp",
-      "text": "Slide 105 from Module 4",
+      "text": "\ufeff S/MIME data content Types Authenticated-data content type",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -40557,7 +40557,7 @@
       "index": 106,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_106.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_106.webp",
-      "text": "Slide 106 from Module 4",
+      "text": "\ufeff Secure/MIME Functionality S/MIME provides the following functions:\nEnveloped data: This consists of encrypted content of any type and encrypted content encryption keys for one or more recipients.\nSigned data: A digital signature is formed by taking the message digest of the content to be signed and then encrypting that with the private key of the signer. The content plus signature are then encoded using base64 encoding. A signed data message can only be viewed by a recipient with S/MIME capability.\nClear-signed data: As with signed data, a digital signature of the content is formed. However, in this case, only the digital signature is encoded using base64. As a result, recipients without S/MIME capability can view the message content, although they cannot verify the signature.\nSigned and enveloped data: Signed-only and encrypted-only entities may be nested, so that encrypted data may be signed and signed data or clear-signed data may be encrypted.",
       "width": 1280,
       "height": 720
     },
@@ -40565,7 +40565,7 @@
       "index": 107,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_107.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_107.webp",
-      "text": "Slide 107 from Module 4",
+      "text": "\ufeff S/MIME Cryptographic Algorithms  S/MIME defines several cryptographic algorithms.\nThe term \u201cmust\u201d means an absolute requirement.\nThe term \u201cshould\u201d means recommendation.",
       "width": 1280,
       "height": 720
     },
@@ -40573,7 +40573,7 @@
       "index": 108,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_108.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_108.webp",
-      "text": "Slide 108 from Module 4",
+      "text": "\ufeff S/MIME Cryptographic Algorithms  S/MIME uses the following terminology taken from RFC 2119 to specify the requirement level:\nMUST: The definition is an absolute requirement of the specification. An implementation must include this feature or function to be in conformance with the specification.\nSHOULD: There may exist valid reasons in particular circumstances to ignore this feature or function, but it is recommended that an implementation include the feature or function.\nS/MIME incorporates three public-key algorithms. The Digital Signature Standard \nS/MIME lists Diffie-Hellman as the preferred algorithm for encrypting session keys; in fact, S/MIME uses a variant of Diffie-Hellman that does provide encryption/decryption, known as ElGamal.\nFor message encryption, three-key triple DES (tripleDES) is recommended.",
       "width": 1280,
       "height": 720
     },
@@ -40581,7 +40581,7 @@
       "index": 109,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_109.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_109.webp",
-      "text": "Slide 109 from Module 4",
+      "text": "\ufeff S/MIME Cryptographic Algorithms",
       "width": 1280,
       "height": 720
     },
@@ -40589,7 +40589,7 @@
       "index": 110,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_110.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_110.webp",
-      "text": "Slide 110 from Module 4",
+      "text": "\ufeff Summary S/MIME protocol is an enhancement of the Multipurpose Internet Mail Extension (MIME) protocol\nS/MIME allows non-ASCII data to be sent through e-mail. \nS/MIME adds some new content types to MIME to provide security services.\nCryptographic Message Syntax (CMS) has defined several message types that produce new content types to be added to MIME.\nIn e-mail communication, encryption/decryption is done using a symmetric-key algorithm, but the secret key to encrypt the message is encrypted with the public key of the receiver and is sent with the message.\nS/MIME uses public-key certificates signed by the certificate authorities.",
       "width": 1280,
       "height": 720
     },
@@ -40597,895 +40597,7 @@
       "index": 111,
       "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_111.webp",
       "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_111.webp",
-      "text": "Slide 111 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 112,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_112.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_112.webp",
-      "text": "Slide 112 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 113,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_113.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_113.webp",
-      "text": "Slide 113 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 114,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_114.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_114.webp",
-      "text": "Slide 114 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 115,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_115.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_115.webp",
-      "text": "Slide 115 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 116,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_116.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_116.webp",
-      "text": "Slide 116 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 117,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_117.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_117.webp",
-      "text": "Slide 117 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 118,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_118.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_118.webp",
-      "text": "Slide 118 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 119,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_119.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_119.webp",
-      "text": "Slide 119 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 120,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_120.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_120.webp",
-      "text": "Slide 120 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 121,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_121.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_121.webp",
-      "text": "Slide 121 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 122,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_122.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_122.webp",
-      "text": "Slide 122 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 123,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_123.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_123.webp",
-      "text": "Slide 123 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 124,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_124.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_124.webp",
-      "text": "Slide 124 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 125,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_125.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_125.webp",
-      "text": "Slide 125 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 126,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_126.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_126.webp",
-      "text": "Slide 126 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 127,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_127.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_127.webp",
-      "text": "Slide 127 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 128,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_128.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_128.webp",
-      "text": "Slide 128 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 129,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_129.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_129.webp",
-      "text": "Slide 129 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 130,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_130.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_130.webp",
-      "text": "Slide 130 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 131,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_131.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_131.webp",
-      "text": "Slide 131 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 132,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_132.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_132.webp",
-      "text": "Slide 132 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 133,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_133.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_133.webp",
-      "text": "Slide 133 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 134,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_134.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_134.webp",
-      "text": "Slide 134 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 135,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_135.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_135.webp",
-      "text": "Slide 135 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 136,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_136.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_136.webp",
-      "text": "Slide 136 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 137,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_137.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_137.webp",
-      "text": "Slide 137 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 138,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_138.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_138.webp",
-      "text": "Slide 138 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 139,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_139.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_139.webp",
-      "text": "Slide 139 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 140,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_140.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_140.webp",
-      "text": "Slide 140 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 141,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_141.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_141.webp",
-      "text": "Slide 141 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 142,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_142.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_142.webp",
-      "text": "Slide 142 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 143,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_143.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_143.webp",
-      "text": "Slide 143 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 144,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_144.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_144.webp",
-      "text": "Slide 144 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 145,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_145.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_145.webp",
-      "text": "Slide 145 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 146,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_146.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_146.webp",
-      "text": "Slide 146 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 147,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_147.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_147.webp",
-      "text": "Slide 147 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 148,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_148.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_148.webp",
-      "text": "Slide 148 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 149,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_149.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_149.webp",
-      "text": "Slide 149 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 150,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_150.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_150.webp",
-      "text": "Slide 150 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 151,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_151.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_151.webp",
-      "text": "Slide 151 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 152,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_152.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_152.webp",
-      "text": "Slide 152 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 153,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_153.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_153.webp",
-      "text": "Slide 153 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 154,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_154.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_154.webp",
-      "text": "Slide 154 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 155,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_155.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_155.webp",
-      "text": "Slide 155 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 156,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_156.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_156.webp",
-      "text": "Slide 156 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 157,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_157.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_157.webp",
-      "text": "Slide 157 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 158,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_158.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_158.webp",
-      "text": "Slide 158 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 159,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_159.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_159.webp",
-      "text": "Slide 159 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 160,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_160.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_160.webp",
-      "text": "Slide 160 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 161,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_161.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_161.webp",
-      "text": "Slide 161 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 162,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_162.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_162.webp",
-      "text": "Slide 162 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 163,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_163.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_163.webp",
-      "text": "Slide 163 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 164,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_164.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_164.webp",
-      "text": "Slide 164 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 165,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_165.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_165.webp",
-      "text": "Slide 165 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 166,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_166.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_166.webp",
-      "text": "Slide 166 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 167,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_167.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_167.webp",
-      "text": "Slide 167 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 168,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_168.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_168.webp",
-      "text": "Slide 168 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 169,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_169.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_169.webp",
-      "text": "Slide 169 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 170,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_170.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_170.webp",
-      "text": "Slide 170 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 171,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_171.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_171.webp",
-      "text": "Slide 171 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 172,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_172.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_172.webp",
-      "text": "Slide 172 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 173,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_173.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_173.webp",
-      "text": "Slide 173 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 174,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_174.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_174.webp",
-      "text": "Slide 174 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 175,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_175.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_175.webp",
-      "text": "Slide 175 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 176,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_176.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_176.webp",
-      "text": "Slide 176 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 177,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_177.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_177.webp",
-      "text": "Slide 177 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 178,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_178.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_178.webp",
-      "text": "Slide 178 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 179,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_179.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_179.webp",
-      "text": "Slide 179 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 180,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_180.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_180.webp",
-      "text": "Slide 180 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 181,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_181.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_181.webp",
-      "text": "Slide 181 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 182,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_182.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_182.webp",
-      "text": "Slide 182 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 183,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_183.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_183.webp",
-      "text": "Slide 183 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 184,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_184.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_184.webp",
-      "text": "Slide 184 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 185,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_185.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_185.webp",
-      "text": "Slide 185 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 186,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_186.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_186.webp",
-      "text": "Slide 186 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 187,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_187.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_187.webp",
-      "text": "Slide 187 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 188,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_188.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_188.webp",
-      "text": "Slide 188 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 189,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_189.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_189.webp",
-      "text": "Slide 189 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 190,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_190.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_190.webp",
-      "text": "Slide 190 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 191,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_191.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_191.webp",
-      "text": "Slide 191 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 192,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_192.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_192.webp",
-      "text": "Slide 192 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 193,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_193.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_193.webp",
-      "text": "Slide 193 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 194,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_194.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_194.webp",
-      "text": "Slide 194 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 195,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_195.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_195.webp",
-      "text": "Slide 195 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 196,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_196.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_196.webp",
-      "text": "Slide 196 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 197,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_197.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_197.webp",
-      "text": "Slide 197 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 198,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_198.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_198.webp",
-      "text": "Slide 198 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 199,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_199.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_199.webp",
-      "text": "Slide 199 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 200,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_200.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_200.webp",
-      "text": "Slide 200 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 201,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_201.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_201.webp",
-      "text": "Slide 201 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 202,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_202.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_202.webp",
-      "text": "Slide 202 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 203,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_203.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_203.webp",
-      "text": "Slide 203 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 204,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_204.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_204.webp",
-      "text": "Slide 204 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 205,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_205.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_205.webp",
-      "text": "Slide 205 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 206,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_206.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_206.webp",
-      "text": "Slide 206 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 207,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_207.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_207.webp",
-      "text": "Slide 207 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 208,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_208.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_208.webp",
-      "text": "Slide 208 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 209,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_209.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_209.webp",
-      "text": "Slide 209 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 210,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_210.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_210.webp",
-      "text": "Slide 210 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 211,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_211.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_211.webp",
-      "text": "Slide 211 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 212,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_212.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_212.webp",
-      "text": "Slide 212 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 213,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_213.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_213.webp",
-      "text": "Slide 213 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 214,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_214.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_214.webp",
-      "text": "Slide 214 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 215,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_215.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_215.webp",
-      "text": "Slide 215 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 216,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_216.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_216.webp",
-      "text": "Slide 216 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 217,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_217.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_217.webp",
-      "text": "Slide 217 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 218,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_218.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_218.webp",
-      "text": "Slide 218 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 219,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_219.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_219.webp",
-      "text": "Slide 219 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 220,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_220.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_220.webp",
-      "text": "Slide 220 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 221,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_221.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_221.webp",
-      "text": "Slide 221 from Module 4",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 222,
-      "image": "/slides/cns_cns_module_notes_module_4_module_4_pptx/slide_222.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_4_module_4_pptx/thumb_222.webp",
-      "text": "Slide 222 from Module 4",
+      "text": "\ufeff Questions Explain the need of security at IP Layer along with its applications.\nExplain modes of operation of IPSec. \nCompare Transport and Tunnel Modes of IPsec.\nIn detail discuss the Sub protocols of IPSec.(AH, ESP, SA, IKE)\nWith neat diagram, explain the AH protocol header. Explain all its fields.\nWith neat diagram, explain the ESP protocol header. Explain all its fields.\nWith neat diagram, explain IPSec Security Architecture.\nWith neat diagram, explain the SSL protocol stack. Or Explain the SSL protocol architecture. \nExplain SSL record layer protocol in detail.\nWith neat diagram, explain SSL handshake protocol. \nDescribe with appropriate diagrams how cryptographic secrets are generated in TLS?\nExplain in detail the Data expansion function and Pseudorandom function in TLS.\nWith neat diagram explain TLS handshake protocol.\nWrite Short Notes on Secure Email.\nExplain Secure Email protocol and S/MIME.",
       "width": 1280,
       "height": 720
     }

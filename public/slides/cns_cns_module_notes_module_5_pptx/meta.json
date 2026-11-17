@@ -6,7 +6,7 @@
       "index": 1,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_001.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_001.webp",
-      "text": "Slide 1 from Module 5",
+      "text": "\ufeff Detail Topics Intrusion Detection System (IDS)\nIntrusion Prevention System (IPS)\nFirewall \nDesign Principles\nCharacteristics of Firewalls\nTypes of Firewalls",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -184,7 +184,7 @@
       "index": 2,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_002.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_002.webp",
-      "text": "Slide 2 from Module 5",
+      "text": "\ufeff INTRUSION The act of gaining unauthorized access to a system so as to cause loss or harm.\nThe most common threat to security is an attack by an Intruder.\nIntruders may be from outside the network or legitimate users of the network.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -530,7 +530,7 @@
       "index": 3,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_003.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_003.webp",
-      "text": "Slide 3 from Module 5",
+      "text": "\ufeff INTRUDERS Intruders are often referred to as hackers\nExploits the vulnerability; most harmful factor contributing to the breach of security.\nThey have immense knowledge and an in-depth understanding of technology and security. \nIntruders breach the privacy of users and aim to steal the confidential information of the users. \nThe stolen information is then sold to third parties, which aim at misusing the information for their own personal or professional gains. \nIntruders can broadly be divided into 3 different types: Masquerader, Misfeasor, Clandestine Users",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -1219,7 +1219,7 @@
       "index": 4,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_004.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_004.webp",
-      "text": "Slide 4 from Module 5",
+      "text": "\ufeff INTRUDER TYPES Masquerader\nThe category of individuals that are not authorized to use the system but still exploit user\u2019s privacy and confidential information by possessing techniques that give them control over the system. \nMasqueraders are outsiders and hence they don\u2019t have direct access to the system, their aim is to attack unethically to steal data/ information.\nMisfeasor\nThe category of individuals that are authorized to use the system, but misuse the granted access and privilege. \nThese are individuals that take undue advantage of the permissions and access given to them.\nMisfeasors are insiders and they have direct access to the system, which they aim to attack unethically for stealing data/ information.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -2083,7 +2083,7 @@
       "index": 5,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_005.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_005.webp",
-      "text": "Slide 5 from Module 5",
+      "text": "\ufeff INTRUDER TYPES Clandestine Users\nThe category of individuals who have supervision/administrative control over the system and misuse the authoritative power given to them. \nThe misconduct of power is often done by superlative authorities for financial gains\nA Clandestine User can be any of the two, insiders or outsiders, and accordingly, they can have direct/ indirect access to the system, which they aim to attack unethically for stealing data/ information.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -2625,7 +2625,7 @@
       "index": 6,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_006.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_006.webp",
-      "text": "Slide 6 from Module 5",
+      "text": "\ufeff INTRUSION PREVENTION SYSTEM (IPS) Intrusion prevention is the process of detecting the signs of intrusion and attempting to stop the intrusive efforts.\nIt is more advanced than an intrusion detection system (IDS).",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -2866,7 +2866,7 @@
       "index": 7,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_007.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_007.webp",
-      "text": "Slide 7 from Module 5",
+      "text": "\ufeff INTRUSION DETECTION SYSTEM (IDS) Inevitably, the best intrusion prevention system tends to fail. \nA system's second line of defence is intrusion detection, and this has been the focus of much research in recent years.  This interest is motivated by a number of considerations:\nIf an intrusion is detected quickly enough, the intruder can be identified and ejected from the system before any damage is done or any data is compromised. \nAn effective intrusion detection system can serve as a deterrent (barrier), acting to prevent intrusions.\nIntrusion detection enables the collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -3702,7 +3702,7 @@
       "index": 8,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_008.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_008.webp",
-      "text": "Slide 8 from Module 5",
+      "text": "\ufeff",
       "width": 1280,
       "height": 720,
       "rects": []
@@ -3711,7 +3711,7 @@
       "index": 9,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_009.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_009.webp",
-      "text": "Slide 9 from Module 5",
+      "text": "\ufeff INTRUSION DETECTION SYSTEM (IDS) Intrusion Detection System (IDS) monitors network traffic for unusual or suspicious activity and sends an alert to the administrator. \nDetection of anomalous activity and reporting it to the network administrator is the primary function \nSome IDS software can take action based on rules when malicious activity is detected, for example blocking certain incoming traffic.\nIntrusion detection systems are of two types:\nNetwork based \nHost-based",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -4253,7 +4253,7 @@
       "index": 10,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_010.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_010.webp",
-      "text": "Slide 10 from Module 5",
+      "text": "\ufeff NETWORK BASED IDS (NIDS)",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -4270,7 +4270,7 @@
       "index": 11,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_011.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_011.webp",
-      "text": "Slide 11 from Module 5",
+      "text": "\ufeff NETWORK BASED IDS (NIDS) NIDS usually has two logical components: the sensor and the management station. \nThe sensors are usually dedicated systems that exist only to monitor the network.\nSensors  have an network interface in promiscuous mode. \nIf they detect something that looks unusual, they pass it to the management station.\nThe management station can display the alarms or do additional analysis.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -4777,7 +4777,7 @@
       "index": 12,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_012.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_012.webp",
-      "text": "Slide 12 from Module 5",
+      "text": "\ufeff NETWORK BASED IDS (NIDS)",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -4794,7 +4794,7 @@
       "index": 13,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_013.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_013.webp",
-      "text": "Slide 13 from Module 5",
+      "text": "\ufeff NETWORK BASED IDS (NIDS) Strengths\nNIDS can detect some of the attacks that use the network. \nA network-based IDS does not require modification of servers or hosts. \nThe IDS is not placed on a critical path for any production services or processes because a network-based IDS does not act as a router or other critical device. \nNetwork-based IDS systems tend to be more self-contained than host-based systems.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -5385,7 +5385,7 @@
       "index": 14,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_014.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_014.webp",
-      "text": "Slide 14 from Module 5",
+      "text": "\ufeff NETWORK BASED IDS (NIDS) Weaknesses\nNIDS only examines network traffic on the segment to which it is directly connected, but it cannot detect an attack that travels through a different network segment. \nNIDS tend to use signature analysis in order to meet performance requirements. \nA NIDS may need to communicate large volumes of data back to the central analysis system. The disadvantage of this is that it provides very little coordination amongst sensors.\nA network-based IDS may have a difficult time handling attacks within encrypted sessions.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -6060,7 +6060,7 @@
       "index": 15,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_015.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_015.webp",
-      "text": "Slide 15 from Module 5",
+      "text": "\ufeff HOST BASED IDS (HIDS) HIDS looks for signs of intrusion on the local host system. \nThese frequently use the host system\u2019s audit and logging mechanism as a source of information for analysis.\nThey look for unusual activity that is confined to the local host such as logins, improper file access, unapproved privilege escalation, or alterations on system privileges. \nThis IDS architecture generally uses rule-based engines for analysing activity.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -6616,7 +6616,7 @@
       "index": 16,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_016.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_016.webp",
-      "text": "Slide 16 from Module 5",
+      "text": "\ufeff HOST BASED IDS (HIDS) Strengths\nHIDS can be an extremely powerful tool for analysing a possible attack. \nHost-based systems tend to have lower false positive rates than network-based systems. \nHost based systems can be used in environments where broad intrusion detection is not needed.\nA host-based system is less risky to configure with an active response, such as terminating a service or logging off an offending user.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -7186,7 +7186,7 @@
       "index": 17,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_017.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_017.webp",
-      "text": "Slide 17 from Module 5",
+      "text": "\ufeff HOST BASED IDS (HIDS) Weaknesses\nHIDS require installation on the particular device that you wish to protect. \nHIDS tend to rely on the innate logging and monitoring capabilities of the server. \nHIDS are relatively expensive. \nHIDS suffer to an even greater degree, from local-vision restrictions. The analysis time required to evaluate damage from a potential intrusion increases linearly with the number of protected hosts.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -7707,7 +7707,7 @@
       "index": 18,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_018.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_018.webp",
-      "text": "Slide 18 from Module 5",
+      "text": "\ufeff INTRUSION DETECTION TECHNIQUES All IDSs use two modes of operation \nSignature-based IDS\nAnomaly-based IDS\nSome may only use one or the other, but most use both.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -7948,7 +7948,7 @@
       "index": 19,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_019.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_019.webp",
-      "text": "Slide 19 from Module 5",
+      "text": "\ufeff SIGNATURE BASED IDS In this technique, the sensors which are placed in different LAN segments filter and analyse network packets in real time and compares them against a database of known attack signatures. \nAttack signatures are known methods that intruders have employed in the past to penetrate a network. \nThe signature-based method looks at checksums and message authentication. \nA HIDS will look at log and config files for any unexpected rewrites\nA NIDS will look at the checksums in captured packets and message authentication integrity of systems such as SHA1.\nThe NIDS may include a database of signatures that packets known to be sources of malicious activities carry.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -8798,7 +8798,7 @@
       "index": 20,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_020.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_020.webp",
-      "text": "Slide 20 from Module 5",
+      "text": "\ufeff ANOMALY BASED IDS Anomaly-based detection looks for unexpected or unusual patterns of activities. \nThis category can be implemented by both host and network-based intrusion detection systems. \nIn case of HIDS, an anomaly might be repeated failed login attempts or unusual activity on the ports of a device that signify port scanning.\nIn the case of NIDS, the anomaly approach requires establishing a baseline of behaviour to create a standard situation against which ongoing traffic patterns can be compared. \nA range of traffic patterns are considered acceptable, and when current real-time traffic moves out of that range, an anomaly alert is provoked.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -9627,7 +9627,7 @@
       "index": 21,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_021.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_021.webp",
-      "text": "Slide 21 from Module 5",
+      "text": "\ufeff FIREWALL A firewall is a device that filters all traffic between a protected or \u201cinside\u201d network and less trustworthy or \u201coutside\u201d network.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -9805,7 +9805,7 @@
       "index": 22,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_022.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_022.webp",
-      "text": "Slide 22 from Module 5",
+      "text": "\ufeff Characteristics of Firewall All traffic from inside to outside and vice versa, must pass through the firewall. \nTo achieve this, all the access to the local network must first be physically blocked and access only via the firewall should be permitted.\nOnly the traffic authorized as per the local security policy should be allowed to pass through.\nThe firewall itself must be strong enough , so as to render attacks on itself.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -10361,7 +10361,7 @@
       "index": 23,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_023.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_023.webp",
-      "text": "Slide 23 from Module 5",
+      "text": "\ufeff TYPES OF FIREWALL Packet filters\nStateful  packet filters\nApplication proxies\nPersonal firewalls",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -10434,7 +10434,7 @@
       "index": 24,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_024.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_024.webp",
-      "text": "Slide 24 from Module 5",
+      "text": "\ufeff PACKET FILTER FIREWALL A packet filter applies a set of rules to each packet and based on the outcome, decides to either forward or discard the packet.\nIt is also called as a screening router or screening filter.\nThe filtering rules are based on a number of fields in the IP and TCP/UDP headers.\nA packet filter performs the following functions:\nReceive each packet as it arrives.\nPass the packet through a set of rules, based on the contents of the IP and transport header fields of the packet.\nIf there is no match with any rule, take the default action.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -11249,7 +11249,7 @@
       "index": 25,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_025.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_025.webp",
-      "text": "Slide 25 from Module 5",
+      "text": "\ufeff PACKET FILTER FIREWALL Advantages:\nApplication independent - only examines packet at the network layer\nHigh performance - simple rules that require little processing and decision making beyond what is normally done for routing decisions\nScalable - low overhead of filtering means large amount of traffic can be handled\nTransparent - user\u2019s don\u2019t need to provide additional passwords or use special commands to initiate connections",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -11728,7 +11728,7 @@
       "index": 26,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_026.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_026.webp",
-      "text": "Slide 26 from Module 5",
+      "text": "\ufeff PACKET FILTER FIREWALL Disadvantages:\nExamines and filters only at the network layer - no application level awareness or state context is maintained\nSecurity is weak -  the state of a given connection is not maintained making it easier to exploit networking protocols and applications.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -12060,7 +12060,7 @@
       "index": 27,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_027.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_027.webp",
-      "text": "Slide 27 from Module 5",
+      "text": "\ufeff ATTACKS ON PACKET FILTER FIREWALL IP address spoofing\nfake source address to be trusted\nadd filters on router to block\n\nSource routing attacks\nattacker sets a route other than default\nblock source routed packets\n\nTiny fragment attacks\nsplit header information over several tiny packets\neither discard or reassemble before check",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -12210,7 +12210,7 @@
       "index": 28,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_028.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_028.webp",
-      "text": "Slide 28 from Module 5",
+      "text": "\ufeff STATEFUL PACKET FILTER FIREWALL A stateful packet filter adds state to a packet filter firewall. This means that the firewall keeps tracks of TCP connections, and it can remember UDP connections as well.\nA stateful packet filter operates at the transport layer. \nThe primary advantage of a stateful packet filter is that in addition to all the features of a  packet filter, it also keeps track of ongoing connection.\nThe disadvantage of  a stateful packet filter are that it cannot examine application data.\n It\u2019s slower than a packet filtering firewall since more processing is required.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -12948,7 +12948,7 @@
       "index": 29,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_029.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_029.webp",
-      "text": "Slide 29 from Module 5",
+      "text": "\ufeff STATEFUL PACKET FILTER FIREWALL Advantages: \nMaintain a state table to track active connections.\nInspect packets in the context of their associated connection.\nMake decisions based on both the packet header information and the state of the connection.\nCan implement more sophisticated security policies, such as blocking unauthorized connections or detecting anomalies in traffic patterns.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -13385,7 +13385,7 @@
       "index": 30,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_030.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_030.webp",
-      "text": "Slide 30 from Module 5",
+      "text": "\ufeff STATEFUL PACKET FILTER FIREWALL Advantages: \nImproved security: Stateful packet filters can detect and block various attacks that packet filters might miss, such as SYN flood attacks and spoofing.\nEnhanced performance: By maintaining state information, stateful packet filters can optimize their decision-making process and reduce the computational overhead.\nFlexibility: Stateful packet filters can implement more complex security policies, such as allowing only established connections or blocking certain types of traffic based on the source or destination IP address.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -14004,7 +14004,7 @@
       "index": 31,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_031.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_031.webp",
-      "text": "Slide 31 from Module 5",
+      "text": "\ufeff APPLICATION PROXY A proxy is something that acts on your behalf.\nAn application proxy firewall processes incoming packets all the way up to the application layer.\nThe primary advantage of  the application proxy is that it has complete view of the connections and the application data.\nThe disadvantage of an application proxy is speed.\nOne interesting feature of an application proxy is that the incoming packet is destroyed and a new packet is created when the data passes through the firewall.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -14644,7 +14644,7 @@
       "index": 32,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_032.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_032.webp",
-      "text": "Slide 32 from Module 5",
+      "text": "\ufeff PERSONAL FIREWALL A personal firewall is used to protect a single host or  a small network, such as  a home network.\nsoftware applications that act as a security barrier between your computer and the internet.\nAny of the three methods discussed earlier can be used. \nGenerally such firewalls are relatively simple for the sake of efficiency.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -15116,7 +15116,7 @@
       "index": 33,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_033.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_033.webp",
-      "text": "Slide 33 from Module 5",
+      "text": "\ufeff Features of Personal Firewalls Inbound and Outbound Traffic Control: They can block or allow specific types of traffic, such as incoming connections from unknown sources or outgoing connections to potentially malicious websites.\nPort Blocking: They can prevent unauthorized access to specific ports on your computer, which are used by various applications and services.\nIntrusion Detection: Some firewalls can detect and alert you to potential hacking attempts or other malicious activities.\nApplication Control: They can restrict or block certain applications from accessing the internet, helping to prevent unauthorized downloads or data leaks.\nNetwork Address Translation (NAT): This feature hides your computer's IP address from the internet, making it more difficult for hackers to target your system.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16015,7 +16015,7 @@
       "index": 34,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_034.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_034.webp",
-      "text": "Slide 34 from Module 5",
+      "text": "\ufeff NETWORK ADDRESS TRANSLATION One of the interesting jobs done by a firewall is to perform Network Address Translation (NAT).\n\nNAT attempts to solve the problem of the shortage of IP addresses.\nNAT allows user to have a  large number of IP addresses internally , but only a single IP address externally.\nIt also hides your computer's IP address from the internet, making it more difficult for hackers to target your system.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16564,7 +16564,7 @@
       "index": 35,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_035.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_035.webp",
-      "text": "Slide 35 from Module 5",
+      "text": "\ufeff NETWORK ADDRESS TRANSLATION Ref: https://youtu.be/FTUV0t6JaDA",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16588,7 +16588,7 @@
       "index": 36,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_036.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_036.webp",
-      "text": "Slide 36 from Module 5",
+      "text": "\ufeff NETWORK ADDRESS TRANSLATION Ref: https://ipwithease.com/public-ip-vs-private-ip/",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16668,7 +16668,7 @@
       "index": 37,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_037.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_037.webp",
-      "text": "Slide 37 from Module 5",
+      "text": "\ufeff NETWORK ADDRESS TRANSLATION",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16685,7 +16685,7 @@
       "index": 38,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_038.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_038.webp",
-      "text": "Slide 38 from Module 5",
+      "text": "\ufeff NETWORK ADDRESS TRANSLATION Ref: https://youtu.be/FTUV0t6JaDA",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16709,7 +16709,7 @@
       "index": 39,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_039.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_039.webp",
-      "text": "Slide 39 from Module 5",
+      "text": "\ufeff NETWORK ADDRESS TRANSLATION Ref: https://youtu.be/FTUV0t6JaDA",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16733,7 +16733,7 @@
       "index": 40,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_040.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_040.webp",
-      "text": "Slide 40 from Module 5",
+      "text": "\ufeff NETWORK ADDRESS TRANSLATION Ref: https://youtu.be/FTUV0t6JaDA",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -16757,7 +16757,7 @@
       "index": 41,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_041.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_041.webp",
-      "text": "Slide 41 from Module 5",
+      "text": "\ufeff FIREWALL CONFIGURATIONS & BASTION HOST A bastion host is a system, identified as a critical point in the network\u2019s security. \nTypically, the bastion host serves as a platform for an application-level gateway.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -17019,7 +17019,7 @@
       "index": 42,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_042.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_042.webp",
-      "text": "Slide 42 from Module 5",
+      "text": "\ufeff BASTION HOST Characteristics Often a bastion host runs a single application or process.\nOnly the services that the network administrator considers essential are installed on the bastion host. \nExamples of Bastion host are proxy server, load balancer, mail, web, DNS servers etc.\nBastion host is exposed to the public network, hence must withstand cyber attacks. Its often equipped with special network interfaces.\nThe bastion host hardware platform executes a secure version of its operating system, making it a hardened system.\nThe bastion host may require additional authentication before a user is allowed access to the proxy services. In addition, each proxy service may require its own authentication before granting user access.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -17897,7 +17897,7 @@
       "index": 43,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_043.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_043.webp",
-      "text": "Slide 43 from Module 5",
+      "text": "\ufeff Firewall Configuration with Bastion The best method to secure bastion host, is to use two level firewall.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -17935,7 +17935,7 @@
       "index": 44,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_044.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_044.webp",
-      "text": "Slide 44 from Module 5",
+      "text": "\ufeff FIREWALL CONFIGURATIONS with Bastion Bastion host placement in the network is often associated with the firewall.\nFollowing configurations are commonly used.\nScreened Host Firewall, Single Homed Bastion\nScreened Host Firewall, Dual Homed Bastion\nScreened Subnet Firewall",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18225,7 +18225,7 @@
       "index": 45,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_045.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_045.webp",
-      "text": "Slide 45 from Module 5",
+      "text": "\ufeff SCREENED HOST FIREWALL, SINGLE HOMED BASTION In the Screened Host Firewall, Single Homed Bastion configuration,  a firewall set up consists of two parts,\nA packet filtering router \nThe packet filter ensures that the incoming traffic is allowed only if it is destined for the application gateway, by examining the destination address field of every incoming packet. \nSimilarly, it also ensures that the outgoing traffic is allowed only if it is originating from the application gateway, by examining the source address field of every outgoing IP packet.\nAn application gateway\nThe application gateway performs authentication and proxy functions.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18956,7 +18956,7 @@
       "index": 46,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_046.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_046.webp",
-      "text": "Slide 46 from Module 5",
+      "text": "\ufeff SCREENED HOST FIREWALL, SINGLE HOMED BASTION",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -18973,7 +18973,7 @@
       "index": 47,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_047.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_047.webp",
-      "text": "Slide 47 from Module 5",
+      "text": "\ufeff SCREENED HOST FIREWALL, SINGLE HOMED BASTION Advantages:\nThis configuration increases the security of the network by performing checks at both packet and application levels.\nThis also gives more flexibility to the network administrators to define more granular security policies.\nDisadvantage:\nThe internal users are connected to the bastion, as well as to the packet filter. \nIf the packet filter is somehow successfully attacked and its security is compromised , then the whole internal network is exposed to the attacker.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -19599,7 +19599,7 @@
       "index": 48,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_048.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_048.webp",
-      "text": "Slide 48 from Module 5",
+      "text": "\ufeff SCREENED HOST FIREWALL, DUAL HOMED BASTION In this configurations, direct connections between the internal hosts and the packet filter are avoided. \nThe packet filter now connects only to the bastion, which in turn has  a separate connection with the internal hosts.\nTherefore, even if the packet filter is successfully attacked, only the bastion is visible to the attacker. \nThe internal hosts are protected.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20120,7 +20120,7 @@
       "index": 49,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_049.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_049.webp",
-      "text": "Slide 49 from Module 5",
+      "text": "\ufeff SCREENED HOST FIREWALL, DUAL HOMED BASTION",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20172,7 +20172,7 @@
       "index": 50,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_050.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_050.webp",
-      "text": "Slide 50 from Module 5",
+      "text": "\ufeff SCREENED SUBNET FIREWALL This is one of the most secured firewall configurations. \nIn this configuration, two packet filtering routers are used, and the bastion host is positioned in between the two routers.\nThis creates a screened subnet between the two firewalls",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20490,7 +20490,7 @@
       "index": 51,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_051.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_051.webp",
-      "text": "Slide 51 from Module 5",
+      "text": "\ufeff SCREENED SUBNET (DMZ) FIREWALL",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20507,7 +20507,7 @@
       "index": 52,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_052.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_052.webp",
-      "text": "Slide 52 from Module 5",
+      "text": "\ufeff Revision Components of System Security\nIDS/ IPS\nProactive and/or reactive approach to security\nFirewalls\nIn action 24/7\nPerforms many more than security\nNAT\nOrganization of network for smooth functioning\nAllow layered security",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -20650,7 +20650,7 @@
       "index": 53,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_053.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_053.webp",
-      "text": "Slide 53 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS A DMZ, or demilitarized zone, is a physical or logical subnet that separates a local area network (LAN) from other untrusted networks -- usually, the public internet. \nDMZs are also known as perimeter networks or screened subnetworks.\nServers and resources in the DMZ are accessible from the internet, but the rest of the internal LAN remains unreachable.\nThis approach provides an additional layer of security to the LAN as it restricts a hacker's ability to directly access internal servers and data from the internet.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21332,7 +21332,7 @@
       "index": 54,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_054.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_054.webp",
-      "text": "Slide 54 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21356,7 +21356,7 @@
       "index": 55,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_055.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_055.webp",
-      "text": "Slide 55 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21380,7 +21380,7 @@
       "index": 56,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_056.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_056.webp",
-      "text": "Slide 56 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21404,7 +21404,7 @@
       "index": 57,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_057.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_057.webp",
-      "text": "Slide 57 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21428,7 +21428,7 @@
       "index": 58,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_058.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_058.webp",
-      "text": "Slide 58 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21452,7 +21452,7 @@
       "index": 59,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_059.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_059.webp",
-      "text": "Slide 59 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21476,7 +21476,7 @@
       "index": 60,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_060.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_060.webp",
-      "text": "Slide 60 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21500,7 +21500,7 @@
       "index": 61,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_061.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_061.webp",
-      "text": "Slide 61 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21524,7 +21524,7 @@
       "index": 62,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_062.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_062.webp",
-      "text": "Slide 62 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21548,7 +21548,7 @@
       "index": 63,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_063.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_063.webp",
-      "text": "Slide 63 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21572,7 +21572,7 @@
       "index": 64,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_064.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_064.webp",
-      "text": "Slide 64 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21596,7 +21596,7 @@
       "index": 65,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_065.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_065.webp",
-      "text": "Slide 65 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21620,7 +21620,7 @@
       "index": 66,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_066.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_066.webp",
-      "text": "Slide 66 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21644,7 +21644,7 @@
       "index": 67,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_067.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_067.webp",
-      "text": "Slide 67 from Module 5",
+      "text": "\ufeff DEMILITARIZED ZONE (DMZ) NETWORKS Ref: https://youtu.be/dqlzQXo1wqo",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21668,7 +21668,7 @@
       "index": 68,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_068.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_068.webp",
-      "text": "Slide 68 from Module 5",
+      "text": "\ufeff Let\u2019s Revise A packet filter firewall filters at __________.\nPhysical layer\nData link layer\nNetwork layer or Transport layer\nApplication layer\n\nWhat is the primary advantage of using a packet filter firewall?\nHigh performance\nEasy to configure\nLow cost\nAll of the above",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -21811,7 +21811,7 @@
       "index": 69,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_069.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_069.webp",
-      "text": "Slide 69 from Module 5",
+      "text": "\ufeff Let\u2019s Revise What is the primary function of a packet filter firewall?\nTo inspect and filter network packets based on their headers.\nTo monitor network traffic for unauthorized access attempts.\nTo prevent unauthorized access to network resources.\nTo encrypt and decrypt data transmitted over the network.\n\nWhich of the following is NOT a common filtering criterion used by packet filter firewalls?\nSource IP address\nDestination IP address\nProtocol\nApplication data",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -22353,7 +22353,7 @@
       "index": 70,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_070.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_070.webp",
-      "text": "Slide 70 from Module 5",
+      "text": "\ufeff Let\u2019s Revise What is the main limitation of packet filter firewalls?\nThey cannot inspect the contents of packets.\nThey are not effective against stateful attacks.\nThey cannot be used to protect against malware.\n They are difficult to configure.\n\nWhich type of firewall is considered more secure than a packet filter firewall?\nStateful inspection firewall\nApplication firewall\nProxy firewall\nAll of the above",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -22692,7 +22692,7 @@
       "index": 71,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_071.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_071.webp",
-      "text": "Slide 71 from Module 5",
+      "text": "\ufeff Let\u2019s Revise A stateful firewall maintains a ___________ which is a list of active connections.\nRouting table\nBridging table\nState table\nConnection table",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -22779,7 +22779,7 @@
       "index": 72,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_072.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_072.webp",
-      "text": "Slide 72 from Module 5",
+      "text": "\ufeff Let\u2019s Revise A proxy firewall filters at _________.\u000b\nPhysical layer\nData link layer\nNetwork layer\nApplication layer\n\nWhich of the following protocols is typically supported by an application proxy firewall?\n\nHTTP\nFTP\nSMTP\nAll of the above",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -22922,7 +22922,7 @@
       "index": 73,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_073.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_073.webp",
-      "text": "Slide 73 from Module 5",
+      "text": "\ufeff Let\u2019s Revise Which direction access cannot happen using DMZ zone by default?\nCompany computer to DMZ\nInternet to DMZ\nInternet to company computer\nCompany computer to internet\n\nWhat is the best practice in the firewall domain environment?\nCreate two domain trusted and untrusted domain\nCreate strong policy in firewall to support different types of users\nCreate a Demilitarized zone\nCreate two DMZ zones with one untrusted domain",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23072,7 +23072,7 @@
       "index": 74,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_074.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_074.webp",
-      "text": "Slide 74 from Module 5",
+      "text": "\ufeff Questions Define and explain Intrusion and types of Intruders in detail. \nWith neat diagram, explain NIDS in detail. Discuss its strengths and weaknesses.\nCompare NIDS and HIDS.\nCompare Signature based and Anomaly based IDS. \nState different types of firewalls. Explain any two in detail. \nWith neat diagram, explain the concept of bastion host. Discuss its characteristics in detail.\nWith neat diagram, explain any two firewall configurations with Bastion. \nWith neat diagram, explain in detail the concept of DMZ.",
       "width": 1280,
       "height": 720,
       "rects": [
@@ -23761,607 +23761,7 @@
       "index": 75,
       "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_075.webp",
       "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_075.webp",
-      "text": "Slide 75 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 76,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_076.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_076.webp",
-      "text": "Slide 76 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 77,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_077.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_077.webp",
-      "text": "Slide 77 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 78,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_078.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_078.webp",
-      "text": "Slide 78 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 79,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_079.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_079.webp",
-      "text": "Slide 79 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 80,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_080.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_080.webp",
-      "text": "Slide 80 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 81,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_081.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_081.webp",
-      "text": "Slide 81 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 82,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_082.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_082.webp",
-      "text": "Slide 82 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 83,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_083.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_083.webp",
-      "text": "Slide 83 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 84,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_084.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_084.webp",
-      "text": "Slide 84 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 85,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_085.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_085.webp",
-      "text": "Slide 85 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 86,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_086.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_086.webp",
-      "text": "Slide 86 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 87,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_087.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_087.webp",
-      "text": "Slide 87 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 88,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_088.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_088.webp",
-      "text": "Slide 88 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 89,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_089.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_089.webp",
-      "text": "Slide 89 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 90,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_090.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_090.webp",
-      "text": "Slide 90 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 91,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_091.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_091.webp",
-      "text": "Slide 91 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 92,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_092.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_092.webp",
-      "text": "Slide 92 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 93,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_093.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_093.webp",
-      "text": "Slide 93 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 94,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_094.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_094.webp",
-      "text": "Slide 94 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 95,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_095.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_095.webp",
-      "text": "Slide 95 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 96,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_096.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_096.webp",
-      "text": "Slide 96 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 97,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_097.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_097.webp",
-      "text": "Slide 97 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 98,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_098.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_098.webp",
-      "text": "Slide 98 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 99,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_099.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_099.webp",
-      "text": "Slide 99 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 100,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_100.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_100.webp",
-      "text": "Slide 100 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 101,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_101.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_101.webp",
-      "text": "Slide 101 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 102,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_102.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_102.webp",
-      "text": "Slide 102 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 103,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_103.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_103.webp",
-      "text": "Slide 103 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 104,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_104.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_104.webp",
-      "text": "Slide 104 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 105,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_105.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_105.webp",
-      "text": "Slide 105 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 106,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_106.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_106.webp",
-      "text": "Slide 106 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 107,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_107.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_107.webp",
-      "text": "Slide 107 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 108,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_108.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_108.webp",
-      "text": "Slide 108 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 109,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_109.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_109.webp",
-      "text": "Slide 109 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 110,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_110.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_110.webp",
-      "text": "Slide 110 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 111,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_111.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_111.webp",
-      "text": "Slide 111 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 112,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_112.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_112.webp",
-      "text": "Slide 112 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 113,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_113.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_113.webp",
-      "text": "Slide 113 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 114,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_114.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_114.webp",
-      "text": "Slide 114 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 115,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_115.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_115.webp",
-      "text": "Slide 115 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 116,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_116.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_116.webp",
-      "text": "Slide 116 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 117,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_117.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_117.webp",
-      "text": "Slide 117 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 118,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_118.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_118.webp",
-      "text": "Slide 118 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 119,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_119.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_119.webp",
-      "text": "Slide 119 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 120,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_120.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_120.webp",
-      "text": "Slide 120 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 121,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_121.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_121.webp",
-      "text": "Slide 121 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 122,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_122.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_122.webp",
-      "text": "Slide 122 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 123,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_123.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_123.webp",
-      "text": "Slide 123 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 124,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_124.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_124.webp",
-      "text": "Slide 124 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 125,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_125.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_125.webp",
-      "text": "Slide 125 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 126,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_126.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_126.webp",
-      "text": "Slide 126 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 127,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_127.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_127.webp",
-      "text": "Slide 127 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 128,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_128.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_128.webp",
-      "text": "Slide 128 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 129,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_129.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_129.webp",
-      "text": "Slide 129 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 130,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_130.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_130.webp",
-      "text": "Slide 130 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 131,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_131.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_131.webp",
-      "text": "Slide 131 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 132,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_132.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_132.webp",
-      "text": "Slide 132 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 133,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_133.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_133.webp",
-      "text": "Slide 133 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 134,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_134.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_134.webp",
-      "text": "Slide 134 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 135,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_135.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_135.webp",
-      "text": "Slide 135 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 136,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_136.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_136.webp",
-      "text": "Slide 136 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 137,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_137.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_137.webp",
-      "text": "Slide 137 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 138,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_138.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_138.webp",
-      "text": "Slide 138 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 139,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_139.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_139.webp",
-      "text": "Slide 139 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 140,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_140.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_140.webp",
-      "text": "Slide 140 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 141,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_141.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_141.webp",
-      "text": "Slide 141 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 142,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_142.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_142.webp",
-      "text": "Slide 142 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 143,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_143.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_143.webp",
-      "text": "Slide 143 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 144,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_144.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_144.webp",
-      "text": "Slide 144 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 145,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_145.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_145.webp",
-      "text": "Slide 145 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 146,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_146.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_146.webp",
-      "text": "Slide 146 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 147,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_147.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_147.webp",
-      "text": "Slide 147 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 148,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_148.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_148.webp",
-      "text": "Slide 148 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 149,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_149.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_149.webp",
-      "text": "Slide 149 from Module 5",
-      "width": 1280,
-      "height": 720
-    },
-    {
-      "index": 150,
-      "image": "/slides/cns_cns_module_notes_module_5_pptx/slide_150.webp",
-      "thumb": "/slides/cns_cns_module_notes_module_5_pptx/thumb_150.webp",
-      "text": "Slide 150 from Module 5",
+      "text": "\ufeff Topics Remaining from Module 2 RC2 \u2013M2\nRemote user Authentication Protocols-M2\nPKI-M2\nDSS-M2\nNeedham Schoder-M2",
       "width": 1280,
       "height": 720
     }
