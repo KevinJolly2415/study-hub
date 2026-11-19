@@ -1,0 +1,373 @@
+{
+  "mtime": 1794989238.0394273,
+  "aspectRatio": 0.71,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_5_ids_5_sample_questions_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_sample_questions_pdf/thumb_001.webp",
+      "text": "Module 5 Sample questions\r\n\u2022 What is machine learning and explain its types.\r\n\u2022 Difference between Machine Learning types\r\n\u2022 Steps to develop Machine learning application\r\n\u2022 Difference between Linear and Polynomial regression\r\n\u2022 Numerical on Linear regression, evaluation metrics, K-Means (Single)\r\ndimensional data and multiple dimensional data), Single Link \r\nAgglomerative Clustering\r\n\u2022 Examples on MAE, MSE and RMSE\r\n\u2022 SN on Logistic Regression, SVM, K-Means, Hierarchical Clustering, \r\nPCA, evaluation metrics\r\n\u2022 SN on Dimensionality Reduction (PCA)",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 13.53,
+          "t": 9.12,
+          "w": 37.56,
+          "h": 1.82,
+          "text": "Module 5 Sample questions"
+        },
+        {
+          "l": 13.41,
+          "t": 13.42,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.31,
+          "t": 13.09,
+          "w": 5.85,
+          "h": 1.13,
+          "text": "What "
+        },
+        {
+          "l": 22.34,
+          "t": 13.08,
+          "w": 0.24,
+          "h": 1.12,
+          "text": "i"
+        },
+        {
+          "l": 22.86,
+          "t": 13.08,
+          "w": 28.0,
+          "h": 1.42,
+          "text": "s machine learning and expl"
+        },
+        {
+          "l": 51.05,
+          "t": 13.08,
+          "w": 12.36,
+          "h": 1.41,
+          "text": "ain its types."
+        },
+        {
+          "l": 13.41,
+          "t": 15.87,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.51,
+          "t": 15.53,
+          "w": 19.48,
+          "h": 1.13,
+          "text": "Difference between "
+        },
+        {
+          "l": 36.84,
+          "t": 15.53,
+          "w": 18.24,
+          "h": 1.42,
+          "text": "Machine Learning "
+        },
+        {
+          "l": 55.14,
+          "t": 15.66,
+          "w": 5.34,
+          "h": 1.28,
+          "text": "types"
+        },
+        {
+          "l": 13.41,
+          "t": 18.34,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.4,
+          "t": 17.99,
+          "w": 46.35,
+          "h": 1.43,
+          "text": "Steps to develop Machine learning application"
+        },
+        {
+          "l": 13.41,
+          "t": 20.8,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.51,
+          "t": 20.46,
+          "w": 20.13,
+          "h": 1.13,
+          "text": "Difference between "
+        },
+        {
+          "l": 36.84,
+          "t": 20.46,
+          "w": 6.06,
+          "h": 1.13,
+          "text": "Linear "
+        },
+        {
+          "l": 43.55,
+          "t": 20.47,
+          "w": 4.22,
+          "h": 1.13,
+          "text": "and "
+        },
+        {
+          "l": 48.47,
+          "t": 20.46,
+          "w": 10.97,
+          "h": 1.41,
+          "text": "Polynomial "
+        },
+        {
+          "l": 60.15,
+          "t": 20.46,
+          "w": 10.17,
+          "h": 1.42,
+          "text": "regression"
+        },
+        {
+          "l": 13.41,
+          "t": 23.27,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.51,
+          "t": 22.93,
+          "w": 53.69,
+          "h": 1.42,
+          "text": "Numerical on Linear regression, evaluation metrics, K"
+        },
+        {
+          "l": 70.23,
+          "t": 23.58,
+          "w": 0.58,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 71.13,
+          "t": 22.94,
+          "w": 6.45,
+          "h": 1.13,
+          "text": "Means "
+        },
+        {
+          "l": 78.34,
+          "t": 22.93,
+          "w": 0.46,
+          "h": 1.41,
+          "text": "("
+        },
+        {
+          "l": 78.96,
+          "t": 22.92,
+          "w": 6.63,
+          "h": 1.43,
+          "text": "Single)"
+        },
+        {
+          "l": 16.43,
+          "t": 25.28,
+          "w": 49.32,
+          "h": 1.41,
+          "text": "dimensional data and multiple dimensional data)"
+        },
+        {
+          "l": 66.07,
+          "t": 26.2,
+          "w": 1.0,
+          "h": 0.42,
+          "text": ", "
+        },
+        {
+          "l": 67.16,
+          "t": 25.27,
+          "w": 11.23,
+          "h": 1.43,
+          "text": "Single Link "
+        },
+        {
+          "l": 16.32,
+          "t": 27.64,
+          "w": 1.37,
+          "h": 1.11,
+          "text": "A"
+        },
+        {
+          "l": 17.82,
+          "t": 27.84,
+          "w": 1.03,
+          "h": 1.22,
+          "text": "g"
+        },
+        {
+          "l": 18.97,
+          "t": 27.84,
+          "w": 1.03,
+          "h": 1.22,
+          "text": "g"
+        },
+        {
+          "l": 20.21,
+          "t": 27.64,
+          "w": 1.61,
+          "h": 1.12,
+          "text": "lo"
+        },
+        {
+          "l": 22.14,
+          "t": 27.63,
+          "w": 8.49,
+          "h": 1.13,
+          "text": "merative "
+        },
+        {
+          "l": 31.38,
+          "t": 27.62,
+          "w": 10.29,
+          "h": 1.43,
+          "text": "Clustering"
+        },
+        {
+          "l": 13.41,
+          "t": 30.43,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.51,
+          "t": 30.09,
+          "w": 3.21,
+          "h": 1.13,
+          "text": "Exa"
+        },
+        {
+          "l": 20.08,
+          "t": 30.08,
+          "w": 30.52,
+          "h": 1.42,
+          "text": "mples on MAE, MSE and RMSE"
+        },
+        {
+          "l": 13.41,
+          "t": 32.89,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.4,
+          "t": 32.54,
+          "w": 5.81,
+          "h": 1.14,
+          "text": "SN on "
+        },
+        {
+          "l": 23.06,
+          "t": 32.54,
+          "w": 24.81,
+          "h": 1.43,
+          "text": "Logistic Regression, SVM"
+        },
+        {
+          "l": 48.23,
+          "t": 32.56,
+          "w": 2.33,
+          "h": 1.34,
+          "text": ", K"
+        },
+        {
+          "l": 50.6,
+          "t": 33.2,
+          "w": 0.58,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 51.49,
+          "t": 32.56,
+          "w": 7.67,
+          "h": 1.34,
+          "text": "Means, "
+        },
+        {
+          "l": 59.38,
+          "t": 32.54,
+          "w": 23.08,
+          "h": 1.43,
+          "text": "Hierarchical Clustering"
+        },
+        {
+          "l": 82.67,
+          "t": 33.47,
+          "w": 1.0,
+          "h": 0.42,
+          "text": ", "
+        },
+        {
+          "l": 16.51,
+          "t": 34.91,
+          "w": 2.64,
+          "h": 1.14,
+          "text": "PC"
+        },
+        {
+          "l": 19.26,
+          "t": 34.93,
+          "w": 1.37,
+          "h": 1.11,
+          "text": "A"
+        },
+        {
+          "l": 20.83,
+          "t": 35.84,
+          "w": 1.0,
+          "h": 0.42,
+          "text": ", "
+        },
+        {
+          "l": 21.96,
+          "t": 34.92,
+          "w": 18.58,
+          "h": 1.13,
+          "text": "evaluation metrics"
+        },
+        {
+          "l": 13.41,
+          "t": 37.71,
+          "w": 0.84,
+          "h": 0.61,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.4,
+          "t": 37.36,
+          "w": 6.46,
+          "h": 1.14,
+          "text": "SN on "
+        },
+        {
+          "l": 23.06,
+          "t": 37.36,
+          "w": 32.02,
+          "h": 1.42,
+          "text": "Dimensionality Reduction (PCA)"
+        }
+      ]
+    }
+  ]
+}

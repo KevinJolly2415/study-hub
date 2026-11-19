@@ -1,0 +1,1371 @@
+{
+  "mtime": 1794989239.0183585,
+  "aspectRatio": 1.29,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_001.webp",
+      "text": "Principal Component Analysis (PCA)\r\nConcept \r\nSteps \r\nExample \r\nApplications\r\n1",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.82,
+          "t": 18.46,
+          "w": 46.52,
+          "h": 3.33,
+          "text": "Principal Component Analysis (PCA)"
+        },
+        {
+          "l": 7.23,
+          "t": 28.84,
+          "w": 8.11,
+          "h": 2.3,
+          "text": "Concept "
+        },
+        {
+          "l": 7.2,
+          "t": 33.43,
+          "w": 5.49,
+          "h": 2.3,
+          "text": "Steps "
+        },
+        {
+          "l": 7.3,
+          "t": 38.02,
+          "w": 8.02,
+          "h": 2.28,
+          "text": "Example "
+        },
+        {
+          "l": 7.13,
+          "t": 42.6,
+          "w": 11.17,
+          "h": 2.28,
+          "text": "Applications"
+        },
+        {
+          "l": 92.3,
+          "t": 83.5,
+          "w": 0.27,
+          "h": 0.98,
+          "text": "1"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_002.webp",
+      "text": "What Is PCA?\r\nPCA stands for Principal Component Analysis.\r\nIt is an unsupervised technique for reducing the number of features.\r\nIt transforms original features into new variables called principal components.\r\nThe first component captures the greatest variance; later components capture the remaining \r\nvariance in uncorrelated directions.\r\n3",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.11,
+          "t": 16.19,
+          "w": 17.23,
+          "h": 2.67,
+          "text": "What Is PCA?"
+        },
+        {
+          "l": 3.94,
+          "t": 21.25,
+          "w": 40.94,
+          "h": 2.3,
+          "text": "PCA stands for Principal Component Analysis."
+        },
+        {
+          "l": 3.94,
+          "t": 25.85,
+          "w": 60.24,
+          "h": 2.31,
+          "text": "It is an unsupervised technique for reducing the number of features."
+        },
+        {
+          "l": 3.94,
+          "t": 30.42,
+          "w": 69.46,
+          "h": 2.31,
+          "text": "It transforms original features into new variables called principal components."
+        },
+        {
+          "l": 3.78,
+          "t": 35.01,
+          "w": 83.1,
+          "h": 2.31,
+          "text": "The first component captures the greatest variance; later components capture the remaining "
+        },
+        {
+          "l": 3.76,
+          "t": 38.25,
+          "w": 31.61,
+          "h": 1.83,
+          "text": "variance in uncorrelated directions."
+        },
+        {
+          "l": 92.29,
+          "t": 83.49,
+          "w": 0.57,
+          "h": 1.02,
+          "text": "3"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_003.webp",
+      "text": "Why Use PCA?\r\nHigh-dimensional data may contain correlated or redundant features.\r\nMany features make visualization and analysis difficult.\r\nDimensionality reduction can reduce storage and computation.\r\nPCA can help display data in 2D or 3D.\r\nSome information may be lost when components are removed.\r\n4",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.61,
+          "t": 18.46,
+          "w": 18.89,
+          "h": 3.33,
+          "text": "Why Use PCA?"
+        },
+        {
+          "l": 5.8,
+          "t": 25.44,
+          "w": 61.74,
+          "h": 2.31,
+          "text": "High-dimensional data may contain correlated or redundant features."
+        },
+        {
+          "l": 5.8,
+          "t": 30.03,
+          "w": 48.91,
+          "h": 2.28,
+          "text": "Many features make visualization and analysis difficult."
+        },
+        {
+          "l": 5.8,
+          "t": 34.6,
+          "w": 56.29,
+          "h": 2.31,
+          "text": "Dimensionality reduction can reduce storage and computation."
+        },
+        {
+          "l": 5.8,
+          "t": 39.17,
+          "w": 33.83,
+          "h": 2.3,
+          "text": "PCA can help display data in 2D or 3D."
+        },
+        {
+          "l": 5.7,
+          "t": 43.76,
+          "w": 55.89,
+          "h": 2.3,
+          "text": "Some information may be lost when components are removed."
+        },
+        {
+          "l": 92.3,
+          "t": 83.5,
+          "w": 0.58,
+          "h": 0.99,
+          "text": "4"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_004.webp",
+      "text": "Intuition: A Simple Example\r\nHeight and arm span are often correlated.\r\nThey may contain overlapping information about a person.\r\nPCA finds a direction that summarizes much of their shared variation.\r\nA person can then be represented by fewer component values.\r\nWhether one component is enough depends on the data.\r\n5",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.82,
+          "t": 18.46,
+          "w": 35.05,
+          "h": 3.32,
+          "text": "Intuition: A Simple Example"
+        },
+        {
+          "l": 5.8,
+          "t": 26.85,
+          "w": 37.03,
+          "h": 2.31,
+          "text": "Height and arm span are often correlated."
+        },
+        {
+          "l": 5.64,
+          "t": 31.44,
+          "w": 51.76,
+          "h": 2.31,
+          "text": "They may contain overlapping information about a person."
+        },
+        {
+          "l": 5.8,
+          "t": 35.99,
+          "w": 61.62,
+          "h": 1.85,
+          "text": "PCA finds a direction that summarizes much of their shared variation."
+        },
+        {
+          "l": 5.63,
+          "t": 40.61,
+          "w": 55.62,
+          "h": 2.28,
+          "text": "A person can then be represented by fewer component values."
+        },
+        {
+          "l": 5.62,
+          "t": 45.19,
+          "w": 50.69,
+          "h": 2.31,
+          "text": "Whether one component is enough depends on the data."
+        },
+        {
+          "l": 92.29,
+          "t": 83.51,
+          "w": 0.54,
+          "h": 1.0,
+          "text": "5"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_005.webp",
+      "text": "Key Terms\r\nFeature: an original measured variable.\r\nVariance: how much values spread around their mean.\r\nCovariance: how two features vary together.\r\nPrincipal component: a weighted combination of original features.\r\nEigenvector: gives a component direction.\r\nEigenvalue: measures variance along that direction. Eigenvalues tell us how much \r\ninformation or variation is captured by each principal component.\r\n6",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.82,
+          "t": 18.5,
+          "w": 12.84,
+          "h": 3.29,
+          "text": "Key Terms"
+        },
+        {
+          "l": 4.71,
+          "t": 26.42,
+          "w": 41.37,
+          "h": 2.76,
+          "text": "Feature: an original measured variable."
+        },
+        {
+          "l": 4.51,
+          "t": 31.66,
+          "w": 58.23,
+          "h": 2.73,
+          "text": "Variance: how much values spread around their mean."
+        },
+        {
+          "l": 4.63,
+          "t": 36.87,
+          "w": 46.58,
+          "h": 2.78,
+          "text": "Covariance: how two features vary together."
+        },
+        {
+          "l": 4.71,
+          "t": 42.13,
+          "w": 70.4,
+          "h": 2.76,
+          "text": "Principal component: a weighted combination of original features."
+        },
+        {
+          "l": 4.71,
+          "t": 47.34,
+          "w": 44.52,
+          "h": 2.76,
+          "text": "Eigenvector: gives a component direction."
+        },
+        {
+          "l": 4.71,
+          "t": 52.58,
+          "w": 87.92,
+          "h": 2.76,
+          "text": "Eigenvalue: measures variance along that direction. Eigenvalues tell us how much "
+        },
+        {
+          "l": 4.67,
+          "t": 56.46,
+          "w": 69.94,
+          "h": 2.73,
+          "text": "information or variation is captured by each principal component."
+        },
+        {
+          "l": 92.31,
+          "t": 83.49,
+          "w": 0.55,
+          "h": 1.02,
+          "text": "6"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_006.webp",
+      "text": "PCA Workflow\r\n1. Arrange observations in rows and features in columns.\r\n2. Standardize features when scales differ.\r\n3. Compute the covariance matrix .\r\n4. Find eigenvalues and eigenvectors.\r\n5. Sort components by decreasing eigenvalue.\r\n6. Choose how many components to keep.\r\n7. Project data onto the selected components.\r\n7",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.82,
+          "t": 18.46,
+          "w": 18.44,
+          "h": 2.67,
+          "text": "PCA Workflow"
+        },
+        {
+          "l": 5.8,
+          "t": 26.97,
+          "w": 1.73,
+          "h": 1.59,
+          "text": "1. "
+        },
+        {
+          "l": 7.54,
+          "t": 26.01,
+          "w": 67.56,
+          "h": 3.23,
+          "text": "Arrange observations in rows and features in columns."
+        },
+        {
+          "l": 5.75,
+          "t": 31.85,
+          "w": 52.58,
+          "h": 2.59,
+          "text": "2. Standardize features when scales differ."
+        },
+        {
+          "l": 5.76,
+          "t": 37.74,
+          "w": 43.57,
+          "h": 3.22,
+          "text": "3. Compute the covariance matrix ."
+        },
+        {
+          "l": 5.7,
+          "t": 43.64,
+          "w": 46.46,
+          "h": 3.23,
+          "text": "4. Find eigenvalues and eigenvectors."
+        },
+        {
+          "l": 5.76,
+          "t": 49.5,
+          "w": 57.29,
+          "h": 3.25,
+          "text": "5. Sort components by decreasing eigenvalue."
+        },
+        {
+          "l": 5.76,
+          "t": 55.36,
+          "w": 52.98,
+          "h": 3.22,
+          "text": "6. Choose how many components to keep."
+        },
+        {
+          "l": 5.76,
+          "t": 61.27,
+          "w": 57.64,
+          "h": 3.19,
+          "text": "7. Project data onto the selected components."
+        },
+        {
+          "l": 92.29,
+          "t": 83.51,
+          "w": 0.52,
+          "h": 0.98,
+          "text": "7"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_007.webp",
+      "text": "Step 1: Prepare the Data\r\nPCA can be sensitive to scale when features have different units.\r\nStandardize using: z = (x \u2212 mean) / standard deviation.\r\nStandardized features have mean about 0 and standard deviation about 1.\r\nHandle missing values and check data quality before PCA.\r\n8",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.69,
+          "t": 18.46,
+          "w": 30.73,
+          "h": 3.32,
+          "text": "Step 1: Prepare the Data"
+        },
+        {
+          "l": 5.84,
+          "t": 26.07,
+          "w": 68.57,
+          "h": 2.21,
+          "text": "PCA can be sensitive to scale when features have different units."
+        },
+        {
+          "l": 5.71,
+          "t": 31.3,
+          "w": 57.25,
+          "h": 2.78,
+          "text": "Standardize using: z = (x \u2212 mean) / standard deviation."
+        },
+        {
+          "l": 5.71,
+          "t": 36.54,
+          "w": 78.87,
+          "h": 2.21,
+          "text": "Standardized features have mean about 0 and standard deviation about 1."
+        },
+        {
+          "l": 5.84,
+          "t": 41.77,
+          "w": 62.0,
+          "h": 2.78,
+          "text": "Handle missing values and check data quality before PCA."
+        },
+        {
+          "l": 92.3,
+          "t": 83.49,
+          "w": 0.57,
+          "h": 1.02,
+          "text": "8"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_008.webp",
+      "text": "Step 2: Covariance Matrix\r\nThe covariance matrix summarizes relationships between pairs of features.\r\nDiagonal entries contain feature variances.\r\nOff-diagonal entries contain covariances between features.\r\nPositive covariance means features tend to increase together.\r\nNegative covariance means one tends to increase as the other decreases.\r\n9\r\nFeature Study hours (X\u2081) Marks (X\u2082)\r\nStudy hours (X\u2081) 1.67 16.67\r\nMarks (X\u2082) 16.67 166.67\r\nCovariance Matrix",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.71,
+          "t": 18.48,
+          "w": 32.74,
+          "h": 3.32,
+          "text": "Step 2: Covariance Matrix"
+        },
+        {
+          "l": 6.92,
+          "t": 26.5,
+          "w": 80.04,
+          "h": 2.73,
+          "text": "The covariance matrix summarizes relationships between pairs of features."
+        },
+        {
+          "l": 7.11,
+          "t": 31.73,
+          "w": 45.62,
+          "h": 2.76,
+          "text": "Diagonal entries contain feature variances."
+        },
+        {
+          "l": 7.03,
+          "t": 36.95,
+          "w": 63.28,
+          "h": 2.78,
+          "text": "Off-diagonal entries contain covariances between features."
+        },
+        {
+          "l": 7.11,
+          "t": 42.21,
+          "w": 65.5,
+          "h": 2.76,
+          "text": "Positive covariance means features tend to increase together."
+        },
+        {
+          "l": 7.11,
+          "t": 47.42,
+          "w": 78.62,
+          "h": 2.76,
+          "text": "Negative covariance means one tends to increase as the other decreases."
+        },
+        {
+          "l": 92.31,
+          "t": 83.51,
+          "w": 0.55,
+          "h": 1.02,
+          "text": "9"
+        },
+        {
+          "l": 44.28,
+          "t": 70.83,
+          "w": 46.39,
+          "h": 2.39,
+          "text": "Feature Study hours (X\u2081) Marks (X\u2082)"
+        },
+        {
+          "l": 44.19,
+          "t": 73.73,
+          "w": 43.85,
+          "h": 2.39,
+          "text": "Study hours (X\u2081) 1.67 16.67"
+        },
+        {
+          "l": 44.28,
+          "t": 76.65,
+          "w": 44.46,
+          "h": 2.32,
+          "text": "Marks (X\u2082) 16.67 166.67"
+        },
+        {
+          "l": 44.2,
+          "t": 66.39,
+          "w": 16.6,
+          "h": 1.91,
+          "text": "Covariance Matrix"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_009.webp",
+      "text": "Step 3: Eigenvalues and Eigenvectors\r\nEigenvectors identify principal-component directions.\r\nEigenvalues measure how much variance lies along each direction.\r\nA larger eigenvalue means more variance is captured.\r\nSort eigenvalues from largest to smallest and order eigenvectors accordingly.\r\nPCA is also commonly computed using singular value decomposition (SVD).\r\nIn PCA (Principal Component Analysis), eigenvalues tell us how much information or variation is\r\ncaptured by each principal component.\r\nThink of eigenvalues as a way to measure how important each principal component is.\r\n10",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.71,
+          "t": 18.48,
+          "w": 47.06,
+          "h": 3.35,
+          "text": "Step 3: Eigenvalues and Eigenvectors"
+        },
+        {
+          "l": 6.57,
+          "t": 26.78,
+          "w": 47.74,
+          "h": 2.31,
+          "text": "Eigenvectors identify principal-component directions."
+        },
+        {
+          "l": 6.57,
+          "t": 31.36,
+          "w": 59.53,
+          "h": 2.31,
+          "text": "Eigenvalues measure how much variance lies along each direction."
+        },
+        {
+          "l": 6.4,
+          "t": 35.93,
+          "w": 47.55,
+          "h": 2.31,
+          "text": "A larger eigenvalue means more variance is captured."
+        },
+        {
+          "l": 6.47,
+          "t": 40.5,
+          "w": 68.41,
+          "h": 2.32,
+          "text": "Sort eigenvalues from largest to smallest and order eigenvectors accordingly."
+        },
+        {
+          "l": 6.57,
+          "t": 45.09,
+          "w": 67.6,
+          "h": 2.32,
+          "text": "PCA is also commonly computed using singular value decomposition (SVD)."
+        },
+        {
+          "l": 6.57,
+          "t": 49.68,
+          "w": 35.19,
+          "h": 2.3,
+          "text": "In PCA (Principal Component Analysis), "
+        },
+        {
+          "l": 42.53,
+          "t": 49.7,
+          "w": 9.46,
+          "h": 2.31,
+          "text": "eigenvalue"
+        },
+        {
+          "l": 52.2,
+          "t": 49.7,
+          "w": 40.37,
+          "h": 1.83,
+          "text": "s tell us how much information or variation is"
+        },
+        {
+          "l": 6.5,
+          "t": 52.93,
+          "w": 35.07,
+          "h": 2.28,
+          "text": "captured by each principal component."
+        },
+        {
+          "l": 6.41,
+          "t": 57.5,
+          "w": 76.63,
+          "h": 2.31,
+          "text": "Think of eigenvalues as a way to measure how important each principal component is."
+        },
+        {
+          "l": 92.3,
+          "t": 83.51,
+          "w": 1.0,
+          "h": 1.02,
+          "text": "10"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_010.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224,
+      "rects": []
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_011.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224,
+      "rects": []
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_012.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224,
+      "rects": []
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_013.webp",
+      "text": "Step 4: Select Components\r\nKeep the first k components with the largest eigenvalues.\r\nExplained variance ratio = eigenvalue / sum of all eigenvalues.\r\nCumulative explained variance adds the ratios of retained components.\r\nUse a screen plot or a target such as 90\u201395% as a guideline.\r\nChoose based on the task; no single threshold is always best.\r\n11",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.69,
+          "t": 18.46,
+          "w": 34.73,
+          "h": 3.32,
+          "text": "Step 4: Select Components"
+        },
+        {
+          "l": 6.59,
+          "t": 25.58,
+          "w": 60.5,
+          "h": 2.76,
+          "text": "Keep the first k components with the largest eigenvalues."
+        },
+        {
+          "l": 6.59,
+          "t": 30.81,
+          "w": 65.62,
+          "h": 2.76,
+          "text": "Explained variance ratio = eigenvalue / sum of all eigenvalues."
+        },
+        {
+          "l": 6.51,
+          "t": 36.03,
+          "w": 76.23,
+          "h": 2.75,
+          "text": "Cumulative explained variance adds the ratios of retained components."
+        },
+        {
+          "l": 6.57,
+          "t": 41.28,
+          "w": 63.37,
+          "h": 2.76,
+          "text": "Use a screen plot or a target such as 90\u201395% as a guideline."
+        },
+        {
+          "l": 6.51,
+          "t": 46.48,
+          "w": 65.48,
+          "h": 2.78,
+          "text": "Choose based on the task; no single threshold is always best."
+        },
+        {
+          "l": 92.3,
+          "t": 83.5,
+          "w": 0.68,
+          "h": 0.98,
+          "text": "11"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_014.webp",
+      "text": "Step 5: Project the Data\r\nCenter (and, when appropriate, standardize) the original features.\r\nUse the selected eigenvectors as the projection directions.\r\nTransform the prepared data into component values.\r\nThe result has fewer columns and retains as much variance as possible for the \r\nselected number of components.\r\nComponents may be harder to interpret than original features.\r\n12",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.71,
+          "t": 18.48,
+          "w": 29.86,
+          "h": 3.32,
+          "text": "Step 5: Project the Data"
+        },
+        {
+          "l": 5.77,
+          "t": 25.58,
+          "w": 69.63,
+          "h": 2.78,
+          "text": "Center (and, when appropriate, standardize) the original features."
+        },
+        {
+          "l": 5.83,
+          "t": 30.83,
+          "w": 62.44,
+          "h": 2.76,
+          "text": "Use the selected eigenvectors as the projection directions."
+        },
+        {
+          "l": 5.66,
+          "t": 36.07,
+          "w": 56.14,
+          "h": 2.73,
+          "text": "Transform the prepared data into component values."
+        },
+        {
+          "l": 5.66,
+          "t": 41.3,
+          "w": 84.18,
+          "h": 2.73,
+          "text": "The result has fewer columns and retains as much variance as possible for the "
+        },
+        {
+          "l": 5.76,
+          "t": 45.19,
+          "w": 35.49,
+          "h": 2.72,
+          "text": "selected number of components."
+        },
+        {
+          "l": 5.77,
+          "t": 50.38,
+          "w": 66.11,
+          "h": 2.78,
+          "text": "Components may be harder to interpret than original features."
+        },
+        {
+          "l": 92.3,
+          "t": 83.51,
+          "w": 0.94,
+          "h": 1.0,
+          "text": "12"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_015.webp",
+      "text": "Mini Example: 2D to 1D\r\nSuppose two standardized features are strongly correlated.\r\nPC1 explains 92% of variance and PC2 explains 8% (illustrative values).\r\nKeeping PC1 reduces two dimensions to one.\r\nThe reduced representation retains 92% of variance in this example.\r\nThe percentages are hypothetical, not calculated from a real dataset.\r\n13",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.82,
+          "t": 18.46,
+          "w": 29.43,
+          "h": 3.31,
+          "text": "Mini Example: 2D to 1D"
+        },
+        {
+          "l": 6.47,
+          "t": 25.56,
+          "w": 62.97,
+          "h": 2.78,
+          "text": "Suppose two standardized features are strongly correlated."
+        },
+        {
+          "l": 6.59,
+          "t": 30.79,
+          "w": 75.65,
+          "h": 2.75,
+          "text": "PC1 explains 92% of variance and PC2 explains 8% (illustrative values)."
+        },
+        {
+          "l": 6.59,
+          "t": 36.03,
+          "w": 47.97,
+          "h": 2.78,
+          "text": "Keeping PC1 reduces two dimensions to one."
+        },
+        {
+          "l": 6.4,
+          "t": 41.28,
+          "w": 72.37,
+          "h": 2.73,
+          "text": "The reduced representation retains 92% of variance in this example."
+        },
+        {
+          "l": 6.4,
+          "t": 46.5,
+          "w": 73.67,
+          "h": 2.76,
+          "text": "The percentages are hypothetical, not calculated from a real dataset."
+        },
+        {
+          "l": 92.3,
+          "t": 83.49,
+          "w": 0.96,
+          "h": 1.02,
+          "text": "13"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_016.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_016.webp",
+      "text": "Explained Variance Example\r\nPC1 = 70%, PC2 = 20%, PC3 = 7%, PC4 = 3%.\r\nKeeping PC1 and PC2 retains 90% of total variance.\r\nKeeping the first three components retains 97%.\r\nMore components retain more variance but reduce dimensionality less.\r\nRetaining variance does not guarantee the same predictive performance.\r\n14",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.82,
+          "t": 18.46,
+          "w": 35.93,
+          "h": 3.31,
+          "text": "Explained Variance Example"
+        },
+        {
+          "l": 6.59,
+          "t": 25.75,
+          "w": 47.77,
+          "h": 2.62,
+          "text": "PC1 = 70%, PC2 = 20%, PC3 = 7%, PC4 = 3%."
+        },
+        {
+          "l": 6.59,
+          "t": 30.99,
+          "w": 54.52,
+          "h": 2.78,
+          "text": "Keeping PC1 and PC2 retains 90% of total variance."
+        },
+        {
+          "l": 6.59,
+          "t": 36.24,
+          "w": 51.07,
+          "h": 2.76,
+          "text": "Keeping the first three components retains 97%."
+        },
+        {
+          "l": 6.59,
+          "t": 41.48,
+          "w": 76.05,
+          "h": 2.73,
+          "text": "More components retain more variance but reduce dimensionality less."
+        },
+        {
+          "l": 6.59,
+          "t": 46.69,
+          "w": 77.47,
+          "h": 2.76,
+          "text": "Retaining variance does not guarantee the same predictive performance."
+        },
+        {
+          "l": 92.3,
+          "t": 83.5,
+          "w": 0.99,
+          "h": 0.99,
+          "text": "14"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_017.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_017.webp",
+      "text": "PCA vs. Feature Selection\r\nFeature selection keeps a subset of original features.\r\nPCA creates new features by combining original features.\r\nFeature selection is often easier to interpret.\r\nPCA can compact correlated information but may reduce interpretability.\r\nPCA is unsupervised and does not use target labels to find components.\r\n15",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.82,
+          "t": 18.46,
+          "w": 32.58,
+          "h": 2.67,
+          "text": "PCA vs. Feature Selection"
+        },
+        {
+          "l": 5.84,
+          "t": 25.87,
+          "w": 56.1,
+          "h": 2.76,
+          "text": "Feature selection keeps a subset of original features."
+        },
+        {
+          "l": 5.84,
+          "t": 31.09,
+          "w": 60.67,
+          "h": 2.78,
+          "text": "PCA creates new features by combining original features."
+        },
+        {
+          "l": 5.84,
+          "t": 36.34,
+          "w": 47.0,
+          "h": 2.73,
+          "text": "Feature selection is often easier to interpret."
+        },
+        {
+          "l": 5.84,
+          "t": 41.56,
+          "w": 77.62,
+          "h": 2.75,
+          "text": "PCA can compact correlated information but may reduce interpretability."
+        },
+        {
+          "l": 5.84,
+          "t": 46.77,
+          "w": 76.65,
+          "h": 2.78,
+          "text": "PCA is unsupervised and does not use target labels to find components."
+        },
+        {
+          "l": 92.3,
+          "t": 83.5,
+          "w": 0.94,
+          "h": 1.0,
+          "text": "15"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_018.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_018.webp",
+      "text": "Applications of PCA\r\nVisualizing high-dimensional data in 2D or 3D.\r\nData compression and reducing redundancy.\r\nPreprocessing before clustering or other machine-learning methods.\r\nExploring image, sensor, finance, and biological data.\r\nNoise reduction may help in some datasets, but is not guaranteed.\r\n16",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.61,
+          "t": 18.46,
+          "w": 25.5,
+          "h": 3.32,
+          "text": "Applications of PCA"
+        },
+        {
+          "l": 6.39,
+          "t": 26.89,
+          "w": 48.93,
+          "h": 2.76,
+          "text": "Visualizing high-dimensional data in 2D or 3D."
+        },
+        {
+          "l": 6.59,
+          "t": 32.13,
+          "w": 47.82,
+          "h": 2.76,
+          "text": "Data compression and reducing redundancy."
+        },
+        {
+          "l": 6.59,
+          "t": 37.36,
+          "w": 72.85,
+          "h": 2.76,
+          "text": "Preprocessing before clustering or other machine-learning methods."
+        },
+        {
+          "l": 6.59,
+          "t": 42.6,
+          "w": 56.52,
+          "h": 2.76,
+          "text": "Exploring image, sensor, finance, and biological data."
+        },
+        {
+          "l": 6.59,
+          "t": 47.81,
+          "w": 70.67,
+          "h": 2.76,
+          "text": "Noise reduction may help in some datasets, but is not guaranteed."
+        },
+        {
+          "l": 92.3,
+          "t": 83.49,
+          "w": 0.97,
+          "h": 1.02,
+          "text": "16"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_019.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_019.webp",
+      "text": "Advantages and Limitations\r\nAdvantages: fewer dimensions, less redundancy, and potentially faster analysis.\r\nAdvantages: compact representation and easier visualization.\r\nLimitations: components may be difficult to interpret.\r\nLimitations: PCA captures linear directions and can miss nonlinear patterns.\r\nLimitations: outliers and scaling can strongly affect results.\r\nHigh variance does not necessarily mean high predictive importance.\r\n17",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.61,
+          "t": 18.46,
+          "w": 35.23,
+          "h": 3.35,
+          "text": "Advantages and Limitations"
+        },
+        {
+          "l": 5.63,
+          "t": 26.48,
+          "w": 85.4,
+          "h": 2.76,
+          "text": "Advantages: fewer dimensions, less redundancy, and potentially faster analysis."
+        },
+        {
+          "l": 5.63,
+          "t": 31.71,
+          "w": 65.98,
+          "h": 2.76,
+          "text": "Advantages: compact representation and easier visualization."
+        },
+        {
+          "l": 5.84,
+          "t": 36.95,
+          "w": 56.85,
+          "h": 2.73,
+          "text": "Limitations: components may be difficult to interpret."
+        },
+        {
+          "l": 5.84,
+          "t": 42.17,
+          "w": 81.32,
+          "h": 2.75,
+          "text": "Limitations: PCA captures linear directions and can miss nonlinear patterns."
+        },
+        {
+          "l": 5.84,
+          "t": 47.4,
+          "w": 62.75,
+          "h": 2.76,
+          "text": "Limitations: outliers and scaling can strongly affect results."
+        },
+        {
+          "l": 5.84,
+          "t": 52.64,
+          "w": 73.52,
+          "h": 2.76,
+          "text": "High variance does not necessarily mean high predictive importance."
+        },
+        {
+          "l": 92.3,
+          "t": 83.5,
+          "w": 0.92,
+          "h": 0.98,
+          "text": "17"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_020.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_020.webp",
+      "text": "PCA as a Dimensionality Reduction Technique\r\nDimensionality means the number of features (variables) describing each data record.\r\nWhen a dataset has many features, some may be correlated or contain overlapping information.\r\nPCA transforms the original features into a smaller set of new features called principal\r\ncomponents.\r\nPrincipal components are combinations of the original features and are ordered by the amount of\r\nvariance they capture.\r\nBy keeping only the first few components, we reduce the number of dimensions while retaining as\r\nmuch variation in the data as possible.\r\nExample: if PC1 explains 80% and PC2 explains 15% of variance, keeping both retains 95% of the\r\nvariance while reducing many original features to two components.\r\nPCA may lose information, and the new components can be harder to interpret than the original\r\nfeatures.\r\n21",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.81,
+          "t": 18.42,
+          "w": 56.46,
+          "h": 3.23,
+          "text": "PCA as a Dimensionality Reduction Technique"
+        },
+        {
+          "l": 5.8,
+          "t": 25.44,
+          "w": 76.42,
+          "h": 2.31,
+          "text": "Dimensionality means the number of features (variables) describing each data record."
+        },
+        {
+          "l": 5.62,
+          "t": 30.03,
+          "w": 85.36,
+          "h": 2.31,
+          "text": "When a dataset has many features, some may be correlated or contain overlapping information."
+        },
+        {
+          "l": 5.8,
+          "t": 34.58,
+          "w": 88.65,
+          "h": 2.32,
+          "text": "PCA transforms the original features into a smaller set of new features called principal"
+        },
+        {
+          "l": 5.73,
+          "t": 38.04,
+          "w": 11.74,
+          "h": 2.08,
+          "text": "components."
+        },
+        {
+          "l": 5.8,
+          "t": 42.42,
+          "w": 88.66,
+          "h": 2.31,
+          "text": "Principal components are combinations of the original features and are ordered by the amount of"
+        },
+        {
+          "l": 5.62,
+          "t": 45.66,
+          "w": 19.73,
+          "h": 2.28,
+          "text": "variance they capture."
+        },
+        {
+          "l": 5.8,
+          "t": 50.25,
+          "w": 88.59,
+          "h": 2.31,
+          "text": "By keeping only the first few components, we reduce the number of dimensions while retaining as"
+        },
+        {
+          "l": 5.79,
+          "t": 53.48,
+          "w": 34.14,
+          "h": 2.28,
+          "text": "much variation in the data as possible."
+        },
+        {
+          "l": 5.8,
+          "t": 58.05,
+          "w": 88.59,
+          "h": 2.32,
+          "text": "Example: if PC1 explains 80% and PC2 explains 15% of variance, keeping both retains 95% of the"
+        },
+        {
+          "l": 5.62,
+          "t": 61.31,
+          "w": 59.71,
+          "h": 2.31,
+          "text": "variance while reducing many original features to two components."
+        },
+        {
+          "l": 5.8,
+          "t": 65.86,
+          "w": 88.67,
+          "h": 2.32,
+          "text": "PCA may lose information, and the new components can be harder to interpret than the original"
+        },
+        {
+          "l": 5.65,
+          "t": 69.12,
+          "w": 7.8,
+          "h": 1.83,
+          "text": "features."
+        },
+        {
+          "l": 92.3,
+          "t": 83.49,
+          "w": 0.9,
+          "h": 1.0,
+          "text": "21"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_021.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_021.webp",
+      "text": "Steps Involved in PCA\r\nStep 1: Prepare the dataset \u2014 arrange observations in rows and features in columns; \r\nhandle missing values.\r\nStep 2: Standardize the features when they use di\u01aferent scales: z = (x \u2212 mean) / \r\nstandard deviation.\r\nStep 3: Compute the covariance matrix (or use singular value decomposition, SVD) \r\nto examine feature relationships.\r\nStep 4: Calculate eigenvalues and eigenvectors of the covariance matrix.\r\nEigenvectors indicate the directions of the principal components; eigenvalues \r\nindicate how much variance each direction captures.\r\n22",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.69,
+          "t": 18.42,
+          "w": 26.9,
+          "h": 3.22,
+          "text": "Steps Involved in PCA"
+        },
+        {
+          "l": 4.59,
+          "t": 26.6,
+          "w": 90.79,
+          "h": 2.78,
+          "text": "Step 1: Prepare the dataset \u2014 arrange observations in rows and features in columns; "
+        },
+        {
+          "l": 4.7,
+          "t": 32.44,
+          "w": 24.14,
+          "h": 2.76,
+          "text": "handle missing values."
+        },
+        {
+          "l": 4.59,
+          "t": 39.6,
+          "w": 52.41,
+          "h": 2.75,
+          "text": "Step 2: Standardize the features when they use di"
+        },
+        {
+          "l": 57.21,
+          "t": 39.63,
+          "w": 1.43,
+          "h": 2.16,
+          "text": "\u01af"
+        },
+        {
+          "l": 58.78,
+          "t": 39.61,
+          "w": 30.65,
+          "h": 2.73,
+          "text": "erent scales: z = (x \u2212 mean) / "
+        },
+        {
+          "l": 4.62,
+          "t": 45.44,
+          "w": 20.44,
+          "h": 2.19,
+          "text": "standard deviation."
+        },
+        {
+          "l": 4.59,
+          "t": 52.58,
+          "w": 88.94,
+          "h": 2.78,
+          "text": "Step 3: Compute the covariance matrix (or use singular value decomposition, SVD) "
+        },
+        {
+          "l": 4.54,
+          "t": 58.42,
+          "w": 34.97,
+          "h": 2.73,
+          "text": "to examine feature relationships."
+        },
+        {
+          "l": 4.59,
+          "t": 65.58,
+          "w": 77.45,
+          "h": 2.78,
+          "text": "Step 4: Calculate eigenvalues and eigenvectors of the covariance matrix."
+        },
+        {
+          "l": 4.71,
+          "t": 72.77,
+          "w": 83.57,
+          "h": 2.76,
+          "text": "Eigenvectors indicate the directions of the principal components; eigenvalues "
+        },
+        {
+          "l": 4.67,
+          "t": 78.6,
+          "w": 56.54,
+          "h": 2.73,
+          "text": "indicate how much variance each direction captures."
+        },
+        {
+          "l": 92.3,
+          "t": 83.49,
+          "w": 1.16,
+          "h": 1.0,
+          "text": "22"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "image": "/slides/ids_ids_ids_5_ids_5_pca_pdf/slide_022.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_pca_pdf/thumb_022.webp",
+      "text": "Steps Involved in PCA \u2013 Part 2\r\nStep 5: Sort components by decreasing eigenvalue, so PC1 captures the most \r\nvariance, followed by PC2, PC3, and so on.\r\nStep 6: Select the number of components to retain using explained variance, \r\ncumulative explained variance, or a scree plot.\r\nExplained variance ratio = component eigenvalue / sum of all eigenvalues.\r\nStep 7: Project the centered or standardized data onto the selected component \r\ndirections.\r\nOutput: a reduced dataset with fewer columns that preserves as much variance as \r\npossible for the chosen number of components.\r\n23",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.69,
+          "t": 18.42,
+          "w": 36.45,
+          "h": 3.22,
+          "text": "Steps Involved in PCA \u2013 Part 2"
+        },
+        {
+          "l": 5.71,
+          "t": 26.42,
+          "w": 83.46,
+          "h": 2.78,
+          "text": "Step 5: Sort components by decreasing eigenvalue, so PC1 captures the most "
+        },
+        {
+          "l": 5.62,
+          "t": 32.24,
+          "w": 45.64,
+          "h": 2.75,
+          "text": "variance, followed by PC2, PC3, and so on."
+        },
+        {
+          "l": 5.71,
+          "t": 39.42,
+          "w": 82.14,
+          "h": 2.78,
+          "text": "Step 6: Select the number of components to retain using explained variance, "
+        },
+        {
+          "l": 5.75,
+          "t": 45.26,
+          "w": 49.53,
+          "h": 2.73,
+          "text": "cumulative explained variance, or a scree plot."
+        },
+        {
+          "l": 5.84,
+          "t": 52.42,
+          "w": 78.62,
+          "h": 2.76,
+          "text": "Explained variance ratio = component eigenvalue / sum of all eigenvalues."
+        },
+        {
+          "l": 5.71,
+          "t": 59.58,
+          "w": 85.11,
+          "h": 2.75,
+          "text": "Step 7: Project the centered or standardized data onto the selected component "
+        },
+        {
+          "l": 5.75,
+          "t": 65.42,
+          "w": 11.13,
+          "h": 2.19,
+          "text": "directions."
+        },
+        {
+          "l": 5.75,
+          "t": 72.58,
+          "w": 88.65,
+          "h": 2.75,
+          "text": "Output: a reduced dataset with fewer columns that preserves as much variance as "
+        },
+        {
+          "l": 5.82,
+          "t": 78.42,
+          "w": 51.22,
+          "h": 2.73,
+          "text": "possible for the chosen number of components."
+        },
+        {
+          "l": 92.3,
+          "t": 83.49,
+          "w": 1.18,
+          "h": 1.02,
+          "text": "23"
+        }
+      ]
+    }
+  ]
+}

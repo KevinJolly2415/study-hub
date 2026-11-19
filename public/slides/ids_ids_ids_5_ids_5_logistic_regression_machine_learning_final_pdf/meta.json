@@ -1,0 +1,1920 @@
+{
+  "mtime": 1794989238.4901488,
+  "aspectRatio": 1.78,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_001.webp",
+      "text": "LOGISTIC REGRESSION\r\nA Classification Algorithm in Machine Learning\r\nLogistic Regression | 1",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 26.36,
+          "t": 22.43,
+          "w": 47.02,
+          "h": 5.2,
+          "text": "LOGISTIC REGRESSION"
+        },
+        {
+          "l": 25.19,
+          "t": 36.37,
+          "w": 49.2,
+          "h": 4.0,
+          "text": "A Classification Algorithm in Machine Learning"
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.22,
+          "h": 1.56,
+          "text": "Logistic Regression | 1"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_002.webp",
+      "text": "Learning Objectives\r\n\u2022 Define logistic regression and explain its purpose.\r\n\u2022 Differentiate logistic regression from linear regression.\r\n\u2022 Understand the sigmoid function and probability output.\r\n\u2022 Describe how a logistic regression model is trained.\r\n\u2022 Work through a simple classification example.\r\n\u2022 Identify applications, advantages, and limitations.\r\nLogistic Regression | 2",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.84,
+          "t": 6.84,
+          "w": 28.87,
+          "h": 5.11,
+          "text": "Learning Objectives"
+        },
+        {
+          "l": 7.39,
+          "t": 22.19,
+          "w": 47.46,
+          "h": 3.52,
+          "text": "\u2022 Define logistic regression and explain its purpose."
+        },
+        {
+          "l": 7.39,
+          "t": 28.86,
+          "w": 51.37,
+          "h": 3.52,
+          "text": "\u2022 Differentiate logistic regression from linear regression."
+        },
+        {
+          "l": 7.39,
+          "t": 35.53,
+          "w": 52.52,
+          "h": 3.52,
+          "text": "\u2022 Understand the sigmoid function and probability output."
+        },
+        {
+          "l": 7.39,
+          "t": 42.24,
+          "w": 49.06,
+          "h": 3.47,
+          "text": "\u2022 Describe how a logistic regression model is trained."
+        },
+        {
+          "l": 7.39,
+          "t": 48.87,
+          "w": 43.82,
+          "h": 3.52,
+          "text": "\u2022 Work through a simple classification example."
+        },
+        {
+          "l": 7.39,
+          "t": 55.54,
+          "w": 46.83,
+          "h": 3.52,
+          "text": "\u2022 Identify applications, advantages, and limitations."
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.34,
+          "h": 1.56,
+          "text": "Logistic Regression | 2"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_003.webp",
+      "text": "What Is Logistic Regression?\r\n\u2022 A supervised machine-learning algorithm mainly used for classification.\r\n\u2022 It estimates the probability that an observation belongs to a class.\r\n\u2022 Examples: Pass/Fail, Spam/Not Spam, Fraud/Not Fraud.\r\nFor example, suppose a student studies for 6 hours.\r\nProbability of passing = 85%\r\nProbability of failing = 15%\r\nSince the probability of passing is high, the model may predict Pass.\r\nUsually, for binary classification, we use a threshold of 0.5 (50%).\r\nProbability \u2265 0.5 \u2192 Pass\r\nProbability < 0.5 \u2192 Fail\r\n\u2022 Despite the word \u201cregression,\u201d it is commonly used for classification.\r\n\u2022 Example: predict whether a student will pass based on study hours.",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 3.65,
+          "t": 2.94,
+          "w": 42.53,
+          "h": 5.11,
+          "text": "What Is Logistic Regression?"
+        },
+        {
+          "l": 3.89,
+          "t": 13.48,
+          "w": 22.18,
+          "h": 3.43,
+          "text": "\u2022 A supervised machine"
+        },
+        {
+          "l": 26.23,
+          "t": 15.06,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 27.0,
+          "t": 13.48,
+          "w": 31.68,
+          "h": 3.48,
+          "text": "learning algorithm mainly used for "
+        },
+        {
+          "l": 58.76,
+          "t": 13.48,
+          "w": 12.99,
+          "h": 2.74,
+          "text": "classification"
+        },
+        {
+          "l": 72.08,
+          "t": 15.81,
+          "w": 0.21,
+          "h": 0.37,
+          "text": "."
+        },
+        {
+          "l": 3.89,
+          "t": 20.15,
+          "w": 16.45,
+          "h": 2.74,
+          "text": "\u2022 It estimates the "
+        },
+        {
+          "l": 20.46,
+          "t": 20.19,
+          "w": 10.49,
+          "h": 3.43,
+          "text": "probability "
+        },
+        {
+          "l": 31.57,
+          "t": 20.19,
+          "w": 35.3,
+          "h": 3.43,
+          "text": "that an observation belongs to a class."
+        },
+        {
+          "l": 3.89,
+          "t": 27.74,
+          "w": 1.19,
+          "h": 1.79,
+          "text": "\u2022 "
+        },
+        {
+          "l": 5.8,
+          "t": 26.86,
+          "w": 9.49,
+          "h": 3.38,
+          "text": "Examples"
+        },
+        {
+          "l": 15.58,
+          "t": 26.82,
+          "w": 42.83,
+          "h": 3.44,
+          "text": ": Pass/Fail, Spam/Not Spam, Fraud/Not Fraud."
+        },
+        {
+          "l": 3.95,
+          "t": 33.73,
+          "w": 47.65,
+          "h": 3.44,
+          "text": "For example, suppose a student studies for 6 hours."
+        },
+        {
+          "l": 7.69,
+          "t": 41.06,
+          "w": 26.04,
+          "h": 3.48,
+          "text": "Probability of passing = 85%"
+        },
+        {
+          "l": 7.69,
+          "t": 48.39,
+          "w": 24.32,
+          "h": 3.48,
+          "text": "Probability of failing = 15%"
+        },
+        {
+          "l": 3.87,
+          "t": 55.73,
+          "w": 9.18,
+          "h": 2.74,
+          "text": "Since the "
+        },
+        {
+          "l": 13.18,
+          "t": 55.78,
+          "w": 10.49,
+          "h": 3.43,
+          "text": "probability "
+        },
+        {
+          "l": 24.32,
+          "t": 55.73,
+          "w": 43.24,
+          "h": 3.48,
+          "text": "of passing is high, the model may predict Pass."
+        },
+        {
+          "l": 3.94,
+          "t": 63.07,
+          "w": 59.81,
+          "h": 3.48,
+          "text": "Usually, for binary classification, we use a threshold of 0.5 (50%)."
+        },
+        {
+          "l": 7.69,
+          "t": 70.39,
+          "w": 22.55,
+          "h": 3.49,
+          "text": "Probability \u2265 0.5 \u2192 Pass"
+        },
+        {
+          "l": 7.69,
+          "t": 77.73,
+          "w": 21.27,
+          "h": 3.48,
+          "text": "Probability < 0.5 \u2192 Fail"
+        },
+        {
+          "l": 3.89,
+          "t": 84.79,
+          "w": 64.29,
+          "h": 3.52,
+          "text": "\u2022 Despite the word \u201cregression,\u201d it is commonly used for classification."
+        },
+        {
+          "l": 3.89,
+          "t": 91.49,
+          "w": 63.15,
+          "h": 3.48,
+          "text": "\u2022 Example: predict whether a student will pass based on study hours."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_004.webp",
+      "text": "Linear Regression vs Logistic Regression\r\nLogistic Regression | 4",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.84,
+          "t": 7.07,
+          "w": 59.92,
+          "h": 4.88,
+          "text": "Linear Regression vs Logistic Regression"
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.34,
+          "h": 1.56,
+          "text": "Logistic Regression | 4"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_005.webp",
+      "text": "",
+      "width": 1920,
+      "height": 1080,
+      "rects": []
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_006.webp",
+      "text": "The Core Idea\r\n\u2022 The model calculates a score (Z) from the input features.\r\n\u2022 The sigmoid function converts this score into a probability.\r\n\u2022 A threshold\u2014often 0.5\u2014turns the probability into a class label.\r\n\u2022 If p \u2265 0.5, predict Class 1; otherwise predict Class 0.\r\nScore \u2192 Sigmoid \u2192 Probability \u2192 Class\r\nLogistic Regression | 5",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.69,
+          "t": 6.84,
+          "w": 19.68,
+          "h": 3.94,
+          "text": "The Core Idea"
+        },
+        {
+          "l": 5.89,
+          "t": 20.06,
+          "w": 53.87,
+          "h": 3.52,
+          "text": "\u2022 The model calculates a score (Z) from the input features."
+        },
+        {
+          "l": 5.89,
+          "t": 26.73,
+          "w": 55.03,
+          "h": 3.52,
+          "text": "\u2022 The sigmoid function converts this score into a probability."
+        },
+        {
+          "l": 5.89,
+          "t": 33.44,
+          "w": 12.17,
+          "h": 2.74,
+          "text": "\u2022 A threshold"
+        },
+        {
+          "l": 18.21,
+          "t": 35.04,
+          "w": 2.09,
+          "h": 0.27,
+          "text": "\u2014"
+        },
+        {
+          "l": 20.37,
+          "t": 33.44,
+          "w": 7.91,
+          "h": 2.74,
+          "text": "often 0.5"
+        },
+        {
+          "l": 28.36,
+          "t": 35.04,
+          "w": 2.09,
+          "h": 0.27,
+          "text": "\u2014"
+        },
+        {
+          "l": 30.49,
+          "t": 33.49,
+          "w": 34.47,
+          "h": 3.43,
+          "text": "turns the probability into a class label."
+        },
+        {
+          "l": 5.89,
+          "t": 40.07,
+          "w": 49.54,
+          "h": 3.48,
+          "text": "\u2022 If p \u2265 0.5, predict Class 1; otherwise predict Class 0."
+        },
+        {
+          "l": 22.75,
+          "t": 59.35,
+          "w": 47.28,
+          "h": 4.79,
+          "text": "Score \u2192 Sigmoid \u2192 Probability \u2192 Class"
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.35,
+          "h": 1.56,
+          "text": "Logistic Regression | 5"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_007.webp",
+      "text": "The Sigmoid Function\r\n\u2022 It maps any real-valued score to a value between 0 and 1.\r\n\u2022 A value near 0 means low probability of Class 1; near 1 means high probability.\r\n\u2022 When z = 0, the sigmoid output is 0.5.\r\n\u03c3(z) = 1 / (1 + e\u207b\u1dbb)\r\nLogistic Regression | 6",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.69,
+          "t": 6.84,
+          "w": 31.7,
+          "h": 5.11,
+          "text": "The Sigmoid Function"
+        },
+        {
+          "l": 7.39,
+          "t": 22.24,
+          "w": 16.41,
+          "h": 3.47,
+          "text": "\u2022 It maps any real"
+        },
+        {
+          "l": 24.02,
+          "t": 23.81,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 24.68,
+          "t": 22.27,
+          "w": 37.71,
+          "h": 2.71,
+          "text": "valued score to a value between 0 and 1."
+        },
+        {
+          "l": 7.39,
+          "t": 28.86,
+          "w": 74.49,
+          "h": 3.52,
+          "text": "\u2022 A value near 0 means low probability of Class 1; near 1 means high probability."
+        },
+        {
+          "l": 7.39,
+          "t": 35.57,
+          "w": 36.44,
+          "h": 3.48,
+          "text": "\u2022 When z = 0, the sigmoid output is 0.5."
+        },
+        {
+          "l": 37.19,
+          "t": 56.28,
+          "w": 21.42,
+          "h": 4.86,
+          "text": "\u03c3(z) = 1 / (1 + e\u207b"
+        },
+        {
+          "l": 58.85,
+          "t": 56.26,
+          "w": 0.78,
+          "h": 1.64,
+          "text": "\u1dbb"
+        },
+        {
+          "l": 59.78,
+          "t": 56.34,
+          "w": 0.9,
+          "h": 4.8,
+          "text": ")"
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.35,
+          "h": 1.56,
+          "text": "Logistic Regression | 6"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_008.webp",
+      "text": "Logistic Regression Model\r\n\u2022 For one feature: z = b\u2080 + b\u2081x.\r\n\u2022 For multiple features: z = b\u2080 + b\u2081x\u2081 + b\u2082x\u2082 + \u2026 + b\u2099x\u2099.\r\n\u2022 b\u2080 is the intercept; b\u2081, b\u2082, \u2026 are learned coefficients.\r\n\u2022 The predicted probability is p = \u03c3(z).\r\np = 1 / (1 + e\u207b\u1dbb)\r\nLogistic Regression | 7",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.84,
+          "t": 6.84,
+          "w": 38.51,
+          "h": 5.11,
+          "text": "Logistic Regression Model"
+        },
+        {
+          "l": 5.89,
+          "t": 19.7,
+          "w": 21.6,
+          "h": 2.79,
+          "text": "\u2022 For one feature: z = b"
+        },
+        {
+          "l": 27.68,
+          "t": 21.43,
+          "w": 0.64,
+          "h": 1.58,
+          "text": "\u2080 "
+        },
+        {
+          "l": 29.11,
+          "t": 19.79,
+          "w": 2.75,
+          "h": 2.7,
+          "text": "+ b"
+        },
+        {
+          "l": 32.07,
+          "t": 21.44,
+          "w": 0.62,
+          "h": 1.54,
+          "text": "\u2081"
+        },
+        {
+          "l": 32.81,
+          "t": 20.52,
+          "w": 1.42,
+          "h": 1.93,
+          "text": "x."
+        },
+        {
+          "l": 5.89,
+          "t": 26.38,
+          "w": 26.35,
+          "h": 3.48,
+          "text": "\u2022 For multiple features: z = b"
+        },
+        {
+          "l": 32.44,
+          "t": 28.1,
+          "w": 0.64,
+          "h": 1.58,
+          "text": "\u2080 "
+        },
+        {
+          "l": 33.87,
+          "t": 26.46,
+          "w": 2.73,
+          "h": 2.7,
+          "text": "+ b"
+        },
+        {
+          "l": 36.82,
+          "t": 28.11,
+          "w": 0.62,
+          "h": 1.54,
+          "text": "\u2081"
+        },
+        {
+          "l": 37.56,
+          "t": 27.19,
+          "w": 1.01,
+          "h": 1.93,
+          "text": "x"
+        },
+        {
+          "l": 38.71,
+          "t": 28.11,
+          "w": 0.62,
+          "h": 1.54,
+          "text": "\u2081 "
+        },
+        {
+          "l": 40.12,
+          "t": 26.46,
+          "w": 2.73,
+          "h": 2.7,
+          "text": "+ b"
+        },
+        {
+          "l": 43.04,
+          "t": 28.1,
+          "w": 0.61,
+          "h": 1.55,
+          "text": "\u2082"
+        },
+        {
+          "l": 43.81,
+          "t": 27.19,
+          "w": 1.01,
+          "h": 1.93,
+          "text": "x"
+        },
+        {
+          "l": 44.93,
+          "t": 28.1,
+          "w": 0.61,
+          "h": 1.55,
+          "text": "\u2082 "
+        },
+        {
+          "l": 46.37,
+          "t": 26.42,
+          "w": 7.17,
+          "h": 2.74,
+          "text": "+ \u2026 + b"
+        },
+        {
+          "l": 53.71,
+          "t": 28.49,
+          "w": 0.72,
+          "h": 1.17,
+          "text": "\u2099"
+        },
+        {
+          "l": 54.51,
+          "t": 27.19,
+          "w": 1.01,
+          "h": 1.93,
+          "text": "x"
+        },
+        {
+          "l": 55.61,
+          "t": 28.49,
+          "w": 0.72,
+          "h": 1.17,
+          "text": "\u2099"
+        },
+        {
+          "l": 56.58,
+          "t": 28.75,
+          "w": 0.21,
+          "h": 0.37,
+          "text": "."
+        },
+        {
+          "l": 5.89,
+          "t": 33.09,
+          "w": 2.84,
+          "h": 2.74,
+          "text": "\u2022 b"
+        },
+        {
+          "l": 8.92,
+          "t": 34.77,
+          "w": 0.64,
+          "h": 1.58,
+          "text": "\u2080 "
+        },
+        {
+          "l": 10.36,
+          "t": 33.13,
+          "w": 15.62,
+          "h": 3.39,
+          "text": "is the intercept; b"
+        },
+        {
+          "l": 26.19,
+          "t": 34.78,
+          "w": 0.62,
+          "h": 1.54,
+          "text": "\u2081"
+        },
+        {
+          "l": 27.09,
+          "t": 33.13,
+          "w": 2.04,
+          "h": 3.18,
+          "text": ", b"
+        },
+        {
+          "l": 29.31,
+          "t": 34.77,
+          "w": 0.61,
+          "h": 1.55,
+          "text": "\u2082"
+        },
+        {
+          "l": 30.24,
+          "t": 33.04,
+          "w": 25.57,
+          "h": 3.27,
+          "text": ", \u2026 are learned coefficients."
+        },
+        {
+          "l": 5.89,
+          "t": 39.71,
+          "w": 34.87,
+          "h": 3.52,
+          "text": "\u2022 The predicted probability is p = \u03c3(z)."
+        },
+        {
+          "l": 13.6,
+          "t": 52.06,
+          "w": 17.71,
+          "h": 4.85,
+          "text": "p = 1 / (1 + e\u207b"
+        },
+        {
+          "l": 31.57,
+          "t": 52.04,
+          "w": 0.78,
+          "h": 1.64,
+          "text": "\u1dbb"
+        },
+        {
+          "l": 32.5,
+          "t": 52.12,
+          "w": 0.9,
+          "h": 4.79,
+          "text": ")"
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.35,
+          "h": 1.56,
+          "text": "Logistic Regression | 7"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_009.webp",
+      "text": "So, the probability of passing is 88.08%.",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 55.34,
+          "t": 70.94,
+          "w": 26.24,
+          "h": 2.44,
+          "text": "So, the probability of passing is 88.08%. "
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_010.webp",
+      "text": "How the Model Learns\r\n\u2022 Start with training examples and known class labels.\r\n\u2022 Calculate predicted probabilities using the model.\r\n\u2022 Compare predictions with actual labels using a loss function.\r\nA loss function measures how incorrect the predictions are. Logistic Regression commonly \r\nuses log loss (binary cross-entropy). A lower loss generally indicates better predictions on \r\nthe training examples.\r\n\u2022 Adjust coefficients to reduce the loss, commonly using gradient-based optimization.\r\n\u2022 Repeat until a stopping condition is reached.\r\nLogistic Regression | 8",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.84,
+          "t": 6.84,
+          "w": 32.59,
+          "h": 3.94,
+          "text": "How the Model Learns"
+        },
+        {
+          "l": 7.39,
+          "t": 22.19,
+          "w": 49.73,
+          "h": 3.52,
+          "text": "\u2022 Start with training examples and known class labels."
+        },
+        {
+          "l": 7.39,
+          "t": 28.86,
+          "w": 46.99,
+          "h": 3.52,
+          "text": "\u2022 Calculate predicted probabilities using the model."
+        },
+        {
+          "l": 7.39,
+          "t": 35.53,
+          "w": 57.27,
+          "h": 3.52,
+          "text": "\u2022 Compare predictions with actual labels using a loss function."
+        },
+        {
+          "l": 7.27,
+          "t": 42.49,
+          "w": 83.87,
+          "h": 3.48,
+          "text": "A loss function measures how incorrect the predictions are. Logistic Regression commonly "
+        },
+        {
+          "l": 7.41,
+          "t": 47.6,
+          "w": 24.34,
+          "h": 3.48,
+          "text": "uses log loss (binary cross"
+        },
+        {
+          "l": 31.92,
+          "t": 49.17,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 32.62,
+          "t": 47.6,
+          "w": 57.73,
+          "h": 3.48,
+          "text": "entropy). A lower loss generally indicates better predictions on "
+        },
+        {
+          "l": 7.31,
+          "t": 52.75,
+          "w": 20.17,
+          "h": 3.44,
+          "text": "the training examples."
+        },
+        {
+          "l": 7.39,
+          "t": 66.43,
+          "w": 59.83,
+          "h": 3.52,
+          "text": "\u2022 Adjust coefficients to reduce the loss, commonly using gradient"
+        },
+        {
+          "l": 67.32,
+          "t": 68.04,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 68.1,
+          "t": 66.51,
+          "w": 17.61,
+          "h": 3.39,
+          "text": "based optimization."
+        },
+        {
+          "l": 7.39,
+          "t": 73.14,
+          "w": 42.59,
+          "h": 3.47,
+          "text": "\u2022 Repeat until a stopping condition is reached."
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.35,
+          "h": 1.56,
+          "text": "Logistic Regression | 8"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_011.webp",
+      "text": "Training Workflow\r\n\u2022 Collect and label data.\r\n\u2022 Clean data; handle missing values and encode categorical features.\r\n\u2022 Split data into training and testing sets.\r\n\u2022 Fit the model on training data.\r\n\u2022 Evaluate it on unseen test data.\r\n\u2022 Choose a threshold suitable for the application.\r\nLogistic Regression | 9",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.69,
+          "t": 6.79,
+          "w": 27.26,
+          "h": 5.17,
+          "text": "Training Workflow"
+        },
+        {
+          "l": 7.39,
+          "t": 22.19,
+          "w": 22.21,
+          "h": 2.78,
+          "text": "\u2022 Collect and label data."
+        },
+        {
+          "l": 7.39,
+          "t": 28.86,
+          "w": 64.12,
+          "h": 3.52,
+          "text": "\u2022 Clean data; handle missing values and encode categorical features."
+        },
+        {
+          "l": 7.39,
+          "t": 35.53,
+          "w": 37.35,
+          "h": 3.52,
+          "text": "\u2022 Split data into training and testing sets."
+        },
+        {
+          "l": 7.39,
+          "t": 42.24,
+          "w": 29.12,
+          "h": 3.47,
+          "text": "\u2022 Fit the model on training data."
+        },
+        {
+          "l": 7.39,
+          "t": 48.91,
+          "w": 30.74,
+          "h": 2.74,
+          "text": "\u2022 Evaluate it on unseen test data."
+        },
+        {
+          "l": 7.39,
+          "t": 55.54,
+          "w": 45.0,
+          "h": 3.48,
+          "text": "\u2022 Choose a threshold suitable for the application."
+        },
+        {
+          "l": 84.72,
+          "t": 95.49,
+          "w": 9.35,
+          "h": 1.56,
+          "text": "Logistic Regression | 9"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_012.webp",
+      "text": "Worked Example: Pass or Fail\r\n\u2022 A model uses study hours to estimate the probability of passing.\r\n\u2022 For one student, suppose the model calculates z = 1.2.\r\n\u2022 p = 1 / (1 + e\u207b\u00b9\u00b7\u00b2) \u2248 0.77.\r\n\u2022 With threshold 0.5, the prediction is Pass (Class 1).\r\np \u2248 0.77 \u2192 Pass\r\nLogistic Regression | 10",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.65,
+          "t": 6.84,
+          "w": 43.12,
+          "h": 5.04,
+          "text": "Worked Example: Pass or Fail"
+        },
+        {
+          "l": 7.39,
+          "t": 22.19,
+          "w": 60.47,
+          "h": 3.52,
+          "text": "\u2022 A model uses study hours to estimate the probability of passing."
+        },
+        {
+          "l": 7.39,
+          "t": 28.89,
+          "w": 52.19,
+          "h": 3.45,
+          "text": "\u2022 For one student, suppose the model calculates z = 1.2."
+        },
+        {
+          "l": 7.39,
+          "t": 35.53,
+          "w": 13.44,
+          "h": 3.52,
+          "text": "\u2022 p = 1 / (1 + e"
+        },
+        {
+          "l": 21.02,
+          "t": 35.99,
+          "w": 0.64,
+          "h": 0.23,
+          "text": "\u207b"
+        },
+        {
+          "l": 21.87,
+          "t": 35.53,
+          "w": 9.4,
+          "h": 3.52,
+          "text": "\u00b9\u00b7\u00b2) \u2248 0.77."
+        },
+        {
+          "l": 7.39,
+          "t": 42.2,
+          "w": 48.77,
+          "h": 3.52,
+          "text": "\u2022 With threshold 0.5, the prediction is Pass (Class 1)."
+        },
+        {
+          "l": 39.62,
+          "t": 70.85,
+          "w": 20.49,
+          "h": 4.62,
+          "text": "p \u2248 0.77 \u2192 Pass"
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.87,
+          "h": 1.56,
+          "text": "Logistic Regression | 10"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_013.webp",
+      "text": "Decision Threshold\r\n\u2022 The default threshold is often 0.5, but it is not mandatory.\r\n\u2022 A lower threshold predicts more positives and may increase recall and false positives.\r\nSuppose we reduce the threshold from 0.5 to 0.3.\r\nNow, even a probability of 0.40 will be classified as positive.\r\nFor example, in disease detection, a lower threshold may help identify more people who \r\nactually have the disease.\r\n\u25cf Advantage: We may detect more actual positive cases (higher recall).\r\n\u25cf Disadvantage: We may also incorrectly classify more negative cases as positive (more \r\nfalse positives).\r\nLogistic Regression | 11",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.24,
+          "t": 2.94,
+          "w": 27.77,
+          "h": 3.94,
+          "text": "Decision Threshold"
+        },
+        {
+          "l": 3.39,
+          "t": 16.86,
+          "w": 29.19,
+          "h": 2.78,
+          "text": "\u2022 The default threshold is often "
+        },
+        {
+          "l": 32.66,
+          "t": 16.94,
+          "w": 2.75,
+          "h": 2.71,
+          "text": "0.5"
+        },
+        {
+          "l": 35.64,
+          "t": 16.95,
+          "w": 21.86,
+          "h": 3.43,
+          "text": ", but it is not mandatory."
+        },
+        {
+          "l": 3.39,
+          "t": 23.53,
+          "w": 80.37,
+          "h": 3.52,
+          "text": "\u2022 A lower threshold predicts more positives and may increase recall and false positives."
+        },
+        {
+          "l": 3.37,
+          "t": 30.48,
+          "w": 36.25,
+          "h": 3.44,
+          "text": "Suppose we reduce the threshold from "
+        },
+        {
+          "l": 39.68,
+          "t": 30.51,
+          "w": 8.73,
+          "h": 2.71,
+          "text": "0.5 to 0.3"
+        },
+        {
+          "l": 48.69,
+          "t": 32.81,
+          "w": 0.21,
+          "h": 0.37,
+          "text": "."
+        },
+        {
+          "l": 3.44,
+          "t": 37.86,
+          "w": 11.99,
+          "h": 3.18,
+          "text": "Now, even a "
+        },
+        {
+          "l": 15.57,
+          "t": 37.82,
+          "w": 18.25,
+          "h": 3.48,
+          "text": "probability of 0.40 w"
+        },
+        {
+          "l": 33.81,
+          "t": 37.82,
+          "w": 25.76,
+          "h": 3.44,
+          "text": " will be classified as positive."
+        },
+        {
+          "l": 3.45,
+          "t": 45.2,
+          "w": 33.83,
+          "h": 3.39,
+          "text": "For example, in disease detection, a "
+        },
+        {
+          "l": 37.45,
+          "t": 45.2,
+          "w": 15.94,
+          "h": 2.7,
+          "text": "lower threshold "
+        },
+        {
+          "l": 53.5,
+          "t": 45.2,
+          "w": 8.9,
+          "h": 3.43,
+          "text": "may help "
+        },
+        {
+          "l": 62.54,
+          "t": 45.15,
+          "w": 7.24,
+          "h": 3.48,
+          "text": "identify "
+        },
+        {
+          "l": 70.5,
+          "t": 45.2,
+          "w": 16.42,
+          "h": 3.39,
+          "text": "more people who "
+        },
+        {
+          "l": 3.36,
+          "t": 50.31,
+          "w": 12.0,
+          "h": 3.43,
+          "text": "actually have "
+        },
+        {
+          "l": 16.06,
+          "t": 50.31,
+          "w": 11.03,
+          "h": 2.7,
+          "text": "the disease."
+        },
+        {
+          "l": 4.68,
+          "t": 59.27,
+          "w": 0.49,
+          "h": 0.89,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.03,
+          "t": 57.6,
+          "w": 63.79,
+          "h": 3.48,
+          "text": "Advantage: We may detect more actual positive cases (higher recall)."
+        },
+        {
+          "l": 4.68,
+          "t": 64.38,
+          "w": 0.49,
+          "h": 0.89,
+          "text": "\u25cf "
+        },
+        {
+          "l": 7.19,
+          "t": 62.71,
+          "w": 80.01,
+          "h": 3.48,
+          "text": "Disadvantage: We may also incorrectly classify more negative cases as positive (more "
+        },
+        {
+          "l": 7.05,
+          "t": 67.82,
+          "w": 14.18,
+          "h": 3.48,
+          "text": "false positives)."
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.74,
+          "h": 1.56,
+          "text": "Logistic Regression | 11"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_014.webp",
+      "text": "Decision Threshold\r\n\u2022 A higher threshold predicts fewer positives and may miss more actual positives.\r\nSuppose we increase the threshold from 0.5 to 0.8.\r\nNow, a probability of 0.70 will be classified as negative because it is below 0.8.\r\n\u25cf Advantage: The model may produce fewer false positives.\r\n\u25cf Disadvantage: It may miss more actual positive cases (more false negatives).\r\nIn simple words, the model requires stronger evidence before predicting Class 1.\r\n\u2022 Choose a threshold based on the cost of different mistakes.\r\nThe best threshold depends on which type of mistake is more serious.\r\nFor example, consider a medical test:\r\n\u25cf False negative: A sick person is classified as healthy. This could be dangerous.\r\n\u25cf False positive: A healthy person is classified as sick. This may lead to unnecessary additional \r\ntesting.\r\nIn this case, we may choose a lower threshold to reduce missed cases, while considering the \r\nadditional false positives.",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 3.65,
+          "t": 2.18,
+          "w": 27.77,
+          "h": 3.94,
+          "text": "Decision Threshold"
+        },
+        {
+          "l": 3.08,
+          "t": 10.57,
+          "w": 74.82,
+          "h": 3.52,
+          "text": "\u2022 A higher threshold predicts fewer positives and may miss more actual positives."
+        },
+        {
+          "l": 3.06,
+          "t": 17.52,
+          "w": 37.75,
+          "h": 3.44,
+          "text": "Suppose we increase the threshold from "
+        },
+        {
+          "l": 40.88,
+          "t": 17.55,
+          "w": 8.72,
+          "h": 2.71,
+          "text": "0.5 to 0.8"
+        },
+        {
+          "l": 49.88,
+          "t": 19.85,
+          "w": 0.21,
+          "h": 0.37,
+          "text": "."
+        },
+        {
+          "l": 3.12,
+          "t": 24.85,
+          "w": 19.3,
+          "h": 3.48,
+          "text": "Now, a probability of "
+        },
+        {
+          "l": 22.49,
+          "t": 24.88,
+          "w": 3.88,
+          "h": 2.71,
+          "text": "0.70 "
+        },
+        {
+          "l": 27.04,
+          "t": 24.85,
+          "w": 48.23,
+          "h": 3.48,
+          "text": "will be classified as negative because it is below 0.8."
+        },
+        {
+          "l": 4.37,
+          "t": 33.86,
+          "w": 0.49,
+          "h": 0.89,
+          "text": "\u25cf "
+        },
+        {
+          "l": 6.71,
+          "t": 32.19,
+          "w": 53.28,
+          "h": 3.48,
+          "text": "Advantage: The model may produce fewer false positives."
+        },
+        {
+          "l": 4.37,
+          "t": 38.97,
+          "w": 0.49,
+          "h": 0.89,
+          "text": "\u25cf "
+        },
+        {
+          "l": 6.88,
+          "t": 37.3,
+          "w": 70.9,
+          "h": 3.48,
+          "text": "Disadvantage: It may miss more actual positive cases (more false negatives)."
+        },
+        {
+          "l": 3.16,
+          "t": 44.68,
+          "w": 25.15,
+          "h": 3.4,
+          "text": "In simple words, the model "
+        },
+        {
+          "l": 28.43,
+          "t": 44.68,
+          "w": 27.17,
+          "h": 3.44,
+          "text": "requires stronger evidence "
+        },
+        {
+          "l": 55.73,
+          "t": 44.63,
+          "w": 23.3,
+          "h": 3.48,
+          "text": "before predicting Class 1."
+        },
+        {
+          "l": 3.08,
+          "t": 51.69,
+          "w": 56.41,
+          "h": 2.78,
+          "text": "\u2022 Choose a threshold based on the cost of different mistakes."
+        },
+        {
+          "l": 3.01,
+          "t": 58.64,
+          "w": 69.44,
+          "h": 3.48,
+          "text": "The best threshold depends on which type of mistake is more serious."
+        },
+        {
+          "l": 3.14,
+          "t": 66.02,
+          "w": 34.24,
+          "h": 3.39,
+          "text": "For example, consider a medical test:"
+        },
+        {
+          "l": 4.37,
+          "t": 74.98,
+          "w": 0.49,
+          "h": 0.89,
+          "text": "\u25cf "
+        },
+        {
+          "l": 6.87,
+          "t": 73.36,
+          "w": 14.11,
+          "h": 3.43,
+          "text": "False negative"
+        },
+        {
+          "l": 21.26,
+          "t": 73.31,
+          "w": 59.13,
+          "h": 3.48,
+          "text": ": A sick person is classified as healthy. This could be dangerous."
+        },
+        {
+          "l": 4.37,
+          "t": 80.09,
+          "w": 0.49,
+          "h": 0.89,
+          "text": "\u25cf "
+        },
+        {
+          "l": 6.87,
+          "t": 78.47,
+          "w": 13.53,
+          "h": 3.38,
+          "text": "False positive"
+        },
+        {
+          "l": 20.67,
+          "t": 78.42,
+          "w": 73.63,
+          "h": 3.48,
+          "text": ": A healthy person is classified as sick. This may lead to unnecessary additional "
+        },
+        {
+          "l": 6.75,
+          "t": 83.58,
+          "w": 6.51,
+          "h": 3.43,
+          "text": "testing."
+        },
+        {
+          "l": 3.16,
+          "t": 90.91,
+          "w": 28.25,
+          "h": 3.44,
+          "text": "In this case, we may choose a "
+        },
+        {
+          "l": 31.56,
+          "t": 90.91,
+          "w": 15.94,
+          "h": 2.7,
+          "text": "lower threshold "
+        },
+        {
+          "l": 47.51,
+          "t": 90.91,
+          "w": 43.03,
+          "h": 3.44,
+          "text": "to reduce missed cases, while considering the "
+        },
+        {
+          "l": 3.04,
+          "t": 95.98,
+          "w": 22.92,
+          "h": 3.44,
+          "text": "additional false positives."
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_015.webp",
+      "text": "Evaluation Metrics\r\n\u2022 Confusion matrix: True Positive (TP), True Negative (TN), False Positive (FP), False \r\nNegative (FN).\r\n\u2022 Accuracy = (TP + TN) / total predictions.\r\n\u2022 Precision = TP / (TP + FP): how many predicted positives are correct.\r\n\u2022 Recall = TP / (TP + FN): how many actual positives are found.\r\n\u2022 F1-score balances precision and recall.\r\n\u2022 AUC summarizes ranking performance across thresholds.\r\nLogistic Regression | 12",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.84,
+          "t": 6.84,
+          "w": 27.05,
+          "h": 3.94,
+          "text": "Evaluation Metrics"
+        },
+        {
+          "l": 4.64,
+          "t": 16.86,
+          "w": 79.98,
+          "h": 3.52,
+          "text": "\u2022 Confusion matrix: True Positive (TP), True Negative (TN), False Positive (FP), False "
+        },
+        {
+          "l": 4.69,
+          "t": 21.35,
+          "w": 13.25,
+          "h": 3.48,
+          "text": "Negative (FN)."
+        },
+        {
+          "l": 4.64,
+          "t": 27.97,
+          "w": 38.65,
+          "h": 3.52,
+          "text": "\u2022 Accuracy = (TP + TN) / total predictions."
+        },
+        {
+          "l": 4.64,
+          "t": 34.64,
+          "w": 65.66,
+          "h": 3.52,
+          "text": "\u2022 Precision = TP / (TP + FP): how many predicted positives are correct."
+        },
+        {
+          "l": 4.64,
+          "t": 41.31,
+          "w": 58.8,
+          "h": 3.52,
+          "text": "\u2022 Recall = TP / (TP + FN): how many actual positives are found."
+        },
+        {
+          "l": 4.64,
+          "t": 48.01,
+          "w": 3.83,
+          "h": 2.71,
+          "text": "\u2022 F1"
+        },
+        {
+          "l": 8.91,
+          "t": 49.6,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 9.61,
+          "t": 48.06,
+          "w": 32.85,
+          "h": 3.39,
+          "text": "score balances precision and recall."
+        },
+        {
+          "l": 4.64,
+          "t": 54.64,
+          "w": 55.04,
+          "h": 3.52,
+          "text": "\u2022 AUC summarizes ranking performance across thresholds."
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.87,
+          "h": 1.56,
+          "text": "Logistic Regression | 12"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_016.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_016.webp",
+      "text": "Applications\r\n\u2022 Healthcare: estimate a risk category from patient information.\r\n\u2022 Banking: classify transactions as potentially fraudulent or not.\r\n\u2022 Email: classify messages as spam or not spam.\r\n\u2022 Education: predict pass/fail or identify students needing support.\r\n\u2022 Marketing: estimate whether a customer may respond to a campaign.\r\nLogistic Regression | 13",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.63,
+          "t": 6.84,
+          "w": 18.31,
+          "h": 5.04,
+          "text": "Applications"
+        },
+        {
+          "l": 5.05,
+          "t": 17.0,
+          "w": 57.79,
+          "h": 3.52,
+          "text": "\u2022 Healthcare: estimate a risk category from patient information."
+        },
+        {
+          "l": 5.05,
+          "t": 23.67,
+          "w": 57.94,
+          "h": 3.52,
+          "text": "\u2022 Banking: classify transactions as potentially fraudulent or not."
+        },
+        {
+          "l": 5.05,
+          "t": 30.34,
+          "w": 45.42,
+          "h": 3.52,
+          "text": "\u2022 Email: classify messages as spam or not spam."
+        },
+        {
+          "l": 5.05,
+          "t": 37.01,
+          "w": 60.61,
+          "h": 3.52,
+          "text": "\u2022 Education: predict pass/fail or identify students needing support."
+        },
+        {
+          "l": 5.05,
+          "t": 43.72,
+          "w": 65.4,
+          "h": 3.47,
+          "text": "\u2022 Marketing: estimate whether a customer may respond to a campaign."
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.87,
+          "h": 1.56,
+          "text": "Logistic Regression | 13"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_017.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_017.webp",
+      "text": "Advantages\r\n\u2022 Simple to understand and implement.\r\n\u2022 Produces interpretable probabilities.\r\n\u2022 Useful as a baseline for many classification tasks.\r\n\u2022 Training is often efficient on moderate-sized datasets.\r\n\u2022 Coefficients can help explain relationships between features and outcomes.\r\nLogistic Regression | 14",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.63,
+          "t": 6.84,
+          "w": 17.4,
+          "h": 5.11,
+          "text": "Advantages"
+        },
+        {
+          "l": 4.16,
+          "t": 16.86,
+          "w": 36.09,
+          "h": 3.48,
+          "text": "\u2022 Simple to understand and implement."
+        },
+        {
+          "l": 4.16,
+          "t": 23.57,
+          "w": 34.82,
+          "h": 3.43,
+          "text": "\u2022 Produces interpretable probabilities."
+        },
+        {
+          "l": 4.16,
+          "t": 30.19,
+          "w": 47.43,
+          "h": 3.52,
+          "text": "\u2022 Useful as a baseline for many classification tasks."
+        },
+        {
+          "l": 4.16,
+          "t": 36.87,
+          "w": 36.53,
+          "h": 3.52,
+          "text": "\u2022 Training is often efficient on moderate"
+        },
+        {
+          "l": 40.85,
+          "t": 38.48,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 41.54,
+          "t": 36.95,
+          "w": 13.63,
+          "h": 2.7,
+          "text": "sized datasets."
+        },
+        {
+          "l": 4.16,
+          "t": 43.53,
+          "w": 71.16,
+          "h": 3.48,
+          "text": "\u2022 Coefficients can help explain relationships between features and outcomes."
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.87,
+          "h": 1.56,
+          "text": "Logistic Regression | 14"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_018.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_018.webp",
+      "text": "Limitations\r\n\u2022 Assumes a linear relationship between features and log-odds.\r\n\u2022 May not capture complex non-linear patterns without feature engineering.\r\n\u2022 Can be affected by outliers, multicollinearity, and poor data quality.\r\n\u2022 Class imbalance may require suitable metrics or class weighting.\r\n\u2022 Predicted probabilities may need calibration.\r\nLogistic Regression | 15",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.84,
+          "t": 7.07,
+          "w": 16.51,
+          "h": 3.71,
+          "text": "Limitations"
+        },
+        {
+          "l": 4.24,
+          "t": 16.86,
+          "w": 52.77,
+          "h": 3.52,
+          "text": "\u2022 Assumes a linear relationship between features and log"
+        },
+        {
+          "l": 57.24,
+          "t": 18.48,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 57.94,
+          "t": 16.95,
+          "w": 4.87,
+          "h": 2.7,
+          "text": "odds."
+        },
+        {
+          "l": 4.24,
+          "t": 23.57,
+          "w": 28.91,
+          "h": 3.47,
+          "text": "\u2022 May not capture complex non"
+        },
+        {
+          "l": 33.38,
+          "t": 25.15,
+          "w": 0.56,
+          "h": 0.33,
+          "text": "-"
+        },
+        {
+          "l": 34.14,
+          "t": 23.57,
+          "w": 39.13,
+          "h": 3.48,
+          "text": "linear patterns without feature engineering."
+        },
+        {
+          "l": 4.24,
+          "t": 30.19,
+          "w": 62.9,
+          "h": 3.52,
+          "text": "\u2022 Can be affected by outliers, multicollinearity, and poor data quality."
+        },
+        {
+          "l": 4.24,
+          "t": 36.87,
+          "w": 61.19,
+          "h": 3.52,
+          "text": "\u2022 Class imbalance may require suitable metrics or class weighting."
+        },
+        {
+          "l": 4.24,
+          "t": 43.58,
+          "w": 42.47,
+          "h": 3.47,
+          "text": "\u2022 Predicted probabilities may need calibration."
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.88,
+          "h": 1.56,
+          "text": "Logistic Regression | 15"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_019.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_019.webp",
+      "text": "Key Takeaways\r\n\u2022 Logistic regression is primarily a classification method.\r\n\u2022 It uses a linear score and sigmoid function to estimate probability.\r\n\u2022 A threshold converts probability into a predicted class.\r\n\u2022 Evaluate using metrics appropriate to the problem\u2014not accuracy alone.\r\n\u2022 Test the model on data not used for training.\r\nLogistic Regression | 16",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.84,
+          "t": 6.84,
+          "w": 22.38,
+          "h": 5.04,
+          "text": "Key Takeaways"
+        },
+        {
+          "l": 5.05,
+          "t": 18.18,
+          "w": 51.71,
+          "h": 3.52,
+          "text": "\u2022 Logistic regression is primarily a classification method."
+        },
+        {
+          "l": 5.05,
+          "t": 24.85,
+          "w": 61.85,
+          "h": 3.52,
+          "text": "\u2022 It uses a linear score and sigmoid function to estimate probability."
+        },
+        {
+          "l": 5.05,
+          "t": 31.56,
+          "w": 51.34,
+          "h": 3.47,
+          "text": "\u2022 A threshold converts probability into a predicted class."
+        },
+        {
+          "l": 5.05,
+          "t": 38.23,
+          "w": 47.57,
+          "h": 3.47,
+          "text": "\u2022 Evaluate using metrics appropriate to the problem"
+        },
+        {
+          "l": 52.77,
+          "t": 39.82,
+          "w": 2.09,
+          "h": 0.27,
+          "text": "\u2014"
+        },
+        {
+          "l": 54.99,
+          "t": 38.27,
+          "w": 17.7,
+          "h": 3.43,
+          "text": "not accuracy alone."
+        },
+        {
+          "l": 5.05,
+          "t": 44.85,
+          "w": 42.41,
+          "h": 3.52,
+          "text": "\u2022 Test the model on data not used for training."
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.87,
+          "h": 1.56,
+          "text": "Logistic Regression | 16"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/slide_020.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_logistic_regression_machine_learning_final_pdf/thumb_020.webp",
+      "text": "One-Slide Summary\r\n\u2022 Input features \u2192 linear score z \u2192 sigmoid \u2192 probability \u2192 threshold \u2192 class.\r\n\u2022 Model: z = b\u2080 + b\u2081x\u2081 + \u2026 + b\u2099x\u2099\r\n\u2022 Probability: p = 1 / (1 + e\u207b\u1dbb)\r\n\u2022 Class 1 if p \u2265 threshold; otherwise Class 0.\r\nFeatures \u2192 z \u2192 \u03c3(z) \u2192 p \u2192 Class\r\nLogistic Regression | 18",
+      "width": 1920,
+      "height": 1080,
+      "rects": [
+        {
+          "l": 5.8,
+          "t": 7.07,
+          "w": 5.56,
+          "h": 3.71,
+          "text": "One"
+        },
+        {
+          "l": 11.64,
+          "t": 8.83,
+          "w": 0.96,
+          "h": 0.62,
+          "text": "-"
+        },
+        {
+          "l": 12.84,
+          "t": 6.84,
+          "w": 21.78,
+          "h": 5.04,
+          "text": "Slide Summary"
+        },
+        {
+          "l": 7.39,
+          "t": 22.19,
+          "w": 73.43,
+          "h": 3.52,
+          "text": "\u2022 Input features \u2192 linear score z \u2192 sigmoid \u2192 probability \u2192 threshold \u2192 class."
+        },
+        {
+          "l": 7.39,
+          "t": 28.9,
+          "w": 13.06,
+          "h": 2.74,
+          "text": "\u2022 Model: z = b"
+        },
+        {
+          "l": 20.65,
+          "t": 30.59,
+          "w": 0.64,
+          "h": 1.58,
+          "text": "\u2080 "
+        },
+        {
+          "l": 22.07,
+          "t": 28.94,
+          "w": 2.75,
+          "h": 2.7,
+          "text": "+ b"
+        },
+        {
+          "l": 25.03,
+          "t": 30.6,
+          "w": 0.62,
+          "h": 1.54,
+          "text": "\u2081"
+        },
+        {
+          "l": 25.77,
+          "t": 29.68,
+          "w": 1.02,
+          "h": 1.93,
+          "text": "x"
+        },
+        {
+          "l": 26.92,
+          "t": 30.6,
+          "w": 0.62,
+          "h": 1.54,
+          "text": "\u2081 "
+        },
+        {
+          "l": 28.32,
+          "t": 28.9,
+          "w": 7.19,
+          "h": 2.74,
+          "text": "+ \u2026 + b"
+        },
+        {
+          "l": 35.67,
+          "t": 30.97,
+          "w": 0.72,
+          "h": 1.17,
+          "text": "\u2099"
+        },
+        {
+          "l": 36.47,
+          "t": 29.68,
+          "w": 1.02,
+          "h": 1.93,
+          "text": "x"
+        },
+        {
+          "l": 37.57,
+          "t": 30.97,
+          "w": 0.72,
+          "h": 1.17,
+          "text": "\u2099"
+        },
+        {
+          "l": 7.39,
+          "t": 35.53,
+          "w": 24.32,
+          "h": 3.52,
+          "text": "\u2022 Probability: p = 1 / (1 + e"
+        },
+        {
+          "l": 31.91,
+          "t": 35.99,
+          "w": 0.64,
+          "h": 0.23,
+          "text": "\u207b"
+        },
+        {
+          "l": 32.71,
+          "t": 36.09,
+          "w": 0.65,
+          "h": 1.33,
+          "text": "\u1dbb"
+        },
+        {
+          "l": 33.53,
+          "t": 35.57,
+          "w": 0.49,
+          "h": 3.48,
+          "text": ")"
+        },
+        {
+          "l": 7.39,
+          "t": 42.2,
+          "w": 24.1,
+          "h": 3.48,
+          "text": "\u2022 Class 1 if p \u2265 threshold; "
+        },
+        {
+          "l": 31.52,
+          "t": 42.29,
+          "w": 8.79,
+          "h": 2.7,
+          "text": "otherwise "
+        },
+        {
+          "l": 41.06,
+          "t": 42.24,
+          "w": 7.24,
+          "h": 2.74,
+          "text": "Class 0."
+        },
+        {
+          "l": 31.52,
+          "t": 71.77,
+          "w": 36.77,
+          "h": 4.52,
+          "text": "Features \u2192 z \u2192 \u03c3(z) \u2192 p \u2192 Class"
+        },
+        {
+          "l": 84.19,
+          "t": 95.49,
+          "w": 9.87,
+          "h": 1.56,
+          "text": "Logistic Regression | 18"
+        }
+      ]
+    }
+  ]
+}

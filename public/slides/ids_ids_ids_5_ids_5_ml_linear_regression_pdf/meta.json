@@ -1,0 +1,4022 @@
+{
+  "mtime": 1794989246.4800453,
+  "aspectRatio": 1.29,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_001.webp",
+      "text": "Classical Machine Learning",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 25.16,
+          "t": 47.0,
+          "w": 48.25,
+          "h": 4.63,
+          "text": "Classical Machine Learning"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_002.webp",
+      "text": "Learning Objectives\r\nDefine Machine Learning and explain why it is useful.\r\nDifferentiate supervised, unsupervised and reinforcement learning.\r\nUnderstand the typical workflow for developing a Machine Learning application.\r\nExplain regression as a supervised learning problem.\r\nBuild intuition for Linear Regression and Polynomial Regression.\r\nUnderstand training error, test error, underfitting and overfitting.\r\nIntelligent Data Systems 1 | Machine Learning | 2",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.06,
+          "t": 17.69,
+          "w": 23.33,
+          "h": 3.13,
+          "text": "Learning Objectives"
+        },
+        {
+          "l": 6.56,
+          "t": 28.85,
+          "w": 46.84,
+          "h": 2.31,
+          "text": "Define Machine Learning and explain why it is useful."
+        },
+        {
+          "l": 6.56,
+          "t": 33.44,
+          "w": 59.65,
+          "h": 2.31,
+          "text": "Differentiate supervised, unsupervised and reinforcement learning."
+        },
+        {
+          "l": 6.54,
+          "t": 38.01,
+          "w": 70.77,
+          "h": 2.31,
+          "text": "Understand the typical workflow for developing a Machine Learning application."
+        },
+        {
+          "l": 6.56,
+          "t": 42.6,
+          "w": 46.71,
+          "h": 2.31,
+          "text": "Explain regression as a supervised learning problem."
+        },
+        {
+          "l": 6.56,
+          "t": 47.19,
+          "w": 56.71,
+          "h": 2.31,
+          "text": "Build intuition for Linear Regression and Polynomial Regression."
+        },
+        {
+          "l": 6.54,
+          "t": 51.78,
+          "w": 56.41,
+          "h": 2.31,
+          "text": "Understand training error, test error, underfitting and overfitting."
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.34,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 2"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_003.webp",
+      "text": "What is Machine Learning?\r\nMachine Learning = Learning patterns from data to make predictions or decisions\r\n\u2022 Instead of explicitly programming every rule, we provide data and a learning\r\nalgorithm.\r\n\u2022 The system learns a model that maps inputs (features) to outputs (targets) or\r\ndecisions.\r\n\u2022 Example: House area + location + rooms \u2192 predicted house price.\r\n\u2022 Learning is evaluated on data that was not used to fit the model.\r\nIntelligent Data Systems 1 | Machine Learning | 3",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.86,
+          "t": 17.69,
+          "w": 31.92,
+          "h": 3.13,
+          "text": "What is Machine Learning?"
+        },
+        {
+          "l": 10.08,
+          "t": 32.51,
+          "w": 79.66,
+          "h": 2.42,
+          "text": "Machine Learning = Learning patterns from data to make predictions or decisions"
+        },
+        {
+          "l": 3.86,
+          "t": 43.72,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.76,
+          "t": 43.11,
+          "w": 90.91,
+          "h": 2.76,
+          "text": "Instead of explicitly programming every rule, we provide data and a learning"
+        },
+        {
+          "l": 6.68,
+          "t": 46.99,
+          "w": 10.68,
+          "h": 2.76,
+          "text": "algorithm."
+        },
+        {
+          "l": 3.86,
+          "t": 52.84,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.57,
+          "t": 52.22,
+          "w": 91.09,
+          "h": 2.76,
+          "text": "The system learns a model that maps inputs (features) to outputs (targets) or"
+        },
+        {
+          "l": 6.68,
+          "t": 56.11,
+          "w": 10.76,
+          "h": 2.19,
+          "text": "decisions."
+        },
+        {
+          "l": 3.86,
+          "t": 61.95,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.76,
+          "t": 61.34,
+          "w": 69.57,
+          "h": 2.73,
+          "text": "Example: House area + location + rooms \u2192 predicted house price."
+        },
+        {
+          "l": 3.86,
+          "t": 67.19,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.76,
+          "t": 66.58,
+          "w": 67.97,
+          "h": 2.76,
+          "text": "Learning is evaluated on data that was not used to fit the model."
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.34,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 3"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_004.webp",
+      "text": "Traditional Programming vs Machine Learning\r\nTraditional Programming\r\nRules + Data \u2192 Output\r\nMachine Learning\r\nData + Answers \u2192 Model\r\nPrediction\r\nNew Data + Model \u2192 \r\nOutput\r\n\u2022 Traditional programming: humans specify the logic.\r\n\u2022 Machine learning: the algorithm estimates useful patterns/parameters from \r\nexamples.\r\n\u2022 The learned model is then applied to unseen data.\r\nIntelligent Data Systems 1 | Machine Learning | 4",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.9,
+          "t": 17.69,
+          "w": 53.9,
+          "h": 3.13,
+          "text": "Traditional Programming vs Machine Learning"
+        },
+        {
+          "l": 7.93,
+          "t": 37.25,
+          "w": 23.15,
+          "h": 2.32,
+          "text": "Traditional Programming"
+        },
+        {
+          "l": 9.35,
+          "t": 40.48,
+          "w": 20.39,
+          "h": 2.3,
+          "text": "Rules + Data \u2192 Output"
+        },
+        {
+          "l": 41.64,
+          "t": 37.25,
+          "w": 16.61,
+          "h": 2.32,
+          "text": "Machine Learning"
+        },
+        {
+          "l": 38.76,
+          "t": 40.51,
+          "w": 22.38,
+          "h": 1.83,
+          "text": "Data + Answers \u2192 Model"
+        },
+        {
+          "l": 75.51,
+          "t": 35.63,
+          "w": 9.52,
+          "h": 1.85,
+          "text": "Prediction"
+        },
+        {
+          "l": 71.06,
+          "t": 38.88,
+          "w": 18.97,
+          "h": 1.83,
+          "text": "New Data + Model \u2192 "
+        },
+        {
+          "l": 77.01,
+          "t": 42.09,
+          "w": 6.51,
+          "h": 2.3,
+          "text": "Output"
+        },
+        {
+          "l": 4.03,
+          "t": 55.52,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.74,
+          "t": 54.91,
+          "w": 54.59,
+          "h": 2.76,
+          "text": "Traditional programming: humans specify the logic."
+        },
+        {
+          "l": 4.03,
+          "t": 60.76,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.93,
+          "t": 60.15,
+          "w": 81.12,
+          "h": 2.76,
+          "text": "Machine learning: the algorithm estimates useful patterns/parameters from "
+        },
+        {
+          "l": 6.84,
+          "t": 64.04,
+          "w": 10.78,
+          "h": 2.72,
+          "text": "examples."
+        },
+        {
+          "l": 4.03,
+          "t": 69.87,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.74,
+          "t": 69.26,
+          "w": 53.37,
+          "h": 2.73,
+          "text": "The learned model is then applied to unseen data."
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.36,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 4"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_005.webp",
+      "text": "Types of Machine Learning\r\n1. Supervised Learning 2. Unsupervised Learning 3. Reinforcement Learning\r\n\u2022 Supervised: training examples contain input X and known target Y.\r\n\u2022 Classification \u2192 predict a class/label.\r\n\u2022 Regression \u2192 predict a continuous numerical value.\r\n\u2022 Unsupervised: target labels are not provided; discover structure such as clusters.\r\n\u2022 Reinforcement: an agent learns actions through rewards and penalties.\r\nIntelligent Data Systems 1 | Machine Learning | 5",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.9,
+          "t": 17.69,
+          "w": 31.44,
+          "h": 3.13,
+          "text": "Types of Machine Learning"
+        },
+        {
+          "l": 9.44,
+          "t": 32.13,
+          "w": 20.24,
+          "h": 2.21,
+          "text": "1. Supervised Learning "
+        },
+        {
+          "l": 38.78,
+          "t": 32.13,
+          "w": 22.68,
+          "h": 2.2,
+          "text": "2. Unsupervised Learning "
+        },
+        {
+          "l": 68.91,
+          "t": 32.13,
+          "w": 23.62,
+          "h": 2.2,
+          "text": "3. Reinforcement Learning"
+        },
+        {
+          "l": 5.01,
+          "t": 43.19,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 7.79,
+          "t": 42.56,
+          "w": 69.95,
+          "h": 2.78,
+          "text": "Supervised: training examples contain input X and known target Y."
+        },
+        {
+          "l": 8.77,
+          "t": 48.42,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.57,
+          "t": 47.79,
+          "w": 39.68,
+          "h": 2.75,
+          "text": "Classification \u2192 predict a class/label."
+        },
+        {
+          "l": 8.77,
+          "t": 52.97,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.65,
+          "t": 52.36,
+          "w": 54.67,
+          "h": 2.76,
+          "text": "Regression \u2192 predict a continuous numerical value."
+        },
+        {
+          "l": 5.01,
+          "t": 57.54,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 7.89,
+          "t": 56.93,
+          "w": 86.49,
+          "h": 2.76,
+          "text": "Unsupervised: target labels are not provided; discover structure such as clusters."
+        },
+        {
+          "l": 5.01,
+          "t": 62.78,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 7.91,
+          "t": 62.17,
+          "w": 75.62,
+          "h": 2.76,
+          "text": "Reinforcement: an agent learns actions through rewards and penalties."
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.34,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 5"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_006.webp",
+      "text": "Supervised Learning: Classification vs Regression\r\nClassification\r\nOutput = category\r\nRegression\r\nOutput = continuous number\r\nClassification examples: spam/not spam, disease class, image category.\r\nRegression examples: house price, temperature, sales, demand, fuel efficiency.\r\nBoth learn a mapping from input features X to a target Y.\r\nIntelligent Data Systems 1 | Machine Learning | 6",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.95,
+          "t": 17.69,
+          "w": 58.92,
+          "h": 3.13,
+          "text": "Supervised Learning: Classification vs Regression"
+        },
+        {
+          "l": 20.21,
+          "t": 31.54,
+          "w": 13.54,
+          "h": 1.93,
+          "text": "Classification"
+        },
+        {
+          "l": 18.27,
+          "t": 34.95,
+          "w": 17.55,
+          "h": 2.43,
+          "text": "Output = category"
+        },
+        {
+          "l": 67.4,
+          "t": 31.54,
+          "w": 10.75,
+          "h": 2.42,
+          "text": "Regression"
+        },
+        {
+          "l": 58.59,
+          "t": 34.95,
+          "w": 28.41,
+          "h": 2.4,
+          "text": "Output = continuous number"
+        },
+        {
+          "l": 8.73,
+          "t": 45.33,
+          "w": 64.78,
+          "h": 2.32,
+          "text": "Classification examples: spam/not spam, disease class, image category."
+        },
+        {
+          "l": 8.8,
+          "t": 49.93,
+          "w": 70.65,
+          "h": 2.31,
+          "text": "Regression examples: house price, temperature, sales, demand, fuel efficiency."
+        },
+        {
+          "l": 8.8,
+          "t": 54.5,
+          "w": 49.2,
+          "h": 2.31,
+          "text": "Both learn a mapping from input features X to a target Y."
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.35,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 6"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_007.webp",
+      "text": "Steps to Develop a Machine Learning Application\r\n1. Define Problem\r\nWhat must be predicted or decided?\r\n2. Collect Data\r\nObtain relevant and representative \r\nexamples.\r\n3. Prepare Data\r\nClean, transform, encode and scale when \r\nrequired.\r\n4. Split Data\r\nTraining / validation / test sets.\r\n5. Select Model\r\nChoose an algorithm suitable for the task.\r\n6. Train Model\r\nEstimate model parameters using training \r\ndata.\r\n7. Evaluate\r\nUse suitable metrics on unseen data.\r\n8. Tune & Deploy\r\nImprove, validate, deploy and monitor.\r\nIntelligent Data Systems 1 | Machine Learning | 7",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.95,
+          "t": 17.69,
+          "w": 57.79,
+          "h": 3.13,
+          "text": "Steps to Develop a Machine Learning Application"
+        },
+        {
+          "l": 18.51,
+          "t": 30.21,
+          "w": 16.62,
+          "h": 1.85,
+          "text": "1. Define Problem"
+        },
+        {
+          "l": 10.5,
+          "t": 33.45,
+          "w": 32.53,
+          "h": 2.29,
+          "text": "What must be predicted or decided?"
+        },
+        {
+          "l": 65.98,
+          "t": 28.58,
+          "w": 13.85,
+          "h": 1.85,
+          "text": "2. Collect Data"
+        },
+        {
+          "l": 57.52,
+          "t": 31.82,
+          "w": 31.36,
+          "h": 2.3,
+          "text": "Obtain relevant and representative "
+        },
+        {
+          "l": 68.4,
+          "t": 35.08,
+          "w": 9.0,
+          "h": 2.28,
+          "text": "examples."
+        },
+        {
+          "l": 19.61,
+          "t": 42.0,
+          "w": 14.33,
+          "h": 2.28,
+          "text": "3. Prepare Data"
+        },
+        {
+          "l": 6.87,
+          "t": 45.21,
+          "w": 37.72,
+          "h": 2.19,
+          "text": "Clean, transform, encode and scale when "
+        },
+        {
+          "l": 6.92,
+          "t": 48.46,
+          "w": 7.81,
+          "h": 2.28,
+          "text": "required."
+        },
+        {
+          "l": 67.22,
+          "t": 43.6,
+          "w": 11.33,
+          "h": 2.3,
+          "text": "4. Split Data"
+        },
+        {
+          "l": 59.38,
+          "t": 46.85,
+          "w": 26.95,
+          "h": 2.31,
+          "text": "Training / validation / test sets."
+        },
+        {
+          "l": 19.58,
+          "t": 56.99,
+          "w": 14.47,
+          "h": 1.85,
+          "text": "5. Select Model"
+        },
+        {
+          "l": 8.2,
+          "t": 60.23,
+          "w": 37.16,
+          "h": 2.32,
+          "text": "Choose an algorithm suitable for the task."
+        },
+        {
+          "l": 66.45,
+          "t": 55.37,
+          "w": 13.0,
+          "h": 1.85,
+          "text": "6. Train Model"
+        },
+        {
+          "l": 54.45,
+          "t": 58.62,
+          "w": 37.57,
+          "h": 2.31,
+          "text": "Estimate model parameters using training "
+        },
+        {
+          "l": 70.73,
+          "t": 61.86,
+          "w": 4.36,
+          "h": 1.83,
+          "text": "data."
+        },
+        {
+          "l": 21.69,
+          "t": 70.41,
+          "w": 10.23,
+          "h": 1.83,
+          "text": "7. Evaluate"
+        },
+        {
+          "l": 10.3,
+          "t": 73.64,
+          "w": 33.03,
+          "h": 1.83,
+          "text": "Use suitable metrics on unseen data."
+        },
+        {
+          "l": 65.16,
+          "t": 70.39,
+          "w": 15.61,
+          "h": 2.3,
+          "text": "8. Tune & Deploy"
+        },
+        {
+          "l": 56.01,
+          "t": 73.64,
+          "w": 33.85,
+          "h": 2.28,
+          "text": "Improve, validate, deploy and monitor."
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.34,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 7"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_008.webp",
+      "text": "Data Preparation and Dataset Split\r\nData cleaning: missing values, duplicates, inconsistent records and outliers.\r\nFeature engineering: create informative input variables from raw data.\r\nEncoding: convert categorical variables into numerical representations when \r\nrequired.\r\nScaling: standardization or normalization may be useful for some algorithms.\r\nSplit before fitting the final model so test information does not leak into training.\r\nTraining Set Validation Set Test Set\r\nIntelligent Data Systems 1 | Machine Learning | 8",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.06,
+          "t": 17.69,
+          "w": 40.93,
+          "h": 3.1,
+          "text": "Data Preparation and Dataset Split"
+        },
+        {
+          "l": 5.09,
+          "t": 28.99,
+          "w": 81.35,
+          "h": 2.76,
+          "text": "Data cleaning: missing values, duplicates, inconsistent records and outliers."
+        },
+        {
+          "l": 5.09,
+          "t": 34.22,
+          "w": 74.05,
+          "h": 2.76,
+          "text": "Feature engineering: create informative input variables from raw data."
+        },
+        {
+          "l": 5.09,
+          "t": 39.46,
+          "w": 82.54,
+          "h": 2.76,
+          "text": "Encoding: convert categorical variables into numerical representations when "
+        },
+        {
+          "l": 5.08,
+          "t": 43.34,
+          "w": 9.34,
+          "h": 2.73,
+          "text": "required."
+        },
+        {
+          "l": 4.97,
+          "t": 48.56,
+          "w": 81.97,
+          "h": 2.78,
+          "text": "Scaling: standardization or normalization may be useful for some algorithms."
+        },
+        {
+          "l": 4.97,
+          "t": 53.77,
+          "w": 84.92,
+          "h": 2.78,
+          "text": "Split before fitting the final model so test information does not leak into training."
+        },
+        {
+          "l": 15.7,
+          "t": 68.55,
+          "w": 9.8,
+          "h": 2.09,
+          "text": "Training Set "
+        },
+        {
+          "l": 43.97,
+          "t": 68.55,
+          "w": 11.75,
+          "h": 1.66,
+          "text": "Validation Set "
+        },
+        {
+          "l": 75.81,
+          "t": 68.55,
+          "w": 6.58,
+          "h": 1.66,
+          "text": "Test Set"
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.34,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 8"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_009.webp",
+      "text": "What is Regression?\r\n\u2022 Regression is a supervised learning task in which the target variable is numerical\r\nand typically continuous.\r\n\u2022 The model learns a function that estimates Y from one or more input features X.\r\n\u2022 Examples: predict house price, salary, sales, rainfall, temperature or energy\r\nconsumption.\r\n\u2022 Goal: find a function that predicts well on unseen data.\r\nX \u2192 Regression Model \u2192 \u0176\r\nActual value y \u2212 Predicted value \u0177 = Residual/Error\r\nIntelligent Data Systems 1 | Machine Learning | 9",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.86,
+          "t": 17.69,
+          "w": 24.17,
+          "h": 3.13,
+          "text": "What is Regression?"
+        },
+        {
+          "l": 3.3,
+          "t": 29.6,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.2,
+          "t": 28.99,
+          "w": 89.87,
+          "h": 2.76,
+          "text": "Regression is a supervised learning task in which the target variable is numerical"
+        },
+        {
+          "l": 6.12,
+          "t": 32.87,
+          "w": 26.71,
+          "h": 2.73,
+          "text": "and typically continuous."
+        },
+        {
+          "l": 3.3,
+          "t": 38.72,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.01,
+          "t": 38.11,
+          "w": 84.59,
+          "h": 2.73,
+          "text": "The model learns a function that estimates Y from one or more input features X."
+        },
+        {
+          "l": 3.3,
+          "t": 43.95,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.2,
+          "t": 43.34,
+          "w": 89.89,
+          "h": 2.76,
+          "text": "Examples: predict house price, salary, sales, rainfall, temperature or energy"
+        },
+        {
+          "l": 6.12,
+          "t": 47.22,
+          "w": 14.76,
+          "h": 2.73,
+          "text": "consumption."
+        },
+        {
+          "l": 3.3,
+          "t": 53.07,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.12,
+          "t": 52.44,
+          "w": 58.41,
+          "h": 2.75,
+          "text": "Goal: find a function that predicts well on unseen data."
+        },
+        {
+          "l": 32.48,
+          "t": 61.66,
+          "w": 34.81,
+          "h": 4.16,
+          "text": "X \u2192 Regression Model \u2192 \u0176"
+        },
+        {
+          "l": 29.99,
+          "t": 72.29,
+          "w": 38.98,
+          "h": 1.85,
+          "text": "Actual value y \u2212 Predicted value \u0177 = Residual/Error"
+        },
+        {
+          "l": 75.49,
+          "t": 83.1,
+          "w": 19.35,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 9"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_010.webp",
+      "text": "Linear Regression: Basic Idea\r\n\u2022 Linear Regression models the relationship between input variable(s) and a\r\ncontinuous target using a linear function.\r\n\u2022 For one feature x, the model fits the best straight line through the observed data.\r\n\u2022 The coefficients determine the intercept and slope of the line.\r\n\u2022 The parameters are estimated by minimizing prediction error, commonly using least\r\nsquares. \u0177 = b\u2080 + b\u2081x\r\nb\u2080 = intercept | b\u2081 = slope/coefficient\r\nIntelligent Data Systems 1 | Machine Learning | 10\r\n\u2022 An intercept is the value of the predicted output y when the input x=0.\r\n\u2022 Slope tells us how much the predicted Y changes when X increases by 1 unit.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.57,
+          "t": 19.62,
+          "w": 40.84,
+          "h": 3.7,
+          "text": "Linear Regression: Basic Idea"
+        },
+        {
+          "l": 2.9,
+          "t": 29.11,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 5.81,
+          "t": 28.5,
+          "w": 89.98,
+          "h": 2.76,
+          "text": "Linear Regression models the relationship between input variable(s) and a"
+        },
+        {
+          "l": 5.72,
+          "t": 32.38,
+          "w": 43.63,
+          "h": 2.76,
+          "text": "continuous target using a linear function."
+        },
+        {
+          "l": 2.9,
+          "t": 38.23,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 5.81,
+          "t": 37.62,
+          "w": 85.17,
+          "h": 2.76,
+          "text": "For one feature x, the model fits the best straight line through the observed data."
+        },
+        {
+          "l": 2.9,
+          "t": 43.46,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 5.61,
+          "t": 42.85,
+          "w": 65.59,
+          "h": 2.73,
+          "text": "The coefficients determine the intercept and slope of the line."
+        },
+        {
+          "l": 2.9,
+          "t": 48.7,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 5.61,
+          "t": 48.09,
+          "w": 90.29,
+          "h": 2.76,
+          "text": "The parameters are estimated by minimizing prediction error, commonly using least"
+        },
+        {
+          "l": 5.72,
+          "t": 52.55,
+          "w": 9.01,
+          "h": 2.15,
+          "text": "squares. "
+        },
+        {
+          "l": 40.19,
+          "t": 54.21,
+          "w": 18.34,
+          "h": 4.26,
+          "text": "\u0177 = b\u2080 + b\u2081x"
+        },
+        {
+          "l": 23.2,
+          "t": 62.58,
+          "w": 52.38,
+          "h": 3.4,
+          "text": "b\u2080 = intercept | b\u2081 = slope/coefficient"
+        },
+        {
+          "l": 74.99,
+          "t": 83.1,
+          "w": 19.85,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 10"
+        },
+        {
+          "l": 3.68,
+          "t": 72.64,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.41,
+          "t": 72.11,
+          "w": 2.54,
+          "h": 2.09,
+          "text": "An "
+        },
+        {
+          "l": 9.81,
+          "t": 72.02,
+          "w": 9.19,
+          "h": 2.75,
+          "text": "intercept "
+        },
+        {
+          "l": 19.8,
+          "t": 71.95,
+          "w": 58.08,
+          "h": 2.82,
+          "text": "is the value of the predicted output y when the input x=0."
+        },
+        {
+          "l": 3.68,
+          "t": 76.52,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.44,
+          "t": 75.85,
+          "w": 5.58,
+          "h": 2.8,
+          "text": "Slope "
+        },
+        {
+          "l": 12.71,
+          "t": 75.85,
+          "w": 6.89,
+          "h": 2.26,
+          "text": "tells us "
+        },
+        {
+          "l": 20.41,
+          "t": 75.85,
+          "w": 64.66,
+          "h": 2.8,
+          "text": "how much the predicted Y changes when X increases by 1 unit."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_011.webp",
+      "text": "Linear Regression: Best-Fit Line\r\nObserved data points Best-fit line\r\nLeast squares: minimize \u03a3(y\u1d62 \u2212 \u0177\u1d62)\u00b2\r\nIntelligent Data Systems 1 | Machine Learning | 11",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.06,
+          "t": 17.69,
+          "w": 37.24,
+          "h": 3.13,
+          "text": "Linear Regression: Best-Fit Line"
+        },
+        {
+          "l": 10.86,
+          "t": 29.87,
+          "w": 15.01,
+          "h": 1.72,
+          "text": "Observed data points "
+        },
+        {
+          "l": 38.4,
+          "t": 29.87,
+          "w": 7.99,
+          "h": 1.38,
+          "text": "Best-fit line"
+        },
+        {
+          "l": 54.88,
+          "t": 27.58,
+          "w": 30.47,
+          "h": 2.84,
+          "text": "Least squares: minimize \u03a3(y\u1d62 \u2212 \u0177\u1d62)\u00b2"
+        },
+        {
+          "l": 74.99,
+          "t": 83.1,
+          "w": 19.72,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 11"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_012.webp",
+      "text": "Least Squares and Model Error\r\nSum of Squared Errors = SSE = \u03a3\u1d62 (y\u1d62 \u2212 \u0177\u1d62)\u00b2\r\nResidual = actual value \u2212 predicted value.\r\nSquaring residuals prevents positive and negative errors from cancelling.\r\nThe fitted line is chosen to minimize the total squared error.\r\nCommon evaluation measures include MAE, MSE/RMSE and R\u00b2.\r\nSmaller error is desirable, but evaluation must use unseen/test data.\r\nIntelligent Data Systems 1 | Machine Learning | 12",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.76,
+          "t": 19.87,
+          "w": 42.91,
+          "h": 3.67,
+          "text": "Least Squares and Model Error"
+        },
+        {
+          "l": 1.2,
+          "t": 42.39,
+          "w": 56.33,
+          "h": 4.25,
+          "text": "Sum of Squared Errors = SSE = \u03a3\u1d62 (y\u1d62 \u2212 \u0177\u1d62)\u00b2"
+        },
+        {
+          "l": 4.02,
+          "t": 58.89,
+          "w": 34.99,
+          "h": 2.17,
+          "text": "Residual = actual value \u2212 predicted value."
+        },
+        {
+          "l": 3.92,
+          "t": 63.28,
+          "w": 61.35,
+          "h": 2.21,
+          "text": "Squaring residuals prevents positive and negative errors from cancelling."
+        },
+        {
+          "l": 3.87,
+          "t": 67.73,
+          "w": 50.05,
+          "h": 2.17,
+          "text": "The fitted line is chosen to minimize the total squared error."
+        },
+        {
+          "l": 3.95,
+          "t": 71.6,
+          "w": 53.99,
+          "h": 2.61,
+          "text": "Common evaluation measures include MAE, MSE/RMSE and R\u00b2."
+        },
+        {
+          "l": 18.47,
+          "t": 79.5,
+          "w": 51.58,
+          "h": 1.78,
+          "text": "Smaller error is desirable, but evaluation must use unseen/test data."
+        },
+        {
+          "l": 76.61,
+          "t": 84.63,
+          "w": 19.85,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 12"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_013.webp",
+      "text": "Linear Regression: Worked Example\r\nSuppose study hours (x) are used to predict exam marks (\u0177).\r\nModel: \u0177 = 40 + 5x\r\nFor a student studying 6 hours: \u0177 = 40 + 5(6) = 70 marks.\r\nIf the actual mark is 76, residual = 76 \u2212 70 = +6.\r\nx = 6 hours \u2192 \u0177 = 70 marks\r\nInterpretation: each additional hour is associated with an estimated +5 marks in this model.\r\nIntelligent Data Systems 1 | Machine Learning | 13",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.1,
+          "t": 17.87,
+          "w": 50.39,
+          "h": 3.7,
+          "text": "Linear Regression: Worked Example"
+        },
+        {
+          "l": 3.23,
+          "t": 28.95,
+          "w": 11.63,
+          "h": 3.22,
+          "text": "Suppose "
+        },
+        {
+          "l": 14.99,
+          "t": 28.97,
+          "w": 19.1,
+          "h": 3.2,
+          "text": "study hours (x) "
+        },
+        {
+          "l": 34.95,
+          "t": 28.98,
+          "w": 23.95,
+          "h": 3.19,
+          "text": "are used to predict "
+        },
+        {
+          "l": 59.03,
+          "t": 28.97,
+          "w": 17.41,
+          "h": 3.18,
+          "text": "exam marks ("
+        },
+        {
+          "l": 76.5,
+          "t": 28.93,
+          "w": 2.8,
+          "h": 3.24,
+          "text": "\u0177)."
+        },
+        {
+          "l": 3.37,
+          "t": 34.79,
+          "w": 21.82,
+          "h": 3.24,
+          "text": "Model: \u0177 = 40 + 5x"
+        },
+        {
+          "l": 3.37,
+          "t": 40.67,
+          "w": 68.6,
+          "h": 3.28,
+          "text": "For a student studying 6 hours: \u0177 = 40 + 5(6) = 70 marks."
+        },
+        {
+          "l": 3.37,
+          "t": 46.6,
+          "w": 57.9,
+          "h": 3.05,
+          "text": "If the actual mark is 76, residual = 76 \u2212 70 = +6."
+        },
+        {
+          "l": 31.62,
+          "t": 57.92,
+          "w": 36.4,
+          "h": 3.51,
+          "text": "x = 6 hours \u2192 \u0177 = 70 marks"
+        },
+        {
+          "l": 15.51,
+          "t": 69.88,
+          "w": 68.74,
+          "h": 1.83,
+          "text": "Interpretation: each additional hour is associated with an estimated +5 marks in this model."
+        },
+        {
+          "l": 74.99,
+          "t": 83.1,
+          "w": 19.85,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 13"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_014.webp",
+      "text": "Polynomial Regression: Why Do We Need It?\r\nReal-world relationships are not always well represented by a straight line.\r\nIf the data show a curved trend, a polynomial model can capture that curvature.\r\nA polynomial regression model adds powers of the input, such as x\u00b2, x\u00b3, \u2026\r\nAlthough the curve is nonlinear in x, the model remains linear in its coefficients.\r\n\u0177 = b\u2080 + b\u2081x + b\u2082x\u00b2 + \u2026 + b\u2096x\u1d4f\r\nDegree 1 \u2192 straight line | Degree 2 \u2192 quadratic curve | Degree 3 \u2192 cubic curve\r\nIntelligent Data Systems 1 | Machine Learning | 14",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.06,
+          "t": 17.69,
+          "w": 52.63,
+          "h": 3.13,
+          "text": "Polynomial Regression: Why Do We Need It?"
+        },
+        {
+          "l": 4.28,
+          "t": 29.28,
+          "w": 78.77,
+          "h": 2.76,
+          "text": "Real-world relationships are not always well represented by a straight line."
+        },
+        {
+          "l": 4.28,
+          "t": 34.52,
+          "w": 84.75,
+          "h": 2.73,
+          "text": "If the data show a curved trend, a polynomial model can capture that curvature."
+        },
+        {
+          "l": 4.07,
+          "t": 39.07,
+          "w": 78.38,
+          "h": 3.44,
+          "text": "A polynomial regression model adds powers of the input, such as x\u00b2, x\u00b3, \u2026"
+        },
+        {
+          "l": 4.07,
+          "t": 44.99,
+          "w": 84.7,
+          "h": 2.76,
+          "text": "Although the curve is nonlinear in x, the model remains linear in its coefficients."
+        },
+        {
+          "l": 30.64,
+          "t": 61.72,
+          "w": 39.26,
+          "h": 4.17,
+          "text": "\u0177 = b\u2080 + b\u2081x + b\u2082x\u00b2 + \u2026 + b\u2096x\u1d4f"
+        },
+        {
+          "l": 22.15,
+          "t": 72.68,
+          "w": 55.5,
+          "h": 1.73,
+          "text": "Degree 1 \u2192 straight line | Degree 2 \u2192 quadratic curve | Degree 3 \u2192 cubic curve"
+        },
+        {
+          "l": 74.99,
+          "t": 83.1,
+          "w": 19.87,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 14"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_015.webp",
+      "text": "Linear vs Polynomial Regression\r\nLinear Regression Polynomial Regression\r\nStraight-line relationship\r\n\u0177 = b\u2080 + b\u2081x\r\nFewer parameters for a single \r\nfeature\r\nCan underfit strongly curved data\r\nCurved relationship can be \r\nrepresented\r\n\u0177 = b\u2080 + b\u2081x + b\u2082x\u00b2 + \u2026\r\nMore flexible as degree increases\r\nHigh degree can overfit training \r\ndata\r\nKey point: polynomial regression is commonly implemented by transforming features, then fitting \r\nlinear regression.\r\nIntelligent Data Systems 1 | Machine Learning | 15",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.06,
+          "t": 17.69,
+          "w": 38.12,
+          "h": 3.13,
+          "text": "Linear vs Polynomial Regression"
+        },
+        {
+          "l": 18.7,
+          "t": 31.06,
+          "w": 17.38,
+          "h": 2.42,
+          "text": "Linear Regression "
+        },
+        {
+          "l": 61.6,
+          "t": 31.06,
+          "w": 22.31,
+          "h": 2.42,
+          "text": "Polynomial Regression"
+        },
+        {
+          "l": 5.85,
+          "t": 40.03,
+          "w": 26.2,
+          "h": 2.78,
+          "text": "Straight-line relationship"
+        },
+        {
+          "l": 9.52,
+          "t": 45.24,
+          "w": 11.47,
+          "h": 2.93,
+          "text": "\u0177 = b\u2080 + b\u2081x"
+        },
+        {
+          "l": 5.97,
+          "t": 49.83,
+          "w": 31.87,
+          "h": 2.76,
+          "text": "Fewer parameters for a single "
+        },
+        {
+          "l": 5.8,
+          "t": 53.72,
+          "w": 7.52,
+          "h": 2.18,
+          "text": "feature"
+        },
+        {
+          "l": 5.89,
+          "t": 58.93,
+          "w": 35.44,
+          "h": 2.78,
+          "text": "Can underfit strongly curved data"
+        },
+        {
+          "l": 54.13,
+          "t": 39.2,
+          "w": 29.3,
+          "h": 2.75,
+          "text": "Curved relationship can be "
+        },
+        {
+          "l": 54.2,
+          "t": 43.12,
+          "w": 12.68,
+          "h": 2.72,
+          "text": "represented"
+        },
+        {
+          "l": 57.76,
+          "t": 47.66,
+          "w": 22.22,
+          "h": 3.57,
+          "text": "\u0177 = b\u2080 + b\u2081x + b\u2082x\u00b2 + \u2026"
+        },
+        {
+          "l": 54.21,
+          "t": 52.89,
+          "w": 35.32,
+          "h": 2.76,
+          "text": "More flexible as degree increases"
+        },
+        {
+          "l": 54.21,
+          "t": 58.13,
+          "w": 33.47,
+          "h": 2.76,
+          "text": "High degree can overfit training "
+        },
+        {
+          "l": 54.13,
+          "t": 62.02,
+          "w": 4.51,
+          "h": 2.18,
+          "text": "data"
+        },
+        {
+          "l": 13.45,
+          "t": 70.52,
+          "w": 73.32,
+          "h": 1.85,
+          "text": "Key point: polynomial regression is commonly implemented by transforming features, then fitting "
+        },
+        {
+          "l": 43.38,
+          "t": 73.11,
+          "w": 12.98,
+          "h": 1.85,
+          "text": "linear regression."
+        },
+        {
+          "l": 74.99,
+          "t": 83.1,
+          "w": 19.85,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 15"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_016.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_016.webp",
+      "text": "Underfitting and Overfitting\r\nUnderfitting Good Fit Overfitting\r\nModel too simple to\r\ncapture important\r\npatterns.\r\nHigh training and test\r\nerror may occur.\r\nIntelligent Data Systems 1 | Machine Learning | 16\r\nModel captures\r\nmeaningful pattern\r\nwithout memorizing\r\nnoise.\r\nGood generalization to\r\nunseen data.\r\nModel too complex and \r\nstarts fitting noise.\r\nVery low training error but \r\npoorer test performance.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.04,
+          "t": 17.69,
+          "w": 32.33,
+          "h": 3.13,
+          "text": "Underfitting and Overfitting"
+        },
+        {
+          "l": 11.09,
+          "t": 31.09,
+          "w": 11.25,
+          "h": 2.32,
+          "text": "Underfitting "
+        },
+        {
+          "l": 45.99,
+          "t": 31.09,
+          "w": 7.79,
+          "h": 1.85,
+          "text": "Good Fit "
+        },
+        {
+          "l": 74.93,
+          "t": 31.09,
+          "w": 9.96,
+          "h": 2.32,
+          "text": "Overfitting"
+        },
+        {
+          "l": 3.59,
+          "t": 39.4,
+          "w": 25.91,
+          "h": 2.73,
+          "text": "Model too simple to"
+        },
+        {
+          "l": 3.51,
+          "t": 43.28,
+          "w": 26.05,
+          "h": 2.73,
+          "text": "capture important"
+        },
+        {
+          "l": 3.58,
+          "t": 47.41,
+          "w": 9.34,
+          "h": 2.48,
+          "text": "patterns."
+        },
+        {
+          "l": 3.59,
+          "t": 52.4,
+          "w": 25.97,
+          "h": 2.76,
+          "text": "High training and test"
+        },
+        {
+          "l": 3.51,
+          "t": 56.86,
+          "w": 17.21,
+          "h": 2.15,
+          "text": "error may occur."
+        },
+        {
+          "l": 74.99,
+          "t": 83.1,
+          "w": 19.86,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 16"
+        },
+        {
+          "l": 35.85,
+          "t": 40.33,
+          "w": 27.87,
+          "h": 2.72,
+          "text": "Model captures"
+        },
+        {
+          "l": 35.83,
+          "t": 44.21,
+          "w": 27.82,
+          "h": 2.76,
+          "text": "meaningful pattern"
+        },
+        {
+          "l": 35.65,
+          "t": 48.09,
+          "w": 28.14,
+          "h": 2.76,
+          "text": "without memorizing"
+        },
+        {
+          "l": 35.83,
+          "t": 51.97,
+          "w": 6.12,
+          "h": 2.19,
+          "text": "noise."
+        },
+        {
+          "l": 35.77,
+          "t": 57.19,
+          "w": 27.92,
+          "h": 2.78,
+          "text": "Good generalization to"
+        },
+        {
+          "l": 35.82,
+          "t": 61.1,
+          "w": 13.65,
+          "h": 2.18,
+          "text": "unseen data."
+        },
+        {
+          "l": 67.75,
+          "t": 40.51,
+          "w": 25.47,
+          "h": 2.72,
+          "text": "Model too complex and "
+        },
+        {
+          "l": 67.66,
+          "t": 44.38,
+          "w": 19.51,
+          "h": 2.76,
+          "text": "starts fitting noise."
+        },
+        {
+          "l": 67.54,
+          "t": 49.62,
+          "w": 27.82,
+          "h": 2.76,
+          "text": "Very low training error but "
+        },
+        {
+          "l": 67.73,
+          "t": 53.51,
+          "w": 26.47,
+          "h": 2.72,
+          "text": "poorer test performance."
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_017.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_017.webp",
+      "text": "End-to-End Regression Workflow\r\nProblem Data Clean\r\n& Prepare Split Train Evaluate Tune / \r\nDeploy\r\nExample application: predict house prices from area, bedrooms, age, location-related features, etc.\r\nCompare a simple baseline, Linear Regression and Polynomial Regression.\r\nSelect the model using validation evidence, then report final performance on the untouched test set.\r\nIntelligent Data Systems 1 | Machine Learning | 18",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 5.06,
+          "t": 17.69,
+          "w": 39.45,
+          "h": 3.13,
+          "text": "End-to-End Regression Workflow"
+        },
+        {
+          "l": 6.12,
+          "t": 41.54,
+          "w": 5.77,
+          "h": 1.36,
+          "text": "Problem "
+        },
+        {
+          "l": 21.09,
+          "t": 41.54,
+          "w": 3.15,
+          "h": 1.36,
+          "text": "Data "
+        },
+        {
+          "l": 34.29,
+          "t": 40.32,
+          "w": 4.02,
+          "h": 1.38,
+          "text": "Clean"
+        },
+        {
+          "l": 32.92,
+          "t": 42.75,
+          "w": 6.77,
+          "h": 1.72,
+          "text": "& Prepare "
+        },
+        {
+          "l": 48.36,
+          "t": 41.52,
+          "w": 3.18,
+          "h": 1.72,
+          "text": "Split "
+        },
+        {
+          "l": 61.89,
+          "t": 41.52,
+          "w": 3.32,
+          "h": 1.38,
+          "text": "Train "
+        },
+        {
+          "l": 74.29,
+          "t": 41.54,
+          "w": 5.96,
+          "h": 1.36,
+          "text": "Evaluate "
+        },
+        {
+          "l": 88.74,
+          "t": 40.34,
+          "w": 4.64,
+          "h": 1.36,
+          "text": "Tune / "
+        },
+        {
+          "l": 88.53,
+          "t": 42.77,
+          "w": 4.86,
+          "h": 1.7,
+          "text": "Deploy"
+        },
+        {
+          "l": 7.66,
+          "t": 56.92,
+          "w": 79.44,
+          "h": 2.07,
+          "text": "Example application: predict house prices from area, bedrooms, age, location-related features, etc."
+        },
+        {
+          "l": 7.6,
+          "t": 61.16,
+          "w": 59.69,
+          "h": 2.09,
+          "text": "Compare a simple baseline, Linear Regression and Polynomial Regression."
+        },
+        {
+          "l": 7.57,
+          "t": 65.44,
+          "w": 80.22,
+          "h": 2.09,
+          "text": "Select the model using validation evidence, then report final performance on the untouched test set."
+        },
+        {
+          "l": 74.99,
+          "t": 83.1,
+          "w": 19.85,
+          "h": 1.04,
+          "text": "Intelligent Data Systems 1 | Machine Learning | 18"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_018.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_018.webp",
+      "text": "SIMPLE LINEAR REGRESSION MODEL\r\ny = \u00df0\r\n+ \u00df1\r\nX+ \u025b\r\nWhere\r\n\u00df0\r\n= y intercept population parameter\r\n\u00df1\r\n= slope population parameter\r\n\u025b = error term in y variation ( unknown\r\nreasons)\r\nSimple regression model is\r\nE(y) = \u00df0\r\n+ \u00df1\r\nX",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 20.23,
+          "t": 16.08,
+          "w": 61.48,
+          "h": 3.33,
+          "text": "SIMPLE LINEAR REGRESSION MODEL"
+        },
+        {
+          "l": 40.83,
+          "t": 38.31,
+          "w": 5.29,
+          "h": 3.03,
+          "text": "y = "
+        },
+        {
+          "l": 48.4,
+          "t": 37.44,
+          "w": 1.68,
+          "h": 3.24,
+          "text": "\u00df"
+        },
+        {
+          "l": 50.27,
+          "t": 39.6,
+          "w": 1.02,
+          "h": 2.09,
+          "text": "0"
+        },
+        {
+          "l": 52.68,
+          "t": 38.0,
+          "w": 1.5,
+          "h": 1.98,
+          "text": "+ "
+        },
+        {
+          "l": 55.46,
+          "t": 37.44,
+          "w": 1.68,
+          "h": 3.24,
+          "text": "\u00df"
+        },
+        {
+          "l": 57.48,
+          "t": 39.6,
+          "w": 0.58,
+          "h": 2.06,
+          "text": "1"
+        },
+        {
+          "l": 59.67,
+          "t": 37.38,
+          "w": 3.9,
+          "h": 3.25,
+          "text": "X+ "
+        },
+        {
+          "l": 67.03,
+          "t": 38.31,
+          "w": 1.33,
+          "h": 2.37,
+          "text": "\u025b"
+        },
+        {
+          "l": 40.84,
+          "t": 47.16,
+          "w": 6.54,
+          "h": 2.06,
+          "text": "Where"
+        },
+        {
+          "l": 40.8,
+          "t": 53.71,
+          "w": 1.17,
+          "h": 2.06,
+          "text": "\u00df"
+        },
+        {
+          "l": 42.14,
+          "t": 55.06,
+          "w": 0.78,
+          "h": 1.35,
+          "text": "0"
+        },
+        {
+          "l": 43.44,
+          "t": 53.71,
+          "w": 34.09,
+          "h": 2.48,
+          "text": "= y intercept population parameter"
+        },
+        {
+          "l": 41.43,
+          "t": 60.3,
+          "w": 1.06,
+          "h": 2.03,
+          "text": "\u00df"
+        },
+        {
+          "l": 42.69,
+          "t": 61.67,
+          "w": 0.36,
+          "h": 1.27,
+          "text": "1"
+        },
+        {
+          "l": 43.76,
+          "t": 60.26,
+          "w": 28.74,
+          "h": 2.48,
+          "text": "= slope population parameter"
+        },
+        {
+          "l": 41.98,
+          "t": 67.39,
+          "w": 1.47,
+          "h": 1.49,
+          "text": "\u025b "
+        },
+        {
+          "l": 43.56,
+          "t": 66.81,
+          "w": 35.39,
+          "h": 2.48,
+          "text": "= error term in y variation ( unknown"
+        },
+        {
+          "l": 42.05,
+          "t": 70.04,
+          "w": 8.18,
+          "h": 2.48,
+          "text": "reasons)"
+        },
+        {
+          "l": 19.64,
+          "t": 73.32,
+          "w": 42.13,
+          "h": 4.04,
+          "text": "Simple regression model is"
+        },
+        {
+          "l": 19.81,
+          "t": 78.54,
+          "w": 8.8,
+          "h": 3.96,
+          "text": "E(y) = "
+        },
+        {
+          "l": 31.87,
+          "t": 79.87,
+          "w": 1.68,
+          "h": 3.24,
+          "text": "\u00df"
+        },
+        {
+          "l": 33.74,
+          "t": 82.04,
+          "w": 1.02,
+          "h": 2.09,
+          "text": "0"
+        },
+        {
+          "l": 36.15,
+          "t": 80.44,
+          "w": 1.5,
+          "h": 1.98,
+          "text": "+ "
+        },
+        {
+          "l": 38.93,
+          "t": 79.87,
+          "w": 1.68,
+          "h": 3.24,
+          "text": "\u00df"
+        },
+        {
+          "l": 40.95,
+          "t": 82.04,
+          "w": 0.58,
+          "h": 2.06,
+          "text": "1"
+        },
+        {
+          "l": 43.14,
+          "t": 79.81,
+          "w": 2.09,
+          "h": 3.25,
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_019.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_019.webp",
+      "text": "REGRESSION EQUATION WITH ESTIMATES",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 14.7,
+          "t": 18.71,
+          "w": 70.32,
+          "h": 3.82,
+          "text": "REGRESSION EQUATION WITH ESTIMATES"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_020.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_020.webp",
+      "text": "18\r\n16\r\n14\r\n12\r\n10\r\n8\r\n6\r\n4\r\n2\r\n0\r\n0 2\r\n5\r\n5\r\n0\r\n75 100 125 TIPS IN RS.\r\nTIPS IN\r\nRs.\r\nTIPS IN\r\nRS.\r\nGETTING READY FOR LEAST SQUARES\r\nWe want to know what\r\ndegree the tip amount can\r\nbe predicted by the Bill.\r\nTIP is Dependent variable\r\nBill is Independent variable\r\nTIP\r\nAmount (\r\nRs. )\r\nBill Amount\r\n(Rs)\r\nMeal (#)\r\n1 34.00 5.00\r\n2 108.00 17.00\r\n3 64.00 11.00\r\n4 88.00 8.00\r\n5 99.00 14.00\r\n6 51.00 5.00",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 19.95,
+          "t": 35.77,
+          "w": 1.98,
+          "h": 1.88,
+          "text": "18"
+        },
+        {
+          "l": 19.95,
+          "t": 39.91,
+          "w": 1.98,
+          "h": 1.87,
+          "text": "16"
+        },
+        {
+          "l": 19.95,
+          "t": 44.05,
+          "w": 1.98,
+          "h": 1.83,
+          "text": "14"
+        },
+        {
+          "l": 19.95,
+          "t": 48.15,
+          "w": 1.87,
+          "h": 1.86,
+          "text": "12"
+        },
+        {
+          "l": 19.95,
+          "t": 52.28,
+          "w": 2.01,
+          "h": 1.87,
+          "text": "10"
+        },
+        {
+          "l": 21.06,
+          "t": 56.4,
+          "w": 1.07,
+          "h": 1.88,
+          "text": "8"
+        },
+        {
+          "l": 21.06,
+          "t": 60.54,
+          "w": 1.05,
+          "h": 1.87,
+          "text": "6"
+        },
+        {
+          "l": 21.03,
+          "t": 64.68,
+          "w": 1.09,
+          "h": 1.83,
+          "text": "4"
+        },
+        {
+          "l": 21.03,
+          "t": 68.77,
+          "w": 0.98,
+          "h": 1.86,
+          "text": "2"
+        },
+        {
+          "l": 21.06,
+          "t": 72.91,
+          "w": 1.08,
+          "h": 1.87,
+          "text": "0"
+        },
+        {
+          "l": 23.25,
+          "t": 75.28,
+          "w": 1.08,
+          "h": 1.87,
+          "text": "0 "
+        },
+        {
+          "l": 28.56,
+          "t": 75.26,
+          "w": 0.98,
+          "h": 1.86,
+          "text": "2"
+        },
+        {
+          "l": 28.57,
+          "t": 78.21,
+          "w": 1.06,
+          "h": 1.85,
+          "text": "5"
+        },
+        {
+          "l": 34.43,
+          "t": 75.29,
+          "w": 1.06,
+          "h": 1.85,
+          "text": "5"
+        },
+        {
+          "l": 34.46,
+          "t": 78.18,
+          "w": 1.08,
+          "h": 1.87,
+          "text": "0"
+        },
+        {
+          "l": 40.3,
+          "t": 75.28,
+          "w": 10.51,
+          "h": 1.88,
+          "text": "75 100 125 "
+        },
+        {
+          "l": 16.66,
+          "t": 52.21,
+          "w": 1.45,
+          "h": 8.46,
+          "text": "TIPS IN "
+        },
+        {
+          "l": 18.9,
+          "t": 57.04,
+          "w": 1.45,
+          "h": 3.51,
+          "text": "RS."
+        },
+        {
+          "l": 32.3,
+          "t": 31.55,
+          "w": 7.78,
+          "h": 2.24,
+          "text": "TIPS IN"
+        },
+        {
+          "l": 32.41,
+          "t": 35.05,
+          "w": 2.92,
+          "h": 2.21,
+          "text": "Rs."
+        },
+        {
+          "l": 48.71,
+          "t": 31.95,
+          "w": 6.54,
+          "h": 1.88,
+          "text": "TIPS IN"
+        },
+        {
+          "l": 48.8,
+          "t": 34.85,
+          "w": 2.71,
+          "h": 1.88,
+          "text": "RS."
+        },
+        {
+          "l": 19.84,
+          "t": 16.08,
+          "w": 63.78,
+          "h": 3.82,
+          "text": "GETTING READY FOR LEAST SQUARES"
+        },
+        {
+          "l": 59.59,
+          "t": 68.25,
+          "w": 20.31,
+          "h": 1.85,
+          "text": "We want to know what"
+        },
+        {
+          "l": 59.6,
+          "t": 71.15,
+          "w": 23.26,
+          "h": 2.25,
+          "text": "degree the tip amount can"
+        },
+        {
+          "l": 59.65,
+          "t": 74.07,
+          "w": 20.71,
+          "h": 2.23,
+          "text": "be predicted by the Bill."
+        },
+        {
+          "l": 59.59,
+          "t": 76.97,
+          "w": 2.93,
+          "h": 1.83,
+          "text": "TIP "
+        },
+        {
+          "l": 63.2,
+          "t": 76.97,
+          "w": 19.11,
+          "h": 2.23,
+          "text": "is Dependent variable"
+        },
+        {
+          "l": 59.68,
+          "t": 79.89,
+          "w": 4.39,
+          "h": 1.85,
+          "text": "Bill is "
+        },
+        {
+          "l": 64.8,
+          "t": 79.89,
+          "w": 18.56,
+          "h": 2.23,
+          "text": "Independent variable"
+        },
+        {
+          "l": 77.83,
+          "t": 33.35,
+          "w": 2.28,
+          "h": 1.42,
+          "text": "TIP"
+        },
+        {
+          "l": 77.83,
+          "t": 35.62,
+          "w": 6.28,
+          "h": 1.73,
+          "text": "Amount ("
+        },
+        {
+          "l": 77.9,
+          "t": 37.88,
+          "w": 2.68,
+          "h": 1.73,
+          "text": "Rs. )"
+        },
+        {
+          "l": 66.4,
+          "t": 33.35,
+          "w": 7.86,
+          "h": 1.43,
+          "text": "Bill Amount"
+        },
+        {
+          "l": 66.36,
+          "t": 35.62,
+          "w": 2.46,
+          "h": 1.73,
+          "text": "(Rs)"
+        },
+        {
+          "l": 60.14,
+          "t": 33.35,
+          "w": 5.24,
+          "h": 1.73,
+          "text": "Meal (#)"
+        },
+        {
+          "l": 60.08,
+          "t": 41.09,
+          "w": 0.57,
+          "h": 1.42,
+          "text": "1 "
+        },
+        {
+          "l": 66.32,
+          "t": 41.07,
+          "w": 4.1,
+          "h": 1.45,
+          "text": "34.00 "
+        },
+        {
+          "l": 77.84,
+          "t": 41.07,
+          "w": 3.14,
+          "h": 1.45,
+          "text": "5.00"
+        },
+        {
+          "l": 60.07,
+          "t": 44.78,
+          "w": 0.76,
+          "h": 1.44,
+          "text": "2 "
+        },
+        {
+          "l": 66.34,
+          "t": 44.78,
+          "w": 4.89,
+          "h": 1.45,
+          "text": "108.00 "
+        },
+        {
+          "l": 77.84,
+          "t": 44.78,
+          "w": 3.77,
+          "h": 1.45,
+          "text": "17.00"
+        },
+        {
+          "l": 60.06,
+          "t": 48.49,
+          "w": 0.82,
+          "h": 1.45,
+          "text": "3 "
+        },
+        {
+          "l": 66.36,
+          "t": 48.49,
+          "w": 4.1,
+          "h": 1.45,
+          "text": "64.00 "
+        },
+        {
+          "l": 77.84,
+          "t": 48.49,
+          "w": 3.59,
+          "h": 1.45,
+          "text": "11.00"
+        },
+        {
+          "l": 60.08,
+          "t": 52.21,
+          "w": 0.84,
+          "h": 1.42,
+          "text": "4 "
+        },
+        {
+          "l": 66.35,
+          "t": 52.19,
+          "w": 4.15,
+          "h": 1.45,
+          "text": "88.00 "
+        },
+        {
+          "l": 77.85,
+          "t": 52.19,
+          "w": 3.16,
+          "h": 1.45,
+          "text": "8.00"
+        },
+        {
+          "l": 60.08,
+          "t": 55.92,
+          "w": 0.82,
+          "h": 1.43,
+          "text": "5 "
+        },
+        {
+          "l": 66.34,
+          "t": 55.9,
+          "w": 4.13,
+          "h": 1.45,
+          "text": "99.00 "
+        },
+        {
+          "l": 77.84,
+          "t": 55.9,
+          "w": 3.84,
+          "h": 1.45,
+          "text": "14.00"
+        },
+        {
+          "l": 60.1,
+          "t": 59.6,
+          "w": 0.82,
+          "h": 1.45,
+          "text": "6 "
+        },
+        {
+          "l": 66.34,
+          "t": 59.6,
+          "w": 3.84,
+          "h": 1.45,
+          "text": "51.00 "
+        },
+        {
+          "l": 77.84,
+          "t": 59.6,
+          "w": 3.14,
+          "h": 1.45,
+          "text": "5.00"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_021.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_021.webp",
+      "text": "STEP : DESCRIPTIVE STATISTICS\r\n/CENTROID\r\n\u25fb TIPS IN\r\nRs.\r\n18\r\n16\r\n14\r\n12\r\n10\r\n8\r\n6\r\n4\r\n2\r\n0\r\n0 2\r\n5\r\n50 75\r\nTotal bil in \r\nRs\r\n100125 TIPS IN RS.\r\nTIPS IN\r\nRS. TIP\r\nAmount (\r\nRs. )\r\nMeal (#) Bill Amount (Rs)\r\n1 34.00 5.00\r\n2 108.00 17.00\r\n3 64.00 11.00\r\n4 88.00 8.00\r\n5 99.00 14.00\r\n6 51.00 5.00\r\nX bar = 74 Y bar = 10",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 22.51,
+          "t": 17.69,
+          "w": 54.95,
+          "h": 3.33,
+          "text": "STEP : DESCRIPTIVE STATISTICS"
+        },
+        {
+          "l": 40.71,
+          "t": 22.85,
+          "w": 18.52,
+          "h": 3.44,
+          "text": "/CENTROID"
+        },
+        {
+          "l": 30.96,
+          "t": 30.22,
+          "w": 0.92,
+          "h": 1.21,
+          "text": "\u25fb "
+        },
+        {
+          "l": 33.4,
+          "t": 29.24,
+          "w": 7.5,
+          "h": 2.31,
+          "text": "TIPS IN"
+        },
+        {
+          "l": 33.61,
+          "t": 33.04,
+          "w": 2.78,
+          "h": 2.28,
+          "text": "Rs."
+        },
+        {
+          "l": 20.27,
+          "t": 38.49,
+          "w": 1.56,
+          "h": 1.51,
+          "text": "18"
+        },
+        {
+          "l": 20.27,
+          "t": 42.57,
+          "w": 1.56,
+          "h": 1.51,
+          "text": "16"
+        },
+        {
+          "l": 20.27,
+          "t": 46.81,
+          "w": 1.58,
+          "h": 1.48,
+          "text": "14"
+        },
+        {
+          "l": 20.27,
+          "t": 51.04,
+          "w": 1.54,
+          "h": 1.49,
+          "text": "12"
+        },
+        {
+          "l": 20.27,
+          "t": 55.11,
+          "w": 1.57,
+          "h": 1.51,
+          "text": "10"
+        },
+        {
+          "l": 20.19,
+          "t": 59.35,
+          "w": 0.76,
+          "h": 1.51,
+          "text": "8"
+        },
+        {
+          "l": 20.21,
+          "t": 63.45,
+          "w": 0.74,
+          "h": 1.51,
+          "text": "6"
+        },
+        {
+          "l": 20.16,
+          "t": 67.68,
+          "w": 0.81,
+          "h": 1.48,
+          "text": "4"
+        },
+        {
+          "l": 20.22,
+          "t": 71.9,
+          "w": 0.7,
+          "h": 1.49,
+          "text": "2"
+        },
+        {
+          "l": 20.18,
+          "t": 76.0,
+          "w": 0.77,
+          "h": 1.51,
+          "text": "0"
+        },
+        {
+          "l": 22.47,
+          "t": 79.36,
+          "w": 1.08,
+          "h": 1.87,
+          "text": "0 "
+        },
+        {
+          "l": 28.11,
+          "t": 79.34,
+          "w": 0.98,
+          "h": 1.86,
+          "text": "2"
+        },
+        {
+          "l": 28.11,
+          "t": 82.29,
+          "w": 1.06,
+          "h": 1.85,
+          "text": "5"
+        },
+        {
+          "l": 35.48,
+          "t": 79.36,
+          "w": 5.93,
+          "h": 1.88,
+          "text": "50 75"
+        },
+        {
+          "l": 33.94,
+          "t": 82.5,
+          "w": 9.46,
+          "h": 1.85,
+          "text": "Total bil in "
+        },
+        {
+          "l": 37.45,
+          "t": 85.62,
+          "w": 2.05,
+          "h": 1.85,
+          "text": "Rs"
+        },
+        {
+          "l": 46.19,
+          "t": 79.36,
+          "w": 6.75,
+          "h": 1.88,
+          "text": "100125 "
+        },
+        {
+          "l": 15.87,
+          "t": 53.89,
+          "w": 1.45,
+          "h": 8.46,
+          "text": "TIPS IN "
+        },
+        {
+          "l": 18.11,
+          "t": 58.75,
+          "w": 1.45,
+          "h": 3.49,
+          "text": "RS."
+        },
+        {
+          "l": 49.54,
+          "t": 30.73,
+          "w": 6.54,
+          "h": 1.88,
+          "text": "TIPS IN"
+        },
+        {
+          "l": 49.64,
+          "t": 33.64,
+          "w": 2.69,
+          "h": 1.88,
+          "text": "RS. "
+        },
+        {
+          "l": 85.86,
+          "t": 33.88,
+          "w": 2.28,
+          "h": 1.42,
+          "text": "TIP"
+        },
+        {
+          "l": 85.86,
+          "t": 36.15,
+          "w": 6.28,
+          "h": 1.73,
+          "text": "Amount ("
+        },
+        {
+          "l": 85.93,
+          "t": 38.41,
+          "w": 2.68,
+          "h": 1.73,
+          "text": "Rs. )"
+        },
+        {
+          "l": 63.46,
+          "t": 33.87,
+          "w": 5.24,
+          "h": 1.73,
+          "text": "Meal (#) "
+        },
+        {
+          "l": 71.39,
+          "t": 33.88,
+          "w": 10.84,
+          "h": 1.73,
+          "text": "Bill Amount (Rs)"
+        },
+        {
+          "l": 63.4,
+          "t": 42.56,
+          "w": 0.57,
+          "h": 1.42,
+          "text": "1 "
+        },
+        {
+          "l": 71.31,
+          "t": 42.54,
+          "w": 4.1,
+          "h": 1.45,
+          "text": "34.00 "
+        },
+        {
+          "l": 85.87,
+          "t": 42.54,
+          "w": 3.14,
+          "h": 1.45,
+          "text": "5.00"
+        },
+        {
+          "l": 63.39,
+          "t": 46.7,
+          "w": 0.76,
+          "h": 1.44,
+          "text": "2 "
+        },
+        {
+          "l": 71.33,
+          "t": 46.7,
+          "w": 4.89,
+          "h": 1.45,
+          "text": "108.00 "
+        },
+        {
+          "l": 85.87,
+          "t": 46.7,
+          "w": 3.77,
+          "h": 1.45,
+          "text": "17.00"
+        },
+        {
+          "l": 63.38,
+          "t": 50.84,
+          "w": 0.82,
+          "h": 1.45,
+          "text": "3 "
+        },
+        {
+          "l": 71.34,
+          "t": 50.84,
+          "w": 4.1,
+          "h": 1.45,
+          "text": "64.00 "
+        },
+        {
+          "l": 85.87,
+          "t": 50.84,
+          "w": 3.59,
+          "h": 1.45,
+          "text": "11.00"
+        },
+        {
+          "l": 63.39,
+          "t": 55.01,
+          "w": 0.84,
+          "h": 1.42,
+          "text": "4 "
+        },
+        {
+          "l": 71.34,
+          "t": 54.99,
+          "w": 4.15,
+          "h": 1.45,
+          "text": "88.00 "
+        },
+        {
+          "l": 85.88,
+          "t": 54.99,
+          "w": 3.16,
+          "h": 1.45,
+          "text": "8.00"
+        },
+        {
+          "l": 63.4,
+          "t": 59.15,
+          "w": 0.82,
+          "h": 1.43,
+          "text": "5 "
+        },
+        {
+          "l": 71.33,
+          "t": 59.13,
+          "w": 4.13,
+          "h": 1.45,
+          "text": "99.00 "
+        },
+        {
+          "l": 85.87,
+          "t": 59.13,
+          "w": 3.84,
+          "h": 1.45,
+          "text": "14.00"
+        },
+        {
+          "l": 63.42,
+          "t": 63.29,
+          "w": 0.82,
+          "h": 1.45,
+          "text": "6 "
+        },
+        {
+          "l": 71.32,
+          "t": 63.29,
+          "w": 3.84,
+          "h": 1.45,
+          "text": "51.00 "
+        },
+        {
+          "l": 85.87,
+          "t": 63.29,
+          "w": 3.14,
+          "h": 1.45,
+          "text": "5.00"
+        },
+        {
+          "l": 71.31,
+          "t": 67.47,
+          "w": 6.93,
+          "h": 1.43,
+          "text": "X bar = 74 "
+        },
+        {
+          "l": 85.86,
+          "t": 67.45,
+          "w": 7.11,
+          "h": 1.45,
+          "text": "Y bar = 10"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_022.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_022.webp",
+      "text": "STEP : DESCRIPTIVE STATISTICS\r\n/CENTROID\r\n0 2\r\n5\r\n50 75\r\nTotal bil in \r\nRs\r\n100125 TIPS IN RS.\r\nTIPS IN\r\nRS.\r\nTIP\r\nAmount (\r\nRs. )\r\nBill Amount\r\n(Rs)\r\nMeal (#)\r\n1 34.00 5.00\r\n2 108.00 17.00\r\n3 64.00 11.00\r\n4 88.00 8.00\r\n5 99.00 14.00\r\n6 51.00 5.00\r\nY bar =\r\n10\r\nX bar = 74\r\nQ. obtain the linear regression equation:\r\nMeans Find b0\r\nand b1",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 22.52,
+          "t": 17.71,
+          "w": 54.95,
+          "h": 3.33,
+          "text": "STEP : DESCRIPTIVE STATISTICS"
+        },
+        {
+          "l": 40.72,
+          "t": 22.87,
+          "w": 18.52,
+          "h": 3.44,
+          "text": "/CENTROID"
+        },
+        {
+          "l": 22.49,
+          "t": 79.38,
+          "w": 1.08,
+          "h": 1.87,
+          "text": "0 "
+        },
+        {
+          "l": 28.11,
+          "t": 79.36,
+          "w": 0.98,
+          "h": 1.86,
+          "text": "2"
+        },
+        {
+          "l": 28.11,
+          "t": 82.31,
+          "w": 1.06,
+          "h": 1.85,
+          "text": "5"
+        },
+        {
+          "l": 35.49,
+          "t": 79.38,
+          "w": 5.93,
+          "h": 1.88,
+          "text": "50 75"
+        },
+        {
+          "l": 33.95,
+          "t": 82.52,
+          "w": 9.46,
+          "h": 1.85,
+          "text": "Total bil in "
+        },
+        {
+          "l": 37.47,
+          "t": 85.64,
+          "w": 2.05,
+          "h": 1.85,
+          "text": "Rs"
+        },
+        {
+          "l": 46.21,
+          "t": 79.38,
+          "w": 6.75,
+          "h": 1.88,
+          "text": "100125 "
+        },
+        {
+          "l": 15.87,
+          "t": 53.89,
+          "w": 1.45,
+          "h": 8.46,
+          "text": "TIPS IN \r\nM"
+        },
+        {
+          "l": 18.11,
+          "t": 58.75,
+          "w": 1.45,
+          "h": 3.49,
+          "text": "RS.\r\nea"
+        },
+        {
+          "l": 49.56,
+          "t": 30.75,
+          "w": 6.54,
+          "h": 1.88,
+          "text": "TIPS IN"
+        },
+        {
+          "l": 49.65,
+          "t": 33.66,
+          "w": 2.71,
+          "h": 1.88,
+          "text": "RS."
+        },
+        {
+          "l": 86.29,
+          "t": 30.33,
+          "w": 2.93,
+          "h": 1.83,
+          "text": "TIP"
+        },
+        {
+          "l": 86.29,
+          "t": 33.25,
+          "w": 8.09,
+          "h": 2.23,
+          "text": "Amount ("
+        },
+        {
+          "l": 86.38,
+          "t": 36.17,
+          "w": 3.45,
+          "h": 2.23,
+          "text": "Rs. )"
+        },
+        {
+          "l": 71.82,
+          "t": 30.35,
+          "w": 10.15,
+          "h": 1.85,
+          "text": "Bill Amount"
+        },
+        {
+          "l": 71.77,
+          "t": 33.25,
+          "w": 3.16,
+          "h": 2.23,
+          "text": "(Rs)"
+        },
+        {
+          "l": 63.91,
+          "t": 30.34,
+          "w": 6.74,
+          "h": 2.23,
+          "text": "Meal (#)"
+        },
+        {
+          "l": 63.83,
+          "t": 39.03,
+          "w": 0.74,
+          "h": 1.83,
+          "text": "1 "
+        },
+        {
+          "l": 71.71,
+          "t": 39.01,
+          "w": 5.32,
+          "h": 1.88,
+          "text": "34.00 "
+        },
+        {
+          "l": 86.29,
+          "t": 39.01,
+          "w": 4.08,
+          "h": 1.88,
+          "text": "5.00"
+        },
+        {
+          "l": 63.82,
+          "t": 43.14,
+          "w": 0.98,
+          "h": 1.86,
+          "text": "2 "
+        },
+        {
+          "l": 71.74,
+          "t": 43.14,
+          "w": 6.29,
+          "h": 1.88,
+          "text": "108.00 "
+        },
+        {
+          "l": 86.3,
+          "t": 43.14,
+          "w": 4.86,
+          "h": 1.87,
+          "text": "17.00"
+        },
+        {
+          "l": 63.8,
+          "t": 47.3,
+          "w": 1.06,
+          "h": 1.88,
+          "text": "3 "
+        },
+        {
+          "l": 71.76,
+          "t": 47.3,
+          "w": 5.31,
+          "h": 1.87,
+          "text": "64.00 "
+        },
+        {
+          "l": 86.3,
+          "t": 47.3,
+          "w": 4.62,
+          "h": 1.87,
+          "text": "11.00"
+        },
+        {
+          "l": 63.82,
+          "t": 51.48,
+          "w": 1.09,
+          "h": 1.83,
+          "text": "4 "
+        },
+        {
+          "l": 71.75,
+          "t": 51.46,
+          "w": 5.34,
+          "h": 1.88,
+          "text": "88.00 "
+        },
+        {
+          "l": 86.31,
+          "t": 51.46,
+          "w": 4.08,
+          "h": 1.88,
+          "text": "8.00"
+        },
+        {
+          "l": 63.82,
+          "t": 55.62,
+          "w": 1.06,
+          "h": 1.85,
+          "text": "5 "
+        },
+        {
+          "l": 71.74,
+          "t": 55.6,
+          "w": 5.35,
+          "h": 1.87,
+          "text": "99.00 "
+        },
+        {
+          "l": 86.3,
+          "t": 55.6,
+          "w": 4.98,
+          "h": 1.87,
+          "text": "14.00"
+        },
+        {
+          "l": 63.85,
+          "t": 59.76,
+          "w": 1.05,
+          "h": 1.87,
+          "text": "6 "
+        },
+        {
+          "l": 71.73,
+          "t": 59.75,
+          "w": 4.98,
+          "h": 1.88,
+          "text": "51.00 "
+        },
+        {
+          "l": 86.29,
+          "t": 59.75,
+          "w": 4.08,
+          "h": 1.88,
+          "text": "5.00"
+        },
+        {
+          "l": 86.28,
+          "t": 63.97,
+          "w": 6.49,
+          "h": 1.85,
+          "text": "Y bar ="
+        },
+        {
+          "l": 86.3,
+          "t": 66.81,
+          "w": 2.01,
+          "h": 1.87,
+          "text": "10"
+        },
+        {
+          "l": 71.72,
+          "t": 63.93,
+          "w": 8.91,
+          "h": 1.85,
+          "text": "X bar = 74"
+        },
+        {
+          "l": 3.34,
+          "t": 38.98,
+          "w": 18.43,
+          "h": 3.37,
+          "text": "Q. obtain the "
+        },
+        {
+          "l": 21.98,
+          "t": 38.98,
+          "w": 35.75,
+          "h": 3.74,
+          "text": "linear regression equation"
+        },
+        {
+          "l": 58.23,
+          "t": 40.0,
+          "w": 0.34,
+          "h": 1.98,
+          "text": ":"
+        },
+        {
+          "l": 15.05,
+          "t": 60.51,
+          "w": 9.03,
+          "h": 2.81,
+          "text": "TIRS\r\nMeans "
+        },
+        {
+          "l": 25.2,
+          "t": 60.3,
+          "w": 7.88,
+          "h": 3.01,
+          "text": "Find b"
+        },
+        {
+          "l": 33.35,
+          "t": 62.25,
+          "w": 1.02,
+          "h": 2.09,
+          "text": "0"
+        },
+        {
+          "l": 35.38,
+          "t": 60.3,
+          "w": 7.31,
+          "h": 3.01,
+          "text": "and b"
+        },
+        {
+          "l": 43.09,
+          "t": 62.25,
+          "w": 0.58,
+          "h": 2.06,
+          "text": "1"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_023.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_023.webp",
+      "text": "STEP : CALCULATIONS",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 30.9,
+          "t": 16.08,
+          "w": 39.28,
+          "h": 3.33,
+          "text": "STEP : CALCULATIONS"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_024.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_024.webp",
+      "text": "CALCULATION",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 37.89,
+          "t": 16.06,
+          "w": 23.9,
+          "h": 3.33,
+          "text": "CALCULATION"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_025.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_025.webp",
+      "text": "CALCULATIONS\r\nBill Deviation\r\nSquared\r\nTotal Bill Tip Amt. Bill Deviation Tip Deviation Deviation Products",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 36.91,
+          "t": 16.28,
+          "w": 26.22,
+          "h": 3.33,
+          "text": "CALCULATIONS"
+        },
+        {
+          "l": 83.29,
+          "t": 21.15,
+          "w": 11.38,
+          "h": 1.85,
+          "text": "Bill Deviation"
+        },
+        {
+          "l": 83.19,
+          "t": 24.03,
+          "w": 7.24,
+          "h": 2.25,
+          "text": "Squared"
+        },
+        {
+          "l": 1.33,
+          "t": 21.15,
+          "w": 7.59,
+          "h": 1.85,
+          "text": "Total Bill "
+        },
+        {
+          "l": 14.16,
+          "t": 21.15,
+          "w": 7.41,
+          "h": 2.23,
+          "text": "Tip Amt. "
+        },
+        {
+          "l": 25.79,
+          "t": 21.15,
+          "w": 11.38,
+          "h": 1.85,
+          "text": "Bill Deviation "
+        },
+        {
+          "l": 41.66,
+          "t": 21.15,
+          "w": 11.56,
+          "h": 2.23,
+          "text": "Tip Deviation "
+        },
+        {
+          "l": 58.12,
+          "t": 21.15,
+          "w": 16.85,
+          "h": 1.85,
+          "text": "Deviation Products"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_026.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_026.webp",
+      "text": "Total Bill Tip Amt. Bill Deviation Tip Deviation Deviation Products Bill Deviation Squared",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 1.33,
+          "t": 16.31,
+          "w": 7.59,
+          "h": 1.85,
+          "text": "Total Bill "
+        },
+        {
+          "l": 11.26,
+          "t": 16.31,
+          "w": 7.41,
+          "h": 2.23,
+          "text": "Tip Amt. "
+        },
+        {
+          "l": 20.38,
+          "t": 16.31,
+          "w": 11.38,
+          "h": 1.85,
+          "text": "Bill Deviation "
+        },
+        {
+          "l": 36.01,
+          "t": 16.31,
+          "w": 11.56,
+          "h": 2.23,
+          "text": "Tip Deviation "
+        },
+        {
+          "l": 52.15,
+          "t": 16.31,
+          "w": 16.85,
+          "h": 1.85,
+          "text": "Deviation Products "
+        },
+        {
+          "l": 76.83,
+          "t": 16.28,
+          "w": 19.28,
+          "h": 2.25,
+          "text": "Bill Deviation Squared"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_027.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_027.webp",
+      "text": "B1 CALCULATIONS",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 35.48,
+          "t": 16.08,
+          "w": 30.92,
+          "h": 3.33,
+          "text": "B1 CALCULATIONS"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_028.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_028.webp",
+      "text": "B1 CALCULATIONS",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 35.48,
+          "t": 16.08,
+          "w": 30.92,
+          "h": 3.33,
+          "text": "B1 CALCULATIONS"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_029.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_029.webp",
+      "text": "B0 CALCULATION",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 36.54,
+          "t": 16.08,
+          "w": 29.34,
+          "h": 3.33,
+          "text": "B0 CALCULATION"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_030.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_030.webp",
+      "text": "B0 CALCULATION",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 36.54,
+          "t": 16.08,
+          "w": 29.34,
+          "h": 3.33,
+          "text": "B0 CALCULATION"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_031.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_031.webp",
+      "text": "YOUR REGRESSION LINE",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 30.45,
+          "t": 16.08,
+          "w": 40.52,
+          "h": 3.33,
+          "text": "YOUR REGRESSION LINE"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_032.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_032.webp",
+      "text": "YOUR REGRESSION LINE",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 30.45,
+          "t": 16.08,
+          "w": 40.52,
+          "h": 3.33,
+          "text": "YOUR REGRESSION LINE"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_033.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_033.webp",
+      "text": "\u201cGOODNESS OF FIT\u201d\r\n\u2022 Goodness of fit indicates how well a statistical or machine learning model explains the\r\nobserved data.\r\n\u2022 A good-fitting model captures the underlying relationship between the input and\r\noutput variables.\r\n\u2022 The difference between an observed value and its predicted value is called a residual.\r\n\u2022 Smaller residuals generally indicate that predictions are closer to the observed values.\r\n\u2022 Goodness of fit can be quantified using measures such as MSE and RMSE.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 29.61,
+          "t": 19.71,
+          "w": 32.68,
+          "h": 3.33,
+          "text": "\u201cGOODNESS OF FIT\u201d"
+        },
+        {
+          "l": 3.8,
+          "t": 28.86,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.57,
+          "t": 28.17,
+          "w": 15.66,
+          "h": 2.28,
+          "text": "Goodness of fit "
+        },
+        {
+          "l": 23.07,
+          "t": 28.18,
+          "w": 71.24,
+          "h": 2.8,
+          "text": "indicates how well a statistical or machine learning model explains the"
+        },
+        {
+          "l": 6.59,
+          "t": 32.06,
+          "w": 14.79,
+          "h": 2.26,
+          "text": "observed data."
+        },
+        {
+          "l": 3.8,
+          "t": 36.62,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.53,
+          "t": 35.93,
+          "w": 36.13,
+          "h": 2.82,
+          "text": "A good-fitting model captures the "
+        },
+        {
+          "l": 44.03,
+          "t": 35.94,
+          "w": 24.38,
+          "h": 2.8,
+          "text": "underlying relationship "
+        },
+        {
+          "l": 69.79,
+          "t": 35.94,
+          "w": 24.44,
+          "h": 2.8,
+          "text": "between the input and"
+        },
+        {
+          "l": 6.59,
+          "t": 39.83,
+          "w": 16.89,
+          "h": 2.8,
+          "text": "output variables."
+        },
+        {
+          "l": 3.8,
+          "t": 44.39,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.5,
+          "t": 43.7,
+          "w": 76.97,
+          "h": 2.82,
+          "text": "The difference between an observed value and its predicted value is called a "
+        },
+        {
+          "l": 84.38,
+          "t": 43.71,
+          "w": 8.63,
+          "h": 2.26,
+          "text": "residual."
+        },
+        {
+          "l": 3.8,
+          "t": 59.91,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.56,
+          "t": 59.24,
+          "w": 17.52,
+          "h": 2.26,
+          "text": "Smaller residuals "
+        },
+        {
+          "l": 24.76,
+          "t": 59.24,
+          "w": 68.93,
+          "h": 2.8,
+          "text": "generally indicate that predictions are closer to the observed values."
+        },
+        {
+          "l": 3.8,
+          "t": 63.8,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 6.59,
+          "t": 63.11,
+          "w": 57.67,
+          "h": 2.82,
+          "text": "Goodness of fit can be quantified using measures such as "
+        },
+        {
+          "l": 65.08,
+          "t": 63.13,
+          "w": 15.33,
+          "h": 2.26,
+          "text": "MSE and RMSE"
+        },
+        {
+          "l": 80.71,
+          "t": 65.0,
+          "w": 0.26,
+          "h": 0.37,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_034.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_034.webp",
+      "text": "Y (Mean) = 10 => \u0177\r\nRESIDUALS\r\nMeal(#) TIP Amount ( Rs. )\r\n1 5.00\r\n2 17.00\r\n3 11.00\r\n4 8.00\r\n5 14.00\r\n6 5.00\r\n\u201cGOODNESS OF FIT\u201d FOR THE TIPS",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 13.17,
+          "t": 66.61,
+          "w": 9.18,
+          "h": 2.79,
+          "text": "Y (Mean) "
+        },
+        {
+          "l": 24.21,
+          "t": 67.48,
+          "w": 0.95,
+          "h": 0.81,
+          "text": "= "
+        },
+        {
+          "l": 26.14,
+          "t": 66.66,
+          "w": 5.88,
+          "h": 2.12,
+          "text": "10 => "
+        },
+        {
+          "l": 32.07,
+          "t": 66.5,
+          "w": 1.05,
+          "h": 2.82,
+          "text": "\u0177"
+        },
+        {
+          "l": 58.97,
+          "t": 70.85,
+          "w": 10.53,
+          "h": 1.88,
+          "text": "RESIDUALS"
+        },
+        {
+          "l": 8.55,
+          "t": 31.27,
+          "w": 4.87,
+          "h": 1.73,
+          "text": "Meal(#) "
+        },
+        {
+          "l": 16.63,
+          "t": 31.27,
+          "w": 12.25,
+          "h": 1.73,
+          "text": "TIP Amount ( Rs. )"
+        },
+        {
+          "l": 8.51,
+          "t": 35.84,
+          "w": 0.74,
+          "h": 1.83,
+          "text": "1 "
+        },
+        {
+          "l": 16.66,
+          "t": 35.81,
+          "w": 4.08,
+          "h": 1.88,
+          "text": "5.00"
+        },
+        {
+          "l": 8.5,
+          "t": 40.5,
+          "w": 0.98,
+          "h": 1.86,
+          "text": "2 "
+        },
+        {
+          "l": 16.66,
+          "t": 40.5,
+          "w": 4.86,
+          "h": 1.87,
+          "text": "17.00"
+        },
+        {
+          "l": 8.49,
+          "t": 45.17,
+          "w": 1.06,
+          "h": 1.88,
+          "text": "3 "
+        },
+        {
+          "l": 16.66,
+          "t": 45.17,
+          "w": 4.62,
+          "h": 1.87,
+          "text": "11.00"
+        },
+        {
+          "l": 8.5,
+          "t": 49.87,
+          "w": 1.09,
+          "h": 1.83,
+          "text": "4 "
+        },
+        {
+          "l": 16.68,
+          "t": 49.85,
+          "w": 4.08,
+          "h": 1.88,
+          "text": "8.00"
+        },
+        {
+          "l": 8.51,
+          "t": 54.56,
+          "w": 1.06,
+          "h": 1.85,
+          "text": "5 "
+        },
+        {
+          "l": 16.66,
+          "t": 54.54,
+          "w": 4.98,
+          "h": 1.87,
+          "text": "14.00"
+        },
+        {
+          "l": 8.54,
+          "t": 59.21,
+          "w": 1.05,
+          "h": 1.87,
+          "text": "6 "
+        },
+        {
+          "l": 16.66,
+          "t": 59.2,
+          "w": 4.08,
+          "h": 1.88,
+          "text": "5.00"
+        },
+        {
+          "l": 17.27,
+          "t": 19.86,
+          "w": 56.18,
+          "h": 3.33,
+          "text": "\u201cGOODNESS OF FIT\u201d FOR THE TIPS"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_035.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_035.webp",
+      "text": "Sum of Squared Errors (SSE) = 120\r\nMSE \u2014 Mean Squared Error\r\nMean Squared Error (MSE) is a measure of how far the model's predicted values \r\nare, on average, from the actual values.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 56.44,
+          "t": 61.87,
+          "w": 40.79,
+          "h": 3.0,
+          "text": "Sum of Squared Errors (SSE) = 120"
+        },
+        {
+          "l": 13.54,
+          "t": 15.92,
+          "w": 47.8,
+          "h": 4.66,
+          "text": "MSE \u2014 Mean Squared Error"
+        },
+        {
+          "l": 4.32,
+          "t": 21.45,
+          "w": 29.64,
+          "h": 3.09,
+          "text": "Mean Squared Error (MSE) "
+        },
+        {
+          "l": 34.87,
+          "t": 21.48,
+          "w": 58.26,
+          "h": 3.06,
+          "text": "is a measure of how far the model's predicted values "
+        },
+        {
+          "l": 4.26,
+          "t": 25.7,
+          "w": 43.02,
+          "h": 3.06,
+          "text": "are, on average, from the actual values."
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_036.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_036.webp",
+      "text": "Root Mean Squared Error\r\nRMSE \u2014 Root Mean Squared Error\r\n\ud835\udc45\ud835\udc40\ud835\udc46\ud835\udc38 = \ud835\udc40\ud835\udc46\ud835\udc38\r\n\ud835\udc45\ud835\udc40\ud835\udc46\ud835\udc38 = 20\r\nRMSE\u22484.47 \r\nRMSE is the square root of the Mean Squared Error (MSE). It measures\r\nthe typical size of prediction errors in the same units as the target\r\nvariable.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 15.77,
+          "t": 17.45,
+          "w": 43.63,
+          "h": 4.66,
+          "text": "Root Mean Squared Error"
+        },
+        {
+          "l": 23.91,
+          "t": 39.46,
+          "w": 47.41,
+          "h": 3.73,
+          "text": "RMSE \u2014 Root Mean Squared Error"
+        },
+        {
+          "l": 36.47,
+          "t": 45.31,
+          "w": 8.66,
+          "h": 2.98,
+          "text": "\ud835\udc45\ud835\udc40\ud835\udc46\ud835\udc38 "
+        },
+        {
+          "l": 46.5,
+          "t": 46.42,
+          "w": 2.07,
+          "h": 1.18,
+          "text": "= "
+        },
+        {
+          "l": 51.94,
+          "t": 45.31,
+          "w": 6.53,
+          "h": 2.98,
+          "text": "\ud835\udc40\ud835\udc46\ud835\udc38"
+        },
+        {
+          "l": 38.05,
+          "t": 51.09,
+          "w": 8.62,
+          "h": 2.98,
+          "text": "\ud835\udc45\ud835\udc40\ud835\udc46\ud835\udc38 "
+        },
+        {
+          "l": 48.06,
+          "t": 52.21,
+          "w": 2.07,
+          "h": 1.18,
+          "text": "= "
+        },
+        {
+          "l": 53.62,
+          "t": 51.09,
+          "w": 3.26,
+          "h": 2.98,
+          "text": "20"
+        },
+        {
+          "l": 40.1,
+          "t": 61.54,
+          "w": 15.87,
+          "h": 2.84,
+          "text": "RMSE\u22484.47 "
+        },
+        {
+          "l": 6.19,
+          "t": 25.29,
+          "w": 6.68,
+          "h": 2.51,
+          "text": "RMSE "
+        },
+        {
+          "l": 14.14,
+          "t": 25.14,
+          "w": 29.75,
+          "h": 3.3,
+          "text": "is the square root of the "
+        },
+        {
+          "l": 45.2,
+          "t": 25.1,
+          "w": 32.87,
+          "h": 3.33,
+          "text": "Mean Squared Error (MSE)"
+        },
+        {
+          "l": 78.43,
+          "t": 25.33,
+          "w": 15.46,
+          "h": 2.47,
+          "text": ". It measures"
+        },
+        {
+          "l": 6.03,
+          "t": 29.67,
+          "w": 54.05,
+          "h": 3.3,
+          "text": "the typical size of prediction errors in the "
+        },
+        {
+          "l": 61.82,
+          "t": 29.68,
+          "w": 32.12,
+          "h": 3.28,
+          "text": "same units as the target"
+        },
+        {
+          "l": 6.02,
+          "t": 34.21,
+          "w": 9.57,
+          "h": 2.65,
+          "text": "variable"
+        },
+        {
+          "l": 15.93,
+          "t": 36.41,
+          "w": 0.31,
+          "h": 0.43,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_037.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_037.webp",
+      "text": "77\r\nSQUARING THE RESIDUALS(ERRORS)",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 14.15,
+          "t": 27.7,
+          "w": 1.31,
+          "h": 1.12,
+          "text": "77"
+        },
+        {
+          "l": 13.42,
+          "t": 18.22,
+          "w": 76.27,
+          "h": 5.0,
+          "text": "SQUARING THE RESIDUALS(ERRORS)"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_038.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_038.webp",
+      "text": "MAE \u2014 Mean Absolute Error\r\nMean Absolute Error (MAE) is the average of the absolute differences \r\nbetween the actual values and the predicted values.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 25.36,
+          "t": 19.12,
+          "w": 49.51,
+          "h": 3.77,
+          "text": "MAE \u2014 Mean Absolute Error"
+        },
+        {
+          "l": 7.06,
+          "t": 27.93,
+          "w": 82.44,
+          "h": 3.33,
+          "text": "Mean Absolute Error (MAE) is the average of the absolute differences "
+        },
+        {
+          "l": 7.04,
+          "t": 32.51,
+          "w": 61.19,
+          "h": 3.28,
+          "text": "between the actual values and the predicted values."
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "image": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/slide_039.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_ml_linear_regression_pdf/thumb_039.webp",
+      "text": "MAE \u2014 Mean Absolute Error\r\nAbsolute \r\nError Actual \ud835\udc18 Prediction \ud835\udc18\u0de1 Error\r\n5 10 -5 5\r\n17 10 +7 7\r\n11 10 +1 1\r\n8 10 -2 2\r\n14 10 +4 4\r\n5 10 -5 5\r\n24",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 25.36,
+          "t": 19.12,
+          "w": 49.51,
+          "h": 3.77,
+          "text": "MAE \u2014 Mean Absolute Error"
+        },
+        {
+          "l": 59.93,
+          "t": 36.82,
+          "w": 11.45,
+          "h": 2.65,
+          "text": "Absolute "
+        },
+        {
+          "l": 64.81,
+          "t": 41.54,
+          "w": 5.85,
+          "h": 2.46,
+          "text": "Error "
+        },
+        {
+          "l": 9.91,
+          "t": 39.11,
+          "w": 8.38,
+          "h": 2.65,
+          "text": "Actual "
+        },
+        {
+          "l": 18.31,
+          "t": 39.16,
+          "w": 1.76,
+          "h": 2.56,
+          "text": "\ud835\udc18 "
+        },
+        {
+          "l": 22.29,
+          "t": 39.18,
+          "w": 12.89,
+          "h": 2.64,
+          "text": "Prediction "
+        },
+        {
+          "l": 35.19,
+          "t": 39.22,
+          "w": 1.76,
+          "h": 2.56,
+          "text": "\ud835\udc18"
+        },
+        {
+          "l": 35.32,
+          "t": 38.47,
+          "w": 1.62,
+          "h": 0.61,
+          "text": "\u0de1 "
+        },
+        {
+          "l": 47.93,
+          "t": 39.28,
+          "w": 5.85,
+          "h": 2.46,
+          "text": "Error"
+        },
+        {
+          "l": 18.73,
+          "t": 47.05,
+          "w": 1.17,
+          "h": 2.46,
+          "text": "5 "
+        },
+        {
+          "l": 34.23,
+          "t": 47.01,
+          "w": 2.62,
+          "h": 2.49,
+          "text": "10 "
+        },
+        {
+          "l": 51.55,
+          "t": 47.05,
+          "w": 2.12,
+          "h": 2.46,
+          "text": "-5 "
+        },
+        {
+          "l": 69.37,
+          "t": 47.05,
+          "w": 1.17,
+          "h": 2.46,
+          "text": "5"
+        },
+        {
+          "l": 17.35,
+          "t": 52.52,
+          "w": 2.59,
+          "h": 2.45,
+          "text": "17 "
+        },
+        {
+          "l": 34.23,
+          "t": 52.5,
+          "w": 2.62,
+          "h": 2.49,
+          "text": "10 "
+        },
+        {
+          "l": 50.99,
+          "t": 52.54,
+          "w": 2.71,
+          "h": 2.43,
+          "text": "+7 "
+        },
+        {
+          "l": 69.37,
+          "t": 52.54,
+          "w": 1.2,
+          "h": 2.43,
+          "text": "7"
+        },
+        {
+          "l": 17.35,
+          "t": 58.03,
+          "w": 2.57,
+          "h": 2.44,
+          "text": "11 "
+        },
+        {
+          "l": 34.23,
+          "t": 58.01,
+          "w": 2.62,
+          "h": 2.49,
+          "text": "10 "
+        },
+        {
+          "l": 50.99,
+          "t": 58.03,
+          "w": 2.69,
+          "h": 2.44,
+          "text": "+1 "
+        },
+        {
+          "l": 69.47,
+          "t": 58.03,
+          "w": 1.08,
+          "h": 2.44,
+          "text": "1"
+        },
+        {
+          "l": 18.71,
+          "t": 63.5,
+          "w": 1.25,
+          "h": 2.49,
+          "text": "8 "
+        },
+        {
+          "l": 34.23,
+          "t": 63.5,
+          "w": 2.62,
+          "h": 2.49,
+          "text": "10 "
+        },
+        {
+          "l": 51.55,
+          "t": 63.5,
+          "w": 2.13,
+          "h": 2.46,
+          "text": "-2 "
+        },
+        {
+          "l": 69.39,
+          "t": 63.5,
+          "w": 1.16,
+          "h": 2.46,
+          "text": "2"
+        },
+        {
+          "l": 17.35,
+          "t": 69.03,
+          "w": 2.64,
+          "h": 2.45,
+          "text": "14 "
+        },
+        {
+          "l": 34.23,
+          "t": 69.01,
+          "w": 2.62,
+          "h": 2.49,
+          "text": "10 "
+        },
+        {
+          "l": 50.99,
+          "t": 69.03,
+          "w": 2.76,
+          "h": 2.44,
+          "text": "+4 "
+        },
+        {
+          "l": 69.29,
+          "t": 69.03,
+          "w": 1.33,
+          "h": 2.44,
+          "text": "4"
+        },
+        {
+          "l": 18.73,
+          "t": 74.54,
+          "w": 1.17,
+          "h": 2.46,
+          "text": "5 "
+        },
+        {
+          "l": 34.23,
+          "t": 74.5,
+          "w": 2.62,
+          "h": 2.49,
+          "text": "10 "
+        },
+        {
+          "l": 51.55,
+          "t": 74.54,
+          "w": 2.12,
+          "h": 2.46,
+          "text": "-5 "
+        },
+        {
+          "l": 69.37,
+          "t": 74.54,
+          "w": 1.17,
+          "h": 2.46,
+          "text": "5"
+        },
+        {
+          "l": 67.91,
+          "t": 80.01,
+          "w": 2.73,
+          "h": 2.47,
+          "text": "24"
+        }
+      ]
+    }
+  ]
+}

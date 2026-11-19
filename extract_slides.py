@@ -316,6 +316,12 @@ def convert_single_image_to_slide(img_path, output_dir, force=False):
     with Image.open(img_path) as pil_img:
         pil_img = pil_img.convert("RGB")
         w, h = pil_img.size
+        # WebP hard limit is 16,383 pixels in width and height
+        if max(w, h) > 16000:
+            scale = 16000 / max(w, h)
+            w, h = int(w * scale), int(h * scale)
+            pil_img = pil_img.resize((w, h), Image.Resampling.LANCZOS)
+            
         avg_aspect = round(w / h, 2) if h > 0 else 1.33
         pil_img.save(slide_img_path, "WEBP", quality=90)
         
@@ -355,7 +361,11 @@ def ensure_interactive_docs(decks):
             shutil.copy2(src, pdf_dest)
         elif d["fileType"] == "PNG":
             with Image.open(src) as img:
-                img.convert("RGB").save(pdf_dest, "PDF", resolution=100.0)
+                img = img.convert("RGB")
+                if max(img.size) > 16000:
+                    scale = 16000 / max(img.size)
+                    img = img.resize((int(img.size[0] * scale), int(img.size[1] * scale)), Image.Resampling.LANCZOS)
+                img.save(pdf_dest, "PDF", resolution=100.0)
         elif d["fileType"] in ["PPT", "PPTX"]:
             ppts_to_convert.append((str(src), str(pdf_dest)))
 
@@ -384,7 +394,14 @@ def ensure_interactive_docs(decks):
 
 def main():
     force = "--force" in sys.argv
+    target_subject = None
+    for arg_idx, arg in enumerate(sys.argv):
+        if arg in ["--subject", "-s"] and arg_idx + 1 < len(sys.argv):
+            target_subject = sys.argv[arg_idx + 1].strip().upper()
+
     print(f"=== SFIT 5th Sem Slide Deck Extractor ===", flush=True)
+    if target_subject:
+        print(f"Filter: Only processing subject '{target_subject}'", flush=True)
     print(f"Source Directory: {SOURCE_ROOT}", flush=True)
     print(f"Target Public Directory: {PUBLIC_DIR}", flush=True)
 
@@ -399,11 +416,26 @@ def main():
         sys.exit(1)
 
     subjects = {}
+    
+    # If targeting a specific subject, load existing other subjects from manifest so they are preserved
+    manifest_json_path = DATA_DIR / "manifest.json"
+    if target_subject and manifest_json_path.exists():
+        try:
+            with open(manifest_json_path, "r", encoding="utf-8") as f:
+                existing_manifest = json.load(f)
+                for s in existing_manifest.get("subjects", []):
+                    if s.get("code", "").upper() != target_subject:
+                        subjects[s["code"]] = s
+        except Exception as e:
+            print(f"Note: Could not preload existing manifest: {e}", flush=True)
+
     all_decks = []
     total_decks = 0
     total_slides = 0
 
-    for root, dirs, files in os.walk(source_path):
+    scan_dir = (source_path / target_subject) if (target_subject and (source_path / target_subject).exists()) else source_path
+
+    for root, dirs, files in os.walk(scan_dir):
         for f in files:
             ext = os.path.splitext(f)[1].lower()
             if ext not in [".pdf", ".ppt", ".pptx", ".png"]:
@@ -414,6 +446,8 @@ def main():
             parts = rel_path.parts
 
             subject_code = parts[0].upper() if len(parts) > 0 else "GENERAL"
+            if target_subject and subject_code != target_subject:
+                continue
             sub_info = SUBJECT_METADATA.get(subject_code, {
                 "name": subject_code,
                 "fullName": subject_code,
@@ -489,11 +523,14 @@ def main():
     for s_code in subjects:
         subjects[s_code]["decks"].sort(key=lambda d: (d["category"], d["title"]))
 
+    calculated_total_decks = sum(len(s.get("decks", [])) for s in subjects.values())
+    calculated_total_slides = sum(len(d.get("slides", [])) for s in subjects.values() for d in s.get("decks", []))
+
     manifest = {
         "generatedAt": os.path.getmtime(source_path),
         "sourceRoot": str(source_path),
-        "totalDecks": total_decks,
-        "totalSlides": total_slides,
+        "totalDecks": calculated_total_decks,
+        "totalSlides": calculated_total_slides,
         "subjects": list(subjects.values())
     }
 

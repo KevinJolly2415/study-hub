@@ -1,0 +1,1013 @@
+{
+  "mtime": 1794989242.048666,
+  "aspectRatio": 1.29,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_001.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_001.webp",
+      "text": "Support Vector Machine Algorithm\r\n\u2022 Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms,\r\nwhich is used for Classification as well as Regression problems. However, primarily, it is\r\nused for Classification problems in Machine Learning.\r\n\u2022 The goal of the SVM algorithm is to create the best line or decision boundary that can\r\nsegregate n-dimensional space into classes so that we can easily put the new data point in\r\nthe correct category in the future. This best decision boundary is called a hyperplane. \u2022 SVM chooses the extreme points/vectors that help in creating the hyperplane. These\r\nextreme cases are called as support vectors, and hence algorithm is termed as Support\r\nVector Machine.\r\n\u2022 SVM algorithm can be used for Face detection, image classification, text\r\ncategorization, etc.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 24.13,
+          "t": 18.69,
+          "w": 47.84,
+          "h": 3.74,
+          "text": "Support Vector Machine Algorithm"
+        },
+        {
+          "l": 1.81,
+          "t": 26.93,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 4.12,
+          "t": 26.25,
+          "w": 92.76,
+          "h": 2.82,
+          "text": "Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms,"
+        },
+        {
+          "l": 4.1,
+          "t": 30.13,
+          "w": 18.04,
+          "h": 2.27,
+          "text": "which is used for "
+        },
+        {
+          "l": 23.22,
+          "t": 30.13,
+          "w": 13.35,
+          "h": 2.28,
+          "text": "Classification "
+        },
+        {
+          "l": 37.78,
+          "t": 30.14,
+          "w": 10.14,
+          "h": 2.26,
+          "text": "as well as "
+        },
+        {
+          "l": 49.11,
+          "t": 30.19,
+          "w": 10.92,
+          "h": 2.75,
+          "text": "Regression "
+        },
+        {
+          "l": 61.31,
+          "t": 30.14,
+          "w": 35.64,
+          "h": 2.8,
+          "text": "problems. However, primarily, it is"
+        },
+        {
+          "l": 4.21,
+          "t": 34.01,
+          "w": 53.64,
+          "h": 2.82,
+          "text": "used for Classification problems in Machine Learning."
+        },
+        {
+          "l": 1.81,
+          "t": 42.46,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 4.05,
+          "t": 41.77,
+          "w": 49.63,
+          "h": 2.82,
+          "text": "The goal of the SVM algorithm is to create the "
+        },
+        {
+          "l": 54.88,
+          "t": 41.79,
+          "w": 8.95,
+          "h": 2.26,
+          "text": "best line "
+        },
+        {
+          "l": 64.97,
+          "t": 42.46,
+          "w": 2.04,
+          "h": 1.58,
+          "text": "or "
+        },
+        {
+          "l": 68.08,
+          "t": 41.79,
+          "w": 19.39,
+          "h": 2.8,
+          "text": "decision boundary "
+        },
+        {
+          "l": 88.46,
+          "t": 41.79,
+          "w": 8.42,
+          "h": 2.26,
+          "text": "that can"
+        },
+        {
+          "l": 4.13,
+          "t": 45.67,
+          "w": 92.73,
+          "h": 2.8,
+          "text": "segregate n-dimensional space into classes so that we can easily put the new data point in"
+        },
+        {
+          "l": 4.07,
+          "t": 49.54,
+          "w": 73.37,
+          "h": 2.82,
+          "text": "the correct category in the future. This best decision boundary is called a "
+        },
+        {
+          "l": 78.34,
+          "t": 49.55,
+          "w": 11.53,
+          "h": 2.8,
+          "text": "hyperplane"
+        },
+        {
+          "l": 90.15,
+          "t": 51.43,
+          "w": 0.26,
+          "h": 0.37,
+          "text": ". "
+        },
+        {
+          "l": 1.81,
+          "t": 57.99,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 4.12,
+          "t": 57.32,
+          "w": 18.41,
+          "h": 2.26,
+          "text": "SVM chooses the "
+        },
+        {
+          "l": 23.89,
+          "t": 57.16,
+          "w": 24.73,
+          "h": 2.95,
+          "text": "extreme points/vectors "
+        },
+        {
+          "l": 49.9,
+          "t": 57.32,
+          "w": 47.03,
+          "h": 2.8,
+          "text": "that help in creating the hyperplane. These"
+        },
+        {
+          "l": 4.14,
+          "t": 61.2,
+          "w": 28.86,
+          "h": 2.26,
+          "text": "extreme cases are called as "
+        },
+        {
+          "l": 34.15,
+          "t": 61.51,
+          "w": 16.43,
+          "h": 2.49,
+          "text": "support vectors"
+        },
+        {
+          "l": 50.7,
+          "t": 61.2,
+          "w": 46.28,
+          "h": 2.8,
+          "text": ", and hence algorithm is termed as Support"
+        },
+        {
+          "l": 4.07,
+          "t": 65.08,
+          "w": 16.4,
+          "h": 2.26,
+          "text": "Vector Machine."
+        },
+        {
+          "l": 1.81,
+          "t": 73.52,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 4.12,
+          "t": 72.83,
+          "w": 40.82,
+          "h": 2.82,
+          "text": "SVM algorithm can be used for "
+        },
+        {
+          "l": 47.64,
+          "t": 72.83,
+          "w": 49.32,
+          "h": 2.82,
+          "text": "Face detection, image classification, text"
+        },
+        {
+          "l": 4.12,
+          "t": 76.78,
+          "w": 15.1,
+          "h": 2.75,
+          "text": "categorization, "
+        },
+        {
+          "l": 20.04,
+          "t": 77.04,
+          "w": 3.43,
+          "h": 1.94,
+          "text": "etc."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_002.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_002.webp",
+      "text": "- The dimensions of the hyperplane depend on the features present in the dataset, which\r\nmeans if there are 2 features (as shown in image), then hyperplane will be a straight line. - And if there are 3 features, then hyperplane will be a 2-dimension plane.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 3.23,
+          "t": 66.64,
+          "w": 0.46,
+          "h": 0.18,
+          "text": "- "
+        },
+        {
+          "l": 4.29,
+          "t": 65.1,
+          "w": 3.63,
+          "h": 2.26,
+          "text": "The "
+        },
+        {
+          "l": 8.96,
+          "t": 65.11,
+          "w": 11.73,
+          "h": 2.26,
+          "text": "dimensions "
+        },
+        {
+          "l": 21.7,
+          "t": 65.09,
+          "w": 34.61,
+          "h": 2.82,
+          "text": "of the hyperplane depend on the "
+        },
+        {
+          "l": 57.29,
+          "t": 65.09,
+          "w": 8.44,
+          "h": 2.28,
+          "text": "features "
+        },
+        {
+          "l": 66.81,
+          "t": 65.1,
+          "w": 30.17,
+          "h": 2.8,
+          "text": "present in the dataset, which"
+        },
+        {
+          "l": 3.32,
+          "t": 70.88,
+          "w": 55.44,
+          "h": 2.85,
+          "text": "means if there are 2 features (as shown in image), then "
+        },
+        {
+          "l": 59.68,
+          "t": 70.92,
+          "w": 11.53,
+          "h": 2.8,
+          "text": "hyperplane "
+        },
+        {
+          "l": 71.91,
+          "t": 70.92,
+          "w": 8.12,
+          "h": 2.26,
+          "text": "will be a "
+        },
+        {
+          "l": 80.88,
+          "t": 70.92,
+          "w": 12.12,
+          "h": 2.8,
+          "text": "straight line"
+        },
+        {
+          "l": 93.29,
+          "t": 72.8,
+          "w": 0.26,
+          "h": 0.37,
+          "text": ". "
+        },
+        {
+          "l": 3.22,
+          "t": 76.73,
+          "w": 16.99,
+          "h": 2.27,
+          "text": "- And if there are "
+        },
+        {
+          "l": 21.0,
+          "t": 76.73,
+          "w": 10.16,
+          "h": 2.28,
+          "text": "3 features"
+        },
+        {
+          "l": 31.3,
+          "t": 76.75,
+          "w": 26.71,
+          "h": 2.8,
+          "text": ", then hyperplane will be a "
+        },
+        {
+          "l": 58.85,
+          "t": 76.75,
+          "w": 19.08,
+          "h": 2.8,
+          "text": "2-dimension plane"
+        },
+        {
+          "l": 78.2,
+          "t": 78.62,
+          "w": 0.26,
+          "h": 0.37,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_003.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_003.webp",
+      "text": "1. Maximum Margin\r\n- We always create a hyperplane that has a maximum margin, which means the maximum\r\ndistance between the data points.\r\n2. Support Vectors\r\n- The data points or vectors that are the closest to the hyperplane and which affect the\r\nposition of the hyperplane are termed as Support Vectors.\r\n3. Why are they called Support Vectors?\r\n- Since these vectors support the hyperplane, hence called a Support Vector.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 3.49,
+          "t": 22.01,
+          "w": 20.14,
+          "h": 2.7,
+          "text": "1. Maximum Margin"
+        },
+        {
+          "l": 3.36,
+          "t": 27.73,
+          "w": 43.98,
+          "h": 2.8,
+          "text": "- We always create a hyperplane that has a "
+        },
+        {
+          "l": 48.32,
+          "t": 27.78,
+          "w": 18.06,
+          "h": 2.75,
+          "text": "maximum margin"
+        },
+        {
+          "l": 66.58,
+          "t": 27.73,
+          "w": 29.36,
+          "h": 2.69,
+          "text": ", which means the maximum"
+        },
+        {
+          "l": 3.39,
+          "t": 33.55,
+          "w": 34.2,
+          "h": 2.8,
+          "text": "distance between the data points."
+        },
+        {
+          "l": 3.41,
+          "t": 39.5,
+          "w": 18.41,
+          "h": 2.68,
+          "text": "2. Support Vectors"
+        },
+        {
+          "l": 3.36,
+          "t": 45.2,
+          "w": 42.51,
+          "h": 2.8,
+          "text": "- The data points or vectors that are the "
+        },
+        {
+          "l": 46.95,
+          "t": 45.2,
+          "w": 6.93,
+          "h": 2.26,
+          "text": "closest "
+        },
+        {
+          "l": 54.87,
+          "t": 45.19,
+          "w": 41.13,
+          "h": 2.82,
+          "text": "to the hyperplane and which affect the"
+        },
+        {
+          "l": 3.46,
+          "t": 51.01,
+          "w": 58.53,
+          "h": 2.82,
+          "text": "position of the hyperplane are termed as Support Vectors."
+        },
+        {
+          "l": 3.4,
+          "t": 56.85,
+          "w": 40.19,
+          "h": 2.8,
+          "text": "3. Why are they called Support Vectors?"
+        },
+        {
+          "l": 3.36,
+          "t": 62.67,
+          "w": 20.57,
+          "h": 2.26,
+          "text": "- Since these vectors "
+        },
+        {
+          "l": 24.68,
+          "t": 62.98,
+          "w": 8.01,
+          "h": 2.49,
+          "text": "support "
+        },
+        {
+          "l": 33.31,
+          "t": 62.67,
+          "w": 47.06,
+          "h": 2.8,
+          "text": "the hyperplane, hence called a Support Vector."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_004.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_004.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224,
+      "rects": []
+    },
+    {
+      "index": 5,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_005.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_005.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224,
+      "rects": []
+    },
+    {
+      "index": 6,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_006.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_006.webp",
+      "text": "Example: Understanding SVM using Cats and Dogs\r\n1. Suppose we want to develop a machine learning model that can identify whether an animal is a cat or a\r\ndog based on its features.\r\n2. First, we train the model using many labeled images of cats and dogs so that it can learn the\r\ndifferences between the two classes.\r\n3. SVM finds the best decision boundary to separate the cat and dog classes. The data points closest to\r\nthis boundary are called support vectors, which help determine the position of the boundary.\r\n4. When we provide a new image of an animal, the model uses the learned decision boundary to classify\r\nit as either a cat or a dog.\r\nExample output: The model classifies the new animal as a Cat.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 1.76,
+          "t": 51.17,
+          "w": 47.34,
+          "h": 2.32,
+          "text": "Example: Understanding SVM using Cats and Dogs"
+        },
+        {
+          "l": 1.79,
+          "t": 54.41,
+          "w": 93.6,
+          "h": 2.32,
+          "text": "1. Suppose we want to develop a machine learning model that can identify whether an animal is a cat or a"
+        },
+        {
+          "l": 1.7,
+          "t": 57.66,
+          "w": 22.8,
+          "h": 2.31,
+          "text": "dog based on its features."
+        },
+        {
+          "l": 1.68,
+          "t": 60.89,
+          "w": 93.76,
+          "h": 2.31,
+          "text": "2. First, we train the model using many labeled images of cats and dogs so that it can learn the"
+        },
+        {
+          "l": 1.7,
+          "t": 64.13,
+          "w": 32.98,
+          "h": 1.83,
+          "text": "differences between the two classes."
+        },
+        {
+          "l": 1.69,
+          "t": 67.35,
+          "w": 93.74,
+          "h": 2.32,
+          "text": "3. SVM finds the best decision boundary to separate the cat and dog classes. The data points closest to"
+        },
+        {
+          "l": 1.62,
+          "t": 70.6,
+          "w": 82.42,
+          "h": 2.28,
+          "text": "this boundary are called support vectors, which help determine the position of the boundary."
+        },
+        {
+          "l": 1.65,
+          "t": 73.83,
+          "w": 93.89,
+          "h": 2.31,
+          "text": "4. When we provide a new image of an animal, the model uses the learned decision boundary to classify"
+        },
+        {
+          "l": 1.73,
+          "t": 77.07,
+          "w": 22.05,
+          "h": 2.31,
+          "text": "it as either a cat or a dog."
+        },
+        {
+          "l": 1.77,
+          "t": 80.29,
+          "w": 55.64,
+          "h": 2.3,
+          "text": "Example output: The model classifies the new animal as a Cat."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_007.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_007.webp",
+      "text": "Types of SVM\r\nSVM can be of two types:\r\n1. Linear SVM: Linear SVM is used for linearly separable data, which means if a dataset can\r\nbe classified into two classes by using a single straight line, then such data is termed as\r\nlinearly separable data, and classifier used is called as Linear SVM classifier.\r\n2. Non-linear SVM: Non-Linear SVM is used for non-linearly separated data, which means if\r\na dataset cannot be classified by using a straight line, then such data is termed as non-linear\r\ndata and classifier used is called as Non-linear SVM classifier.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 3.2,
+          "t": 20.17,
+          "w": 20.78,
+          "h": 4.23,
+          "text": "Types of SVM"
+        },
+        {
+          "l": 3.27,
+          "t": 27.85,
+          "w": 25.5,
+          "h": 2.82,
+          "text": "SVM can be of two types:"
+        },
+        {
+          "l": 3.36,
+          "t": 33.74,
+          "w": 14.08,
+          "h": 2.21,
+          "text": "1. Linear SVM"
+        },
+        {
+          "l": 17.83,
+          "t": 33.68,
+          "w": 78.35,
+          "h": 2.82,
+          "text": ": Linear SVM is used for linearly separable data, which means if a dataset can"
+        },
+        {
+          "l": 3.37,
+          "t": 39.5,
+          "w": 92.89,
+          "h": 2.82,
+          "text": "be classified into two classes by using a single straight line, then such data is termed as"
+        },
+        {
+          "l": 3.37,
+          "t": 45.32,
+          "w": 53.86,
+          "h": 2.82,
+          "text": "linearly separable data, and classifier used is called as "
+        },
+        {
+          "l": 58.07,
+          "t": 45.32,
+          "w": 21.52,
+          "h": 2.28,
+          "text": "Linear SVM classifier."
+        },
+        {
+          "l": 3.32,
+          "t": 57.11,
+          "w": 1.58,
+          "h": 2.12,
+          "text": "2. "
+        },
+        {
+          "l": 5.85,
+          "t": 56.98,
+          "w": 16.14,
+          "h": 2.26,
+          "text": "Non-linear SVM"
+        },
+        {
+          "l": 22.39,
+          "t": 56.97,
+          "w": 74.01,
+          "h": 2.82,
+          "text": ": Non-Linear SVM is used for non-linearly separated data, which means if"
+        },
+        {
+          "l": 3.29,
+          "t": 62.79,
+          "w": 93.02,
+          "h": 2.82,
+          "text": "a dataset cannot be classified by using a straight line, then such data is termed as non-linear"
+        },
+        {
+          "l": 3.3,
+          "t": 68.62,
+          "w": 34.81,
+          "h": 2.27,
+          "text": "data and classifier used is called as "
+        },
+        {
+          "l": 38.93,
+          "t": 68.62,
+          "w": 26.19,
+          "h": 2.28,
+          "text": "Non-linear SVM classifier."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_008.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_008.webp",
+      "text": "Linear SVM",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 6.37,
+          "t": 19.87,
+          "w": 17.16,
+          "h": 3.32,
+          "text": "Linear SVM"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_009.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_009.webp",
+      "text": "Linear SVM:\r\nThe working of the SVM algorithm can be understood by using an example. Suppose we\r\nhave a dataset that has two tags (green and blue), and the dataset has two features\r\nx1and x2. We want a classifier that can classify the pair (x1, x2) of coordinates in either\r\ngreen or blue. Consider the below image:",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 2.91,
+          "t": 16.6,
+          "w": 15.25,
+          "h": 2.59,
+          "text": "Linear SVM:"
+        },
+        {
+          "l": 2.7,
+          "t": 20.99,
+          "w": 94.86,
+          "h": 2.78,
+          "text": "The working of the SVM algorithm can be understood by using an example. Suppose we"
+        },
+        {
+          "l": 2.88,
+          "t": 24.89,
+          "w": 94.69,
+          "h": 2.76,
+          "text": "have a dataset that has two tags (green and blue), and the dataset has two features"
+        },
+        {
+          "l": 2.69,
+          "t": 28.77,
+          "w": 94.93,
+          "h": 2.73,
+          "text": "x1and x2. We want a classifier that can classify the pair (x1, x2) of coordinates in either"
+        },
+        {
+          "l": 2.77,
+          "t": 32.64,
+          "w": 43.58,
+          "h": 2.78,
+          "text": "green or blue. Consider the below image:"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_010.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_010.webp",
+      "text": "So as it is 2-D space so by just using a straight line, we can easily separate these two\r\nclasses. But there can be multiple lines that can separate these classes. Consider the\r\nbelow image:",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.04,
+          "t": 17.22,
+          "w": 90.37,
+          "h": 2.8,
+          "text": "So as it is 2-D space so by just using a straight line, we can easily separate these two"
+        },
+        {
+          "l": 4.07,
+          "t": 21.1,
+          "w": 90.34,
+          "h": 2.8,
+          "text": "classes. But there can be multiple lines that can separate these classes. Consider the"
+        },
+        {
+          "l": 4.14,
+          "t": 24.98,
+          "w": 13.27,
+          "h": 2.8,
+          "text": "below image:"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_011.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_011.webp",
+      "text": "\u2022 Hence, the SVM algorithm helps to find\r\nthe best line or decision boundary; this\r\nbest boundary or region is called as a\r\nhyperplane. SVM algorithm finds the\r\nclosest point of the lines from both the\r\nclasses. These points are called support\r\nvectors.\r\n\u2022 The distance between the vectors and\r\nthe hyperplane is called as margin. And\r\nthe goal of SVM is to maximize this\r\nmargin.\r\n\u2022 The hyperplane with maximum margin is\r\ncalled the optimal hyperplane.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 51.97,
+          "t": 23.89,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 54.86,
+          "t": 23.21,
+          "w": 41.04,
+          "h": 2.82,
+          "text": "Hence, the SVM algorithm helps to find"
+        },
+        {
+          "l": 54.69,
+          "t": 27.1,
+          "w": 41.31,
+          "h": 2.8,
+          "text": "the best line or decision boundary; this"
+        },
+        {
+          "l": 54.84,
+          "t": 30.98,
+          "w": 41.08,
+          "h": 2.8,
+          "text": "best boundary or region is called as a"
+        },
+        {
+          "l": 54.84,
+          "t": 34.85,
+          "w": 41.14,
+          "h": 2.82,
+          "text": "hyperplane. SVM algorithm finds the"
+        },
+        {
+          "l": 54.76,
+          "t": 38.73,
+          "w": 41.21,
+          "h": 2.82,
+          "text": "closest point of the lines from both the"
+        },
+        {
+          "l": 54.76,
+          "t": 42.63,
+          "w": 41.27,
+          "h": 2.8,
+          "text": "classes. These points are called support"
+        },
+        {
+          "l": 54.69,
+          "t": 46.83,
+          "w": 7.75,
+          "h": 1.94,
+          "text": "vectors."
+        },
+        {
+          "l": 51.97,
+          "t": 51.07,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 54.67,
+          "t": 50.39,
+          "w": 41.23,
+          "h": 2.26,
+          "text": "The distance between the vectors and"
+        },
+        {
+          "l": 54.69,
+          "t": 54.28,
+          "w": 41.21,
+          "h": 2.8,
+          "text": "the hyperplane is called as margin. And"
+        },
+        {
+          "l": 54.69,
+          "t": 58.15,
+          "w": 41.31,
+          "h": 2.82,
+          "text": "the goal of SVM is to maximize this"
+        },
+        {
+          "l": 54.84,
+          "t": 62.15,
+          "w": 7.38,
+          "h": 2.7,
+          "text": "margin."
+        },
+        {
+          "l": 51.97,
+          "t": 66.6,
+          "w": 0.62,
+          "h": 0.82,
+          "text": "\u2022 "
+        },
+        {
+          "l": 54.67,
+          "t": 65.92,
+          "w": 41.33,
+          "h": 2.8,
+          "text": "The hyperplane with maximum margin is"
+        },
+        {
+          "l": 54.76,
+          "t": 69.81,
+          "w": 30.64,
+          "h": 2.8,
+          "text": "called the optimal hyperplane."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_012.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_012.webp",
+      "text": "Non-Linear SVM:\r\nIf data is linearly arranged, then we can separate it by using a straight line, but for non-linear data, we \r\ncannot draw a single straight line. Consider the below image:",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 4.88,
+          "t": 19.13,
+          "w": 21.71,
+          "h": 2.59,
+          "text": "Non-Linear SVM:"
+        },
+        {
+          "l": 4.83,
+          "t": 23.4,
+          "w": 89.8,
+          "h": 2.31,
+          "text": "If data is linearly arranged, then we can separate it by using a straight line, but for non-linear data, we "
+        },
+        {
+          "l": 4.76,
+          "t": 26.62,
+          "w": 53.97,
+          "h": 2.32,
+          "text": "cannot draw a single straight line. Consider the below image:"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_013.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_013.webp",
+      "text": "Point x y z = x\u00b2 + y\u00b2\r\nGreen circle 1 1 1\u00b2 + 1\u00b2 = 2\r\nBlue triangle 3 3 3\u00b2 + 3\u00b2 = 18\r\nTransform the data into a higher dimension\r\nIf the green points have consistently smaller z-values\r\nand the blue points have larger z-values, we can\r\nseparate them using a threshold in the new\r\ndimension.",
+      "width": 1584,
+      "height": 1224,
+      "rects": [
+        {
+          "l": 50.09,
+          "t": 41.29,
+          "w": 39.47,
+          "h": 3.41,
+          "text": "Point x y z = x\u00b2 + y\u00b2"
+        },
+        {
+          "l": 50.01,
+          "t": 45.17,
+          "w": 40.18,
+          "h": 2.87,
+          "text": "Green circle 1 1 1\u00b2 + 1\u00b2 = 2"
+        },
+        {
+          "l": 50.09,
+          "t": 49.05,
+          "w": 41.42,
+          "h": 3.44,
+          "text": "Blue triangle 3 3 3\u00b2 + 3\u00b2 = 18"
+        },
+        {
+          "l": 20.27,
+          "t": 25.79,
+          "w": 36.1,
+          "h": 2.09,
+          "text": "Transform the data into a higher dimension"
+        },
+        {
+          "l": 49.76,
+          "t": 58.91,
+          "w": 40.12,
+          "h": 2.31,
+          "text": "If the green points have consistently smaller "
+        },
+        {
+          "l": 90.58,
+          "t": 58.92,
+          "w": 7.72,
+          "h": 1.83,
+          "text": "z-values"
+        },
+        {
+          "l": 49.68,
+          "t": 62.15,
+          "w": 48.54,
+          "h": 2.31,
+          "text": "and the blue points have larger z-values, we can"
+        },
+        {
+          "l": 49.68,
+          "t": 65.38,
+          "w": 48.73,
+          "h": 2.31,
+          "text": "separate them using a threshold in the new"
+        },
+        {
+          "l": 49.68,
+          "t": 68.62,
+          "w": 9.27,
+          "h": 1.83,
+          "text": "dimension"
+        },
+        {
+          "l": 59.26,
+          "t": 70.14,
+          "w": 0.24,
+          "h": 0.3,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_014.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_014.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224,
+      "rects": []
+    },
+    {
+      "index": 15,
+      "image": "/slides/ids_ids_ids_5_ids_5_svm_pdf/slide_015.webp",
+      "thumb": "/slides/ids_ids_ids_5_ids_5_svm_pdf/thumb_015.webp",
+      "text": "",
+      "width": 1584,
+      "height": 1224,
+      "rects": []
+    }
+  ]
+}

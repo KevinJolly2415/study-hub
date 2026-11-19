@@ -15,12 +15,21 @@ SRC_MANIFEST_PATH = PROJECT_ROOT / "src" / "data" / "manifest.json"
 with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
     manifest = json.load(f)
 
-print("=== Extracting Selectable Text Layers for All Slides ===", flush=True)
+target_subject = None
+for arg_idx, arg in enumerate(sys.argv):
+    if arg in ["--subject", "-s"] and arg_idx + 1 < len(sys.argv):
+        target_subject = sys.argv[arg_idx + 1].strip().upper()
+
+print("=== Extracting Selectable Text Layers for Slides ===", flush=True)
+if target_subject:
+    print(f"Filter: Only processing subject '{target_subject}'", flush=True)
 t0 = time.time()
 updated_decks = 0
 total_rects_saved = 0
 
 for subject in manifest["subjects"]:
+    if target_subject and subject.get("code", "").upper() != target_subject:
+        continue
     for deck in subject["decks"]:
         deck_id = deck["id"]
         pdf_file = DOCS_DIR / f"{deck_id}.pdf"
