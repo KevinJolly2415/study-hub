@@ -34,6 +34,19 @@ export default function EdgeSidebar({
     return {};
   });
 
+  // Restore subject expanded states from sessionStorage (isolated per browser tab)
+  const [expandedSubjects, setExpandedSubjects] = useState(() => {
+    try {
+      const saved = sessionStorage.getItem('study_menu_expanded_subjects');
+      if (saved) {
+        return JSON.parse(saved);
+      }
+    } catch (e) {
+      console.error('Error parsing stored subject states', e);
+    }
+    return {};
+  });
+
   // Restore sidebar scroll position on mount
   useEffect(() => {
     try {
@@ -58,7 +71,28 @@ export default function EdgeSidebar({
     }
   };
 
-  // Instant single-click toggle
+  const saveExpandedSubjects = (state) => {
+    try {
+      sessionStorage.setItem('study_menu_expanded_subjects', JSON.stringify(state));
+    } catch (e) {
+      console.error('Error saving subject states', e);
+    }
+  };
+
+  // Instant single-click toggle for subject
+  const toggleSubject = (subjectCode) => {
+    setExpandedSubjects(prev => {
+      const isCurrentlyOpen = prev[subjectCode] ?? true;
+      const next = {
+        ...prev,
+        [subjectCode]: !isCurrentlyOpen
+      };
+      saveExpandedSubjects(next);
+      return next;
+    });
+  };
+
+  // Instant single-click toggle for category folder
   const toggleCategory = (catKey) => {
     setExpandedCategories(prev => {
       const isCurrentlyOpen = prev[catKey] ?? true;
@@ -86,30 +120,38 @@ export default function EdgeSidebar({
     return keys;
   }, [subjects]);
 
-  // Check if all categories are collapsed
-  const areAllCollapsed = useMemo(() => {
-    if (allCategoryKeys.length === 0) return false;
-    return allCategoryKeys.every(k => expandedCategories[k] === false);
-  }, [allCategoryKeys, expandedCategories]);
-
-  // Collapse all folders at once
+  // Collapse all subjects & folders at once
   const handleCollapseAll = () => {
-    const next = {};
+    const nextCats = {};
     allCategoryKeys.forEach(k => {
-      next[k] = false;
+      nextCats[k] = false;
     });
-    setExpandedCategories(next);
-    saveExpandedState(next);
+    setExpandedCategories(nextCats);
+    saveExpandedState(nextCats);
+
+    const nextSubs = {};
+    (subjects || []).forEach(s => {
+      nextSubs[s.code] = false;
+    });
+    setExpandedSubjects(nextSubs);
+    saveExpandedSubjects(nextSubs);
   };
 
-  // Expand all folders at once
+  // Expand all subjects & folders at once
   const handleExpandAll = () => {
-    const next = {};
+    const nextCats = {};
     allCategoryKeys.forEach(k => {
-      next[k] = true;
+      nextCats[k] = true;
     });
-    setExpandedCategories(next);
-    saveExpandedState(next);
+    setExpandedCategories(nextCats);
+    saveExpandedState(nextCats);
+
+    const nextSubs = {};
+    (subjects || []).forEach(s => {
+      nextSubs[s.code] = true;
+    });
+    setExpandedSubjects(nextSubs);
+    saveExpandedSubjects(nextSubs);
   };
 
   // Filter decks by query if typed
@@ -162,33 +204,14 @@ export default function EdgeSidebar({
               </span>
             </div>
           </div>
-          <div className="flex items-center space-x-1">
-            <button
-              type="button"
-              onClick={handleCollapseAll}
-              className="p-1.5 rounded text-slate-400 hover:text-amber-400 hover:bg-[#3e3e3e] transition-colors"
-              title="Collapse all folders"
-            >
-              <FoldVertical className="w-4 h-4" />
-            </button>
-            <button
-              type="button"
-              onClick={handleExpandAll}
-              className="p-1.5 rounded text-slate-400 hover:text-sky-400 hover:bg-[#3e3e3e] transition-colors"
-              title="Expand all folders"
-            >
-              <UnfoldVertical className="w-4 h-4" />
-            </button>
-            <div className="h-4 w-px bg-[#444] mx-0.5" />
-            <button
-              type="button"
-              onClick={onClose}
-              className="p-1.5 rounded text-slate-400 hover:text-white hover:bg-[#3e3e3e] transition-colors"
-              title="Close menu (Esc)"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-1.5 rounded text-slate-400 hover:text-white hover:bg-[#3e3e3e] transition-colors cursor-pointer"
+            title="Close menu (Esc)"
+          >
+            <X className="w-4 h-4" />
+          </button>
         </div>
 
         {/* Quick Search in Files */}
@@ -258,95 +281,120 @@ export default function EdgeSidebar({
               return acc;
             }, {});
 
+            const isSubjectExpanded = searchFilter.trim()
+              ? true 
+              : (expandedSubjects[subject.code] ?? true);
+
             return (
               <div key={subject.code} className="space-y-1">
-                {/* Subject Title */}
-                <div className="flex items-center space-x-2 px-2 py-1 text-xs font-semibold text-slate-300">
-                  <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: subject.color }} />
-                  <span className="truncate">{subject.shortName}</span>
-                  <span className="text-[10px] text-slate-500 font-mono">
-                    ({subject.decks.length})
-                  </span>
-                </div>
+                {/* Collapsible Subject Title */}
+                <button
+                  type="button"
+                  onClick={() => toggleSubject(subject.code)}
+                  className="w-full flex items-center justify-between px-2 py-1.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-[#333] rounded transition-colors cursor-pointer group"
+                  title={`${subject.shortName} (${subject.decks.length} files) - Click to ${isSubjectExpanded ? 'collapse' : 'expand'}`}
+                >
+                  <div className="flex items-center space-x-2 truncate">
+                    <span 
+                      className="w-2.5 h-2.5 rounded-full shrink-0 shadow-sm" 
+                      style={{ backgroundColor: subject.color || '#38bdf8' }} 
+                    />
+                    <span className="truncate tracking-wide text-slate-200 group-hover:text-white font-bold">
+                      {subject.shortName}
+                    </span>
+                    <span className="text-[10px] text-slate-400 font-mono font-normal">
+                      ({subject.decks.length})
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-1 shrink-0 text-slate-400 group-hover:text-slate-200 transition-colors">
+                    {isSubjectExpanded ? (
+                      <ChevronDown className="w-3.5 h-3.5" />
+                    ) : (
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    )}
+                  </div>
+                </button>
 
                 {/* Categories */}
-                <div className="space-y-1 pl-2">
-                  {Object.entries(categories).map(([categoryName, decks]) => {
-                    const catKey = `${subject.code}_${categoryName}`;
-                    const isExpanded = searchFilter.trim()
-                      ? true 
-                      : (expandedCategories[catKey] ?? true);
+                {isSubjectExpanded && (
+                  <div className="space-y-1 pl-2 border-l border-[#333]/60 ml-2">
+                    {Object.entries(categories).map(([categoryName, decks]) => {
+                      const catKey = `${subject.code}_${categoryName}`;
+                      const isExpanded = searchFilter.trim()
+                        ? true 
+                        : (expandedCategories[catKey] ?? true);
 
-                    return (
-                      <div key={categoryName} className="space-y-0.5">
-                        <button
-                          type="button"
-                          onClick={() => toggleCategory(catKey)}
-                          className="w-full flex items-center justify-between px-2 py-1.5 text-[11px] font-medium text-slate-400 hover:text-white hover:bg-[#333] rounded group cursor-pointer transition-colors"
-                          title={`${categoryName} (${decks.length} files) - Click to ${isExpanded ? 'collapse' : 'expand'}`}
-                        >
-                          <div className="flex items-center space-x-1.5 truncate">
-                            <Folder className="w-3.5 h-3.5 text-slate-500 group-hover:text-sky-400 shrink-0 transition-colors" />
-                            <span className="truncate">{categoryName}</span>
-                          </div>
-                          <div className="flex items-center space-x-1.5 shrink-0">
-                            <span className="text-[10px] text-slate-500 font-mono">
-                              {decks.length}
-                            </span>
-                            {isExpanded ? (
-                              <ChevronDown className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 transition-transform" />
-                            ) : (
-                              <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 transition-transform" />
-                            )}
-                          </div>
-                        </button>
+                      return (
+                        <div key={categoryName} className="space-y-0.5">
+                          <button
+                            type="button"
+                            onClick={() => toggleCategory(catKey)}
+                            className="w-full flex items-center justify-between px-2 py-1.5 text-[11px] font-medium text-slate-400 hover:text-white hover:bg-[#333] rounded group cursor-pointer transition-colors"
+                            title={`${categoryName} (${decks.length} files) - Click to ${isExpanded ? 'collapse' : 'expand'}`}
+                          >
+                            <div className="flex items-center space-x-1.5 truncate">
+                              <Folder className="w-3.5 h-3.5 text-slate-500 group-hover:text-sky-400 shrink-0 transition-colors" />
+                              <span className="truncate">{categoryName}</span>
+                            </div>
+                            <div className="flex items-center space-x-1.5 shrink-0">
+                              <span className="text-[10px] text-slate-500 font-mono">
+                                {decks.length}
+                              </span>
+                              {isExpanded ? (
+                                <ChevronDown className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 transition-transform" />
+                              ) : (
+                                <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 transition-transform" />
+                              )}
+                            </div>
+                          </button>
 
-                        {/* File Items */}
-                        {isExpanded && (
-                          <div className="space-y-0.5 pl-3 border-l border-[#3a3a3a] ml-2">
-                            {decks.map(deck => {
-                              const isActive = activeDeckId === deck.id;
-                              const isPpt = deck.fileType?.includes('PPT');
+                          {/* File Items */}
+                          {isExpanded && (
+                            <div className="space-y-0.5 pl-3 border-l border-[#3a3a3a] ml-2">
+                              {decks.map(deck => {
+                                const isActive = activeDeckId === deck.id;
+                                const isPpt = deck.fileType?.includes('PPT');
 
-                              return (
-                                <button
-                                  key={deck.id}
-                                  type="button"
-                                  onClick={() => {
-                                    onSelectDeck(deck.id);
-                                    onClose();
-                                  }}
-                                  className={`w-full text-left px-2 py-1.5 rounded text-xs transition-colors flex items-center justify-between group cursor-pointer ${
-                                    isActive
-                                      ? 'bg-sky-600/30 text-white font-medium border border-sky-500/50'
-                                      : 'text-slate-300 hover:text-white hover:bg-[#333]'
-                                  }`}
-                                  title={`${deck.title} (${deck.slideCount} pages)`}
-                                >
-                                  <div className="truncate pr-2">
-                                    <div className="truncate text-[12px] group-hover:text-white">
-                                      {deck.title}
+                                return (
+                                  <button
+                                    key={deck.id}
+                                    type="button"
+                                    onClick={() => {
+                                      onSelectDeck(deck.id);
+                                      onClose();
+                                    }}
+                                    className={`w-full text-left px-2 py-1.5 rounded text-xs transition-colors flex items-center justify-between group cursor-pointer ${
+                                      isActive
+                                        ? 'bg-sky-600/30 text-white font-medium border border-sky-500/50'
+                                        : 'text-slate-300 hover:text-white hover:bg-[#333]'
+                                    }`}
+                                    title={`${deck.title} (${deck.slideCount} pages)`}
+                                  >
+                                    <div className="truncate pr-2">
+                                      <div className="truncate text-[12px] group-hover:text-white">
+                                        {deck.title}
+                                      </div>
+                                      <div className="text-[10px] text-slate-500 font-mono">
+                                        {deck.slideCount} pages
+                                      </div>
                                     </div>
-                                    <div className="text-[10px] text-slate-500 font-mono">
-                                      {deck.slideCount} pages
-                                    </div>
-                                  </div>
-                                  <span className={`text-[9px] px-1 py-0.2 rounded font-mono font-semibold shrink-0 ${
-                                    isPpt 
-                                      ? 'bg-amber-950/60 text-amber-400 border border-amber-600/30' 
-                                      : 'bg-rose-950/60 text-rose-400 border border-rose-600/30'
-                                  }`}>
-                                    {deck.fileType}
-                                  </span>
-                                </button>
-                              );
-                            })}
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
+                                    <span className={`text-[9px] px-1 py-0.2 rounded font-mono font-semibold shrink-0 ${
+                                      isPpt 
+                                        ? 'bg-amber-950/60 text-amber-400 border border-amber-600/30' 
+                                        : 'bg-rose-950/60 text-rose-400 border border-rose-600/30'
+                                    }`}>
+                                      {deck.fileType}
+                                    </span>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             );
           })}
