@@ -61,6 +61,14 @@ SUBJECT_METADATA = {
         "color": "#ec4899",
         "gradient": "from-pink-500 to-rose-600",
         "icon": "Layers"
+    },
+    "WEB X.0": {
+        "name": "Web X.0",
+        "fullName": "Web X.0 (Web Technologies & Frameworks)",
+        "description": "Modern frontend frameworks (React, Angular), backend architectures, REST & fullstack web",
+        "color": "#06b6d4",
+        "gradient": "from-cyan-500 to-blue-600",
+        "icon": "Globe"
     }
 }
 
@@ -415,16 +423,20 @@ def main():
         print(f"Error: Source directory {source_path} does not exist!", flush=True)
         sys.exit(1)
 
+    def norm_key(k):
+        return re.sub(r'[^A-Z0-9]', '', str(k).upper().replace('O', '0'))
+
     subjects = {}
+    norm_target = norm_key(target_subject) if target_subject else None
     
     # If targeting a specific subject, load existing other subjects from manifest so they are preserved
     manifest_json_path = DATA_DIR / "manifest.json"
-    if target_subject and manifest_json_path.exists():
+    if norm_target and manifest_json_path.exists():
         try:
             with open(manifest_json_path, "r", encoding="utf-8") as f:
                 existing_manifest = json.load(f)
                 for s in existing_manifest.get("subjects", []):
-                    if s.get("code", "").upper() != target_subject:
+                    if norm_key(s.get("code", "")) != norm_target:
                         subjects[s["code"]] = s
         except Exception as e:
             print(f"Note: Could not preload existing manifest: {e}", flush=True)
@@ -433,7 +445,12 @@ def main():
     total_decks = 0
     total_slides = 0
 
-    scan_dir = (source_path / target_subject) if (target_subject and (source_path / target_subject).exists()) else source_path
+    scan_dir = source_path
+    if norm_target:
+        for child in source_path.iterdir():
+            if child.is_dir() and norm_key(child.name) == norm_target:
+                scan_dir = child
+                break
 
     for root, dirs, files in os.walk(scan_dir):
         for f in files:
@@ -446,16 +463,16 @@ def main():
             parts = rel_path.parts
 
             subject_code = parts[0].upper() if len(parts) > 0 else "GENERAL"
-            if target_subject and subject_code != target_subject:
+            if norm_target and norm_key(subject_code) != norm_target:
                 continue
-            sub_info = SUBJECT_METADATA.get(subject_code, {
+            sub_info = SUBJECT_METADATA.get(subject_code) or SUBJECT_METADATA.get(subject_code.replace('O', '0')) or {
                 "name": subject_code,
                 "fullName": subject_code,
                 "description": "Course materials",
-                "color": "#6366f1",
-                "gradient": "from-indigo-500 to-purple-600",
+                "color": "#06b6d4",
+                "gradient": "from-cyan-500 to-blue-600",
                 "icon": "BookOpen"
-            })
+            }
 
             if len(parts) > 2:
                 category = " / ".join(parts[1:-1])

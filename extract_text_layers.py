@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import time
+import re
 from pathlib import Path
 import pypdfium2 as pdfium
 
@@ -15,10 +16,15 @@ SRC_MANIFEST_PATH = PROJECT_ROOT / "src" / "data" / "manifest.json"
 with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
     manifest = json.load(f)
 
+def norm_key(k):
+    return re.sub(r'[^A-Z0-9]', '', str(k).upper().replace('O', '0'))
+
 target_subject = None
 for arg_idx, arg in enumerate(sys.argv):
     if arg in ["--subject", "-s"] and arg_idx + 1 < len(sys.argv):
-        target_subject = sys.argv[arg_idx + 1].strip().upper()
+        target_subject = sys.argv[arg_idx + 1].strip()
+
+norm_target = norm_key(target_subject) if target_subject else None
 
 print("=== Extracting Selectable Text Layers for Slides ===", flush=True)
 if target_subject:
@@ -28,7 +34,7 @@ updated_decks = 0
 total_rects_saved = 0
 
 for subject in manifest["subjects"]:
-    if target_subject and subject.get("code", "").upper() != target_subject:
+    if norm_target and norm_key(subject.get("code", "")) != norm_target:
         continue
     for deck in subject["decks"]:
         deck_id = deck["id"]
