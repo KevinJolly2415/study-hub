@@ -5,35 +5,57 @@ import EdgeDocumentViewer from './components/EdgeDocumentViewer';
 import EdgeFindBar from './components/EdgeFindBar';
 import { Loader2, AlertCircle, RefreshCw, Menu } from 'lucide-react';
 
+// Clean up legacy cross-tab scroll positions from localStorage once
+try {
+  Object.keys(localStorage).forEach(k => {
+    if (k.startsWith('study_deck_pos_')) {
+      localStorage.removeItem(k);
+    }
+  });
+} catch (e) {}
+
 export default function App() {
   const [manifest, setManifest] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Active document / deck (isolated per tab via sessionStorage, permanent fallback via localStorage)
+  // Active document / deck (isolated per tab via URL param and sessionStorage)
   const [activeDeckId, setActiveDeckId] = useState(() => {
-    return sessionStorage.getItem('study_last_deck_id') || localStorage.getItem('study_last_deck_id') || null;
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlDeck = urlParams.get('deck');
+      if (urlDeck) return urlDeck;
+      return sessionStorage.getItem('study_last_deck_id') || localStorage.getItem('study_last_deck_id') || null;
+    } catch (e) {
+      return null;
+    }
   });
 
-  // Current page number (restored per document and per tab)
+  // Current page number (restored per document and strictly isolated per tab)
   const [currentPage, setCurrentPage] = useState(() => {
-    const savedDeckId = sessionStorage.getItem('study_last_deck_id') || localStorage.getItem('study_last_deck_id');
-    if (savedDeckId) {
-      const perDeck = sessionStorage.getItem(`study_deck_pos_${savedDeckId}`) || localStorage.getItem(`study_deck_pos_${savedDeckId}`);
-      if (perDeck) return parseInt(perDeck, 10);
-    }
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlPage = parseInt(urlParams.get('page'), 10);
+      if (!isNaN(urlPage) && urlPage >= 1) return urlPage;
+
+      const savedDeckId = urlParams.get('deck') || sessionStorage.getItem('study_last_deck_id') || localStorage.getItem('study_last_deck_id');
+      if (savedDeckId) {
+        const perDeck = sessionStorage.getItem(`study_deck_pos_${savedDeckId}`);
+        if (perDeck) return parseInt(perDeck, 10);
+      }
+    } catch (e) {}
     return 1;
   });
 
-  // Zoom level (default 100%, isolated per tab)
+  // Zoom level (default 100%, isolated per tab in sessionStorage)
   const [zoom, setZoom] = useState(() => {
-    const saved = sessionStorage.getItem('study_edge_zoom') || localStorage.getItem('study_edge_zoom');
+    const saved = sessionStorage.getItem('study_edge_zoom');
     return saved ? parseInt(saved, 10) : 100;
   });
 
-  // Rotation (0, 90, 180, 270)
+  // Rotation (0, 90, 180, 270, isolated per tab in sessionStorage)
   const [rotation, setRotation] = useState(() => {
-    const saved = sessionStorage.getItem('study_edge_rotation') || localStorage.getItem('study_edge_rotation');
+    const saved = sessionStorage.getItem('study_edge_rotation');
     return saved ? parseInt(saved, 10) : 0;
   });
 
@@ -110,20 +132,12 @@ export default function App() {
 
       const allDecks = (data.subjects || []).flatMap(s => s.decks);
       if (allDecks.length > 0) {
-        let currentTargetId = activeDeckId;
-        const found = allDecks.find(d => d.id === currentTargetId);
-        if (!found) {
-          currentTargetId = allDecks[0].id;
-          setActiveDeckId(currentTargetId);
-        }
-
-        const savedPos = localStorage.getItem(`study_deck_pos_${currentTargetId}`);
-        if (savedPos) {
-          const parsed = parseInt(savedPos, 10);
-          if (!isNaN(parsed) && parsed >= 1) {
-            setCurrentPage(parsed);
+        setActiveDeckId(prev => {
+          if (prev && allDecks.some(d => d.id === prev)) {
+            return prev;
           }
-        }
+          return allDecks[0].id;
+        });
       }
     } catch (err) {
       console.error("Manifest load error:", err);
@@ -131,21 +145,24 @@ export default function App() {
     } finally {
       setLoading(false);
     }
-  }, [activeDeckId]);
+  }, []);
 
   useEffect(() => {
     loadManifest();
   }, [loadManifest]);
 
-  // Persist State (sessionStorage for tab isolation, localStorage for permanence)
+  // Persist State (strictly isolated per tab via sessionStorage & URL query)
   useEffect(() => {
     if (activeDeckId) {
       try {
         sessionStorage.setItem('study_last_deck_id', activeDeckId);
         sessionStorage.setItem(`study_deck_pos_${activeDeckId}`, currentPage.toString());
+        // Update URL query parameters so copying/opening links or refreshing stays on the exact deck and page
+        const url = new URL(window.location.href);
+        url.searchParams.set('deck', activeDeckId);
+        url.searchParams.set('page', currentPage.toString());
+        window.history.replaceState(null, '', url.toString());
       } catch (e) {}
-      localStorage.setItem('study_last_deck_id', activeDeckId);
-      localStorage.setItem(`study_deck_pos_${activeDeckId}`, currentPage.toString());
     }
   }, [activeDeckId, currentPage]);
 
@@ -153,7 +170,6 @@ export default function App() {
     try {
       sessionStorage.setItem('study_edge_zoom', zoom.toString());
     } catch (e) {}
-    localStorage.setItem('study_edge_zoom', zoom.toString());
   }, [zoom]);
 
   useEffect(() => {
@@ -170,7 +186,6 @@ export default function App() {
     try {
       sessionStorage.setItem('study_edge_rotation', rotation.toString());
     } catch (e) {}
-    localStorage.setItem('study_edge_rotation', rotation.toString());
   }, [rotation]);
 
   // Derived current deck & subject
@@ -186,14 +201,14 @@ export default function App() {
     return { currentSubject: null, currentDeck: null };
   }, [manifest, activeDeckId]);
 
-  // Switch to another file from the expandable menu
+  // Switch to another file from the expandable menu (isolated per tab)
   const handleSelectDeck = (deckId) => {
     setActiveDeckId(deckId);
-    const saved = sessionStorage.getItem(`study_deck_pos_${deckId}`) || localStorage.getItem(`study_deck_pos_${deckId}`);
+    const saved = sessionStorage.getItem(`study_deck_pos_${deckId}`);
     setCurrentPage(saved ? parseInt(saved, 10) : 1);
   };
 
-  // Jump to page (from [ 6 ] input)
+  // Jump to page (from [ 6 ] input, isolated per tab)
   const handlePageJump = (pageNum) => {
     if (!currentDeck) return;
     const clamped = Math.max(1, Math.min(pageNum, currentDeck.slides.length));
@@ -204,15 +219,15 @@ export default function App() {
       el.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
     if (activeDeckId) {
-      localStorage.setItem(`study_deck_pos_${activeDeckId}`, clamped.toString());
+      sessionStorage.setItem(`study_deck_pos_${activeDeckId}`, clamped.toString());
     }
   };
 
-  // Page updated on scroll
+  // Page updated on scroll (strictly updates only this tab's state & sessionStorage)
   const handlePageChange = (pageNum) => {
     setCurrentPage(pageNum);
     if (activeDeckId) {
-      localStorage.setItem(`study_deck_pos_${activeDeckId}`, pageNum.toString());
+      sessionStorage.setItem(`study_deck_pos_${activeDeckId}`, pageNum.toString());
     }
   };
 
@@ -228,6 +243,28 @@ export default function App() {
   const handleRotate = () => {
     setRotation(prev => (prev + 90) % 360);
   };
+
+  // Browser back/forward navigation support
+  useEffect(() => {
+    const handlePopState = () => {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlDeck = urlParams.get('deck');
+        const urlPage = parseInt(urlParams.get('page'), 10);
+        if (urlDeck) {
+          setActiveDeckId(urlDeck);
+        }
+        if (!isNaN(urlPage) && urlPage >= 1) {
+          setCurrentPage(urlPage);
+          const el = document.getElementById(`page-${urlPage}`);
+          if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }
+      } catch (e) {}
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Keyboard Shortcuts (Ctrl+F, Ctrl+B, Esc)
   useEffect(() => {
@@ -257,31 +294,6 @@ export default function App() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isFindBarOpen, isSidebarOpen]);
-
-  // Restore position when waking from sleep or switching back to window
-  useEffect(() => {
-    const handleWakeOrFocus = () => {
-      if (document.visibilityState === 'visible' && activeDeckId) {
-        const saved = localStorage.getItem(`study_deck_pos_${activeDeckId}`);
-        if (saved) {
-          const parsed = parseInt(saved, 10);
-          if (!isNaN(parsed) && parsed >= 1) {
-            const el = document.getElementById(`page-${parsed}`);
-            if (el) {
-              el.scrollIntoView({ behavior: 'auto', block: 'start' });
-            }
-          }
-        }
-      }
-    };
-
-    document.addEventListener('visibilitychange', handleWakeOrFocus);
-    window.addEventListener('focus', handleWakeOrFocus);
-    return () => {
-      document.removeEventListener('visibilitychange', handleWakeOrFocus);
-      window.removeEventListener('focus', handleWakeOrFocus);
-    };
-  }, [activeDeckId]);
 
   // Find in Document Matches
   const searchMatches = useMemo(() => {
