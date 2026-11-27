@@ -1,0 +1,1460 @@
+{
+  "mtime": 1795710151.8399093,
+  "aspectRatio": 0.71,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/slide_001.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/thumb_001.webp",
+      "text": "Page 1\r\nB2B, B2C & C2C\r\nDetailed Explanation, Examples, Applications & Differences\r\n1. Introduction\r\nB2B, B2C and C2C are common business and e-commerce models. They describe the relationship between\r\nthe seller and the buyer. B2B means Business-to-Business, B2C means Business-to-Consumer, and C2C\r\nmeans Consumer-to-Consumer.\r\n2. B2B \u2013 Business to Business\r\nMeaning: B2B is a business model in which one business sells products or services to another business. The\r\nbuyer may be a company, manufacturer, retailer, institution or other organization.\r\nSimple Example: Intel \u2192 Laptop Manufacturer \u2192 Customer\r\nApplications:\r\n\u2022 Wholesale: manufacturers sell products in bulk to wholesalers or retailers.\r\n\u2022 Manufacturing: companies buy raw materials, components and machinery from suppliers.\r\n\u2022 Software and SaaS: businesses purchase CRM, accounting, cybersecurity and productivity software.\r\n\u2022 Cloud computing: organizations purchase computing, storage and infrastructure services.\r\n\u2022 Banking and finance: banks provide corporate loans, payment processing and business accounts.\r\n\u2022 Supply-chain management: businesses purchase inventory, logistics and procurement services.\r\nKey Characteristics:\r\n\u2022 Customers are businesses or organizations.\r\n\u2022 Orders and transaction values are generally larger.\r\n\u2022 Sales cycles are usually longer and may involve negotiation.\r\n\u2022 Contracts, customized pricing and long-term relationships are common.\r\n\u2022 Buying decisions focus strongly on cost, efficiency, ROI and business requirements.\r\n3. B2C \u2013 Business to Consumer\r\nMeaning: B2C is a business model in which a business sells products or services directly to individual\r\nconsumers for personal use. It is the model most commonly experienced in retail and online shopping.\r\nSimple Example: Business \u2192 Consumer \u2192 Personal Use\r\nApplications:\r\n\u2022 Online shopping: consumers buy clothing, electronics, books, groceries and other products.\r\n\u2022 Food delivery: restaurants and food platforms serve individual customers.\r\n\u2022 Entertainment: consumers purchase streaming, music or gaming subscriptions.\r\n\u2022 Travel and tourism: individuals book flights, hotels and holiday packages.\r\n\u2022 Banking: banks provide savings accounts, credit cards and personal loans.",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 47.97,
+          "t": 96.62,
+          "w": 3.91,
+          "h": 0.88,
+          "text": "Page 1"
+        },
+        {
+          "l": 35.79,
+          "t": 6.47,
+          "w": 28.49,
+          "h": 2.32,
+          "text": "B2B, B2C & C2C"
+        },
+        {
+          "l": 25.8,
+          "t": 10.75,
+          "w": 48.47,
+          "h": 1.21,
+          "text": "Detailed Explanation, Examples, Applications & Differences"
+        },
+        {
+          "l": 8.84,
+          "t": 14.85,
+          "w": 18.27,
+          "h": 1.39,
+          "text": "1. Introduction"
+        },
+        {
+          "l": 8.75,
+          "t": 17.97,
+          "w": 81.85,
+          "h": 1.14,
+          "text": "B2B, B2C and C2C are common business and e-commerce models. They describe the relationship between"
+        },
+        {
+          "l": 8.66,
+          "t": 19.75,
+          "w": 80.09,
+          "h": 1.14,
+          "text": "the seller and the buyer. B2B means Business-to-Business, B2C means Business-to-Consumer, and C2C"
+        },
+        {
+          "l": 8.74,
+          "t": 21.53,
+          "w": 24.21,
+          "h": 0.9,
+          "text": "means Consumer-to-Consumer."
+        },
+        {
+          "l": 8.69,
+          "t": 24.71,
+          "w": 39.09,
+          "h": 1.39,
+          "text": "2. B2B \u2013 Business to Business"
+        },
+        {
+          "l": 8.75,
+          "t": 27.84,
+          "w": 7.23,
+          "h": 1.12,
+          "text": "Meaning: "
+        },
+        {
+          "l": 16.15,
+          "t": 27.84,
+          "w": 75.16,
+          "h": 1.11,
+          "text": " B2B is a business model in which one business sells products or services to another business. The"
+        },
+        {
+          "l": 8.74,
+          "t": 29.61,
+          "w": 61.07,
+          "h": 1.14,
+          "text": "buyer may be a company, manufacturer, retailer, institution or other organization."
+        },
+        {
+          "l": 8.69,
+          "t": 32.11,
+          "w": 13.48,
+          "h": 1.12,
+          "text": "Simple Example: "
+        },
+        {
+          "l": 22.34,
+          "t": 32.12,
+          "w": 4.19,
+          "h": 0.88,
+          "text": " Intel "
+        },
+        {
+          "l": 26.62,
+          "t": 32.37,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 28.22,
+          "t": 32.11,
+          "w": 16.76,
+          "h": 1.12,
+          "text": " Laptop Manufacturer "
+        },
+        {
+          "l": 45.07,
+          "t": 32.37,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 46.68,
+          "t": 32.11,
+          "w": 7.93,
+          "h": 0.9,
+          "text": " Customer"
+        },
+        {
+          "l": 8.63,
+          "t": 34.81,
+          "w": 13.09,
+          "h": 1.35,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.72,
+          "t": 37.33,
+          "w": 56.73,
+          "h": 1.12,
+          "text": "\u2022 Wholesale: manufacturers sell products in bulk to wholesalers or retailers."
+        },
+        {
+          "l": 8.72,
+          "t": 39.83,
+          "w": 68.54,
+          "h": 1.14,
+          "text": "\u2022 Manufacturing: companies buy raw materials, components and machinery from suppliers."
+        },
+        {
+          "l": 8.72,
+          "t": 42.32,
+          "w": 77.21,
+          "h": 1.14,
+          "text": "\u2022 Software and SaaS: businesses purchase CRM, accounting, cybersecurity and productivity software."
+        },
+        {
+          "l": 8.72,
+          "t": 44.82,
+          "w": 68.45,
+          "h": 1.14,
+          "text": "\u2022 Cloud computing: organizations purchase computing, storage and infrastructure services."
+        },
+        {
+          "l": 8.72,
+          "t": 47.31,
+          "w": 74.93,
+          "h": 1.14,
+          "text": "\u2022 Banking and finance: banks provide corporate loans, payment processing and business accounts."
+        },
+        {
+          "l": 8.72,
+          "t": 49.8,
+          "w": 73.4,
+          "h": 1.14,
+          "text": "\u2022 Supply-chain management: businesses purchase inventory, logistics and procurement services."
+        },
+        {
+          "l": 8.78,
+          "t": 52.49,
+          "w": 19.94,
+          "h": 1.39,
+          "text": "Key Characteristics:"
+        },
+        {
+          "l": 8.72,
+          "t": 55.03,
+          "w": 34.26,
+          "h": 1.14,
+          "text": "\u2022 Customers are businesses or organizations."
+        },
+        {
+          "l": 8.72,
+          "t": 57.52,
+          "w": 39.41,
+          "h": 1.14,
+          "text": "\u2022 Orders and transaction values are generally larger."
+        },
+        {
+          "l": 8.72,
+          "t": 60.02,
+          "w": 46.55,
+          "h": 1.14,
+          "text": "\u2022 Sales cycles are usually longer and may involve negotiation."
+        },
+        {
+          "l": 8.72,
+          "t": 62.51,
+          "w": 54.92,
+          "h": 1.14,
+          "text": "\u2022 Contracts, customized pricing and long-term relationships are common."
+        },
+        {
+          "l": 8.72,
+          "t": 65.01,
+          "w": 64.36,
+          "h": 1.14,
+          "text": "\u2022 Buying decisions focus strongly on cost, efficiency, ROI and business requirements."
+        },
+        {
+          "l": 8.73,
+          "t": 68.16,
+          "w": 40.56,
+          "h": 1.4,
+          "text": "3. B2C \u2013 Business to Consumer"
+        },
+        {
+          "l": 8.75,
+          "t": 71.32,
+          "w": 7.23,
+          "h": 1.12,
+          "text": "Meaning: "
+        },
+        {
+          "l": 16.15,
+          "t": 71.3,
+          "w": 69.68,
+          "h": 1.14,
+          "text": " B2C is a business model in which a business sells products or services directly to individual"
+        },
+        {
+          "l": 8.69,
+          "t": 73.08,
+          "w": 77.11,
+          "h": 1.14,
+          "text": "consumers for personal use. It is the model most commonly experienced in retail and online shopping."
+        },
+        {
+          "l": 8.69,
+          "t": 75.58,
+          "w": 13.48,
+          "h": 1.12,
+          "text": "Simple Example: "
+        },
+        {
+          "l": 22.34,
+          "t": 75.59,
+          "w": 7.9,
+          "h": 0.88,
+          "text": " Business "
+        },
+        {
+          "l": 30.33,
+          "t": 75.84,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 31.94,
+          "t": 75.58,
+          "w": 8.86,
+          "h": 0.9,
+          "text": " Consumer "
+        },
+        {
+          "l": 40.87,
+          "t": 75.84,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 42.48,
+          "t": 75.59,
+          "w": 10.69,
+          "h": 0.88,
+          "text": " Personal Use"
+        },
+        {
+          "l": 8.63,
+          "t": 78.28,
+          "w": 13.09,
+          "h": 1.35,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.72,
+          "t": 80.8,
+          "w": 70.07,
+          "h": 1.14,
+          "text": "\u2022 Online shopping: consumers buy clothing, electronics, books, groceries and other products."
+        },
+        {
+          "l": 8.72,
+          "t": 83.3,
+          "w": 56.45,
+          "h": 1.14,
+          "text": "\u2022 Food delivery: restaurants and food platforms serve individual customers."
+        },
+        {
+          "l": 8.72,
+          "t": 85.81,
+          "w": 60.83,
+          "h": 1.12,
+          "text": "\u2022 Entertainment: consumers purchase streaming, music or gaming subscriptions."
+        },
+        {
+          "l": 8.72,
+          "t": 88.29,
+          "w": 56.17,
+          "h": 1.14,
+          "text": "\u2022 Travel and tourism: individuals book flights, hotels and holiday packages."
+        },
+        {
+          "l": 8.72,
+          "t": 90.8,
+          "w": 57.5,
+          "h": 1.12,
+          "text": "\u2022 Banking: banks provide savings accounts, credit cards and personal loans."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/slide_002.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/thumb_002.webp",
+      "text": "Page 2\r\n\u2022 Education: online education companies sell courses directly to students.\r\nKey Characteristics:\r\n\u2022 Customers are individual consumers.\r\n\u2022 Transactions are generally smaller than B2B transactions.\r\n\u2022 Purchasing decisions can be influenced by price, convenience, brand and emotion.\r\n\u2022 Sales cycles are usually short.\r\n\u2022 Advertising, promotions, customer experience and after-sales service are important.\r\n4. C2C \u2013 Consumer to Consumer\r\nMeaning: C2C is a business model in which one individual consumer sells a product or service to another\r\nindividual consumer. An online marketplace or platform often connects the buyer and seller.\r\nSimple Example: Consumer A \u2192 Online Marketplace \u2192 Consumer B\r\nApplications:\r\n\u2022 Second-hand products: used phones, laptops, furniture, bicycles and other goods.\r\n\u2022 Online marketplaces: individuals list products for other individuals to purchase.\r\n\u2022 Auction platforms: consumers can sell products through bidding or auctions.\r\n\u2022 Classified advertisements: individuals advertise products or services for sale.\r\n\u2022 Ticket reselling: consumers may transfer or resell eligible tickets where permitted.\r\n\u2022 Rental platforms: individuals can offer assets or spaces to other individuals through a platform.\r\nKey Characteristics:\r\n\u2022 Both buyer and seller are consumers.\r\n\u2022 Online marketplaces commonly provide the platform.\r\n\u2022 Products may be new, used or second-hand depending on the marketplace.\r\n\u2022 Trust, ratings, reviews and seller reputation are important.\r\n\u2022 Price negotiation may be common.",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 47.97,
+          "t": 96.62,
+          "w": 4.08,
+          "h": 0.88,
+          "text": "Page 2"
+        },
+        {
+          "l": 8.72,
+          "t": 6.11,
+          "w": 55.41,
+          "h": 1.12,
+          "text": "\u2022 Education: online education companies sell courses directly to students."
+        },
+        {
+          "l": 8.78,
+          "t": 8.78,
+          "w": 19.94,
+          "h": 1.39,
+          "text": "Key Characteristics:"
+        },
+        {
+          "l": 8.72,
+          "t": 11.32,
+          "w": 29.02,
+          "h": 0.9,
+          "text": "\u2022 Customers are individual consumers."
+        },
+        {
+          "l": 8.72,
+          "t": 13.82,
+          "w": 44.74,
+          "h": 1.12,
+          "text": "\u2022 Transactions are generally smaller than B2B transactions."
+        },
+        {
+          "l": 8.72,
+          "t": 16.31,
+          "w": 63.7,
+          "h": 1.14,
+          "text": "\u2022 Purchasing decisions can be influenced by price, convenience, brand and emotion."
+        },
+        {
+          "l": 8.72,
+          "t": 18.8,
+          "w": 23.88,
+          "h": 1.14,
+          "text": "\u2022 Sales cycles are usually short."
+        },
+        {
+          "l": 8.72,
+          "t": 21.3,
+          "w": 64.35,
+          "h": 1.14,
+          "text": "\u2022 Advertising, promotions, customer experience and after-sales service are important."
+        },
+        {
+          "l": 8.68,
+          "t": 24.45,
+          "w": 41.95,
+          "h": 1.4,
+          "text": "4. C2C \u2013 Consumer to Consumer"
+        },
+        {
+          "l": 8.75,
+          "t": 27.61,
+          "w": 7.23,
+          "h": 1.12,
+          "text": "Meaning: "
+        },
+        {
+          "l": 16.15,
+          "t": 27.59,
+          "w": 72.68,
+          "h": 1.12,
+          "text": " C2C is a business model in which one individual consumer sells a product or service to another"
+        },
+        {
+          "l": 8.74,
+          "t": 29.37,
+          "w": 69.07,
+          "h": 1.14,
+          "text": "individual consumer. An online marketplace or platform often connects the buyer and seller."
+        },
+        {
+          "l": 8.69,
+          "t": 31.87,
+          "w": 13.48,
+          "h": 1.12,
+          "text": "Simple Example: "
+        },
+        {
+          "l": 22.34,
+          "t": 31.87,
+          "w": 10.47,
+          "h": 0.9,
+          "text": " Consumer A "
+        },
+        {
+          "l": 32.9,
+          "t": 32.13,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 34.51,
+          "t": 31.87,
+          "w": 15.71,
+          "h": 1.12,
+          "text": " Online Marketplace "
+        },
+        {
+          "l": 50.3,
+          "t": 32.13,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 51.91,
+          "t": 31.87,
+          "w": 9.91,
+          "h": 0.9,
+          "text": " Consumer B"
+        },
+        {
+          "l": 8.63,
+          "t": 34.57,
+          "w": 13.09,
+          "h": 1.35,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.72,
+          "t": 37.09,
+          "w": 62.94,
+          "h": 1.14,
+          "text": "\u2022 Second-hand products: used phones, laptops, furniture, bicycles and other goods."
+        },
+        {
+          "l": 8.72,
+          "t": 39.59,
+          "w": 60.26,
+          "h": 1.12,
+          "text": "\u2022 Online marketplaces: individuals list products for other individuals to purchase."
+        },
+        {
+          "l": 8.72,
+          "t": 42.08,
+          "w": 58.36,
+          "h": 1.14,
+          "text": "\u2022 Auction platforms: consumers can sell products through bidding or auctions."
+        },
+        {
+          "l": 8.72,
+          "t": 44.58,
+          "w": 59.11,
+          "h": 1.12,
+          "text": "\u2022 Classified advertisements: individuals advertise products or services for sale."
+        },
+        {
+          "l": 8.72,
+          "t": 47.07,
+          "w": 62.54,
+          "h": 1.14,
+          "text": "\u2022 Ticket reselling: consumers may transfer or resell eligible tickets where permitted."
+        },
+        {
+          "l": 8.72,
+          "t": 49.57,
+          "w": 72.36,
+          "h": 1.14,
+          "text": "\u2022 Rental platforms: individuals can offer assets or spaces to other individuals through a platform."
+        },
+        {
+          "l": 8.78,
+          "t": 52.25,
+          "w": 19.94,
+          "h": 1.39,
+          "text": "Key Characteristics:"
+        },
+        {
+          "l": 8.72,
+          "t": 54.81,
+          "w": 29.31,
+          "h": 1.12,
+          "text": "\u2022 Both buyer and seller are consumers."
+        },
+        {
+          "l": 8.72,
+          "t": 57.29,
+          "w": 40.83,
+          "h": 1.14,
+          "text": "\u2022 Online marketplaces commonly provide the platform."
+        },
+        {
+          "l": 8.72,
+          "t": 59.8,
+          "w": 58.36,
+          "h": 1.12,
+          "text": "\u2022 Products may be new, used or second-hand depending on the marketplace."
+        },
+        {
+          "l": 8.72,
+          "t": 62.29,
+          "w": 44.64,
+          "h": 1.12,
+          "text": "\u2022 Trust, ratings, reviews and seller reputation are important."
+        },
+        {
+          "l": 8.72,
+          "t": 64.78,
+          "w": 27.22,
+          "h": 1.12,
+          "text": "\u2022 Price negotiation may be common."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/slide_003.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/thumb_003.webp",
+      "text": "Page 3\r\n5. Difference Between B2B, B2C and C2C\r\nFeature B2B B2C C2C\r\nFull Form Business to Business Business to Consumer Consumer to Consumer\r\nSeller Business Business Individual consumer\r\nBuyer Business Individual consumer Individual consumer\r\nTypical Order Size Large Small/medium Small/medium\r\nTransaction Value Generally high Generally lower Varies\r\nDecision Basis ROI, efficiency, cost Price, convenience, experience Price, trust, condition\r\nSales Cycle Usually long Usually short Usually short\r\nNegotiation Common Less common Common\r\nRelationship Long-term Repeat or short-term Mostly transaction-based\r\nMarketing Professional/business marketing Mass and digital marketing Marketplace/reputation-based\r\nExample Supplier \u2192 Company Retailer \u2192 Customer Person \u2192 Person\r\n6. Real-Life Comparison Using a Laptop\r\nB2B: A company purchases 100 laptops for its employees.\r\nLaptop Manufacturer \u2192 Company\r\nB2C: An individual purchases one laptop for personal use.\r\nLaptop Retailer \u2192 Customer\r\nC2C: An individual sells a used laptop to another person through a marketplace.\r\nConsumer A \u2192 Marketplace \u2192 Consumer B\r\n7. Advantages\r\nB2B:\r\n\u2022 Large transaction values\r\n\u2022 Long-term customers\r\n\u2022 Repeat orders\r\n\u2022 Stable business relationships\r\nB2C:\r\n\u2022 Large customer market\r\n\u2022 Fast transactions\r\n\u2022 Direct customer feedback\r\n\u2022 Strong opportunities for digital marketing\r\nC2C:\r\n\u2022 Easy selling of unwanted products\r\n\u2022 Lower prices for buyers\r\n\u2022 Wide marketplace reach",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 47.97,
+          "t": 96.62,
+          "w": 4.09,
+          "h": 0.88,
+          "text": "Page 3"
+        },
+        {
+          "l": 8.75,
+          "t": 6.28,
+          "w": 52.32,
+          "h": 1.69,
+          "text": "5. Difference Between B2B, B2C and C2C"
+        },
+        {
+          "l": 7.67,
+          "t": 9.82,
+          "w": 4.41,
+          "h": 0.65,
+          "text": "Feature "
+        },
+        {
+          "l": 23.86,
+          "t": 9.81,
+          "w": 2.37,
+          "h": 0.64,
+          "text": "B2B "
+        },
+        {
+          "l": 47.19,
+          "t": 9.81,
+          "w": 2.36,
+          "h": 0.66,
+          "text": "B2C "
+        },
+        {
+          "l": 70.49,
+          "t": 9.81,
+          "w": 2.4,
+          "h": 0.66,
+          "text": "C2C"
+        },
+        {
+          "l": 7.67,
+          "t": 11.84,
+          "w": 5.57,
+          "h": 0.65,
+          "text": "Full Form "
+        },
+        {
+          "l": 23.86,
+          "t": 11.84,
+          "w": 11.83,
+          "h": 0.65,
+          "text": "Business to Business "
+        },
+        {
+          "l": 47.19,
+          "t": 11.83,
+          "w": 12.6,
+          "h": 0.66,
+          "text": "Business to Consumer "
+        },
+        {
+          "l": 70.5,
+          "t": 11.83,
+          "w": 13.33,
+          "h": 0.66,
+          "text": "Consumer to Consumer"
+        },
+        {
+          "l": 7.62,
+          "t": 13.84,
+          "w": 3.4,
+          "h": 0.66,
+          "text": "Seller "
+        },
+        {
+          "l": 23.86,
+          "t": 13.86,
+          "w": 4.97,
+          "h": 0.65,
+          "text": "Business "
+        },
+        {
+          "l": 47.19,
+          "t": 13.86,
+          "w": 4.97,
+          "h": 0.65,
+          "text": "Business "
+        },
+        {
+          "l": 70.55,
+          "t": 13.86,
+          "w": 11.1,
+          "h": 0.65,
+          "text": "Individual consumer"
+        },
+        {
+          "l": 7.67,
+          "t": 15.87,
+          "w": 3.5,
+          "h": 0.82,
+          "text": "Buyer "
+        },
+        {
+          "l": 23.86,
+          "t": 15.87,
+          "w": 4.97,
+          "h": 0.65,
+          "text": "Business "
+        },
+        {
+          "l": 47.22,
+          "t": 15.87,
+          "w": 11.1,
+          "h": 0.65,
+          "text": "Individual consumer "
+        },
+        {
+          "l": 70.55,
+          "t": 15.87,
+          "w": 11.1,
+          "h": 0.65,
+          "text": "Individual consumer"
+        },
+        {
+          "l": 7.6,
+          "t": 17.88,
+          "w": 10.92,
+          "h": 0.83,
+          "text": "Typical Order Size "
+        },
+        {
+          "l": 23.86,
+          "t": 17.89,
+          "w": 3.08,
+          "h": 0.82,
+          "text": "Large "
+        },
+        {
+          "l": 47.16,
+          "t": 17.88,
+          "w": 7.84,
+          "h": 0.66,
+          "text": "Small/medium "
+        },
+        {
+          "l": 70.49,
+          "t": 17.88,
+          "w": 7.84,
+          "h": 0.66,
+          "text": "Small/medium"
+        },
+        {
+          "l": 7.6,
+          "t": 19.91,
+          "w": 10.78,
+          "h": 0.65,
+          "text": "Transaction Value "
+        },
+        {
+          "l": 23.83,
+          "t": 19.9,
+          "w": 7.97,
+          "h": 0.83,
+          "text": "Generally high "
+        },
+        {
+          "l": 47.17,
+          "t": 19.9,
+          "w": 8.7,
+          "h": 0.83,
+          "text": "Generally lower "
+        },
+        {
+          "l": 70.44,
+          "t": 19.91,
+          "w": 3.52,
+          "h": 0.65,
+          "text": "Varies"
+        },
+        {
+          "l": 7.67,
+          "t": 21.93,
+          "w": 8.81,
+          "h": 0.65,
+          "text": "Decision Basis "
+        },
+        {
+          "l": 23.87,
+          "t": 21.92,
+          "w": 11.09,
+          "h": 0.84,
+          "text": "ROI, efficiency, cost "
+        },
+        {
+          "l": 47.2,
+          "t": 21.93,
+          "w": 17.36,
+          "h": 0.81,
+          "text": "Price, convenience, experience "
+        },
+        {
+          "l": 70.53,
+          "t": 21.93,
+          "w": 11.58,
+          "h": 0.76,
+          "text": "Price, trust, condition"
+        },
+        {
+          "l": 7.62,
+          "t": 23.94,
+          "w": 6.91,
+          "h": 0.83,
+          "text": "Sales Cycle "
+        },
+        {
+          "l": 23.87,
+          "t": 23.95,
+          "w": 6.68,
+          "h": 0.82,
+          "text": "Usually long "
+        },
+        {
+          "l": 47.2,
+          "t": 23.95,
+          "w": 7.17,
+          "h": 0.82,
+          "text": "Usually short "
+        },
+        {
+          "l": 70.53,
+          "t": 23.95,
+          "w": 7.17,
+          "h": 0.82,
+          "text": "Usually short"
+        },
+        {
+          "l": 7.67,
+          "t": 25.97,
+          "w": 6.75,
+          "h": 0.82,
+          "text": "Negotiation "
+        },
+        {
+          "l": 23.83,
+          "t": 25.96,
+          "w": 4.96,
+          "h": 0.66,
+          "text": "Common "
+        },
+        {
+          "l": 47.19,
+          "t": 25.97,
+          "w": 7.66,
+          "h": 0.65,
+          "text": "Less common "
+        },
+        {
+          "l": 70.5,
+          "t": 25.96,
+          "w": 4.96,
+          "h": 0.66,
+          "text": "Common"
+        },
+        {
+          "l": 7.67,
+          "t": 27.99,
+          "w": 7.42,
+          "h": 0.81,
+          "text": "Relationship "
+        },
+        {
+          "l": 23.86,
+          "t": 27.99,
+          "w": 5.57,
+          "h": 0.82,
+          "text": "Long-term "
+        },
+        {
+          "l": 47.2,
+          "t": 27.99,
+          "w": 11.44,
+          "h": 0.81,
+          "text": "Repeat or short-term "
+        },
+        {
+          "l": 70.53,
+          "t": 27.99,
+          "w": 13.82,
+          "h": 0.82,
+          "text": "Mostly transaction-based"
+        },
+        {
+          "l": 7.67,
+          "t": 30.01,
+          "w": 5.78,
+          "h": 0.82,
+          "text": "Marketing "
+        },
+        {
+          "l": 23.86,
+          "t": 30.0,
+          "w": 17.95,
+          "h": 0.83,
+          "text": "Professional/business marketing "
+        },
+        {
+          "l": 47.19,
+          "t": 30.01,
+          "w": 14.81,
+          "h": 0.82,
+          "text": "Mass and digital marketing "
+        },
+        {
+          "l": 70.53,
+          "t": 30.0,
+          "w": 16.48,
+          "h": 0.82,
+          "text": "Marketplace/reputation-based"
+        },
+        {
+          "l": 7.67,
+          "t": 32.03,
+          "w": 5.04,
+          "h": 0.81,
+          "text": "Example "
+        },
+        {
+          "l": 23.82,
+          "t": 32.02,
+          "w": 4.58,
+          "h": 0.82,
+          "text": "Supplier "
+        },
+        {
+          "l": 28.8,
+          "t": 32.21,
+          "w": 1.15,
+          "h": 0.47,
+          "text": "\u2192 "
+        },
+        {
+          "l": 30.4,
+          "t": 32.02,
+          "w": 5.32,
+          "h": 0.83,
+          "text": "Company "
+        },
+        {
+          "l": 47.2,
+          "t": 32.03,
+          "w": 4.26,
+          "h": 0.65,
+          "text": "Retailer "
+        },
+        {
+          "l": 51.85,
+          "t": 32.21,
+          "w": 1.15,
+          "h": 0.47,
+          "text": "\u2192 "
+        },
+        {
+          "l": 53.45,
+          "t": 32.02,
+          "w": 5.42,
+          "h": 0.66,
+          "text": "Customer "
+        },
+        {
+          "l": 70.53,
+          "t": 32.03,
+          "w": 3.81,
+          "h": 0.65,
+          "text": "Person "
+        },
+        {
+          "l": 74.84,
+          "t": 32.21,
+          "w": 1.15,
+          "h": 0.47,
+          "text": "\u2192 "
+        },
+        {
+          "l": 76.47,
+          "t": 32.03,
+          "w": 3.81,
+          "h": 0.65,
+          "text": "Person"
+        },
+        {
+          "l": 8.74,
+          "t": 36.21,
+          "w": 50.72,
+          "h": 1.78,
+          "text": "6. Real-Life Comparison Using a Laptop"
+        },
+        {
+          "l": 8.75,
+          "t": 39.36,
+          "w": 3.7,
+          "h": 0.87,
+          "text": "B2B: "
+        },
+        {
+          "l": 12.62,
+          "t": 39.35,
+          "w": 40.52,
+          "h": 1.14,
+          "text": " A company purchases 100 laptops for its employees."
+        },
+        {
+          "l": 8.7,
+          "t": 41.85,
+          "w": 16.22,
+          "h": 1.12,
+          "text": "Laptop Manufacturer "
+        },
+        {
+          "l": 25.0,
+          "t": 42.11,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 26.6,
+          "t": 41.85,
+          "w": 7.91,
+          "h": 1.14,
+          "text": " Company"
+        },
+        {
+          "l": 8.75,
+          "t": 44.34,
+          "w": 3.7,
+          "h": 0.9,
+          "text": "B2C: "
+        },
+        {
+          "l": 12.62,
+          "t": 44.34,
+          "w": 40.14,
+          "h": 1.12,
+          "text": " An individual purchases one laptop for personal use."
+        },
+        {
+          "l": 8.7,
+          "t": 46.85,
+          "w": 12.03,
+          "h": 1.11,
+          "text": "Laptop Retailer "
+        },
+        {
+          "l": 20.81,
+          "t": 47.1,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 22.41,
+          "t": 46.83,
+          "w": 8.05,
+          "h": 0.9,
+          "text": " Customer"
+        },
+        {
+          "l": 8.71,
+          "t": 49.33,
+          "w": 3.75,
+          "h": 0.9,
+          "text": "C2C: "
+        },
+        {
+          "l": 12.62,
+          "t": 49.34,
+          "w": 56.62,
+          "h": 1.12,
+          "text": " An individual sells a used laptop to another person through a marketplace."
+        },
+        {
+          "l": 8.78,
+          "t": 51.82,
+          "w": 9.84,
+          "h": 0.9,
+          "text": "Consumer A "
+        },
+        {
+          "l": 18.71,
+          "t": 52.09,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 20.32,
+          "t": 51.84,
+          "w": 10.28,
+          "h": 1.11,
+          "text": " Marketplace "
+        },
+        {
+          "l": 30.68,
+          "t": 52.09,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 32.29,
+          "t": 51.82,
+          "w": 9.98,
+          "h": 0.9,
+          "text": " Consumer B"
+        },
+        {
+          "l": 8.74,
+          "t": 55.0,
+          "w": 17.98,
+          "h": 1.76,
+          "text": "7. Advantages"
+        },
+        {
+          "l": 8.78,
+          "t": 58.21,
+          "w": 4.54,
+          "h": 1.07,
+          "text": "B2B:"
+        },
+        {
+          "l": 8.72,
+          "t": 60.75,
+          "w": 19.59,
+          "h": 1.12,
+          "text": "\u2022 Large transaction values"
+        },
+        {
+          "l": 8.72,
+          "t": 63.24,
+          "w": 17.11,
+          "h": 1.12,
+          "text": "\u2022 Long-term customers"
+        },
+        {
+          "l": 8.72,
+          "t": 65.74,
+          "w": 11.78,
+          "h": 1.11,
+          "text": "\u2022 Repeat orders"
+        },
+        {
+          "l": 8.72,
+          "t": 68.21,
+          "w": 23.11,
+          "h": 1.12,
+          "text": "\u2022 Stable business relationships"
+        },
+        {
+          "l": 8.78,
+          "t": 70.9,
+          "w": 4.54,
+          "h": 1.1,
+          "text": "B2C:"
+        },
+        {
+          "l": 8.72,
+          "t": 73.46,
+          "w": 18.59,
+          "h": 1.12,
+          "text": "\u2022 Large customer market"
+        },
+        {
+          "l": 8.72,
+          "t": 75.95,
+          "w": 13.96,
+          "h": 0.88,
+          "text": "\u2022 Fast transactions"
+        },
+        {
+          "l": 8.72,
+          "t": 78.43,
+          "w": 20.4,
+          "h": 0.9,
+          "text": "\u2022 Direct customer feedback"
+        },
+        {
+          "l": 8.72,
+          "t": 80.92,
+          "w": 31.63,
+          "h": 1.14,
+          "text": "\u2022 Strong opportunities for digital marketing"
+        },
+        {
+          "l": 8.73,
+          "t": 83.61,
+          "w": 4.59,
+          "h": 1.1,
+          "text": "C2C:"
+        },
+        {
+          "l": 8.72,
+          "t": 86.15,
+          "w": 26.92,
+          "h": 1.14,
+          "text": "\u2022 Easy selling of unwanted products"
+        },
+        {
+          "l": 8.72,
+          "t": 88.65,
+          "w": 18.73,
+          "h": 1.14,
+          "text": "\u2022 Lower prices for buyers"
+        },
+        {
+          "l": 8.72,
+          "t": 91.15,
+          "w": 19.34,
+          "h": 1.11,
+          "text": "\u2022 Wide marketplace reach"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/slide_004.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_b2b_b2c_c2c_detailed_notes_pdf/thumb_004.webp",
+      "text": "Page 4\r\n\u2022 Consumers can earn from unused products\r\n8. Disadvantages\r\nB2B:\r\n\u2022 Long sales process\r\n\u2022 Complex negotiations\r\n\u2022 Fewer customers compared with B2C\r\n\u2022 Dependence on business clients\r\nB2C:\r\n\u2022 High competition\r\n\u2022 Customers can switch brands easily\r\n\u2022 Customer acquisition can be expensive\r\n\u2022 High service and delivery expectations\r\nC2C:\r\n\u2022 Trust and fraud risks\r\n\u2022 Product quality may vary\r\n\u2022 Consumer protection depends on the platform\r\n\u2022 Buyer-seller disputes can occur\r\n9. Easy Way to Remember\r\nB2B: Business sells to Business \u2014 Example: Manufacturer \u2192 Retailer\r\nB2C: Business sells to Consumer \u2014 Example: Retailer \u2192 Customer\r\nC2C: Consumer sells to Consumer \u2014 Example: Person \u2192 Another Person\r\n10. Exam-Ready Conclusion\r\nB2B, B2C and C2C differ mainly in the parties involved in a transaction. B2B connects businesses with other\r\nbusinesses, B2C connects businesses directly with individual consumers, and C2C connects individual\r\nconsumers with other consumers, usually through a marketplace platform. Understanding these models is\r\nimportant for studying e-commerce, digital business and modern online marketplaces.",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 47.97,
+          "t": 96.63,
+          "w": 4.09,
+          "h": 0.88,
+          "text": "Page 4"
+        },
+        {
+          "l": 8.72,
+          "t": 6.09,
+          "w": 33.87,
+          "h": 1.12,
+          "text": "\u2022 Consumers can earn from unused products"
+        },
+        {
+          "l": 8.74,
+          "t": 9.27,
+          "w": 21.72,
+          "h": 1.76,
+          "text": "8. Disadvantages"
+        },
+        {
+          "l": 8.78,
+          "t": 12.48,
+          "w": 4.54,
+          "h": 1.07,
+          "text": "B2B:"
+        },
+        {
+          "l": 8.72,
+          "t": 15.02,
+          "w": 15.68,
+          "h": 1.12,
+          "text": "\u2022 Long sales process"
+        },
+        {
+          "l": 8.72,
+          "t": 17.5,
+          "w": 17.39,
+          "h": 1.14,
+          "text": "\u2022 Complex negotiations"
+        },
+        {
+          "l": 8.72,
+          "t": 19.99,
+          "w": 29.48,
+          "h": 1.12,
+          "text": "\u2022 Fewer customers compared with B2C"
+        },
+        {
+          "l": 8.72,
+          "t": 22.5,
+          "w": 25.59,
+          "h": 1.11,
+          "text": "\u2022 Dependence on business clients"
+        },
+        {
+          "l": 8.78,
+          "t": 25.17,
+          "w": 4.54,
+          "h": 1.1,
+          "text": "B2C:"
+        },
+        {
+          "l": 8.72,
+          "t": 27.73,
+          "w": 13.63,
+          "h": 1.12,
+          "text": "\u2022 High competition"
+        },
+        {
+          "l": 8.72,
+          "t": 30.21,
+          "w": 28.3,
+          "h": 1.14,
+          "text": "\u2022 Customers can switch brands easily"
+        },
+        {
+          "l": 8.72,
+          "t": 32.7,
+          "w": 30.72,
+          "h": 1.12,
+          "text": "\u2022 Customer acquisition can be expensive"
+        },
+        {
+          "l": 8.72,
+          "t": 35.21,
+          "w": 30.15,
+          "h": 1.12,
+          "text": "\u2022 High service and delivery expectations"
+        },
+        {
+          "l": 8.73,
+          "t": 37.88,
+          "w": 4.59,
+          "h": 1.1,
+          "text": "C2C:"
+        },
+        {
+          "l": 8.72,
+          "t": 40.42,
+          "w": 16.54,
+          "h": 0.9,
+          "text": "\u2022 Trust and fraud risks"
+        },
+        {
+          "l": 8.72,
+          "t": 42.93,
+          "w": 19.73,
+          "h": 1.12,
+          "text": "\u2022 Product quality may vary"
+        },
+        {
+          "l": 8.72,
+          "t": 45.41,
+          "w": 35.73,
+          "h": 1.12,
+          "text": "\u2022 Consumer protection depends on the platform"
+        },
+        {
+          "l": 8.72,
+          "t": 47.92,
+          "w": 24.91,
+          "h": 1.12,
+          "text": "\u2022 Buyer-seller disputes can occur"
+        },
+        {
+          "l": 8.71,
+          "t": 51.08,
+          "w": 33.41,
+          "h": 1.76,
+          "text": "9. Easy Way to Remember"
+        },
+        {
+          "l": 8.75,
+          "t": 54.21,
+          "w": 3.7,
+          "h": 0.87,
+          "text": "B2B: "
+        },
+        {
+          "l": 12.62,
+          "t": 54.2,
+          "w": 41.52,
+          "h": 1.12,
+          "text": " Business sells to Business \u2014 Example: Manufacturer "
+        },
+        {
+          "l": 54.23,
+          "t": 54.46,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 55.84,
+          "t": 54.21,
+          "w": 6.4,
+          "h": 0.88,
+          "text": " Retailer"
+        },
+        {
+          "l": 8.75,
+          "t": 56.69,
+          "w": 3.7,
+          "h": 0.9,
+          "text": "B2C: "
+        },
+        {
+          "l": 12.62,
+          "t": 56.69,
+          "w": 38.28,
+          "h": 1.12,
+          "text": " Business sells to Consumer \u2014 Example: Retailer "
+        },
+        {
+          "l": 50.99,
+          "t": 56.96,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 52.6,
+          "t": 56.69,
+          "w": 7.93,
+          "h": 0.9,
+          "text": " Customer"
+        },
+        {
+          "l": 8.71,
+          "t": 59.19,
+          "w": 3.75,
+          "h": 0.9,
+          "text": "C2C: "
+        },
+        {
+          "l": 12.62,
+          "t": 59.19,
+          "w": 38.76,
+          "h": 1.12,
+          "text": " Consumer sells to Consumer \u2014 Example: Person "
+        },
+        {
+          "l": 51.46,
+          "t": 59.45,
+          "w": 1.56,
+          "h": 0.64,
+          "text": "\u2192 "
+        },
+        {
+          "l": 53.07,
+          "t": 59.2,
+          "w": 12.26,
+          "h": 0.88,
+          "text": " Another Person"
+        },
+        {
+          "l": 8.84,
+          "t": 64.01,
+          "w": 35.6,
+          "h": 1.78,
+          "text": "10. Exam-Ready Conclusion"
+        },
+        {
+          "l": 8.75,
+          "t": 67.15,
+          "w": 81.99,
+          "h": 1.14,
+          "text": "B2B, B2C and C2C differ mainly in the parties involved in a transaction. B2B connects businesses with other"
+        },
+        {
+          "l": 8.74,
+          "t": 68.93,
+          "w": 77.57,
+          "h": 1.14,
+          "text": "businesses, B2C connects businesses directly with individual consumers, and C2C connects individual"
+        },
+        {
+          "l": 8.69,
+          "t": 70.71,
+          "w": 79.96,
+          "h": 1.14,
+          "text": "consumers with other consumers, usually through a marketplace platform. Understanding these models is"
+        },
+        {
+          "l": 8.74,
+          "t": 72.49,
+          "w": 64.68,
+          "h": 1.14,
+          "text": "important for studying e-commerce, digital business and modern online marketplaces."
+        }
+      ]
+    }
+  ]
+}

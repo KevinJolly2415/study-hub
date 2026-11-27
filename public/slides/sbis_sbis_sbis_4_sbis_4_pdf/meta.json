@@ -1,0 +1,4673 @@
+{
+  "mtime": 1795710140.9729228,
+  "aspectRatio": 0.77,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_001.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_001.webp",
+      "text": "Smart Business Information Systems\r\nModule 4. Digital Commerce, Social Media and Intelligent Customer\r\nSystems\r\n1. E-Business:\r\nDefinition:\r\nE-business is the use of internet and digital technologies to run any part of an organisation's\r\noperations - buying, selling, customer service, internal processes, and collaboration with\r\npartners - not just online buying and selling.\r\nDiagram:\r\nFig: Scope of E-Business\r\nExplanation:\r\nE-business is the umbrella term: it covers everything from internal systems like ERP and HR,\r\nto customer support, to collaborating digitally with suppliers, with e-commerce being just one\r\npart of it - the part that deals specifically with online transactions.\r\nAdvantages / Benefits:\r\n\u2022 Wider scope of efficiency: Digitises entire operations, not just sales, cutting cost and\r\ndelay across every department.\r\n\u2022 Better integration: Connects customer-facing and internal processes onto shared\r\ndigital systems.\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 28.1,
+          "t": 4.25,
+          "w": 40.96,
+          "h": 1.86,
+          "text": "Smart Business Information Systems"
+        },
+        {
+          "l": 10.26,
+          "t": 6.6,
+          "w": 76.52,
+          "h": 1.85,
+          "text": "Module 4. Digital Commerce, Social Media and Intelligent Customer"
+        },
+        {
+          "l": 44.18,
+          "t": 8.98,
+          "w": 8.8,
+          "h": 1.77,
+          "text": "Systems"
+        },
+        {
+          "l": 6.08,
+          "t": 12.64,
+          "w": 13.33,
+          "h": 1.25,
+          "text": "1. E-Business:"
+        },
+        {
+          "l": 5.94,
+          "t": 16.12,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.97,
+          "t": 18.15,
+          "w": 85.0,
+          "h": 1.62,
+          "text": "E-business is the use of internet and digital technologies to run any part of an organisation's"
+        },
+        {
+          "l": 5.99,
+          "t": 20.2,
+          "w": 85.06,
+          "h": 1.61,
+          "text": "operations - buying, selling, customer service, internal processes, and collaboration with"
+        },
+        {
+          "l": 5.94,
+          "t": 22.23,
+          "w": 40.19,
+          "h": 1.61,
+          "text": "partners - not just online buying and selling."
+        },
+        {
+          "l": 5.94,
+          "t": 26.73,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 36.86,
+          "t": 70.4,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 41.48,
+          "t": 70.38,
+          "w": 18.68,
+          "h": 1.62,
+          "text": "Scope of E-Business"
+        },
+        {
+          "l": 5.94,
+          "t": 73.7,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.97,
+          "t": 75.71,
+          "w": 85.06,
+          "h": 1.62,
+          "text": "E-business is the umbrella term: it covers everything from internal systems like ERP and HR,"
+        },
+        {
+          "l": 5.92,
+          "t": 77.76,
+          "w": 85.12,
+          "h": 1.61,
+          "text": "to customer support, to collaborating digitally with suppliers, with e-commerce being just one"
+        },
+        {
+          "l": 5.94,
+          "t": 79.78,
+          "w": 59.84,
+          "h": 1.62,
+          "text": "part of it - the part that deals specifically with online transactions."
+        },
+        {
+          "l": 5.92,
+          "t": 84.28,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 88.45,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.81,
+          "t": 87.77,
+          "w": 26.05,
+          "h": 1.62,
+          "text": "Wider scope of efficiency: "
+        },
+        {
+          "l": 37.97,
+          "t": 87.79,
+          "w": 53.09,
+          "h": 1.61,
+          "text": "Digitises entire operations, not just sales, cutting cost and"
+        },
+        {
+          "l": 11.86,
+          "t": 89.82,
+          "w": 28.07,
+          "h": 1.61,
+          "text": "delay across every department."
+        },
+        {
+          "l": 8.93,
+          "t": 93.27,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 92.61,
+          "w": 18.56,
+          "h": 1.62,
+          "text": "Better integration: "
+        },
+        {
+          "l": 31.85,
+          "t": 92.59,
+          "w": 59.25,
+          "h": 1.62,
+          "text": "Connects customer-facing and internal processes onto shared"
+        },
+        {
+          "l": 11.86,
+          "t": 94.64,
+          "w": 13.98,
+          "h": 1.61,
+          "text": "digital systems."
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_002.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_002.webp",
+      "text": "\u2022 Improved collaboration: Makes it easy to coordinate digitally with suppliers and\r\npartners in real time.\r\nDisadvantages / Limitations:\r\n\u2022 High setup complexity: Digitising every business function requires significant\r\ninvestment and change management.\r\n\u2022 Security exposure: More digitised processes mean more systems that must be secured\r\nagainst cyber threats.\r\n\u2022 Skill dependency: Requires digitally trained staff across departments, not just in IT or\r\nsales.\r\nExamples:\r\n\u2022 Example 1: A company running its HR, payroll, and supplier ordering entirely through\r\ninternal digital systems.\r\n\u2022 Example 2: A manufacturer coordinating production schedules with suppliers over a\r\nshared online portal.\r\nApplications:\r\n\u2022 Internal operations: ERP, HR, and finance systems run digitally.\r\n\u2022 Supplier collaboration: Digital coordination of procurement and logistics.\r\n\u2022 Customer support: Digitally handling service requests and queries.\r\n2. B2B (Business-to-Business):\r\nDefinition:\r\nB2B (business-to-business) e-commerce is when one business sells goods or services to\r\nanother business, typically in bulk, rather than to an individual end customer.\r\nDiagram:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.86,
+          "t": 4.22,
+          "w": 24.07,
+          "h": 1.6,
+          "text": "Improved collaboration: "
+        },
+        {
+          "l": 37.21,
+          "t": 4.22,
+          "w": 53.86,
+          "h": 1.61,
+          "text": "Makes it easy to coordinate digitally with suppliers and"
+        },
+        {
+          "l": 11.82,
+          "t": 6.25,
+          "w": 18.72,
+          "h": 1.6,
+          "text": "partners in real time."
+        },
+        {
+          "l": 5.94,
+          "t": 10.5,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 14.65,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 13.99,
+          "w": 24.04,
+          "h": 1.62,
+          "text": "High setup complexity: "
+        },
+        {
+          "l": 37.57,
+          "t": 13.97,
+          "w": 53.56,
+          "h": 1.62,
+          "text": "Digitising every business function requires significant"
+        },
+        {
+          "l": 11.83,
+          "t": 16.02,
+          "w": 33.56,
+          "h": 1.61,
+          "text": "investment and change management."
+        },
+        {
+          "l": 8.93,
+          "t": 19.47,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 18.81,
+          "w": 18.67,
+          "h": 1.61,
+          "text": "Security exposure: "
+        },
+        {
+          "l": 30.65,
+          "t": 18.81,
+          "w": 60.52,
+          "h": 1.61,
+          "text": "More digitised processes mean more systems that must be secured"
+        },
+        {
+          "l": 11.86,
+          "t": 20.84,
+          "w": 19.12,
+          "h": 1.61,
+          "text": "against cyber threats."
+        },
+        {
+          "l": 8.93,
+          "t": 24.29,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 23.63,
+          "w": 17.79,
+          "h": 1.61,
+          "text": "Skill dependency: "
+        },
+        {
+          "l": 29.78,
+          "t": 23.62,
+          "w": 61.29,
+          "h": 1.62,
+          "text": "Requires digitally trained staff across departments, not just in IT or"
+        },
+        {
+          "l": 11.87,
+          "t": 25.67,
+          "w": 4.77,
+          "h": 1.25,
+          "text": "sales."
+        },
+        {
+          "l": 5.94,
+          "t": 29.92,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 34.07,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 33.41,
+          "w": 11.55,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.39,
+          "t": 33.41,
+          "w": 67.76,
+          "h": 1.61,
+          "text": "A company running its HR, payroll, and supplier ordering entirely through"
+        },
+        {
+          "l": 11.83,
+          "t": 35.44,
+          "w": 21.57,
+          "h": 1.61,
+          "text": "internal digital systems."
+        },
+        {
+          "l": 8.93,
+          "t": 38.89,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 38.23,
+          "w": 11.93,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.8,
+          "t": 38.21,
+          "w": 67.23,
+          "h": 1.62,
+          "text": "A manufacturer coordinating production schedules with suppliers over a"
+        },
+        {
+          "l": 11.87,
+          "t": 40.26,
+          "w": 18.48,
+          "h": 1.6,
+          "text": "shared online portal."
+        },
+        {
+          "l": 5.92,
+          "t": 44.51,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 48.66,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.86,
+          "t": 48.0,
+          "w": 20.11,
+          "h": 1.6,
+          "text": "Internal operations: "
+        },
+        {
+          "l": 32.05,
+          "t": 47.99,
+          "w": 40.22,
+          "h": 1.62,
+          "text": "ERP, HR, and finance systems run digitally."
+        },
+        {
+          "l": 8.93,
+          "t": 51.45,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 50.79,
+          "w": 23.12,
+          "h": 1.6,
+          "text": "Supplier collaboration: "
+        },
+        {
+          "l": 35.11,
+          "t": 50.78,
+          "w": 45.48,
+          "h": 1.62,
+          "text": "Digital coordination of procurement and logistics."
+        },
+        {
+          "l": 8.93,
+          "t": 54.24,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 53.64,
+          "w": 19.07,
+          "h": 1.54,
+          "text": "Customer support: "
+        },
+        {
+          "l": 31.04,
+          "t": 53.58,
+          "w": 43.19,
+          "h": 1.61,
+          "text": "Digitally handling service requests and queries."
+        },
+        {
+          "l": 5.99,
+          "t": 59.29,
+          "w": 29.23,
+          "h": 1.6,
+          "text": "2. B2B (Business-to-Business):"
+        },
+        {
+          "l": 5.94,
+          "t": 62.76,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.97,
+          "t": 64.81,
+          "w": 85.02,
+          "h": 1.61,
+          "text": "B2B (business-to-business) e-commerce is when one business sells goods or services to"
+        },
+        {
+          "l": 5.98,
+          "t": 66.85,
+          "w": 70.35,
+          "h": 1.61,
+          "text": "another business, typically in bulk, rather than to an individual end customer."
+        },
+        {
+          "l": 5.94,
+          "t": 71.35,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_003.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_003.webp",
+      "text": "Fig: B2B - Business Selling to Business\r\nExplanation:\r\nA B2B transaction usually flows through procurement portals or B2B marketplaces: the\r\nbuying business places a purchase order, the supplying business ships the goods, and payment\r\nis settled between the two companies, often with negotiated pricing and longer sales cycles\r\nthan a typical consumer purchase.\r\nAdvantages / Benefits:\r\n\u2022 Large order values: Bulk transactions mean higher revenue per sale than typical\r\nconsumer orders.\r\n\u2022 Recurring relationships: B2B buyers often become long-term, repeat customers.\r\n\u2022 Streamlined procurement: Digital portals speed up ordering, invoicing, and\r\nreordering.\r\nDisadvantages / Limitations:\r\n\u2022 Longer sales cycles: Negotiation and approval steps make B2B deals slower to close.\r\n\u2022 Complex integration needs: Buyers often expect the portal to connect with their own\r\nERP or procurement systems.\r\n\u2022 Smaller customer base: Fewer potential buyers exist compared with the mass market\r\nin B2C.\r\nExamples:\r\n\u2022 Example 1: A car manufacturer ordering steel sheets in bulk from a supplier via a B2B\r\nportal.\r\n\u2022 Example 2: A wholesaler selling stock to multiple retailers through IndiaMART or\r\nAlibaba B2B.\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 30.16,
+          "t": 32.72,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 34.7,
+          "t": 32.72,
+          "w": 32.17,
+          "h": 1.61,
+          "text": "B2B - Business Selling to Business"
+        },
+        {
+          "l": 5.94,
+          "t": 36.01,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.92,
+          "t": 38.03,
+          "w": 85.0,
+          "h": 1.62,
+          "text": "A B2B transaction usually flows through procurement portals or B2B marketplaces: the"
+        },
+        {
+          "l": 5.9,
+          "t": 40.08,
+          "w": 85.29,
+          "h": 1.61,
+          "text": "buying business places a purchase order, the supplying business ships the goods, and payment"
+        },
+        {
+          "l": 5.95,
+          "t": 42.1,
+          "w": 84.97,
+          "h": 1.62,
+          "text": "is settled between the two companies, often with negotiated pricing and longer sales cycles"
+        },
+        {
+          "l": 5.92,
+          "t": 44.15,
+          "w": 30.86,
+          "h": 1.61,
+          "text": "than a typical consumer purchase."
+        },
+        {
+          "l": 5.92,
+          "t": 48.63,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 52.8,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 52.14,
+          "w": 19.93,
+          "h": 1.62,
+          "text": "Large order values: "
+        },
+        {
+          "l": 33.06,
+          "t": 52.14,
+          "w": 57.95,
+          "h": 1.61,
+          "text": "Bulk transactions mean higher revenue per sale than typical"
+        },
+        {
+          "l": 11.87,
+          "t": 54.17,
+          "w": 15.51,
+          "h": 1.25,
+          "text": "consumer orders."
+        },
+        {
+          "l": 8.93,
+          "t": 57.62,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 56.96,
+          "w": 24.47,
+          "h": 1.62,
+          "text": "Recurring relationships: "
+        },
+        {
+          "l": 36.37,
+          "t": 56.94,
+          "w": 50.31,
+          "h": 1.62,
+          "text": "B2B buyers often become long-term, repeat customers."
+        },
+        {
+          "l": 8.93,
+          "t": 60.41,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 59.75,
+          "w": 26.69,
+          "h": 1.6,
+          "text": "Streamlined procurement: "
+        },
+        {
+          "l": 40.52,
+          "t": 59.75,
+          "w": 50.56,
+          "h": 1.61,
+          "text": "Digital portals speed up ordering, invoicing, and"
+        },
+        {
+          "l": 11.83,
+          "t": 61.78,
+          "w": 9.9,
+          "h": 1.61,
+          "text": "reordering."
+        },
+        {
+          "l": 5.94,
+          "t": 66.03,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 70.18,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 69.52,
+          "w": 19.83,
+          "h": 1.62,
+          "text": "Longer sales cycles: "
+        },
+        {
+          "l": 31.73,
+          "t": 69.52,
+          "w": 58.56,
+          "h": 1.61,
+          "text": "Negotiation and approval steps make B2B deals slower to close."
+        },
+        {
+          "l": 8.93,
+          "t": 72.97,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 72.31,
+          "w": 27.44,
+          "h": 1.62,
+          "text": "Complex integration needs: "
+        },
+        {
+          "l": 39.45,
+          "t": 72.3,
+          "w": 51.56,
+          "h": 1.62,
+          "text": "Buyers often expect the portal to connect with their own"
+        },
+        {
+          "l": 11.85,
+          "t": 74.42,
+          "w": 26.95,
+          "h": 1.54,
+          "text": "ERP or procurement systems."
+        },
+        {
+          "l": 8.93,
+          "t": 77.8,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 77.14,
+          "w": 23.42,
+          "h": 1.25,
+          "text": "Smaller customer base: "
+        },
+        {
+          "l": 35.41,
+          "t": 77.14,
+          "w": 55.69,
+          "h": 1.61,
+          "text": "Fewer potential buyers exist compared with the mass market"
+        },
+        {
+          "l": 11.83,
+          "t": 79.23,
+          "w": 6.91,
+          "h": 1.19,
+          "text": "in B2C."
+        },
+        {
+          "l": 5.94,
+          "t": 83.42,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 87.57,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 86.91,
+          "w": 11.58,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.42,
+          "t": 86.89,
+          "w": 67.69,
+          "h": 1.62,
+          "text": "A car manufacturer ordering steel sheets in bulk from a supplier via a B2B"
+        },
+        {
+          "l": 11.82,
+          "t": 88.94,
+          "w": 5.71,
+          "h": 1.6,
+          "text": "portal."
+        },
+        {
+          "l": 8.93,
+          "t": 92.39,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 91.73,
+          "w": 12.18,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 24.03,
+          "t": 91.73,
+          "w": 67.03,
+          "h": 1.61,
+          "text": "A wholesaler selling stock to multiple retailers through IndiaMART or"
+        },
+        {
+          "l": 11.8,
+          "t": 93.77,
+          "w": 12.39,
+          "h": 1.25,
+          "text": "Alibaba B2B."
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_004.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_004.webp",
+      "text": "Applications:\r\n\u2022 Corporate procurement: Ordering raw materials and components at scale.\r\n\u2022 Wholesale distribution: Selling stock from wholesaler to retailer.\r\n\u2022 Supply chain integration: Linking orders directly to inventory and logistics systems.\r\n3. B2C (Business-to-Consumer):\r\nDefinition:\r\nB2C (business-to-consumer) e-commerce is when a business sells products or services directly\r\nto individual end customers, typically through an online store or app.\r\nDiagram:\r\nFig: B2C - Business Selling to Consumer\r\nExplanation:\r\nIn a B2C transaction, the business lists products online, the consumer browses and purchases\r\ndirectly, and payment is completed digitally - the most familiar and widely used form of e\ufffecommerce, emphasising an easy browsing and checkout experience for a large, diverse\r\ncustomer base.\r\nAdvantages / Benefits:\r\n\u2022 Huge customer reach: A single store can reach millions of individual consumers\r\nonline.\r\n\u2022 Convenient shopping: Customers can browse and buy anytime, from anywhere.\r\n\u2022 Rich customer data: Every browse and purchase generates data to improve marketing\r\nand offers.\r\nDisadvantages / Limitations: Dhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 5.92,
+          "t": 4.22,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 8.36,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 7.76,
+          "w": 24.64,
+          "h": 1.54,
+          "text": "Corporate procurement: "
+        },
+        {
+          "l": 36.65,
+          "t": 7.71,
+          "w": 44.37,
+          "h": 1.61,
+          "text": "Ordering raw materials and components at scale."
+        },
+        {
+          "l": 8.93,
+          "t": 11.16,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.81,
+          "t": 10.5,
+          "w": 23.46,
+          "h": 1.25,
+          "text": "Wholesale distribution: "
+        },
+        {
+          "l": 35.45,
+          "t": 10.48,
+          "w": 37.01,
+          "h": 1.62,
+          "text": "Selling stock from wholesaler to retailer."
+        },
+        {
+          "l": 8.93,
+          "t": 13.95,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 13.29,
+          "w": 25.35,
+          "h": 1.62,
+          "text": "Supply chain integration: "
+        },
+        {
+          "l": 37.34,
+          "t": 13.29,
+          "w": 52.98,
+          "h": 1.61,
+          "text": "Linking orders directly to inventory and logistics systems."
+        },
+        {
+          "l": 5.99,
+          "t": 18.99,
+          "w": 31.15,
+          "h": 1.6,
+          "text": "3. B2C (Business-to-Consumer):"
+        },
+        {
+          "l": 5.94,
+          "t": 22.47,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.97,
+          "t": 24.52,
+          "w": 85.22,
+          "h": 1.61,
+          "text": "B2C (business-to-consumer) e-commerce is when a business sells products or services directly"
+        },
+        {
+          "l": 5.92,
+          "t": 26.55,
+          "w": 62.93,
+          "h": 1.61,
+          "text": "to individual end customers, typically through an online store or app."
+        },
+        {
+          "l": 5.94,
+          "t": 31.05,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 29.52,
+          "t": 62.6,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 34.06,
+          "t": 62.6,
+          "w": 33.5,
+          "h": 1.61,
+          "text": "B2C - Business Selling to Consumer"
+        },
+        {
+          "l": 5.94,
+          "t": 65.89,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.98,
+          "t": 67.93,
+          "w": 85.02,
+          "h": 1.6,
+          "text": "In a B2C transaction, the business lists products online, the consumer browses and purchases"
+        },
+        {
+          "l": 5.98,
+          "t": 69.94,
+          "w": 84.99,
+          "h": 1.62,
+          "text": "directly, and payment is completed digitally - the most familiar and widely used form of e\u0002"
+        },
+        {
+          "l": 5.99,
+          "t": 71.98,
+          "w": 85.03,
+          "h": 1.62,
+          "text": "commerce, emphasising an easy browsing and checkout experience for a large, diverse"
+        },
+        {
+          "l": 5.99,
+          "t": 74.03,
+          "w": 13.34,
+          "h": 1.25,
+          "text": "customer base."
+        },
+        {
+          "l": 5.92,
+          "t": 78.51,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 82.68,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 82.02,
+          "w": 22.15,
+          "h": 1.62,
+          "text": "Huge customer reach: "
+        },
+        {
+          "l": 35.2,
+          "t": 82.0,
+          "w": 55.81,
+          "h": 1.62,
+          "text": "A single store can reach millions of individual consumers"
+        },
+        {
+          "l": 11.87,
+          "t": 84.05,
+          "w": 6.05,
+          "h": 1.25,
+          "text": "online."
+        },
+        {
+          "l": 8.93,
+          "t": 87.5,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 86.84,
+          "w": 21.87,
+          "h": 1.62,
+          "text": "Convenient shopping: "
+        },
+        {
+          "l": 33.87,
+          "t": 86.82,
+          "w": 51.88,
+          "h": 1.62,
+          "text": "Customers can browse and buy anytime, from anywhere."
+        },
+        {
+          "l": 8.93,
+          "t": 90.29,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 89.63,
+          "w": 20.29,
+          "h": 1.25,
+          "text": "Rich customer data: "
+        },
+        {
+          "l": 32.19,
+          "t": 89.63,
+          "w": 58.91,
+          "h": 1.61,
+          "text": "Every browse and purchase generates data to improve marketing"
+        },
+        {
+          "l": 11.86,
+          "t": 91.65,
+          "w": 9.55,
+          "h": 1.27,
+          "text": "and offers."
+        },
+        {
+          "l": 5.94,
+          "t": 95.91,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations: "
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_005.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_005.webp",
+      "text": "\u2022 Intense price competition: Easy price comparison pushes margins down.\r\n\u2022 High customer acquisition cost: Standing out among many competing stores requires\r\nmarketing spend.\r\n\u2022 Returns and fraud risk: Consumer-facing stores deal with higher return rates and\r\npayment fraud.\r\nExamples:\r\n\u2022 Example 1: A shopper buying running shoes directly from a retailer's app.\r\n\u2022 Example 2: A customer subscribing to a streaming service directly from the provider's\r\nwebsite.\r\nApplications:\r\n\u2022 Online retail stores: Selling products directly to consumers.\r\n\u2022 Subscription services: Direct-to-consumer digital subscriptions.\r\n\u2022 Mobile shopping apps: Consumer-facing storefronts on phones.\r\n4. C2C (Consumer-to-Consumer):\r\nDefinition:\r\nC2C (consumer-to-consumer) e-commerce is when one individual sells goods or services\r\ndirectly to another individual, usually through a platform that lists the item and facilitates\r\npayment.\r\nDiagram:\r\nFig: C2C - Consumer Selling to Consumer via a Platform\r\nExplanation:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 6.33,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.86,
+          "t": 5.67,
+          "w": 26.01,
+          "h": 1.6,
+          "text": "Intense price competition: "
+        },
+        {
+          "l": 37.96,
+          "t": 5.67,
+          "w": 41.56,
+          "h": 1.61,
+          "text": "Easy price comparison pushes margins down."
+        },
+        {
+          "l": 8.93,
+          "t": 9.12,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 8.46,
+          "w": 31.29,
+          "h": 1.62,
+          "text": "High customer acquisition cost: "
+        },
+        {
+          "l": 43.27,
+          "t": 8.46,
+          "w": 47.83,
+          "h": 1.61,
+          "text": "Standing out among many competing stores requires"
+        },
+        {
+          "l": 11.83,
+          "t": 10.5,
+          "w": 15.54,
+          "h": 1.61,
+          "text": "marketing spend."
+        },
+        {
+          "l": 8.93,
+          "t": 13.95,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 13.27,
+          "w": 23.99,
+          "h": 1.27,
+          "text": "Returns and fraud risk: "
+        },
+        {
+          "l": 37.04,
+          "t": 13.27,
+          "w": 54.01,
+          "h": 1.62,
+          "text": "Consumer-facing stores deal with higher return rates and"
+        },
+        {
+          "l": 11.82,
+          "t": 15.3,
+          "w": 13.65,
+          "h": 1.62,
+          "text": "payment fraud."
+        },
+        {
+          "l": 5.94,
+          "t": 19.57,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 23.72,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 23.06,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.5,
+          "t": 23.04,
+          "w": 56.49,
+          "h": 1.62,
+          "text": "A shopper buying running shoes directly from a retailer's app."
+        },
+        {
+          "l": 8.93,
+          "t": 26.51,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 25.85,
+          "w": 11.63,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.47,
+          "t": 25.83,
+          "w": 67.62,
+          "h": 1.62,
+          "text": "A customer subscribing to a streaming service directly from the provider's"
+        },
+        {
+          "l": 11.78,
+          "t": 27.88,
+          "w": 7.4,
+          "h": 1.25,
+          "text": "website."
+        },
+        {
+          "l": 5.92,
+          "t": 32.13,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 36.28,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 35.62,
+          "w": 19.88,
+          "h": 1.25,
+          "text": "Online retail stores: "
+        },
+        {
+          "l": 31.94,
+          "t": 35.62,
+          "w": 35.43,
+          "h": 1.61,
+          "text": "Selling products directly to consumers."
+        },
+        {
+          "l": 8.93,
+          "t": 39.07,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 38.41,
+          "w": 21.84,
+          "h": 1.6,
+          "text": "Subscription services: "
+        },
+        {
+          "l": 33.83,
+          "t": 38.41,
+          "w": 37.29,
+          "h": 1.61,
+          "text": "Direct-to-consumer digital subscriptions."
+        },
+        {
+          "l": 8.93,
+          "t": 41.86,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 41.2,
+          "w": 22.77,
+          "h": 1.62,
+          "text": "Mobile shopping apps: "
+        },
+        {
+          "l": 34.69,
+          "t": 41.19,
+          "w": 36.45,
+          "h": 1.62,
+          "text": "Consumer-facing storefronts on phones."
+        },
+        {
+          "l": 5.93,
+          "t": 46.91,
+          "w": 33.11,
+          "h": 1.6,
+          "text": "4. C2C (Consumer-to-Consumer):"
+        },
+        {
+          "l": 5.94,
+          "t": 50.38,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.99,
+          "t": 52.43,
+          "w": 85.02,
+          "h": 1.61,
+          "text": "C2C (consumer-to-consumer) e-commerce is when one individual sells goods or services"
+        },
+        {
+          "l": 5.98,
+          "t": 54.45,
+          "w": 84.91,
+          "h": 1.62,
+          "text": "directly to another individual, usually through a platform that lists the item and facilitates"
+        },
+        {
+          "l": 5.94,
+          "t": 56.73,
+          "w": 8.25,
+          "h": 1.38,
+          "text": "payment."
+        },
+        {
+          "l": 5.94,
+          "t": 61.0,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 22.12,
+          "t": 88.19,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 26.69,
+          "t": 88.17,
+          "w": 48.25,
+          "h": 1.62,
+          "text": "C2C - Consumer Selling to Consumer via a Platform"
+        },
+        {
+          "l": 5.94,
+          "t": 91.49,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_006.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_006.webp",
+      "text": "Since buyer and seller are typically strangers, the platform plays a central trust role: it hosts the\r\nlisting, handles or escrows payment, and provides a ratings or review system so both parties\r\ncan trust the transaction.\r\nAdvantages / Benefits:\r\n\u2022 Low barrier to sell: Anyone can list an item without setting up a business.\r\n\u2022 Good value for buyers: Used or handmade goods are often cheaper than buying new.\r\n\u2022 Built-in trust tools: Ratings and reviews help strangers transact safely.\r\nDisadvantages / Limitations:\r\n\u2022 Trust risk: Fraud or misrepresented items remain a real risk between strangers.\r\n\u2022 Inconsistent quality: No standard quality control since sellers are individuals, not\r\nbusinesses.\r\n\u2022 Dispute handling burden: The platform must resolve disagreements between buyer\r\nand seller.\r\nExamples:\r\n\u2022 Example 1: Someone selling a used smartphone to another individual on an online\r\nmarketplace.\r\n\u2022 Example 2: A crafter selling handmade jewellery directly to buyers on Etsy.\r\nApplications:\r\n\u2022 Resale marketplaces: Selling used goods between individuals.\r\n\u2022 Classifieds platforms: Listing items for local pickup or sale.\r\n\u2022 Handmade goods marketplaces: Independent sellers reaching individual buyers.\r\n5. Mobile Commerce:\r\nDefinition:\r\nMobile commerce (m-commerce) is the buying and selling of goods and services, and\r\nconducting financial transactions, using smartphones and tablets via apps or mobile websites.\r\nDiagram:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 6.05,
+          "t": 4.2,
+          "w": 85.09,
+          "h": 1.62,
+          "text": "Since buyer and seller are typically strangers, the platform plays a central trust role: it hosts the"
+        },
+        {
+          "l": 5.94,
+          "t": 6.25,
+          "w": 85.02,
+          "h": 1.61,
+          "text": "listing, handles or escrows payment, and provides a ratings or review system so both parties"
+        },
+        {
+          "l": 5.99,
+          "t": 8.28,
+          "w": 22.1,
+          "h": 1.25,
+          "text": "can trust the transaction."
+        },
+        {
+          "l": 5.92,
+          "t": 12.76,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 16.93,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 16.27,
+          "w": 19.51,
+          "h": 1.25,
+          "text": "Low barrier to sell: "
+        },
+        {
+          "l": 31.37,
+          "t": 16.27,
+          "w": 49.09,
+          "h": 1.61,
+          "text": "Anyone can list an item without setting up a business."
+        },
+        {
+          "l": 8.93,
+          "t": 19.72,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 19.05,
+          "w": 23.0,
+          "h": 1.62,
+          "text": "Good value for buyers: "
+        },
+        {
+          "l": 34.96,
+          "t": 19.05,
+          "w": 55.67,
+          "h": 1.62,
+          "text": "Used or handmade goods are often cheaper than buying new."
+        },
+        {
+          "l": 8.93,
+          "t": 22.51,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 21.85,
+          "w": 19.2,
+          "h": 1.25,
+          "text": "Built-in trust tools: "
+        },
+        {
+          "l": 31.1,
+          "t": 21.84,
+          "w": 45.92,
+          "h": 1.62,
+          "text": "Ratings and reviews help strangers transact safely."
+        },
+        {
+          "l": 5.94,
+          "t": 26.1,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 30.25,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 29.59,
+          "w": 11.14,
+          "h": 1.25,
+          "text": "Trust risk: "
+        },
+        {
+          "l": 23.03,
+          "t": 29.59,
+          "w": 61.6,
+          "h": 1.61,
+          "text": "Fraud or misrepresented items remain a real risk between strangers."
+        },
+        {
+          "l": 8.93,
+          "t": 33.04,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.86,
+          "t": 32.38,
+          "w": 20.11,
+          "h": 1.61,
+          "text": "Inconsistent quality: "
+        },
+        {
+          "l": 33.21,
+          "t": 32.38,
+          "w": 57.87,
+          "h": 1.61,
+          "text": "No standard quality control since sellers are individuals, not"
+        },
+        {
+          "l": 11.78,
+          "t": 34.42,
+          "w": 10.07,
+          "h": 1.25,
+          "text": "businesses."
+        },
+        {
+          "l": 8.93,
+          "t": 37.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 37.21,
+          "w": 26.29,
+          "h": 1.62,
+          "text": "Dispute handling burden: "
+        },
+        {
+          "l": 38.18,
+          "t": 37.19,
+          "w": 52.93,
+          "h": 1.62,
+          "text": "The platform must resolve disagreements between buyer"
+        },
+        {
+          "l": 11.86,
+          "t": 39.24,
+          "w": 9.16,
+          "h": 1.25,
+          "text": "and seller."
+        },
+        {
+          "l": 5.94,
+          "t": 43.49,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 47.64,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 46.98,
+          "w": 12.21,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 24.2,
+          "t": 46.98,
+          "w": 66.83,
+          "h": 1.61,
+          "text": "Someone selling a used smartphone to another individual on an online"
+        },
+        {
+          "l": 11.83,
+          "t": 49.01,
+          "w": 11.53,
+          "h": 1.6,
+          "text": "marketplace."
+        },
+        {
+          "l": 8.93,
+          "t": 52.46,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 51.8,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.5,
+          "t": 51.79,
+          "w": 58.34,
+          "h": 1.62,
+          "text": "A crafter selling handmade jewellery directly to buyers on Etsy."
+        },
+        {
+          "l": 5.92,
+          "t": 56.05,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 60.2,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 59.54,
+          "w": 21.29,
+          "h": 1.6,
+          "text": "Resale marketplaces: "
+        },
+        {
+          "l": 33.28,
+          "t": 59.54,
+          "w": 36.45,
+          "h": 1.61,
+          "text": "Selling used goods between individuals."
+        },
+        {
+          "l": 8.93,
+          "t": 62.99,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 62.32,
+          "w": 21.73,
+          "h": 1.62,
+          "text": "Classifieds platforms: "
+        },
+        {
+          "l": 33.7,
+          "t": 62.32,
+          "w": 33.99,
+          "h": 1.62,
+          "text": "Listing items for local pickup or sale."
+        },
+        {
+          "l": 8.93,
+          "t": 65.78,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 65.12,
+          "w": 31.91,
+          "h": 1.62,
+          "text": "Handmade goods marketplaces: "
+        },
+        {
+          "l": 43.82,
+          "t": 65.12,
+          "w": 42.99,
+          "h": 1.61,
+          "text": "Independent sellers reaching individual buyers."
+        },
+        {
+          "l": 5.99,
+          "t": 70.83,
+          "w": 20.84,
+          "h": 1.25,
+          "text": "5. Mobile Commerce:"
+        },
+        {
+          "l": 5.94,
+          "t": 74.3,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.97,
+          "t": 76.34,
+          "w": 85.03,
+          "h": 1.62,
+          "text": "Mobile commerce (m-commerce) is the buying and selling of goods and services, and"
+        },
+        {
+          "l": 5.99,
+          "t": 78.37,
+          "w": 85.03,
+          "h": 1.62,
+          "text": "conducting financial transactions, using smartphones and tablets via apps or mobile websites."
+        },
+        {
+          "l": 5.94,
+          "t": 82.89,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_007.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_007.webp",
+      "text": "Fig: Mobile Commerce - Categories and Transaction Flow\r\nExplanation:\r\nM-commerce uses mobile-specific capabilities such as GPS, push notifications, and biometric\r\nlogin to let customers shop, compare, and pay from anywhere, spanning categories like\r\nshopping, banking, ticketing, and location-based services.\r\nAdvantages / Benefits:\r\n\u2022 Convenience: Customers can buy anytime, anywhere, without needing a computer.\r\n\u2022 Location personalisation: Apps can use GPS to offer nearby deals or local delivery.\r\n\u2022 Fast checkout: Saved cards and biometric login make payment quicker than desktop\r\nentry.\r\nDisadvantages / Limitations:\r\n\u2022 Small-screen limits: Limited space restricts how much detail can be shown per product.\r\n\u2022 Device security risk: Lost phones or unsecured Wi-Fi add extra attack surface.\r\n\u2022 Platform fragmentation: Separate iOS, Android, and web builds increase\r\ndevelopment cost.\r\nExamples:\r\n\u2022 Example 1: Ordering groceries via an app and paying instantly through a mobile wallet.\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 21.62,
+          "t": 44.08,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 26.15,
+          "t": 44.08,
+          "w": 49.3,
+          "h": 1.61,
+          "text": "Mobile Commerce - Categories and Transaction Flow"
+        },
+        {
+          "l": 5.94,
+          "t": 47.38,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.97,
+          "t": 49.39,
+          "w": 85.11,
+          "h": 1.62,
+          "text": "M-commerce uses mobile-specific capabilities such as GPS, push notifications, and biometric"
+        },
+        {
+          "l": 5.94,
+          "t": 51.43,
+          "w": 84.97,
+          "h": 1.62,
+          "text": "login to let customers shop, compare, and pay from anywhere, spanning categories like"
+        },
+        {
+          "l": 5.99,
+          "t": 53.48,
+          "w": 52.63,
+          "h": 1.61,
+          "text": "shopping, banking, ticketing, and location-based services."
+        },
+        {
+          "l": 5.92,
+          "t": 57.96,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 62.13,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 61.47,
+          "w": 13.66,
+          "h": 1.25,
+          "text": "Convenience: "
+        },
+        {
+          "l": 25.67,
+          "t": 61.47,
+          "w": 62.53,
+          "h": 1.61,
+          "text": "Customers can buy anytime, anywhere, without needing a computer."
+        },
+        {
+          "l": 8.93,
+          "t": 64.92,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 64.26,
+          "w": 25.36,
+          "h": 1.6,
+          "text": "Location personalisation: "
+        },
+        {
+          "l": 37.22,
+          "t": 64.24,
+          "w": 52.32,
+          "h": 1.62,
+          "text": "Apps can use GPS to offer nearby deals or local delivery."
+        },
+        {
+          "l": 8.93,
+          "t": 67.71,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 67.05,
+          "w": 15.07,
+          "h": 1.25,
+          "text": "Fast checkout: "
+        },
+        {
+          "l": 27.07,
+          "t": 67.05,
+          "w": 63.94,
+          "h": 1.61,
+          "text": "Saved cards and biometric login make payment quicker than desktop"
+        },
+        {
+          "l": 11.87,
+          "t": 69.31,
+          "w": 5.03,
+          "h": 1.38,
+          "text": "entry."
+        },
+        {
+          "l": 5.94,
+          "t": 73.33,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 77.48,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 76.82,
+          "w": 19.53,
+          "h": 1.25,
+          "text": "Small-screen limits: "
+        },
+        {
+          "l": 31.51,
+          "t": 76.82,
+          "w": 59.52,
+          "h": 1.6,
+          "text": "Limited space restricts how much detail can be shown per product."
+        },
+        {
+          "l": 8.93,
+          "t": 80.27,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 79.61,
+          "w": 20.46,
+          "h": 1.61,
+          "text": "Device security risk: "
+        },
+        {
+          "l": 32.36,
+          "t": 79.6,
+          "w": 52.02,
+          "h": 1.62,
+          "text": "Lost phones or unsecured Wi-Fi add extra attack surface."
+        },
+        {
+          "l": 8.93,
+          "t": 83.06,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 82.39,
+          "w": 25.18,
+          "h": 1.63,
+          "text": "Platform fragmentation: "
+        },
+        {
+          "l": 39.31,
+          "t": 82.4,
+          "w": 51.73,
+          "h": 1.6,
+          "text": "Separate iOS, Android, and web builds increase"
+        },
+        {
+          "l": 11.86,
+          "t": 84.44,
+          "w": 16.4,
+          "h": 1.6,
+          "text": "development cost."
+        },
+        {
+          "l": 5.94,
+          "t": 88.68,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 92.83,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 92.18,
+          "w": 11.42,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.34,
+          "t": 92.18,
+          "w": 67.68,
+          "h": 1.61,
+          "text": "Ordering groceries via an app and paying instantly through a mobile wallet."
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_008.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_008.webp",
+      "text": "\u2022 Example 2: Booking a train ticket entirely on a phone and using a QR e-ticket at the\r\ngate.\r\nApplications:\r\n\u2022 Retail apps: Mobile shopping and one-tap checkout.\r\n\u2022 Mobile banking: Balance checks and fund transfers.\r\n\u2022 Ticketing: Booking and storing travel or event tickets on a phone.\r\n6. Digital Payment Systems:\r\nDefinition:\r\nDigital payment systems are electronic mechanisms - cards, wallets, and bank transfers - that\r\nmove money between buyer and seller without physical cash, underpinning virtually all e\ufffecommerce.\r\nDiagram:\r\nFig: Digital Payment Systems - Transaction Flow\r\nExplanation:\r\nA payment gateway, processor, and issuing/acquiring banks work together to authorise and\r\nsettle a transaction within seconds, using encryption and tokenisation to protect card details\r\nthroughout.\r\nAdvantages / Benefits:\r\n\u2022 Speed: Payments settle in seconds instead of days. Dhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 4.22,
+          "w": 11.87,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.78,
+          "t": 4.22,
+          "w": 67.16,
+          "h": 1.61,
+          "text": "Booking a train ticket entirely on a phone and using a QR e-ticket at the"
+        },
+        {
+          "l": 11.88,
+          "t": 6.48,
+          "w": 4.13,
+          "h": 1.38,
+          "text": "gate."
+        },
+        {
+          "l": 5.92,
+          "t": 10.5,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 14.65,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 13.99,
+          "w": 12.28,
+          "h": 1.6,
+          "text": "Retail apps: "
+        },
+        {
+          "l": 24.18,
+          "t": 13.99,
+          "w": 36.03,
+          "h": 1.61,
+          "text": "Mobile shopping and one-tap checkout."
+        },
+        {
+          "l": 8.93,
+          "t": 17.44,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 16.78,
+          "w": 16.73,
+          "h": 1.62,
+          "text": "Mobile banking: "
+        },
+        {
+          "l": 28.63,
+          "t": 16.76,
+          "w": 31.58,
+          "h": 1.27,
+          "text": "Balance checks and fund transfers."
+        },
+        {
+          "l": 8.93,
+          "t": 20.23,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 19.57,
+          "w": 10.56,
+          "h": 1.62,
+          "text": "Ticketing: "
+        },
+        {
+          "l": 22.46,
+          "t": 19.57,
+          "w": 49.93,
+          "h": 1.61,
+          "text": "Booking and storing travel or event tickets on a phone."
+        },
+        {
+          "l": 5.98,
+          "t": 25.28,
+          "w": 27.03,
+          "h": 1.62,
+          "text": "6. Digital Payment Systems:"
+        },
+        {
+          "l": 5.94,
+          "t": 28.75,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.97,
+          "t": 30.78,
+          "w": 85.07,
+          "h": 1.62,
+          "text": "Digital payment systems are electronic mechanisms - cards, wallets, and bank transfers - that"
+        },
+        {
+          "l": 5.95,
+          "t": 32.83,
+          "w": 85.02,
+          "h": 1.61,
+          "text": "move money between buyer and seller without physical cash, underpinning virtually all e\u0002"
+        },
+        {
+          "l": 5.99,
+          "t": 35.26,
+          "w": 9.85,
+          "h": 0.86,
+          "text": "commerce."
+        },
+        {
+          "l": 5.94,
+          "t": 39.37,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 25.77,
+          "t": 78.39,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 30.31,
+          "t": 78.39,
+          "w": 40.99,
+          "h": 1.61,
+          "text": "Digital Payment Systems - Transaction Flow"
+        },
+        {
+          "l": 5.94,
+          "t": 81.69,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.92,
+          "t": 83.72,
+          "w": 85.14,
+          "h": 1.61,
+          "text": "A payment gateway, processor, and issuing/acquiring banks work together to authorise and"
+        },
+        {
+          "l": 5.99,
+          "t": 85.76,
+          "w": 84.95,
+          "h": 1.61,
+          "text": "settle a transaction within seconds, using encryption and tokenisation to protect card details"
+        },
+        {
+          "l": 5.92,
+          "t": 87.79,
+          "w": 10.43,
+          "h": 1.61,
+          "text": "throughout."
+        },
+        {
+          "l": 5.92,
+          "t": 92.27,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 96.44,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 95.78,
+          "w": 7.05,
+          "h": 1.6,
+          "text": "Speed: "
+        },
+        {
+          "l": 19.03,
+          "t": 95.76,
+          "w": 39.07,
+          "h": 1.62,
+          "text": "Payments settle in seconds instead of days. Dhrupesh Sir | SBIS Module 4 "
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "conds instead of days. Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_009.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_009.webp",
+      "text": "\u2022 Lower cash-handling cost: Businesses avoid the cost and risk of handling physical\r\ncash.\r\n\u2022 Automatic records: Every transaction creates a digital record for easy reconciliation.\r\nDisadvantages / Limitations:\r\n\u2022 Fraud risk: Digital payment systems are prime targets for hacking and phishing.\r\n\u2022 Processing fees: Card networks and gateways charge a percentage per transaction.\r\n\u2022 Infrastructure dependency: Outages or connectivity loss can halt payments entirely.\r\nExamples:\r\n\u2022 Example 1: Paying at checkout with a saved card that is encrypted and tokenised\r\nautomatically.\r\n\u2022 Example 2: Scanning a merchant's QR code to pay instantly via a banking app.\r\nApplications:\r\n\u2022 E-commerce checkout: Card and wallet payment options online.\r\n\u2022 In-store payment: Tap-to-pay at point-of-sale terminals.\r\n\u2022 Peer-to-peer transfer: Instant money transfer between individuals.\r\n7. Social Computing and Web Technologies:\r\nDefinition:\r\nSocial computing is the use of systems that support user-generated content and social\r\ninteraction - social networks, blogs, reviews - built on interactive web technologies.\r\nDiagram:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 4.22,
+          "w": 26.99,
+          "h": 1.62,
+          "text": "Lower cash-handling cost: "
+        },
+        {
+          "l": 38.92,
+          "t": 4.2,
+          "w": 52.1,
+          "h": 1.62,
+          "text": "Businesses avoid the cost and risk of handling physical"
+        },
+        {
+          "l": 11.87,
+          "t": 6.25,
+          "w": 4.39,
+          "h": 1.25,
+          "text": "cash."
+        },
+        {
+          "l": 8.93,
+          "t": 9.7,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.8,
+          "t": 9.04,
+          "w": 19.53,
+          "h": 1.25,
+          "text": "Automatic records: "
+        },
+        {
+          "l": 31.41,
+          "t": 9.02,
+          "w": 58.72,
+          "h": 1.62,
+          "text": "Every transaction creates a digital record for easy reconciliation."
+        },
+        {
+          "l": 5.94,
+          "t": 13.29,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 17.44,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 16.78,
+          "w": 11.77,
+          "h": 1.25,
+          "text": "Fraud risk: "
+        },
+        {
+          "l": 23.67,
+          "t": 16.76,
+          "w": 62.24,
+          "h": 1.62,
+          "text": "Digital payment systems are prime targets for hacking and phishing."
+        },
+        {
+          "l": 8.93,
+          "t": 20.23,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 19.55,
+          "w": 15.95,
+          "h": 1.63,
+          "text": "Processing fees: "
+        },
+        {
+          "l": 27.88,
+          "t": 19.57,
+          "w": 59.47,
+          "h": 1.61,
+          "text": "Card networks and gateways charge a percentage per transaction."
+        },
+        {
+          "l": 8.93,
+          "t": 23.02,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.86,
+          "t": 22.34,
+          "w": 27.48,
+          "h": 1.62,
+          "text": "Infrastructure dependency: "
+        },
+        {
+          "l": 39.45,
+          "t": 22.36,
+          "w": 50.91,
+          "h": 1.61,
+          "text": "Outages or connectivity loss can halt payments entirely."
+        },
+        {
+          "l": 5.94,
+          "t": 26.61,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 30.76,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 30.1,
+          "w": 11.24,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 24.29,
+          "t": 30.1,
+          "w": 66.76,
+          "h": 1.61,
+          "text": "Paying at checkout with a saved card that is encrypted and tokenised"
+        },
+        {
+          "l": 11.86,
+          "t": 32.13,
+          "w": 12.77,
+          "h": 1.61,
+          "text": "automatically."
+        },
+        {
+          "l": 8.93,
+          "t": 35.58,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 34.92,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.63,
+          "t": 34.92,
+          "w": 60.79,
+          "h": 1.61,
+          "text": "Scanning a merchant's QR code to pay instantly via a banking app."
+        },
+        {
+          "l": 5.92,
+          "t": 39.17,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 43.32,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 42.66,
+          "w": 22.94,
+          "h": 1.25,
+          "text": "E-commerce checkout: "
+        },
+        {
+          "l": 34.87,
+          "t": 42.66,
+          "w": 36.82,
+          "h": 1.61,
+          "text": "Card and wallet payment options online."
+        },
+        {
+          "l": 8.93,
+          "t": 46.11,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.86,
+          "t": 45.52,
+          "w": 18.09,
+          "h": 1.54,
+          "text": "In-store payment: "
+        },
+        {
+          "l": 29.99,
+          "t": 45.43,
+          "w": 34.08,
+          "h": 1.62,
+          "text": "Tap-to-pay at point-of-sale terminals."
+        },
+        {
+          "l": 8.93,
+          "t": 48.9,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 48.23,
+          "w": 21.91,
+          "h": 1.62,
+          "text": "Peer-to-peer transfer: "
+        },
+        {
+          "l": 33.83,
+          "t": 48.23,
+          "w": 39.82,
+          "h": 1.62,
+          "text": "Instant money transfer between individuals."
+        },
+        {
+          "l": 6.03,
+          "t": 53.95,
+          "w": 42.86,
+          "h": 1.62,
+          "text": "7. Social Computing and Web Technologies:"
+        },
+        {
+          "l": 5.94,
+          "t": 57.42,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 6.05,
+          "t": 59.46,
+          "w": 84.95,
+          "h": 1.62,
+          "text": "Social computing is the use of systems that support user-generated content and social"
+        },
+        {
+          "l": 5.95,
+          "t": 61.51,
+          "w": 76.34,
+          "h": 1.61,
+          "text": "interaction - social networks, blogs, reviews - built on interactive web technologies."
+        },
+        {
+          "l": 5.94,
+          "t": 66.01,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_010.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_010.webp",
+      "text": "Fig: Social Computing and Web Technologies Stack\r\nExplanation:\r\nBusinesses use social platforms for marketing, feedback, and community-building, supported\r\nby a technology stack of interactive front ends, APIs, and scalable cloud databases handling\r\nbillions of posts and interactions in real time.\r\nAdvantages / Benefits:\r\n\u2022 Low-cost reach: Businesses can engage large audiences without traditional advertising\r\ncosts.\r\n\u2022 Real-time feedback: Comments and reviews give instant visibility into customer\r\nsentiment.\r\n\u2022 Organic virality: Good content can be shared widely by users at no extra cost.\r\nDisadvantages / Limitations:\r\n\u2022 Reputational risk: Negative content can spread just as fast as positive content.\r\n\u2022 Moderation burden: Requires ongoing effort to manage inappropriate or false content.\r\n\u2022 Algorithm dependency: Organic reach depends on platform algorithms outside the\r\nbusiness's control.\r\nExamples:\r\n\u2022 Example 1: A brand launching a hashtag campaign that customers share organically.\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 24.39,
+          "t": 41.72,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 29.01,
+          "t": 41.72,
+          "w": 43.71,
+          "h": 1.61,
+          "text": "Social Computing and Web Technologies Stack"
+        },
+        {
+          "l": 5.94,
+          "t": 45.01,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.97,
+          "t": 47.03,
+          "w": 85.14,
+          "h": 1.62,
+          "text": "Businesses use social platforms for marketing, feedback, and community-building, supported"
+        },
+        {
+          "l": 5.9,
+          "t": 49.06,
+          "w": 85.04,
+          "h": 1.62,
+          "text": "by a technology stack of interactive front ends, APIs, and scalable cloud databases handling"
+        },
+        {
+          "l": 5.9,
+          "t": 51.09,
+          "w": 41.1,
+          "h": 1.62,
+          "text": "billions of posts and interactions in real time."
+        },
+        {
+          "l": 5.92,
+          "t": 55.59,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 59.76,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 59.1,
+          "w": 16.06,
+          "h": 1.25,
+          "text": "Low-cost reach: "
+        },
+        {
+          "l": 27.96,
+          "t": 59.1,
+          "w": 63.16,
+          "h": 1.61,
+          "text": "Businesses can engage large audiences without traditional advertising"
+        },
+        {
+          "l": 11.87,
+          "t": 61.37,
+          "w": 4.9,
+          "h": 1.02,
+          "text": "costs."
+        },
+        {
+          "l": 8.93,
+          "t": 64.58,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 63.91,
+          "w": 19.89,
+          "h": 1.27,
+          "text": "Real-time feedback: "
+        },
+        {
+          "l": 33.13,
+          "t": 63.92,
+          "w": 57.91,
+          "h": 1.61,
+          "text": "Comments and reviews give instant visibility into customer"
+        },
+        {
+          "l": 11.87,
+          "t": 66.01,
+          "w": 9.21,
+          "h": 1.19,
+          "text": "sentiment."
+        },
+        {
+          "l": 8.93,
+          "t": 69.41,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 68.75,
+          "w": 16.9,
+          "h": 1.62,
+          "text": "Organic virality: "
+        },
+        {
+          "l": 28.9,
+          "t": 68.75,
+          "w": 55.11,
+          "h": 1.61,
+          "text": "Good content can be shared widely by users at no extra cost."
+        },
+        {
+          "l": 5.94,
+          "t": 73.0,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 77.15,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 76.49,
+          "w": 18.38,
+          "h": 1.6,
+          "text": "Reputational risk: "
+        },
+        {
+          "l": 30.28,
+          "t": 76.47,
+          "w": 53.98,
+          "h": 1.62,
+          "text": "Negative content can spread just as fast as positive content."
+        },
+        {
+          "l": 8.93,
+          "t": 79.94,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 79.28,
+          "w": 20.32,
+          "h": 1.25,
+          "text": "Moderation burden: "
+        },
+        {
+          "l": 32.22,
+          "t": 79.26,
+          "w": 58.8,
+          "h": 1.62,
+          "text": "Requires ongoing effort to manage inappropriate or false content."
+        },
+        {
+          "l": 8.93,
+          "t": 82.73,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.8,
+          "t": 82.07,
+          "w": 24.16,
+          "h": 1.62,
+          "text": "Algorithm dependency: "
+        },
+        {
+          "l": 36.09,
+          "t": 82.05,
+          "w": 54.93,
+          "h": 1.62,
+          "text": "Organic reach depends on platform algorithms outside the"
+        },
+        {
+          "l": 11.78,
+          "t": 84.1,
+          "w": 16.52,
+          "h": 1.25,
+          "text": "business's control."
+        },
+        {
+          "l": 5.94,
+          "t": 88.35,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 92.5,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 91.84,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.5,
+          "t": 91.84,
+          "w": 66.09,
+          "h": 1.61,
+          "text": "A brand launching a hashtag campaign that customers share organically."
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_011.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_011.webp",
+      "text": "\u2022 Example 2: A retailer displaying customer photos and ratings pulled from social\r\nplatforms.\r\nApplications:\r\n\u2022 Brand marketing: Running campaigns across social channels.\r\n\u2022 Customer service: Responding to queries via social comments/DMs.\r\n\u2022 Market research: Social listening to track sentiment.\r\n8. Customer Relationship Management (CRM):\r\nDefinition:\r\nCRM is a strategy and software system for managing an organisation's interactions with\r\ncustomers across their lifecycle, aiming to improve retention and profitability.\r\nDiagram:\r\nFig: CRM System Architecture and Data Flow\r\nExplanation:\r\nA CRM consolidates data from every touchpoint into one customer profile, and is generally\r\nsplit into operational (day-to-day sales/support automation), analytical (data-driven insight),\r\nand collaborative (cross-department data sharing) functions.\r\nAdvantages / Benefits:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 4.22,
+          "w": 11.36,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 24.48,
+          "t": 4.2,
+          "w": 66.57,
+          "h": 1.62,
+          "text": "A retailer displaying customer photos and ratings pulled from social"
+        },
+        {
+          "l": 11.82,
+          "t": 6.23,
+          "w": 9.14,
+          "h": 1.62,
+          "text": "platforms."
+        },
+        {
+          "l": 5.92,
+          "t": 10.5,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 14.65,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 13.99,
+          "w": 18.25,
+          "h": 1.62,
+          "text": "Brand marketing: "
+        },
+        {
+          "l": 30.15,
+          "t": 13.99,
+          "w": 39.33,
+          "h": 1.61,
+          "text": "Running campaigns across social channels."
+        },
+        {
+          "l": 8.93,
+          "t": 17.44,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 16.78,
+          "w": 18.17,
+          "h": 1.25,
+          "text": "Customer service: "
+        },
+        {
+          "l": 30.14,
+          "t": 16.78,
+          "w": 45.23,
+          "h": 1.61,
+          "text": "Responding to queries via social comments/DMs."
+        },
+        {
+          "l": 8.93,
+          "t": 20.23,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 19.57,
+          "w": 17.6,
+          "h": 1.25,
+          "text": "Market research: "
+        },
+        {
+          "l": 29.59,
+          "t": 19.57,
+          "w": 31.36,
+          "h": 1.61,
+          "text": "Social listening to track sentiment."
+        },
+        {
+          "l": 5.97,
+          "t": 25.28,
+          "w": 46.27,
+          "h": 1.62,
+          "text": "8. Customer Relationship Management (CRM):"
+        },
+        {
+          "l": 5.94,
+          "t": 28.75,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.99,
+          "t": 30.78,
+          "w": 85.02,
+          "h": 1.62,
+          "text": "CRM is a strategy and software system for managing an organisation's interactions with"
+        },
+        {
+          "l": 5.99,
+          "t": 32.81,
+          "w": 71.16,
+          "h": 1.62,
+          "text": "customers across their lifecycle, aiming to improve retention and profitability."
+        },
+        {
+          "l": 5.94,
+          "t": 37.33,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 27.11,
+          "t": 79.01,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 31.68,
+          "t": 79.01,
+          "w": 38.3,
+          "h": 1.61,
+          "text": "CRM System Architecture and Data Flow"
+        },
+        {
+          "l": 5.94,
+          "t": 82.31,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.92,
+          "t": 84.32,
+          "w": 85.08,
+          "h": 1.62,
+          "text": "A CRM consolidates data from every touchpoint into one customer profile, and is generally"
+        },
+        {
+          "l": 5.99,
+          "t": 86.37,
+          "w": 84.95,
+          "h": 1.61,
+          "text": "split into operational (day-to-day sales/support automation), analytical (data-driven insight),"
+        },
+        {
+          "l": 5.98,
+          "t": 88.39,
+          "w": 54.73,
+          "h": 1.62,
+          "text": "and collaborative (cross-department data sharing) functions."
+        },
+        {
+          "l": 5.92,
+          "t": 92.89,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_012.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_012.webp",
+      "text": "\u2022 Better retention: A full customer history helps anticipate needs and resolve issues\r\nfaster.\r\n\u2022 Sales efficiency: Automated lead tracking helps prioritise the best prospects.\r\n\u2022 Personalisation: Segmented data enables targeted offers instead of generic messaging.\r\nDisadvantages / Limitations:\r\n\u2022 High cost: Licensing, customisation, and training can be expensive to set up.\r\n\u2022 Data quality dependency: Poor data entry undermines the system's usefulness.\r\n\u2022 User resistance: Staff may resist consistently logging interactions.\r\nExamples:\r\n\u2022 Example 1: A sales rep tracking a deal through stages automatically inside the CRM.\r\n\u2022 Example 2: A support agent seeing a customer's full purchase history instantly on call.\r\nApplications:\r\n\u2022 Sales automation: Managing leads and pipelines.\r\n\u2022 Marketing campaigns: Segmented, targeted outreach.\r\n\u2022 Customer support: Ticket tracking with full customer context.\r\n9. AI-Enabled Chatbots and Virtual Assistants:\r\nDefinition:\r\nAI-enabled chatbots use natural language processing to understand user queries in text or\r\nspeech and respond conversationally, handling tasks without a live human agent.\r\nDiagram:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 4.22,
+          "w": 16.38,
+          "h": 1.25,
+          "text": "Better retention: "
+        },
+        {
+          "l": 29.34,
+          "t": 4.2,
+          "w": 61.69,
+          "h": 1.62,
+          "text": "A full customer history helps anticipate needs and resolve issues"
+        },
+        {
+          "l": 11.85,
+          "t": 6.23,
+          "w": 5.42,
+          "h": 1.27,
+          "text": "faster."
+        },
+        {
+          "l": 8.93,
+          "t": 9.7,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 9.02,
+          "w": 16.0,
+          "h": 1.62,
+          "text": "Sales efficiency: "
+        },
+        {
+          "l": 27.94,
+          "t": 9.04,
+          "w": 54.03,
+          "h": 1.61,
+          "text": "Automated lead tracking helps prioritise the best prospects."
+        },
+        {
+          "l": 8.93,
+          "t": 12.49,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 11.83,
+          "w": 16.24,
+          "h": 1.25,
+          "text": "Personalisation: "
+        },
+        {
+          "l": 28.23,
+          "t": 11.81,
+          "w": 62.77,
+          "h": 1.62,
+          "text": "Segmented data enables targeted offers instead of generic messaging."
+        },
+        {
+          "l": 5.94,
+          "t": 16.08,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 20.23,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 19.57,
+          "w": 10.5,
+          "h": 1.62,
+          "text": "High cost: "
+        },
+        {
+          "l": 22.39,
+          "t": 19.57,
+          "w": 59.83,
+          "h": 1.61,
+          "text": "Licensing, customisation, and training can be expensive to set up."
+        },
+        {
+          "l": 8.93,
+          "t": 23.02,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 22.36,
+          "w": 25.55,
+          "h": 1.61,
+          "text": "Data quality dependency: "
+        },
+        {
+          "l": 37.46,
+          "t": 22.34,
+          "w": 47.24,
+          "h": 1.62,
+          "text": "Poor data entry undermines the system's usefulness."
+        },
+        {
+          "l": 8.93,
+          "t": 25.81,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.84,
+          "t": 25.15,
+          "w": 16.06,
+          "h": 1.25,
+          "text": "User resistance: "
+        },
+        {
+          "l": 28.07,
+          "t": 25.13,
+          "w": 44.89,
+          "h": 1.62,
+          "text": "Staff may resist consistently logging interactions."
+        },
+        {
+          "l": 5.94,
+          "t": 29.4,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 33.55,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 32.89,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.5,
+          "t": 32.89,
+          "w": 66.46,
+          "h": 1.61,
+          "text": "A sales rep tracking a deal through stages automatically inside the CRM."
+        },
+        {
+          "l": 8.93,
+          "t": 36.34,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 35.68,
+          "w": 11.61,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.45,
+          "t": 35.66,
+          "w": 67.59,
+          "h": 1.62,
+          "text": "A support agent seeing a customer's full purchase history instantly on call."
+        },
+        {
+          "l": 5.92,
+          "t": 39.93,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 44.08,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 43.42,
+          "w": 17.92,
+          "h": 1.25,
+          "text": "Sales automation: "
+        },
+        {
+          "l": 29.89,
+          "t": 43.42,
+          "w": 27.58,
+          "h": 1.61,
+          "text": "Managing leads and pipelines."
+        },
+        {
+          "l": 8.93,
+          "t": 46.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 46.21,
+          "w": 22.7,
+          "h": 1.62,
+          "text": "Marketing campaigns: "
+        },
+        {
+          "l": 34.68,
+          "t": 46.21,
+          "w": 27.36,
+          "h": 1.61,
+          "text": "Segmented, targeted outreach."
+        },
+        {
+          "l": 8.93,
+          "t": 49.66,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 49.06,
+          "w": 19.07,
+          "h": 1.54,
+          "text": "Customer support: "
+        },
+        {
+          "l": 31.01,
+          "t": 48.98,
+          "w": 38.9,
+          "h": 1.62,
+          "text": "Ticket tracking with full customer context."
+        },
+        {
+          "l": 5.96,
+          "t": 54.71,
+          "w": 45.98,
+          "h": 1.25,
+          "text": "9. AI-Enabled Chatbots and Virtual Assistants:"
+        },
+        {
+          "l": 5.94,
+          "t": 58.18,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.92,
+          "t": 60.23,
+          "w": 85.14,
+          "h": 1.61,
+          "text": "AI-enabled chatbots use natural language processing to understand user queries in text or"
+        },
+        {
+          "l": 5.99,
+          "t": 62.26,
+          "w": 73.64,
+          "h": 1.61,
+          "text": "speech and respond conversationally, handling tasks without a live human agent."
+        },
+        {
+          "l": 5.94,
+          "t": 66.77,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_013.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_013.webp",
+      "text": "Fig: AI Chatbot / Virtual Assistant Architecture\r\nExplanation:\r\nA chatbot pipeline turns user input into an intent (NLU), tracks conversation context, consults\r\na knowledge base or API for the answer, and generates a natural-language reply (NLG) back to\r\nthe user, repeating the loop each turn.\r\nAdvantages / Benefits:\r\n\u2022 24x7 availability: Responds to queries instantly at any hour.\r\n\u2022 Scalability: Handles thousands of conversations simultaneously.\r\n\u2022 Cost reduction: Automates routine queries, freeing human agents for complex issues.\r\nDisadvantages / Limitations:\r\n\u2022 Limited emotional handling: Struggles with nuanced or emotionally sensitive queries.\r\n\u2022 Misunderstanding risk: Poorly trained models can misinterpret intent.\r\n\u2022 Setup cost: Requires investment in training data and ongoing refinement.\r\nExamples:\r\n\u2022 Example 1: A website chatbot instantly answering 'Where is my order?' by checking the\r\nlogistics system.\r\n\u2022 Example 2: A banking assistant letting a customer check balance or transfer funds by\r\ntyping a request.\r\nApplications:\r\n\u2022 Customer support: Automating FAQs and order tracking. Dhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 26.61,
+          "t": 37.45,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 31.1,
+          "t": 37.45,
+          "w": 39.31,
+          "h": 1.25,
+          "text": "AI Chatbot / Virtual Assistant Architecture"
+        },
+        {
+          "l": 5.94,
+          "t": 40.75,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.92,
+          "t": 42.78,
+          "w": 85.14,
+          "h": 1.6,
+          "text": "A chatbot pipeline turns user input into an intent (NLU), tracks conversation context, consults"
+        },
+        {
+          "l": 5.98,
+          "t": 44.8,
+          "w": 85.08,
+          "h": 1.62,
+          "text": "a knowledge base or API for the answer, and generates a natural-language reply (NLG) back to"
+        },
+        {
+          "l": 5.92,
+          "t": 46.85,
+          "w": 34.22,
+          "h": 1.61,
+          "text": "the user, repeating the loop each turn."
+        },
+        {
+          "l": 5.92,
+          "t": 51.33,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 55.5,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.88,
+          "t": 54.84,
+          "w": 17.31,
+          "h": 1.61,
+          "text": "24x7 availability: "
+        },
+        {
+          "l": 29.26,
+          "t": 54.84,
+          "w": 38.07,
+          "h": 1.61,
+          "text": "Responds to queries instantly at any hour."
+        },
+        {
+          "l": 8.93,
+          "t": 58.29,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 57.63,
+          "w": 11.5,
+          "h": 1.61,
+          "text": "Scalability: "
+        },
+        {
+          "l": 23.47,
+          "t": 57.61,
+          "w": 47.59,
+          "h": 1.62,
+          "text": "Handles thousands of conversations simultaneously."
+        },
+        {
+          "l": 8.93,
+          "t": 61.08,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 60.42,
+          "w": 15.64,
+          "h": 1.25,
+          "text": "Cost reduction: "
+        },
+        {
+          "l": 27.56,
+          "t": 60.4,
+          "w": 63.05,
+          "h": 1.62,
+          "text": "Automates routine queries, freeing human agents for complex issues."
+        },
+        {
+          "l": 5.94,
+          "t": 64.67,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 68.82,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 68.16,
+          "w": 28.19,
+          "h": 1.62,
+          "text": "Limited emotional handling: "
+        },
+        {
+          "l": 40.18,
+          "t": 68.16,
+          "w": 50.85,
+          "h": 1.61,
+          "text": "Struggles with nuanced or emotionally sensitive queries."
+        },
+        {
+          "l": 8.93,
+          "t": 71.61,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 70.95,
+          "w": 23.59,
+          "h": 1.62,
+          "text": "Misunderstanding risk: "
+        },
+        {
+          "l": 35.49,
+          "t": 70.95,
+          "w": 41.67,
+          "h": 1.61,
+          "text": "Poorly trained models can misinterpret intent."
+        },
+        {
+          "l": 8.93,
+          "t": 74.4,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 73.8,
+          "w": 11.18,
+          "h": 1.54,
+          "text": "Setup cost: "
+        },
+        {
+          "l": 23.15,
+          "t": 73.72,
+          "w": 55.89,
+          "h": 1.62,
+          "text": "Requires investment in training data and ongoing refinement."
+        },
+        {
+          "l": 5.94,
+          "t": 77.99,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 82.14,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 81.48,
+          "w": 11.39,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.23,
+          "t": 81.48,
+          "w": 67.88,
+          "h": 1.61,
+          "text": "A website chatbot instantly answering 'Where is my order?' by checking the"
+        },
+        {
+          "l": 11.83,
+          "t": 83.51,
+          "w": 14.91,
+          "h": 1.61,
+          "text": "logistics system."
+        },
+        {
+          "l": 8.93,
+          "t": 86.96,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 86.3,
+          "w": 11.76,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.62,
+          "t": 86.29,
+          "w": 67.38,
+          "h": 1.62,
+          "text": "A banking assistant letting a customer check balance or transfer funds by"
+        },
+        {
+          "l": 11.8,
+          "t": 88.39,
+          "w": 15.0,
+          "h": 1.55,
+          "text": "typing a request."
+        },
+        {
+          "l": 5.92,
+          "t": 92.59,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 96.74,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 96.13,
+          "w": 19.07,
+          "h": 1.54,
+          "text": "Customer support: "
+        },
+        {
+          "l": 31.0,
+          "t": 96.08,
+          "w": 34.68,
+          "h": 1.61,
+          "text": "Automating FAQs and order tracking. Dhrupesh Sir | SBIS Module 4 Notes"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "ting FAQs and order track\r\nDhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_014.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_014.webp",
+      "text": "\u2022 Shopping assistance: Helping customers find or compare products.\r\n\u2022 Banking: Conversational balance checks and transfers.\r\n10. Digital Marketing Analytics:\r\nDefinition:\r\nDigital marketing analytics is the practice of collecting and analysing data from digital\r\nchannels to evaluate campaign performance and guide marketing decisions.\r\nDiagram:\r\nFig: Digital Marketing Analytics Pipeline\r\nExplanation:\r\nData from website, social, email, and ad channels is tracked, processed into KPIs and\r\ndashboards, and interpreted through a funnel (awareness, interest, conversion, loyalty) to see\r\nwhere customers convert or drop off.\r\nAdvantages / Benefits:\r\n\u2022 Measurable ROI: Every marketing spend can be traced to clicks, leads, and sales.\r\n\u2022 Real-time optimisation: Underperforming campaigns can be adjusted quickly.\r\n\u2022 Granular targeting: Reveals exactly which segments and channels perform best.\r\nDisadvantages / Limitations:\r\n\u2022 Data fragmentation: Combining data across many platforms is technically difficult. Dhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 4.22,
+          "w": 20.72,
+          "h": 1.62,
+          "text": "Shopping assistance: "
+        },
+        {
+          "l": 32.7,
+          "t": 4.2,
+          "w": 41.17,
+          "h": 1.62,
+          "text": "Helping customers find or compare products."
+        },
+        {
+          "l": 8.93,
+          "t": 7.66,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 7.01,
+          "w": 9.56,
+          "h": 1.62,
+          "text": "Banking: "
+        },
+        {
+          "l": 21.47,
+          "t": 6.99,
+          "w": 40.81,
+          "h": 1.27,
+          "text": "Conversational balance checks and transfers."
+        },
+        {
+          "l": 6.08,
+          "t": 12.71,
+          "w": 31.11,
+          "h": 1.62,
+          "text": "10. Digital Marketing Analytics:"
+        },
+        {
+          "l": 5.94,
+          "t": 16.19,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.97,
+          "t": 18.22,
+          "w": 85.02,
+          "h": 1.62,
+          "text": "Digital marketing analytics is the practice of collecting and analysing data from digital"
+        },
+        {
+          "l": 5.99,
+          "t": 20.25,
+          "w": 68.87,
+          "h": 1.62,
+          "text": "channels to evaluate campaign performance and guide marketing decisions."
+        },
+        {
+          "l": 5.94,
+          "t": 24.77,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 29.4,
+          "t": 64.56,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 33.94,
+          "t": 64.56,
+          "w": 33.68,
+          "h": 1.61,
+          "text": "Digital Marketing Analytics Pipeline"
+        },
+        {
+          "l": 5.94,
+          "t": 67.85,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.97,
+          "t": 69.87,
+          "w": 85.06,
+          "h": 1.62,
+          "text": "Data from website, social, email, and ad channels is tracked, processed into KPIs and"
+        },
+        {
+          "l": 5.98,
+          "t": 71.9,
+          "w": 84.99,
+          "h": 1.62,
+          "text": "dashboards, and interpreted through a funnel (awareness, interest, conversion, loyalty) to see"
+        },
+        {
+          "l": 5.9,
+          "t": 73.93,
+          "w": 33.75,
+          "h": 1.62,
+          "text": "where customers convert or drop off."
+        },
+        {
+          "l": 5.92,
+          "t": 78.43,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 82.6,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 81.94,
+          "w": 17.74,
+          "h": 1.25,
+          "text": "Measurable ROI: "
+        },
+        {
+          "l": 29.64,
+          "t": 81.94,
+          "w": 57.72,
+          "h": 1.61,
+          "text": "Every marketing spend can be traced to clicks, leads, and sales."
+        },
+        {
+          "l": 8.93,
+          "t": 85.39,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 84.73,
+          "w": 23.58,
+          "h": 1.6,
+          "text": "Real-time optimisation: "
+        },
+        {
+          "l": 35.46,
+          "t": 84.72,
+          "w": 48.8,
+          "h": 1.62,
+          "text": "Underperforming campaigns can be adjusted quickly."
+        },
+        {
+          "l": 8.93,
+          "t": 88.18,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 87.52,
+          "w": 19.95,
+          "h": 1.62,
+          "text": "Granular targeting: "
+        },
+        {
+          "l": 31.92,
+          "t": 87.51,
+          "w": 54.62,
+          "h": 1.62,
+          "text": "Reveals exactly which segments and channels perform best."
+        },
+        {
+          "l": 5.94,
+          "t": 91.77,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 95.92,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 95.25,
+          "w": 20.54,
+          "h": 1.63,
+          "text": "Data fragmentation: "
+        },
+        {
+          "l": 32.45,
+          "t": 95.25,
+          "w": 56.87,
+          "h": 1.62,
+          "text": "Combining data across many platforms is technically difficult. Dhrupesh Sir | SBIS Module 4 Notes"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "ining data across many pla\r\nDhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_015.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_015.webp",
+      "text": "\u2022 Privacy restrictions: Cookie and tracking limits reduce data granularity.\r\n\u2022 Attribution complexity: Hard to credit the correct channel when customers use several\r\nbefore buying.\r\nExamples:\r\n\u2022 Example 1: A/B testing two ad versions and scaling up the better-performing one.\r\n\u2022 Example 2: Spotting checkout drop-off and simplifying that page in response.\r\nApplications:\r\n\u2022 Campaign tracking: Measuring ad and email performance.\r\n\u2022 Website analytics: Understanding visitor behaviour and drop-off.\r\n\u2022 Budget optimisation: Allocating spend to the best-performing channels.\r\n11. Recommendation Systems (Amazon, Netflix and Similar Platforms):\r\nDefinition:\r\nA recommendation system analyses past user behaviour - purchases, ratings, views - to predict\r\nand suggest items a user is likely to want, personalising the experience for each individual.\r\nDiagram:\r\nFig: Recommendation System Architecture\r\nExplanation:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 4.22,
+          "w": 20.39,
+          "h": 1.61,
+          "text": "Privacy restrictions: "
+        },
+        {
+          "l": 32.32,
+          "t": 4.22,
+          "w": 46.27,
+          "h": 1.61,
+          "text": "Cookie and tracking limits reduce data granularity."
+        },
+        {
+          "l": 8.93,
+          "t": 7.66,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.8,
+          "t": 7.01,
+          "w": 23.53,
+          "h": 1.61,
+          "text": "Attribution complexity: "
+        },
+        {
+          "l": 35.42,
+          "t": 7.01,
+          "w": 55.7,
+          "h": 1.24,
+          "text": "Hard to credit the correct channel when customers use several"
+        },
+        {
+          "l": 11.78,
+          "t": 9.02,
+          "w": 13.18,
+          "h": 1.62,
+          "text": "before buying."
+        },
+        {
+          "l": 5.94,
+          "t": 13.29,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 17.44,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 16.78,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.5,
+          "t": 16.76,
+          "w": 63.62,
+          "h": 1.62,
+          "text": "A/B testing two ad versions and scaling up the better-performing one."
+        },
+        {
+          "l": 8.93,
+          "t": 20.23,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 19.57,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.63,
+          "t": 19.55,
+          "w": 59.82,
+          "h": 1.62,
+          "text": "Spotting checkout drop-off and simplifying that page in response."
+        },
+        {
+          "l": 5.92,
+          "t": 23.82,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 27.97,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 27.31,
+          "w": 20.21,
+          "h": 1.62,
+          "text": "Campaign tracking: "
+        },
+        {
+          "l": 32.18,
+          "t": 27.29,
+          "w": 34.5,
+          "h": 1.62,
+          "text": "Measuring ad and email performance."
+        },
+        {
+          "l": 8.93,
+          "t": 30.76,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.81,
+          "t": 30.1,
+          "w": 18.38,
+          "h": 1.61,
+          "text": "Website analytics: "
+        },
+        {
+          "l": 30.25,
+          "t": 30.08,
+          "w": 42.03,
+          "h": 1.62,
+          "text": "Understanding visitor behaviour and drop-off."
+        },
+        {
+          "l": 8.93,
+          "t": 33.55,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 32.89,
+          "w": 21.05,
+          "h": 1.62,
+          "text": "Budget optimisation: "
+        },
+        {
+          "l": 32.9,
+          "t": 32.87,
+          "w": 45.53,
+          "h": 1.62,
+          "text": "Allocating spend to the best-performing channels."
+        },
+        {
+          "l": 6.08,
+          "t": 38.58,
+          "w": 69.66,
+          "h": 1.62,
+          "text": "11. Recommendation Systems (Amazon, Netflix and Similar Platforms):"
+        },
+        {
+          "l": 5.94,
+          "t": 42.07,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.92,
+          "t": 44.12,
+          "w": 85.23,
+          "h": 1.61,
+          "text": "A recommendation system analyses past user behaviour - purchases, ratings, views - to predict"
+        },
+        {
+          "l": 5.98,
+          "t": 46.14,
+          "w": 82.79,
+          "h": 1.62,
+          "text": "and suggest items a user is likely to want, personalising the experience for each individual."
+        },
+        {
+          "l": 5.94,
+          "t": 50.65,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 28.61,
+          "t": 89.21,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 33.15,
+          "t": 89.21,
+          "w": 35.27,
+          "h": 1.61,
+          "text": "Recommendation System Architecture"
+        },
+        {
+          "l": 5.94,
+          "t": 92.5,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_016.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_016.webp",
+      "text": "Content-based filtering matches items to a user's own past preferences, while collaborative\r\nfiltering matches users with similar behaviour to each other; most large platforms combine\r\nboth into a hybrid engine that ranks final suggestions.\r\nAdvantages / Benefits:\r\n\u2022 Increased sales/engagement: Relevant suggestions drive additional purchases or\r\nwatch time.\r\n\u2022 Better discovery: Surfaces niche items a user might otherwise never find.\r\n\u2022 Automatic personalisation: Scales individually tailored suggestions to millions of\r\nusers.\r\nDisadvantages / Limitations:\r\n\u2022 Cold-start problem: Hard to recommend well for new users or new items with no\r\nhistory.\r\n\u2022 Filter bubble: Can over-narrow variety by repeating similar suggestions.\r\n\u2022 Popularity bias: Tends to favour already-popular items over new ones.\r\nExamples:\r\n\u2022 Example 1: Amazon showing 'customers who bought this also bought' suggestions.\r\n\u2022 Example 2: Netflix showing a personalised homepage that differs per subscriber.\r\nApplications:\r\n\u2022 E-commerce: Suggesting related or complementary products.\r\n\u2022 Streaming: Personalising watch/listen recommendations.\r\n\u2022 Advertising: Targeting ads based on predicted interest.\r\n12. Case Studies on Modern E-Commerce Platforms:\r\nDefinition:\r\nCase studies on modern e-commerce platforms examine how real businesses combine e\ufffecommerce, payments, CRM, and recommendations into working, profitable systems.\r\nDiagram:\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 5.99,
+          "t": 4.2,
+          "w": 84.93,
+          "h": 1.62,
+          "text": "Content-based filtering matches items to a user's own past preferences, while collaborative"
+        },
+        {
+          "l": 5.97,
+          "t": 6.23,
+          "w": 84.95,
+          "h": 1.62,
+          "text": "filtering matches users with similar behaviour to each other; most large platforms combine"
+        },
+        {
+          "l": 5.9,
+          "t": 8.26,
+          "w": 48.92,
+          "h": 1.62,
+          "text": "both into a hybrid engine that ranks final suggestions."
+        },
+        {
+          "l": 5.92,
+          "t": 12.76,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 16.93,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.86,
+          "t": 16.27,
+          "w": 28.12,
+          "h": 1.62,
+          "text": "Increased sales/engagement: "
+        },
+        {
+          "l": 41.5,
+          "t": 16.27,
+          "w": 49.6,
+          "h": 1.61,
+          "text": "Relevant suggestions drive additional purchases or"
+        },
+        {
+          "l": 11.78,
+          "t": 18.31,
+          "w": 10.5,
+          "h": 1.25,
+          "text": "watch time."
+        },
+        {
+          "l": 8.93,
+          "t": 21.76,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 21.1,
+          "w": 17.22,
+          "h": 1.61,
+          "text": "Better discovery: "
+        },
+        {
+          "l": 29.21,
+          "t": 21.08,
+          "w": 50.41,
+          "h": 1.62,
+          "text": "Surfaces niche items a user might otherwise never find."
+        },
+        {
+          "l": 8.93,
+          "t": 24.55,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.8,
+          "t": 23.89,
+          "w": 26.64,
+          "h": 1.6,
+          "text": "Automatic personalisation: "
+        },
+        {
+          "l": 39.79,
+          "t": 23.87,
+          "w": 51.31,
+          "h": 1.62,
+          "text": "Scales individually tailored suggestions to millions of"
+        },
+        {
+          "l": 11.81,
+          "t": 26.31,
+          "w": 5.09,
+          "h": 0.86,
+          "text": "users."
+        },
+        {
+          "l": 5.94,
+          "t": 30.17,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 34.32,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 33.66,
+          "w": 20.63,
+          "h": 1.6,
+          "text": "Cold-start problem: "
+        },
+        {
+          "l": 32.61,
+          "t": 33.64,
+          "w": 58.41,
+          "h": 1.26,
+          "text": "Hard to recommend well for new users or new items with no"
+        },
+        {
+          "l": 11.8,
+          "t": 35.69,
+          "w": 6.75,
+          "h": 1.61,
+          "text": "history."
+        },
+        {
+          "l": 8.93,
+          "t": 39.14,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 38.48,
+          "w": 14.05,
+          "h": 1.25,
+          "text": "Filter bubble: "
+        },
+        {
+          "l": 25.98,
+          "t": 38.48,
+          "w": 52.88,
+          "h": 1.61,
+          "text": "Can over-narrow variety by repeating similar suggestions."
+        },
+        {
+          "l": 8.93,
+          "t": 41.93,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 41.27,
+          "w": 16.22,
+          "h": 1.61,
+          "text": "Popularity bias: "
+        },
+        {
+          "l": 28.09,
+          "t": 41.26,
+          "w": 49.19,
+          "h": 1.62,
+          "text": "Tends to favour already-popular items over new ones."
+        },
+        {
+          "l": 5.94,
+          "t": 45.52,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 49.67,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 49.01,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.5,
+          "t": 49.01,
+          "w": 64.85,
+          "h": 1.61,
+          "text": "Amazon showing 'customers who bought this also bought' suggestions."
+        },
+        {
+          "l": 8.93,
+          "t": 52.46,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 51.8,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.54,
+          "t": 51.79,
+          "w": 62.69,
+          "h": 1.62,
+          "text": "Netflix showing a personalised homepage that differs per subscriber."
+        },
+        {
+          "l": 5.92,
+          "t": 56.05,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 60.2,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 59.61,
+          "w": 13.6,
+          "h": 1.18,
+          "text": "E-commerce: "
+        },
+        {
+          "l": 25.59,
+          "t": 59.54,
+          "w": 42.92,
+          "h": 1.61,
+          "text": "Suggesting related or complementary products."
+        },
+        {
+          "l": 8.93,
+          "t": 62.99,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 62.33,
+          "w": 11.37,
+          "h": 1.62,
+          "text": "Streaming: "
+        },
+        {
+          "l": 23.35,
+          "t": 62.33,
+          "w": 41.1,
+          "h": 1.61,
+          "text": "Personalising watch/listen recommendations."
+        },
+        {
+          "l": 8.93,
+          "t": 65.78,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.8,
+          "t": 65.12,
+          "w": 12.74,
+          "h": 1.62,
+          "text": "Advertising: "
+        },
+        {
+          "l": 24.59,
+          "t": 65.12,
+          "w": 37.88,
+          "h": 1.61,
+          "text": "Targeting ads based on predicted interest."
+        },
+        {
+          "l": 6.08,
+          "t": 70.81,
+          "w": 51.36,
+          "h": 1.27,
+          "text": "12. Case Studies on Modern E-Commerce Platforms:"
+        },
+        {
+          "l": 5.94,
+          "t": 74.3,
+          "w": 10.29,
+          "h": 1.27,
+          "text": "Definition:"
+        },
+        {
+          "l": 5.99,
+          "t": 76.34,
+          "w": 84.98,
+          "h": 1.62,
+          "text": "Case studies on modern e-commerce platforms examine how real businesses combine e\u0002"
+        },
+        {
+          "l": 5.99,
+          "t": 78.37,
+          "w": 77.4,
+          "h": 1.62,
+          "text": "commerce, payments, CRM, and recommendations into working, profitable systems."
+        },
+        {
+          "l": 5.94,
+          "t": 82.89,
+          "w": 9.15,
+          "h": 1.62,
+          "text": "Diagram:"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_017.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_017.webp",
+      "text": "Fig: Case Study Comparison - Amazon, Netflix and Flipkart/Alibaba\r\nExplanation:\r\nAmazon combines B2C/B2B marketplace with collaborative-filtering recommendations and\r\nstrong logistics; Netflix relies on subscription video with a hybrid recommender driving most\r\nviewing; Flipkart and Alibaba show large-scale marketplaces adapted to local logistics and\r\npayment needs.\r\nAdvantages / Benefits:\r\n\u2022 Practical insight: Shows how theory translates into real competitive advantage.\r\n\u2022 Benchmarking: Gives newer businesses proven patterns to learn from.\r\n\u2022 Regional adaptation lessons: Shows how strategy must adapt to local markets.\r\nDisadvantages / Limitations:\r\n\u2022 Limited transferability: Strategies at massive scale may not suit smaller businesses.\r\n\u2022 Quick to date: Fast-changing platforms make case details go stale quickly.\r\n\u2022 Survivorship bias: Only successes are studied, not the many similar failures.\r\nExamples:\r\n\u2022 Example 1: Amazon Prime bundling delivery and streaming to build customer lock-in.\r\n\u2022 Example 2: Flipkart scaling infrastructure massively for its annual sale event.\r\nApplications:\r\n\u2022 Strategy education: Teaching real applications of digital-commerce concepts. Dhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 16.85,
+          "t": 39.92,
+          "w": 4.47,
+          "h": 1.62,
+          "text": "Fig: "
+        },
+        {
+          "l": 21.42,
+          "t": 39.9,
+          "w": 58.78,
+          "h": 1.62,
+          "text": "Case Study Comparison - Amazon, Netflix and Flipkart/Alibaba"
+        },
+        {
+          "l": 5.94,
+          "t": 43.21,
+          "w": 12.46,
+          "h": 1.6,
+          "text": "Explanation:"
+        },
+        {
+          "l": 5.92,
+          "t": 45.23,
+          "w": 85.13,
+          "h": 1.62,
+          "text": "Amazon combines B2C/B2B marketplace with collaborative-filtering recommendations and"
+        },
+        {
+          "l": 5.99,
+          "t": 47.26,
+          "w": 85.13,
+          "h": 1.62,
+          "text": "strong logistics; Netflix relies on subscription video with a hybrid recommender driving most"
+        },
+        {
+          "l": 5.9,
+          "t": 49.31,
+          "w": 85.07,
+          "h": 1.61,
+          "text": "viewing; Flipkart and Alibaba show large-scale marketplaces adapted to local logistics and"
+        },
+        {
+          "l": 5.94,
+          "t": 51.34,
+          "w": 14.03,
+          "h": 1.61,
+          "text": "payment needs."
+        },
+        {
+          "l": 5.92,
+          "t": 55.83,
+          "w": 21.62,
+          "h": 1.63,
+          "text": "Advantages / Benefits:"
+        },
+        {
+          "l": 8.93,
+          "t": 59.99,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 59.34,
+          "w": 17.23,
+          "h": 1.62,
+          "text": "Practical insight: "
+        },
+        {
+          "l": 29.21,
+          "t": 59.34,
+          "w": 55.8,
+          "h": 1.61,
+          "text": "Shows how theory translates into real competitive advantage."
+        },
+        {
+          "l": 8.93,
+          "t": 62.78,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 62.13,
+          "w": 15.77,
+          "h": 1.62,
+          "text": "Benchmarking: "
+        },
+        {
+          "l": 27.7,
+          "t": 62.11,
+          "w": 49.27,
+          "h": 1.62,
+          "text": "Gives newer businesses proven patterns to learn from."
+        },
+        {
+          "l": 8.93,
+          "t": 65.57,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 64.92,
+          "w": 28.35,
+          "h": 1.62,
+          "text": "Regional adaptation lessons: "
+        },
+        {
+          "l": 40.34,
+          "t": 64.92,
+          "w": 44.39,
+          "h": 1.61,
+          "text": "Shows how strategy must adapt to local markets."
+        },
+        {
+          "l": 5.94,
+          "t": 69.16,
+          "w": 27.7,
+          "h": 1.62,
+          "text": "Disadvantages / Limitations:"
+        },
+        {
+          "l": 8.93,
+          "t": 73.31,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 72.64,
+          "w": 23.7,
+          "h": 1.62,
+          "text": "Limited transferability: "
+        },
+        {
+          "l": 35.69,
+          "t": 72.66,
+          "w": 53.95,
+          "h": 1.61,
+          "text": "Strategies at massive scale may not suit smaller businesses."
+        },
+        {
+          "l": 8.93,
+          "t": 76.1,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 75.45,
+          "w": 14.43,
+          "h": 1.51,
+          "text": "Quick to date: "
+        },
+        {
+          "l": 26.4,
+          "t": 75.43,
+          "w": 54.23,
+          "h": 1.62,
+          "text": "Fast-changing platforms make case details go stale quickly."
+        },
+        {
+          "l": 8.93,
+          "t": 78.9,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 78.24,
+          "w": 18.43,
+          "h": 1.6,
+          "text": "Survivorship bias: "
+        },
+        {
+          "l": 30.44,
+          "t": 78.22,
+          "w": 52.18,
+          "h": 1.62,
+          "text": "Only successes are studied, not the many similar failures."
+        },
+        {
+          "l": 5.94,
+          "t": 82.49,
+          "w": 10.04,
+          "h": 1.6,
+          "text": "Examples:"
+        },
+        {
+          "l": 8.93,
+          "t": 86.64,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 85.98,
+          "w": 11.57,
+          "h": 1.6,
+          "text": "Example 1: "
+        },
+        {
+          "l": 23.41,
+          "t": 85.98,
+          "w": 67.63,
+          "h": 1.61,
+          "text": "Amazon Prime bundling delivery and streaming to build customer lock-in."
+        },
+        {
+          "l": 8.93,
+          "t": 89.43,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 88.77,
+          "w": 11.65,
+          "h": 1.6,
+          "text": "Example 2: "
+        },
+        {
+          "l": 23.54,
+          "t": 88.75,
+          "w": 59.5,
+          "h": 1.62,
+          "text": "Flipkart scaling infrastructure massively for its annual sale event."
+        },
+        {
+          "l": 5.92,
+          "t": 93.02,
+          "w": 12.86,
+          "h": 1.6,
+          "text": "Applications:"
+        },
+        {
+          "l": 8.93,
+          "t": 97.17,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.9,
+          "t": 96.51,
+          "w": 19.56,
+          "h": 1.62,
+          "text": "Strategy education: "
+        },
+        {
+          "l": 31.52,
+          "t": 96.49,
+          "w": 52.21,
+          "h": 1.62,
+          "text": "Teaching real applications of digital-commerce concepts. Dhrupesh Sir | SBIS Module 4 Notes"
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "ng real applications of dig\r\nDhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/slide_018.webp",
+      "thumb": "/slides/sbis_sbis_sbis_4_sbis_4_pdf/thumb_018.webp",
+      "text": "\u2022 Competitive benchmarking: Identifying gaps versus competitors.\r\n\u2022 Market entry planning: Guiding adaptation when entering new regions.\r\nDhrupesh Sir | SBIS Module 4 Notes",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 8.93,
+          "t": 4.87,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.89,
+          "t": 4.22,
+          "w": 27.95,
+          "h": 1.62,
+          "text": "Competitive benchmarking: "
+        },
+        {
+          "l": 39.95,
+          "t": 4.2,
+          "w": 33.03,
+          "h": 1.62,
+          "text": "Identifying gaps versus competitors."
+        },
+        {
+          "l": 8.93,
+          "t": 7.66,
+          "w": 0.39,
+          "h": 0.3,
+          "text": "\u2022 "
+        },
+        {
+          "l": 11.82,
+          "t": 7.01,
+          "w": 23.65,
+          "h": 1.62,
+          "text": "Market entry planning: "
+        },
+        {
+          "l": 35.58,
+          "t": 7.01,
+          "w": 43.18,
+          "h": 1.61,
+          "text": "Guiding adaptation when entering new regions."
+        },
+        {
+          "l": 38.4,
+          "t": 96.43,
+          "w": 23.17,
+          "h": 1.03,
+          "text": "Dhrupesh Sir | SBIS Module 4 Notes"
+        }
+      ]
+    }
+  ]
+}

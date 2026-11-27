@@ -1,0 +1,6828 @@
+{
+  "mtime": 1795751401.4537158,
+  "aspectRatio": 0.77,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_001.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_001.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nModule: 2\r\nData Management, Business Intelligence and AI Analytics\r\n2.1 Database Management Systems, Data Warehousing and Big \r\nData\r\nWhat is Data Management?\r\nDefinition: Data management is the process of collecting, storing, \r\norganizing, protecting, and maintaining an organization's data so that it \r\nis accurate, available, and usable for business operations and decision\ufffemaking.\r\n\u2022 Good data management ensures data quality, security, accessibility, \r\nand compliance with regulations (e.g., data privacy laws).\r\n\u2022 Poor data management leads to duplicate, inconsistent, or unreliable \r\ndata, which weakens business decisions.\r\nDatabase Management System (DBMS)\r\n\u2022 Definition: A Database Management System (DBMS) is software \r\nthat allows organizations to create, store, organize, retrieve, and \r\nmanage data in an efficient, secure, and reliable way.\r\n\u2022 A DBMS acts as an interface between the user/application and the \r\nphysical database, so users do not need to know how data is actually \r\nstored on disk.\r\n\u2022 It supports data creation, insertion, updation, deletion, and querying \r\nusing languages such as SQL (Structured Query Language).\r\n\u2022 Key functions of a DBMS: \r\n\u25e6 Data storage, retrieval, and update.\r\n\u25e6 Enforcing data integrity and consistency rules (constraints, keys, \r\nrelationships).\r\n\u25e6 Providing security through authentication, authorization, and \r\naccess control.\r\n\u25e6 Supporting concurrent multi-user access without conflicts \r\n(concurrency control).",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 44.34,
+          "t": 9.57,
+          "w": 11.24,
+          "h": 1.4,
+          "text": "Module: 2"
+        },
+        {
+          "l": 17.69,
+          "t": 12.26,
+          "w": 64.52,
+          "h": 1.81,
+          "text": "Data Management, Business Intelligence and AI Analytics"
+        },
+        {
+          "l": 11.83,
+          "t": 16.63,
+          "w": 71.34,
+          "h": 1.81,
+          "text": "2.1 Database Management Systems, Data Warehousing and Big "
+        },
+        {
+          "l": 11.8,
+          "t": 19.0,
+          "w": 5.31,
+          "h": 1.35,
+          "text": "Data"
+        },
+        {
+          "l": 11.79,
+          "t": 22.66,
+          "w": 31.07,
+          "h": 1.81,
+          "text": "What is Data Management?"
+        },
+        {
+          "l": 11.8,
+          "t": 25.66,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 24.56,
+          "t": 25.63,
+          "w": 57.24,
+          "h": 1.85,
+          "text": "Data management is the process of collecting, storing, "
+        },
+        {
+          "l": 11.86,
+          "t": 27.96,
+          "w": 28.74,
+          "h": 1.85,
+          "text": "organizing, protecting, and "
+        },
+        {
+          "l": 40.66,
+          "t": 27.96,
+          "w": 46.05,
+          "h": 1.85,
+          "text": "maintaining an organization's data so that it "
+        },
+        {
+          "l": 11.84,
+          "t": 30.27,
+          "w": 72.7,
+          "h": 1.84,
+          "text": "is accurate, available, and usable for business operations and decision"
+        },
+        {
+          "l": 84.77,
+          "t": 31.15,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 11.79,
+          "t": 32.6,
+          "w": 8.33,
+          "h": 1.85,
+          "text": "making."
+        },
+        {
+          "l": 13.68,
+          "t": 36.17,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.98,
+          "t": 35.69,
+          "w": 71.2,
+          "h": 1.85,
+          "text": "Good data management ensures data quality, security, accessibility, "
+        },
+        {
+          "l": 15.98,
+          "t": 38.0,
+          "w": 60.08,
+          "h": 1.85,
+          "text": "and compliance with regulations (e.g., data privacy laws)."
+        },
+        {
+          "l": 13.68,
+          "t": 41.32,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.93,
+          "t": 40.91,
+          "w": 3.92,
+          "h": 1.37,
+          "text": "Poo"
+        },
+        {
+          "l": 19.95,
+          "t": 40.85,
+          "w": 67.8,
+          "h": 1.85,
+          "text": "r data management leads to duplicate, inconsistent, or unreliable "
+        },
+        {
+          "l": 15.98,
+          "t": 43.15,
+          "w": 41.94,
+          "h": 1.75,
+          "text": "data, which weakens business decisions."
+        },
+        {
+          "l": 11.8,
+          "t": 46.94,
+          "w": 44.03,
+          "h": 1.81,
+          "text": "Database Management System (DBMS)"
+        },
+        {
+          "l": 13.68,
+          "t": 50.35,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 49.91,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 28.66,
+          "t": 49.88,
+          "w": 57.15,
+          "h": 1.85,
+          "text": "A Database Management System (DBMS) is software "
+        },
+        {
+          "l": 15.92,
+          "t": 52.21,
+          "w": 55.6,
+          "h": 1.85,
+          "text": "that allows organizations to create, store, organize, re"
+        },
+        {
+          "l": 71.66,
+          "t": 52.21,
+          "w": 11.71,
+          "h": 1.75,
+          "text": "trieve, and "
+        },
+        {
+          "l": 15.91,
+          "t": 54.52,
+          "w": 55.26,
+          "h": 1.85,
+          "text": "manage data in an efficient, secure, and reliable way."
+        },
+        {
+          "l": 13.68,
+          "t": 57.84,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 57.37,
+          "w": 69.82,
+          "h": 1.84,
+          "text": "A DBMS acts as an interface between the user/application and the "
+        },
+        {
+          "l": 15.88,
+          "t": 59.7,
+          "w": 72.08,
+          "h": 1.85,
+          "text": "physical database, so users do not need to know how data is actually "
+        },
+        {
+          "l": 16.02,
+          "t": 62.0,
+          "w": 15.03,
+          "h": 1.44,
+          "text": "stored on disk."
+        },
+        {
+          "l": 13.68,
+          "t": 65.33,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.96,
+          "t": 64.85,
+          "w": 38.19,
+          "h": 1.84,
+          "text": "It supports data creation, insertion, u"
+        },
+        {
+          "l": 54.17,
+          "t": 64.85,
+          "w": 33.22,
+          "h": 1.85,
+          "text": "pdation, deletion, and querying "
+        },
+        {
+          "l": 15.89,
+          "t": 67.16,
+          "w": 62.44,
+          "h": 1.85,
+          "text": "using languages such as SQL (Structured Query Language)."
+        },
+        {
+          "l": 13.68,
+          "t": 70.48,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 70.04,
+          "w": 29.95,
+          "h": 1.81,
+          "text": "Key functions of a DBMS: "
+        },
+        {
+          "l": 17.8,
+          "t": 73.27,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 72.79,
+          "w": 36.28,
+          "h": 1.85,
+          "text": "Data storage, retrieval, and update."
+        },
+        {
+          "l": 17.8,
+          "t": 76.12,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.06,
+          "t": 75.64,
+          "w": 68.07,
+          "h": 1.85,
+          "text": "Enforcing data integrity and consistency rules (constraints, keys, "
+        },
+        {
+          "l": 20.02,
+          "t": 77.95,
+          "w": 14.68,
+          "h": 1.84,
+          "text": "relationships)."
+        },
+        {
+          "l": 17.8,
+          "t": 81.27,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 80.8,
+          "w": 21.86,
+          "h": 1.85,
+          "text": "Providing security th"
+        },
+        {
+          "l": 41.99,
+          "t": 80.8,
+          "w": 42.34,
+          "h": 1.85,
+          "text": "rough authentication, authorization, and "
+        },
+        {
+          "l": 20.1,
+          "t": 83.1,
+          "w": 15.11,
+          "h": 1.44,
+          "text": "access control."
+        },
+        {
+          "l": 17.8,
+          "t": 86.42,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.17,
+          "t": 85.95,
+          "w": 29.37,
+          "h": 1.85,
+          "text": "Supporting concurrent multi"
+        },
+        {
+          "l": 49.77,
+          "t": 86.83,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 50.53,
+          "t": 85.95,
+          "w": 30.63,
+          "h": 1.44,
+          "text": "user access without conflicts "
+        },
+        {
+          "l": 20.12,
+          "t": 88.25,
+          "w": 23.05,
+          "h": 1.85,
+          "text": "(concurrency control)."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_002.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_002.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\n\u25e6 Backup and recovery in case of system failure.\r\nACID Properties of a DBMS Transaction\r\n\u2022 Atomicity: A transaction is treated as a single, indivisible unit \u2014 it \r\neither completes fully or not at all.\r\n\u2022 Consistency: A transaction takes the database from one valid state \r\nto another, preserving all defined rules.\r\n\u2022 Isolation: Concurrent transactions do not interfere with each other; \r\neach executes as if it were alone.\r\n\u2022 Durability: Once a transaction is committed, its changes are \r\npermanent, even after a system failure.\r\nTypes of Databases\r\nType Description Example\r\nRelational \r\n(RDBMS)\r\nStores data in structured tables with \r\nrows and columns; uses SQL.\r\nMySQL, Oracle, \r\nPostgreSQL\r\nNoSQL / Non\uffferelational\r\nStores unstructured or semi-structured \r\ndata; flexible schema.\r\nMongoDB, \r\nCassandra\r\nDistributed \r\nDatabase\r\nData is stored across multiple physical \r\nlocations/servers. Google Spanner\r\nCloud Database Hosted and managed on a cloud \r\nplatform, accessed over the internet.\r\nAmazon RDS, \r\nAzure SQL\r\nIn-memory \r\nDatabase\r\nStores data in RAM for very fast \r\nread/write speeds.\r\nRedis, SAP \r\nHANA\r\nData Warehousing\r\n\u2022 Definition: A Data Warehouse is a large, centralized repository that \r\nstores integrated data collected from multiple operational sources, \r\ndesigned specifically to support reporting, analysis, and decision\ufffemaking rather than day-to-day transactions.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 17.8,
+          "t": 9.98,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 9.5,
+          "w": 48.67,
+          "h": 1.85,
+          "text": "Backup and recovery in case of system failure."
+        },
+        {
+          "l": 11.79,
+          "t": 13.29,
+          "w": 46.03,
+          "h": 1.81,
+          "text": "ACID Properties of a DBMS Transaction"
+        },
+        {
+          "l": 13.68,
+          "t": 16.74,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 16.3,
+          "w": 12.54,
+          "h": 1.81,
+          "text": "Atomicity: "
+        },
+        {
+          "l": 28.5,
+          "t": 16.26,
+          "w": 21.66,
+          "h": 1.44,
+          "text": "A transaction is treat"
+        },
+        {
+          "l": 50.31,
+          "t": 16.26,
+          "w": 31.59,
+          "h": 1.85,
+          "text": "ed as a single, indivisible unit "
+        },
+        {
+          "l": 81.93,
+          "t": 17.14,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 85.28,
+          "t": 16.26,
+          "w": 2.03,
+          "h": 1.42,
+          "text": "it "
+        },
+        {
+          "l": 15.99,
+          "t": 18.57,
+          "w": 35.76,
+          "h": 1.85,
+          "text": "either completes fully or not at all."
+        },
+        {
+          "l": 13.68,
+          "t": 21.89,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.0,
+          "t": 21.45,
+          "w": 14.81,
+          "h": 1.81,
+          "text": "Consistency: "
+        },
+        {
+          "l": 30.86,
+          "t": 21.42,
+          "w": 55.57,
+          "h": 1.44,
+          "text": "A transaction takes the database from one valid state "
+        },
+        {
+          "l": 15.92,
+          "t": 23.72,
+          "w": 40.76,
+          "h": 1.85,
+          "text": "to another, preserving all defined rules."
+        },
+        {
+          "l": 13.68,
+          "t": 27.04,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 26.6,
+          "w": 11.22,
+          "h": 1.4,
+          "text": "Isolation: "
+        },
+        {
+          "l": 27.24,
+          "t": 26.57,
+          "w": 59.68,
+          "h": 1.75,
+          "text": "Concurrent transactions do not interfere with each other; "
+        },
+        {
+          "l": 15.99,
+          "t": 29.35,
+          "w": 2.2,
+          "h": 0.96,
+          "text": "ea"
+        },
+        {
+          "l": 18.29,
+          "t": 28.87,
+          "w": 31.68,
+          "h": 1.44,
+          "text": "ch executes as if it were alone."
+        },
+        {
+          "l": 13.68,
+          "t": 32.2,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 31.75,
+          "w": 13.12,
+          "h": 1.81,
+          "text": "Durability: "
+        },
+        {
+          "l": 29.16,
+          "t": 31.72,
+          "w": 50.89,
+          "h": 1.85,
+          "text": "Once a transaction is committed, its changes are "
+        },
+        {
+          "l": 15.88,
+          "t": 34.02,
+          "w": 40.37,
+          "h": 1.85,
+          "text": "permanent, even after a system failure."
+        },
+        {
+          "l": 11.86,
+          "t": 37.82,
+          "w": 21.31,
+          "h": 1.81,
+          "text": "Types of Databases"
+        },
+        {
+          "l": 12.73,
+          "t": 41.43,
+          "w": 5.51,
+          "h": 1.78,
+          "text": "Type "
+        },
+        {
+          "l": 33.93,
+          "t": 41.39,
+          "w": 12.83,
+          "h": 1.81,
+          "text": "Description "
+        },
+        {
+          "l": 78.08,
+          "t": 41.43,
+          "w": 9.75,
+          "h": 1.78,
+          "text": "Example"
+        },
+        {
+          "l": 12.68,
+          "t": 44.72,
+          "w": 11.35,
+          "h": 1.44,
+          "text": "Relational "
+        },
+        {
+          "l": 12.74,
+          "t": 47.06,
+          "w": 10.73,
+          "h": 1.84,
+          "text": "(RDBMS)"
+        },
+        {
+          "l": 34.06,
+          "t": 44.72,
+          "w": 37.87,
+          "h": 1.44,
+          "text": "Stores data in structured tables with "
+        },
+        {
+          "l": 33.91,
+          "t": 47.06,
+          "w": 20.39,
+          "h": 1.75,
+          "text": "rows and columns; "
+        },
+        {
+          "l": 54.34,
+          "t": 47.1,
+          "w": 10.5,
+          "h": 1.77,
+          "text": "uses SQL."
+        },
+        {
+          "l": 78.07,
+          "t": 44.72,
+          "w": 18.05,
+          "h": 1.85,
+          "text": "MySQL, Oracle, "
+        },
+        {
+          "l": 78.07,
+          "t": 47.1,
+          "w": 12.67,
+          "h": 1.81,
+          "text": "PostgreSQL"
+        },
+        {
+          "l": 12.6,
+          "t": 50.45,
+          "w": 14.66,
+          "h": 1.8,
+          "text": "NoSQL / Non"
+        },
+        {
+          "l": 27.41,
+          "t": 51.33,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 12.65,
+          "t": 52.79,
+          "w": 9.83,
+          "h": 1.44,
+          "text": "relational"
+        },
+        {
+          "l": 34.06,
+          "t": 50.45,
+          "w": 28.44,
+          "h": 1.44,
+          "text": "Stores unstructured or semi"
+        },
+        {
+          "l": 62.72,
+          "t": 51.33,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 63.6,
+          "t": 50.45,
+          "w": 10.95,
+          "h": 1.44,
+          "text": "structured "
+        },
+        {
+          "l": 33.98,
+          "t": 52.79,
+          "w": 22.6,
+          "h": 1.75,
+          "text": "data; flexible schema."
+        },
+        {
+          "l": 78.07,
+          "t": 50.52,
+          "w": 12.49,
+          "h": 1.78,
+          "text": "MongoDB, "
+        },
+        {
+          "l": 78.12,
+          "t": 52.79,
+          "w": 10.67,
+          "h": 1.44,
+          "text": "Cassandra"
+        },
+        {
+          "l": 12.68,
+          "t": 56.18,
+          "w": 12.4,
+          "h": 1.44,
+          "text": "Distributed "
+        },
+        {
+          "l": 12.68,
+          "t": 58.49,
+          "w": 9.51,
+          "h": 1.44,
+          "text": "Database"
+        },
+        {
+          "l": 33.94,
+          "t": 56.18,
+          "w": 40.86,
+          "h": 1.85,
+          "text": "Data is stored across multiple physical "
+        },
+        {
+          "l": 33.97,
+          "t": 58.49,
+          "w": 17.91,
+          "h": 1.44,
+          "text": "locations/servers. "
+        },
+        {
+          "l": 78.12,
+          "t": 57.34,
+          "w": 16.86,
+          "h": 1.85,
+          "text": "Google Spanner"
+        },
+        {
+          "l": 12.73,
+          "t": 63.06,
+          "w": 16.48,
+          "h": 1.44,
+          "text": "Cloud Database "
+        },
+        {
+          "l": 33.94,
+          "t": 61.88,
+          "w": 34.07,
+          "h": 1.85,
+          "text": "Hosted and managed on a cloud "
+        },
+        {
+          "l": 33.89,
+          "t": 64.21,
+          "w": 37.7,
+          "h": 1.84,
+          "text": "platform, accessed over the internet."
+        },
+        {
+          "l": 78.05,
+          "t": 61.92,
+          "w": 15.88,
+          "h": 1.71,
+          "text": "Amazon RDS, "
+        },
+        {
+          "l": 78.05,
+          "t": 64.25,
+          "w": 11.91,
+          "h": 1.77,
+          "text": "Azure SQL"
+        },
+        {
+          "l": 12.7,
+          "t": 67.68,
+          "w": 2.06,
+          "h": 1.34,
+          "text": "In"
+        },
+        {
+          "l": 14.9,
+          "t": 68.49,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 15.68,
+          "t": 68.09,
+          "w": 9.34,
+          "h": 1.37,
+          "text": "memory "
+        },
+        {
+          "l": 12.68,
+          "t": 69.95,
+          "w": 9.51,
+          "h": 1.44,
+          "text": "Database"
+        },
+        {
+          "l": 34.06,
+          "t": 67.61,
+          "w": 34.74,
+          "h": 1.85,
+          "text": "Stores data in RAM for very fast "
+        },
+        {
+          "l": 33.91,
+          "t": 69.95,
+          "w": 18.67,
+          "h": 1.84,
+          "text": "read/write speeds."
+        },
+        {
+          "l": 78.07,
+          "t": 67.61,
+          "w": 12.64,
+          "h": 1.75,
+          "text": "Redis, SAP "
+        },
+        {
+          "l": 78.07,
+          "t": 69.98,
+          "w": 7.46,
+          "h": 1.39,
+          "text": "HANA"
+        },
+        {
+          "l": 11.8,
+          "t": 76.61,
+          "w": 20.9,
+          "h": 1.81,
+          "text": "Data Warehousing"
+        },
+        {
+          "l": 13.68,
+          "t": 80.03,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 79.59,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 28.66,
+          "t": 79.55,
+          "w": 43.3,
+          "h": 1.85,
+          "text": "A Data Warehouse is a large, centralized "
+        },
+        {
+          "l": 72.04,
+          "t": 79.55,
+          "w": 15.8,
+          "h": 1.85,
+          "text": "repository that "
+        },
+        {
+          "l": 16.02,
+          "t": 81.89,
+          "w": 69.46,
+          "h": 1.85,
+          "text": "stores integrated data collected from multiple operational sources, "
+        },
+        {
+          "l": 15.98,
+          "t": 84.22,
+          "w": 67.47,
+          "h": 1.85,
+          "text": "designed specifically to support reporting, analysis, and decision"
+        },
+        {
+          "l": 83.67,
+          "t": 85.1,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 15.91,
+          "t": 86.52,
+          "w": 24.15,
+          "h": 1.85,
+          "text": "making rather than day"
+        },
+        {
+          "l": 40.16,
+          "t": 87.4,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 40.94,
+          "t": 86.73,
+          "w": 1.94,
+          "h": 1.23,
+          "text": "to"
+        },
+        {
+          "l": 43.07,
+          "t": 87.4,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 43.91,
+          "t": 86.52,
+          "w": 17.3,
+          "h": 1.85,
+          "text": "day transactions."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_003.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_003.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nAccording to Bill Inmon, a data warehouse has four defining \r\ncharacteristics:\r\n\u2022 Subject-oriented \u2013 organized around key business subjects such as \r\nsales, customers, or products rather than around applications.\r\n\u2022 Integrated \u2013 data from different sources is made consistent in \r\nnaming, format, and units.\r\n\u2022 Time-variant \u2013 data is stored with a time dimension, allowing trend \r\nand historical analysis.\r\n\u2022 Non-volatile \u2013 once data enters the warehouse, it is not changed or \r\ndeleted; it is only added to.\r\nFig 2.1: Three-tier Data Warehouse Architecture \u2014 data flows from \r\noperational sources through ETL into a central warehouse, and finally \r\ninto subject-specific data marts used by end users.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.79,
+          "t": 9.53,
+          "w": 64.18,
+          "h": 1.85,
+          "text": "According to Bill Inmon, a data warehouse has four defining "
+        },
+        {
+          "l": 11.86,
+          "t": 12.34,
+          "w": 0.99,
+          "h": 0.96,
+          "text": "c"
+        },
+        {
+          "l": 12.96,
+          "t": 11.87,
+          "w": 14.29,
+          "h": 1.44,
+          "text": "haracteristics:"
+        },
+        {
+          "l": 13.68,
+          "t": 15.41,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.06,
+          "t": 14.93,
+          "w": 7.7,
+          "h": 1.85,
+          "text": "Subject"
+        },
+        {
+          "l": 23.88,
+          "t": 15.81,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 24.72,
+          "t": 14.93,
+          "w": 9.11,
+          "h": 1.44,
+          "text": "oriented \u2013 "
+        },
+        {
+          "l": 33.83,
+          "t": 15.81,
+          "w": 1.36,
+          "h": 0.08,
+          "text": "\u2013 "
+        },
+        {
+          "l": 35.9,
+          "t": 14.93,
+          "w": 50.07,
+          "h": 1.85,
+          "text": "organized around key business subjects such as "
+        },
+        {
+          "l": 16.02,
+          "t": 17.23,
+          "w": 63.55,
+          "h": 1.84,
+          "text": "sales, customers, or products rather than around applications."
+        },
+        {
+          "l": 13.68,
+          "t": 20.56,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.96,
+          "t": 20.08,
+          "w": 11.17,
+          "h": 1.85,
+          "text": "Integrated "
+        },
+        {
+          "l": 27.13,
+          "t": 20.96,
+          "w": 1.36,
+          "h": 0.08,
+          "text": "\u2013 "
+        },
+        {
+          "l": 29.2,
+          "t": 20.08,
+          "w": 51.26,
+          "h": 1.44,
+          "text": "data from different sources is made consistent in "
+        },
+        {
+          "l": 15.91,
+          "t": 22.39,
+          "w": 27.37,
+          "h": 1.85,
+          "text": "naming, format, and units."
+        },
+        {
+          "l": 13.68,
+          "t": 25.71,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.97,
+          "t": 25.24,
+          "w": 5.37,
+          "h": 1.44,
+          "text": "Time"
+        },
+        {
+          "l": 21.49,
+          "t": 26.12,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 22.26,
+          "t": 25.24,
+          "w": 7.96,
+          "h": 1.44,
+          "text": "variant \u2013 "
+        },
+        {
+          "l": 30.19,
+          "t": 26.12,
+          "w": 1.36,
+          "h": 0.08,
+          "text": "\u2013 "
+        },
+        {
+          "l": 32.26,
+          "t": 25.24,
+          "w": 5.59,
+          "h": 1.44,
+          "text": "data i"
+        },
+        {
+          "l": 38.07,
+          "t": 25.24,
+          "w": 48.95,
+          "h": 1.85,
+          "text": "s stored with a time dimension, allowing trend "
+        },
+        {
+          "l": 15.98,
+          "t": 27.54,
+          "w": 23.58,
+          "h": 1.85,
+          "text": "and historical analysis."
+        },
+        {
+          "l": 13.68,
+          "t": 30.86,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.86,
+          "t": 30.45,
+          "w": 4.51,
+          "h": 1.37,
+          "text": "Non"
+        },
+        {
+          "l": 20.51,
+          "t": 31.27,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 21.28,
+          "t": 30.39,
+          "w": 8.44,
+          "h": 1.44,
+          "text": "volatile \u2013 "
+        },
+        {
+          "l": 29.72,
+          "t": 31.27,
+          "w": 1.36,
+          "h": 0.08,
+          "text": "\u2013 "
+        },
+        {
+          "l": 31.83,
+          "t": 30.39,
+          "w": 54.4,
+          "h": 1.85,
+          "text": "once data enters the warehouse, it is not changed or "
+        },
+        {
+          "l": 15.98,
+          "t": 32.69,
+          "w": 28.04,
+          "h": 1.85,
+          "text": "deleted; it is only added to."
+        },
+        {
+          "l": 14.06,
+          "t": 79.58,
+          "w": 15.21,
+          "h": 1.85,
+          "text": "Fig 2.1: Three"
+        },
+        {
+          "l": 29.41,
+          "t": 80.49,
+          "w": 0.72,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 30.32,
+          "t": 79.58,
+          "w": 36.17,
+          "h": 1.44,
+          "text": "tier Data Warehouse Architecture \u2014 "
+        },
+        {
+          "l": 66.47,
+          "t": 80.46,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 69.53,
+          "t": 79.58,
+          "w": 17.02,
+          "h": 1.85,
+          "text": "data flows from "
+        },
+        {
+          "l": 12.94,
+          "t": 81.92,
+          "w": 19.71,
+          "h": 1.84,
+          "text": "operational source"
+        },
+        {
+          "l": 32.7,
+          "t": 81.92,
+          "w": 55.02,
+          "h": 1.85,
+          "text": "s through ETL into a central warehouse, and finally "
+        },
+        {
+          "l": 23.77,
+          "t": 84.22,
+          "w": 12.08,
+          "h": 1.85,
+          "text": "into subject"
+        },
+        {
+          "l": 35.88,
+          "t": 85.12,
+          "w": 0.72,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 36.66,
+          "t": 84.22,
+          "w": 39.39,
+          "h": 1.85,
+          "text": "specific data marts used by end users."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_004.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_004.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nETL Process (Extract, Transform, Load)\r\n\u2022 Extract: Data is collected/pulled from various heterogeneous source \r\nsystems such as operational databases, flat files, and external feeds.\r\n\u2022 Transform: Extracted data is cleaned, validated, standardized (e.g., \r\ndate formats, currency units), de-duplicated, and converted into a \r\nconsistent format suitable for analysis.\r\n\u2022 Load: The transformed data is loaded into the central data \r\nwarehouse (or data marts) for querying and reporting. Loading may \r\nbe a full load (first time) or incremental load (only new/changed \r\nrecords).\r\nOLTP vs OLAP\r\nOperational databases used for daily transactions (OLTP) are very \r\ndifferent in design and purpose from the analytical data warehouse \r\n(OLAP):\r\nParameter OLTP (Online \r\nTransaction Processing)\r\nOLAP (Online Analytical \r\nProcessing)\r\nPurpose Runs day-to-day business \r\ntransactions\r\nSupports analysis and \r\ndecision-making\r\nData Current, detailed, \r\nfrequently updated\r\nHistorical, summarized, \r\nread-mostly\r\nUsers Clerks, cashiers, front-line \r\nstaff\r\nManagers, analysts, \r\nexecutives\r\nDesign Normalized (reduces \r\nredundancy)\r\nDenormalized \r\n(star/snowflake schema)\r\nQuery type Simple, short transactions Complex, multi\ufffedimensional queries\r\nExample Bank withdrawal, order \r\nentry\r\nQuarterly sales trend \r\nanalysis",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.82,
+          "t": 9.6,
+          "w": 45.58,
+          "h": 1.78,
+          "text": "ETL Process (Extract, Transform, Load)"
+        },
+        {
+          "l": 13.68,
+          "t": 13.01,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 12.6,
+          "w": 9.89,
+          "h": 1.37,
+          "text": "Extract: "
+        },
+        {
+          "l": 25.9,
+          "t": 12.53,
+          "w": 62.53,
+          "h": 1.85,
+          "text": "Data is collected/pulled from various heterogeneous source "
+        },
+        {
+          "l": 16.02,
+          "t": 14.84,
+          "w": 44.97,
+          "h": 1.85,
+          "text": "systems such as operational databases, flat "
+        },
+        {
+          "l": 61.14,
+          "t": 14.84,
+          "w": 25.14,
+          "h": 1.75,
+          "text": "files, and external feeds."
+        },
+        {
+          "l": 13.68,
+          "t": 18.16,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.98,
+          "t": 17.72,
+          "w": 13.57,
+          "h": 1.4,
+          "text": "Transform: "
+        },
+        {
+          "l": 29.64,
+          "t": 17.69,
+          "w": 58.0,
+          "h": 1.85,
+          "text": "Extracted data is cleaned, validated, standardized (e.g., "
+        },
+        {
+          "l": 15.98,
+          "t": 20.02,
+          "w": 33.68,
+          "h": 1.85,
+          "text": "date formats, currency units), de"
+        },
+        {
+          "l": 49.85,
+          "t": 20.9,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 50.69,
+          "t": 20.02,
+          "w": 34.03,
+          "h": 1.84,
+          "text": "duplicated, and converted into a "
+        },
+        {
+          "l": 15.98,
+          "t": 22.32,
+          "w": 40.0,
+          "h": 1.85,
+          "text": "consistent format suitable for analysis."
+        },
+        {
+          "l": 13.68,
+          "t": 25.65,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 25.24,
+          "w": 7.31,
+          "h": 1.37,
+          "text": "Load: "
+        },
+        {
+          "l": 23.34,
+          "t": 25.18,
+          "w": 47.87,
+          "h": 1.44,
+          "text": "The transformed data is loaded into the centra"
+        },
+        {
+          "l": 71.36,
+          "t": 25.18,
+          "w": 6.3,
+          "h": 1.44,
+          "text": "l data "
+        },
+        {
+          "l": 15.91,
+          "t": 27.51,
+          "w": 71.27,
+          "h": 1.85,
+          "text": "warehouse (or data marts) for querying and reporting. Loading may "
+        },
+        {
+          "l": 15.89,
+          "t": 29.81,
+          "w": 67.84,
+          "h": 1.85,
+          "text": "be a full load (first time) or incremental load (only new/changed "
+        },
+        {
+          "l": 15.91,
+          "t": 32.11,
+          "w": 9.0,
+          "h": 1.84,
+          "text": "records)."
+        },
+        {
+          "l": 11.87,
+          "t": 35.94,
+          "w": 17.85,
+          "h": 1.4,
+          "text": "OLTP vs OLAP"
+        },
+        {
+          "l": 11.86,
+          "t": 38.88,
+          "w": 69.69,
+          "h": 1.85,
+          "text": "Operational databases used for daily transactions (OLTP) are very "
+        },
+        {
+          "l": 11.86,
+          "t": 41.21,
+          "w": 28.83,
+          "h": 1.85,
+          "text": "different in design and purp"
+        },
+        {
+          "l": 40.93,
+          "t": 41.21,
+          "w": 41.24,
+          "h": 1.85,
+          "text": "ose from the analytical data warehouse "
+        },
+        {
+          "l": 11.88,
+          "t": 43.54,
+          "w": 8.94,
+          "h": 1.84,
+          "text": "(OLAP):"
+        },
+        {
+          "l": 12.7,
+          "t": 48.43,
+          "w": 11.79,
+          "h": 1.37,
+          "text": "Parameter "
+        },
+        {
+          "l": 29.09,
+          "t": 47.24,
+          "w": 16.78,
+          "h": 1.78,
+          "text": "OLTP (Online "
+        },
+        {
+          "l": 29.09,
+          "t": 49.55,
+          "w": 26.77,
+          "h": 1.81,
+          "text": "Transaction Processing)"
+        },
+        {
+          "l": 60.13,
+          "t": 47.24,
+          "w": 29.01,
+          "h": 1.81,
+          "text": "OLAP (Online Analytical "
+        },
+        {
+          "l": 60.09,
+          "t": 49.55,
+          "w": 12.65,
+          "h": 1.81,
+          "text": "Processing)"
+        },
+        {
+          "l": 12.68,
+          "t": 54.13,
+          "w": 8.34,
+          "h": 1.78,
+          "text": "Purpose "
+        },
+        {
+          "l": 29.04,
+          "t": 52.88,
+          "w": 9.79,
+          "h": 1.85,
+          "text": "Runs day"
+        },
+        {
+          "l": 38.91,
+          "t": 53.76,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 39.69,
+          "t": 53.08,
+          "w": 1.94,
+          "h": 1.23,
+          "text": "to"
+        },
+        {
+          "l": 41.81,
+          "t": 53.76,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 42.65,
+          "t": 52.88,
+          "w": 13.89,
+          "h": 1.85,
+          "text": "day business "
+        },
+        {
+          "l": 29.02,
+          "t": 55.21,
+          "w": 12.38,
+          "h": 1.44,
+          "text": "transactions"
+        },
+        {
+          "l": 60.19,
+          "t": 52.88,
+          "w": 23.3,
+          "h": 1.85,
+          "text": "Supports analysis and "
+        },
+        {
+          "l": 60.11,
+          "t": 55.21,
+          "w": 8.62,
+          "h": 1.44,
+          "text": "decision"
+        },
+        {
+          "l": 68.88,
+          "t": 56.09,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 69.66,
+          "t": 55.21,
+          "w": 7.79,
+          "h": 1.85,
+          "text": "making"
+        },
+        {
+          "l": 12.68,
+          "t": 59.83,
+          "w": 4.92,
+          "h": 1.36,
+          "text": "Data "
+        },
+        {
+          "l": 29.09,
+          "t": 58.61,
+          "w": 18.78,
+          "h": 1.75,
+          "text": "Current, detailed, "
+        },
+        {
+          "l": 29.09,
+          "t": 60.94,
+          "w": 11.25,
+          "h": 1.85,
+          "text": "frequently "
+        },
+        {
+          "l": 40.37,
+          "t": 60.94,
+          "w": 8.33,
+          "h": 1.84,
+          "text": "updated"
+        },
+        {
+          "l": 60.07,
+          "t": 58.61,
+          "w": 25.65,
+          "h": 1.75,
+          "text": "Historical, summarized, "
+        },
+        {
+          "l": 60.04,
+          "t": 60.94,
+          "w": 4.48,
+          "h": 1.44,
+          "text": "read"
+        },
+        {
+          "l": 64.64,
+          "t": 61.82,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 65.42,
+          "t": 60.94,
+          "w": 7.08,
+          "h": 1.85,
+          "text": "mostly"
+        },
+        {
+          "l": 12.64,
+          "t": 65.55,
+          "w": 5.82,
+          "h": 1.37,
+          "text": "Users "
+        },
+        {
+          "l": 29.09,
+          "t": 64.34,
+          "w": 22.86,
+          "h": 1.75,
+          "text": "Clerks, cashiers, front"
+        },
+        {
+          "l": 52.09,
+          "t": 65.22,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 52.92,
+          "t": 64.34,
+          "w": 4.46,
+          "h": 1.44,
+          "text": "line "
+        },
+        {
+          "l": 29.12,
+          "t": 66.67,
+          "w": 4.81,
+          "h": 1.43,
+          "text": "staff"
+        },
+        {
+          "l": 60.07,
+          "t": 64.34,
+          "w": 21.3,
+          "h": 1.85,
+          "text": "Managers, analysts, "
+        },
+        {
+          "l": 60.12,
+          "t": 66.67,
+          "w": 10.83,
+          "h": 1.44,
+          "text": "executives"
+        },
+        {
+          "l": 12.68,
+          "t": 71.22,
+          "w": 7.34,
+          "h": 1.85,
+          "text": "Design "
+        },
+        {
+          "l": 28.96,
+          "t": 70.07,
+          "w": 22.52,
+          "h": 1.84,
+          "text": "Normalized (reduces "
+        },
+        {
+          "l": 29.01,
+          "t": 72.37,
+          "w": 12.93,
+          "h": 1.85,
+          "text": "redundancy)"
+        },
+        {
+          "l": 60.07,
+          "t": 70.07,
+          "w": 15.39,
+          "h": 1.44,
+          "text": "Denormalized "
+        },
+        {
+          "l": 60.13,
+          "t": 72.37,
+          "w": 25.26,
+          "h": 1.84,
+          "text": "(star/snowflake schema)"
+        },
+        {
+          "l": 12.72,
+          "t": 76.98,
+          "w": 11.5,
+          "h": 1.81,
+          "text": "Query type "
+        },
+        {
+          "l": 29.16,
+          "t": 76.95,
+          "w": 26.85,
+          "h": 1.84,
+          "text": "Simple, short transactions "
+        },
+        {
+          "l": 60.12,
+          "t": 75.76,
+          "w": 10.8,
+          "h": 1.84,
+          "text": "Complex, "
+        },
+        {
+          "l": 70.95,
+          "t": 75.76,
+          "w": 5.43,
+          "h": 1.44,
+          "text": "multi"
+        },
+        {
+          "l": 76.57,
+          "t": 76.64,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 60.11,
+          "t": 78.1,
+          "w": 20.79,
+          "h": 1.84,
+          "text": "dimensional queries"
+        },
+        {
+          "l": 12.69,
+          "t": 82.65,
+          "w": 9.19,
+          "h": 1.84,
+          "text": "Example "
+        },
+        {
+          "l": 29.04,
+          "t": 81.49,
+          "w": 25.33,
+          "h": 1.75,
+          "text": "Bank withdrawal, order "
+        },
+        {
+          "l": 29.09,
+          "t": 84.03,
+          "w": 5.27,
+          "h": 1.64,
+          "text": "entry"
+        },
+        {
+          "l": 60.11,
+          "t": 81.49,
+          "w": 22.34,
+          "h": 1.85,
+          "text": "Quarterly sales trend "
+        },
+        {
+          "l": 60.12,
+          "t": 83.83,
+          "w": 8.21,
+          "h": 1.85,
+          "text": "analysis"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_005.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_005.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nData Warehouse Schemas\r\n\u2022 Star Schema: A central fact table (containing measurable, \r\nquantitative business data such as sales amount) is connected \r\ndirectly to multiple dimension tables (such as product, customer, \r\ntime, and store) that provide descriptive context.\r\n\u2022 Snowflake Schema: An extension of the star schema where \r\ndimension tables are further normalized into sub-dimension tables, \r\nreducing redundancy but increasing query complexity.\r\nFig 2.2: Star Schema \u2014 a central Sales Fact table linked to Product, \r\nCustomer, Time, and Store dimension tables.\r\nData Marts\r\n\u2022 Definition: A Data Mart is a smaller, specialized subset of a data \r\nwarehouse that is focused on the needs of a specific business unit or \r\ndepartment, such as Sales, Finance, or HR.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.8,
+          "t": 9.6,
+          "w": 28.9,
+          "h": 1.4,
+          "text": "Data Warehouse Schemas"
+        },
+        {
+          "l": 13.68,
+          "t": 13.01,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.03,
+          "t": 12.57,
+          "w": 15.52,
+          "h": 1.4,
+          "text": "Star Schema: "
+        },
+        {
+          "l": 31.6,
+          "t": 12.53,
+          "w": 46.35,
+          "h": 1.85,
+          "text": "A central fact table (containing measurable, "
+        },
+        {
+          "l": 15.98,
+          "t": 14.87,
+          "w": 64.41,
+          "h": 1.84,
+          "text": "quantitative business data such as sales amount) is connected "
+        },
+        {
+          "l": 15.98,
+          "t": 17.2,
+          "w": 11.23,
+          "h": 1.85,
+          "text": "directly to "
+        },
+        {
+          "l": 27.25,
+          "t": 17.2,
+          "w": 56.91,
+          "h": 1.84,
+          "text": "multiple dimension tables (such as product, customer, "
+        },
+        {
+          "l": 15.92,
+          "t": 19.51,
+          "w": 50.44,
+          "h": 1.84,
+          "text": "time, and store) that provide descriptive context."
+        },
+        {
+          "l": 13.68,
+          "t": 22.83,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.03,
+          "t": 22.39,
+          "w": 22.34,
+          "h": 1.4,
+          "text": "Snowflake Schema: "
+        },
+        {
+          "l": 38.43,
+          "t": 22.35,
+          "w": 41.07,
+          "h": 1.44,
+          "text": "An extension of the star schema where "
+        },
+        {
+          "l": 15.98,
+          "t": 24.66,
+          "w": 50.46,
+          "h": 1.44,
+          "text": "dimension tables are further normalized into sub"
+        },
+        {
+          "l": 66.72,
+          "t": 25.54,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 67.52,
+          "t": 24.66,
+          "w": 18.86,
+          "h": 1.75,
+          "text": "dimension tables, "
+        },
+        {
+          "l": 15.91,
+          "t": 26.96,
+          "w": 30.72,
+          "h": 1.85,
+          "text": "reducing redundancy but incr"
+        },
+        {
+          "l": 46.74,
+          "t": 26.96,
+          "w": 25.97,
+          "h": 1.85,
+          "text": "easing query complexity."
+        },
+        {
+          "l": 13.83,
+          "t": 70.46,
+          "w": 22.93,
+          "h": 1.85,
+          "text": "Fig 2.2: Star Schema \u2014 "
+        },
+        {
+          "l": 36.74,
+          "t": 71.34,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 39.8,
+          "t": 70.46,
+          "w": 46.91,
+          "h": 1.66,
+          "text": "a central Sales Fact table linked to Product, "
+        },
+        {
+          "l": 26.66,
+          "t": 72.76,
+          "w": 46.57,
+          "h": 1.66,
+          "text": "Customer, Time, and Store dimension tables."
+        },
+        {
+          "l": 11.8,
+          "t": 76.59,
+          "w": 12.72,
+          "h": 1.37,
+          "text": "Data Marts"
+        },
+        {
+          "l": 13.68,
+          "t": 80.0,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 79.56,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 28.66,
+          "t": 79.52,
+          "w": 56.08,
+          "h": 1.84,
+          "text": "A Data Mart is a smaller, specialized subset of a data "
+        },
+        {
+          "l": 15.91,
+          "t": 81.83,
+          "w": 40.52,
+          "h": 1.44,
+          "text": "warehouse that is focused on the needs "
+        },
+        {
+          "l": 57.32,
+          "t": 81.83,
+          "w": 30.38,
+          "h": 1.84,
+          "text": "of a specific business unit or "
+        },
+        {
+          "l": 15.98,
+          "t": 84.13,
+          "w": 44.57,
+          "h": 1.84,
+          "text": "department, such as Sales, Finance, or HR."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_006.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_006.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\n\u2022 Data marts are faster to build and query than a full data warehouse \r\nbecause they hold a limited, focused dataset.\r\n\u2022 Dependent data mart: Sources its data directly from the central \r\ndata warehouse (top-down approach).\r\n\u2022 Independent data mart: Built directly from operational source \r\nsystems without going through a central warehouse (bottom-up \r\napproach).\r\n\u2022 Hybrid data mart: Combines inputs from both the central \r\nwarehouse and additional local operational sources.\r\nExample: A Sales Data Mart may contain only sales-related facts \r\n(revenue, units sold, region) drawn from the larger enterprise warehouse, \r\nallowing the sales team to analyze performance quickly without \r\nquerying the entire warehouse.\r\nBig Data Concepts\r\n\u2022 Definition: Big Data refers to extremely large, complex, and fast\ufffegrowing datasets that traditional data-processing software and \r\ndatabases cannot efficiently capture, store, manage, or analyze.\r\nFig 2.3: The 5 V's of Big Data \u2014 Volume, Velocity, Variety, Veracity, \r\nand Value.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 13.68,
+          "t": 10.01,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.93,
+          "t": 9.53,
+          "w": 70.06,
+          "h": 1.85,
+          "text": "Data marts are faster to build and query than a full data warehouse "
+        },
+        {
+          "l": 15.89,
+          "t": 11.84,
+          "w": 46.39,
+          "h": 1.85,
+          "text": "because they hold a limited, focused dataset."
+        },
+        {
+          "l": 13.68,
+          "t": 15.16,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 14.75,
+          "w": 25.3,
+          "h": 1.78,
+          "text": "Dependent data mart: "
+        },
+        {
+          "l": 41.44,
+          "t": 14.69,
+          "w": 42.81,
+          "h": 1.85,
+          "text": "Sources its data directly from the central "
+        },
+        {
+          "l": 15.98,
+          "t": 16.99,
+          "w": 20.88,
+          "h": 1.84,
+          "text": "data warehouse (top"
+        },
+        {
+          "l": 37.1,
+          "t": 17.87,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 37.91,
+          "t": 16.99,
+          "w": 17.3,
+          "h": 1.84,
+          "text": "down approach)."
+        },
+        {
+          "l": 13.68,
+          "t": 20.31,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 19.9,
+          "w": 27.32,
+          "h": 1.78,
+          "text": "Independent data mart: "
+        },
+        {
+          "l": 43.36,
+          "t": 19.84,
+          "w": 40.03,
+          "h": 1.85,
+          "text": "Built directly from operational source "
+        },
+        {
+          "l": 16.02,
+          "t": 22.14,
+          "w": 62.48,
+          "h": 1.85,
+          "text": "systems without going through a central warehouse (bottom"
+        },
+        {
+          "l": 78.68,
+          "t": 23.02,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 79.45,
+          "t": 22.62,
+          "w": 3.28,
+          "h": 1.37,
+          "text": "up "
+        },
+        {
+          "l": 15.98,
+          "t": 24.45,
+          "w": 10.84,
+          "h": 1.84,
+          "text": "approach)."
+        },
+        {
+          "l": 13.68,
+          "t": 27.77,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 27.33,
+          "w": 21.36,
+          "h": 1.81,
+          "text": "Hybrid data mart: "
+        },
+        {
+          "l": 37.44,
+          "t": 27.3,
+          "w": 40.81,
+          "h": 1.84,
+          "text": "Combines inputs from both the central "
+        },
+        {
+          "l": 15.91,
+          "t": 29.6,
+          "w": 32.39,
+          "h": 1.44,
+          "text": "warehouse and additional local "
+        },
+        {
+          "l": 49.13,
+          "t": 29.6,
+          "w": 20.6,
+          "h": 1.84,
+          "text": "operational sources."
+        },
+        {
+          "l": 11.82,
+          "t": 32.45,
+          "w": 54.36,
+          "h": 1.85,
+          "text": "Example: A Sales Data Mart may contain only sales"
+        },
+        {
+          "l": 66.48,
+          "t": 33.33,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 67.25,
+          "t": 32.45,
+          "w": 13.37,
+          "h": 1.44,
+          "text": "related facts "
+        },
+        {
+          "l": 11.88,
+          "t": 34.78,
+          "w": 76.82,
+          "h": 1.85,
+          "text": "(revenue, units sold, region) drawn from the larger enterprise warehouse, "
+        },
+        {
+          "l": 11.86,
+          "t": 37.12,
+          "w": 67.29,
+          "h": 1.85,
+          "text": "allowing the sales team to analyze performance quickly without "
+        },
+        {
+          "l": 11.86,
+          "t": 39.45,
+          "w": 31.92,
+          "h": 1.85,
+          "text": "querying the entire warehouse."
+        },
+        {
+          "l": 11.82,
+          "t": 43.18,
+          "w": 2.41,
+          "h": 1.38,
+          "text": "Bi"
+        },
+        {
+          "l": 14.34,
+          "t": 43.18,
+          "w": 18.1,
+          "h": 1.81,
+          "text": "g Data Concepts"
+        },
+        {
+          "l": 13.68,
+          "t": 46.63,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 46.18,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 28.64,
+          "t": 46.15,
+          "w": 55.4,
+          "h": 1.85,
+          "text": "Big Data refers to extremely large, complex, and fast"
+        },
+        {
+          "l": 84.22,
+          "t": 47.03,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 15.97,
+          "t": 48.48,
+          "w": 38.53,
+          "h": 1.85,
+          "text": "growing datasets that traditional data"
+        },
+        {
+          "l": 54.68,
+          "t": 49.36,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 55.39,
+          "t": 48.48,
+          "w": 25.93,
+          "h": 1.85,
+          "text": "processing software and "
+        },
+        {
+          "l": 15.98,
+          "t": 50.79,
+          "w": 65.59,
+          "h": 1.85,
+          "text": "databases cannot efficiently capture, store, manage, or analyze."
+        },
+        {
+          "l": 13.43,
+          "t": 79.13,
+          "w": 32.34,
+          "h": 1.85,
+          "text": "Fig 2.3: The 5 V's of Big Data "
+        },
+        {
+          "l": 45.8,
+          "t": 80.01,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 49.13,
+          "t": 79.13,
+          "w": 12.48,
+          "h": 1.66,
+          "text": "Volume, Vel"
+        },
+        {
+          "l": 61.67,
+          "t": 79.2,
+          "w": 25.46,
+          "h": 1.78,
+          "text": "ocity, Variety, Veracity, "
+        },
+        {
+          "l": 44.39,
+          "t": 81.43,
+          "w": 10.99,
+          "h": 1.44,
+          "text": "and Value."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_007.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_007.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\n\u2022 Volume: The sheer scale of data generated every day \u2014 from \r\nterabytes to zettabytes \u2014 by social media, sensors, transactions, and \r\ndevices.\r\n\u2022 Velocity: The speed at which new data is generated and must be \r\nprocessed, often in real time (e.g., stock trades, IoT sensor streams, \r\nUPI transactions).\r\n\u2022 Variety: Data exists in structured (tables), semi-structured (XML, \r\nJSON), and unstructured (images, video, social posts) forms.\r\n\u2022 Veracity: The trustworthiness, accuracy, and quality of the data \u2014\r\nnoisy, incomplete, or biased data reduces the value of analysis.\r\n\u2022 Value: The ultimate business usefulness that can be extracted from \r\nthe data through analytics \u2014 data is only \"big\" data if it can be \r\nturned into insight.\r\nBig Data Technologies\r\n\u2022 Hadoop: An open-source framework that allows distributed storage \r\n(HDFS) and processing (MapReduce) of very large datasets across \r\nclusters of commodity computers.\r\n\u2022 Apache Spark: An in-memory, distributed data-processing engine \r\nthat is significantly faster than traditional MapReduce for iterative \r\nanalytics and machine learning.\r\n\u2022 NoSQL databases: Databases such as MongoDB and Cassandra \r\ndesigned to handle unstructured or semi-structured Big Data at scale.\r\nCase studies: Amazon analyzes clickstream and purchase data at\r\nmassive scale to power personalized product recommendations; Netflix \r\nprocesses viewing data across hundreds of millions of users worldwide \r\nto personalize content and design new shows; Indian digital enterprises \r\nsuch as UPI-based payment platforms process billions of real-time \r\ntransactions daily, requiring high-velocity Big Data infrastructure.\r\n2.2 Business Intelligence (BI), Data Visualization, and AI Analytics\r\nFrom Data to Wisdom: The DIKW Pyramid",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 13.68,
+          "t": 10.01,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 9.6,
+          "w": 10.19,
+          "h": 1.37,
+          "text": "Volume: "
+        },
+        {
+          "l": 26.2,
+          "t": 9.53,
+          "w": 46.15,
+          "h": 1.85,
+          "text": "The sheer scale of data generated every day "
+        },
+        {
+          "l": 72.4,
+          "t": 10.41,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 75.82,
+          "t": 9.53,
+          "w": 5.62,
+          "h": 1.43,
+          "text": "from "
+        },
+        {
+          "l": 15.92,
+          "t": 11.84,
+          "w": 23.83,
+          "h": 1.85,
+          "text": "terabytes to zettabytes "
+        },
+        {
+          "l": 39.76,
+          "t": 12.72,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 43.07,
+          "t": 11.84,
+          "w": 44.93,
+          "h": 1.85,
+          "text": "by social media, sensors, transactions, and "
+        },
+        {
+          "l": 15.98,
+          "t": 14.14,
+          "w": 8.22,
+          "h": 1.44,
+          "text": "devices."
+        },
+        {
+          "l": 13.68,
+          "t": 17.47,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 17.02,
+          "w": 10.66,
+          "h": 1.81,
+          "text": "Velocity: "
+        },
+        {
+          "l": 26.68,
+          "t": 16.99,
+          "w": 57.26,
+          "h": 1.85,
+          "text": "The speed at which new data is generated and must be "
+        },
+        {
+          "l": 15.88,
+          "t": 19.32,
+          "w": 18.3,
+          "h": 1.84,
+          "text": "processed, often i"
+        },
+        {
+          "l": 34.3,
+          "t": 19.32,
+          "w": 52.48,
+          "h": 1.85,
+          "text": "n real time (e.g., stock trades, IoT sensor streams, "
+        },
+        {
+          "l": 15.9,
+          "t": 21.63,
+          "w": 18.68,
+          "h": 1.84,
+          "text": "UPI transactions)."
+        },
+        {
+          "l": 13.68,
+          "t": 24.95,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 24.51,
+          "w": 9.96,
+          "h": 1.81,
+          "text": "Variety: "
+        },
+        {
+          "l": 25.94,
+          "t": 24.48,
+          "w": 39.85,
+          "h": 1.84,
+          "text": "Data exists in structured (tables), semi"
+        },
+        {
+          "l": 66.01,
+          "t": 25.36,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 66.9,
+          "t": 24.48,
+          "w": 18.94,
+          "h": 1.84,
+          "text": "structured (XML, "
+        },
+        {
+          "l": 15.95,
+          "t": 26.78,
+          "w": 63.39,
+          "h": 1.85,
+          "text": "JSON), and unstructured (images, video, social posts) forms."
+        },
+        {
+          "l": 13.68,
+          "t": 30.11,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 29.66,
+          "w": 11.09,
+          "h": 1.81,
+          "text": "Veracity: "
+        },
+        {
+          "l": 27.11,
+          "t": 29.63,
+          "w": 47.59,
+          "h": 1.85,
+          "text": "The trustworthiness, accuracy, and quality of "
+        },
+        {
+          "l": 74.8,
+          "t": 29.63,
+          "w": 8.86,
+          "h": 1.44,
+          "text": "the data "
+        },
+        {
+          "l": 83.66,
+          "t": 30.51,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014"
+        },
+        {
+          "l": 15.91,
+          "t": 31.93,
+          "w": 65.55,
+          "h": 1.85,
+          "text": "noisy, incomplete, or biased data reduces the value of analysis."
+        },
+        {
+          "l": 13.68,
+          "t": 35.26,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 34.85,
+          "w": 8.08,
+          "h": 1.37,
+          "text": "Value: "
+        },
+        {
+          "l": 24.09,
+          "t": 34.78,
+          "w": 62.77,
+          "h": 1.44,
+          "text": "The ultimate business usefulness that can be extracted from "
+        },
+        {
+          "l": 15.92,
+          "t": 37.12,
+          "w": 27.55,
+          "h": 1.85,
+          "text": "the data through analytics "
+        },
+        {
+          "l": 43.49,
+          "t": 38.0,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 46.85,
+          "t": 37.12,
+          "w": 35.47,
+          "h": 1.85,
+          "text": "data is only \"big\" data if it can be "
+        },
+        {
+          "l": 15.92,
+          "t": 39.42,
+          "w": 19.6,
+          "h": 1.85,
+          "text": "turned into insight."
+        },
+        {
+          "l": 11.82,
+          "t": 43.21,
+          "w": 24.85,
+          "h": 1.81,
+          "text": "Big Data Technologies"
+        },
+        {
+          "l": 13.68,
+          "t": 46.63,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 46.22,
+          "w": 5.99,
+          "h": 1.37,
+          "text": "Hado"
+        },
+        {
+          "l": 22.1,
+          "t": 46.61,
+          "w": 4.2,
+          "h": 1.39,
+          "text": "op: "
+        },
+        {
+          "l": 26.35,
+          "t": 46.19,
+          "w": 8.88,
+          "h": 1.81,
+          "text": "An open"
+        },
+        {
+          "l": 35.37,
+          "t": 47.03,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 36.26,
+          "t": 46.15,
+          "w": 51.46,
+          "h": 1.85,
+          "text": "source framework that allows distributed storage "
+        },
+        {
+          "l": 16.0,
+          "t": 48.48,
+          "w": 70.38,
+          "h": 1.85,
+          "text": "(HDFS) and processing (MapReduce) of very large datasets across "
+        },
+        {
+          "l": 15.98,
+          "t": 50.79,
+          "w": 35.31,
+          "h": 1.85,
+          "text": "clusters of commodity computers."
+        },
+        {
+          "l": 13.68,
+          "t": 54.11,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 53.67,
+          "w": 17.37,
+          "h": 1.81,
+          "text": "Apache Spark: "
+        },
+        {
+          "l": 33.37,
+          "t": 53.64,
+          "w": 5.83,
+          "h": 1.41,
+          "text": "An in"
+        },
+        {
+          "l": 39.34,
+          "t": 54.52,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 40.12,
+          "t": 53.64,
+          "w": 26.17,
+          "h": 1.85,
+          "text": "memory, distributed data"
+        },
+        {
+          "l": 66.44,
+          "t": 54.52,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 67.15,
+          "t": 53.64,
+          "w": 19.47,
+          "h": 1.85,
+          "text": "processing engine "
+        },
+        {
+          "l": 15.92,
+          "t": 55.97,
+          "w": 33.0,
+          "h": 1.85,
+          "text": "that is significantly faster than t"
+        },
+        {
+          "l": 48.98,
+          "t": 55.97,
+          "w": 36.81,
+          "h": 1.84,
+          "text": "raditional MapReduce for iterative "
+        },
+        {
+          "l": 15.98,
+          "t": 58.28,
+          "w": 32.82,
+          "h": 1.85,
+          "text": "analytics and machine learning."
+        },
+        {
+          "l": 13.68,
+          "t": 61.6,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.93,
+          "t": 61.16,
+          "w": 21.46,
+          "h": 1.74,
+          "text": "NoSQL databases: "
+        },
+        {
+          "l": 37.47,
+          "t": 61.12,
+          "w": 47.09,
+          "h": 1.85,
+          "text": "Databases such as MongoDB and Cassandra "
+        },
+        {
+          "l": 15.98,
+          "t": 63.43,
+          "w": 41.56,
+          "h": 1.85,
+          "text": "designed to handle unstructured or semi"
+        },
+        {
+          "l": 57.77,
+          "t": 64.31,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 58.66,
+          "t": 63.43,
+          "w": 29.18,
+          "h": 1.85,
+          "text": "structured Big Data at scale."
+        },
+        {
+          "l": 11.86,
+          "t": 66.28,
+          "w": 67.41,
+          "h": 1.85,
+          "text": "Case studies: Amazon analyzes clickstream and purchase data at"
+        },
+        {
+          "l": 11.79,
+          "t": 68.58,
+          "w": 75.29,
+          "h": 1.84,
+          "text": "massive scale to power personalized product recommendations; Netflix "
+        },
+        {
+          "l": 11.76,
+          "t": 70.92,
+          "w": 74.88,
+          "h": 1.85,
+          "text": "processes viewing data across hundreds of millions of users worldwide "
+        },
+        {
+          "l": 11.79,
+          "t": 73.25,
+          "w": 75.0,
+          "h": 1.85,
+          "text": "to personalize content and design new shows; Indian digital enterprises "
+        },
+        {
+          "l": 11.9,
+          "t": 75.55,
+          "w": 12.32,
+          "h": 1.44,
+          "text": "such as UPI"
+        },
+        {
+          "l": 24.35,
+          "t": 76.43,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 25.1,
+          "t": 75.55,
+          "w": 35.46,
+          "h": 1.85,
+          "text": "based payment platforms process "
+        },
+        {
+          "l": 60.61,
+          "t": 75.55,
+          "w": 15.18,
+          "h": 1.44,
+          "text": "billions of real"
+        },
+        {
+          "l": 75.94,
+          "t": 76.43,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 76.72,
+          "t": 75.55,
+          "w": 5.29,
+          "h": 1.44,
+          "text": "time "
+        },
+        {
+          "l": 11.79,
+          "t": 77.89,
+          "w": 34.49,
+          "h": 1.85,
+          "text": "transactions daily, requiring high"
+        },
+        {
+          "l": 46.48,
+          "t": 78.77,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 47.25,
+          "t": 77.89,
+          "w": 33.56,
+          "h": 1.85,
+          "text": "velocity Big Data infrastructure."
+        },
+        {
+          "l": 11.83,
+          "t": 82.31,
+          "w": 74.24,
+          "h": 1.81,
+          "text": "2.2 Business Intelligence (BI), Data Visualization, and AI Analytics"
+        },
+        {
+          "l": 11.83,
+          "t": 85.98,
+          "w": 49.38,
+          "h": 1.81,
+          "text": "From Data to Wisdom: The DIKW Pyramid"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_008.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_008.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nBefore understanding BI, it helps to see how raw facts are progressively \r\nrefined into business wisdom:\r\nFig 2.4: The DIKW Pyramid \u2014 Data, Information, Knowledge, and \r\nWisdom.\r\n\u2022 Data: Raw, unprocessed facts and figures (e.g., a list of transaction \r\namounts).\r\n\u2022 Information: Data that has been organized and given context (e.g., \r\ntotal sales per month).\r\n\u2022 Knowledge: Understanding the patterns and relationships within \r\ninformation (e.g., sales peak every festive season).\r\n\u2022 Wisdom: Applying knowledge with judgement to make sound \r\ndecisions (e.g., increasing festive-season inventory in advance).\r\nBusiness Intelligence (BI)\r\n\u2022 Definition: Business Intelligence refers to the technologies, \r\napplications, and practices used to collect, integrate, analyze, and \r\npresent business data to support better organizational decision\ufffemaking.\r\n\u2022 BI converts raw operational data into meaningful information \r\nthrough reporting, dashboards, and analysis.\r\n\u2022 Goal: help managers and executives make faster, fact-based \r\ndecisions instead of relying on intuition alone.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.81,
+          "t": 9.53,
+          "w": 60.47,
+          "h": 1.85,
+          "text": "Before understanding BI, it helps to see how raw facts are "
+        },
+        {
+          "l": 73.08,
+          "t": 9.53,
+          "w": 14.66,
+          "h": 1.85,
+          "text": "progressively "
+        },
+        {
+          "l": 11.78,
+          "t": 11.87,
+          "w": 31.07,
+          "h": 1.44,
+          "text": "refined into business wisdom:"
+        },
+        {
+          "l": 14.45,
+          "t": 40.06,
+          "w": 30.7,
+          "h": 1.85,
+          "text": "Fig 2.4: The DIKW Pyramid "
+        },
+        {
+          "l": 45.17,
+          "t": 40.94,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 48.1,
+          "t": 40.06,
+          "w": 38.0,
+          "h": 1.85,
+          "text": "Data, Information, Knowledge, and "
+        },
+        {
+          "l": 45.79,
+          "t": 42.36,
+          "w": 8.45,
+          "h": 1.44,
+          "text": "Wisdom."
+        },
+        {
+          "l": 13.68,
+          "t": 46.44,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 46.03,
+          "w": 6.89,
+          "h": 1.37,
+          "text": "Data: "
+        },
+        {
+          "l": 22.84,
+          "t": 45.97,
+          "w": 64.08,
+          "h": 1.85,
+          "text": "Raw, unprocessed facts and figures (e.g., a list of transaction "
+        },
+        {
+          "l": 15.98,
+          "t": 48.27,
+          "w": 10.13,
+          "h": 1.84,
+          "text": "amounts)."
+        },
+        {
+          "l": 13.68,
+          "t": 51.6,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 51.15,
+          "w": 15.14,
+          "h": 1.4,
+          "text": "Information: "
+        },
+        {
+          "l": 31.15,
+          "t": 51.12,
+          "w": 49.32,
+          "h": 1.85,
+          "text": "Data that has been organized and given context "
+        },
+        {
+          "l": 81.32,
+          "t": 51.12,
+          "w": 5.84,
+          "h": 1.85,
+          "text": "(e.g., "
+        },
+        {
+          "l": 15.92,
+          "t": 53.42,
+          "w": 23.02,
+          "h": 1.84,
+          "text": "total sales per month)."
+        },
+        {
+          "l": 13.68,
+          "t": 56.75,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 56.34,
+          "w": 13.96,
+          "h": 1.78,
+          "text": "Knowledge: "
+        },
+        {
+          "l": 29.95,
+          "t": 56.27,
+          "w": 54.53,
+          "h": 1.85,
+          "text": "Understanding the patterns and relationships within "
+        },
+        {
+          "l": 15.97,
+          "t": 58.58,
+          "w": 52.55,
+          "h": 1.85,
+          "text": "information (e.g., sales peak every festive season)."
+        },
+        {
+          "l": 13.68,
+          "t": 61.9,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 61.46,
+          "w": 10.74,
+          "h": 1.4,
+          "text": "Wisdom: "
+        },
+        {
+          "l": 26.74,
+          "t": 61.42,
+          "w": 55.49,
+          "h": 1.85,
+          "text": "Applying knowledge with judgement to make sound "
+        },
+        {
+          "l": 15.98,
+          "t": 63.73,
+          "w": 34.55,
+          "h": 1.85,
+          "text": "decisions (e.g., increasing festive"
+        },
+        {
+          "l": 50.72,
+          "t": 64.61,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 51.6,
+          "t": 63.73,
+          "w": 17.51,
+          "h": 1.85,
+          "text": "season inventory "
+        },
+        {
+          "l": 69.83,
+          "t": 63.73,
+          "w": 12.54,
+          "h": 1.84,
+          "text": "in advance)."
+        },
+        {
+          "l": 11.82,
+          "t": 67.52,
+          "w": 28.19,
+          "h": 1.81,
+          "text": "Business Intelligence (BI)"
+        },
+        {
+          "l": 13.68,
+          "t": 70.97,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 70.52,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 28.64,
+          "t": 70.49,
+          "w": 50.52,
+          "h": 1.85,
+          "text": "Business Intelligence refers to the technologies, "
+        },
+        {
+          "l": 15.98,
+          "t": 72.79,
+          "w": 68.77,
+          "h": 1.85,
+          "text": "applications, and practices used to collect, integrate, analyze, and "
+        },
+        {
+          "l": 15.88,
+          "t": 75.13,
+          "w": 64.78,
+          "h": 1.85,
+          "text": "present business data to support better organizational decision"
+        },
+        {
+          "l": 80.88,
+          "t": 76.01,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 15.91,
+          "t": 77.43,
+          "w": 8.33,
+          "h": 1.85,
+          "text": "making."
+        },
+        {
+          "l": 13.68,
+          "t": 80.76,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.93,
+          "t": 80.35,
+          "w": 12.72,
+          "h": 1.37,
+          "text": "BI converts "
+        },
+        {
+          "l": 28.69,
+          "t": 80.28,
+          "w": 52.24,
+          "h": 1.85,
+          "text": "raw operational data into meaningful information "
+        },
+        {
+          "l": 15.92,
+          "t": 82.58,
+          "w": 45.97,
+          "h": 1.85,
+          "text": "through reporting, dashboards, and analysis."
+        },
+        {
+          "l": 13.68,
+          "t": 85.91,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.98,
+          "t": 85.43,
+          "w": 55.62,
+          "h": 1.85,
+          "text": "Goal: help managers and executives make faster, fact"
+        },
+        {
+          "l": 71.78,
+          "t": 86.31,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 72.53,
+          "t": 85.43,
+          "w": 6.62,
+          "h": 1.44,
+          "text": "based "
+        },
+        {
+          "l": 15.98,
+          "t": 87.74,
+          "w": 48.11,
+          "h": 1.85,
+          "text": "decisions instead of relying on intuition alone."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_009.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_009.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nFig 2.5: The Business Intelligence Process Cycle \u2014 from data collection \r\nto decision-making.\r\n\u2022 Key components of a BI system: \r\n\u25e6 Data sources (operational systems, warehouses, external data).\r\n\u25e6 ETL tools to integrate and clean data.\r\n\u25e6 OLAP (Online Analytical Processing) engines for \r\nmultidimensional analysis.\r\n\u25e6 Reporting and dashboard tools for presenting insights.\r\n\u2022 Benefits of BI: \r\n\u25e6 Faster, evidence-based decision-making.\r\n\u25e6 Improved operational efficiency by identifying bottlenecks.\r\n\u25e6 Better understanding of customers and market trends.\r\n\u25e6 Competitive advantage through timely insights.\r\nOLAP Operations",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.83,
+          "t": 45.18,
+          "w": 52.02,
+          "h": 1.85,
+          "text": "Fig 2.5: The Business Intelligence Process Cycle "
+        },
+        {
+          "l": 63.88,
+          "t": 46.06,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 66.43,
+          "t": 45.18,
+          "w": 1.69,
+          "h": 1.85,
+          "text": "fr"
+        },
+        {
+          "l": 67.69,
+          "t": 45.18,
+          "w": 21.05,
+          "h": 1.43,
+          "text": "from data collection "
+        },
+        {
+          "l": 39.81,
+          "t": 47.48,
+          "w": 11.21,
+          "h": 1.43,
+          "text": "to decision"
+        },
+        {
+          "l": 51.23,
+          "t": 48.39,
+          "w": 0.72,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 52.06,
+          "t": 47.48,
+          "w": 7.98,
+          "h": 1.85,
+          "text": "making."
+        },
+        {
+          "l": 13.68,
+          "t": 51.57,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 51.13,
+          "w": 36.33,
+          "h": 1.81,
+          "text": "Key components of a BI system: "
+        },
+        {
+          "l": 17.8,
+          "t": 54.35,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 53.88,
+          "w": 65.16,
+          "h": 1.85,
+          "text": "Data sources (operational systems, warehouses, external data)."
+        },
+        {
+          "l": 17.8,
+          "t": 57.2,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.06,
+          "t": 56.73,
+          "w": 39.01,
+          "h": 1.85,
+          "text": "ETL tools to integrate and clean data."
+        },
+        {
+          "l": 17.8,
+          "t": 60.05,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.1,
+          "t": 59.58,
+          "w": 52.71,
+          "h": 1.85,
+          "text": "OLAP (Online Analytical Processing) engines for "
+        },
+        {
+          "l": 20.03,
+          "t": 61.88,
+          "w": 27.8,
+          "h": 1.85,
+          "text": "multidimensional analysis."
+        },
+        {
+          "l": 17.8,
+          "t": 65.17,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 64.7,
+          "w": 56.45,
+          "h": 1.85,
+          "text": "Reporting and dashboard tools for presenting insights."
+        },
+        {
+          "l": 13.68,
+          "t": 68.03,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 67.58,
+          "w": 16.74,
+          "h": 1.4,
+          "text": "Benefits of BI: "
+        },
+        {
+          "l": 17.8,
+          "t": 70.85,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 70.37,
+          "w": 16.88,
+          "h": 1.75,
+          "text": "Faster, evidence"
+        },
+        {
+          "l": 37.1,
+          "t": 71.25,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 37.86,
+          "t": 70.37,
+          "w": 15.33,
+          "h": 1.44,
+          "text": "based decision"
+        },
+        {
+          "l": 53.34,
+          "t": 71.25,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 54.12,
+          "t": 70.37,
+          "w": 8.25,
+          "h": 1.85,
+          "text": "making."
+        },
+        {
+          "l": 17.8,
+          "t": 73.66,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.07,
+          "t": 73.19,
+          "w": 62.03,
+          "h": 1.85,
+          "text": "Improved operational efficiency by identifying bottlenecks."
+        },
+        {
+          "l": 17.8,
+          "t": 76.48,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 76.01,
+          "w": 55.71,
+          "h": 1.85,
+          "text": "Better understanding of customers and market trends."
+        },
+        {
+          "l": 17.8,
+          "t": 79.33,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.1,
+          "t": 78.86,
+          "w": 34.26,
+          "h": 1.85,
+          "text": "Competitive advantage through t"
+        },
+        {
+          "l": 54.45,
+          "t": 78.86,
+          "w": 15.13,
+          "h": 1.85,
+          "text": "imely insights."
+        },
+        {
+          "l": 11.87,
+          "t": 82.65,
+          "w": 20.23,
+          "h": 1.81,
+          "text": "OLAP Operations"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_010.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_010.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nOnce data is structured as an OLAP cube (with dimensions such as \r\nProduct, Time, and Region), analysts can explore it using the following \r\noperations:\r\nFig 2.6: An OLAP Cube storing a measure (e.g., Sales) across Product, \r\nTime, and Region dimensions.\r\nFig 2.7: Key OLAP operations \u2014 Roll-up, Drill-down, Slice, Dice, and \r\nPivot.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.86,
+          "t": 9.53,
+          "w": 70.58,
+          "h": 1.84,
+          "text": "Once data is structured as an OLAP cube (with dimensions such as "
+        },
+        {
+          "l": 11.81,
+          "t": 11.84,
+          "w": 75.22,
+          "h": 1.85,
+          "text": "Product, Time, and Region), analysts can explore it using the following "
+        },
+        {
+          "l": 11.86,
+          "t": 14.17,
+          "w": 11.36,
+          "h": 1.84,
+          "text": "operations:"
+        },
+        {
+          "l": 12.37,
+          "t": 52.06,
+          "w": 75.75,
+          "h": 1.85,
+          "text": "Fig 2.6: An OLAP Cube storing a measure (e.g., Sales) across Product, "
+        },
+        {
+          "l": 34.39,
+          "t": 54.43,
+          "w": 3.79,
+          "h": 1.37,
+          "text": "Tim"
+        },
+        {
+          "l": 38.37,
+          "t": 54.36,
+          "w": 27.1,
+          "h": 1.85,
+          "text": "e, and Region dimensions."
+        },
+        {
+          "l": 12.73,
+          "t": 86.35,
+          "w": 32.89,
+          "h": 1.81,
+          "text": "Fig 2.7: Key OLAP operations \u2014 "
+        },
+        {
+          "l": 45.6,
+          "t": 87.19,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 48.55,
+          "t": 86.31,
+          "w": 4.45,
+          "h": 1.43,
+          "text": "Roll"
+        },
+        {
+          "l": 53.03,
+          "t": 87.21,
+          "w": 0.72,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 53.9,
+          "t": 86.31,
+          "w": 8.97,
+          "h": 1.84,
+          "text": "up, Drill"
+        },
+        {
+          "l": 62.91,
+          "t": 87.21,
+          "w": 0.72,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 63.76,
+          "t": 86.31,
+          "w": 24.12,
+          "h": 1.66,
+          "text": "down, Slice, Dice, and "
+        },
+        {
+          "l": 46.86,
+          "t": 88.68,
+          "w": 5.94,
+          "h": 1.37,
+          "text": "Pivot."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_011.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_011.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\n\u2022 Roll-up: Aggregates data by climbing up a concept hierarchy (e.g., \r\nsummarizing sales from city level to state level).\r\n\u2022 Drill-down: The reverse of roll-up \u2014 breaks summarized data into \r\nfiner detail (e.g., yearly sales broken into monthly sales).\r\n\u2022 Slice: Selects a single value for one dimension, creating a sub-cube \r\n(e.g., sales for only the year 2025).\r\n\u2022 Dice: Selects a sub-cube by specifying values for two or more \r\ndimensions (e.g., sales for \"Electronics\" in \"West Region\" during \r\n\"Q1\").\r\n\u2022 Pivot (Rotate): Rotates the data axes to view the cube from a \r\ndifferent perspective, useful for cross-tabulation.\r\nData Visualization\r\n\u2022 Definition: Data Visualization is the graphical representation of \r\ninformation and data using charts, graphs, maps, and dashboards, \r\nmaking patterns, trends, and outliers easier to understand at a glance.\r\n\u2022 Well-designed visualizations reduce the time needed to interpret \r\nlarge volumes of data.\r\n\u2022 Common visual forms: bar charts, line charts, pie charts, heat maps, \r\nscatter plots, and geographic maps.\r\n\u2022 Principles of good visualization: \r\n\u25e6 Choose the right chart type for the data and message \r\n\u25e6 (e.g., trend \u2192 line chart; comparison \u2192 bar chart; proportion \u2192 \r\npie chart).\r\n1. Line Chart \u2014 used to show a trend over time\r\nExample: Monthly sales.\r\nMonthly Sales Trend\r\nIllustrative sales values showing change over six months.\r\n1530456075JanFebMarAprMayJun\r\nUse: To show increase/decrease or a trend over time.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 13.68,
+          "t": 10.01,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 9.6,
+          "w": 4.61,
+          "h": 1.37,
+          "text": "Roll"
+        },
+        {
+          "l": 20.66,
+          "t": 10.37,
+          "w": 0.75,
+          "h": 0.21,
+          "text": "-"
+        },
+        {
+          "l": 21.54,
+          "t": 9.99,
+          "w": 4.34,
+          "h": 1.39,
+          "text": "up: "
+        },
+        {
+          "l": 25.91,
+          "t": 9.53,
+          "w": 60.98,
+          "h": 1.85,
+          "text": "Aggregates data by climbing up a concept hierarchy (e.g., "
+        },
+        {
+          "l": 16.02,
+          "t": 11.84,
+          "w": 50.43,
+          "h": 1.85,
+          "text": "summarizing sales from city level to state level)."
+        },
+        {
+          "l": 13.68,
+          "t": 15.16,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 14.72,
+          "w": 5.18,
+          "h": 1.38,
+          "text": "Drill"
+        },
+        {
+          "l": 21.21,
+          "t": 15.53,
+          "w": 0.75,
+          "h": 0.21,
+          "text": "-"
+        },
+        {
+          "l": 22.11,
+          "t": 14.75,
+          "w": 7.53,
+          "h": 1.37,
+          "text": "down: "
+        },
+        {
+          "l": 29.74,
+          "t": 14.69,
+          "w": 19.17,
+          "h": 1.44,
+          "text": "The reverse of roll"
+        },
+        {
+          "l": 49.07,
+          "t": 15.57,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 49.83,
+          "t": 15.16,
+          "w": 2.56,
+          "h": 1.37,
+          "text": "up "
+        },
+        {
+          "l": 53.14,
+          "t": 15.57,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 56.41,
+          "t": 14.69,
+          "w": 30.63,
+          "h": 1.44,
+          "text": "breaks summarized data into "
+        },
+        {
+          "l": 15.99,
+          "t": 16.99,
+          "w": 59.14,
+          "h": 1.85,
+          "text": "finer detail (e.g., yearly sales broken into monthly sales)."
+        },
+        {
+          "l": 13.68,
+          "t": 20.31,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.03,
+          "t": 19.87,
+          "w": 6.63,
+          "h": 1.41,
+          "text": "Slice: "
+        },
+        {
+          "l": 22.84,
+          "t": 19.84,
+          "w": 57.6,
+          "h": 1.85,
+          "text": "Selects a single value for one dimension, creating a sub"
+        },
+        {
+          "l": 80.73,
+          "t": 20.72,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 81.57,
+          "t": 19.84,
+          "w": 5.5,
+          "h": 1.44,
+          "text": "cube "
+        },
+        {
+          "l": 16.0,
+          "t": 22.14,
+          "w": 36.14,
+          "h": 1.85,
+          "text": "(e.g., sales for only the year 2025)."
+        },
+        {
+          "l": 13.68,
+          "t": 25.47,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 25.03,
+          "w": 6.46,
+          "h": 1.4,
+          "text": "Dice: "
+        },
+        {
+          "l": 22.57,
+          "t": 24.99,
+          "w": 13.21,
+          "h": 1.44,
+          "text": "Selects a sub"
+        },
+        {
+          "l": 36.0,
+          "t": 25.87,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 36.85,
+          "t": 24.99,
+          "w": 38.66,
+          "h": 1.85,
+          "text": "cube by specifying values for two or "
+        },
+        {
+          "l": 75.58,
+          "t": 25.47,
+          "w": 5.97,
+          "h": 0.96,
+          "text": "more "
+        },
+        {
+          "l": 15.98,
+          "t": 27.3,
+          "w": 68.91,
+          "h": 1.85,
+          "text": "dimensions (e.g., sales for \"Electronics\" in \"West Region\" during "
+        },
+        {
+          "l": 16.06,
+          "t": 29.6,
+          "w": 6.49,
+          "h": 1.84,
+          "text": "\"Q1\")."
+        },
+        {
+          "l": 13.68,
+          "t": 32.92,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.96,
+          "t": 32.48,
+          "w": 17.08,
+          "h": 1.78,
+          "text": "Pivot (Rotate): "
+        },
+        {
+          "l": 33.08,
+          "t": 32.45,
+          "w": 47.99,
+          "h": 1.44,
+          "text": "Rotates the data axes to view the cube from a "
+        },
+        {
+          "l": 15.98,
+          "t": 34.75,
+          "w": 38.77,
+          "h": 1.84,
+          "text": "different perspective, useful for cross"
+        },
+        {
+          "l": 54.99,
+          "t": 35.63,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 55.77,
+          "t": 34.75,
+          "w": 10.91,
+          "h": 1.44,
+          "text": "tabulation."
+        },
+        {
+          "l": 11.8,
+          "t": 38.58,
+          "w": 20.62,
+          "h": 1.4,
+          "text": "Data Visualization"
+        },
+        {
+          "l": 13.68,
+          "t": 41.99,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 41.55,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 28.68,
+          "t": 41.51,
+          "w": 34.1,
+          "h": 1.85,
+          "text": "Data Visualization is the graphic"
+        },
+        {
+          "l": 62.98,
+          "t": 41.51,
+          "w": 20.74,
+          "h": 1.84,
+          "text": "al representation of "
+        },
+        {
+          "l": 15.97,
+          "t": 43.85,
+          "w": 68.79,
+          "h": 1.85,
+          "text": "information and data using charts, graphs, maps, and dashboards, "
+        },
+        {
+          "l": 15.91,
+          "t": 46.15,
+          "w": 71.8,
+          "h": 1.85,
+          "text": "making patterns, trends, and outliers easier to understand at a glance."
+        },
+        {
+          "l": 13.68,
+          "t": 49.48,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 49.0,
+          "w": 4.99,
+          "h": 1.44,
+          "text": "Well"
+        },
+        {
+          "l": 21.06,
+          "t": 49.88,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 21.9,
+          "t": 49.0,
+          "w": 61.88,
+          "h": 1.85,
+          "text": "designed visualizations reduce the time needed to interpret "
+        },
+        {
+          "l": 15.97,
+          "t": 51.3,
+          "w": 22.96,
+          "h": 1.85,
+          "text": "large volumes of data."
+        },
+        {
+          "l": 13.68,
+          "t": 54.63,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.98,
+          "t": 54.15,
+          "w": 13.3,
+          "h": 1.44,
+          "text": "Common vis"
+        },
+        {
+          "l": 29.35,
+          "t": 54.15,
+          "w": 58.17,
+          "h": 1.84,
+          "text": "ual forms: bar charts, line charts, pie charts, heat maps, "
+        },
+        {
+          "l": 16.02,
+          "t": 56.46,
+          "w": 36.44,
+          "h": 1.85,
+          "text": "scatter plots, and geographic maps."
+        },
+        {
+          "l": 13.68,
+          "t": 59.78,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.96,
+          "t": 59.34,
+          "w": 36.25,
+          "h": 1.81,
+          "text": "Principles of good visualization: "
+        },
+        {
+          "l": 17.8,
+          "t": 62.57,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.1,
+          "t": 62.09,
+          "w": 55.34,
+          "h": 1.85,
+          "text": "Choose the right chart type for the data and message "
+        },
+        {
+          "l": 17.8,
+          "t": 65.42,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.12,
+          "t": 64.92,
+          "w": 67.95,
+          "h": 1.87,
+          "text": "(e.g., trend \u2192 line chart; comparison \u2192 bar chart; proportion \u2192 "
+        },
+        {
+          "l": 20.0,
+          "t": 67.25,
+          "w": 3.87,
+          "h": 1.84,
+          "text": "pie "
+        },
+        {
+          "l": 23.98,
+          "t": 67.25,
+          "w": 6.45,
+          "h": 1.84,
+          "text": "chart)."
+        },
+        {
+          "l": 12.0,
+          "t": 70.0,
+          "w": 10.68,
+          "h": 1.07,
+          "text": "1. Line Chart "
+        },
+        {
+          "l": 22.7,
+          "t": 70.66,
+          "w": 1.99,
+          "h": 0.06,
+          "text": "\u2014 "
+        },
+        {
+          "l": 25.15,
+          "t": 70.0,
+          "w": 12.05,
+          "h": 1.07,
+          "text": "used to show a "
+        },
+        {
+          "l": 37.21,
+          "t": 70.0,
+          "w": 11.88,
+          "h": 1.07,
+          "text": "trend over time"
+        },
+        {
+          "l": 11.81,
+          "t": 73.52,
+          "w": 19.31,
+          "h": 1.38,
+          "text": "Example: Monthly sales."
+        },
+        {
+          "l": 11.8,
+          "t": 76.96,
+          "w": 13.81,
+          "h": 1.16,
+          "text": "Monthly Sales Trend"
+        },
+        {
+          "l": 11.82,
+          "t": 80.25,
+          "w": 44.69,
+          "h": 1.38,
+          "text": "Illustrative sales values showing change over six months."
+        },
+        {
+          "l": 11.96,
+          "t": 83.69,
+          "w": 23.09,
+          "h": 1.16,
+          "text": "1530456075JanFebMarAprMayJun"
+        },
+        {
+          "l": 11.81,
+          "t": 87.02,
+          "w": 3.46,
+          "h": 1.03,
+          "text": "Use: "
+        },
+        {
+          "l": 16.03,
+          "t": 86.97,
+          "w": 37.16,
+          "h": 1.07,
+          "text": "To show increase/decrease or a trend over time."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_012.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_012.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\n2. Bar Chart \u2014 used for comparison\r\nExample: Marks obtained by students.\r\nStudent Marks Comparison\r\nIllustrative marks for comparing students.\r\n0255075100ABCD\r\nUse: To compare different categories or groups.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.81,
+          "t": 45.96,
+          "w": 10.08,
+          "h": 1.07,
+          "text": "2. Bar Chart "
+        },
+        {
+          "l": 21.91,
+          "t": 46.62,
+          "w": 1.99,
+          "h": 0.06,
+          "text": "\u2014 "
+        },
+        {
+          "l": 24.4,
+          "t": 45.96,
+          "w": 6.84,
+          "h": 1.07,
+          "text": "used for "
+        },
+        {
+          "l": 31.33,
+          "t": 45.96,
+          "w": 9.02,
+          "h": 1.37,
+          "text": "comparison"
+        },
+        {
+          "l": 11.81,
+          "t": 49.51,
+          "w": 29.89,
+          "h": 1.38,
+          "text": "Example: Marks obtained by students."
+        },
+        {
+          "l": 11.87,
+          "t": 52.95,
+          "w": 17.84,
+          "h": 1.15,
+          "text": "Student Marks Comparison"
+        },
+        {
+          "l": 11.82,
+          "t": 56.24,
+          "w": 32.58,
+          "h": 1.38,
+          "text": "Illustrative marks for comparing students."
+        },
+        {
+          "l": 11.83,
+          "t": 59.7,
+          "w": 12.6,
+          "h": 0.88,
+          "text": "0255075100ABCD"
+        },
+        {
+          "l": 11.81,
+          "t": 63.01,
+          "w": 3.46,
+          "h": 1.03,
+          "text": "Use: "
+        },
+        {
+          "l": 16.03,
+          "t": 62.97,
+          "w": 33.32,
+          "h": 1.38,
+          "text": "To compare different categories or groups."
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_013.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_013.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\n3. Pie Chart \u2014 used to show proportion/percentage\r\nExample: Distribution of a student's time.\r\nStudent Time Distribution\r\nIllustrative distribution of daily time across activities.\r\nExercise\r\nOther\r\nSleep\r\nStudy",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.85,
+          "t": 45.96,
+          "w": 9.73,
+          "h": 1.07,
+          "text": "3. Pie Chart "
+        },
+        {
+          "l": 21.6,
+          "t": 46.62,
+          "w": 1.99,
+          "h": 0.06,
+          "text": "\u2014 "
+        },
+        {
+          "l": 24.05,
+          "t": 45.96,
+          "w": 10.72,
+          "h": 1.07,
+          "text": "used to show "
+        },
+        {
+          "l": 34.79,
+          "t": 45.96,
+          "w": 17.2,
+          "h": 1.38,
+          "text": "proportion/percentage"
+        },
+        {
+          "l": 11.81,
+          "t": 49.51,
+          "w": 7.93,
+          "h": 1.37,
+          "text": "Example: "
+        },
+        {
+          "l": 19.81,
+          "t": 49.51,
+          "w": 24.45,
+          "h": 1.07,
+          "text": "Distribution of a student's time."
+        },
+        {
+          "l": 11.87,
+          "t": 52.95,
+          "w": 17.01,
+          "h": 0.9,
+          "text": "Student Time Distribution"
+        },
+        {
+          "l": 11.82,
+          "t": 56.24,
+          "w": 41.71,
+          "h": 1.38,
+          "text": "Illustrative distribution of daily time across activities."
+        },
+        {
+          "l": 11.8,
+          "t": 59.68,
+          "w": 5.59,
+          "h": 0.9,
+          "text": "Exercise"
+        },
+        {
+          "l": 11.83,
+          "t": 61.13,
+          "w": 3.68,
+          "h": 0.9,
+          "text": "Other"
+        },
+        {
+          "l": 11.87,
+          "t": 62.59,
+          "w": 3.45,
+          "h": 1.15,
+          "text": "Sleep"
+        },
+        {
+          "l": 11.87,
+          "t": 64.04,
+          "w": 3.73,
+          "h": 1.16,
+          "text": "Study"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_014.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_014.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nUse: To show how a whole is divided into parts.\r\n\u25e6 Avoid clutter \u2014 remove unnecessary gridlines, colors, and 3-D \r\neffects.\r\n\u25e6 Use consistent color-coding and clear labels/legends.\r\n\u25e6 Highlight the key insight rather than showing all data equally.\r\nExample: A retail dashboard showing monthly sales trends by region as \r\na line chart helps managers instantly spot declining regions without \r\nreading raw spreadsheets.\r\nData Mining\r\nDefinition: Data mining is the process of discovering hidden patterns, \r\ncorrelations, and useful knowledge from large volumes of data using \r\nstatistical and computational techniques.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.81,
+          "t": 9.45,
+          "w": 3.46,
+          "h": 1.03,
+          "text": "Use: "
+        },
+        {
+          "l": 16.03,
+          "t": 9.41,
+          "w": 12.46,
+          "h": 1.07,
+          "text": "To show how a "
+        },
+        {
+          "l": 28.54,
+          "t": 9.43,
+          "w": 21.87,
+          "h": 1.35,
+          "text": "whole is divided into parts"
+        },
+        {
+          "l": 50.63,
+          "t": 10.31,
+          "w": 0.21,
+          "h": 0.16,
+          "text": "."
+        },
+        {
+          "l": 17.8,
+          "t": 49.69,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.03,
+          "t": 49.21,
+          "w": 14.5,
+          "h": 1.44,
+          "text": "Avoid clutter "
+        },
+        {
+          "l": 34.54,
+          "t": 50.09,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 37.88,
+          "t": 49.21,
+          "w": 45.49,
+          "h": 1.85,
+          "text": "remove unnecessary gridlines, colors, and 3"
+        },
+        {
+          "l": 83.75,
+          "t": 50.09,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 84.55,
+          "t": 49.28,
+          "w": 2.49,
+          "h": 1.34,
+          "text": "D "
+        },
+        {
+          "l": 20.11,
+          "t": 51.52,
+          "w": 7.35,
+          "h": 1.43,
+          "text": "effects."
+        },
+        {
+          "l": 17.8,
+          "t": 54.81,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.02,
+          "t": 54.33,
+          "w": 21.18,
+          "h": 1.44,
+          "text": "Use consistent color"
+        },
+        {
+          "l": 41.3,
+          "t": 55.21,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 42.14,
+          "t": 54.33,
+          "w": 33.13,
+          "h": 1.85,
+          "text": "coding and clear labels/legends."
+        },
+        {
+          "l": 17.8,
+          "t": 57.63,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u25e6 "
+        },
+        {
+          "l": 20.05,
+          "t": 57.15,
+          "w": 64.44,
+          "h": 1.85,
+          "text": "Highlight the key insight rather than showing all data equally."
+        },
+        {
+          "l": 11.82,
+          "t": 60.0,
+          "w": 75.63,
+          "h": 1.85,
+          "text": "Example: A retail dashboard showing monthly sales trends by region as "
+        },
+        {
+          "l": 11.86,
+          "t": 62.34,
+          "w": 58.02,
+          "h": 1.85,
+          "text": "a line chart helps managers instantly spot declining regi"
+        },
+        {
+          "l": 70.12,
+          "t": 62.34,
+          "w": 12.83,
+          "h": 1.44,
+          "text": "ons without "
+        },
+        {
+          "l": 11.78,
+          "t": 64.67,
+          "w": 26.7,
+          "h": 1.85,
+          "text": "reading raw spreadsheets."
+        },
+        {
+          "l": 11.8,
+          "t": 68.43,
+          "w": 14.08,
+          "h": 1.81,
+          "text": "Data Mining"
+        },
+        {
+          "l": 11.8,
+          "t": 71.43,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 24.56,
+          "t": 71.4,
+          "w": 61.3,
+          "h": 1.85,
+          "text": "Data mining is the process of discovering hidden patterns, "
+        },
+        {
+          "l": 11.86,
+          "t": 73.73,
+          "w": 72.39,
+          "h": 1.85,
+          "text": "correlations, and useful knowledge from large volumes of data using "
+        },
+        {
+          "l": 11.9,
+          "t": 76.07,
+          "w": 42.04,
+          "h": 1.84,
+          "text": "statistical and computational techniques."
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_015.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_015.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nFig 2.8: The Data Mining / KDD (Knowledge Discovery in Databases) \r\nprocess.\r\n\u2022 Classification: Assigns data into predefined categories (e.g., \r\nclassifying an email as spam or not spam).\r\n\u2022 Clustering: Groups similar data points together without predefined \r\nlabels (e.g., segmenting customers by purchase behavior).\r\n\u2022 Association rule mining: Finds relationships between variables \r\n(e.g., \"customers who buy bread also buy butter\" \u2014 market basket \r\nanalysis).\r\n\u2022 Regression: Predicts a continuous numeric value based on other \r\nvariables (e.g., predicting next month's revenue).\r\n\u2022 Anomaly/outlier detection: Identifies unusual data points that \r\ndiffer significantly from the rest (e.g., detecting fraudulent \r\ntransactions).\r\nPredictive Analytics and Types of Business Analytics",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 12.73,
+          "t": 44.88,
+          "w": 19.6,
+          "h": 1.85,
+          "text": "Fig 2.8: The Data M"
+        },
+        {
+          "l": 32.28,
+          "t": 44.88,
+          "w": 55.56,
+          "h": 1.85,
+          "text": " Mining / KDD (Knowledge Discovery in Databases) "
+        },
+        {
+          "l": 45.42,
+          "t": 47.69,
+          "w": 8.63,
+          "h": 1.33,
+          "text": "process."
+        },
+        {
+          "l": 13.68,
+          "t": 51.26,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.0,
+          "t": 50.82,
+          "w": 16.53,
+          "h": 1.4,
+          "text": "Classification: "
+        },
+        {
+          "l": 32.58,
+          "t": 50.79,
+          "w": 47.58,
+          "h": 1.85,
+          "text": "Assigns data into predefined categories (e.g., "
+        },
+        {
+          "l": 15.98,
+          "t": 53.09,
+          "w": 44.15,
+          "h": 1.85,
+          "text": "classifying an email as spam or not spam)."
+        },
+        {
+          "l": 13.68,
+          "t": 56.41,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.0,
+          "t": 55.97,
+          "w": 13.2,
+          "h": 1.81,
+          "text": "Clustering: "
+        },
+        {
+          "l": 29.32,
+          "t": 55.94,
+          "w": 57.85,
+          "h": 1.85,
+          "text": "Groups similar data points together without predefined "
+        },
+        {
+          "l": 15.97,
+          "t": 58.25,
+          "w": 60.23,
+          "h": 1.85,
+          "text": "labels (e.g., segmenting customers by purchase behavior)."
+        },
+        {
+          "l": 13.68,
+          "t": 61.57,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 61.13,
+          "w": 27.94,
+          "h": 1.81,
+          "text": "Association rule mining: "
+        },
+        {
+          "l": 43.94,
+          "t": 61.09,
+          "w": 39.84,
+          "h": 1.84,
+          "text": "Finds relationships between variables "
+        },
+        {
+          "l": 16.0,
+          "t": 63.43,
+          "w": 51.56,
+          "h": 1.85,
+          "text": "(e.g., \"customers who buy bread also buy butter\" "
+        },
+        {
+          "l": 67.61,
+          "t": 64.31,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 70.95,
+          "t": 63.43,
+          "w": 15.21,
+          "h": 1.44,
+          "text": "market basket "
+        },
+        {
+          "l": 15.98,
+          "t": 65.73,
+          "w": 9.63,
+          "h": 1.85,
+          "text": "analysis)."
+        },
+        {
+          "l": 13.68,
+          "t": 69.06,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 68.65,
+          "w": 5.46,
+          "h": 1.78,
+          "text": "Regr"
+        },
+        {
+          "l": 21.52,
+          "t": 68.61,
+          "w": 8.12,
+          "h": 1.4,
+          "text": "ession: "
+        },
+        {
+          "l": 29.7,
+          "t": 68.58,
+          "w": 54.3,
+          "h": 1.44,
+          "text": "Predicts a continuous numeric value based on other "
+        },
+        {
+          "l": 15.91,
+          "t": 70.89,
+          "w": 50.8,
+          "h": 1.85,
+          "text": "variables (e.g., predicting next month's revenue)."
+        },
+        {
+          "l": 13.68,
+          "t": 74.21,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 73.77,
+          "w": 30.6,
+          "h": 1.81,
+          "text": "Anomaly/outlier detection: "
+        },
+        {
+          "l": 46.63,
+          "t": 73.73,
+          "w": 35.85,
+          "h": 1.84,
+          "text": "Identifies unusual data points that "
+        },
+        {
+          "l": 15.98,
+          "t": 76.07,
+          "w": 61.65,
+          "h": 1.85,
+          "text": "differ significantly from the rest (e.g., detecting fraudulent "
+        },
+        {
+          "l": 15.92,
+          "t": 78.37,
+          "w": 13.8,
+          "h": 1.84,
+          "text": "transactions)."
+        },
+        {
+          "l": 11.83,
+          "t": 82.16,
+          "w": 6.0,
+          "h": 1.4,
+          "text": "Predi"
+        },
+        {
+          "l": 17.99,
+          "t": 82.16,
+          "w": 52.47,
+          "h": 1.81,
+          "text": "ctive Analytics and Types of Business Analytics"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_016.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_016.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nFig 2.9: Types of Business Analytics \u2014 Descriptive, Diagnostic, \r\nPredictive, and Prescriptive.\r\n\u2022 Descriptive analytics: Summarizes historical data to explain \"what \r\nhappened\" (e.g., last quarter's sales report).\r\n\u2022 Diagnostic analytics: Examines data to understand \"why it \r\nhappened\" (e.g., root-cause analysis of a sales drop).\r\n\u2022 Predictive analytics: Uses statistical models and machine learning \r\non historical data to forecast \"what is likely to happen\" (e.g., \r\npredicting customer churn or demand).\r\n\u2022 Prescriptive analytics: Recommends specific actions \u2014 \"what \r\nshould be done\" \u2014 often using optimization and AI techniques (e.g., \r\ndynamic pricing recommendations).\r\nCommon predictive-analytics techniques include regression analysis, \r\ndecision trees, time-series forecasting, and neural networks. These are \r\nwidely used for demand forecasting, credit-risk scoring, churn \r\nprediction, and predictive maintenance in manufacturing.\r\nAI-Enabled Analytics Workflow",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 16.34,
+          "t": 39.39,
+          "w": 38.77,
+          "h": 1.85,
+          "text": "Fig 2.9: Types of Business Analytics \u2014 "
+        },
+        {
+          "l": 55.1,
+          "t": 40.27,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 58.06,
+          "t": 39.46,
+          "w": 26.16,
+          "h": 1.78,
+          "text": "Descriptive, Diagnostic, "
+        },
+        {
+          "l": 34.93,
+          "t": 41.69,
+          "w": 29.8,
+          "h": 1.84,
+          "text": "Predictive, and Prescriptive."
+        },
+        {
+          "l": 13.68,
+          "t": 45.78,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 45.33,
+          "w": 24.64,
+          "h": 1.81,
+          "text": "Descriptive analytics: "
+        },
+        {
+          "l": 40.77,
+          "t": 45.3,
+          "w": 46.62,
+          "h": 1.84,
+          "text": "Summarizes historical data to explain \"what "
+        },
+        {
+          "l": 15.91,
+          "t": 47.61,
+          "w": 44.24,
+          "h": 1.85,
+          "text": "happened\" (e.g., last quarter's sales report)"
+        },
+        {
+          "l": 60.48,
+          "t": 48.82,
+          "w": 0.28,
+          "h": 0.22,
+          "text": "."
+        },
+        {
+          "l": 13.68,
+          "t": 50.93,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 50.49,
+          "w": 23.77,
+          "h": 1.81,
+          "text": "Diagnostic analytics: "
+        },
+        {
+          "l": 39.8,
+          "t": 50.45,
+          "w": 39.0,
+          "h": 1.85,
+          "text": "Examines data to understand \"why it "
+        },
+        {
+          "l": 15.91,
+          "t": 52.76,
+          "w": 21.87,
+          "h": 1.85,
+          "text": "happened\" (e.g., root"
+        },
+        {
+          "l": 37.93,
+          "t": 53.64,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 38.77,
+          "t": 52.76,
+          "w": 31.92,
+          "h": 1.85,
+          "text": "cause analysis of a sales drop)."
+        },
+        {
+          "l": 13.68,
+          "t": 56.08,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.96,
+          "t": 55.64,
+          "w": 23.31,
+          "h": 1.81,
+          "text": "Predictive analytics: "
+        },
+        {
+          "l": 39.32,
+          "t": 55.61,
+          "w": 47.59,
+          "h": 1.85,
+          "text": "Uses statistical models and machine learning "
+        },
+        {
+          "l": 15.98,
+          "t": 57.94,
+          "w": 63.84,
+          "h": 1.85,
+          "text": "on historical data to forecast \"what is likely to happen\" (e.g., "
+        },
+        {
+          "l": 15.88,
+          "t": 60.25,
+          "w": 9.3,
+          "h": 1.84,
+          "text": "predictin"
+        },
+        {
+          "l": 25.3,
+          "t": 60.25,
+          "w": 31.11,
+          "h": 1.85,
+          "text": "g customer churn or demand)."
+        },
+        {
+          "l": 13.68,
+          "t": 63.57,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.96,
+          "t": 63.13,
+          "w": 25.51,
+          "h": 1.81,
+          "text": "Prescriptive analytics: "
+        },
+        {
+          "l": 41.51,
+          "t": 63.09,
+          "w": 31.65,
+          "h": 1.84,
+          "text": "Recommends specific actions "
+        },
+        {
+          "l": 73.18,
+          "t": 63.97,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 76.63,
+          "t": 63.09,
+          "w": 6.63,
+          "h": 1.44,
+          "text": "\"what "
+        },
+        {
+          "l": 16.02,
+          "t": 65.4,
+          "w": 17.42,
+          "h": 1.44,
+          "text": "should be done\" "
+        },
+        {
+          "l": 33.44,
+          "t": 66.28,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 36.85,
+          "t": 65.4,
+          "w": 51.7,
+          "h": 1.85,
+          "text": "often using optimization and AI techniques (e.g., "
+        },
+        {
+          "l": 15.98,
+          "t": 67.7,
+          "w": 37.53,
+          "h": 1.85,
+          "text": "dynamic pricing recommendations)."
+        },
+        {
+          "l": 11.86,
+          "t": 70.55,
+          "w": 20.67,
+          "h": 1.84,
+          "text": "Common predictive"
+        },
+        {
+          "l": 32.71,
+          "t": 71.43,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 33.56,
+          "t": 70.55,
+          "w": 48.69,
+          "h": 1.85,
+          "text": "analytics techniques include regression analysi"
+        },
+        {
+          "l": 82.51,
+          "t": 71.03,
+          "w": 2.21,
+          "h": 1.27,
+          "text": "s, "
+        },
+        {
+          "l": 11.86,
+          "t": 72.89,
+          "w": 20.13,
+          "h": 1.75,
+          "text": "decision trees, time"
+        },
+        {
+          "l": 32.16,
+          "t": 73.76,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 33.04,
+          "t": 72.89,
+          "w": 52.56,
+          "h": 1.85,
+          "text": "series forecasting, and neural networks. These are "
+        },
+        {
+          "l": 11.78,
+          "t": 75.22,
+          "w": 44.67,
+          "h": 1.85,
+          "text": "widely used for demand forecasting, credit"
+        },
+        {
+          "l": 56.64,
+          "t": 76.1,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 57.41,
+          "t": 75.22,
+          "w": 20.14,
+          "h": 1.85,
+          "text": "risk scoring, churn "
+        },
+        {
+          "l": 11.76,
+          "t": 77.55,
+          "w": 59.67,
+          "h": 1.85,
+          "text": "prediction, and predictive maintenance in manufacturing."
+        },
+        {
+          "l": 11.79,
+          "t": 81.29,
+          "w": 2.82,
+          "h": 1.37,
+          "text": "AI"
+        },
+        {
+          "l": 14.73,
+          "t": 82.09,
+          "w": 0.75,
+          "h": 0.21,
+          "text": "-"
+        },
+        {
+          "l": 15.59,
+          "t": 81.28,
+          "w": 32.3,
+          "h": 1.81,
+          "text": "Enabled Analytics Workflow"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_017.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_017.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nFig 2.10: A typical AI-enabled analytics workflow, from raw business \r\ndata to actionable business output.\r\n\u2022 Raw business data is first cleaned and pre-processed (handling \r\nmissing values, normalization).\r\n\u2022 A machine-learning/AI model is trained on historical data to learn \r\npatterns.\r\n\u2022 The trained model generates predictions or classifications on new \r\ndata.\r\n\u2022 Predictions feed into dashboards or automated actions that support \r\nbusiness decisions.\r\nDecision Support Systems (DSS)\r\nDefinition: A Decision Support System (DSS) is an interactive, \r\ncomputer-based information system that helps managers and decision\ufffemakers analyze data and evaluate alternatives to make semi-structured or \r\nunstructured business decisions.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 13.43,
+          "t": 42.24,
+          "w": 23.16,
+          "h": 1.85,
+          "text": "Fig 2.10: A typical AI-"
+        },
+        {
+          "l": 36.47,
+          "t": 43.14,
+          "w": 0.72,
+          "h": 0.13,
+          "text": "I-"
+        },
+        {
+          "l": 37.35,
+          "t": 42.24,
+          "w": 6.85,
+          "h": 1.43,
+          "text": "enable"
+        },
+        {
+          "l": 44.26,
+          "t": 42.24,
+          "w": 42.85,
+          "h": 1.85,
+          "text": "d analytics workflow, from raw business "
+        },
+        {
+          "l": 31.79,
+          "t": 44.54,
+          "w": 36.16,
+          "h": 1.84,
+          "text": "data to actionable business output."
+        },
+        {
+          "l": 13.68,
+          "t": 48.63,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.93,
+          "t": 48.15,
+          "w": 43.52,
+          "h": 1.84,
+          "text": "Raw business data is first cleaned and pre"
+        },
+        {
+          "l": 59.66,
+          "t": 49.03,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 60.41,
+          "t": 48.15,
+          "w": 21.66,
+          "h": 1.85,
+          "text": "processed (handling "
+        },
+        {
+          "l": 15.91,
+          "t": 50.45,
+          "w": 32.63,
+          "h": 1.85,
+          "text": "missing values, normalization)."
+        },
+        {
+          "l": 13.68,
+          "t": 53.78,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.91,
+          "t": 53.3,
+          "w": 11.33,
+          "h": 1.44,
+          "text": "A machine"
+        },
+        {
+          "l": 27.41,
+          "t": 54.18,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 28.25,
+          "t": 53.3,
+          "w": 57.31,
+          "h": 1.85,
+          "text": "learning/AI model is trained on historical data to learn "
+        },
+        {
+          "l": 15.88,
+          "t": 55.81,
+          "w": 8.78,
+          "h": 1.64,
+          "text": "patterns."
+        },
+        {
+          "l": 13.68,
+          "t": 58.93,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.97,
+          "t": 58.46,
+          "w": 8.07,
+          "h": 1.44,
+          "text": "The trai"
+        },
+        {
+          "l": 24.1,
+          "t": 58.46,
+          "w": 60.9,
+          "h": 1.85,
+          "text": "ned model generates predictions or classifications on new "
+        },
+        {
+          "l": 15.98,
+          "t": 60.76,
+          "w": 4.77,
+          "h": 1.44,
+          "text": "data."
+        },
+        {
+          "l": 13.68,
+          "t": 64.08,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.93,
+          "t": 63.61,
+          "w": 70.13,
+          "h": 1.84,
+          "text": "Predictions feed into dashboards or automated actions that support "
+        },
+        {
+          "l": 15.89,
+          "t": 65.91,
+          "w": 19.71,
+          "h": 1.44,
+          "text": "business decisions."
+        },
+        {
+          "l": 11.8,
+          "t": 69.71,
+          "w": 35.92,
+          "h": 1.81,
+          "text": "Decision Support Systems (DSS)"
+        },
+        {
+          "l": 11.8,
+          "t": 72.71,
+          "w": 12.69,
+          "h": 1.4,
+          "text": "Definition: "
+        },
+        {
+          "l": 24.54,
+          "t": 72.67,
+          "w": 54.76,
+          "h": 1.85,
+          "text": "A Decision Support System (DSS) is an interactive, "
+        },
+        {
+          "l": 11.86,
+          "t": 75.18,
+          "w": 9.82,
+          "h": 1.64,
+          "text": "computer"
+        },
+        {
+          "l": 21.76,
+          "t": 75.86,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 22.52,
+          "t": 74.98,
+          "w": 62.05,
+          "h": 1.85,
+          "text": "based information system that helps managers and decision"
+        },
+        {
+          "l": 84.77,
+          "t": 75.86,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 11.79,
+          "t": 77.31,
+          "w": 62.17,
+          "h": 1.85,
+          "text": "makers analyze data and evaluate alternatives to make semi"
+        },
+        {
+          "l": 74.21,
+          "t": 78.19,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 75.1,
+          "t": 77.31,
+          "w": 13.77,
+          "h": 1.44,
+          "text": "structured or "
+        },
+        {
+          "l": 11.77,
+          "t": 79.65,
+          "w": 33.42,
+          "h": 1.44,
+          "text": "unstructured business decisions."
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_018.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_018.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nFig 2.11: Components of a Decision Support System \u2014 DBMS, Model \r\nBase, Knowledge-based subsystem, and User Interface.\r\n\u2022 Database Management System (DBMS) component: Stores and \r\nmanages the data needed for decision-making.\r\n\u2022 Model Base Management System (MBMS): Contains financial, \r\nstatistical, and simulation models used to analyze data and test \r\n\"what-if\" scenarios.\r\n\u2022 Knowledge-based subsystem: Provides AI-driven expertise, \r\nbusiness rules, and recommendations.\r\n\u2022 User interface: Allows managers to interact with the system, run \r\nqueries, and view results in an understandable format.",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 13.2,
+          "t": 46.03,
+          "w": 33.73,
+          "h": 1.85,
+          "text": "Fig 2.11: Components of a Deci"
+        },
+        {
+          "l": 46.98,
+          "t": 46.06,
+          "w": 21.84,
+          "h": 1.81,
+          "text": "sion Support System \u2014 "
+        },
+        {
+          "l": 68.79,
+          "t": 46.91,
+          "w": 2.38,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 71.76,
+          "t": 46.03,
+          "w": 15.67,
+          "h": 1.66,
+          "text": "DBMS, Model "
+        },
+        {
+          "l": 20.89,
+          "t": 48.33,
+          "w": 18.2,
+          "h": 1.85,
+          "text": "Base, Knowledge"
+        },
+        {
+          "l": 39.22,
+          "t": 49.23,
+          "w": 0.72,
+          "h": 0.13,
+          "text": "-"
+        },
+        {
+          "l": 40.05,
+          "t": 48.33,
+          "w": 38.67,
+          "h": 1.85,
+          "text": "based subsystem, and User Interface."
+        },
+        {
+          "l": 13.68,
+          "t": 52.41,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.92,
+          "t": 51.97,
+          "w": 58.64,
+          "h": 1.81,
+          "text": "Database Management System (DBMS) component: "
+        },
+        {
+          "l": 74.82,
+          "t": 51.94,
+          "w": 11.47,
+          "h": 1.44,
+          "text": "Stores and "
+        },
+        {
+          "l": 15.91,
+          "t": 54.24,
+          "w": 39.09,
+          "h": 1.85,
+          "text": "manages the data needed for decision"
+        },
+        {
+          "l": 55.19,
+          "t": 55.12,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 55.92,
+          "t": 54.24,
+          "w": 8.33,
+          "h": 1.85,
+          "text": "making."
+        },
+        {
+          "l": 13.68,
+          "t": 57.57,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.94,
+          "t": 57.13,
+          "w": 48.91,
+          "h": 1.81,
+          "text": "Model Base Management System (MBMS): "
+        },
+        {
+          "l": 65.02,
+          "t": 57.09,
+          "w": 20.31,
+          "h": 1.75,
+          "text": "Contains financial, "
+        },
+        {
+          "l": 16.02,
+          "t": 59.4,
+          "w": 9.72,
+          "h": 1.44,
+          "text": "statistical"
+        },
+        {
+          "l": 25.91,
+          "t": 59.4,
+          "w": 55.92,
+          "h": 1.85,
+          "text": ", and simulation models used to analyze data and test "
+        },
+        {
+          "l": 16.06,
+          "t": 61.7,
+          "w": 5.97,
+          "h": 1.44,
+          "text": "\"what"
+        },
+        {
+          "l": 22.16,
+          "t": 62.58,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 22.99,
+          "t": 61.7,
+          "w": 13.44,
+          "h": 1.44,
+          "text": "if\" scenarios."
+        },
+        {
+          "l": 13.68,
+          "t": 65.02,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 64.61,
+          "w": 12.38,
+          "h": 1.78,
+          "text": "Knowledge"
+        },
+        {
+          "l": 28.47,
+          "t": 65.39,
+          "w": 0.75,
+          "h": 0.21,
+          "text": "-"
+        },
+        {
+          "l": 29.32,
+          "t": 64.61,
+          "w": 19.92,
+          "h": 1.78,
+          "text": "based subsystem: "
+        },
+        {
+          "l": 49.32,
+          "t": 64.55,
+          "w": 12.49,
+          "h": 1.44,
+          "text": "Provides AI"
+        },
+        {
+          "l": 61.93,
+          "t": 65.43,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 62.78,
+          "t": 64.55,
+          "w": 18.0,
+          "h": 1.84,
+          "text": "driven expertise, "
+        },
+        {
+          "l": 15.89,
+          "t": 66.85,
+          "w": 39.39,
+          "h": 1.75,
+          "text": "business rules, and recommendations."
+        },
+        {
+          "l": 13.68,
+          "t": 70.18,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.95,
+          "t": 69.74,
+          "w": 17.21,
+          "h": 1.41,
+          "text": "User interface: "
+        },
+        {
+          "l": 33.21,
+          "t": 69.7,
+          "w": 51.84,
+          "h": 1.85,
+          "text": "Allows managers to interact with the system, run "
+        },
+        {
+          "l": 15.98,
+          "t": 72.01,
+          "w": 18.91,
+          "h": 1.84,
+          "text": "queries, and view "
+        },
+        {
+          "l": 34.93,
+          "t": 72.01,
+          "w": 37.17,
+          "h": 1.44,
+          "text": "results in an understandable format."
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_019.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_019.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\nTypes of Decision Support Systems\r\nType Description Example\r\nData-driven DSS Relies mainly on internal and \r\nexternal structured data\r\nSales reporting \r\ndashboard\r\nModel-driven \r\nDSS\r\nUses financial, statistical, or \r\nsimulation models\r\nBudget forecasting \r\ntool\r\nKnowledge-driven \r\nDSS\r\nUses AI/expert-system rules to \r\nrecommend actions\r\nMedical diagnosis \r\nsupport system\r\nCommunication\ufffedriven DSS\r\nSupports collaboration among \r\nmultiple decision-makers\r\nVideo-conferencing \r\ndecision tool\r\nDocument-driven \r\nDSS\r\nManages and retrieves unstructured \r\ndocuments\r\nLegal document \r\nsearch system\r\nGenerative AI Tools for Business Reporting and Analytics\r\nModern BI platforms increasingly embed AI and Generative AI \r\ncapabilities to automate reporting, generate natural-language summaries, \r\nand answer business questions conversationally.\r\n\u2022 Power BI (Microsoft): A widely used BI tool offering interactive \r\ndashboards, natural-language Q&A, and AI-powered insights (e.g., \r\nCopilot integration) for automated report generation and narrative \r\nsummaries.\r\n\u2022 Tableau (Salesforce): A leading data-visualization platform known \r\nfor drag-and-drop dashboard creation and AI-assisted analytics \r\nthrough built-in AI/agent features that suggest visualizations and \r\nsurface anomalies.\r\n\u2022 Google Looker Studio: A free, cloud-based BI and reporting tool \r\nthat connects to multiple Google and third-party data sources to \r\nbuild shareable, interactive dashboards.\r\nCase-study relevance: organizations use these tools to automatically \r\ngenerate quarterly performance reports, detect anomalies in sales or",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.86,
+          "t": 9.6,
+          "w": 38.83,
+          "h": 1.81,
+          "text": "Types of Decision Support Systems"
+        },
+        {
+          "l": 12.73,
+          "t": 13.2,
+          "w": 5.51,
+          "h": 1.78,
+          "text": "Type "
+        },
+        {
+          "l": 33.93,
+          "t": 13.17,
+          "w": 12.83,
+          "h": 1.81,
+          "text": "Description "
+        },
+        {
+          "l": 74.79,
+          "t": 13.2,
+          "w": 9.75,
+          "h": 1.78,
+          "text": "Example"
+        },
+        {
+          "l": 12.68,
+          "t": 17.72,
+          "w": 4.92,
+          "h": 1.36,
+          "text": "Data"
+        },
+        {
+          "l": 17.72,
+          "t": 18.54,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 18.53,
+          "t": 17.66,
+          "w": 11.93,
+          "h": 1.44,
+          "text": "driven DSS "
+        },
+        {
+          "l": 33.94,
+          "t": 16.51,
+          "w": 31.41,
+          "h": 1.85,
+          "text": "Relies mainly on internal and "
+        },
+        {
+          "l": 33.99,
+          "t": 18.84,
+          "w": 24.45,
+          "h": 1.44,
+          "text": "external structured data"
+        },
+        {
+          "l": 74.9,
+          "t": 16.51,
+          "w": 16.25,
+          "h": 1.85,
+          "text": "Sales reporting "
+        },
+        {
+          "l": 74.82,
+          "t": 18.84,
+          "w": 10.67,
+          "h": 1.44,
+          "text": "dashboard"
+        },
+        {
+          "l": 12.68,
+          "t": 22.23,
+          "w": 6.74,
+          "h": 1.44,
+          "text": "Model"
+        },
+        {
+          "l": 19.57,
+          "t": 23.11,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 20.41,
+          "t": 22.23,
+          "w": 7.27,
+          "h": 1.44,
+          "text": "driven "
+        },
+        {
+          "l": 12.68,
+          "t": 24.57,
+          "w": 4.61,
+          "h": 1.4,
+          "text": "DSS"
+        },
+        {
+          "l": 33.91,
+          "t": 22.23,
+          "w": 30.18,
+          "h": 1.75,
+          "text": "Uses financial, statistical, or "
+        },
+        {
+          "l": 34.02,
+          "t": 24.54,
+          "w": 19.03,
+          "h": 1.44,
+          "text": "simulation models"
+        },
+        {
+          "l": 74.78,
+          "t": 22.23,
+          "w": 20.44,
+          "h": 1.85,
+          "text": "Budget forecasting "
+        },
+        {
+          "l": 74.76,
+          "t": 24.54,
+          "w": 3.98,
+          "h": 1.44,
+          "text": "tool"
+        },
+        {
+          "l": 12.68,
+          "t": 27.96,
+          "w": 11.9,
+          "h": 1.85,
+          "text": "Knowledge"
+        },
+        {
+          "l": 24.74,
+          "t": 28.84,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 25.59,
+          "t": 27.96,
+          "w": 7.27,
+          "h": 1.44,
+          "text": "driven "
+        },
+        {
+          "l": 12.68,
+          "t": 30.3,
+          "w": 4.61,
+          "h": 1.4,
+          "text": "DSS"
+        },
+        {
+          "l": 33.91,
+          "t": 27.96,
+          "w": 15.69,
+          "h": 1.84,
+          "text": "Uses AI/expert"
+        },
+        {
+          "l": 49.74,
+          "t": 28.84,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 50.62,
+          "t": 27.96,
+          "w": 16.21,
+          "h": 1.85,
+          "text": "system rules to "
+        },
+        {
+          "l": 33.91,
+          "t": 30.27,
+          "w": 20.31,
+          "h": 1.44,
+          "text": "recommend actions"
+        },
+        {
+          "l": 74.78,
+          "t": 27.96,
+          "w": 19.74,
+          "h": 1.85,
+          "text": "Medical diagnosis "
+        },
+        {
+          "l": 74.86,
+          "t": 30.47,
+          "w": 15.62,
+          "h": 1.64,
+          "text": "support system"
+        },
+        {
+          "l": 12.73,
+          "t": 33.66,
+          "w": 16.77,
+          "h": 1.44,
+          "text": "Communication"
+        },
+        {
+          "l": 29.65,
+          "t": 34.54,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 12.72,
+          "t": 36.0,
+          "w": 11.93,
+          "h": 1.44,
+          "text": "driven DSS"
+        },
+        {
+          "l": 34.06,
+          "t": 33.66,
+          "w": 32.0,
+          "h": 1.85,
+          "text": "Supports collaboration among "
+        },
+        {
+          "l": 33.91,
+          "t": 36.0,
+          "w": 18.05,
+          "h": 1.84,
+          "text": "multiple decision"
+        },
+        {
+          "l": 52.13,
+          "t": 36.88,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 52.9,
+          "t": 36.0,
+          "w": 7.41,
+          "h": 1.44,
+          "text": "makers"
+        },
+        {
+          "l": 74.76,
+          "t": 33.66,
+          "w": 6.29,
+          "h": 1.44,
+          "text": "Video"
+        },
+        {
+          "l": 81.24,
+          "t": 34.54,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 82.08,
+          "t": 33.66,
+          "w": 14.24,
+          "h": 1.85,
+          "text": "conferencing "
+        },
+        {
+          "l": 74.82,
+          "t": 36.0,
+          "w": 9.3,
+          "h": 1.44,
+          "text": "decision "
+        },
+        {
+          "l": 84.14,
+          "t": 36.0,
+          "w": 3.98,
+          "h": 1.44,
+          "text": "tool"
+        },
+        {
+          "l": 12.68,
+          "t": 39.46,
+          "w": 10.88,
+          "h": 1.37,
+          "text": "Document"
+        },
+        {
+          "l": 23.68,
+          "t": 40.27,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 24.49,
+          "t": 39.39,
+          "w": 7.27,
+          "h": 1.44,
+          "text": "driven "
+        },
+        {
+          "l": 12.68,
+          "t": 41.76,
+          "w": 4.61,
+          "h": 1.4,
+          "text": "DSS"
+        },
+        {
+          "l": 33.94,
+          "t": 39.39,
+          "w": 37.84,
+          "h": 1.85,
+          "text": "Manages and retrieves unstructured "
+        },
+        {
+          "l": 33.98,
+          "t": 41.72,
+          "w": 11.19,
+          "h": 1.44,
+          "text": "documents"
+        },
+        {
+          "l": 74.79,
+          "t": 39.39,
+          "w": 17.53,
+          "h": 1.85,
+          "text": "Legal document "
+        },
+        {
+          "l": 74.86,
+          "t": 41.72,
+          "w": 14.44,
+          "h": 1.85,
+          "text": "search system"
+        },
+        {
+          "l": 11.88,
+          "t": 48.4,
+          "w": 64.61,
+          "h": 1.81,
+          "text": "Generative AI Tools for Business Reporting and Analytics"
+        },
+        {
+          "l": 11.81,
+          "t": 51.33,
+          "w": 67.13,
+          "h": 1.85,
+          "text": "Modern BI platforms increasingly embed AI and Generative AI "
+        },
+        {
+          "l": 11.86,
+          "t": 53.67,
+          "w": 36.27,
+          "h": 1.85,
+          "text": "capabilities to automate reporting, "
+        },
+        {
+          "l": 48.26,
+          "t": 53.67,
+          "w": 16.62,
+          "h": 1.85,
+          "text": "generate natural"
+        },
+        {
+          "l": 65.03,
+          "t": 54.55,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 65.87,
+          "t": 53.67,
+          "w": 22.64,
+          "h": 1.85,
+          "text": "language summaries, "
+        },
+        {
+          "l": 11.86,
+          "t": 56.0,
+          "w": 50.09,
+          "h": 1.85,
+          "text": "and answer business questions conversationally."
+        },
+        {
+          "l": 13.68,
+          "t": 59.54,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.96,
+          "t": 59.1,
+          "w": 25.27,
+          "h": 1.78,
+          "text": "Power BI (Microsoft): "
+        },
+        {
+          "l": 41.29,
+          "t": 59.06,
+          "w": 44.4,
+          "h": 1.85,
+          "text": "A widely used BI tool offering interactive "
+        },
+        {
+          "l": 15.98,
+          "t": 61.4,
+          "w": 20.21,
+          "h": 1.75,
+          "text": "dashboards, natural"
+        },
+        {
+          "l": 36.35,
+          "t": 62.28,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 37.19,
+          "t": 61.4,
+          "w": 24.25,
+          "h": 1.85,
+          "text": "language Q&A, and AI"
+        },
+        {
+          "l": 61.58,
+          "t": 62.28,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 62.33,
+          "t": 61.4,
+          "w": 24.44,
+          "h": 1.85,
+          "text": "powered insights (e.g., "
+        },
+        {
+          "l": 15.98,
+          "t": 63.7,
+          "w": 42.69,
+          "h": 1.85,
+          "text": "Copilot integration) for automated report "
+        },
+        {
+          "l": 59.47,
+          "t": 63.7,
+          "w": 25.97,
+          "h": 1.85,
+          "text": "generation and narrative "
+        },
+        {
+          "l": 16.02,
+          "t": 66.0,
+          "w": 11.67,
+          "h": 1.44,
+          "text": "summaries."
+        },
+        {
+          "l": 13.68,
+          "t": 69.33,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 15.98,
+          "t": 68.89,
+          "w": 24.3,
+          "h": 1.78,
+          "text": "Tableau (Salesforce): "
+        },
+        {
+          "l": 40.35,
+          "t": 68.85,
+          "w": 15.2,
+          "h": 1.85,
+          "text": "A leading data"
+        },
+        {
+          "l": 55.66,
+          "t": 69.73,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 56.43,
+          "t": 68.85,
+          "w": 31.4,
+          "h": 1.84,
+          "text": "visualization platform known "
+        },
+        {
+          "l": 15.99,
+          "t": 71.19,
+          "w": 8.21,
+          "h": 1.85,
+          "text": "for drag"
+        },
+        {
+          "l": 24.35,
+          "t": 72.07,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 25.2,
+          "t": 71.19,
+          "w": 3.69,
+          "h": 1.44,
+          "text": "and"
+        },
+        {
+          "l": 29.02,
+          "t": 72.07,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 29.86,
+          "t": 71.19,
+          "w": 32.93,
+          "h": 1.84,
+          "text": "drop dashboard creation and AI"
+        },
+        {
+          "l": 62.91,
+          "t": 72.07,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 63.76,
+          "t": 71.19,
+          "w": 18.7,
+          "h": 1.85,
+          "text": "assisted analytics "
+        },
+        {
+          "l": 15.92,
+          "t": 73.52,
+          "w": 13.56,
+          "h": 1.85,
+          "text": "through built"
+        },
+        {
+          "l": 29.61,
+          "t": 74.4,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 30.44,
+          "t": 73.52,
+          "w": 53.79,
+          "h": 1.85,
+          "text": "in AI/agent features that suggest visualizations and "
+        },
+        {
+          "l": 16.02,
+          "t": 75.82,
+          "w": 19.16,
+          "h": 1.44,
+          "text": "surface anomalies."
+        },
+        {
+          "l": 13.68,
+          "t": 79.15,
+          "w": 0.64,
+          "h": 0.51,
+          "text": "\u2022 "
+        },
+        {
+          "l": 16.0,
+          "t": 78.71,
+          "w": 5.83,
+          "h": 1.81,
+          "text": "Goog"
+        },
+        {
+          "l": 21.91,
+          "t": 78.71,
+          "w": 20.07,
+          "h": 1.41,
+          "text": "le Looker Studio: "
+        },
+        {
+          "l": 42.04,
+          "t": 78.68,
+          "w": 13.64,
+          "h": 1.75,
+          "text": "A free, cloud"
+        },
+        {
+          "l": 55.81,
+          "t": 79.55,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 56.57,
+          "t": 78.68,
+          "w": 29.22,
+          "h": 1.85,
+          "text": "based BI and reporting tool "
+        },
+        {
+          "l": 15.92,
+          "t": 80.98,
+          "w": 44.07,
+          "h": 1.85,
+          "text": "that connects to multiple Google and third"
+        },
+        {
+          "l": 60.17,
+          "t": 81.86,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 60.92,
+          "t": 80.98,
+          "w": 22.21,
+          "h": 1.85,
+          "text": "party data sources to "
+        },
+        {
+          "l": 15.89,
+          "t": 83.28,
+          "w": 41.11,
+          "h": 1.75,
+          "text": "build shareable, interactive dashboards."
+        },
+        {
+          "l": 11.86,
+          "t": 86.16,
+          "w": 4.96,
+          "h": 1.4,
+          "text": "Case"
+        },
+        {
+          "l": 16.98,
+          "t": 87.01,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 17.86,
+          "t": 86.13,
+          "w": 65.67,
+          "h": 1.85,
+          "text": "study relevance: organizations use these tools to automatically "
+        },
+        {
+          "l": 11.85,
+          "t": 88.47,
+          "w": 21.89,
+          "h": 1.85,
+          "text": "generate quarterly pe"
+        },
+        {
+          "l": 33.83,
+          "t": 88.47,
+          "w": 49.32,
+          "h": 1.84,
+          "text": "rformance reports, detect anomalies in sales or "
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "image": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/slide_020.webp",
+      "thumb": "/slides/sbis_sbis_sbis_2_sbis_2_pdf/thumb_020.webp",
+      "text": "SFIT SBIS Mr. Dhrupesh Savadia\r\noperations data, and let non-technical managers query data using plain \r\nlanguage rather than SQL \u2014 democratizing access to analytics across \r\nthe organization.\r\nQuick Recap \u2014 Key Terms of Module 2\r\nTerm One-line Meaning\r\nDBMS Software to store, manage, and query structured \r\ndata\r\nData Warehouse Central, subject-oriented, integrated, time\ufffevariant, non-volatile data store\r\nETL Extract, Transform, Load \u2014 process to move \r\ndata into a warehouse\r\nData Mart Department-focused subset of a data warehouse\r\nBig Data Extremely large, fast, and varied data described \r\nby the 5 V's\r\nOLAP Multidimensional analysis of aggregated \r\nbusiness data\r\nOLTP Real-time processing of daily business \r\ntransactions\r\nBI Technologies/practices that turn data into \r\ndecision-support insight\r\nDSS Interactive system that helps managers evaluate \r\ndecision alternatives\r\nPredictive Analytics Using data and models to forecast future \r\noutcomes\r\nEnd of Module 2",
+      "width": 1224,
+      "height": 1584,
+      "rects": [
+        {
+          "l": 11.87,
+          "t": 94.41,
+          "w": 30.78,
+          "h": 0.88,
+          "text": "SFIT SBIS "
+        },
+        {
+          "l": 66.44,
+          "t": 94.43,
+          "w": 1.94,
+          "h": 0.84,
+          "text": "Mr"
+        },
+        {
+          "l": 68.49,
+          "t": 94.39,
+          "w": 12.64,
+          "h": 1.15,
+          "text": ". Dhrupesh Savadia"
+        },
+        {
+          "l": 11.86,
+          "t": 9.53,
+          "w": 28.72,
+          "h": 1.84,
+          "text": "operations data, and let non"
+        },
+        {
+          "l": 40.75,
+          "t": 10.41,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 41.53,
+          "t": 9.53,
+          "w": 44.48,
+          "h": 1.85,
+          "text": "technical managers query data using plain "
+        },
+        {
+          "l": 11.85,
+          "t": 11.84,
+          "w": 27.45,
+          "h": 1.85,
+          "text": "language rather than SQL "
+        },
+        {
+          "l": 39.33,
+          "t": 12.72,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 42.73,
+          "t": 11.84,
+          "w": 42.67,
+          "h": 1.85,
+          "text": "democratizing access to analytics across "
+        },
+        {
+          "l": 11.79,
+          "t": 14.17,
+          "w": 17.37,
+          "h": 1.85,
+          "text": "the organization."
+        },
+        {
+          "l": 11.87,
+          "t": 17.93,
+          "w": 15.01,
+          "h": 1.81,
+          "text": "Quick Recap "
+        },
+        {
+          "l": 26.89,
+          "t": 18.77,
+          "w": 2.67,
+          "h": 0.13,
+          "text": "\u2014 "
+        },
+        {
+          "l": 30.23,
+          "t": 17.93,
+          "w": 26.2,
+          "h": 1.81,
+          "text": "Key Terms of Module 2"
+        },
+        {
+          "l": 12.73,
+          "t": 21.57,
+          "w": 6.14,
+          "h": 1.37,
+          "text": "Term "
+        },
+        {
+          "l": 38.9,
+          "t": 21.54,
+          "w": 4.49,
+          "h": 1.4,
+          "text": "One"
+        },
+        {
+          "l": 43.53,
+          "t": 22.35,
+          "w": 0.75,
+          "h": 0.21,
+          "text": "-"
+        },
+        {
+          "l": 44.39,
+          "t": 21.54,
+          "w": 7.12,
+          "h": 1.4,
+          "text": "line M"
+        },
+        {
+          "l": 51.65,
+          "t": 21.54,
+          "w": 7.24,
+          "h": 1.81,
+          "text": "eaning"
+        },
+        {
+          "l": 12.68,
+          "t": 26.06,
+          "w": 7.27,
+          "h": 1.4,
+          "text": "DBMS "
+        },
+        {
+          "l": 38.97,
+          "t": 24.87,
+          "w": 50.56,
+          "h": 1.85,
+          "text": "Software to store, manage, and query structured "
+        },
+        {
+          "l": 38.89,
+          "t": 27.21,
+          "w": 4.29,
+          "h": 1.44,
+          "text": "data"
+        },
+        {
+          "l": 12.68,
+          "t": 31.75,
+          "w": 17.23,
+          "h": 1.44,
+          "text": "Data Warehouse "
+        },
+        {
+          "l": 38.9,
+          "t": 30.6,
+          "w": 16.31,
+          "h": 1.85,
+          "text": "Central, subject"
+        },
+        {
+          "l": 55.34,
+          "t": 31.48,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 56.19,
+          "t": 30.6,
+          "w": 26.12,
+          "h": 1.85,
+          "text": "oriented, integrated, time"
+        },
+        {
+          "l": 82.49,
+          "t": 31.48,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "\u0002"
+        },
+        {
+          "l": 38.82,
+          "t": 32.9,
+          "w": 12.45,
+          "h": 1.75,
+          "text": "variant, non"
+        },
+        {
+          "l": 51.42,
+          "t": 33.78,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 52.2,
+          "t": 32.9,
+          "w": 18.47,
+          "h": 1.44,
+          "text": "volatile data store"
+        },
+        {
+          "l": 12.69,
+          "t": 37.55,
+          "w": 4.71,
+          "h": 1.34,
+          "text": "ETL "
+        },
+        {
+          "l": 38.86,
+          "t": 36.3,
+          "w": 27.13,
+          "h": 1.75,
+          "text": "Extract, Transform, Load "
+        },
+        {
+          "l": 66.0,
+          "t": 37.18,
+          "w": 2.67,
+          "h": 0.08,
+          "text": "\u2014 "
+        },
+        {
+          "l": 69.32,
+          "t": 36.5,
+          "w": 17.56,
+          "h": 1.64,
+          "text": "process to move "
+        },
+        {
+          "l": 38.89,
+          "t": 38.63,
+          "w": 22.56,
+          "h": 1.44,
+          "text": "data into a warehouse"
+        },
+        {
+          "l": 12.68,
+          "t": 42.09,
+          "w": 10.64,
+          "h": 1.36,
+          "text": "Data Mart "
+        },
+        {
+          "l": 38.85,
+          "t": 42.09,
+          "w": 12.32,
+          "h": 1.78,
+          "text": "Department"
+        },
+        {
+          "l": 51.3,
+          "t": 42.91,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 52.16,
+          "t": 42.03,
+          "w": 36.57,
+          "h": 1.44,
+          "text": "focused subset of a data warehouse"
+        },
+        {
+          "l": 12.68,
+          "t": 46.58,
+          "w": 9.35,
+          "h": 1.85,
+          "text": "Big Data "
+        },
+        {
+          "l": 38.86,
+          "t": 45.42,
+          "w": 50.36,
+          "h": 1.85,
+          "text": "Extremely large, fast, and varied data described "
+        },
+        {
+          "l": 38.8,
+          "t": 47.76,
+          "w": 12.37,
+          "h": 1.85,
+          "text": "by the 5 V's"
+        },
+        {
+          "l": 12.72,
+          "t": 52.34,
+          "w": 6.61,
+          "h": 1.4,
+          "text": "OLAP "
+        },
+        {
+          "l": 38.85,
+          "t": 51.15,
+          "w": 43.21,
+          "h": 1.85,
+          "text": "Multidimensional analysis of aggregated "
+        },
+        {
+          "l": 38.8,
+          "t": 53.48,
+          "w": 13.89,
+          "h": 1.44,
+          "text": "business data"
+        },
+        {
+          "l": 12.72,
+          "t": 58.07,
+          "w": 6.33,
+          "h": 1.4,
+          "text": "OLTP "
+        },
+        {
+          "l": 38.85,
+          "t": 56.88,
+          "w": 4.71,
+          "h": 1.44,
+          "text": "Real"
+        },
+        {
+          "l": 43.69,
+          "t": 57.76,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 44.47,
+          "t": 56.88,
+          "w": 35.31,
+          "h": 1.85,
+          "text": "time processing of daily business "
+        },
+        {
+          "l": 38.83,
+          "t": 59.18,
+          "w": 12.38,
+          "h": 1.44,
+          "text": "transactions"
+        },
+        {
+          "l": 12.68,
+          "t": 63.83,
+          "w": 2.57,
+          "h": 1.34,
+          "text": "BI "
+        },
+        {
+          "l": 38.88,
+          "t": 62.58,
+          "w": 43.83,
+          "h": 1.85,
+          "text": "Technologies/practices that turn data into "
+        },
+        {
+          "l": 38.89,
+          "t": 64.91,
+          "w": 8.62,
+          "h": 1.44,
+          "text": "decision"
+        },
+        {
+          "l": 47.66,
+          "t": 65.79,
+          "w": 0.66,
+          "h": 0.15,
+          "text": "-"
+        },
+        {
+          "l": 48.54,
+          "t": 64.91,
+          "w": 15.46,
+          "h": 1.85,
+          "text": "support insight"
+        },
+        {
+          "l": 12.68,
+          "t": 69.5,
+          "w": 4.61,
+          "h": 1.4,
+          "text": "DSS "
+        },
+        {
+          "l": 38.87,
+          "t": 68.31,
+          "w": 50.43,
+          "h": 1.85,
+          "text": "Interactive system that helps managers evaluate "
+        },
+        {
+          "l": 38.89,
+          "t": 70.64,
+          "w": 21.22,
+          "h": 1.44,
+          "text": "decision alternatives"
+        },
+        {
+          "l": 12.68,
+          "t": 75.19,
+          "w": 21.14,
+          "h": 1.85,
+          "text": "Predictive Analytics "
+        },
+        {
+          "l": 38.81,
+          "t": 74.04,
+          "w": 43.0,
+          "h": 1.85,
+          "text": "Using data and models to forecast future "
+        },
+        {
+          "l": 38.89,
+          "t": 76.57,
+          "w": 9.86,
+          "h": 1.23,
+          "text": "outcomes"
+        },
+        {
+          "l": 11.71,
+          "t": 83.07,
+          "w": 17.47,
+          "h": 1.85,
+          "text": "End of Module 2"
+        }
+      ]
+    }
+  ]
+}
