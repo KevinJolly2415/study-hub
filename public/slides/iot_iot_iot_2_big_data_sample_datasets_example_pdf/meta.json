@@ -1,0 +1,1975 @@
+{
+  "mtime": 1795845202.1575594,
+  "aspectRatio": 0.71,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/iot_iot_iot_2_big_data_sample_datasets_example_pdf/slide_001.webp",
+      "thumb": "/slides/iot_iot_iot_2_big_data_sample_datasets_example_pdf/thumb_001.webp",
+      "text": "Step1: Sample Data Lake datasets\r\n1. Customer Data\r\nInformation about the customer.\r\nCustomer_ID Name Age City Email\r\nC101 Rahul Sharma 25 Mumbai rahul@gmail.com\r\nC102 Priya Patel 31 Pune priya@gmail.com\r\nC103 Amit Khan 28 Delhi amit@gmail.com\r\nExample: Name, age, address, email, phone number, etc.\r\n2. Transaction Data\r\nInformation about purchases/orders.\r\nTransaction_ID Customer_ID Product Quantity Amount Date\r\nT501 C101 Laptop 1 \u20b955,000 18-08-2026\r\nT502 C102 Headphones 2 \u20b94,000 18-08-2026\r\nT503 C101 Mouse 1 \u20b9800 19-08-2026\r\nExample: Order ID, customer ID, product, quantity, price, payment method, date/time.\r\n3. Website Clicks\r\nRecords of what users click on a website.\r\nUser_ID Page Action Product Time\r\nU101 Home Click \u2014 10:01:23\r\nU101 Laptops Click Dell Laptop 10:02:15\r\nU101 Product Add to Cart Dell Laptop 10:03:42\r\nU102 Mobiles Click iPhone 10:05:10\r\nEx.: Page visited, button clicked, product viewed, add-to-cart, search query, timestamp.\r\n4. Product Reviews\r\nTextual feedback given by customers.\r\nReview_ID Customer_ID Product Rating Review\r\nR101 C101 Dell Laptop 5 \"Excellent laptop, very fast.\"\r\nR102 C102 Headphones 4 \"Good sound quality.\"\r\nR103 C103 Mouse 2 \"Stopped working after one week.\"\r\nExample: Rating, review text, customer ID, product ID, date.",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 12.26,
+          "t": 9.09,
+          "w": 8.83,
+          "h": 1.9,
+          "text": "Step1: "
+        },
+        {
+          "l": 21.25,
+          "t": 9.09,
+          "w": 1.4,
+          "h": 1.48,
+          "text": "S"
+        },
+        {
+          "l": 22.9,
+          "t": 9.12,
+          "w": 8.51,
+          "h": 1.87,
+          "text": "ample "
+        },
+        {
+          "l": 31.45,
+          "t": 9.12,
+          "w": 14.24,
+          "h": 1.44,
+          "text": "Data Lake "
+        },
+        {
+          "l": 45.82,
+          "t": 9.12,
+          "w": 10.17,
+          "h": 1.44,
+          "text": "datasets"
+        },
+        {
+          "l": 12.25,
+          "t": 11.61,
+          "w": 16.89,
+          "h": 1.11,
+          "text": "1. Customer Data"
+        },
+        {
+          "l": 12.15,
+          "t": 13.35,
+          "w": 25.77,
+          "h": 1.01,
+          "text": "Information about the customer."
+        },
+        {
+          "l": 14.78,
+          "t": 17.2,
+          "w": 11.57,
+          "h": 1.27,
+          "text": "Customer_ID "
+        },
+        {
+          "l": 35.92,
+          "t": 17.22,
+          "w": 4.95,
+          "h": 0.96,
+          "text": "Name "
+        },
+        {
+          "l": 48.89,
+          "t": 17.2,
+          "w": 3.29,
+          "h": 1.27,
+          "text": "Age "
+        },
+        {
+          "l": 58.19,
+          "t": 17.19,
+          "w": 3.6,
+          "h": 1.27,
+          "text": "City "
+        },
+        {
+          "l": 74.64,
+          "t": 17.19,
+          "w": 5.07,
+          "h": 0.97,
+          "text": "Email"
+        },
+        {
+          "l": 18.46,
+          "t": 19.7,
+          "w": 4.05,
+          "h": 0.98,
+          "text": "C101 "
+        },
+        {
+          "l": 32.72,
+          "t": 19.68,
+          "w": 11.44,
+          "h": 1.01,
+          "text": "Rahul Sharma "
+        },
+        {
+          "l": 49.6,
+          "t": 19.71,
+          "w": 1.84,
+          "h": 0.98,
+          "text": "25 "
+        },
+        {
+          "l": 56.57,
+          "t": 19.68,
+          "w": 6.74,
+          "h": 1.01,
+          "text": "Mumbai "
+        },
+        {
+          "l": 69.91,
+          "t": 19.68,
+          "w": 14.53,
+          "h": 1.3,
+          "text": "rahul@gmail.com"
+        },
+        {
+          "l": 18.46,
+          "t": 22.26,
+          "w": 4.21,
+          "h": 0.98,
+          "text": "C102 "
+        },
+        {
+          "l": 34.05,
+          "t": 22.23,
+          "w": 8.69,
+          "h": 1.3,
+          "text": "Priya Patel "
+        },
+        {
+          "l": 49.64,
+          "t": 22.26,
+          "w": 1.69,
+          "h": 0.98,
+          "text": "31 "
+        },
+        {
+          "l": 57.96,
+          "t": 22.28,
+          "w": 3.95,
+          "h": 0.96,
+          "text": "Pune "
+        },
+        {
+          "l": 69.9,
+          "t": 22.23,
+          "w": 14.54,
+          "h": 1.3,
+          "text": "priya@gmail.com"
+        },
+        {
+          "l": 18.46,
+          "t": 24.75,
+          "w": 4.13,
+          "h": 0.98,
+          "text": "C103 "
+        },
+        {
+          "l": 33.93,
+          "t": 24.73,
+          "w": 8.98,
+          "h": 1.0,
+          "text": "Amit Khan "
+        },
+        {
+          "l": 49.6,
+          "t": 24.75,
+          "w": 1.86,
+          "h": 0.98,
+          "text": "28 "
+        },
+        {
+          "l": 57.74,
+          "t": 24.73,
+          "w": 4.38,
+          "h": 1.01,
+          "text": "Delhi "
+        },
+        {
+          "l": 70.26,
+          "t": 24.73,
+          "w": 13.9,
+          "h": 1.3,
+          "text": "amit@gmail.com"
+        },
+        {
+          "l": 12.14,
+          "t": 28.51,
+          "w": 8.06,
+          "h": 1.25,
+          "text": "Example: "
+        },
+        {
+          "l": 20.84,
+          "t": 28.46,
+          "w": 37.06,
+          "h": 1.3,
+          "text": "Name, age, address, email, phone number, etc"
+        },
+        {
+          "l": 58.12,
+          "t": 29.32,
+          "w": 0.2,
+          "h": 0.14,
+          "text": "."
+        },
+        {
+          "l": 12.15,
+          "t": 32.0,
+          "w": 18.0,
+          "h": 1.11,
+          "text": "2. Transaction Dat"
+        },
+        {
+          "l": 30.29,
+          "t": 32.33,
+          "w": 1.0,
+          "h": 0.77,
+          "text": "a"
+        },
+        {
+          "l": 12.15,
+          "t": 33.72,
+          "w": 28.95,
+          "h": 1.29,
+          "text": "Information about purchases/orders."
+        },
+        {
+          "l": 14.19,
+          "t": 37.44,
+          "w": 13.51,
+          "h": 1.27,
+          "text": "Transaction_ID "
+        },
+        {
+          "l": 31.61,
+          "t": 37.44,
+          "w": 11.57,
+          "h": 1.27,
+          "text": "Customer_ID "
+        },
+        {
+          "l": 48.1,
+          "t": 37.46,
+          "w": 6.85,
+          "h": 0.96,
+          "text": "Product "
+        },
+        {
+          "l": 59.29,
+          "t": 37.44,
+          "w": 7.64,
+          "h": 1.27,
+          "text": "Quantity "
+        },
+        {
+          "l": 69.29,
+          "t": 37.44,
+          "w": 7.02,
+          "h": 0.98,
+          "text": "Amount "
+        },
+        {
+          "l": 81.6,
+          "t": 37.46,
+          "w": 3.94,
+          "h": 0.96,
+          "text": "Date"
+        },
+        {
+          "l": 18.89,
+          "t": 39.82,
+          "w": 3.95,
+          "h": 0.98,
+          "text": "T501 "
+        },
+        {
+          "l": 35.3,
+          "t": 39.82,
+          "w": 4.05,
+          "h": 0.98,
+          "text": "C101 "
+        },
+        {
+          "l": 48.71,
+          "t": 39.84,
+          "w": 5.57,
+          "h": 1.25,
+          "text": "Laptop "
+        },
+        {
+          "l": 62.82,
+          "t": 39.82,
+          "w": 0.53,
+          "h": 0.96,
+          "text": "1 "
+        },
+        {
+          "l": 69.62,
+          "t": 39.81,
+          "w": 6.38,
+          "h": 1.21,
+          "text": "\u20b955,000 "
+        },
+        {
+          "l": 79.11,
+          "t": 39.82,
+          "w": 1.66,
+          "h": 0.98,
+          "text": "18"
+        },
+        {
+          "l": 80.97,
+          "t": 40.41,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 81.63,
+          "t": 39.82,
+          "w": 1.83,
+          "h": 0.98,
+          "text": "08"
+        },
+        {
+          "l": 83.65,
+          "t": 40.41,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 84.28,
+          "t": 39.82,
+          "w": 3.91,
+          "h": 0.98,
+          "text": "2026"
+        },
+        {
+          "l": 18.89,
+          "t": 42.23,
+          "w": 4.11,
+          "h": 0.98,
+          "text": "T502 "
+        },
+        {
+          "l": 35.3,
+          "t": 42.23,
+          "w": 4.21,
+          "h": 0.98,
+          "text": "C102 "
+        },
+        {
+          "l": 46.57,
+          "t": 42.2,
+          "w": 9.83,
+          "h": 1.29,
+          "text": "Headphones "
+        },
+        {
+          "l": 62.62,
+          "t": 42.23,
+          "w": 0.88,
+          "h": 0.96,
+          "text": "2 "
+        },
+        {
+          "l": 70.12,
+          "t": 42.22,
+          "w": 5.37,
+          "h": 1.21,
+          "text": "\u20b94,000 "
+        },
+        {
+          "l": 79.11,
+          "t": 42.23,
+          "w": 1.66,
+          "h": 0.98,
+          "text": "18"
+        },
+        {
+          "l": 80.97,
+          "t": 42.82,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 81.63,
+          "t": 42.23,
+          "w": 1.83,
+          "h": 0.98,
+          "text": "08"
+        },
+        {
+          "l": 83.65,
+          "t": 42.82,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 84.28,
+          "t": 42.23,
+          "w": 3.91,
+          "h": 0.98,
+          "text": "2026"
+        },
+        {
+          "l": 18.89,
+          "t": 44.58,
+          "w": 4.03,
+          "h": 0.98,
+          "text": "T503 "
+        },
+        {
+          "l": 35.3,
+          "t": 44.58,
+          "w": 4.05,
+          "h": 0.98,
+          "text": "C101 "
+        },
+        {
+          "l": 48.81,
+          "t": 44.6,
+          "w": 5.4,
+          "h": 0.96,
+          "text": "Mouse "
+        },
+        {
+          "l": 62.82,
+          "t": 44.58,
+          "w": 0.53,
+          "h": 0.96,
+          "text": "1 "
+        },
+        {
+          "l": 70.89,
+          "t": 44.57,
+          "w": 3.86,
+          "h": 0.99,
+          "text": "\u20b9800 "
+        },
+        {
+          "l": 79.11,
+          "t": 44.58,
+          "w": 1.69,
+          "h": 0.98,
+          "text": "19"
+        },
+        {
+          "l": 80.97,
+          "t": 45.17,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 81.63,
+          "t": 44.58,
+          "w": 1.83,
+          "h": 0.98,
+          "text": "08"
+        },
+        {
+          "l": 83.65,
+          "t": 45.17,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 84.28,
+          "t": 44.58,
+          "w": 3.91,
+          "h": 0.98,
+          "text": "2026"
+        },
+        {
+          "l": 12.14,
+          "t": 48.26,
+          "w": 8.06,
+          "h": 1.25,
+          "text": "Example: "
+        },
+        {
+          "l": 20.94,
+          "t": 48.22,
+          "w": 61.47,
+          "h": 1.3,
+          "text": "Order ID, customer ID, product, quantity, price, payment method, date/time."
+        },
+        {
+          "l": 12.13,
+          "t": 51.77,
+          "w": 15.8,
+          "h": 1.11,
+          "text": "3. Website Click"
+        },
+        {
+          "l": 28.02,
+          "t": 52.1,
+          "w": 0.72,
+          "h": 0.78,
+          "text": "s"
+        },
+        {
+          "l": 12.13,
+          "t": 53.49,
+          "w": 33.15,
+          "h": 1.01,
+          "text": "Records of what users click on a website."
+        },
+        {
+          "l": 15.61,
+          "t": 57.09,
+          "w": 7.13,
+          "h": 1.25,
+          "text": "User_ID "
+        },
+        {
+          "l": 30.74,
+          "t": 57.09,
+          "w": 4.02,
+          "h": 1.25,
+          "text": "Page "
+        },
+        {
+          "l": 45.56,
+          "t": 57.07,
+          "w": 5.62,
+          "h": 0.98,
+          "text": "Action "
+        },
+        {
+          "l": 63.52,
+          "t": 57.09,
+          "w": 6.85,
+          "h": 0.96,
+          "text": "Product "
+        },
+        {
+          "l": 81.1,
+          "t": 57.07,
+          "w": 4.34,
+          "h": 0.98,
+          "text": "Time"
+        },
+        {
+          "l": 16.99,
+          "t": 59.16,
+          "w": 4.22,
+          "h": 0.98,
+          "text": "U101 "
+        },
+        {
+          "l": 30.34,
+          "t": 59.18,
+          "w": 4.84,
+          "h": 0.96,
+          "text": "Home "
+        },
+        {
+          "l": 46.28,
+          "t": 59.14,
+          "w": 4.31,
+          "h": 1.01,
+          "text": "Click "
+        },
+        {
+          "l": 65.91,
+          "t": 59.76,
+          "w": 2.05,
+          "h": 0.06,
+          "text": "\u2014 "
+        },
+        {
+          "l": 79.91,
+          "t": 59.16,
+          "w": 6.77,
+          "h": 0.98,
+          "text": "10:01:23"
+        },
+        {
+          "l": 16.99,
+          "t": 61.29,
+          "w": 4.22,
+          "h": 0.98,
+          "text": "U101 "
+        },
+        {
+          "l": 29.56,
+          "t": 61.31,
+          "w": 6.35,
+          "h": 1.25,
+          "text": "Laptops "
+        },
+        {
+          "l": 46.28,
+          "t": 61.26,
+          "w": 4.31,
+          "h": 1.01,
+          "text": "Click "
+        },
+        {
+          "l": 62.13,
+          "t": 61.26,
+          "w": 9.56,
+          "h": 1.29,
+          "text": "Dell Laptop "
+        },
+        {
+          "l": 79.91,
+          "t": 61.29,
+          "w": 6.81,
+          "h": 0.98,
+          "text": "10:02:15"
+        },
+        {
+          "l": 16.99,
+          "t": 63.37,
+          "w": 4.22,
+          "h": 0.98,
+          "text": "U101 "
+        },
+        {
+          "l": 29.65,
+          "t": 63.34,
+          "w": 6.23,
+          "h": 1.01,
+          "text": "Product "
+        },
+        {
+          "l": 43.64,
+          "t": 63.34,
+          "w": 9.5,
+          "h": 1.01,
+          "text": "Add to Cart "
+        },
+        {
+          "l": 62.13,
+          "t": 63.34,
+          "w": 9.56,
+          "h": 1.29,
+          "text": "Dell Laptop "
+        },
+        {
+          "l": 79.91,
+          "t": 63.37,
+          "w": 6.85,
+          "h": 0.98,
+          "text": "10:03:42"
+        },
+        {
+          "l": 16.99,
+          "t": 65.45,
+          "w": 4.38,
+          "h": 0.98,
+          "text": "U102 "
+        },
+        {
+          "l": 29.49,
+          "t": 65.42,
+          "w": 6.51,
+          "h": 1.01,
+          "text": "Mobiles "
+        },
+        {
+          "l": 46.28,
+          "t": 65.42,
+          "w": 4.31,
+          "h": 1.01,
+          "text": "Click "
+        },
+        {
+          "l": 64.19,
+          "t": 65.42,
+          "w": 5.49,
+          "h": 1.01,
+          "text": "iPhone "
+        },
+        {
+          "l": 79.91,
+          "t": 65.45,
+          "w": 6.87,
+          "h": 0.98,
+          "text": "10:05:10"
+        },
+        {
+          "l": 12.14,
+          "t": 68.99,
+          "w": 2.73,
+          "h": 0.96,
+          "text": "Ex."
+        },
+        {
+          "l": 15.13,
+          "t": 69.26,
+          "w": 0.33,
+          "h": 0.69,
+          "text": ": "
+        },
+        {
+          "l": 16.16,
+          "t": 68.95,
+          "w": 39.65,
+          "h": 1.3,
+          "text": "Page visited, button clicked, product viewed, add"
+        },
+        {
+          "l": 55.91,
+          "t": 69.56,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 56.51,
+          "t": 69.09,
+          "w": 1.48,
+          "h": 0.87,
+          "text": "to"
+        },
+        {
+          "l": 58.15,
+          "t": 69.56,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 58.8,
+          "t": 68.95,
+          "w": 23.98,
+          "h": 1.3,
+          "text": "cart, search query, timestamp."
+        },
+        {
+          "l": 12.16,
+          "t": 72.48,
+          "w": 18.45,
+          "h": 1.11,
+          "text": "4. Product Reviews"
+        },
+        {
+          "l": 12.16,
+          "t": 74.21,
+          "w": 30.41,
+          "h": 1.3,
+          "text": "Textual feedback given by customers."
+        },
+        {
+          "l": 13.16,
+          "t": 77.78,
+          "w": 9.39,
+          "h": 1.27,
+          "text": "Review_ID "
+        },
+        {
+          "l": 24.94,
+          "t": 77.78,
+          "w": 11.57,
+          "h": 1.27,
+          "text": "Customer_ID "
+        },
+        {
+          "l": 40.41,
+          "t": 77.8,
+          "w": 6.85,
+          "h": 0.96,
+          "text": "Product "
+        },
+        {
+          "l": 50.58,
+          "t": 77.78,
+          "w": 5.75,
+          "h": 1.27,
+          "text": "Rating "
+        },
+        {
+          "l": 70.81,
+          "t": 77.78,
+          "w": 6.2,
+          "h": 0.98,
+          "text": "Review"
+        },
+        {
+          "l": 15.74,
+          "t": 79.85,
+          "w": 4.09,
+          "h": 0.98,
+          "text": "R101 "
+        },
+        {
+          "l": 28.62,
+          "t": 79.85,
+          "w": 4.05,
+          "h": 0.98,
+          "text": "C101 "
+        },
+        {
+          "l": 39.03,
+          "t": 79.82,
+          "w": 9.56,
+          "h": 1.29,
+          "text": "Dell Laptop "
+        },
+        {
+          "l": 53.04,
+          "t": 79.87,
+          "w": 0.78,
+          "h": 0.96,
+          "text": "5 "
+        },
+        {
+          "l": 62.39,
+          "t": 79.82,
+          "w": 23.02,
+          "h": 1.3,
+          "text": "\"Excellent laptop, very fast.\""
+        },
+        {
+          "l": 15.74,
+          "t": 81.96,
+          "w": 4.25,
+          "h": 0.98,
+          "text": "R102 "
+        },
+        {
+          "l": 28.62,
+          "t": 81.96,
+          "w": 4.21,
+          "h": 0.98,
+          "text": "C102 "
+        },
+        {
+          "l": 38.89,
+          "t": 81.93,
+          "w": 9.83,
+          "h": 1.29,
+          "text": "Headphones "
+        },
+        {
+          "l": 52.98,
+          "t": 81.96,
+          "w": 0.91,
+          "h": 0.96,
+          "text": "4 "
+        },
+        {
+          "l": 65.01,
+          "t": 81.93,
+          "w": 17.79,
+          "h": 1.3,
+          "text": "\"Good sound quality.\""
+        },
+        {
+          "l": 15.74,
+          "t": 84.01,
+          "w": 4.17,
+          "h": 0.98,
+          "text": "R103 "
+        },
+        {
+          "l": 28.62,
+          "t": 84.01,
+          "w": 4.13,
+          "h": 0.98,
+          "text": "C103 "
+        },
+        {
+          "l": 41.12,
+          "t": 84.03,
+          "w": 5.4,
+          "h": 0.96,
+          "text": "Mouse "
+        },
+        {
+          "l": 52.99,
+          "t": 84.01,
+          "w": 0.88,
+          "h": 0.96,
+          "text": "2 "
+        },
+        {
+          "l": 59.87,
+          "t": 83.99,
+          "w": 28.06,
+          "h": 1.3,
+          "text": "\"Stopped working after one week.\""
+        },
+        {
+          "l": 12.14,
+          "t": 87.55,
+          "w": 8.06,
+          "h": 1.25,
+          "text": "Example: "
+        },
+        {
+          "l": 20.9,
+          "t": 87.51,
+          "w": 40.91,
+          "h": 1.3,
+          "text": "Rating, review text, customer ID, product ID, date."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/iot_iot_iot_2_big_data_sample_datasets_example_pdf/slide_002.webp",
+      "thumb": "/slides/iot_iot_iot_2_big_data_sample_datasets_example_pdf/thumb_002.webp",
+      "text": "5. Product Images\r\nImages associated with products.\r\nProduct_ID Product_Name Image_File Format Size\r\nP101 Dell Laptop dell_laptop.jpg JPEG 2.5 MB\r\nP102 Headphones headphones.png PNG 1.8 MB\r\nP103 Mouse wireless_mouse.jpg JPEG 1.2 MB\r\nThe actual image itself is also data, e.g.:\r\n\ud83d\udcf7 dell_laptop.jpg \u2192 image of the laptop\r\n6. Application Logs\r\nAutomatically generated records showing what an application/server is doing.\r\nTimestamp User_ID Event Status IP_Address\r\n10:01:23 U101 Login Success 192.168.1.10\r\n10:02:15 U101 Product_View Success 192.168.1.10\r\n10:03:42 U101 Add_to_Cart Success 192.168.1.10\r\n10:04:11 U102 Payment Failed 192.168.1.15\r\nExample: Login events, errors, API requests, server activity, payment failures, timestamps, \r\netc.\r\nE-commerce application can generate all these data types simultaneously:\r\nCustomer data \u2192 structured\r\nTransaction data \u2192 structured\r\nWebsite clicks \u2192 semi-structured/log data\r\nProduct reviews \u2192 unstructured text\r\nProduct images \u2192 unstructured multimedia\r\nApplication logs \u2192 semi-structured data\r\nSo when an organization generates huge Volume + high Velocity + different \r\nVariety of data, we start entering the Big Data scenario.\r\nAmazon-like website \u2192 Millions of customers \u2192 Millions of transactions + \r\nclicks + reviews + images + application logs \u2192 Big Data.",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 12.18,
+          "t": 8.98,
+          "w": 17.43,
+          "h": 1.41,
+          "text": "5. Product Images"
+        },
+        {
+          "l": 12.15,
+          "t": 10.69,
+          "w": 26.44,
+          "h": 1.3,
+          "text": "Images associated with products."
+        },
+        {
+          "l": 14.67,
+          "t": 14.44,
+          "w": 10.04,
+          "h": 1.25,
+          "text": "Product_ID "
+        },
+        {
+          "l": 30.5,
+          "t": 14.44,
+          "w": 12.86,
+          "h": 1.25,
+          "text": "Product_Name "
+        },
+        {
+          "l": 53.53,
+          "t": 14.42,
+          "w": 9.53,
+          "h": 1.27,
+          "text": "Image_File "
+        },
+        {
+          "l": 71.78,
+          "t": 14.44,
+          "w": 6.41,
+          "h": 0.96,
+          "text": "Format "
+        },
+        {
+          "l": 82.93,
+          "t": 14.42,
+          "w": 3.32,
+          "h": 0.99,
+          "text": "Size"
+        },
+        {
+          "l": 17.68,
+          "t": 16.74,
+          "w": 3.87,
+          "h": 0.98,
+          "text": "P101 "
+        },
+        {
+          "l": 32.13,
+          "t": 16.72,
+          "w": 9.56,
+          "h": 1.29,
+          "text": "Dell Laptop "
+        },
+        {
+          "l": 52.31,
+          "t": 16.71,
+          "w": 12.05,
+          "h": 1.3,
+          "text": "dell_laptop.jpg "
+        },
+        {
+          "l": 72.73,
+          "t": 16.74,
+          "w": 4.55,
+          "h": 0.98,
+          "text": "JPEG "
+        },
+        {
+          "l": 81.51,
+          "t": 16.74,
+          "w": 6.01,
+          "h": 0.98,
+          "text": "2.5 MB"
+        },
+        {
+          "l": 17.68,
+          "t": 19.05,
+          "w": 4.03,
+          "h": 0.98,
+          "text": "P102 "
+        },
+        {
+          "l": 31.99,
+          "t": 19.02,
+          "w": 9.83,
+          "h": 1.29,
+          "text": "Headphones "
+        },
+        {
+          "l": 51.81,
+          "t": 19.02,
+          "w": 12.99,
+          "h": 1.3,
+          "text": "headphones.png "
+        },
+        {
+          "l": 73.0,
+          "t": 19.05,
+          "w": 3.98,
+          "h": 0.98,
+          "text": "PNG "
+        },
+        {
+          "l": 81.71,
+          "t": 19.05,
+          "w": 5.81,
+          "h": 0.98,
+          "text": "1.8 MB"
+        },
+        {
+          "l": 17.68,
+          "t": 21.36,
+          "w": 3.95,
+          "h": 0.98,
+          "text": "P103 "
+        },
+        {
+          "l": 34.23,
+          "t": 21.38,
+          "w": 5.4,
+          "h": 0.96,
+          "text": "Mouse "
+        },
+        {
+          "l": 50.34,
+          "t": 21.33,
+          "w": 15.91,
+          "h": 1.3,
+          "text": "wireless_mouse.jpg "
+        },
+        {
+          "l": 72.73,
+          "t": 21.36,
+          "w": 4.55,
+          "h": 0.98,
+          "text": "JPEG "
+        },
+        {
+          "l": 81.71,
+          "t": 21.36,
+          "w": 5.81,
+          "h": 0.98,
+          "text": "1.2 MB"
+        },
+        {
+          "l": 12.16,
+          "t": 25.03,
+          "w": 3.57,
+          "h": 1.01,
+          "text": "The "
+        },
+        {
+          "l": 15.82,
+          "t": 25.05,
+          "w": 15.6,
+          "h": 1.27,
+          "text": "actual image itself "
+        },
+        {
+          "l": 31.85,
+          "t": 25.03,
+          "w": 13.19,
+          "h": 1.3,
+          "text": "is also data, e.g.:"
+        },
+        {
+          "l": 12.29,
+          "t": 26.97,
+          "w": 1.63,
+          "h": 0.92,
+          "text": "\ud83d\udcf7 "
+        },
+        {
+          "l": 14.67,
+          "t": 27.07,
+          "w": 10.05,
+          "h": 1.08,
+          "text": "dell_laptop.jpg "
+        },
+        {
+          "l": 25.34,
+          "t": 26.89,
+          "w": 17.97,
+          "h": 1.31,
+          "text": "\u2192 image of the laptop"
+        },
+        {
+          "l": 12.18,
+          "t": 30.34,
+          "w": 18.69,
+          "h": 1.44,
+          "text": "6. Application Logs"
+        },
+        {
+          "l": 12.11,
+          "t": 32.07,
+          "w": 62.67,
+          "h": 1.3,
+          "text": "Automatically generated records showing what an application/server is doing."
+        },
+        {
+          "l": 15.56,
+          "t": 35.54,
+          "w": 9.54,
+          "h": 1.27,
+          "text": "Timestamp "
+        },
+        {
+          "l": 31.18,
+          "t": 35.56,
+          "w": 7.13,
+          "h": 1.25,
+          "text": "User_ID "
+        },
+        {
+          "l": 48.27,
+          "t": 35.56,
+          "w": 4.98,
+          "h": 0.96,
+          "text": "Event "
+        },
+        {
+          "l": 63.41,
+          "t": 35.54,
+          "w": 5.2,
+          "h": 0.99,
+          "text": "Status "
+        },
+        {
+          "l": 75.34,
+          "t": 35.54,
+          "w": 9.94,
+          "h": 1.27,
+          "text": "IP_Address"
+        },
+        {
+          "l": 16.99,
+          "t": 37.4,
+          "w": 6.77,
+          "h": 0.98,
+          "text": "10:01:23 "
+        },
+        {
+          "l": 32.55,
+          "t": 37.4,
+          "w": 4.22,
+          "h": 0.98,
+          "text": "U101 "
+        },
+        {
+          "l": 48.37,
+          "t": 37.37,
+          "w": 4.74,
+          "h": 1.3,
+          "text": "Login "
+        },
+        {
+          "l": 62.93,
+          "t": 37.4,
+          "w": 6.17,
+          "h": 0.98,
+          "text": "Success "
+        },
+        {
+          "l": 75.3,
+          "t": 37.4,
+          "w": 10.27,
+          "h": 0.98,
+          "text": "192.168.1.10"
+        },
+        {
+          "l": 16.99,
+          "t": 39.28,
+          "w": 6.81,
+          "h": 0.98,
+          "text": "10:02:15 "
+        },
+        {
+          "l": 32.55,
+          "t": 39.28,
+          "w": 4.22,
+          "h": 0.98,
+          "text": "U101 "
+        },
+        {
+          "l": 44.95,
+          "t": 39.25,
+          "w": 11.58,
+          "h": 1.3,
+          "text": "Product_View "
+        },
+        {
+          "l": 62.93,
+          "t": 39.28,
+          "w": 6.17,
+          "h": 0.98,
+          "text": "Success "
+        },
+        {
+          "l": 75.3,
+          "t": 39.28,
+          "w": 10.27,
+          "h": 0.98,
+          "text": "192.168.1.10"
+        },
+        {
+          "l": 16.99,
+          "t": 41.15,
+          "w": 6.85,
+          "h": 0.98,
+          "text": "10:03:42 "
+        },
+        {
+          "l": 32.55,
+          "t": 41.15,
+          "w": 4.22,
+          "h": 0.98,
+          "text": "U101 "
+        },
+        {
+          "l": 45.5,
+          "t": 41.12,
+          "w": 10.51,
+          "h": 1.3,
+          "text": "Add_to_Cart "
+        },
+        {
+          "l": 62.93,
+          "t": 41.14,
+          "w": 6.17,
+          "h": 0.98,
+          "text": "Success "
+        },
+        {
+          "l": 75.3,
+          "t": 41.15,
+          "w": 10.27,
+          "h": 0.98,
+          "text": "192.168.1.10"
+        },
+        {
+          "l": 16.99,
+          "t": 43.03,
+          "w": 6.69,
+          "h": 0.98,
+          "text": "10:04:11 "
+        },
+        {
+          "l": 32.55,
+          "t": 43.03,
+          "w": 4.38,
+          "h": 0.98,
+          "text": "U102 "
+        },
+        {
+          "l": 47.25,
+          "t": 43.05,
+          "w": 7.0,
+          "h": 1.25,
+          "text": "Payment "
+        },
+        {
+          "l": 63.5,
+          "t": 43.0,
+          "w": 4.99,
+          "h": 1.01,
+          "text": "Failed "
+        },
+        {
+          "l": 75.3,
+          "t": 43.03,
+          "w": 10.21,
+          "h": 0.98,
+          "text": "192.168.1.15"
+        },
+        {
+          "l": 12.14,
+          "t": 46.5,
+          "w": 8.06,
+          "h": 1.25,
+          "text": "Example: "
+        },
+        {
+          "l": 20.93,
+          "t": 46.45,
+          "w": 65.64,
+          "h": 1.3,
+          "text": "Login events, errors, API requests, server activity, payment failures, timestamps, "
+        },
+        {
+          "l": 12.17,
+          "t": 48.23,
+          "w": 2.63,
+          "h": 0.87,
+          "text": "etc."
+        },
+        {
+          "l": 12.15,
+          "t": 51.5,
+          "w": 1.42,
+          "h": 1.1,
+          "text": "E"
+        },
+        {
+          "l": 13.73,
+          "t": 52.14,
+          "w": 0.67,
+          "h": 0.17,
+          "text": "-"
+        },
+        {
+          "l": 14.55,
+          "t": 51.47,
+          "w": 70.56,
+          "h": 1.49,
+          "text": "commerce application can generate all these data types simultaneously"
+        },
+        {
+          "l": 85.37,
+          "t": 51.83,
+          "w": 0.26,
+          "h": 0.79,
+          "text": ":"
+        },
+        {
+          "l": 12.19,
+          "t": 53.38,
+          "w": 14.83,
+          "h": 1.15,
+          "text": "Customer data "
+        },
+        {
+          "l": 27.76,
+          "t": 53.51,
+          "w": 11.0,
+          "h": 1.03,
+          "text": "\u2192 structure"
+        },
+        {
+          "l": 38.91,
+          "t": 53.35,
+          "w": 1.11,
+          "h": 1.18,
+          "text": "d"
+        },
+        {
+          "l": 12.18,
+          "t": 55.43,
+          "w": 17.05,
+          "h": 1.15,
+          "text": "Transaction data "
+        },
+        {
+          "l": 29.97,
+          "t": 55.56,
+          "w": 11.0,
+          "h": 1.03,
+          "text": "\u2192 structure"
+        },
+        {
+          "l": 41.13,
+          "t": 55.41,
+          "w": 1.11,
+          "h": 1.18,
+          "text": "d"
+        },
+        {
+          "l": 12.12,
+          "t": 57.5,
+          "w": 14.18,
+          "h": 1.15,
+          "text": "Website clicks "
+        },
+        {
+          "l": 27.07,
+          "t": 57.46,
+          "w": 7.22,
+          "h": 1.2,
+          "text": "\u2192 semi"
+        },
+        {
+          "l": 34.45,
+          "t": 58.2,
+          "w": 0.59,
+          "h": 0.12,
+          "text": "-"
+        },
+        {
+          "l": 35.26,
+          "t": 57.47,
+          "w": 16.44,
+          "h": 1.52,
+          "text": "structured/log dat"
+        },
+        {
+          "l": 51.78,
+          "t": 57.86,
+          "w": 0.96,
+          "h": 0.78,
+          "text": "a"
+        },
+        {
+          "l": 12.16,
+          "t": 59.57,
+          "w": 16.13,
+          "h": 1.15,
+          "text": "Product reviews "
+        },
+        {
+          "l": 29.07,
+          "t": 59.52,
+          "w": 18.02,
+          "h": 1.2,
+          "text": "\u2192 unstructured tex"
+        },
+        {
+          "l": 47.14,
+          "t": 59.71,
+          "w": 0.63,
+          "h": 1.0,
+          "text": "t"
+        },
+        {
+          "l": 12.16,
+          "t": 61.63,
+          "w": 15.46,
+          "h": 1.49,
+          "text": "Product images "
+        },
+        {
+          "l": 28.4,
+          "t": 61.59,
+          "w": 24.77,
+          "h": 1.2,
+          "text": "\u2192 unstructured multimedi"
+        },
+        {
+          "l": 53.35,
+          "t": 62.0,
+          "w": 0.96,
+          "h": 0.78,
+          "text": "a"
+        },
+        {
+          "l": 12.12,
+          "t": 63.7,
+          "w": 16.16,
+          "h": 1.49,
+          "text": "Application logs "
+        },
+        {
+          "l": 29.07,
+          "t": 63.66,
+          "w": 7.19,
+          "h": 1.2,
+          "text": "\u2192 semi"
+        },
+        {
+          "l": 36.43,
+          "t": 64.4,
+          "w": 0.59,
+          "h": 0.12,
+          "text": "-"
+        },
+        {
+          "l": 37.23,
+          "t": 63.67,
+          "w": 13.79,
+          "h": 1.18,
+          "text": "structured data"
+        },
+        {
+          "l": 12.25,
+          "t": 67.79,
+          "w": 32.55,
+          "h": 1.52,
+          "text": "So when an organization generates "
+        },
+        {
+          "l": 45.58,
+          "t": 67.82,
+          "w": 40.79,
+          "h": 1.49,
+          "text": "huge Volume + high Velocity + different "
+        },
+        {
+          "l": 12.12,
+          "t": 69.89,
+          "w": 15.1,
+          "h": 1.49,
+          "text": "Variety of data"
+        },
+        {
+          "l": 27.41,
+          "t": 69.86,
+          "w": 17.3,
+          "h": 1.52,
+          "text": ", we start entering "
+        },
+        {
+          "l": 44.72,
+          "t": 69.86,
+          "w": 2.81,
+          "h": 1.18,
+          "text": "the "
+        },
+        {
+          "l": 48.24,
+          "t": 69.89,
+          "w": 8.72,
+          "h": 1.49,
+          "text": "Big Data "
+        },
+        {
+          "l": 57.7,
+          "t": 69.86,
+          "w": 8.16,
+          "h": 1.18,
+          "text": "scenario."
+        },
+        {
+          "l": 12.12,
+          "t": 74.01,
+          "w": 7.94,
+          "h": 1.15,
+          "text": "Amazon"
+        },
+        {
+          "l": 20.18,
+          "t": 74.7,
+          "w": 0.59,
+          "h": 0.12,
+          "text": "-"
+        },
+        {
+          "l": 20.94,
+          "t": 73.97,
+          "w": 63.75,
+          "h": 1.2,
+          "text": "like website \u2192 Millions of customers \u2192 Millions of transactions + "
+        },
+        {
+          "l": 12.18,
+          "t": 76.03,
+          "w": 44.69,
+          "h": 1.53,
+          "text": "clicks + reviews + images + application logs \u2192 "
+        },
+        {
+          "l": 57.63,
+          "t": 76.08,
+          "w": 8.7,
+          "h": 1.49,
+          "text": "Big Data"
+        },
+        {
+          "l": 66.56,
+          "t": 77.05,
+          "w": 0.25,
+          "h": 0.18,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "image": "/slides/iot_iot_iot_2_big_data_sample_datasets_example_pdf/slide_003.webp",
+      "thumb": "/slides/iot_iot_iot_2_big_data_sample_datasets_example_pdf/thumb_003.webp",
+      "text": "Step2: Business Intelligence:\r\nBI tools process and present this data as reports, dashboards, charts and \r\nKPIs.\r\nFor example, the manager sees:\r\nSales Dashboard\r\nTotal Sales = \u20b917 lakh\r\nBest-selling product = Laptop\r\nHighest-sales city = Mumbai\r\nSales increased by 20% this month\r\nThis is Business Intelligence.\r\nBI answers: \"What is happening?\"\r\nStep 3: Analytical Decision Making\r\nNow the manager analyzes the information and makes a business decision.\r\nFor example:\r\n\"Laptop sales are highest in Mumbai, and sales have increased by 20%. \r\nTherefore, we should increase laptop inventory in Mumbai and run more laptop \r\nadvertisements there.\"\r\nThis is Analytical Decision Making.\r\nAnalytical decision making answers:\r\n\"What should we do based on the data?\"\r\nBusiness Intelligence: \"What is happening in the business?\"\r\nAnalytical Decision Making: \"What decision should we take based on what the \r\ndata tells us?\"",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 12.26,
+          "t": 9.09,
+          "w": 8.83,
+          "h": 1.9,
+          "text": "Step2: "
+        },
+        {
+          "l": 21.15,
+          "t": 9.09,
+          "w": 26.64,
+          "h": 1.91,
+          "text": "Business Intelligence"
+        },
+        {
+          "l": 48.16,
+          "t": 9.53,
+          "w": 0.49,
+          "h": 1.03,
+          "text": ":"
+        },
+        {
+          "l": 12.14,
+          "t": 13.21,
+          "w": 8.08,
+          "h": 1.18,
+          "text": "BI tools p"
+        },
+        {
+          "l": 20.2,
+          "t": 13.21,
+          "w": 19.02,
+          "h": 1.51,
+          "text": " process and present "
+        },
+        {
+          "l": 39.26,
+          "t": 13.21,
+          "w": 10.34,
+          "h": 1.18,
+          "text": "this data as "
+        },
+        {
+          "l": 50.35,
+          "t": 13.27,
+          "w": 32.45,
+          "h": 1.46,
+          "text": "reports, dashboards, charts and "
+        },
+        {
+          "l": 12.15,
+          "t": 15.18,
+          "w": 1.81,
+          "h": 1.1,
+          "text": "K"
+        },
+        {
+          "l": 13.99,
+          "t": 15.18,
+          "w": 3.13,
+          "h": 1.13,
+          "text": "PIs"
+        },
+        {
+          "l": 17.39,
+          "t": 16.12,
+          "w": 0.25,
+          "h": 0.18,
+          "text": "."
+        },
+        {
+          "l": 12.14,
+          "t": 18.7,
+          "w": 29.47,
+          "h": 1.52,
+          "text": "For example, the manager sees:"
+        },
+        {
+          "l": 12.22,
+          "t": 22.35,
+          "w": 15.34,
+          "h": 1.15,
+          "text": "Sales Dashboar"
+        },
+        {
+          "l": 27.7,
+          "t": 22.37,
+          "w": 1.17,
+          "h": 1.13,
+          "text": "d"
+        },
+        {
+          "l": 12.17,
+          "t": 24.18,
+          "w": 19.95,
+          "h": 1.2,
+          "text": "Total Sales = \u20b917 lak"
+        },
+        {
+          "l": 32.13,
+          "t": 24.2,
+          "w": 1.15,
+          "h": 1.16,
+          "text": "h"
+        },
+        {
+          "l": 12.14,
+          "t": 26.16,
+          "w": 4.15,
+          "h": 1.13,
+          "text": "Best"
+        },
+        {
+          "l": 16.39,
+          "t": 26.83,
+          "w": 0.59,
+          "h": 0.12,
+          "text": "-"
+        },
+        {
+          "l": 17.19,
+          "t": 26.11,
+          "w": 21.81,
+          "h": 1.52,
+          "text": "selling product = Lapto"
+        },
+        {
+          "l": 39.09,
+          "t": 26.5,
+          "w": 1.1,
+          "h": 1.12,
+          "text": "p"
+        },
+        {
+          "l": 12.14,
+          "t": 28.02,
+          "w": 7.29,
+          "h": 1.52,
+          "text": "Highest"
+        },
+        {
+          "l": 19.53,
+          "t": 28.74,
+          "w": 0.59,
+          "h": 0.12,
+          "text": "-"
+        },
+        {
+          "l": 20.32,
+          "t": 28.02,
+          "w": 18.37,
+          "h": 1.52,
+          "text": "sales city = Mumba"
+        },
+        {
+          "l": 38.78,
+          "t": 28.02,
+          "w": 0.53,
+          "h": 1.16,
+          "text": "i"
+        },
+        {
+          "l": 12.25,
+          "t": 29.92,
+          "w": 32.68,
+          "h": 1.52,
+          "text": "Sales increased by 20% this month"
+        },
+        {
+          "l": 12.17,
+          "t": 33.5,
+          "w": 6.18,
+          "h": 1.18,
+          "text": "This is "
+        },
+        {
+          "l": 19.08,
+          "t": 33.52,
+          "w": 20.74,
+          "h": 1.49,
+          "text": "Business Intelligence"
+        },
+        {
+          "l": 40.07,
+          "t": 34.5,
+          "w": 0.25,
+          "h": 0.18,
+          "text": "."
+        },
+        {
+          "l": 12.73,
+          "t": 37.13,
+          "w": 35.03,
+          "h": 1.49,
+          "text": "BI answers: \"What is happening?\""
+        },
+        {
+          "l": 12.24,
+          "t": 44.29,
+          "w": 20.26,
+          "h": 1.69,
+          "text": "Step 3: Analytical "
+        },
+        {
+          "l": 33.26,
+          "t": 44.29,
+          "w": 17.86,
+          "h": 1.31,
+          "text": "Decision Makin"
+        },
+        {
+          "l": 51.31,
+          "t": 44.68,
+          "w": 1.19,
+          "h": 1.3,
+          "text": "g"
+        },
+        {
+          "l": 12.07,
+          "t": 48.01,
+          "w": 17.34,
+          "h": 1.52,
+          "text": "Now the manager "
+        },
+        {
+          "l": 29.5,
+          "t": 48.01,
+          "w": 7.9,
+          "h": 1.52,
+          "text": "analyzes "
+        },
+        {
+          "l": 38.11,
+          "t": 48.01,
+          "w": 44.15,
+          "h": 1.18,
+          "text": "the information and makes a business decision."
+        },
+        {
+          "l": 12.14,
+          "t": 51.59,
+          "w": 12.24,
+          "h": 1.51,
+          "text": "For example:"
+        },
+        {
+          "l": 12.25,
+          "t": 55.17,
+          "w": 67.62,
+          "h": 1.52,
+          "text": "\"Laptop sales are highest in Mumbai, and sales have increased by 20%. "
+        },
+        {
+          "l": 12.17,
+          "t": 57.09,
+          "w": 75.48,
+          "h": 1.52,
+          "text": "Therefore, we should increase laptop inventory in Mumbai and run more laptop "
+        },
+        {
+          "l": 12.18,
+          "t": 58.98,
+          "w": 6.39,
+          "h": 1.18,
+          "text": "adverti"
+        },
+        {
+          "l": 18.74,
+          "t": 58.98,
+          "w": 14.12,
+          "h": 1.18,
+          "text": "sements there.\""
+        },
+        {
+          "l": 12.17,
+          "t": 62.55,
+          "w": 6.18,
+          "h": 1.18,
+          "text": "This is "
+        },
+        {
+          "l": 19.05,
+          "t": 62.57,
+          "w": 27.74,
+          "h": 1.49,
+          "text": "Analytical Decision Making"
+        },
+        {
+          "l": 47.04,
+          "t": 63.55,
+          "w": 0.25,
+          "h": 0.18,
+          "text": "."
+        },
+        {
+          "l": 12.12,
+          "t": 66.18,
+          "w": 36.43,
+          "h": 1.49,
+          "text": "Analytical decision making answers:"
+        },
+        {
+          "l": 12.89,
+          "t": 69.76,
+          "w": 40.8,
+          "h": 1.15,
+          "text": "\"What should we do based on the data?\""
+        },
+        {
+          "l": 12.3,
+          "t": 76.97,
+          "w": 20.09,
+          "h": 1.43,
+          "text": "Business Intelligence: "
+        },
+        {
+          "l": 33.35,
+          "t": 76.97,
+          "w": 35.19,
+          "h": 1.43,
+          "text": "\"What is happening in the business?"
+        },
+        {
+          "l": 68.8,
+          "t": 76.97,
+          "w": 0.79,
+          "h": 0.43,
+          "text": "\""
+        },
+        {
+          "l": 12.14,
+          "t": 79.15,
+          "w": 25.98,
+          "h": 1.43,
+          "text": "Analytical Decision Making: "
+        },
+        {
+          "l": 39.08,
+          "t": 79.15,
+          "w": 38.01,
+          "h": 1.16,
+          "text": "\"What decision should we take based o"
+        },
+        {
+          "l": 77.22,
+          "t": 79.15,
+          "w": 11.07,
+          "h": 1.15,
+          "text": "n what the "
+        },
+        {
+          "l": 12.17,
+          "t": 81.34,
+          "w": 13.92,
+          "h": 1.16,
+          "text": "data tells us?\""
+        }
+      ]
+    }
+  ]
+}

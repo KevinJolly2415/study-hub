@@ -1,0 +1,1573 @@
+{
+  "mtime": 1795845236.8693013,
+  "aspectRatio": 0.71,
+  "slides": [
+    {
+      "index": 1,
+      "image": "/slides/iot_iot_iot_2_iot_database_technology_pdf/slide_001.webp",
+      "thumb": "/slides/iot_iot_iot_2_iot_database_technology_pdf/thumb_001.webp",
+      "text": "IOT Database Technology differences:\r\nSr. No. Technology Best suited for\r\n1 SQL Structured and relational IoT data\r\n2 NoSQL Large, flexible, rapidly changing IoT data\r\n3 Time-Series Sensor data recorded over time\r\n4 Key-Value Very fast access to device data\r\n5 Graph Relationships between IoT devices and entities\r\n6 Cloud Scalable, remote, large-scale IoT data storage\r\nIOT \r\nDatabase \r\nTechnology\r\nDefinition Types / Examples IoT Use Applications\r\nRelational \r\nDatabases \r\n(SQL)\r\nDatabases that store \r\ndata in structured \r\ntables with rows \r\nand columns and \r\nuse SQL for \r\nquerying and \r\nmanaging data.\r\nMySQL, \r\nPostgreSQL, \r\nOracle, SQL \r\nServer\r\nStores structured \r\ninformation such as \r\ndevice details, \r\nusers, \r\nconfigurations, and \r\ntransactions.\r\nSmart homes, \r\nindustrial IoT, \r\nhealthcare \r\nsystems, device \r\nmanagement\r\nNoSQL \r\nDatabases\r\nDatabases designed \r\nto store large \r\namounts of \r\nunstructured or \r\nsemi-structured \r\ndata with flexible \r\nschemas.\r\nMongoDB \u2013\r\nDocument; \r\nCassandra \u2013\r\nWide-column; \r\nCouchDB \u2013\r\nDocument\r\nHandles large\r\nvolumes of rapidly \r\ngenerated sensor \r\nand device data.\r\nSmart cities, \r\nconnected \r\nvehicles, large \r\nsensor networks, \r\nIoT platforms\r\nTime-Series \r\nDatabases\r\nDatabases optimized \r\nfor data that is \r\ncollected and stored \r\naccording to time, \r\nsuch as continuous \r\nsensor \r\nmeasurements.\r\nInfluxDB, \r\nTimescaleDB, \r\nOpenTSDB\r\nStores temperature, \r\nhumidity, pressure, \r\nspeed, energy \r\nconsumption, and \r\nother time-stamped \r\nreadings.\r\nEnvironmental \r\nmonitoring, \r\nindustrial \r\nmonitoring, \r\npredictive \r\nmaintenance, \r\nenergy monitoring\r\nKey-Value \r\nDatabases\r\nDatabases that store \r\ninformation as key\ufffevalue pairs, \r\nallowing very fast \r\nretrieval using a \r\nunique key.\r\nRedis, Amazon \r\nDynamoDB, Riak\r\nStores device \r\nstatus, sensor \r\nvalues, session \r\ninformation, and \r\nfrequently accessed \r\nreal-time data.\r\nReal-time IoT\r\ndashboards, smart \r\nappliances, device \r\nstate management, \r\ncaching",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 12.14,
+          "t": 8.9,
+          "w": 4.17,
+          "h": 0.98,
+          "text": "IOT "
+        },
+        {
+          "l": 16.34,
+          "t": 8.92,
+          "w": 18.35,
+          "h": 1.25,
+          "text": "Database Technology "
+        },
+        {
+          "l": 35.3,
+          "t": 8.9,
+          "w": 9.81,
+          "h": 0.98,
+          "text": "differences:"
+        },
+        {
+          "l": 13.27,
+          "t": 14.49,
+          "w": 5.8,
+          "h": 0.99,
+          "text": "Sr. No. "
+        },
+        {
+          "l": 24.63,
+          "t": 15.09,
+          "w": 9.88,
+          "h": 1.25,
+          "text": "Technology "
+        },
+        {
+          "l": 57.22,
+          "t": 15.07,
+          "w": 12.36,
+          "h": 0.98,
+          "text": "Best suited for"
+        },
+        {
+          "l": 15.8,
+          "t": 17.54,
+          "w": 0.72,
+          "h": 0.96,
+          "text": "1 "
+        },
+        {
+          "l": 27.65,
+          "t": 18.12,
+          "w": 3.86,
+          "h": 1.22,
+          "text": "SQL "
+        },
+        {
+          "l": 38.94,
+          "t": 18.07,
+          "w": 27.06,
+          "h": 1.01,
+          "text": "Structured and relational IoT data"
+        },
+        {
+          "l": 15.71,
+          "t": 20.58,
+          "w": 0.86,
+          "h": 0.96,
+          "text": "2 "
+        },
+        {
+          "l": 26.34,
+          "t": 21.16,
+          "w": 6.4,
+          "h": 1.22,
+          "text": "NoSQL "
+        },
+        {
+          "l": 38.85,
+          "t": 21.11,
+          "w": 33.66,
+          "h": 1.3,
+          "text": "Large, flexible, rapidly changing IoT data"
+        },
+        {
+          "l": 15.7,
+          "t": 23.63,
+          "w": 0.86,
+          "h": 0.98,
+          "text": "3 "
+        },
+        {
+          "l": 24.47,
+          "t": 24.21,
+          "w": 4.34,
+          "h": 0.98,
+          "text": "Time"
+        },
+        {
+          "l": 28.9,
+          "t": 24.77,
+          "w": 0.57,
+          "h": 0.14,
+          "text": "-"
+        },
+        {
+          "l": 29.62,
+          "t": 24.21,
+          "w": 4.98,
+          "h": 0.99,
+          "text": "Series "
+        },
+        {
+          "l": 38.94,
+          "t": 24.16,
+          "w": 24.89,
+          "h": 1.01,
+          "text": "Sensor data recorded over time"
+        },
+        {
+          "l": 15.72,
+          "t": 26.68,
+          "w": 0.87,
+          "h": 0.96,
+          "text": "4 "
+        },
+        {
+          "l": 25.0,
+          "t": 27.28,
+          "w": 3.38,
+          "h": 1.25,
+          "text": "Key"
+        },
+        {
+          "l": 28.46,
+          "t": 27.82,
+          "w": 0.57,
+          "h": 0.14,
+          "text": "-"
+        },
+        {
+          "l": 29.11,
+          "t": 27.28,
+          "w": 4.98,
+          "h": 0.96,
+          "text": "Value "
+        },
+        {
+          "l": 38.83,
+          "t": 27.21,
+          "w": 21.4,
+          "h": 1.3,
+          "text": "Very fast access to device "
+        },
+        {
+          "l": 60.31,
+          "t": 27.21,
+          "w": 3.28,
+          "h": 1.01,
+          "text": "data"
+        },
+        {
+          "l": 15.73,
+          "t": 29.75,
+          "w": 0.86,
+          "h": 0.96,
+          "text": "5 "
+        },
+        {
+          "l": 26.77,
+          "t": 30.31,
+          "w": 5.55,
+          "h": 1.27,
+          "text": "Graph "
+        },
+        {
+          "l": 38.85,
+          "t": 30.26,
+          "w": 37.77,
+          "h": 1.29,
+          "text": "Relationships between IoT devices and entities"
+        },
+        {
+          "l": 15.74,
+          "t": 32.77,
+          "w": 0.87,
+          "h": 0.98,
+          "text": "6 "
+        },
+        {
+          "l": 26.99,
+          "t": 33.35,
+          "w": 5.15,
+          "h": 0.98,
+          "text": "Cloud "
+        },
+        {
+          "l": 38.94,
+          "t": 33.3,
+          "w": 18.26,
+          "h": 1.3,
+          "text": "Scalable, remote, large"
+        },
+        {
+          "l": 57.36,
+          "t": 33.91,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 58.04,
+          "t": 33.3,
+          "w": 17.48,
+          "h": 1.3,
+          "text": "scale IoT data storage"
+        },
+        {
+          "l": 15.81,
+          "t": 38.55,
+          "w": 4.17,
+          "h": 0.98,
+          "text": "IOT "
+        },
+        {
+          "l": 13.68,
+          "t": 40.21,
+          "w": 8.42,
+          "h": 0.96,
+          "text": "Database "
+        },
+        {
+          "l": 12.7,
+          "t": 41.85,
+          "w": 9.88,
+          "h": 1.25,
+          "text": "Technology"
+        },
+        {
+          "l": 27.53,
+          "t": 40.19,
+          "w": 8.55,
+          "h": 0.98,
+          "text": "Definition "
+        },
+        {
+          "l": 40.78,
+          "t": 40.19,
+          "w": 14.97,
+          "h": 1.27,
+          "text": "Types / Examples "
+        },
+        {
+          "l": 60.79,
+          "t": 40.21,
+          "w": 6.69,
+          "h": 0.96,
+          "text": "IoT Use "
+        },
+        {
+          "l": 74.63,
+          "t": 40.19,
+          "w": 10.79,
+          "h": 1.27,
+          "text": "Applications"
+        },
+        {
+          "l": 12.3,
+          "t": 46.97,
+          "w": 9.31,
+          "h": 0.98,
+          "text": "Relational "
+        },
+        {
+          "l": 12.29,
+          "t": 48.63,
+          "w": 9.2,
+          "h": 0.96,
+          "text": "Databases "
+        },
+        {
+          "l": 12.34,
+          "t": 50.25,
+          "w": 5.22,
+          "h": 1.25,
+          "text": "(SQL)"
+        },
+        {
+          "l": 23.28,
+          "t": 43.64,
+          "w": 16.57,
+          "h": 1.01,
+          "text": "Databases that store "
+        },
+        {
+          "l": 23.31,
+          "t": 45.28,
+          "w": 14.4,
+          "h": 1.01,
+          "text": "data in structured "
+        },
+        {
+          "l": 23.28,
+          "t": 46.97,
+          "w": 14.47,
+          "h": 0.98,
+          "text": "tables with rows "
+        },
+        {
+          "l": 23.34,
+          "t": 48.61,
+          "w": 10.75,
+          "h": 0.96,
+          "text": "and columns "
+        },
+        {
+          "l": 34.75,
+          "t": 48.56,
+          "w": 3.33,
+          "h": 1.01,
+          "text": "and "
+        },
+        {
+          "l": 23.25,
+          "t": 50.2,
+          "w": 10.33,
+          "h": 1.27,
+          "text": "use SQL for "
+        },
+        {
+          "l": 23.31,
+          "t": 51.84,
+          "w": 10.99,
+          "h": 1.3,
+          "text": "querying and "
+        },
+        {
+          "l": 23.26,
+          "t": 53.48,
+          "w": 12.14,
+          "h": 1.3,
+          "text": "managing data."
+        },
+        {
+          "l": 40.67,
+          "t": 46.16,
+          "w": 7.92,
+          "h": 1.27,
+          "text": "MySQL, "
+        },
+        {
+          "l": 40.68,
+          "t": 47.8,
+          "w": 11.47,
+          "h": 1.27,
+          "text": "PostgreSQL, "
+        },
+        {
+          "l": 40.7,
+          "t": 49.44,
+          "w": 11.29,
+          "h": 1.22,
+          "text": "Oracle, SQL "
+        },
+        {
+          "l": 40.73,
+          "t": 51.08,
+          "w": 5.56,
+          "h": 0.99,
+          "text": "Server"
+        },
+        {
+          "l": 56.3,
+          "t": 44.47,
+          "w": 13.96,
+          "h": 1.01,
+          "text": "Stores structured "
+        },
+        {
+          "l": 56.23,
+          "t": 46.11,
+          "w": 16.33,
+          "h": 1.01,
+          "text": "information such as \r\nS\r\ni"
+        },
+        {
+          "l": 56.24,
+          "t": 47.75,
+          "w": 11.96,
+          "h": 1.23,
+          "text": "device details, "
+        },
+        {
+          "l": 56.17,
+          "t": 49.72,
+          "w": 5.14,
+          "h": 0.89,
+          "text": "users, "
+        },
+        {
+          "l": 56.24,
+          "t": 51.03,
+          "w": 15.97,
+          "h": 1.3,
+          "text": "configurations, and "
+        },
+        {
+          "l": 56.19,
+          "t": 52.67,
+          "w": 9.95,
+          "h": 1.01,
+          "text": "transactions."
+        },
+        {
+          "l": 72.49,
+          "t": 45.28,
+          "w": 9.62,
+          "h": 1.01,
+          "text": "Smart home"
+        },
+        {
+          "l": 82.26,
+          "t": 45.62,
+          "w": 1.69,
+          "h": 0.89,
+          "text": "s, "
+        },
+        {
+          "l": 72.42,
+          "t": 46.92,
+          "w": 11.95,
+          "h": 1.23,
+          "text": " \r\nindustrial IoT, "
+        },
+        {
+          "l": 72.37,
+          "t": 48.56,
+          "w": 8.75,
+          "h": 1.01,
+          "text": "healthcare "
+        },
+        {
+          "l": 72.46,
+          "t": 50.2,
+          "w": 13.04,
+          "h": 1.3,
+          "text": "systems, device "
+        },
+        {
+          "l": 72.38,
+          "t": 51.98,
+          "w": 10.26,
+          "h": 1.15,
+          "text": "management"
+        },
+        {
+          "l": 12.29,
+          "t": 59.51,
+          "w": 6.98,
+          "h": 1.22,
+          "text": "NoSQL "
+        },
+        {
+          "l": 12.29,
+          "t": 61.17,
+          "w": 8.63,
+          "h": 0.96,
+          "text": "Databases"
+        },
+        {
+          "l": 23.28,
+          "t": 55.36,
+          "w": 16.29,
+          "h": 1.3,
+          "text": "Databases designed "
+        },
+        {
+          "l": 23.26,
+          "t": 57.0,
+          "w": 10.98,
+          "h": 1.3,
+          "text": "to store large "
+        },
+        {
+          "l": 23.32,
+          "t": 58.64,
+          "w": 9.44,
+          "h": 1.01,
+          "text": "amounts of "
+        },
+        {
+          "l": 23.31,
+          "t": 60.35,
+          "w": 14.14,
+          "h": 0.96,
+          "text": "unstructured or "
+        },
+        {
+          "l": 23.33,
+          "t": 61.97,
+          "w": 3.8,
+          "h": 0.98,
+          "text": "semi"
+        },
+        {
+          "l": 27.2,
+          "t": 62.54,
+          "w": 0.57,
+          "h": 0.14,
+          "text": "-"
+        },
+        {
+          "l": 27.91,
+          "t": 61.99,
+          "w": 9.49,
+          "h": 0.96,
+          "text": "structured "
+        },
+        {
+          "l": 23.32,
+          "t": 63.6,
+          "w": 3.7,
+          "h": 0.96,
+          "text": "data "
+        },
+        {
+          "l": 27.58,
+          "t": 63.56,
+          "w": 10.75,
+          "h": 1.01,
+          "text": "with flexible "
+        },
+        {
+          "l": 23.34,
+          "t": 65.2,
+          "w": 7.08,
+          "h": 1.01,
+          "text": "schemas."
+        },
+        {
+          "l": 40.67,
+          "t": 56.23,
+          "w": 8.73,
+          "h": 1.25,
+          "text": "MongoDB "
+        },
+        {
+          "l": 49.97,
+          "t": 56.81,
+          "w": 1.04,
+          "h": 0.06,
+          "text": "\u2013"
+        },
+        {
+          "l": 40.66,
+          "t": 57.86,
+          "w": 9.42,
+          "h": 1.18,
+          "text": "Document; "
+        },
+        {
+          "l": 40.71,
+          "t": 59.48,
+          "w": 9.07,
+          "h": 0.98,
+          "text": "Cassandra "
+        },
+        {
+          "l": 50.31,
+          "t": 60.07,
+          "w": 1.04,
+          "h": 0.06,
+          "text": "\u2013"
+        },
+        {
+          "l": 40.65,
+          "t": 61.09,
+          "w": 4.29,
+          "h": 1.01,
+          "text": "Wide"
+        },
+        {
+          "l": 45.08,
+          "t": 61.71,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 45.73,
+          "t": 61.09,
+          "w": 7.04,
+          "h": 1.23,
+          "text": "column; "
+        },
+        {
+          "l": 40.71,
+          "t": 62.75,
+          "w": 8.25,
+          "h": 0.98,
+          "text": "CouchDB "
+        },
+        {
+          "l": 49.52,
+          "t": 63.35,
+          "w": 1.04,
+          "h": 0.06,
+          "text": "\u2013"
+        },
+        {
+          "l": 40.66,
+          "t": 64.42,
+          "w": 8.35,
+          "h": 0.96,
+          "text": "Document"
+        },
+        {
+          "l": 56.2,
+          "t": 57.81,
+          "w": 11.04,
+          "h": 1.3,
+          "text": "Handles large"
+        },
+        {
+          "l": 56.19,
+          "t": 59.45,
+          "w": 15.68,
+          "h": 1.3,
+          "text": "volumes of rapidly "
+        },
+        {
+          "l": 56.23,
+          "t": 61.09,
+          "w": 13.91,
+          "h": 1.3,
+          "text": "generated sensor "
+        },
+        {
+          "l": 56.24,
+          "t": 62.73,
+          "w": 12.81,
+          "h": 1.01,
+          "text": "and device data."
+        },
+        {
+          "l": 72.49,
+          "t": 57.0,
+          "w": 10.45,
+          "h": 1.23,
+          "text": "Smart cities, "
+        },
+        {
+          "l": 72.43,
+          "t": 58.64,
+          "w": 8.58,
+          "h": 1.01,
+          "text": "connected "
+        },
+        {
+          "l": 72.38,
+          "t": 60.28,
+          "w": 12.12,
+          "h": 1.3,
+          "text": "vehicles, large "
+        },
+        {
+          "l": 72.46,
+          "t": 61.92,
+          "w": 13.93,
+          "h": 1.23,
+          "text": "sensor networks, "
+        },
+        {
+          "l": 72.41,
+          "t": 63.56,
+          "w": 11.0,
+          "h": 1.29,
+          "text": "IoT platforms"
+        },
+        {
+          "l": 12.33,
+          "t": 71.22,
+          "w": 4.34,
+          "h": 0.98,
+          "text": "Time"
+        },
+        {
+          "l": 16.76,
+          "t": 71.79,
+          "w": 0.57,
+          "h": 0.14,
+          "text": "-"
+        },
+        {
+          "l": 17.48,
+          "t": 71.22,
+          "w": 5.56,
+          "h": 0.99,
+          "text": "Series "
+        },
+        {
+          "l": 12.29,
+          "t": 72.89,
+          "w": 8.63,
+          "h": 0.96,
+          "text": "Databases"
+        },
+        {
+          "l": 23.28,
+          "t": 67.08,
+          "w": 17.19,
+          "h": 1.29,
+          "text": "Databases optimized "
+        },
+        {
+          "l": 23.32,
+          "t": 68.72,
+          "w": 11.99,
+          "h": 1.01,
+          "text": "for data that is "
+        },
+        {
+          "l": 23.31,
+          "t": 70.36,
+          "w": 16.53,
+          "h": 1.01,
+          "text": "collected and stored "
+        },
+        {
+          "l": 23.32,
+          "t": 72.0,
+          "w": 10.42,
+          "h": 1.3,
+          "text": "according to "
+        },
+        {
+          "l": 33.79,
+          "t": 72.02,
+          "w": 3.73,
+          "h": 0.98,
+          "text": "time"
+        },
+        {
+          "l": 37.67,
+          "t": 72.85,
+          "w": 0.9,
+          "h": 0.38,
+          "text": ", "
+        },
+        {
+          "l": 23.34,
+          "t": 73.64,
+          "w": 15.62,
+          "h": 1.01,
+          "text": "such as continuous "
+        },
+        {
+          "l": 23.34,
+          "t": 75.61,
+          "w": 5.55,
+          "h": 0.68,
+          "text": "sensor "
+        },
+        {
+          "l": 23.26,
+          "t": 77.25,
+          "w": 5.12,
+          "h": 0.68,
+          "text": "measu"
+        },
+        {
+          "l": 28.4,
+          "t": 77.06,
+          "w": 6.72,
+          "h": 0.87,
+          "text": "rements."
+        },
+        {
+          "l": 40.67,
+          "t": 70.41,
+          "w": 9.04,
+          "h": 1.21,
+          "text": "InfluxDB, "
+        },
+        {
+          "l": 40.7,
+          "t": 72.05,
+          "w": 12.34,
+          "h": 1.21,
+          "text": "TimescaleDB, "
+        },
+        {
+          "l": 40.7,
+          "t": 73.69,
+          "w": 9.84,
+          "h": 1.27,
+          "text": "OpenTSDB"
+        },
+        {
+          "l": 56.3,
+          "t": 67.91,
+          "w": 16.04,
+          "h": 1.27,
+          "text": "Stores temperature, "
+        },
+        {
+          "l": 56.18,
+          "t": 69.53,
+          "w": 15.97,
+          "h": 1.3,
+          "text": "humidity, pressure, "
+        },
+        {
+          "l": 56.27,
+          "t": 71.17,
+          "w": 11.47,
+          "h": 1.3,
+          "text": "speed, energy "
+        },
+        {
+          "l": 56.24,
+          "t": 72.81,
+          "w": 14.76,
+          "h": 1.29,
+          "text": "consumption, and "
+        },
+        {
+          "l": 56.24,
+          "t": 74.45,
+          "w": 8.1,
+          "h": 1.01,
+          "text": "other time"
+        },
+        {
+          "l": 64.48,
+          "t": 75.07,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 65.16,
+          "t": 74.45,
+          "w": 7.12,
+          "h": 1.29,
+          "text": "stamped "
+        },
+        {
+          "l": 56.18,
+          "t": 76.09,
+          "w": 7.16,
+          "h": 1.3,
+          "text": "readings."
+        },
+        {
+          "l": 72.4,
+          "t": 67.08,
+          "w": 12.43,
+          "h": 1.01,
+          "text": "Environmental "
+        },
+        {
+          "l": 72.38,
+          "t": 68.72,
+          "w": 9.94,
+          "h": 1.3,
+          "text": "monitoring, "
+        },
+        {
+          "l": 72.42,
+          "t": 70.36,
+          "w": 8.06,
+          "h": 1.01,
+          "text": "industrial "
+        },
+        {
+          "l": 72.38,
+          "t": 72.0,
+          "w": 9.94,
+          "h": 1.3,
+          "text": "monitoring, "
+        },
+        {
+          "l": 72.36,
+          "t": 73.64,
+          "w": 8.55,
+          "h": 1.29,
+          "text": "predictive "
+        },
+        {
+          "l": 72.38,
+          "t": 75.28,
+          "w": 11.15,
+          "h": 1.23,
+          "text": "maintenance, "
+        },
+        {
+          "l": 72.44,
+          "t": 76.92,
+          "w": 14.84,
+          "h": 1.3,
+          "text": "energy monitoring"
+        },
+        {
+          "l": 12.3,
+          "t": 82.14,
+          "w": 3.38,
+          "h": 1.25,
+          "text": "Key"
+        },
+        {
+          "l": 15.75,
+          "t": 82.68,
+          "w": 0.57,
+          "h": 0.14,
+          "text": "-"
+        },
+        {
+          "l": 16.41,
+          "t": 82.14,
+          "w": 5.53,
+          "h": 0.96,
+          "text": "Value "
+        },
+        {
+          "l": 12.29,
+          "t": 83.77,
+          "w": 8.63,
+          "h": 0.96,
+          "text": "Databases"
+        },
+        {
+          "l": 23.28,
+          "t": 78.78,
+          "w": 16.57,
+          "h": 1.01,
+          "text": "Databases that store "
+        },
+        {
+          "l": 23.3,
+          "t": 80.42,
+          "w": 12.14,
+          "h": 1.01,
+          "text": "information as "
+        },
+        {
+          "l": 35.51,
+          "t": 80.47,
+          "w": 2.94,
+          "h": 1.25,
+          "text": "key"
+        },
+        {
+          "l": 38.52,
+          "t": 81.01,
+          "w": 0.57,
+          "h": 0.14,
+          "text": "\u0002"
+        },
+        {
+          "l": 23.26,
+          "t": 82.08,
+          "w": 9.38,
+          "h": 1.27,
+          "text": "value pairs"
+        },
+        {
+          "l": 32.83,
+          "t": 82.91,
+          "w": 0.9,
+          "h": 0.38,
+          "text": ", "
+        },
+        {
+          "l": 23.32,
+          "t": 83.7,
+          "w": 14.95,
+          "h": 1.3,
+          "text": "allowing very fast "
+        },
+        {
+          "l": 23.26,
+          "t": 85.34,
+          "w": 13.45,
+          "h": 1.3,
+          "text": "retrieval using a "
+        },
+        {
+          "l": 23.25,
+          "t": 86.98,
+          "w": 9.25,
+          "h": 1.3,
+          "text": "unique key."
+        },
+        {
+          "l": 40.66,
+          "t": 82.11,
+          "w": 13.44,
+          "h": 1.21,
+          "text": "Redis, Amazon "
+        },
+        {
+          "l": 40.65,
+          "t": 83.75,
+          "w": 15.2,
+          "h": 1.27,
+          "text": "DynamoDB, Riak"
+        },
+        {
+          "l": 56.3,
+          "t": 78.78,
+          "w": 11.16,
+          "h": 1.01,
+          "text": "Stores device "
+        },
+        {
+          "l": 56.27,
+          "t": 80.56,
+          "w": 11.15,
+          "h": 1.08,
+          "text": "status, sensor "
+        },
+        {
+          "l": 56.19,
+          "t": 82.06,
+          "w": 12.46,
+          "h": 1.23,
+          "text": "values, session "
+        },
+        {
+          "l": 56.23,
+          "t": 83.7,
+          "w": 13.87,
+          "h": 1.23,
+          "text": "information, and "
+        },
+        {
+          "l": 56.25,
+          "t": 85.34,
+          "w": 16.25,
+          "h": 1.3,
+          "text": "frequently accessed \r\ns\r\nc"
+        },
+        {
+          "l": 56.18,
+          "t": 86.98,
+          "w": 2.94,
+          "h": 1.01,
+          "text": "real"
+        },
+        {
+          "l": 59.26,
+          "t": 87.6,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 59.86,
+          "t": 86.98,
+          "w": 7.78,
+          "h": 1.01,
+          "text": "time data."
+        },
+        {
+          "l": 72.4,
+          "t": 79.61,
+          "w": 3.61,
+          "h": 1.01,
+          "text": "Real"
+        },
+        {
+          "l": 76.13,
+          "t": 80.23,
+          "w": 0.51,
+          "h": 0.1,
+          "text": "-"
+        },
+        {
+          "l": 76.74,
+          "t": 79.61,
+          "w": 6.92,
+          "h": 1.01,
+          "text": "time IoT"
+        },
+        {
+          "l": 72.43,
+          "t": 81.25,
+          "w": 14.97,
+          "h": 1.23,
+          "text": "dashboards, smart "
+        },
+        {
+          "l": 72.43,
+          "t": 82.89,
+          "w": 15.18,
+          "h": 1.29,
+          "text": "appliances, device "
+        },
+        {
+          "l": 72.46,
+          "t": 84.67,
+          "w": 15.38,
+          "h": 1.15,
+          "text": "state management, "
+        },
+        {
+          "l": 72.43,
+          "t": 86.17,
+          "w": 6.16,
+          "h": 1.3,
+          "text": " \r\ncaching"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "image": "/slides/iot_iot_iot_2_iot_database_technology_pdf/slide_002.webp",
+      "thumb": "/slides/iot_iot_iot_2_iot_database_technology_pdf/thumb_002.webp",
+      "text": "IOT \r\nDatabase \r\nTechnology\r\nDefinition Types / Examples IoT Use Applications\r\nGraph \r\nDatabases\r\nDatabases that \r\nrepresent data as \r\nnodes and \r\nrelationships \r\n(edges), making \r\nthem suitable for \r\nhighly connected \r\ndata.\r\nNeo4j, Amazon \r\nNeptune, \r\nJanusGraph\r\nRepresents \r\nrelationships \r\nbetween devices, \r\nusers, sensors, \r\nlocations, and \r\nnetworks.\r\nSmart grids, \r\nconnected \r\nvehicles, network \r\nmonitoring, smart \r\ncities\r\nCloud \r\nDatabases\r\nDatabases hosted on \r\ncloud \r\ninfrastructure, \r\nproviding scalable \r\nstorage, processing, \r\nbackup, and remote \r\naccess.\r\nAmazon \r\nDynamoDB, \r\nAzure Cosmos \r\nDB, Google \r\nCloud Spanner, \r\nAmazon \r\nTimestream\r\nCollects and \r\nprocesses IoT data \r\nfrom large numbers \r\nof devices through \r\ncloud platforms.\r\nSmart homes, \r\nsmart cities, \r\nindustrial IoT, \r\nremote \r\nmonitoring, fleet \r\nmanagement",
+      "width": 1191,
+      "height": 1684,
+      "rects": [
+        {
+          "l": 15.81,
+          "t": 9.04,
+          "w": 4.17,
+          "h": 0.98,
+          "text": "IOT "
+        },
+        {
+          "l": 13.68,
+          "t": 10.7,
+          "w": 8.42,
+          "h": 0.96,
+          "text": "Database "
+        },
+        {
+          "l": 12.7,
+          "t": 12.34,
+          "w": 9.88,
+          "h": 1.25,
+          "text": "Technology"
+        },
+        {
+          "l": 27.53,
+          "t": 10.68,
+          "w": 8.55,
+          "h": 0.98,
+          "text": "Definition "
+        },
+        {
+          "l": 40.78,
+          "t": 10.68,
+          "w": 14.97,
+          "h": 1.27,
+          "text": "Types / Examples "
+        },
+        {
+          "l": 60.79,
+          "t": 10.7,
+          "w": 6.69,
+          "h": 0.96,
+          "text": "IoT Use "
+        },
+        {
+          "l": 74.63,
+          "t": 10.68,
+          "w": 10.79,
+          "h": 1.27,
+          "text": "Applications"
+        },
+        {
+          "l": 12.34,
+          "t": 19.12,
+          "w": 6.12,
+          "h": 1.27,
+          "text": "Graph "
+        },
+        {
+          "l": 12.29,
+          "t": 20.78,
+          "w": 8.63,
+          "h": 0.96,
+          "text": "Databases"
+        },
+        {
+          "l": 23.28,
+          "t": 14.15,
+          "w": 12.15,
+          "h": 1.01,
+          "text": "Databases that "
+        },
+        {
+          "l": 23.26,
+          "t": 15.79,
+          "w": 13.89,
+          "h": 1.29,
+          "text": "represent data as "
+        },
+        {
+          "l": 23.31,
+          "t": 17.5,
+          "w": 9.14,
+          "h": 0.96,
+          "text": "nodes and "
+        },
+        {
+          "l": 23.32,
+          "t": 19.12,
+          "w": 11.53,
+          "h": 1.27,
+          "text": "relationships "
+        },
+        {
+          "l": 23.33,
+          "t": 20.73,
+          "w": 5.87,
+          "h": 1.27,
+          "text": "(edges)"
+        },
+        {
+          "l": 29.39,
+          "t": 20.71,
+          "w": 7.45,
+          "h": 1.3,
+          "text": ", making "
+        },
+        {
+          "l": 23.26,
+          "t": 22.35,
+          "w": 14.13,
+          "h": 1.01,
+          "text": "them suitable for "
+        },
+        {
+          "l": 23.26,
+          "t": 23.98,
+          "w": 14.3,
+          "h": 1.3,
+          "text": "highly connected "
+        },
+        {
+          "l": 23.31,
+          "t": 25.62,
+          "w": 3.64,
+          "h": 1.01,
+          "text": "data."
+        },
+        {
+          "l": 40.65,
+          "t": 18.31,
+          "w": 13.67,
+          "h": 1.27,
+          "text": "Neo4j, Amazon "
+        },
+        {
+          "l": 40.65,
+          "t": 19.97,
+          "w": 8.25,
+          "h": 1.25,
+          "text": "Neptune, "
+        },
+        {
+          "l": 40.65,
+          "t": 21.58,
+          "w": 10.67,
+          "h": 1.27,
+          "text": "JanusGraph"
+        },
+        {
+          "l": 56.2,
+          "t": 15.83,
+          "w": 9.29,
+          "h": 1.25,
+          "text": "Represents "
+        },
+        {
+          "l": 56.18,
+          "t": 17.43,
+          "w": 10.78,
+          "h": 1.29,
+          "text": "relationships "
+        },
+        {
+          "l": 56.17,
+          "t": 19.07,
+          "w": 1.85,
+          "h": 1.01,
+          "text": "be"
+        },
+        {
+          "l": 58.08,
+          "t": 19.07,
+          "w": 12.33,
+          "h": 1.23,
+          "text": "tween devices, "
+        },
+        {
+          "l": 56.17,
+          "t": 21.04,
+          "w": 12.07,
+          "h": 0.89,
+          "text": "users, sensors, "
+        },
+        {
+          "l": 56.23,
+          "t": 22.35,
+          "w": 11.63,
+          "h": 1.23,
+          "text": "locations, and "
+        },
+        {
+          "l": 56.18,
+          "t": 23.98,
+          "w": 7.72,
+          "h": 1.01,
+          "text": "networks."
+        },
+        {
+          "l": 72.49,
+          "t": 16.62,
+          "w": 10.21,
+          "h": 1.3,
+          "text": "Smart grids, "
+        },
+        {
+          "l": 72.43,
+          "t": 18.25,
+          "w": 8.58,
+          "h": 1.01,
+          "text": "connected "
+        },
+        {
+          "l": 72.38,
+          "t": 19.89,
+          "w": 14.68,
+          "h": 1.23,
+          "text": "vehicles, network "
+        },
+        {
+          "l": 72.38,
+          "t": 21.53,
+          "w": 14.91,
+          "h": 1.3,
+          "text": "monitoring, smart "
+        },
+        {
+          "l": 72.43,
+          "t": 23.17,
+          "w": 4.11,
+          "h": 1.01,
+          "text": "cities"
+        },
+        {
+          "l": 12.34,
+          "t": 31.65,
+          "w": 5.7,
+          "h": 0.98,
+          "text": "Cloud "
+        },
+        {
+          "l": 12.29,
+          "t": 33.31,
+          "w": 8.63,
+          "h": 0.96,
+          "text": "Databases"
+        },
+        {
+          "l": 23.28,
+          "t": 27.51,
+          "w": 16.92,
+          "h": 1.01,
+          "text": "Databases hosted on "
+        },
+        {
+          "l": 23.32,
+          "t": 29.22,
+          "w": 5.14,
+          "h": 0.96,
+          "text": "cloud "
+        },
+        {
+          "l": 23.29,
+          "t": 30.81,
+          "w": 12.11,
+          "h": 0.98,
+          "text": "infrastructure"
+        },
+        {
+          "l": 35.55,
+          "t": 31.64,
+          "w": 0.9,
+          "h": 0.38,
+          "text": ", "
+        },
+        {
+          "l": 23.24,
+          "t": 32.43,
+          "w": 15.32,
+          "h": 1.3,
+          "text": "providing scalable "
+        },
+        {
+          "l": 23.34,
+          "t": 34.07,
+          "w": 16.34,
+          "h": 1.3,
+          "text": "storage, processing, "
+        },
+        {
+          "l": 23.24,
+          "t": 35.7,
+          "w": 16.33,
+          "h": 1.29,
+          "text": "backup, and remote "
+        },
+        {
+          "l": 23.32,
+          "t": 37.68,
+          "w": 5.42,
+          "h": 0.68,
+          "text": "access."
+        },
+        {
+          "l": 40.64,
+          "t": 27.56,
+          "w": 7.64,
+          "h": 0.98,
+          "text": "Amazon "
+        },
+        {
+          "l": 40.65,
+          "t": 29.22,
+          "w": 1.34,
+          "h": 0.94,
+          "text": "D"
+        },
+        {
+          "l": 42.09,
+          "t": 29.22,
+          "w": 9.59,
+          "h": 1.25,
+          "text": "ynamoDB, "
+        },
+        {
+          "l": 40.64,
+          "t": 30.84,
+          "w": 12.94,
+          "h": 0.98,
+          "text": "Azure Cosmos "
+        },
+        {
+          "l": 40.65,
+          "t": 32.48,
+          "w": 10.32,
+          "h": 1.27,
+          "text": "DB, Google "
+        },
+        {
+          "l": 40.71,
+          "t": 34.12,
+          "w": 13.98,
+          "h": 1.27,
+          "text": "Cloud Spanner, "
+        },
+        {
+          "l": 40.64,
+          "t": 35.76,
+          "w": 7.64,
+          "h": 0.98,
+          "text": "Amazon "
+        },
+        {
+          "l": 40.7,
+          "t": 37.39,
+          "w": 10.28,
+          "h": 0.98,
+          "text": "Timestream"
+        },
+        {
+          "l": 56.24,
+          "t": 29.14,
+          "w": 10.45,
+          "h": 1.01,
+          "text": "Collects and "
+        },
+        {
+          "l": 56.17,
+          "t": 30.79,
+          "w": 15.49,
+          "h": 1.29,
+          "text": "processes IoT data "
+        },
+        {
+          "l": 56.25,
+          "t": 32.43,
+          "w": 16.31,
+          "h": 1.3,
+          "text": "from large numbers \r\ni\r\nr"
+        },
+        {
+          "l": 56.24,
+          "t": 34.07,
+          "w": 15.41,
+          "h": 1.3,
+          "text": "of devices through "
+        },
+        {
+          "l": 56.24,
+          "t": 35.7,
+          "w": 12.98,
+          "h": 1.29,
+          "text": "cloud platforms."
+        },
+        {
+          "l": 72.49,
+          "t": 28.32,
+          "w": 11.46,
+          "h": 1.23,
+          "text": "Smart homes, "
+        },
+        {
+          "l": 72.46,
+          "t": 29.96,
+          "w": 10.14,
+          "h": 1.23,
+          "text": "smart cities, "
+        },
+        {
+          "l": 72.42,
+          "t": 31.6,
+          "w": 11.95,
+          "h": 1.23,
+          "text": "industrial IoT, "
+        },
+        {
+          "l": 72.37,
+          "t": 33.38,
+          "w": 6.07,
+          "h": 0.87,
+          "text": " \r\nremote "
+        },
+        {
+          "l": 72.38,
+          "t": 34.88,
+          "w": 14.01,
+          "h": 1.3,
+          "text": "monitoring, fleet "
+        },
+        {
+          "l": 72.38,
+          "t": 36.66,
+          "w": 10.26,
+          "h": 1.15,
+          "text": "management"
+        }
+      ]
+    }
+  ]
+}
